@@ -1,0 +1,14 @@
+{       
+    "name"  : "junior-posts",
+    "description" : "Test version of template for mapping junior posts",
+    "type" : "Let",
+    "bind" : {
+      "base" : "http://organogram.data.gov.uk/data/TODO/{release}/{basename}"
+    },
+    "template" : {
+        "@id" : "<{base}#juniorPosts{$row.number}>",
+        "<rdfs:label>" : "Test label",
+        "<organogram:date>" : "{release}",
+        "<rdf:type>"  : "<qb:Observation>"
+    }
+}

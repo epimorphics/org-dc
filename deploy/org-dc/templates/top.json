@@ -1,0 +1,12 @@
+{       
+    "type"  : "Composite",
+    "name"  : "top",
+    "description" : "Test version of top level template for all the conversions",
+    "bind" : {
+      "release" : "2011-09-30",
+      "basename" : "defra-example"
+    },
+    "templates" : [
+        "junior-posts"
+    ]
+}
