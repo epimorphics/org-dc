@@ -7,7 +7,7 @@ Provides a RESTful service endpoint for converting Organogram CSV data pairs to 
 To request a data conversion POST to the service endpoint (to be agreed) a multi-part mime message with the following components:
 
 | Parameter | Type | Meaning |
----
+|---|---|---|
 | `senior-csv` | File | CSV of senior posts |
 | `junior-csv` | File | CSV of junior posts |
 | `release` | String | Intended release date, format 2013-09-30 |
@@ -30,6 +30,7 @@ For each conversion request a trace of the action will also be recorded in a tim
 ## Configuration
 
 | File | Usage |
+|---|---|
 | `/opt/org-dc/app.conf` | Application configuration |
 | `/opt/org-dc/templates/*` | Data conversion templates |
 | `/opt/org-dc/mapsources/*` | Data needed by the conversion templates |
