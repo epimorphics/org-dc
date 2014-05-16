@@ -25,7 +25,7 @@ The implementation is stateless and conversions are done in memory.
 
 Application log messages will be recorded by tomcat in catalina.out as usual which tomcat will rotate.
 
-For each conversion request a trace of the action will also be recorded in a timestamped `trace-{time}.json` file in `/var/opt-dc/logs`.
+For each conversion request a trace of the action will also be recorded in a timestamped `trace-{time}.txt` file in `/var/opt/org-dc/logs`.
 
 ## Configuration
 
