@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:dct="http://purl.org/dc/terms/"
+   xmlns:foaf="http://xmlns.com/foaf/0.1/"
+   xmlns:gov="http://reference.data.gov.uk/def/central-government/"
+   xmlns:opmv="http://purl.org/net/opmv/ns#"
+   xmlns:org="http://www.w3.org/ns/org#"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+   xmlns:time="http://www.w3.org/2006/time#"
+   xmlns:void="http://rdfs.org/ns/void#"
+   xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+   xmlns="http://reference.data.gov.uk/def/civil-service-profession/">
+  <skos:ConceptScheme rdf:about="http://reference.data.gov.uk/def/civil-service-profession">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <rdfs:label xml:lang="en">Civil Service Professions</rdfs:label>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-profession/communications"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-profession/economics"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-profession/finance"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-profession/human-resources"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-profession/information-technology"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-profession/internal-audit"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-profession/kim"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-profession/law"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-profession/medicine"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-profession/military"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-profession/operational-delivery"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-profession/operational-research"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-profession/planning"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-profession/policy"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-profession/ppm"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-profession/procurement"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-profession/property-asset-management"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-profession/psychology"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-profession/science-engineering"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-profession/social-research"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-profession/statisticians"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-profession/tax-professionals"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-profession/vets"/>
+  </skos:ConceptScheme>
+  <rdfs:Class rdf:about="http://reference.data.gov.uk/def/civil-service-profession/Profession">
+    <rdfs:isDefinedBy rdf:resource="http://reference.data.gov.uk/def/civil-service-profession"/>
+    <rdfs:label xml:lang="en">Profession</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdfs:Class>
+  <Profession rdf:about="http://reference.data.gov.uk/def/civil-service-profession/communications">
+    <skos:prefLabel xml:lang="en">Communications</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-profession"/>
+  </Profession>
+  <Profession rdf:about="http://reference.data.gov.uk/def/civil-service-profession/economics">
+    <skos:prefLabel xml:lang="en">Economics</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-profession"/>
+  </Profession>
+  <Profession rdf:about="http://reference.data.gov.uk/def/civil-service-profession/finance">
+    <skos:prefLabel xml:lang="en">Finance</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-profession"/>
+  </Profession>
+  <Profession rdf:about="http://reference.data.gov.uk/def/civil-service-profession/human-resources">
+    <skos:altLabel xml:lang="en">HR</skos:altLabel>
+    <skos:prefLabel xml:lang="en">Human Resources</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-profession"/>
+  </Profession>
+  <Profession rdf:about="http://reference.data.gov.uk/def/civil-service-profession/information-technology">
+    <skos:altLabel xml:lang="en">IT</skos:altLabel>
+    <skos:prefLabel xml:lang="en">Information Technology</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-profession"/>
+  </Profession>
+  <Profession rdf:about="http://reference.data.gov.uk/def/civil-service-profession/internal-audit">
+    <skos:prefLabel xml:lang="en">Internal Audit</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-profession"/>
+  </Profession>
+  <Profession rdf:about="http://reference.data.gov.uk/def/civil-service-profession/kim">
+    <skos:altLabel xml:lang="en">KIM</skos:altLabel>
+    <skos:altLabel xml:lang="en">Knowledge and Information Management</skos:altLabel>
+    <skos:prefLabel xml:lang="en">Knowledge and Information Management (KIM)</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-profession"/>
+  </Profession>
+  <Profession rdf:about="http://reference.data.gov.uk/def/civil-service-profession/law">
+    <skos:prefLabel xml:lang="en">Law</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-profession"/>
+  </Profession>
+  <Profession rdf:about="http://reference.data.gov.uk/def/civil-service-profession/medicine">
+    <skos:prefLabel xml:lang="en">Medicine</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-profession"/>
+  </Profession>
+  <Profession rdf:about="http://reference.data.gov.uk/def/civil-service-profession/military">
+    <skos:altLabel xml:lang="en">Military</skos:altLabel>
+    <skos:prefLabel xml:lang="en">Armed Forces</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-profession"/>
+  </Profession>
+  <Profession rdf:about="http://reference.data.gov.uk/def/civil-service-profession/operational-delivery">
+    <skos:prefLabel xml:lang="en">Operational Delivery</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-profession"/>
+  </Profession>
+  <Profession rdf:about="http://reference.data.gov.uk/def/civil-service-profession/operational-research">
+    <skos:prefLabel xml:lang="en">Operational Research</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-profession"/>
+  </Profession>
+  <Profession rdf:about="http://reference.data.gov.uk/def/civil-service-profession/planning">
+    <skos:prefLabel xml:lang="en">Planning</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-profession"/>
+  </Profession>
+  <Profession rdf:about="http://reference.data.gov.uk/def/civil-service-profession/policy">
+    <skos:prefLabel xml:lang="en">Policy</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-profession"/>
+  </Profession>
+  <Profession rdf:about="http://reference.data.gov.uk/def/civil-service-profession/ppm">
+    <skos:altLabel xml:lang="en">PPM</skos:altLabel>
+    <skos:altLabel xml:lang="en">Programme and Project Management</skos:altLabel>
+    <skos:prefLabel xml:lang="en">Programme and Project Management (PPM)</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-profession"/>
+  </Profession>
+  <Profession rdf:about="http://reference.data.gov.uk/def/civil-service-profession/procurement">
+    <skos:prefLabel xml:lang="en">Procurement</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-profession"/>
+  </Profession>
+  <rdf:Property rdf:about="http://reference.data.gov.uk/def/civil-service-profession/profession">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://reference.data.gov.uk/def/civil-service-profession"/>
+    <rdfs:label xml:lang="en">Profession</rdfs:label>
+    <rdfs:range rdf:resource="http://reference.data.gov.uk/def/civil-service-profession/Profession"/>
+  </rdf:Property>
+  <Profession rdf:about="http://reference.data.gov.uk/def/civil-service-profession/property-asset-management">
+    <skos:prefLabel xml:lang="en">Property and asset management</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-profession"/>
+  </Profession>
+  <Profession rdf:about="http://reference.data.gov.uk/def/civil-service-profession/psychology">
+    <skos:prefLabel xml:lang="en">Psychology</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-profession"/>
+  </Profession>
+  <Profession rdf:about="http://reference.data.gov.uk/def/civil-service-profession/science-engineering">
+    <skos:prefLabel xml:lang="en">Science and Engineering</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-profession"/>
+  </Profession>
+  <Profession rdf:about="http://reference.data.gov.uk/def/civil-service-profession/social-research">
+    <skos:prefLabel xml:lang="en">Social Research</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-profession"/>
+  </Profession>
+  <Profession rdf:about="http://reference.data.gov.uk/def/civil-service-profession/statisticians">
+    <skos:prefLabel xml:lang="en">Statisticians</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-profession"/>
+  </Profession>
+  <Profession rdf:about="http://reference.data.gov.uk/def/civil-service-profession/tax-professionals">
+    <skos:prefLabel xml:lang="en">Tax Professionals</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-profession"/>
+  </Profession>
+  <Profession rdf:about="http://reference.data.gov.uk/def/civil-service-profession/vets">
+    <skos:altLabel xml:lang="en">Veterinary</skos:altLabel>
+    <skos:prefLabel xml:lang="en">Vets</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-profession"/>
+  </Profession>
+</rdf:RDF>

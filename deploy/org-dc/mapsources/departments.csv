@@ -1,0 +1,32 @@
+Department,shortname,In-use
+Attorney General's Office,attorney-general,y
+Cabinet Office,co,y
+Crown Prosecution Service,cps,y
+Department for Business Innovation and Skills,bis,y
+Department for Communities and Local Government,dclg,y
+"Department for Culture, Media and Sport",dcms,y
+Department for Education,dfe,y
+"Department for Environment, Food and Rural Affairs",defra,y
+Department for International Development,dfid,
+Department for Transport,dft,y
+Department for Work and Pensions,dwp,y
+Department of Energy and Climate Change,decc,y
+Department of Health,dh,y
+Foreign and Commonwealth Office,fco,y
+Government Equalities Office,geo,
+Her Majesty's Revenue and Customs,hmrc,y
+Her Majesty's Treasury,hmt,y
+Home Office,ho,y
+Ministry of Defence,mod,y
+Ministry of Justice,justice,y
+Northern Ireland Office,nio,
+Scotland Office,so,y
+Scottish Government,sg,
+Treasury Solicitors,treasury-solicitors,y
+UK Supreme Court,uksc,
+Wales Office,wo,y
+Office of Advocate General for Scotland,oags,y
+Forestry Commission,fc,y
+Office of Rail Regulation,orr,y
+UK Statistics Authority,uksa,y
+Ordnance Survey,os,y
