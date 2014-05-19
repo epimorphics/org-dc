@@ -18,6 +18,7 @@
         "$def_dept":"http://reference.data.gov.uk/def/department",
         "$salary_base":"http://reference.data.gov.uk/id/salary-range",
         "$def_profession":"http://reference.data.gov.uk/def/civil-service-profession",
+        "$def_job":"http://reference.data.gov.uk/def/civil-service-job",
         "$def_cspb":"http://reference.data.gov.uk/def/civil-service-payband"
     },
     "oneOffs":[
@@ -58,7 +59,7 @@
                 "<org:Organization>",
                 "<{$def_gov}/PublicBody>"
             ],
-            "<{$def_ref}/uriSet>":"{$dept_base}",
+            "<{$def_ref}/uriSet>":"<{$dept_base}>",
             "<rdfs:label>":"{parent_department.lang('en')}",
             "<skos:prefLabel>":"{parent_department.lang('en')}"
         },
@@ -71,7 +72,7 @@
             ],
             "<{$def_gov}/parentDepartment>":"<{parent_department}>",
             "<org:hasUnit>":"<{$unit}>",
-            "<{$def_ref}/uriSet>":"{$parent_dept==$organisation ? $dept_base : $pb_base}",
+            "<{$def_ref}/uriSet>":"<{$parent_dept==$organisation ? $dept_base : $pb_base}>",
             "<rdfs:label>":"{organisation.lang('en')}",
             "<skos:prefLabel>":"{organisation.lang('en')}"
         },

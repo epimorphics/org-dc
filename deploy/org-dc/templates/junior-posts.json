@@ -26,22 +26,24 @@
             "<qb:dataSet>" : "<{$dataset}/juniorPosts>",
             "<{$def_org}/date>" : "<{$date}>",
             "<{$def_org}/fullTimeEquivalent>" : "{number_of_posts_in_fte}",
-            "<{$def_org}/grade>" : "{number_of_posts_in_fte}"
+            "<{$def_org}/grade>" : "<{$grade_base}/{$grade}>",
+            "<{$def_org}/job>" : "<{$def_job}/{generic_job_title.toCleanSegment()}>",
+            "<rdfs:label>" : "{grade} {generic_job_title} ({professional_occupational_group}) in {unit} reporting to post {reporting_senior_post} FTE at {$versionDate}"
         },
         {
             "name":"junior/grade",
             "@id":"<{$grade_base}/{$grade}>",
-            "<rdf:type>":"{$def_grade}/Grade",
+            "<rdf:type>":"<{$def_grade}/Grade>",
             "<skos:topConceptof>":"<{$grade_base}>",
             "^<skos:hasTopConcept>":"<{$grade_base}>",
-            "<skos:prefLabel>":"{grade}",
+            "<skos:prefLabel>":"{grade.lang('en')}",
             "<{$def_cspb}/payBand>":"<{$pb_base}/{$grade}>"
         },
         {
             "name":"junior/grade-dataset",
             "@id":"<{$grade_base}>",
             "<rdf:type>":["<void:Dataset>", "<skos:ConceptScheme>"],
-            "<skos:prefLabel>":"{parent_department} Junior Civil Service Grades"
+            "<skos:prefLabel>":"{lang(parent_department.value + ' Junior Civil Service Grades', 'en')}"
         },
         {
             "name":"junior/payband",
@@ -50,13 +52,14 @@
             "<rdf:type>" : "<{$def_cspb}/PayBand>",
             "<skos:topConceptof>":"<{$pb_base}>",
             "^<skos:hasTopConcept>":"<{$pb_base}>",
-            "<{$def_gov}/salaryRange>":"<{$salary_base}/{payscale_minimum_}-{payscale_maximum_}>"
+            "<{$def_gov}/salaryRange>":"<{$salary_base}/{payscale_minimum_}-{payscale_maximum_}>",
+            "<skos:prefLabel>" : "{lang(grade.value + ' Payband', 'en')}"
         },
         {
             "name":"junior/payband-dataset",
             "@id":"<{$pb_base}>",
             "<rdf:type>":["<void:Dataset>", "<skos:ConceptScheme>"],
-            "<skos:prefLabel>":"{parent_department} Junior Civil Service Paybands"
+            "<skos:prefLabel>":"{lang(parent_department.value + ' Junior Civil Service Paybands','en')}"
         },
         {
             "name":"junior/salary-range",
