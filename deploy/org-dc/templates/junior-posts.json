@@ -1,14 +1,73 @@
 {       
-    "name"  : "junior-posts",
-    "description" : "Test version of template for mapping junior posts",
-    "type" : "Let",
+    "type":"Composite",
+    "name"  : "top/junior",
+    "description" : "Mapping fields specific to junior posts",
+    "required":["grade"],
     "bind" : {
-      "base" : "http://organogram.data.gov.uk/data/TODO/{release}/{basename}"
+        "$grade_base" : "{$def_dept}/{$dept_id}/grade",
+        "$grade" : "{grade.toCleanSegment()}",
+        "$pb_base" : "{$def_dept}/{$dept_id}/payband"
     },
-    "template" : {
-        "@id" : "<{base}#juniorPosts{$row.number}>",
-        "<rdfs:label>" : "Test label",
-        "<organogram:date>" : "{release}",
-        "<rdf:type>"  : "<qb:Observation>"
-    }
+    "templates" : [
+        "junior/post",
+        "junior/grade",
+        "junior/grade-dataset",
+        "junior/payband",
+        "junior/payband-dataset",
+        "junior/salary-range"
+    ],
+    "oneOffs":[
+    ],
+    "referenced":[
+        {
+            "name":"junior/post",
+            "@id":"<{$dataset}/juniorPosts{$row.number}>",
+            "<rdf:type>": "<qb:Observation>",
+            "<qb:dataSet>" : "<{$dataset}/juniorPosts>",
+            "<{$def_org}/date>" : "<{$date}>",
+            "<{$def_org}/fullTimeEquivalent>" : "{number_of_posts_in_fte}",
+            "<{$def_org}/grade>" : "{number_of_posts_in_fte}"
+        },
+        {
+            "name":"junior/grade",
+            "@id":"<{$grade_base}/{$grade}>",
+            "<rdf:type>":"{$def_grade}/Grade",
+            "<skos:topConceptof>":"<{$grade_base}>",
+            "^<skos:hasTopConcept>":"<{$grade_base}>",
+            "<skos:prefLabel>":"{grade}",
+            "<{$def_cspb}/payBand>":"<{$pb_base}/{$grade}>"
+        },
+        {
+            "name":"junior/grade-dataset",
+            "@id":"<{$grade_base}>",
+            "<rdf:type>":["<void:Dataset>", "<skos:ConceptScheme>"],
+            "<skos:prefLabel>":"{parent_department} Junior Civil Service Grades"
+        },
+        {
+            "name":"junior/payband",
+            "required" :["payscale_minimum_", "payscale_maximum_"],
+            "@id" : "<{$pb_base}/{$grade}>",
+            "<rdf:type>" : "<{$def_cspb}/PayBand>",
+            "<skos:topConceptof>":"<{$pb_base}>",
+            "^<skos:hasTopConcept>":"<{$pb_base}>",
+            "<{$def_gov}/salaryRange>":"<{$salary_base}/{payscale_minimum_}-{payscale_maximum_}>"
+        },
+        {
+            "name":"junior/payband-dataset",
+            "@id":"<{$pb_base}>",
+            "<rdf:type>":["<void:Dataset>", "<skos:ConceptScheme>"],
+            "<skos:prefLabel>":"{parent_department} Junior Civil Service Paybands"
+        },
+        {
+            "name":"junior/salary-range",
+            "required" :["payscale_minimum_", "payscale_maximum_"],
+            "@id":"<{$salary_base}/{payscale_minimum_}-{payscale_maximum_}>",
+            "<rdfs:label>":"£{payscale_minimum_} - £{payscale_maximum_}",
+            "<{$def_gov}/lowerBound>":"{payscale_minimum_}",
+            "<{$def_gov}/upperBound>":"{payscale_maximum_}",
+            "<rdf:type>":"<{$def_gov}/SalaryRange>",
+            "<{$def_ref}/uriSet>":"<{$salary_base}>",
+            "<foaf:page>":"@@TBD"
+        }
+    ]
 }

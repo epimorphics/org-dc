@@ -1,12 +1,109 @@
-{       
-    "type"  : "Composite",
-    "name"  : "top",
-    "description" : "Test version of top level template for all the conversions",
-    "bind" : {
-      "release" : "2011-09-30",
-      "basename" : "defra-example"
+{
+    "type":"Composite",
+    "name":"top",
+    "required":[
+        "parent_department",
+        "organisation"
+    ],
+    "bind":{
+        "$dept_base":"http://reference.data.gov.uk/id/department",
+        "$pb_base":"http://reference.data.gov.uk/id/public-body",
+        "$ds_base":"http://reference.data.gov.uk/organogram",
+        "$ref_day" : "http://reference.data.gov.uk/id/day",
+        "$def_org":"http://reference.data.gov.uk/def/organogram",
+        "$def_gov":"http://reference.data.gov.uk/def/central-government",
+        "$def_ref":"http://reference.data.gov.uk/def/reference",
+        "$def_csps":"http://reference.data.gov.uk/def/civil-service-post-status",
+        "$def_grade":"http://reference.data.gov.uk/def/civil-service-grade",
+        "$def_dept":"http://reference.data.gov.uk/def/department",
+        "$salary_base":"http://reference.data.gov.uk/id/salary-range",
+        "$def_profession":"http://reference.data.gov.uk/def/civil-service-profession",
+        "$def_cspb":"http://reference.data.gov.uk/def/civil-service-payband"
     },
-    "templates" : [
-        "junior-posts"
+    "oneOffs":[
+    ],
+    "templates":[
+        {
+            "type":"Composite",
+            "bind":[
+              {
+                "$date" : "{$ref_day}/{$versionDate}",
+                "$dept_id":"{parent_department.map('department')!=null ? parent_department.map('department') : parent_department.toCleanSegment()}"
+              }, {
+                "$org_base":"{parent_department == organisation ? $dept_base : $pb_base }",
+                "$parent_dept":"{$dept_base}/{$dept_id}"
+              }, {
+                "$organisation":"{organisation.map('department')!=null ? $org_base + '/' + organisation.map('department') : $org_base + '/' + organisation.toCleanSegment()}",
+                "$dataset":"{$ds_base}/{$versionDate}/{$dept_id}"
+              }, {
+                "$unit":"{empty(unit) ? nullValue() : $organisation+'/unit/'+ unit.toCleanSegment() }"
+              }
+            ],
+            "templates":[
+                "parent department",
+                "organisation",
+                "unit",
+                "top/senior",
+                "top/junior"
+            ]
+        }
+    ],
+    "referenced":[
+        {
+            "name":"parent department",
+            "comment":"Create the parent department",
+            "@id":"<{$parent_dept}>",
+            "<rdf:type>":[
+                "<{$def_gov}/Department>",
+                "<org:Organization>",
+                "<{$def_gov}/PublicBody>"
+            ],
+            "<{$def_ref}/uriSet>":"{$dept_base}",
+            "<rdfs:label>":"{parent_department.lang('en')}",
+            "<skos:prefLabel>":"{parent_department.lang('en')}"
+        },
+        {
+            "name":"organisation",
+            "@id":"<{$organisation}>",
+            "<rdf:type>":[
+                "<org:Organization>",
+                "<{$def_gov}/PublicBody>"
+            ],
+            "<{$def_gov}/parentDepartment>":"<{parent_department}>",
+            "<org:hasUnit>":"<{$unit}>",
+            "<{$def_ref}/uriSet>":"{$parent_dept==$organisation ? $dept_base : $pb_base}",
+            "<rdfs:label>":"{organisation.lang('en')}",
+            "<skos:prefLabel>":"{organisation.lang('en')}"
+        },
+        {
+            "name":"unit",
+            "@id":"<{$unit}>",
+            "<org:unitOf>":"<{$organisation}>",
+            "<rdf:type>":"<org:OrganizationalUnit>",
+            "<rdfs:label>":"{unit.lang('en')}",
+            "<skos:prefLabel>":"{unit.lang('en')}"
+        }
+    ],
+    "sources":[
+        {
+            "name":"department",
+            "sourceType":"CSV",
+            "source":"departments.csv",
+            "key":"department",
+            "value":"shortname",
+            "makeURI":false
+        },
+        {
+            "name":"profession",
+            "sourceType":"RDF",
+            "key":"skos:prefLabel",
+            "source":"civil-service-profession.rdf"
+        },
+        {
+            "name":"profession-alt",
+            "sourceType":"RDF",
+            "key":"skos:altLabel",
+            "source":"civil-service-profession.rdf"
+        }
     ]
 }

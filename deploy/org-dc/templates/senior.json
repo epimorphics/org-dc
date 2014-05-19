@@ -1,96 +1,24 @@
 {
     "type":"Composite",
-    "name":"senior-posts",
-    "required":[
-        "parent_department",
-        "organisation"
-    ],
-    "bind":{
-        "$versionDate":"2013-09-30",
-        "$dept_base":"http://reference.data.gov.uk/id/department",
-        "$pb_base":"http://reference.data.gov.uk/id/public-body",
-        "$ds_base":"http://reference.data.gov.uk/organogram",
-        "$def_gov":"http://reference.data.gov.uk/def/central-government",
-        "$def_ref":"http://reference.data.gov.uk/def/reference/",
-        "$def_csps":"http://reference.data.gov.uk/def/civil-service-post-status",
-        "$def_grade":"http://reference.data.gov.uk/def/civil-service-grade",
-        "$salary_base":"http://reference.data.gov.uk/id/salary-range",
-        "$def_profession":"http://reference.data.gov.uk/def/civil-service-profession"
-    },
-    "oneOffs":[
-    ],
-    "templates":[
-        {
-            "type":"Let",
-            "bind":[
+    "name":"top/senior",
+    "required" : ["post_unique_reference", "reports_to_senior_post", "$organisation"],
+    "bind":[
               {
-                "$org_base":"{parent_department == organisation ? $dept_base : $pb_base }",
-                "$parent_dept":"{parent_department.map('department')!=null ? $dept_base + '/' + parent_department.map('department') : $dept_base + '/' + parent_department.toLowerCase().toSegment('-')}"
-              }, {
-                "$organisation":"{organisation.map('department')!=null ? $org_base + '/' + organisation.map('department') : $org_base + '/' + organisation.toLowerCase().toSegment('-')}",
-                "$dataset":"{$ds_base}/{$versionDate}/{parent_department.map('department')!=null ? parent_department.map('department') : parent_department.toLowerCase().toSegment('-')}"
-              }, {
-                "$unit":"{empty(unit) ? '' : $organisation+'/unit/'+ unit.toLowerCase().toSegment('-') }"
-              }, {
                 "$post":"{$organisation}/post/{post_unique_reference}",
                 "$reportsToPost":"{$organisation}/post/{reports_to_senior_post}"
               }, {
                 "$holder":"{$dataset}/person{$row.number}"
               }
             ],
-            "template":"main"
-        }
+    "templates":[
+        "senior/post",
+        "senior/salary range",
+        "senior/holder"
     ],
     "referenced":[
         {
-            "name":"main",
-            "type":"Composite",
-            "templates":[
-                "parent department",
-                "organisation",
-                "unit",
-                "post",
-                "salary range",
-                "holder"
-            ]
-        },
-        {
-            "name":"parent department",
-            "comment":"Create the parent department",
-            "@id":"<{$parent_dept}>",
-            "<rdf:type>":[
-                "<{$def_gov}/Department>",
-                "<org:Organization>",
-                "<{$def_gov}/PublicBody>"
-            ],
-            "<{$def_ref}/uriSet>":"{$dept_base}",
-            "<rdfs:label>":"{parent_department.lang('en')}",
-            "<skos:prefLabel>":"{parent_department.lang('en')}"
-        },
-        {
-            "name":"organisation",
-            "@id":"<{$organisation}>",
-            "<rdf:type>":[
-                "<org:Organization>",
-                "<{$def_gov}/PublicBody>"
-            ],
-            "<{$def_gov}/parentDepartment>":"<{parent_department}>",
-            "<org:hasUnit>":"<{$unit}>",
-            "<{$def_ref}/uriSet>":"{$parent_dept==$organisation ? $dept_base : $pb_base}",
-            "<rdfs:label>":"{organisation.lang('en')}",
-            "<skos:prefLabel>":"{organisation.lang('en')}"
-        },
-        {
-            "name":"unit",
-            "@id":"<{!empty(unit) ? $unit :null}>",
-            "<org:unitOf>":"<{$organisation}>",
-            "<rdf:type>":"<org:OrganizationalUnit>",
-            "<rdfs:label>":"{unit.lang('en')}",
-            "<skos:prefLabel>":"{unit.lang('en')}",
-            "<{$def_gov}/hasPost>":"<{$post}>"
-        },
-        {
-            "name":"post",
+            "name":"senior/post",
+            "required" : ["$post"],
             "@id":"<{$post}>",
             "<rdfs:label>":"{job_title.lang('en')}",
             "<skos:prefLabel>":"{job_title.lang('en')}",
@@ -100,7 +28,7 @@
             ],
             "<{$def_gov}/postIn>":[
                 "<{$organisation}>",
-                "<{empty(unit)? null : $unit}>"
+                "<{$unit}>"
             ],
             "<org:reportsTo>":"<{$reportsToPost}>",
             "<{$def_csps}/postStatus>":"<{$def_csps}/{name.toLowerCase=='vacant' || name.toLowerCase=='eliminate' ? name.toLowerCase() : 'current'}>",
@@ -111,10 +39,12 @@
             "<{$def_grade}/grade>":"<{$def_grade}/{grade}",
             "<skos:notation>":"{post_unique_reference}",
             "<{$def_gov}/salaryRange>":"<{$salary_base}/{actual_pay_floor_}-{actual_pay_ceiling_}>",
-            "<{$def_gov}/heldBy>":"<{$holder}>"
+            "<{$def_gov}/heldBy>":"<{$holder}>",
+            "^<{$def_gov}/hasPost>" : "<$unit>"
         },
         {
-            "name":"salary range",
+            "name":"senior/salary range",
+            "required" : ["$salary_base", "actual_pay_floor_", "actual_pay_ceiling_"],
             "@id":"<{$salary_base}/{actual_pay_floor_}-{actual_pay_ceiling_}>",
             "<rdf:type>":"<{$def_gov}/SalaryRange",
             "<{$def_gov}/lowerBound>":"{actual_pay_floor_}",
@@ -122,35 +52,14 @@
             "<rdfs:label>":"{lang('£'+actual_pay_floor_+'-£'+actual_pay_ceiling_,'en')}"
         },
         {
-            "name":"holder",
+            "name":"senior/holder",
+            "required" : ["$holder"],
             "@id":"<{$holder}>",
             "<rdf:type>":"<foaf:Person>",
             "<foaf:mbox>":"<mailto:{contact_e_mail}>",
             "<foaf:name>":"{name}",
             "<foaf:phone>":"{contact_phone}",
             "<{$def_profession}/profession>":"<{empty(professional_occupational_group) ? null : !empty(professional_occupational_group.map('profession')) ? professional_occupational_group.map('profession') : !empty(professional_occupational_group.map('profession-alt')) ? professional_occupational_group.map('profession-alt') : null }>"
-        }
-    ],
-    "sources":[
-        {
-            "name":"department",
-            "sourceType":"CSV",
-            "source":"templates/reconciliation/departments.csv",
-            "key":"department",
-            "value":"shortname",
-            "makeURI":false
-        },
-        {
-            "name":"profession",
-            "sourceType":"RDF",
-            "key":"skos:prefLabel",
-            "source":"templates/reconciliation/civil-service-profession.rdf"
-        },
-        {
-            "name":"profession-alt",
-            "sourceType":"RDF",
-            "key":"skos:altLabel",
-            "source":"templates/reconciliation/civil-service-profession.rdf"
         }
     ]
 }

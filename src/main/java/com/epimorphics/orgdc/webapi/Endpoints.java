@@ -48,11 +48,14 @@ public class Endpoints {
     
     public static final String FULL_MIME_TURTLE = "text/turtle; charset=UTF-8";
     
-    public static final String RELEASE_PARAM = "release";
+    public static final String RELEASE_PARAM  = "release";
+    public static final String RELEASE_VAR    = "$versionDate";
     public static final String BASENAME_PARAM = "basename";
-    public static final String JUNIOR_PARAM = "junior-csv";
-    public static final String SENIOR_PARAM = "senior-csv";
-    public static final String TOP_TEMPLATE = "top";
+    public static final String BASENAME_VAR   = "$basename";
+    public static final String JUNIOR_PARAM   = "junior-csv";
+    public static final String SENIOR_PARAM   = "senior-csv";
+    public static final String DEBUG_PARAM   = "debug";
+    public static final String TOP_TEMPLATE   = "top";
     
     @GET
     @Produces(MediaType.TEXT_PLAIN)
@@ -79,12 +82,14 @@ public class Endpoints {
         }
         log.info( String.format("Request accepted %s[%s]", basename, release) );
         
+        boolean debug = "true".equalsIgnoreCase( getStringValue(multiPart, DEBUG_PARAM) );
+        
         long start = System.currentTimeMillis();
         SimpleProgressMonitor monitor = new SimpleProgressMonitor();
-        Model smodel = process(seniorPosts, release, basename, monitor);
+        Model smodel = process(seniorPosts, release, basename, monitor, debug);
         
         InputStream juniorPosts = readFile(multiPart, JUNIOR_PARAM);
-        Model jmodel = process(juniorPosts, release, basename, monitor);
+        Model jmodel = process(juniorPosts, release, basename, monitor, debug);
         long duration = System.currentTimeMillis() - start;
 
         Long size = null;
@@ -124,13 +129,16 @@ public class Endpoints {
         return part.getValueAs(InputStream.class);
     }
     
-    protected Model process(InputStream in, String release, String basename, ProgressMonitorReporter monitor) {
+    protected Model process(InputStream in, String release, String basename, ProgressMonitorReporter monitor, boolean debug) {
         ConverterService service = AppConfig.getApp().getA(ConverterService.class);
         ConverterProcess proc = service.startConvert(TOP_TEMPLATE, in);
-        proc.getEnv().put(RELEASE_PARAM, release);
-        proc.getEnv().put(BASENAME_PARAM, basename);
+        proc.getEnv().put(RELEASE_VAR, release);
+        proc.getEnv().put(BASENAME_VAR, basename);
+        proc.setDebug(debug);
         proc.setMessageReporter(monitor);
         if (proc.process()) {
+            Model result = proc.getModel();
+            result.setNsPrefixes( service.getDataContext().getPrefixes() );
             return proc.getModel();
         } else {
             return null;

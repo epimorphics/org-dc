@@ -12,6 +12,7 @@ To request a data conversion POST to the service endpoint (to be agreed) a multi
 | `junior-csv` | File | CSV of junior posts |
 | `release` | String | Intended release date, format 2013-09-30 |
 | `basename` | String | Name for this dataset to use in URI segments, optional, defaults to filename |
+| `debug` | String | If present and set to "true" enables debug level logging of the processing |
 
 This will return a 200 response with the resulting RDF file (in Turtle format) or a 400 with a text/plain payload giving a trace of the data conversion including error messages.
 
