@@ -12,6 +12,7 @@ package com.epimorphics.orgdc.webapi;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
+import java.io.IOException;
 import java.io.InputStream;
 
 import javax.ws.rs.Consumes;
@@ -29,6 +30,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.epimorphics.appbase.core.AppConfig;
+import com.epimorphics.appbase.tasks.NestedProgressReporter;
 import com.epimorphics.appbase.util.TimeStamp;
 import com.epimorphics.appbase.webapi.WebApiException;
 import com.epimorphics.dclib.framework.ConverterProcess;
@@ -80,7 +82,7 @@ public class Endpoints {
             basename = multiPart.getField(SENIOR_PARAM).getContentDisposition().getFileName();
             basename = basename.replaceAll("-?senior", "").replace(".csv", "");
         }
-        log.info( String.format("Request accepted %s[%s]", basename, release) );
+        log.info( String.format("Request accepted %s [%s]", basename, release) );
         
         boolean debug = "true".equalsIgnoreCase( getStringValue(multiPart, DEBUG_PARAM) );
         
@@ -103,8 +105,7 @@ public class Endpoints {
         if (debug) {
             log.info( tracelog );
         }
-        if (smodel != null && jmodel != null) {
-            smodel.add( jmodel );
+        if (size != null) {
             log.info( String.format("Request succceeded: %d triples, %d ms", size, duration) );
             return Response.ok().entity( smodel ).build();
             
@@ -113,6 +114,24 @@ public class Endpoints {
             return Response.status(Status.BAD_REQUEST).entity(tracelog).build();
         }
     }   
+    
+    
+    @Path("test")
+    @POST
+    @Consumes({MediaType.MULTIPART_FORM_DATA})
+    @Produces({FULL_MIME_TURTLE})
+    public Response test(@Context HttpHeaders hh, FormDataMultiPart multiPart) throws IOException {
+        log.info("Test conversion request received");
+        InputStream seniorPosts = readFile(multiPart, SENIOR_PARAM);
+        System.out.println("Senior posts");
+        FileUtil.copyResource(seniorPosts, System.out);
+        
+        InputStream juniorPosts = readFile(multiPart, JUNIOR_PARAM);
+        System.out.println("Junior posts");
+        FileUtil.copyResource(juniorPosts, System.out);
+        
+        return Response.ok().build();
+    }    
     
     protected String getStringValue(FormDataMultiPart data, String field) {
         FormDataBodyPart part = data.getField(field);
@@ -138,7 +157,7 @@ public class Endpoints {
         proc.getEnv().put(RELEASE_VAR, release);
         proc.getEnv().put(BASENAME_VAR, basename);
         proc.setDebug(debug);
-        proc.setMessageReporter(monitor);
+        proc.setMessageReporter( new NestedProgressReporter(monitor) );
         if (proc.process()) {
             Model result = proc.getModel();
             result.setNsPrefixes( service.getDataContext().getPrefixes() );
