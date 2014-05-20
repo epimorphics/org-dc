@@ -59,7 +59,7 @@
             "<foaf:mbox>":"<mailto:{contact_e_mail}>",
             "<foaf:name>":"{name}",
             "<foaf:phone>":"{contact_phone}",
-            "<{$def_profession}/profession>":"<{empty(professional_occupational_group) ? null : !empty(professional_occupational_group.map('profession')) ? professional_occupational_group.map('profession') : !empty(professional_occupational_group.map('profession-alt')) ? professional_occupational_group.map('profession-alt') : null }>"
+            "<{$def_profession}/profession>": "<{professional_occupational_group.map(['profession', 'profession-alt'], $def_profession + '/' + professional_occupational_group.toCleanSegment().value)}>"
         }
     ]
 }

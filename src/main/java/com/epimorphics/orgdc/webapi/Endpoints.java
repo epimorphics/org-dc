@@ -99,7 +99,10 @@ public class Endpoints {
         }
         String tracelog = generateTrace(monitor, release, basename, duration, size);
         String tracefile = saveTrace( tracelog );
-        
+
+        if (debug) {
+            log.info( tracelog );
+        }
         if (smodel != null && jmodel != null) {
             smodel.add( jmodel );
             log.info( String.format("Request succceeded: %d triples, %d ms", size, duration) );

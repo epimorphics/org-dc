@@ -15,7 +15,7 @@
         "$def_ref":"http://reference.data.gov.uk/def/reference",
         "$def_csps":"http://reference.data.gov.uk/def/civil-service-post-status",
         "$def_grade":"http://reference.data.gov.uk/def/civil-service-grade",
-        "$def_dept":"http://reference.data.gov.uk/def/department",
+        "$def_dept":"http://reference.data.gov.uk/organogram/def/department",
         "$salary_base":"http://reference.data.gov.uk/id/salary-range",
         "$def_profession":"http://reference.data.gov.uk/def/civil-service-profession",
         "$def_job":"http://reference.data.gov.uk/def/civil-service-job",

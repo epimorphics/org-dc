@@ -2,7 +2,7 @@
     "type":"Composite",
     "name"  : "top/junior",
     "description" : "Mapping fields specific to junior posts",
-    "required":["grade"],
+    "required":["grade", "generic_job_title"],
     "bind" : {
         "$grade_base" : "{$def_dept}/{$dept_id}/grade",
         "$grade" : "{grade.toCleanSegment()}",
@@ -11,12 +11,33 @@
     "templates" : [
         "junior/post",
         "junior/grade",
-        "junior/grade-dataset",
         "junior/payband",
-        "junior/payband-dataset",
         "junior/salary-range"
     ],
     "oneOffs":[
+        {
+            "name":"junior/grade-dataset",
+            "@id":"<{$grade_base}>",
+            "<rdf:type>":["<void:Dataset>", "<skos:ConceptScheme>"],
+            "<skos:prefLabel>":"{lang(parent_department.value + ' Junior Civil Service Grades', 'en')}"
+        },
+        {
+            "name":"junior/payband-dataset",
+            "@id":"<{$pb_base}>",
+            "<rdf:type>":["<void:Dataset>", "<skos:ConceptScheme>"],
+            "<skos:prefLabel>":"{lang(parent_department.value + ' Junior Civil Service Paybands','en')}"
+        },
+        {
+            "name" : "junior/post-dataset",
+            "@id" : "<{$dataset}>",
+            "<void:exampleResource>" : "<{$dataset}/juniorPosts1>",
+            "<dct:license>" : "<http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/>",
+            "<qb:structure>" : "<http://reference.data.gov.uk/def/organogram/junior-posts>",
+            "<dct:temporal>" : "<{$date}>",
+            "<dct:title>" : "{parent_department} Junior Post FTEs at {$versionDate} Dataset ",
+            "<rdf:type>" : [ "<void:Dataset>", "<qb:dataSet>"],
+            "<void:vocabulary>" : [ "<qb:>", "<{$def_org}>", "<rdfs:>"]
+        }
     ],
     "referenced":[
         {
@@ -28,7 +49,10 @@
             "<{$def_org}/fullTimeEquivalent>" : "{number_of_posts_in_fte}",
             "<{$def_org}/grade>" : "<{$grade_base}/{$grade}>",
             "<{$def_org}/job>" : "<{$def_job}/{generic_job_title.toCleanSegment()}>",
-            "<rdfs:label>" : "{grade} {generic_job_title} ({professional_occupational_group}) in {unit} reporting to post {reporting_senior_post} FTE at {$versionDate}"
+            "<rdfs:label>" : "{grade} {generic_job_title} ({professional_occupational_group}) in {unit} reporting to post {reporting_senior_post} FTE at {$versionDate}",
+            "<{$def_org}/profession>": "<{professional_occupational_group.map(['profession', 'profession-alt'], $def_profession + '/' + professional_occupational_group.toCleanSegment().value)}>",
+            "<{$def_org}/reportingTo>" : "<{$organisation}/post/{reporting_senior_post}>",
+            "<{$def_org}/unit>" : "<{$unit}>"
         },
         {
             "name":"junior/grade",
@@ -38,12 +62,6 @@
             "^<skos:hasTopConcept>":"<{$grade_base}>",
             "<skos:prefLabel>":"{grade.lang('en')}",
             "<{$def_cspb}/payBand>":"<{$pb_base}/{$grade}>"
-        },
-        {
-            "name":"junior/grade-dataset",
-            "@id":"<{$grade_base}>",
-            "<rdf:type>":["<void:Dataset>", "<skos:ConceptScheme>"],
-            "<skos:prefLabel>":"{lang(parent_department.value + ' Junior Civil Service Grades', 'en')}"
         },
         {
             "name":"junior/payband",
@@ -56,12 +74,6 @@
             "<skos:prefLabel>" : "{lang(grade.value + ' Payband', 'en')}"
         },
         {
-            "name":"junior/payband-dataset",
-            "@id":"<{$pb_base}>",
-            "<rdf:type>":["<void:Dataset>", "<skos:ConceptScheme>"],
-            "<skos:prefLabel>":"{lang(parent_department.value + ' Junior Civil Service Paybands','en')}"
-        },
-        {
             "name":"junior/salary-range",
             "required" :["payscale_minimum_", "payscale_maximum_"],
             "@id":"<{$salary_base}/{payscale_minimum_}-{payscale_maximum_}>",
@@ -70,7 +82,7 @@
             "<{$def_gov}/upperBound>":"{payscale_maximum_}",
             "<rdf:type>":"<{$def_gov}/SalaryRange>",
             "<{$def_ref}/uriSet>":"<{$salary_base}>",
-            "<foaf:page>":"@@TBD"
+            "<foaf:page>":"<{$dataset}>"
         }
     ]
 }
