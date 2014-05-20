@@ -29,20 +29,21 @@
         },
         {
             "name" : "junior/post-dataset",
-            "@id" : "<{$dataset}>",
-            "<void:exampleResource>" : "<{$dataset}/juniorPosts1>",
+            "@id" : "<{$dataset}/juniorPosts>",
+            "<void:exampleResource>" : "<{$dataset}/juniorPosts/1>",
             "<dct:license>" : "<http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/>",
             "<qb:structure>" : "<http://reference.data.gov.uk/def/organogram/junior-posts>",
             "<dct:temporal>" : "<{$date}>",
             "<dct:title>" : "{parent_department} Junior Post FTEs at {$versionDate} Dataset ",
             "<rdf:type>" : [ "<void:Dataset>", "<qb:dataSet>"],
-            "<void:vocabulary>" : [ "<qb:>", "<{$def_org}>", "<rdfs:>"]
+            "<void:vocabulary>" : [ "<qb:>", "<{$def_org}>", "<rdfs:>"],
+            "^<void:subset>" : "<{$dataset}>"
         }
     ],
     "referenced":[
         {
             "name":"junior/post",
-            "@id":"<{$dataset}/juniorPosts{$row.number}>",
+            "@id":"<{$dataset}/juniorPosts/{$row.number}>",
             "<rdf:type>": "<qb:Observation>",
             "<qb:dataSet>" : "<{$dataset}/juniorPosts>",
             "<{$def_org}/date>" : "<{$date}>",

@@ -21,8 +21,6 @@
         "$def_job":"http://reference.data.gov.uk/def/civil-service-job",
         "$def_cspb":"http://reference.data.gov.uk/def/civil-service-payband"
     },
-    "oneOffs":[
-    ],
     "templates":[
         {
             "type":"Composite",
@@ -38,6 +36,18 @@
                 "$dataset":"{$ds_base}/{$versionDate}/{$dept_id}"
               }, {
                 "$unit":"{empty(unit) ? nullValue() : $organisation+'/unit/'+ unit.toCleanSegment() }"
+              }
+            ],
+            "oneOffs":[
+              {
+                "name" : "top/dataset",
+                "@id" : "<{$dataset}>",
+                "<void:exampleResource>" : ["<{$dataset}/person1>","<{$dataset}/tenure1>"],
+                "<dct:license>" : "<http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/>",
+                "<dct:temporal>" : "<{$date}>",
+                "<dct:title>" : "{parent_department} Organogram at {$versionDate} Dataset",
+                "<rdf:type>" : "<void:Dataset>",
+                "<void:vocabulary>" : [ "<org:>", "<{$def_gov}>", "<rdfs:>"]
               }
             ],
             "templates":[
