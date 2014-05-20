@@ -45,7 +45,7 @@
                 "<void:exampleResource>" : ["<{$dataset}/person1>","<{$dataset}/tenure1>"],
                 "<dct:license>" : "<http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/>",
                 "<dct:temporal>" : "<{$date}>",
-                "<dct:title>" : "{parent_department} Organogram at {$versionDate} Dataset",
+                "<dct:title>" : "{parent_department} Organogram at {$versionDate} Dataset@en",
                 "<rdf:type>" : "<void:Dataset>",
                 "<void:vocabulary>" : [ "<org:>", "<{$def_gov}>", "<rdfs:>"]
               }

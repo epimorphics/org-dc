@@ -104,7 +104,7 @@
             "<qb:dataSet>" : "<{$dataset}/salaryCostOfReports>",
             "<rdf:type>": "<qb:Observation>",
             "<{$def_org}/date>" : "<{$date}>",
-            "<rdfs:label>" : "{job_title} Salary Cost of Reports on {$versionDate}",
+            "<rdfs:label>" : "{job_title} Salary Cost of Reports on {$versionDate}@en",
             "<{$def_org}/post>" : "<{$post}>",
             "<{$def_org}/salaryCostOfReports>" : "{salary_cost_of_reports_}"
         }
