@@ -5,7 +5,7 @@
     "bind":[
               {
                 "$post":"{$organisation}/post/{post_unique_reference}",
-                "$reportsToPost":"{$organisation}/post/{reports_to_senior_post}"
+                "$reportsToPost":"{reports_to_senior_post == 'XX' ? nullValue() : $organisation.value + '/post/' + reports_to_senior_post.value}"
               }, {
                 "$holder":"{$dataset}/person{$row.number}",
                 "$tenure":"{$dataset}/tenure{$row.number}"
@@ -15,6 +15,7 @@
         "senior/post",
         "senior/salary range",
         "senior/holder",
+        "senior/holder-email",
         "senior/tenure",
         "senior/salary cost"
     ],
@@ -27,7 +28,7 @@
             "<qb:structure>" : "<http://reference.data.gov.uk/def/organogram/salary-cost-of-reports>",
             "<dct:temporal>" : "<{$date}>",
             "<dct:title>" : "{parent_department} Salary Cost of Reports at {$versionDate} Dataset ",
-            "<rdf:type>" : [ "<void:Dataset>", "<qb:dataSet>"],
+            "<rdf:type>" : [ "<void:Dataset>", "<qb:DataSet>"],
             "<void:vocabulary>" : [ "<qb:>", "<{$def_org}>", "<rdfs:>"],
             "^<void:subset>" : "<{$dataset}>"
         }
@@ -41,7 +42,7 @@
             "<skos:prefLabel>":"{job_title.lang('en')}",
             "<rdf:type>":[
                 "<{$def_gov}/CivilServicePost>",
-                "{$def_gov}/SeniorCivilServicePost"
+                "<{$def_gov}/SeniorCivilServicePost>"
             ],
             "<{$def_gov}/postIn>":[
                 "<{$organisation}>",
@@ -53,7 +54,7 @@
                 "{notes.lang('en')}",
                 "{job_team_function.lang('en')}"
             ],
-            "<{$def_grade}/grade>":"<{$def_grade}/{grade}",
+            "<{$def_grade}/grade>":"<{$def_grade}/{grade}>",
             "<skos:notation>":"{post_unique_reference}",
             "<{$def_gov}/salaryRange>":"<{$salary_base}/{actual_pay_floor_}-{actual_pay_ceiling_}>",
             "<{$def_gov}/heldBy>":"<{$holder}>",
@@ -64,7 +65,7 @@
             "name":"senior/salary range",
             "required" : ["$salary_base", "actual_pay_floor_", "actual_pay_ceiling_"],
             "@id":"<{$salary_base}/{actual_pay_floor_}-{actual_pay_ceiling_}>",
-            "<rdf:type>":"<{$def_gov}/SalaryRange",
+            "<rdf:type>":"<{$def_gov}/SalaryRange>",
             "<{$def_gov}/lowerBound>":"{actual_pay_floor_}",
             "<{$def_gov}/upperBound>":"{actual_pay_ceiling_}",
             "<rdfs:label>":"{lang('£'+actual_pay_floor_+'-£'+actual_pay_ceiling_,'en')}"
@@ -80,6 +81,12 @@
             "<{$def_profession}/profession>": "<{professional_occupational_group.map(['profession', 'profession-alt'], $def_profession + '/' + professional_occupational_group.toCleanSegment().value)}>",
             "<foaf:page>" : "<{$dataset}>",
             "<{$def_gov}/tenure>" : "<{$tenure}>"
+        },
+        {
+            "name" : "senior/holder-email",
+            "@id" : "<mailto:{contact_e_mail}>",
+            "<rdfs:label>" : "{contact_e_mail}",
+            "<rdf:type>" : "<vcard:Email>"
         },
         {
             "name" : "senior/tenure",

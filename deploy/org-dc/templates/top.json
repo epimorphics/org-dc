@@ -27,15 +27,15 @@
             "bind":[
               {
                 "$date" : "{$ref_day}/{$versionDate}",
-                "$dept_id":"{parent_department.map('department')!=null ? parent_department.map('department') : parent_department.toCleanSegment()}"
+                "$dept_id":"{parent_department.map(['department'], parent_department.toCleanSegment())}"
               }, {
                 "$org_base":"{parent_department == organisation ? $dept_base : $pb_base }",
                 "$parent_dept":"{$dept_base}/{$dept_id}"
               }, {
-                "$organisation":"{organisation.map('department')!=null ? $org_base + '/' + organisation.map('department') : $org_base + '/' + organisation.toCleanSegment()}",
+                "$organisation":"{$org_base}/{organisation.map(['department'], organisation.toCleanSegment())}",
                 "$dataset":"{$ds_base}/{$versionDate}/{$dept_id}"
               }, {
-                "$unit":"{empty(unit) ? nullValue() : $organisation+'/unit/'+ unit.toCleanSegment() }"
+                "$unit":"{empty(unit) || unit.value == 'N/A' ? nullValue() : $organisation.value+'/unit/'+ unit.toCleanSegment() }"
               }
             ],
             "oneOffs":[
@@ -80,7 +80,7 @@
                 "<org:Organization>",
                 "<{$def_gov}/PublicBody>"
             ],
-            "<{$def_gov}/parentDepartment>":"<{parent_department}>",
+            "<{$def_gov}/parentDepartment>":"<{$parent_dept}>",
             "<org:hasUnit>":"<{$unit}>",
             "<{$def_ref}/uriSet>":"<{$parent_dept==$organisation ? $dept_base : $pb_base}>",
             "<rdfs:label>":"{organisation.lang('en')}",

@@ -35,7 +35,7 @@
             "<qb:structure>" : "<http://reference.data.gov.uk/def/organogram/junior-posts>",
             "<dct:temporal>" : "<{$date}>",
             "<dct:title>" : "{parent_department} Junior Post FTEs at {$versionDate} Dataset ",
-            "<rdf:type>" : [ "<void:Dataset>", "<qb:dataSet>"],
+            "<rdf:type>" : [ "<void:Dataset>", "<qb:DataSet>"],
             "<void:vocabulary>" : [ "<qb:>", "<{$def_org}>", "<rdfs:>"],
             "^<void:subset>" : "<{$dataset}>"
         }

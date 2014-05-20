@@ -16,3 +16,4 @@
 @prefix org:  <http://www.w3.org/ns/org#> .
 @prefix organogram:  <http://reference.data.gov.uk/def/organogram/> .
 @prefix gov:  <http://reference.data.gov.uk/def/central-government/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/> .
