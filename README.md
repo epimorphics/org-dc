@@ -11,7 +11,12 @@ To request a data conversion POST to the service endpoint (to be agreed) a multi
 | `senior-csv` | File | CSV of senior posts |
 | `junior-csv` | File | CSV of junior posts |
 | `release` | String | Intended release date, format 2013-09-30 |
-| `basename` | String | Name for this dataset to use in URI segments, optional, defaults to filename |
+
+Some additional parameters are used in development but not needed in normal usage:
+
+| Parameter | Type | Meaning |
+|---|---|---|
+| `basename` | String | Name for this dataset to use in URI segments, optional, defaults to filename - no longer used |
 | `debug` | String | If present and set to "true" enables debug level logging of the processing |
 
 This will return a 200 response with the resulting RDF file (in Turtle format) or a 400 with a text/plain payload giving a trace of the data conversion including error messages.
@@ -26,7 +31,7 @@ The implementation is stateless and conversions are done in memory.
 
 Application log messages will be recorded by tomcat in catalina.out as usual which tomcat will rotate.
 
-For each conversion request a trace of the action will also be recorded in a timestamped `trace-{time}.txt` file in `/var/log/org-dc`.
+For each conversion request a trace of the action will be recorded in a timestamped `trace-{time}.txt` file in `/var/log/org-dc`.
 
 ## Configuration
 
