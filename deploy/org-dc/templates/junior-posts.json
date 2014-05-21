@@ -4,9 +4,9 @@
     "description" : "Mapping fields specific to junior posts",
     "required":["grade", "generic_job_title"],
     "bind" : {
-        "$grade_base" : "{$def_dept}/{$dept_id}/grade",
+        "$grade_base" : "{$org_def_base}/{$org_id}/grade",
         "$grade" : "{grade.toCleanSegment()}",
-        "$pb_base" : "{$def_dept}/{$dept_id}/payband"
+        "$pb_base" : "{$org_def_base}/{$org_id}/payband"
     },
     "templates" : [
         "junior/post",

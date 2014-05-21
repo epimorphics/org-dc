@@ -8,6 +8,8 @@
     "bind":{
         "$dept_base":"http://reference.data.gov.uk/id/department",
         "$pb_base":"http://reference.data.gov.uk/id/public-body",
+        "$dept_def_base":"http://reference.data.gov.uk/def/department",
+        "$pb_def_base":"http://reference.data.gov.uk/def/public-body",
         "$ds_base":"http://reference.data.gov.uk/organogram",
         "$ref_day" : "http://reference.data.gov.uk/id/day",
         "$def_org":"http://reference.data.gov.uk/def/organogram",
@@ -15,7 +17,6 @@
         "$def_ref":"http://reference.data.gov.uk/def/reference",
         "$def_csps":"http://reference.data.gov.uk/def/civil-service-post-status",
         "$def_grade":"http://reference.data.gov.uk/def/civil-service-grade",
-        "$def_dept":"http://reference.data.gov.uk/organogram/def/department",
         "$salary_base":"http://reference.data.gov.uk/id/salary-range",
         "$def_profession":"http://reference.data.gov.uk/def/civil-service-profession",
         "$def_job":"http://reference.data.gov.uk/def/civil-service-job",
@@ -27,13 +28,15 @@
             "bind":[
               {
                 "$date" : "{$ref_day}/{$versionDate}",
-                "$dept_id":"{parent_department.map(['department'], parent_department.toCleanSegment())}"
+                "$dept_id":"{parent_department.map(['department'], parent_department.toCleanSegment())}",
+                "$org_id" : "{organisation.map(['department'], organisation.toCleanSegment())}"
               }, {
                 "$org_base":"{parent_department == organisation ? $dept_base : $pb_base }",
+                "$org_def_base":"{parent_department == organisation ? $dept_def_base : $pb_def_base }",
                 "$parent_dept":"{$dept_base}/{$dept_id}"
               }, {
-                "$organisation":"{$org_base}/{organisation.map(['department'], organisation.toCleanSegment())}",
-                "$dataset":"{$ds_base}/{$versionDate}/{$dept_id}"
+                "$organisation":"{$org_base}/{$org_id}",
+                "$dataset":"{$ds_base}/{$versionDate}/{$org_id}"
               }, {
                 "$unit":"{empty(unit) || unit.value == 'N/A' ? nullValue() : $organisation.value+'/unit/'+ unit.toCleanSegment() }"
               }
