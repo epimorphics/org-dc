@@ -6,7 +6,7 @@
               {
                 "$post":"{$organisation}/post/{post_unique_reference}",
                 "$reportsToPost":"{reports_to_senior_post == 'XX' ? nullValue() : $organisation.value + '/post/' + reports_to_senior_post.value}",
-                "$mailto" : "{empty(contact_e_mail) ? nullValue() : contact_e_mail.replaceAll(' ','-')}"
+                "$mailto" : "{empty(contact_e_mail) ? nullValue() : contact_e_mail.replaceAll(' ','-').replaceAll('\u00a0','')}"
               }, {
                 "$holder":"{$dataset}/person{$row.number}",
                 "$tenure":"{$dataset}/tenure{$row.number}"
