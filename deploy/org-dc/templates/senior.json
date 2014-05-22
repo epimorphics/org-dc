@@ -50,7 +50,7 @@
                 "<{$unit}>"
             ],
             "<org:reportsTo>":"<{$reportsToPost}>",
-            "<{$def_csps}/postStatus>":"<{$def_csps}/{name.toLowerCase=='vacant' || name.toLowerCase=='eliminate' ? name.toLowerCase() : 'current'}>",
+            "<{$def_csps}/postStatus>":"<{$def_csps}/{name.toLowerCase=='vacant' || name.toLowerCase=='eliminated' ? name.toLowerCase() : 'current'}>",
             "<rdfs:comment>":[
                 "{notes.lang('en')}",
                 "{job_team_function.lang('en')}"
@@ -97,7 +97,7 @@
             "<{$def_gov}/post>" : "<{$post}>",
             "<foaf:page>" : "<{$dataset}>",
             "<rdfs:label>" : "{name} as {job_title}",
-            "<{$def_gov}/fullTimeEquivalent>" : "{fte}"
+            "<{$def_gov}/fullTimeEquivalent>" : "{fte.datatype('xsd:decimal')}"
         },
         {
             "name" : "senior/salary cost",
