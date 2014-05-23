@@ -4,7 +4,7 @@ Provides a RESTful service endpoint for converting Organogram CSV data pairs to 
 
 ## Service interface
 
-To request a data conversion POST to the service endpoint (to be agreed) a multi-part mime message with the following components:
+To request a data conversion POST to the service endpoint (to be agreed) a multi-part mime message (multipart/form-data) with the following components:
 
 | Parameter | Type | Meaning |
 |---|---|---|
