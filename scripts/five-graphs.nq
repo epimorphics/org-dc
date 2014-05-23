@@ -1,0 +1,13 @@
+<http://reference.data.gov.uk/organogram/2011-09-30/org1> <http://purl.org/dc/terms/temporal> <http://reference.data.gov.uk/id/day/2011-09-30> <http://reference.data.gov.uk/data/2011-09-30/org1> .
+<http://localhost/test> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "org1 2011-09-30" <http://reference.data.gov.uk/data/2011-09-30/org1> .
+<http://reference.data.gov.uk/organogram/2011-09-30/org2> <http://purl.org/dc/terms/temporal> <http://reference.data.gov.uk/id/day/2011-09-30> <http://reference.data.gov.uk/data/2011-09-30/org2> .
+<http://localhost/test> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "org2 2011-09-30" <http://reference.data.gov.uk/data/2011-09-30/org2> .
+<http://reference.data.gov.uk/organogram/2011-09-30/org3> <http://purl.org/dc/terms/temporal> <http://reference.data.gov.uk/id/day/2011-09-30> <http://reference.data.gov.uk/data/2011-09-30/org3> .
+<http://localhost/test> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "org3 2011-09-30" <http://reference.data.gov.uk/data/2011-09-30/org3> .
+<http://reference.data.gov.uk/organogram/2012-09-30/org1> <http://purl.org/dc/terms/temporal> <http://reference.data.gov.uk/id/day/2012-09-30> <http://reference.data.gov.uk/data/2012-09-30/org1> .
+<http://localhost/test> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "org1 2012-09-30" <http://reference.data.gov.uk/data/2012-09-30/org1> .
+<http://reference.data.gov.uk/organogram/2012-09-30/org2> <http://purl.org/dc/terms/temporal> <http://reference.data.gov.uk/id/day/2012-09-30> <http://reference.data.gov.uk/data/2012-09-30/org2> .
+<http://localhost/test> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "org2 2012-09-30" <http://reference.data.gov.uk/data/2012-09-30/org2> .
+<http://reference.data.gov.uk/organogram/2012-09-30/org3> <http://purl.org/dc/terms/temporal> <http://reference.data.gov.uk/id/day/2012-09-30> <http://reference.data.gov.uk/data/2012-09-30/org3> .
+<http://localhost/test> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "perm 1" <http://reference.data.gov.uk/data/perm/1> .
+<http://localhost/test> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "perm 2" <http://reference.data.gov.uk/data/perm/2> .
