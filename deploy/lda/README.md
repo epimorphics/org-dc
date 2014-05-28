@@ -67,7 +67,7 @@ Strictly the XSLT assets need only be locally accessible to the webapplication c
 
       http://<hostname>/lda-assets/...
 
-That can be changed if necessary by changing the value of the `_resourceRoot` variable in the api configuration file.
+The location relative to the current host be changed if necessary by changing the value of the `_resourceRoot` variable in the api configuration file. However, some apache httpd-conf magic will be neccessary if the asset bundle is separated from the Tomcat deployment.
 
 Likewise the preconfigured SPARQL endpoint and/or its externally visible access and form URL may also need tweaking.
 
