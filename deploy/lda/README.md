@@ -35,6 +35,12 @@ The resulting `.war` file should turn up in the `target` directory.
 
 There are prebuilt elda war files that cover a number of potential usages and avoid the step of having to manage a build of your own deployable web application.
 
+These pre-build files are available in the Epimorphics public mave repo under:
+
+      http://repository.epimorphics.com/com/epimorphics/lda/
+      
+At the time of writing I'd recommend the `1.2.34-SNAPSHOT` versions and preferably the `1.2.34` release that should follow.
+
 Elda Bundled is a combination of Elda-Common and Elda-Assets as a single .war file. Unfortunately the layout of the assest bundle with Elda Bundled is currently inconsistent with common practice (which group the assets bundle in a directory named `lda-assets`).
 
 The best approach for using these pre-build files is to unpack `elda-assets` bundle, merge in the local `lda-asset` changes/additions from this project and serve the static assets directly from a front-end apache server. This is roughly what's been done for the LR deployment.
