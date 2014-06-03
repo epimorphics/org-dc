@@ -35,7 +35,7 @@
 ##
 ## API
 ##
-<http://localhost:3030/store/sparql> elda:supportsNestedSelect true .  
+<http://localhost:3030/ds/sparql> elda:supportsNestedSelect true .  
 spec:api  a                   api:API ;
 #
 # This API base setting ensures that the external page URI are rooted at the top of the 
@@ -54,7 +54,7 @@ spec:api  a                   api:API ;
         api:defaultPageSize   "20" ;
         api:defaultViewer     api:labelledDescribeViewer ;
         api:maxPageSize       "300" ;
-        api:sparqlEndpoint    <http://localhost:3030/store/sparql> ;
+        api:sparqlEndpoint    <http://localhost:3030/ds/sparql> ;
         api:variable        [ api:name "base" ; api:value "http://reference.data.gov.uk" ] ;
         api:viewer            api:describeViewer , api:labelledDescribeViewer, spec:minimalViewer ;
         .
@@ -94,10 +94,9 @@ spec:HtmlFormatter
             api:name                "html" ;
             api:mimeType            "text/html;charset=UTF-8";
             elda:metadataOptions    "bindings,versions,execution,formats";
-            api:stylesheet          "lda-assets/xslt/staging-org.xsl";
-#            api:stylesheet          "lda-assets/xslt/staging.xsl";
-#            api:stylesheet          "lda-assets/xslt/result.xsl";
-#            api:stylesheet          "lda-assets/xslt/null.xsl";
+            api:stylesheet          "file:///var/www/html/reference/lda-assets/xslt/staging-org.xsl";
+#           api:stylesheet          "file:///var/www/html/reference/lda-assets/xslt/org.xsl";
+#           api:stylesheet          "file:///var/www/html/reference/lda-assets/xslt/null.xsl";
             .
 
 spec:CsvFormatter
@@ -108,7 +107,7 @@ spec:CsvFormatter
 ## elda special
 ## 
             elda:metadataOptions  "bindings,versions,execution,formats";
-            api:stylesheet           "lda-assets/xslt/csv.xsl" .
+            api:stylesheet        "file:///var/www/html/reference/lda-assets/xslt/csv.xsl" .
 
 ##############################################################################################
 ## Definition API Endpoints
@@ -1903,5 +1902,3 @@ gov:postHolder
         a           rdf:Property ;
         api:label   "postHolder" ;
         .
-        
-        
