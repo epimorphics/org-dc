@@ -54,6 +54,7 @@ spec:api  a                   api:API ;
         api:defaultPageSize   "20" ;
         api:defaultViewer     api:labelledDescribeViewer ;
         api:maxPageSize       "300" ;
+        elda:cacheExpiryTime  "60m" ;
         api:sparqlEndpoint    <http://localhost:3030/ds/sparql> ;
         api:variable        [ api:name "base" ; api:value "http://reference.data.gov.uk" ] ;
         api:viewer            api:describeViewer , api:labelledDescribeViewer, spec:minimalViewer ;
