@@ -3,9 +3,14 @@
 ########################################################
 sudo apt-get install apache2
 sudo apt-get install tomcat7
+sudo apt-get install subversion
+sudo apt-get install git
+sudo apt-get install maven
+sudo apt-get install openjdk-7-jdk
 ########################################################
 # Download, build and install intervals server
 ########################################################
+mkdir workspace
 cd workspace
 svn co https://venture2.projectlocker.com/Epimorphics/skw/svn/IntervalServer/trunk IntervalServer
 cd IntervalServer
@@ -23,7 +28,7 @@ wget http://repository.epimorphics.com/com/epimorphics/lda/elda-assets/1.2.34-SN
 # Unpack common assets so that they can be served by apache.
 ########################################################
 sudo mkdir -p /var/www/html/reference/lda-assets
-cd /var/www/html/reference/lda-assets/reference/lda-assets
+cd /var/www/html/reference/lda-assets/
 sudo unzip ~/tmp/elda-assets-1.2.34-20140521.100640-2.war
 ########################################################
 # Remove a file that shouldn't be there
@@ -44,7 +49,7 @@ sudo cp -Rvf lda-assets /var/www/html/reference/
 # Put lda config in place
 ########################################################
 sudo mkdir -p /etc/elda/conf.d/organogram
-sudo cp -Rv etc/elda/conf.d/ROOT/organogram-lda-config.ttl  /etc/elda/conf.d/organogram/organogram-lda-config.ttl
+sudo cp -Rv etc/elda/conf.d/organogram/organogram-lda-config.ttl  /etc/elda/conf.d/organogram/organogram-lda-config.ttl
 ########################################################
 # deploy elda-common as organogram
 ########################################################
@@ -65,8 +70,8 @@ sudo cp target/elda-starter.war /var/lib/tomcat7/webapps/organogram.war
 ########################################################
 sudo a2enmod rewrite expires proxy proxy_http cache cache_disk 
 cd ~/git/org-dc/deploy/lda/apache
-sudo cp reference.conf /etc/apache2/sites-available/
-sudo a2dissite 000-default
+sudo cp reference.conf /etc/apache2/sites-available/reference
+sudo a2dissite default
 sudo a2ensite reference
 sudo service apache restart
 ########################################################
