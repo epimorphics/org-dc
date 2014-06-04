@@ -22,9 +22,8 @@ wget http://repository.epimorphics.com/com/epimorphics/lda/elda-assets/1.2.34-SN
 ########################################################
 # Unpack common assets so that they can be served by apache.
 ########################################################
-cd /var/www/html
-sudo mkdir -p reference/lda-assets
-cd reference/lda-assets
+sudo mkdir -p /var/www/html/reference/lda-assets
+cd /var/www/html/reference/lda-assets/reference/lda-assets
 sudo unzip ~/tmp/elda-assets-1.2.34-20140521.100640-2.war
 ########################################################
 # Remove a file that shouldn't be there
