@@ -1,0 +1,327 @@
+# Base vocabulary for (UK) public sector bodies, building upon generic org vocab
+# Design use cases:
+#     - core metadata - type, name
+#     - contact information
+#     - senior executives
+#     - link to organizational sub-structure and associated services
+#       (neutral to the details and terminology for that structure) 
+
+@prefix rdf:            <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:           <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:            <http://www.w3.org/2002/07/owl#> .
+@prefix vs:             <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix xsd:            <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:           <http://www.w3.org/2004/02/skos/core#> .
+@prefix foaf:           <http://xmlns.com/foaf/0.1/> .
+@prefix void:           <http://rdfs.org/ns/void#> .
+@prefix qb:             <http://purl.org/linked-data/cube#> .
+@prefix dcterms:        <http://purl.org/dc/terms/> .
+@prefix org:            <http://www.w3.org/ns/org#> .
+@prefix vcard:          <http://www.w3.org/2006/vcard/ns#> .
+@prefix event:		<http://purl.org/NET/c4dm/event.owl#> .
+@prefix statsGeo:       <http://statistics.data.gov.uk/def/administrative-geography/> .
+@prefix payment:        <http://reference.data.gov.uk/def/payment#> .
+@prefix interval:       <http://reference.data.gov.uk/def/intervals/>.
+@prefix gov:		<http://reference.data.gov.uk/def/central-government/> .
+@prefix postcode:       <http://data.ordnancesurvey.co.uk/ontology/postcode/postcode> .
+@prefix geo:            <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix spatialrelations: <http://data.ordnancesurvey.co.uk/ontology/spatialrelations/> .
+@prefix admingeo:       <http://data.ordnancesurvey.co.uk/ontology/admingeo/> .
+
+@prefix psb:  <http://reference.data.gov.uk/def/public-sector-body#> .
+@base         <http://reference.data.gov.uk/def/public-sector-body#> .
+
+# -- Meta data -----------------------------------------------------------
+
+<>
+    a owl:Ontology;
+    owl:versionInfo "0.4";
+    rdfs:label "Public Sector Body base ontology"@en;
+    rdfs:comment """"Base vocabulary for public sector bodies such as Local Authorities, building upon generic org vocab. Designed to support:
+    <ul><li>core metadata - type, name</li>
+    <li>contact information</li>
+    <li>senior executives</li>
+    <li>organizational units with contact details and associated services</li>"""@en;
+    dcterms:created  "2010-09-07"^^xsd:date;
+    dcterms:modified "2010-10-27"^^xsd:date;
+    dcterms:contributor [foaf:mbox "dave@epimorphics.com";  foaf:name "Dave Reynolds"];
+    dcterms:license <http://www.opendatacommons.org/licenses/pddl/1.0/> ;
+    .
+
+# -- Types of local authority --------------------------------------------------
+
+psb:Body a rdfs:Class, owl:Class;
+    rdfs:label "Public sector body"@en;
+    rdfs:comment """Any form of public sector budy such as a local authority."""@en;
+    rdfs:subClassOf  org:FormalOrganization, foaf:Organization ;
+    vs:term_status "proposed";    rdfs:isDefinedBy <> .
+
+psb:LocalAuthority a rdfs:Class, owl:Class;
+    rdfs:label "Local authority"@en;
+    rdfs:comment """Any form of public sector body with a regional coverage, including county councils, district councils and unitary authorities. 
+Relevant descriptive properties to consider include: <ul>
+<li>owl:sameAs links to statistics.gov.uk and others as desired (e.g. OpenlyLocal, dbpedia), 
+     to link to wikipedia use foaf:isPrimaryTopicOf</li>
+<li>rdfs:label</li>
+<li>psb:officialName, psb:vernacularName, skos:altLabel</li>
+<li>psb:coverage link to the region served</li>
+<li>skos:notation "xxxx"^^statsGeo:StandardCode giving the SNAC code</li>
+<li>psb:localAuthorityType link to a categorization of the local authority, e.g. as provided by ESDToolit</li>
+<li>org:hasPrimarySite with a VCard to give the location and contacts details for the main council site</li>
+<li>org:hasSite for other sites</li>
+<li>psb:mainPhone, psb:phone, psb:contactForm, psb:contactInformation</li>
+<li>foaf:homepage, foaf:mbox, foaf:holdsAccount (if appropriate)</li>
+<li>gov:hasPost for senior officers, especially chief execution</li>
+<li>org:hasUnit links to organzation units (such as Departments or Directorates)
+</ul>"""@en;
+    rdfs:subClassOf  psb:Body, statsGeo:LocalAuthority ;
+    vs:term_status "proposed";    rdfs:isDefinedBy <> .
+
+psb:localAuthorityType a rdf:Property, owl:ObjectProperty;
+    rdfs:label "local authority type"@en;
+    rdfs:comment "Gives a classification for the local authority in terms of a controlled list of types"@en;
+    rdfs:subPropertyOf org:classification;
+    rdfs:domain psb:LocalAuthority;
+    rdfs:range skos:Concept;
+    vs:term_status "proposed";    rdfs:isDefinedBy <> .
+
+## Codify expected properties --------------------------------------------------
+# Here we use minCardinality of 0 to indicate optional properties which might be considered
+# and minCardinality 1 to indicate properties that are expected. Note that the open world
+# assumption still applies, a minCardinality 1 property can be omitted from any particular
+# data set without problems though its omission should be detected as a warning by any 
+# lint-like checking tools.
+
+psb:Body
+    rdfs:subClassOf [ a owl:Restriction;
+        owl:onProperty psb:officialName;
+        owl:cardinality 1 ] ;
+
+    rdfs:subClassOf [ a owl:Restriction;
+        owl:onProperty psb:vernacularName;
+        owl:cardinality 1 ] ;
+
+    rdfs:subClassOf [ a owl:Restriction;
+        owl:onProperty org:hasPrimarySite;
+        owl:minCardinality 1 ] ;
+
+    rdfs:subClassOf [ a owl:Restriction;
+        owl:onProperty org:hasSite;     # for other premises
+        owl:minCardinality 0 ] ;        
+
+    rdfs:subClassOf [ a owl:Restriction;
+        owl:onProperty foaf:holdsAccount;
+        owl:minCardinality 0 ] ;
+
+    rdfs:subClassOf [ a owl:Restriction;
+        owl:onProperty foaf:homepage;
+        owl:minCardinality 0 ] ;
+
+    rdfs:subClassOf [ a owl:Restriction;
+        owl:onProperty psb:contactForm;
+        owl:minCardinality 0 ] ;
+
+    rdfs:subClassOf [ a owl:Restriction;
+        owl:onProperty psb:contactInformation;
+        owl:minCardinality 0 ] ;
+
+    rdfs:subClassOf [ a owl:Restriction;
+        owl:onProperty foaf:mbox;
+        owl:minCardinality 1 ] ;
+
+    rdfs:subClassOf [ a owl:Restriction;
+        owl:onProperty psb:mainPhone;
+        owl:minCardinality 0 ] ;
+
+    rdfs:subClassOf [ a owl:Restriction;
+        owl:onProperty psb:phone;
+        owl:minCardinality 0 ] ;
+
+    rdfs:subClassOf [ a owl:Restriction;
+        owl:onProperty foaf:isPrimaryTopicOf;   # For wikipedia links
+        owl:minCardinality 0 ] ;
+
+    rdfs:subClassOf [ a owl:Restriction;
+        owl:onProperty gov:hasPost ;
+        owl:minCardinality 0 ] ;
+
+    rdfs:subClassOf [ a owl:Restriction;
+        owl:onProperty org:hasUnit;		# For departments/directorates
+        owl:minCardinality 0 ] ;
+    .
+
+psb:LocalAuthority
+    rdfs:subClassOf [ a owl:Restriction;
+        owl:onProperty psb:coverage;
+        owl:minCardinality 1 ] ;
+
+    rdfs:subClassOf [ a owl:Restriction;
+        owl:onProperty psb:localAuthorityType;
+        owl:minCardinality 1 ] ;
+
+    rdfs:subClassOf [ a owl:Restriction;
+        owl:onProperty skos:notation;    # for SNAC code
+        owl:minCardinality 0 ] ;
+    .
+
+# -- naming ----------------------------------------------------------------
+
+psb:officialName a rdf:Property, owl:DatatypeProperty ;
+    rdfs:label "official name"@en;
+    rdfs:comment "The official name for a body or region, as defined in legislation"@en; 
+    rdfs:subPropertyOf rdfs:label;
+    .
+
+psb:vernacularName a rdf:Property, owl:DatatypeProperty ;
+    rdfs:label "official name"@en;
+    rdfs:comment "Commonly used name for a body or region, alternative non-preferred names can be given by skos:altLabel"@en; 
+    rdfs:subPropertyOf rdfs:label;
+    .
+
+# -- Link to service classifications ---------------------------------------
+
+psb:providesService a rdf:Property, owl:ObjectProperty;
+    rdfs:label "provides services"@en;
+    rdfs:comment """Indicates a service (described using SKOS) which is
+    provided by an organzation or a unit of an organization. """@en;
+    rdfs:domain org:Organization;
+    rdfs:range  skos:Concept ;	
+    vs:term_status "proposed";    rdfs:isDefinedBy <> .
+
+psb:coverage a rdf:Property, owl:ObjectProperty ;
+    rdfs:label "coverage"@en;
+    rdfs:comment """The administrative area covered by this authority"""@en;
+    rdfs:domain  psb:LocalAuthority;
+    rdfs:range   admingeo:CivilAdministrativeArea;
+    vs:term_status "proposed";    rdfs:isDefinedBy <> .
+    
+# -- Contact details -----------------------------------------------------------
+
+psb:Contact a rdfs:Class, owl:Class;
+    rdfs:label "contact details"@en;
+    rdfs:comment """A means of contact including email, phone, mail addresses, physical site. Defined as a
+union of the vcard types (Address, Email, Tel) and org:Site. Provided so that contact annotations can
+e associated with any of these contact mechanisms."""@en;
+    rdfs:subClassOf
+         [ a owl:Class ;
+             owl:unionOf ( vcard:Address vcard:Email vcard:Tel org:Site )
+         ] ;
+    .
+
+psb:mainPhone a rdf:Property, owl:ObjectProperty;
+    rdfs:label "main phone"@en;
+    rdfs:comment "The primary contact phone number, this should be a vcard:Tel using appropriate annotations to describe access information and purpose/coverage information"@en;
+    rdfs:range vcard:Tel;
+    vs:term_status "proposed";    rdfs:isDefinedBy <> .
+
+psb:phone a rdf:Property, owl:ObjectProperty;
+    rdfs:label "phone"@en;
+    rdfs:comment "A contact phone number, this should be a vcard:Tel using appropriate annotations to describe access information and purpose/coverage information"@en;
+    rdfs:range vcard:Tel;
+    vs:term_status "proposed";    rdfs:isDefinedBy <> .
+
+psb:accessInformation a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "contact access information"@en;
+    rdfs:comment """A textual description of access information for the contact point. 
+This might include opening hours or accessibility information."""@en;
+    rdfs:domain psb:Contact ;
+    vs:term_status "proposed";    rdfs:isDefinedBy <> .
+
+psb:contactPurpose a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "contact point purpose"@en;
+    rdfs:comment """A textual description of what the purpose of this access point is, 
+a description of the type of enquires handled."""@en;
+    rdfs:domain psb:Contact ;
+    vs:term_status "proposed";    rdfs:isDefinedBy <> .
+
+psb:OutOfHours a rdfs:Class, owl:Class ;
+    rdfs:label "out-of-hours number"@en;
+    rdfs:comment "A phone number for emergency or out-of-hours contact"@en;
+    rdfs:subClassOf vcard:tel;
+    vs:term_status "proposed";    rdfs:isDefinedBy <> .
+
+psb:contactForm a rdf:Property, owl:ObjectProperty;
+    rdfs:label "contact form"@en;
+    rdfs:comment "gives a web contact form for the organization"@en;
+    rdfs:domain psb:Body;
+    vs:term_status "proposed";    rdfs:isDefinedBy <> .
+
+psb:contactInformation a rdf:Property, owl:ObjectProperty;
+    rdfs:label "contact information"@en;
+    rdfs:comment "gives a web page listing contact details for the organization"@en;
+    rdfs:domain psb:Body;
+    vs:term_status "proposed";    rdfs:isDefinedBy <> .
+
+## Location information -----------------------------------------------------
+
+org:Site
+    rdfs:subClassOf [ a owl:Restriction;
+        owl:onProperty geo:lat;
+        owl:minCardinality 0 ] ;
+
+    rdfs:subClassOf [ a owl:Restriction;
+        owl:onProperty geo:long;
+        owl:minCardinality 0 ] ;
+
+    rdfs:subClassOf [ a owl:Restriction;
+        owl:onProperty spatialrelations:easting;
+        owl:minCardinality 0 ] ;
+
+    rdfs:subClassOf [ a owl:Restriction;
+        owl:onProperty spatialrelations:northing;
+        owl:minCardinality 0 ] ;
+
+    rdfs:subClassOf [ a owl:Restriction;
+        owl:onProperty psb:accessInformation;
+        owl:minCardinality 0 ] ;
+
+    rdfs:subClassOf [ a owl:Restriction;
+        owl:onProperty postcode:postcode;
+        owl:minCardinality 0 ] ;
+    .
+
+# -- Posts for senior officers -----------------------------------------------------------
+
+psb:ChiefExecutive a rdfs:Class, owl:Class;
+    rdfs:label "Chief Executive"@en;
+    rdfs:comment """Post of Chief Executive. The instances (different for each local authority) should
+link to the Authority using gov:postIn and to the individual currently holding the post using gov:heldBy/gov:holdsPost"""@en;
+    rdfs:subClassOf gov:Post ;
+    vs:term_status "proposed";    rdfs:isDefinedBy <> .
+
+psb:Leader a rdfs:Class, owl:Class;
+    rdfs:label "Leader"@en;
+    rdfs:comment """Post of council leader. The instances (different for each local authority) should
+link to the Authority using gov:postIn and to the individual currently holding the post using gov:heldBy/gov:holdsPost"""@en;
+    rdfs:subClassOf gov:Post ;
+    vs:term_status "proposed";    rdfs:isDefinedBy <> .
+
+psb:DeputyLeader a rdfs:Class, owl:Class;
+    rdfs:label "Deputy Leader"@en;
+    rdfs:comment """Post of deputy council leader. The instances (different for each local authority) should
+link to the Authority using gov:postIn and to the individual currently holding the post using gov:heldBy/gov:holdsPost"""@en;
+    rdfs:subClassOf gov:Post ;
+    vs:term_status "proposed";    rdfs:isDefinedBy <> .
+
+psb:Chairman a rdfs:Class, owl:Class;
+    rdfs:label "Chairman"@en;
+    rdfs:comment """Post of council chairman. The instances (different for each local authority) should
+link to the Authority using gov:postIn and to the individual currently holding the post using gov:heldBy/gov:holdsPost"""@en;
+    rdfs:subClassOf gov:Post ;
+    vs:term_status "proposed";    rdfs:isDefinedBy <> .
+
+psb:Mayor a rdfs:Class, owl:Class;
+    rdfs:label "Mayor"@en;
+    rdfs:comment """Post of Mayor, covers Lord Mayors and elected Mayors. The instances (different for each local authority) 
+link to the Authority using gov:postIn and to the individual currently holding the post using gov:heldBy/gov:holdsPost."""@en;
+    rdfs:subClassOf gov:Post ;
+    vs:term_status "proposed";    rdfs:isDefinedBy <> .
+
+psb:chiefExecutive a rdf:Property, owl:ObjectProperty;
+    rdfs:label "chief executive"@en;
+    rdfs:comment "A short cut indicating the person who currently holds the post of Chief Executive of this local authority"@en;
+    rdfs:subPropertyOf org:hasMember;
+    rdfs:domain psb:LocalAuthority ;
+    rdfs:range  foaf:Agent ;
+    vs:term_status "proposed";    rdfs:isDefinedBy <> .
+

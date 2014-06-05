@@ -1,0 +1,304 @@
+<rdf:RDF
+    xmlns:sdmx-subject="http://purl.org/linked-data/sdmx/2009/subject#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:sdmx-dimension="http://purl.org/linked-data/sdmx/2009/dimension#"
+    xmlns:sdmx-measure="http://purl.org/linked-data/sdmx/2009/measure#"
+    xmlns:sdmx-attribute="http://purl.org/linked-data/sdmx/2009/attribute#"
+    xmlns:coins-data="http://source.data.gov.uk/data/coins/"
+    xmlns:coins-dsd="http://finance.data.gov.uk/dsd/coins/"
+    xmlns:coins-dimension="http://finance.data.gov.uk/dsd/coins/dimension/"
+    xmlns:void="http://rdfs.org/ns/void#"
+    xmlns:coins-measure="http://finance.data.gov.uk/dsd/coins/measure/"
+    xmlns:j.0="http://www.epimorphics.com/vocabs/coins-generate#"
+    xmlns:coins-attribute="http://finance.data.gov.uk/dsd/coins/attribute/"
+    xmlns:sdmx-concept="http://purl.org/linked-data/sdmx/2009/concept#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:coins-slicekey="http://finance.data.gov.uk/dsd/coins/slice/"
+    xmlns:sdmx="http://purl.org/linked-data/sdmx#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:sdmx-code="http://purl.org/linked-data/sdmx/2009/code#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:j.1="http://finance.data.gov.uk/def/coins/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:qb="http://purl.org/linked-data/cube#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <rdfs:Class rdf:about="http://finance.data.gov.uk/def/coins/PesaCurrentGrants">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:label xml:lang="en">pesa current grants values class</rdfs:label>
+    <skos:prefLabel xml:lang="en">pesa current grants values class</skos:prefLabel>
+    <rdfs:comment>The class of values in the pesa current grants code-list scheme</rdfs:comment>
+  </rdfs:Class>
+  <sdmx:Concept rdf:about="http://finance.data.gov.uk/def/coins/statistical-concept/pesa-current-grants">
+    <rdfs:label xml:lang="en">pesa current grants</rdfs:label>
+    <skos:prefLabel xml:lang="en">pesa current grants</skos:prefLabel>
+    <rdfs:comment>Used to identify the main types of current grants paid to local authorities.</rdfs:comment>
+    <dcterms:source rdf:resource="http://www.hm-treasury.gov.uk/d/coins_guidance.pdf"/>
+    <j.0:columnName>pesa_current_grants</j.0:columnName>
+  </sdmx:Concept>
+  <skos:ConceptScheme rdf:about="http://finance.data.gov.uk/def/coins/pesa-current-grants">
+    <skos:hasTopConcept>
+      <j.1:PesaCurrentGrants rdf:about="http://finance.data.gov.uk/def/coins/pesa-current-grants/laa">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Local area agreements</rdfs:label>
+        <skos:prefLabel xml:lang="en">Local area agreements</skos:prefLabel>
+        <skos:notation>laa</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/pesa-current-grants"/>
+      </j.1:PesaCurrentGrants>
+    </skos:hasTopConcept>
+    <rdfs:label xml:lang="en">pesa current grants code list concept scheme</rdfs:label>
+    <skos:hasTopConcept>
+      <j.1:PesaCurrentGrants rdf:about="http://finance.data.gov.uk/def/coins/pesa-current-grants/sc">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Social Care</rdfs:label>
+        <skos:prefLabel xml:lang="en">Social Care</skos:prefLabel>
+        <skos:notation>sc</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/pesa-current-grants"/>
+      </j.1:PesaCurrentGrants>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:PesaCurrentGrants rdf:about="http://finance.data.gov.uk/def/coins/pesa-current-grants/sure-start">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Sure start</rdfs:label>
+        <skos:prefLabel xml:lang="en">Sure start</skos:prefLabel>
+        <skos:notation>sure-start</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/pesa-current-grants"/>
+      </j.1:PesaCurrentGrants>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:PesaCurrentGrants rdf:about="http://finance.data.gov.uk/def/coins/pesa-current-grants/rr">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Rent rebates</rdfs:label>
+        <skos:prefLabel xml:lang="en">Rent rebates</skos:prefLabel>
+        <skos:notation>rr</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/pesa-current-grants"/>
+      </j.1:PesaCurrentGrants>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:PesaCurrentGrants rdf:about="http://finance.data.gov.uk/def/coins/pesa-current-grants/ra">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Rent allowances</rdfs:label>
+        <skos:prefLabel xml:lang="en">Rent allowances</skos:prefLabel>
+        <skos:notation>ra</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/pesa-current-grants"/>
+      </j.1:PesaCurrentGrants>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:PesaCurrentGrants rdf:about="http://finance.data.gov.uk/def/coins/pesa-current-grants/rdf">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">RDA development fund</rdfs:label>
+        <skos:prefLabel xml:lang="en">RDA development fund</skos:prefLabel>
+        <skos:notation>rdf</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/pesa-current-grants"/>
+      </j.1:PesaCurrentGrants>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:PesaCurrentGrants rdf:about="http://finance.data.gov.uk/def/coins/pesa-current-grants/gt">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">GLA transport</rdfs:label>
+        <skos:prefLabel xml:lang="en">GLA transport</skos:prefLabel>
+        <skos:notation>gt</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/pesa-current-grants"/>
+      </j.1:PesaCurrentGrants>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:PesaCurrentGrants rdf:about="http://finance.data.gov.uk/def/coins/pesa-current-grants/lsc-grants">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">LSC grants</rdfs:label>
+        <skos:prefLabel xml:lang="en">LSC grants</skos:prefLabel>
+        <skos:notation>lsc-grants</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/pesa-current-grants"/>
+      </j.1:PesaCurrentGrants>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:PesaCurrentGrants rdf:about="http://finance.data.gov.uk/def/coins/pesa-current-grants/rsg">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Revenue support grant</rdfs:label>
+        <skos:prefLabel xml:lang="en">Revenue support grant</skos:prefLabel>
+        <skos:notation>rsg</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/pesa-current-grants"/>
+      </j.1:PesaCurrentGrants>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:PesaCurrentGrants rdf:about="http://finance.data.gov.uk/def/coins/pesa-current-grants/health">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Health</rdfs:label>
+        <skos:prefLabel xml:lang="en">Health</skos:prefLabel>
+        <skos:notation>health</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/pesa-current-grants"/>
+      </j.1:PesaCurrentGrants>
+    </skos:hasTopConcept>
+    <skos:prefLabel xml:lang="en">pesa current grants code list concept scheme</skos:prefLabel>
+    <skos:hasTopConcept>
+      <j.1:PesaCurrentGrants rdf:about="http://finance.data.gov.uk/def/coins/pesa-current-grants/lbgis">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">LA business growth incentive scheme</rdfs:label>
+        <skos:prefLabel xml:lang="en">LA business growth incentive scheme</skos:prefLabel>
+        <skos:notation>lbgis</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/pesa-current-grants"/>
+      </j.1:PesaCurrentGrants>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:PesaCurrentGrants rdf:about="http://finance.data.gov.uk/def/coins/pesa-current-grants/sra">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Strategic Rail Authority</rdfs:label>
+        <skos:prefLabel xml:lang="en">Strategic Rail Authority</skos:prefLabel>
+        <skos:notation>sra</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/pesa-current-grants"/>
+      </j.1:PesaCurrentGrants>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:PesaCurrentGrants rdf:about="http://finance.data.gov.uk/def/coins/pesa-current-grants/ssg">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Schools standard grant</rdfs:label>
+        <skos:prefLabel xml:lang="en">Schools standard grant</skos:prefLabel>
+        <skos:notation>ssg</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/pesa-current-grants"/>
+      </j.1:PesaCurrentGrants>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:PesaCurrentGrants rdf:about="http://finance.data.gov.uk/def/coins/pesa-current-grants/lfsis">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Locally financed support in Scotland</rdfs:label>
+        <skos:prefLabel xml:lang="en">Locally financed support in Scotland</skos:prefLabel>
+        <skos:notation>lfsis</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/pesa-current-grants"/>
+      </j.1:PesaCurrentGrants>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:PesaCurrentGrants rdf:about="http://finance.data.gov.uk/def/coins/pesa-current-grants/ccrctb">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Community charge rebates / council tax benefits</rdfs:label>
+        <skos:prefLabel xml:lang="en">Community charge rebates / council tax benefits</skos:prefLabel>
+        <skos:notation>ccrctb</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/pesa-current-grants"/>
+      </j.1:PesaCurrentGrants>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:PesaCurrentGrants rdf:about="http://finance.data.gov.uk/def/coins/pesa-current-grants/police">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Police</rdfs:label>
+        <skos:prefLabel xml:lang="en">Police</skos:prefLabel>
+        <skos:notation>police</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/pesa-current-grants"/>
+      </j.1:PesaCurrentGrants>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:PesaCurrentGrants rdf:about="http://finance.data.gov.uk/def/coins/pesa-current-grants/dsg">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Dedicated Schools Grant</rdfs:label>
+        <skos:prefLabel xml:lang="en">Dedicated Schools Grant</skos:prefLabel>
+        <skos:notation>dsg</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/pesa-current-grants"/>
+      </j.1:PesaCurrentGrants>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:PesaCurrentGrants rdf:about="http://finance.data.gov.uk/def/coins/pesa-current-grants/sp">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Supporting people</rdfs:label>
+        <skos:prefLabel xml:lang="en">Supporting people</skos:prefLabel>
+        <skos:notation>sp</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/pesa-current-grants"/>
+      </j.1:PesaCurrentGrants>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:PesaCurrentGrants rdf:about="http://finance.data.gov.uk/def/coins/pesa-current-grants/ea">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Environment Agency</rdfs:label>
+        <skos:prefLabel xml:lang="en">Environment Agency</skos:prefLabel>
+        <skos:notation>ea</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/pesa-current-grants"/>
+      </j.1:PesaCurrentGrants>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:PesaCurrentGrants rdf:about="http://finance.data.gov.uk/def/coins/pesa-current-grants/sf">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Standards fund</rdfs:label>
+        <skos:prefLabel xml:lang="en">Standards fund</skos:prefLabel>
+        <skos:notation>sf</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/pesa-current-grants"/>
+      </j.1:PesaCurrentGrants>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:PesaCurrentGrants rdf:about="http://finance.data.gov.uk/def/coins/pesa-current-grants/ocg">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Other Current Grants</rdfs:label>
+        <skos:prefLabel xml:lang="en">Other Current Grants</skos:prefLabel>
+        <skos:notation>ocg</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/pesa-current-grants"/>
+      </j.1:PesaCurrentGrants>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:PesaCurrentGrants rdf:about="http://finance.data.gov.uk/def/coins/pesa-current-grants/ndrp">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Non-domestic rate payments</rdfs:label>
+        <skos:prefLabel xml:lang="en">Non-domestic rate payments</skos:prefLabel>
+        <skos:notation>ndrp</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/pesa-current-grants"/>
+      </j.1:PesaCurrentGrants>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:PesaCurrentGrants rdf:about="http://finance.data.gov.uk/def/coins/pesa-current-grants/abg">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Area Based Grants</rdfs:label>
+        <skos:prefLabel xml:lang="en">Area Based Grants</skos:prefLabel>
+        <skos:notation>abg</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/pesa-current-grants"/>
+      </j.1:PesaCurrentGrants>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:PesaCurrentGrants rdf:about="http://finance.data.gov.uk/def/coins/pesa-current-grants/ndfc">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">New deal for communities</rdfs:label>
+        <skos:prefLabel xml:lang="en">New deal for communities</skos:prefLabel>
+        <skos:notation>ndfc</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/pesa-current-grants"/>
+      </j.1:PesaCurrentGrants>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:PesaCurrentGrants rdf:about="http://finance.data.gov.uk/def/coins/pesa-current-grants/nrf">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Neighbourhood renewal fund</rdfs:label>
+        <skos:prefLabel xml:lang="en">Neighbourhood renewal fund</skos:prefLabel>
+        <skos:notation>nrf</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/pesa-current-grants"/>
+      </j.1:PesaCurrentGrants>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:PesaCurrentGrants rdf:about="http://finance.data.gov.uk/def/coins/pesa-current-grants/psg">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">PFI special grant</rdfs:label>
+        <skos:prefLabel xml:lang="en">PFI special grant</skos:prefLabel>
+        <skos:notation>psg</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/pesa-current-grants"/>
+      </j.1:PesaCurrentGrants>
+    </skos:hasTopConcept>
+  </skos:ConceptScheme>
+</rdf:RDF>

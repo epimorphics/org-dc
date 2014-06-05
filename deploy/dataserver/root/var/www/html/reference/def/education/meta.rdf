@@ -1,0 +1,28 @@
+<rdf:RDF
+    xmlns="http://education.data.gov.uk/def/meta/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <owl:AnnotationProperty rdf:about="http://education.data.gov.uk/def/meta/descriptionIfTrue">
+    <rdfs:comment>annotates a boolean property with the label to give to the object if the property is true</rdfs:comment>
+    <rdfs:label>description if true</rdfs:label>
+  </owl:AnnotationProperty>
+  <owl:AnnotationProperty rdf:about="http://education.data.gov.uk/def/meta/columnCategory">
+    <rdfs:comment>A categorization of the column which guides ontology generation and instantiation.&#xD;
+One of SIMPLE_STRING, SIMPLE_NUMERIC, SIMPLE_DATE, SIMPLE_BOOLEAN, ENTITY, CONTROLLED, PSEUDO_BOOLEAN, CLASSIFICATION_BOOLEAN, CLASSIFICATION, TEMPORAL_FN</rdfs:comment>
+    <rdfs:label>column category</rdfs:label>
+  </owl:AnnotationProperty>
+  <owl:AnnotationProperty rdf:about="http://education.data.gov.uk/def/meta/descriptionIfFalse">
+    <rdfs:comment>annotates a boolean property with the label to give to the object if the property is false</rdfs:comment>
+    <rdfs:label>description if false</rdfs:label>
+  </owl:AnnotationProperty>
+  <owl:AnnotationProperty rdf:about="http://education.data.gov.uk/def/meta/labelColumnName">
+    <rdfs:comment>annotation for an ENTITY_OTHER_LABEL which indicates the name of the other column which gives the label for the generated entity</rdfs:comment>
+    <rdfs:label>column name for label</rdfs:label>
+  </owl:AnnotationProperty>
+  <owl:AnnotationProperty rdf:about="http://education.data.gov.uk/def/meta/columnName">
+    <rdfs:comment>gives the original column name in EDUBase dataset corresponding to this class/property</rdfs:comment>
+    <rdfs:label>column name</rdfs:label>
+  </owl:AnnotationProperty>
+</rdf:RDF>

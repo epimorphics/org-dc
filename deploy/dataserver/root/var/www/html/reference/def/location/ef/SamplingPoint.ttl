@@ -1,0 +1,81 @@
+@base					<http://location.data.gov.uk/def/ef/SamplingPoint> .
+@prefix :        		<http://location.data.gov.uk/def/ef/SamplingPoint/> .
+
+
+# 2010-12-15 (skw)
+# Shifted vocabulary root down to ef/SamplingPoint to allow more modular creation and 
+# management of vocabulary terms
+#
+
+# Prefix for Monitoring Point Locations under INSPIRE environmental monitoring facilities theme.
+
+
+@prefix	loc-sp:		<http://location.data.gov.uk/def/ef/SamplingPoint/> .
+
+@prefix rdfs:    		<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:     		<http://www.w3.org/2002/07/owl#> .
+@prefix xsd:     		<http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:     		<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb:      		<http://purl.org/linked-data/cube#> .
+@prefix time:	 		<http://www.w3.org/2006/time#> .
+@prefix	interval:       <http://reference.data.gov.uk/def/intervals/> .
+@prefix skos:   	    <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms:        <http://purl.org/dc/terms/> .
+@prefix foaf:           <http://xmlns.com/foaf/0.1/> .
+
+@prefix sdmx-attribute: <http://purl.org/linked-data/sdmx/2009/sdmx-attribute#> .
+
+@prefix geo:			<http://www.w3.org/2003/01/geo/wgs84_pos#> .
+
+<>
+      a       owl:Ontology ;
+      dcterms:created		"2010-08-29"^^xsd:date;
+	  dcterms:modified		"2010-12-15"^^xsd:date;
+	  dcterms:contributor	[foaf:mbox "skw@epimorphics.com"; foaf:name "Stuart Williams"@en];
+	  # add your names here
+
+	  dcterms:license 	<http://www.opendatacommons.org/licenses/pddl/1.0/> ;
+      
+      owl:versionInfo "0.1"^^xsd:string .
+
+
+:SamplingPoint
+	a				owl:Class;
+	rdfs:label		"Sampling Point";
+	rdfs:comment	"A location where samples are taken for environmental monitoring purposes.";
+	rdfs:isDefinedBy	<>;
+	rdfs:subClassOf	geo:Point;
+	.			
+
+:samplingPoint
+	a				owl:ObjectProperty;
+	rdfs:label		"sampling point"@en;
+	rdfs:comment	"""The location of a bathing water quality sampling point.
+Sampling at high water
+
+The sampling point represents the location along the high water strandline where the average density of bathers is at its highest. As the tide height changes as does the point but only along the axis of the sampling point / line.
+ 
+Sampling at other times
+
+At other tidal states, take samples along an imaginary line drawn perpendicular to the shoreline, stretching from the designated high water sampling point to the low water mark. The low water mark finishes at a point where the water depth is approximately 1 metre.
+""";
+	rdfs:isDefinedBy	<>;
+	rdfs:range		:SamplingPoint;
+	.
+		
+:samplePointCode
+	a	rdfs:Datatype;
+	rdfs:label		"Datatype for use in typed skos:notations"@en;
+	rdfs:isDefinedBy	<>;					
+	.
+
+:samplePointNotation
+	a					rdf:Property;
+	rdfs:isDefinedBy	<>;
+	rdfs:subPropertyOf	skos:notation;
+	rdfs:domain			:SamplingPoint;
+	rdfs:range			:samplePointCode;
+	rdfs:label			"A skos:notation sub property for typed notations on sample points"@en;
+	.
+		
+		

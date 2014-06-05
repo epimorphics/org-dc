@@ -1,0 +1,244 @@
+<rdf:RDF
+    xmlns:sdmx-subject="http://purl.org/linked-data/sdmx/2009/subject#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:sdmx-dimension="http://purl.org/linked-data/sdmx/2009/dimension#"
+    xmlns:sdmx-measure="http://purl.org/linked-data/sdmx/2009/measure#"
+    xmlns:sdmx-attribute="http://purl.org/linked-data/sdmx/2009/attribute#"
+    xmlns:coins-data="http://source.data.gov.uk/data/coins/"
+    xmlns:coins-dsd="http://finance.data.gov.uk/dsd/coins/"
+    xmlns:coins-dimension="http://finance.data.gov.uk/dsd/coins/dimension/"
+    xmlns:void="http://rdfs.org/ns/void#"
+    xmlns:coins-measure="http://finance.data.gov.uk/dsd/coins/measure/"
+    xmlns:j.0="http://www.epimorphics.com/vocabs/coins-generate#"
+    xmlns:coins-attribute="http://finance.data.gov.uk/dsd/coins/attribute/"
+    xmlns:sdmx-concept="http://purl.org/linked-data/sdmx/2009/concept#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:coins-slicekey="http://finance.data.gov.uk/dsd/coins/slice/"
+    xmlns:sdmx="http://purl.org/linked-data/sdmx#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:sdmx-code="http://purl.org/linked-data/sdmx/2009/code#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:j.1="http://finance.data.gov.uk/def/coins/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:qb="http://purl.org/linked-data/cube#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <rdfs:Class rdf:about="http://finance.data.gov.uk/def/coins/AccountingAuthority">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:label xml:lang="en">accounting authority values class</rdfs:label>
+    <skos:prefLabel xml:lang="en">accounting authority values class</skos:prefLabel>
+    <rdfs:comment>The class of values in the accounting authority code-list scheme</rdfs:comment>
+  </rdfs:Class>
+  <sdmx:Concept rdf:about="http://finance.data.gov.uk/def/coins/statistical-concept/accounting-authority">
+    <rdfs:label xml:lang="en">accounting authority</rdfs:label>
+    <skos:prefLabel xml:lang="en">accounting authority</skos:prefLabel>
+    <rdfs:comment>The accounting authority (AA) tag denotes the authority by which spending can occur i.e. whether it has been specifically voted by Parliament.</rdfs:comment>
+    <dcterms:source rdf:resource="http://www.hm-treasury.gov.uk/d/coins_guidance.pdf"/>
+    <j.0:columnName>accounting_authority</j.0:columnName>
+  </sdmx:Concept>
+  <skos:ConceptScheme rdf:about="http://finance.data.gov.uk/def/coins/accounting-authority">
+    <skos:hasTopConcept>
+      <j.1:AccountingAuthority rdf:about="http://finance.data.gov.uk/def/coins/accounting-authority/aa102">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">AA102</rdfs:label>
+        <skos:prefLabel xml:lang="en">AA102</skos:prefLabel>
+        <skos:notation>aa102</skos:notation>
+        <rdfs:comment>Central Government: Consolidated Fund Extra Receipts (CFER): non-voted: surplus appropriations in aid and other extra receipts payable to the Consolidated Fund that go through the Operating Cost Statement.</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/accounting-authority"/>
+      </j.1:AccountingAuthority>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:AccountingAuthority rdf:about="http://finance.data.gov.uk/def/coins/accounting-authority/aa502">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">AA502</rdfs:label>
+        <skos:prefLabel xml:lang="en">AA502</skos:prefLabel>
+        <skos:notation>aa502</skos:notation>
+        <rdfs:comment>Scotland, Wales and Northern Ireland Devolved Administrations: non-voted: expenditure of the devolved administrations that is analogous to Westminster non-voted expenditure.</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/accounting-authority"/>
+      </j.1:AccountingAuthority>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:AccountingAuthority rdf:about="http://finance.data.gov.uk/def/coins/accounting-authority/aa901">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">AA901</rdfs:label>
+        <skos:prefLabel xml:lang="en">AA901</skos:prefLabel>
+        <skos:notation>aa901</skos:notation>
+        <rdfs:comment>Other: non-voted: includes The Reserve and payments and receipts of debt interest by the public sector</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/accounting-authority"/>
+      </j.1:AccountingAuthority>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:AccountingAuthority rdf:about="http://finance.data.gov.uk/def/coins/accounting-authority/aa541">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">AA541</rdfs:label>
+        <skos:prefLabel xml:lang="en">AA541</skos:prefLabel>
+        <skos:notation>aa541</skos:notation>
+        <rdfs:comment>Scotland, Wales and Northern Ireland Devolved Administrations: NDPB Expenditure: non-voted.</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/accounting-authority"/>
+      </j.1:AccountingAuthority>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:AccountingAuthority rdf:about="http://finance.data.gov.uk/def/coins/accounting-authority/aa520">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">AA520</rdfs:label>
+        <skos:prefLabel xml:lang="en">AA520</skos:prefLabel>
+        <skos:notation>aa520</skos:notation>
+        <rdfs:comment>Scotland, Wales and Northern Ireland Devolved Administrations: Public Corporations' capital expenditure</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/accounting-authority"/>
+      </j.1:AccountingAuthority>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:AccountingAuthority rdf:about="http://finance.data.gov.uk/def/coins/accounting-authority/aa211">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">AA211</rdfs:label>
+        <skos:prefLabel xml:lang="en">AA211</skos:prefLabel>
+        <skos:notation>aa211</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/accounting-authority"/>
+      </j.1:AccountingAuthority>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:AccountingAuthority rdf:about="http://finance.data.gov.uk/def/coins/accounting-authority/aa191">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">AA191</rdfs:label>
+        <skos:prefLabel xml:lang="en">AA191</skos:prefLabel>
+        <skos:notation>aa191</skos:notation>
+        <rdfs:comment>Central Government: Other: non-voted: other central government payments and receipts not elsewhere specified.</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/accounting-authority"/>
+      </j.1:AccountingAuthority>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:AccountingAuthority rdf:about="http://finance.data.gov.uk/def/coins/accounting-authority/aa402">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">AA402</rdfs:label>
+        <skos:prefLabel xml:lang="en">AA402</skos:prefLabel>
+        <skos:notation>aa402</skos:notation>
+        <rdfs:comment>Public corporations' own expenditure</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/accounting-authority"/>
+      </j.1:AccountingAuthority>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:AccountingAuthority rdf:about="http://finance.data.gov.uk/def/coins/accounting-authority/aa591">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">AA591</rdfs:label>
+        <skos:prefLabel xml:lang="en">AA591</skos:prefLabel>
+        <skos:notation>aa591</skos:notation>
+        <rdfs:comment>Scotland, Wales and Northern Ireland Devolved Administrations: Other: non-voted: Other devolved administration payments and receipts</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/accounting-authority"/>
+      </j.1:AccountingAuthority>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:AccountingAuthority rdf:about="http://finance.data.gov.uk/def/coins/accounting-authority/aa104">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">AA104</rdfs:label>
+        <skos:prefLabel xml:lang="en">AA104</skos:prefLabel>
+        <skos:notation>aa104</skos:notation>
+        <rdfs:comment>National Loans Fund: non-voted: payments and receipts of the NLF on its lending transactions.</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/accounting-authority"/>
+      </j.1:AccountingAuthority>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:AccountingAuthority rdf:about="http://finance.data.gov.uk/def/coins/accounting-authority/aa103">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">AA103</rdfs:label>
+        <skos:prefLabel xml:lang="en">AA103</skos:prefLabel>
+        <skos:notation>aa103</skos:notation>
+        <rdfs:comment>Central Government: Other Consolidated funds: non-voted: all payments and receipts related to the Consolidated Fund not included in AA101 or AA102.</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/accounting-authority"/>
+      </j.1:AccountingAuthority>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:AccountingAuthority rdf:about="http://finance.data.gov.uk/def/coins/accounting-authority/aa114">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">AA114</rdfs:label>
+        <skos:prefLabel xml:lang="en">AA114</skos:prefLabel>
+        <skos:notation>aa114</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/accounting-authority"/>
+      </j.1:AccountingAuthority>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:AccountingAuthority rdf:about="http://finance.data.gov.uk/def/coins/accounting-authority/aa501">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">AA501</rdfs:label>
+        <skos:prefLabel xml:lang="en">AA501</skos:prefLabel>
+        <skos:notation>aa501</skos:notation>
+        <rdfs:comment>Scotland, Wales and Northern Ireland Devolved Administrations: voted: expenditure of the devolved administrations that is analogous to Westminster Voted expenditure. Excludes CFERs in Scotland.</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/accounting-authority"/>
+      </j.1:AccountingAuthority>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:AccountingAuthority rdf:about="http://finance.data.gov.uk/def/coins/accounting-authority/aa141">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">AA141</rdfs:label>
+        <skos:prefLabel xml:lang="en">AA141</skos:prefLabel>
+        <skos:notation>aa141</skos:notation>
+        <rdfs:comment>Resource and capital expenditure of NDPBs in the central government sector: non-voted</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/accounting-authority"/>
+      </j.1:AccountingAuthority>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:AccountingAuthority rdf:about="http://finance.data.gov.uk/def/coins/accounting-authority/aa101">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">AA101</rdfs:label>
+        <skos:prefLabel xml:lang="en">AA101</skos:prefLabel>
+        <skos:notation>aa101</skos:notation>
+        <rdfs:comment>Central Government: Supply: all voted payments and receipts by central government departments</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/accounting-authority"/>
+      </j.1:AccountingAuthority>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:AccountingAuthority rdf:about="http://finance.data.gov.uk/def/coins/accounting-authority/aa113">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">AA113</rdfs:label>
+        <skos:prefLabel xml:lang="en">AA113</skos:prefLabel>
+        <skos:notation>aa113</skos:notation>
+        <rdfs:comment>Consolidated Fund Extra Receipts that do not pass through the Operating Cost Statement: non-voted</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/accounting-authority"/>
+      </j.1:AccountingAuthority>
+    </skos:hasTopConcept>
+    <skos:prefLabel xml:lang="en">accounting authority code list concept scheme</skos:prefLabel>
+    <skos:hasTopConcept>
+      <j.1:AccountingAuthority rdf:about="http://finance.data.gov.uk/def/coins/accounting-authority/aa212">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">AA212</rdfs:label>
+        <skos:prefLabel xml:lang="en">AA212</skos:prefLabel>
+        <skos:notation>aa212</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/accounting-authority"/>
+      </j.1:AccountingAuthority>
+    </skos:hasTopConcept>
+    <rdfs:label xml:lang="en">accounting authority code list concept scheme</rdfs:label>
+    <skos:hasTopConcept>
+      <j.1:AccountingAuthority rdf:about="http://finance.data.gov.uk/def/coins/accounting-authority/aa210">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">AA210</rdfs:label>
+        <skos:prefLabel xml:lang="en">AA210</skos:prefLabel>
+        <skos:notation>aa210</skos:notation>
+        <rdfs:comment>Local Authority Expenditure: non-voted</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/accounting-authority"/>
+      </j.1:AccountingAuthority>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:AccountingAuthority rdf:about="http://finance.data.gov.uk/def/coins/accounting-authority/aa105">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">AA105</rdfs:label>
+        <skos:prefLabel xml:lang="en">AA105</skos:prefLabel>
+        <skos:notation>aa105</skos:notation>
+        <rdfs:comment>Central Government: National Insurance Fund: non-voted: payments and receipts of the GB National Insurance Fund.</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/accounting-authority"/>
+      </j.1:AccountingAuthority>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:AccountingAuthority rdf:about="http://finance.data.gov.uk/def/coins/accounting-authority/aa701">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">AA701</rdfs:label>
+        <skos:prefLabel xml:lang="en">AA701</skos:prefLabel>
+        <skos:notation>aa701</skos:notation>
+        <rdfs:comment>Departmental Unallocated Provision: non-voted.</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/accounting-authority"/>
+      </j.1:AccountingAuthority>
+    </skos:hasTopConcept>
+  </skos:ConceptScheme>
+</rdf:RDF>

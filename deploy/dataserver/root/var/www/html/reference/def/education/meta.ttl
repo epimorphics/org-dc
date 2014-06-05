@@ -1,0 +1,33 @@
+# Meta ontology used to annotate axioms in the EDUbase ontology
+
+#@prefix : <http://education.data.gov.uk/ontology/meta#>.
+@prefix : <http://education.data.gov.uk/def/meta/>.
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix owl:  <http://www.w3.org/2002/07/owl#>.
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#>.
+
+:columnName a owl:AnnotationProperty;
+    rdfs:label "column name";
+    rdfs:comment "gives the original column name in EDUBase dataset corresponding to this class/property".
+    
+:columnCategory a owl:AnnotationProperty;
+    rdfs:label "column category";
+    rdfs:comment """A categorization of the column which guides ontology generation and instantiation.
+One of SIMPLE_STRING, SIMPLE_NUMERIC, SIMPLE_DATE, SIMPLE_BOOLEAN, ENTITY, CONTROLLED, PSEUDO_BOOLEAN, CLASSIFICATION_BOOLEAN, CLASSIFICATION, TEMPORAL_FN""".
+
+:descriptionIfTrue  a owl:AnnotationProperty;
+    rdfs:label "description if true";
+    rdfs:comment "annotates a boolean property with the label to give to the object if the property is true".
+
+:descriptionIfFalse  a owl:AnnotationProperty;
+    rdfs:label "description if false";
+    rdfs:comment "annotates a boolean property with the label to give to the object if the property is false".
+    
+:labelColumnName a owl:AnnotationProperty;
+    rdfs:label "column name for label";
+    rdfs:comment "annotation for an ENTITY_OTHER_LABEL which indicates the name of the other column which gives the label for the generated entity" .
+        
+        
+    
+    

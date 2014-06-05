@@ -1,0 +1,599 @@
+<http://finance.data.gov.uk/def/coins/esa/esa-d3b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d3b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d3b> <http://www.w3.org/2000/01/rdf-schema#label> "ESA-D3B"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d3b> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESA-D3B"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d3b> <http://www.w3.org/2004/02/skos/core#notation> "esa-d3b" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d3b> <http://www.w3.org/2000/01/rdf-schema#comment> "Subsidies to the private sector" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d3b> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-k1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-k1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/esa/esa-k1> <http://www.w3.org/2000/01/rdf-schema#label> "ESA-K1"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-k1> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESA-K1"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-k1> <http://www.w3.org/2004/02/skos/core#notation> "esa-k1" .
+<http://finance.data.gov.uk/def/coins/esa/esa-k1> <http://www.w3.org/2000/01/rdf-schema#comment> "Consumption of fixed capital" .
+<http://finance.data.gov.uk/def/coins/esa/esa-k1> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511fa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511fa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511fa> <http://www.w3.org/2000/01/rdf-schema#label> "ESA-P511FA"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511fa> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESA-P511FA"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511fa> <http://www.w3.org/2004/02/skos/core#notation> "esa-p511fa" .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511fa> <http://www.w3.org/2000/01/rdf-schema#comment> "Acquisitions of tangible fixed assets: vehicles" .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511fa> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d92e> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d92e> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d92e> <http://www.w3.org/2000/01/rdf-schema#label> "ESA-D92E"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d92e> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESA-D92E"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d92e> <http://www.w3.org/2004/02/skos/core#notation> "esa-d92e" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d92e> <http://www.w3.org/2000/01/rdf-schema#comment> "Investment grants to and from public corporations" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d92e> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-p512ab> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-p512ab> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/esa/esa-p512ab> <http://www.w3.org/2000/01/rdf-schema#label> "ESA-P512AB"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-p512ab> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESA-P512AB"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-p512ab> <http://www.w3.org/2004/02/skos/core#notation> "esa-p512ab" .
+<http://finance.data.gov.uk/def/coins/esa/esa-p512ab> <http://www.w3.org/2000/01/rdf-schema#comment> "Disposals of intangible fixed assets: artistic originals." .
+<http://finance.data.gov.uk/def/coins/esa/esa-p512ab> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-p11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-p11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/esa/esa-p11> <http://www.w3.org/2000/01/rdf-schema#label> "ESA-P11"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-p11> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESA-P11"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-p11> <http://www.w3.org/2004/02/skos/core#notation> "esa-p11" .
+<http://finance.data.gov.uk/def/coins/esa/esa-p11> <http://www.w3.org/2000/01/rdf-schema#comment> "Market output" .
+<http://finance.data.gov.uk/def/coins/esa/esa-p11> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-p52> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-p52> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/esa/esa-p52> <http://www.w3.org/2000/01/rdf-schema#label> "ESA-P52"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-p52> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESA-P52"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-p52> <http://www.w3.org/2004/02/skos/core#notation> "esa-p52" .
+<http://finance.data.gov.uk/def/coins/esa/esa-p52> <http://www.w3.org/2000/01/rdf-schema#comment> "Changes in inventories " .
+<http://finance.data.gov.uk/def/coins/esa/esa-p52> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d75> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d75> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d75> <http://www.w3.org/2000/01/rdf-schema#label> "ESA-D75"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d75> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESA-D75"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d75> <http://www.w3.org/2004/02/skos/core#notation> "esa-d75" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d75> <http://www.w3.org/2000/01/rdf-schema#comment> "Miscellaneous current transfers" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d75> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-f2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-f2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/esa/esa-f2> <http://www.w3.org/2000/01/rdf-schema#label> "ESA-F2"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-f2> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESA-F2"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-f2> <http://www.w3.org/2004/02/skos/core#notation> "esa-f2" .
+<http://finance.data.gov.uk/def/coins/esa/esa-f2> <http://www.w3.org/2000/01/rdf-schema#comment> "Currency and deposits" .
+<http://finance.data.gov.uk/def/coins/esa/esa-f2> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511ab> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511ab> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511ab> <http://www.w3.org/2000/01/rdf-schema#label> "ESA-P511AB"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511ab> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESA-P511AB"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511ab> <http://www.w3.org/2004/02/skos/core#notation> "esa-p511ab" .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511ab> <http://www.w3.org/2000/01/rdf-schema#comment> "Disposals of tangible fixed assets: agricultural assets" .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511ab> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d622> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d622> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d622> <http://www.w3.org/2000/01/rdf-schema#label> "ESA-D622"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d622> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESA-D622"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d622> <http://www.w3.org/2004/02/skos/core#notation> "esa-d622" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d622> <http://www.w3.org/2000/01/rdf-schema#comment> "Private funded social benefits" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d622> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d29e> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d29e> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d29e> <http://www.w3.org/2000/01/rdf-schema#label> "ESA-D29E"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d29e> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESA-D29E"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d29e> <http://www.w3.org/2004/02/skos/core#notation> "esa-d29e" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d29e> <http://www.w3.org/2000/01/rdf-schema#comment> "Taxes on production: Vehicle excise duties" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d29e> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d3a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d3a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d3a> <http://www.w3.org/2000/01/rdf-schema#label> "ESA-D3A"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d3a> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESA-D3A"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d3a> <http://www.w3.org/2004/02/skos/core#notation> "esa-d3a" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d3a> <http://www.w3.org/2000/01/rdf-schema#comment> "Subsidies to general government market units" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d3a> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/esa> .
+<http://finance.data.gov.uk/def/coins/esa> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/esa/esa-d3b> .
+<http://finance.data.gov.uk/def/coins/esa> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/esa/esa-f3> .
+<http://finance.data.gov.uk/def/coins/esa> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/esa/esa-d3c> .
+<http://finance.data.gov.uk/def/coins/esa> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/esa/esa-d45> .
+<http://finance.data.gov.uk/def/coins/esa> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/esa/esa-d99e> .
+<http://finance.data.gov.uk/def/coins/esa> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/esa/esa-p511ba> .
+<http://finance.data.gov.uk/def/coins/esa> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/esa/esa-p511db> .
+<http://finance.data.gov.uk/def/coins/esa> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/esa/esa-d92e> .
+<http://finance.data.gov.uk/def/coins/esa> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/esa/esa-p512ca> .
+<http://finance.data.gov.uk/def/coins/esa> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/esa/esa-d214> .
+<http://finance.data.gov.uk/def/coins/esa> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/esa/esa-p511eb> .
+<http://finance.data.gov.uk/def/coins/esa> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/esa/esa-k212> .
+<http://finance.data.gov.uk/def/coins/esa> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/esa/esa-d92b> .
+<http://finance.data.gov.uk/def/coins/esa> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/esa/esa-d73b> .
+<http://finance.data.gov.uk/def/coins/esa> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/esa/esa-p512bb> .
+<http://finance.data.gov.uk/def/coins/esa> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/esa/esa-d92f> .
+<http://finance.data.gov.uk/def/coins/esa> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/esa/esa-d6112> .
+<http://finance.data.gov.uk/def/coins/esa> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/esa/esa-k221> .
+<http://finance.data.gov.uk/def/coins/esa> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/esa/esa-p511ab> .
+<http://finance.data.gov.uk/def/coins/esa> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/esa/esa-d421> .
+<http://finance.data.gov.uk/def/coins/esa> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/esa/esa-d51> .
+<http://finance.data.gov.uk/def/coins/esa> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/esa/esa-d622> .
+<http://finance.data.gov.uk/def/coins/esa> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/esa/esa-d99f> .
+<http://finance.data.gov.uk/def/coins/esa> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/esa/esa-d121> .
+<http://finance.data.gov.uk/def/coins/esa> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/esa/esa-p11> .
+<http://finance.data.gov.uk/def/coins/esa> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/esa/esa-k1> .
+<http://finance.data.gov.uk/def/coins/esa> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/esa/esa-f4> .
+<http://finance.data.gov.uk/def/coins/esa> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/esa/esa-d11> .
+<http://finance.data.gov.uk/def/coins/esa> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/esa/esa-f2> .
+<http://finance.data.gov.uk/def/coins/esa> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/esa/esa-d99da> .
+<http://finance.data.gov.uk/def/coins/esa> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/esa/esa-d41b> .
+<http://finance.data.gov.uk/def/coins/esa> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/esa/esa-d29c> .
+<http://finance.data.gov.uk/def/coins/esa> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/esa/esa-p53a> .
+<http://finance.data.gov.uk/def/coins/esa> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/esa/esa-d99a> .
+<http://finance.data.gov.uk/def/coins/esa> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/esa/esa-p512aa> .
+<http://finance.data.gov.uk/def/coins/esa> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/esa/esa-d92c> .
+<http://finance.data.gov.uk/def/coins/esa> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/esa/esa-p511ca> .
+<http://finance.data.gov.uk/def/coins/esa> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/esa/esa-d92a> .
+<http://finance.data.gov.uk/def/coins/esa> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/esa/esa-d623> .
+<http://finance.data.gov.uk/def/coins/esa> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/esa/esa-p512da> .
+<http://finance.data.gov.uk/def/coins/esa> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/esa/esa-p2> .
+<http://finance.data.gov.uk/def/coins/esa> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/esa/esa-p511fb> .
+<http://finance.data.gov.uk/def/coins/esa> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/esa/esa-d74b> .
+<http://finance.data.gov.uk/def/coins/esa> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/esa/esa-p52> .
+<http://finance.data.gov.uk/def/coins/esa> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESA code list concept scheme"@en .
+<http://finance.data.gov.uk/def/coins/esa> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/esa/esa-f7> .
+<http://finance.data.gov.uk/def/coins/esa> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/esa/esa-f5> .
+<http://finance.data.gov.uk/def/coins/esa> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/esa/esa-d29d> .
+<http://finance.data.gov.uk/def/coins/esa> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/esa/esa-d99db> .
+<http://finance.data.gov.uk/def/coins/esa> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/esa/esa-d3a> .
+<http://finance.data.gov.uk/def/coins/esa> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/esa/esa-d41a> .
+<http://finance.data.gov.uk/def/coins/esa> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/esa/esa-d59> .
+<http://finance.data.gov.uk/def/coins/esa> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/esa/esa-p511da> .
+<http://finance.data.gov.uk/def/coins/esa> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/esa/esa-p512ab> .
+<http://finance.data.gov.uk/def/coins/esa> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/esa/esa-p512cb> .
+<http://finance.data.gov.uk/def/coins/esa> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/esa/esa-d92d> .
+<http://finance.data.gov.uk/def/coins/esa> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/esa/esa-p511ea> .
+<http://finance.data.gov.uk/def/coins/esa> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/esa/esa-k211> .
+<http://finance.data.gov.uk/def/coins/esa> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/esa/esa-p512db> .
+<http://finance.data.gov.uk/def/coins/esa> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/esa/esa-p511bb> .
+<http://finance.data.gov.uk/def/coins/esa> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/esa/esa-p53b> .
+<http://finance.data.gov.uk/def/coins/esa> <http://www.w3.org/2000/01/rdf-schema#label> "ESA code list concept scheme"@en .
+<http://finance.data.gov.uk/def/coins/esa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://finance.data.gov.uk/def/coins/esa> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/esa/esa-p511fa> .
+<http://finance.data.gov.uk/def/coins/esa> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/esa/esa-p511cb> .
+<http://finance.data.gov.uk/def/coins/esa> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/esa/esa-p511aa> .
+<http://finance.data.gov.uk/def/coins/esa> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/esa/esa-d75> .
+<http://finance.data.gov.uk/def/coins/esa> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/esa/esa-d29e> .
+<http://finance.data.gov.uk/def/coins/esa> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/esa/esa-d624> .
+<http://finance.data.gov.uk/def/coins/esa> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/esa/esa-d73a> .
+<http://finance.data.gov.uk/def/coins/esa> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/esa/esa-p512ba> .
+<http://finance.data.gov.uk/def/coins/esa> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/esa/esa-d99bb> .
+<http://finance.data.gov.uk/def/coins/esa> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/esa/esa-d621> .
+<http://finance.data.gov.uk/def/coins/esa> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/esa/esa-d6111> .
+<http://finance.data.gov.uk/def/coins/esa> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/esa/esa-d74a> .
+<http://finance.data.gov.uk/def/coins/esa> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/esa/esa-d29u> .
+<http://finance.data.gov.uk/def/coins/esa/esa-p512cb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-p512cb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/esa/esa-p512cb> <http://www.w3.org/2000/01/rdf-schema#label> "ESA-P512CB"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-p512cb> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESA-P512CB"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-p512cb> <http://www.w3.org/2004/02/skos/core#notation> "esa-p512cb" .
+<http://finance.data.gov.uk/def/coins/esa/esa-p512cb> <http://www.w3.org/2000/01/rdf-schema#comment> "Disposals of intangible fixed assets: MoD development expenditure." .
+<http://finance.data.gov.uk/def/coins/esa/esa-p512cb> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-p53b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-p53b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/esa/esa-p53b> <http://www.w3.org/2000/01/rdf-schema#label> "ESA-P53B"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-p53b> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESA-P53B"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-p53b> <http://www.w3.org/2004/02/skos/core#notation> "esa-p53b" .
+<http://finance.data.gov.uk/def/coins/esa/esa-p53b> <http://www.w3.org/2000/01/rdf-schema#comment> "Disposals of valuables" .
+<http://finance.data.gov.uk/def/coins/esa/esa-p53b> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d73b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d73b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d73b> <http://www.w3.org/2000/01/rdf-schema#label> "ESA-D73B"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d73b> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESA-D73B"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d73b> <http://www.w3.org/2004/02/skos/core#notation> "esa-d73b" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d73b> <http://www.w3.org/2000/01/rdf-schema#comment> "Current grants within general government: other than redistributed NNDR" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d73b> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d41b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d41b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d41b> <http://www.w3.org/2000/01/rdf-schema#label> "ESA-D41B"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d41b> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESA-D41B"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d41b> <http://www.w3.org/2004/02/skos/core#notation> "esa-d41b" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d41b> <http://www.w3.org/2000/01/rdf-schema#comment> "Interest payments to and from the public sector" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d41b> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511cb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511cb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511cb> <http://www.w3.org/2000/01/rdf-schema#label> "ESA-P511CB"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511cb> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESA-P511CB"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511cb> <http://www.w3.org/2004/02/skos/core#notation> "esa-p511cb" .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511cb> <http://www.w3.org/2000/01/rdf-schema#comment> "Disposals of tangible fixed assets: other land and buildings" .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511cb> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-k212> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-k212> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/esa/esa-k212> <http://www.w3.org/2000/01/rdf-schema#label> "ESA-K212"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-k212> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESA-K212"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-k212> <http://www.w3.org/2004/02/skos/core#notation> "esa-k212" .
+<http://finance.data.gov.uk/def/coins/esa/esa-k212> <http://www.w3.org/2000/01/rdf-schema#comment> "Disposals of land and other tangible non-produced assets" .
+<http://finance.data.gov.uk/def/coins/esa/esa-k212> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-f7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-f7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/esa/esa-f7> <http://www.w3.org/2000/01/rdf-schema#label> "ESA-F7"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-f7> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESA-F7"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-f7> <http://www.w3.org/2004/02/skos/core#notation> "esa-f7" .
+<http://finance.data.gov.uk/def/coins/esa/esa-f7> <http://www.w3.org/2000/01/rdf-schema#comment> "Other accounts receivable/payable" .
+<http://finance.data.gov.uk/def/coins/esa/esa-f7> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d92d> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d92d> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d92d> <http://www.w3.org/2000/01/rdf-schema#label> "ESA-D92D"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d92d> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESA-D92D"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d92d> <http://www.w3.org/2004/02/skos/core#notation> "esa-d92d" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d92d> <http://www.w3.org/2000/01/rdf-schema#comment> "Investment grants to and from private sector companies" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d92d> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-p512aa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-p512aa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/esa/esa-p512aa> <http://www.w3.org/2000/01/rdf-schema#label> "ESA-P512AA"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-p512aa> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESA-P512AA"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-p512aa> <http://www.w3.org/2004/02/skos/core#notation> "esa-p512aa" .
+<http://finance.data.gov.uk/def/coins/esa/esa-p512aa> <http://www.w3.org/2000/01/rdf-schema#comment> "Acquisitions of intangible fixed assets: artistic originals." .
+<http://finance.data.gov.uk/def/coins/esa/esa-p512aa> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511aa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511aa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511aa> <http://www.w3.org/2000/01/rdf-schema#label> "ESA-P511AA"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511aa> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESA-P511AA"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511aa> <http://www.w3.org/2004/02/skos/core#notation> "esa-p511aa" .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511aa> <http://www.w3.org/2000/01/rdf-schema#comment> "Acquisitions of tangible fixed assets: agricultural assets" .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511aa> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d59> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d59> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d59> <http://www.w3.org/2000/01/rdf-schema#label> "ESA-D59"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d59> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESA-D59"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d59> <http://www.w3.org/2004/02/skos/core#notation> "esa-d59" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d59> <http://www.w3.org/2000/01/rdf-schema#comment> "Other current taxes" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d59> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511eb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511eb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511eb> <http://www.w3.org/2000/01/rdf-schema#label> "ESA-P511EB"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511eb> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESA-P511EB"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511eb> <http://www.w3.org/2004/02/skos/core#notation> "esa-p511eb" .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511eb> <http://www.w3.org/2000/01/rdf-schema#comment> "Disposals of tangible fixed assets: plant and machinery" .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511eb> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/esa> .
+<http://finance.data.gov.uk/def/coins/Esa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://finance.data.gov.uk/def/coins/Esa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://finance.data.gov.uk/def/coins/Esa> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/Esa> <http://www.w3.org/2000/01/rdf-schema#label> "ESA values class"@en .
+<http://finance.data.gov.uk/def/coins/Esa> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESA values class"@en .
+<http://finance.data.gov.uk/def/coins/Esa> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of values in the ESA code-list scheme" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d621> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d621> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d621> <http://www.w3.org/2000/01/rdf-schema#label> "ESA-D621"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d621> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESA-D621"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d621> <http://www.w3.org/2004/02/skos/core#notation> "esa-d621" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d621> <http://www.w3.org/2000/01/rdf-schema#comment> "Social security benefits in cash" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d621> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d29d> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d29d> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d29d> <http://www.w3.org/2000/01/rdf-schema#label> "ESA-D29D"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d29d> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESA-D29D"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d29d> <http://www.w3.org/2004/02/skos/core#notation> "esa-d29d" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d29d> <http://www.w3.org/2000/01/rdf-schema#comment> "Taxes on production: NNDR payments" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d29d> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d29u> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d29u> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d29u> <http://www.w3.org/2000/01/rdf-schema#label> "ESA-D29U"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d29u> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESA-D29U"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d29u> <http://www.w3.org/2004/02/skos/core#notation> "esa-d29u" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d29u> <http://www.w3.org/2000/01/rdf-schema#comment> "Taxes on production: CG departments payments of NNDR" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d29u> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-p512ca> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-p512ca> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/esa/esa-p512ca> <http://www.w3.org/2000/01/rdf-schema#label> "ESA-P512CA"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-p512ca> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESA-P512CA"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-p512ca> <http://www.w3.org/2004/02/skos/core#notation> "esa-p512ca" .
+<http://finance.data.gov.uk/def/coins/esa/esa-p512ca> <http://www.w3.org/2000/01/rdf-schema#comment> "Acquisitions of intangible fixed assets: MoD development expenditure." .
+<http://finance.data.gov.uk/def/coins/esa/esa-p512ca> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d214> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d214> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d214> <http://www.w3.org/2000/01/rdf-schema#label> "ESA-D214"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d214> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESA-D214"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d214> <http://www.w3.org/2004/02/skos/core#notation> "esa-d214" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d214> <http://www.w3.org/2000/01/rdf-schema#comment> "Taxes on products, except VAT and import taxes" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d214> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-p53a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-p53a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/esa/esa-p53a> <http://www.w3.org/2000/01/rdf-schema#label> "ESA-P53A"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-p53a> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESA-P53A"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-p53a> <http://www.w3.org/2004/02/skos/core#notation> "esa-p53a" .
+<http://finance.data.gov.uk/def/coins/esa/esa-p53a> <http://www.w3.org/2000/01/rdf-schema#comment> "Acquisitions of valuables" .
+<http://finance.data.gov.uk/def/coins/esa/esa-p53a> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d73a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d73a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d73a> <http://www.w3.org/2000/01/rdf-schema#label> "ESA-D73A"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d73a> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESA-D73A"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d73a> <http://www.w3.org/2004/02/skos/core#notation> "esa-d73a" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d73a> <http://www.w3.org/2000/01/rdf-schema#comment> "Current grants within general government: redistributed NNDR" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d73a> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d421> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d421> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d421> <http://www.w3.org/2000/01/rdf-schema#label> "ESA-D421"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d421> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESA-D421"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d421> <http://www.w3.org/2004/02/skos/core#notation> "esa-d421" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d421> <http://www.w3.org/2000/01/rdf-schema#comment> "Dividends" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d421> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511ca> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511ca> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511ca> <http://www.w3.org/2000/01/rdf-schema#label> "ESA-P511CA"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511ca> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESA-P511CA"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511ca> <http://www.w3.org/2004/02/skos/core#notation> "esa-p511ca" .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511ca> <http://www.w3.org/2000/01/rdf-schema#comment> "Acquisitions of tangible fixed assets: other land and buildings" .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511ca> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-k211> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-k211> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/esa/esa-k211> <http://www.w3.org/2000/01/rdf-schema#label> "ESA-K211"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-k211> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESA-K211"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-k211> <http://www.w3.org/2004/02/skos/core#notation> "esa-k211" .
+<http://finance.data.gov.uk/def/coins/esa/esa-k211> <http://www.w3.org/2000/01/rdf-schema#comment> "Acquisitions of land and other tangible non-produced assets" .
+<http://finance.data.gov.uk/def/coins/esa/esa-k211> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d41a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d41a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d41a> <http://www.w3.org/2000/01/rdf-schema#label> "ESA-D41A"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d41a> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESA-D41A"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d41a> <http://www.w3.org/2004/02/skos/core#notation> "esa-d41a" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d41a> <http://www.w3.org/2000/01/rdf-schema#comment> "Interest payments to and from the private sector" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d41a> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d92c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d92c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d92c> <http://www.w3.org/2000/01/rdf-schema#label> "ESA-D92C"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d92c> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESA-D92C"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d92c> <http://www.w3.org/2004/02/skos/core#notation> "esa-d92c" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d92c> <http://www.w3.org/2000/01/rdf-schema#comment> "Investment grants to and from households" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d92c> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d99bb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d99bb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d99bb> <http://www.w3.org/2000/01/rdf-schema#label> "ESA-D99BB"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d99bb> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESA-D99BB"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d99bb> <http://www.w3.org/2004/02/skos/core#notation> "esa-d99bb" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d99bb> <http://www.w3.org/2000/01/rdf-schema#comment> "Other capital transfers to and from local government" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d99bb> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d45> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d45> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d45> <http://www.w3.org/2000/01/rdf-schema#label> "ESA-D45"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d45> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESA-D45"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d45> <http://www.w3.org/2004/02/skos/core#notation> "esa-d45" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d45> <http://www.w3.org/2000/01/rdf-schema#comment> "Rents" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d45> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511ea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511ea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511ea> <http://www.w3.org/2000/01/rdf-schema#label> "ESA-P511EA"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511ea> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESA-P511EA"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511ea> <http://www.w3.org/2004/02/skos/core#notation> "esa-p511ea" .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511ea> <http://www.w3.org/2000/01/rdf-schema#comment> "Acquisitions of tangible fixed assets: plant and machinery" .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511ea> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d121> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d121> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d121> <http://www.w3.org/2000/01/rdf-schema#label> "ESA-D121"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d121> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESA-D121"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d121> <http://www.w3.org/2004/02/skos/core#notation> "esa-d121" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d121> <http://www.w3.org/2000/01/rdf-schema#comment> "Employers\u2019 actual social contributions" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d121> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d29c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d29c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d29c> <http://www.w3.org/2000/01/rdf-schema#label> "ESA-D29C"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d29c> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESA-D29C"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d29c> <http://www.w3.org/2004/02/skos/core#notation> "esa-d29c" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d29c> <http://www.w3.org/2000/01/rdf-schema#comment> "Taxes on production: regulatory fees" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d29c> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d11> <http://www.w3.org/2000/01/rdf-schema#label> "ESA-D11"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d11> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESA-D11"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d11> <http://www.w3.org/2004/02/skos/core#notation> "esa-d11" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d11> <http://www.w3.org/2000/01/rdf-schema#comment> "Wages and salaries" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d11> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d99db> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d99db> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d99db> <http://www.w3.org/2000/01/rdf-schema#label> "ESA-D99DB"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d99db> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESA-D99DB"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d99db> <http://www.w3.org/2004/02/skos/core#notation> "esa-d99db" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d99db> <http://www.w3.org/2000/01/rdf-schema#comment> "Other capital transfers to private sector companies" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d99db> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-f5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-f5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/esa/esa-f5> <http://www.w3.org/2000/01/rdf-schema#label> "ESA-F5"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-f5> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESA-F5"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-f5> <http://www.w3.org/2004/02/skos/core#notation> "esa-f5" .
+<http://finance.data.gov.uk/def/coins/esa/esa-f5> <http://www.w3.org/2000/01/rdf-schema#comment> "Shares and other equity" .
+<http://finance.data.gov.uk/def/coins/esa/esa-f5> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-p2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-p2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/esa/esa-p2> <http://www.w3.org/2000/01/rdf-schema#label> "ESA-P2"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-p2> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESA-P2"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-p2> <http://www.w3.org/2004/02/skos/core#notation> "esa-p2" .
+<http://finance.data.gov.uk/def/coins/esa/esa-p2> <http://www.w3.org/2000/01/rdf-schema#comment> "Intermediate consumption" .
+<http://finance.data.gov.uk/def/coins/esa/esa-p2> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d92b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d92b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d92b> <http://www.w3.org/2000/01/rdf-schema#label> "ESA-D92B"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d92b> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESA-D92B"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d92b> <http://www.w3.org/2004/02/skos/core#notation> "esa-d92b" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d92b> <http://www.w3.org/2000/01/rdf-schema#comment> "Investment grants to and from local government" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d92b> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d99a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d99a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d99a> <http://www.w3.org/2000/01/rdf-schema#label> "ESA-D99A"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d99a> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESA-D99A"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d99a> <http://www.w3.org/2004/02/skos/core#notation> "esa-d99a" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d99a> <http://www.w3.org/2000/01/rdf-schema#comment> "Other capital transfers to households and non-profit institution serving households" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d99a> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-p512bb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-p512bb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/esa/esa-p512bb> <http://www.w3.org/2000/01/rdf-schema#label> "ESA-P512BB"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-p512bb> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESA-P512BB"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-p512bb> <http://www.w3.org/2004/02/skos/core#notation> "esa-p512bb" .
+<http://finance.data.gov.uk/def/coins/esa/esa-p512bb> <http://www.w3.org/2000/01/rdf-schema#comment> "Disposals of intangible fixed assets: internally developed software." .
+<http://finance.data.gov.uk/def/coins/esa/esa-p512bb> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511bb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511bb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511bb> <http://www.w3.org/2000/01/rdf-schema#label> "ESA-P511BB"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511bb> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESA-P511BB"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511bb> <http://www.w3.org/2004/02/skos/core#notation> "esa-p511bb" .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511bb> <http://www.w3.org/2000/01/rdf-schema#comment> "Disposals of tangible fixed assets: dwellings" .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511bb> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d6112> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d6112> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d6112> <http://www.w3.org/2000/01/rdf-schema#label> "ESA-D6112"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d6112> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESA-D6112"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d6112> <http://www.w3.org/2004/02/skos/core#notation> "esa-d6112" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d6112> <http://www.w3.org/2000/01/rdf-schema#comment> "Employees\u2019 social contributions" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d6112> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d51> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d51> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d51> <http://www.w3.org/2000/01/rdf-schema#label> "ESA-D51"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d51> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESA-D51"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d51> <http://www.w3.org/2004/02/skos/core#notation> "esa-d51" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d51> <http://www.w3.org/2000/01/rdf-schema#comment> "Taxes on income" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d51> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d99da> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d99da> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d99da> <http://www.w3.org/2000/01/rdf-schema#label> "ESA-D99DA"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d99da> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESA-D99DA"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d99da> <http://www.w3.org/2004/02/skos/core#notation> "esa-d99da" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d99da> <http://www.w3.org/2000/01/rdf-schema#comment> "Other capital transfers from private sector companies" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d99da> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d99f> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d99f> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d99f> <http://www.w3.org/2000/01/rdf-schema#label> "ESA-D99F"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d99f> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESA-D99F"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d99f> <http://www.w3.org/2004/02/skos/core#notation> "esa-d99f" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d99f> <http://www.w3.org/2000/01/rdf-schema#comment> "Other capital transfers to rest of the world" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d99f> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-p512db> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-p512db> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/esa/esa-p512db> <http://www.w3.org/2000/01/rdf-schema#label> "ESA-P512DB"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-p512db> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESA-P512DB"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-p512db> <http://www.w3.org/2004/02/skos/core#notation> "esa-p512db" .
+<http://finance.data.gov.uk/def/coins/esa/esa-p512db> <http://www.w3.org/2000/01/rdf-schema#comment> "Disposals of intangible fixed assets: software licences." .
+<http://finance.data.gov.uk/def/coins/esa/esa-p512db> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-f4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-f4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/esa/esa-f4> <http://www.w3.org/2000/01/rdf-schema#label> "ESA-F4"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-f4> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESA-F4"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-f4> <http://www.w3.org/2004/02/skos/core#notation> "esa-f4" .
+<http://finance.data.gov.uk/def/coins/esa/esa-f4> <http://www.w3.org/2000/01/rdf-schema#comment> "Loans" .
+<http://finance.data.gov.uk/def/coins/esa/esa-f4> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d74b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d74b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d74b> <http://www.w3.org/2000/01/rdf-schema#label> "ESA-D74B"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d74b> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESA-D74B"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d74b> <http://www.w3.org/2004/02/skos/core#notation> "esa-d74b" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d74b> <http://www.w3.org/2000/01/rdf-schema#comment> "Current international cooperation: UK receipts" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d74b> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511db> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511db> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511db> <http://www.w3.org/2000/01/rdf-schema#label> "ESA-P511DB"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511db> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESA-P511DB"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511db> <http://www.w3.org/2004/02/skos/core#notation> "esa-p511db" .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511db> <http://www.w3.org/2000/01/rdf-schema#comment> "Disposals of tangible fixed assets: infrastructure assets" .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511db> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d92a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d92a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d92a> <http://www.w3.org/2000/01/rdf-schema#label> "ESA-D92A"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d92a> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESA-D92A"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d92a> <http://www.w3.org/2004/02/skos/core#notation> "esa-d92a" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d92a> <http://www.w3.org/2000/01/rdf-schema#comment> "Investment grants to and from non-profit institution serving households" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d92a> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d624> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d624> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d624> <http://www.w3.org/2000/01/rdf-schema#label> "ESA-D624"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d624> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESA-D624"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d624> <http://www.w3.org/2004/02/skos/core#notation> "esa-d624" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d624> <http://www.w3.org/2000/01/rdf-schema#comment> "Social assistance benefits in cash" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d624> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-p512ba> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-p512ba> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/esa/esa-p512ba> <http://www.w3.org/2000/01/rdf-schema#label> "ESA-P512BA"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-p512ba> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESA-P512BA"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-p512ba> <http://www.w3.org/2004/02/skos/core#notation> "esa-p512ba" .
+<http://finance.data.gov.uk/def/coins/esa/esa-p512ba> <http://www.w3.org/2000/01/rdf-schema#comment> "Acquisitions of intangible fixed assets: internally developed software." .
+<http://finance.data.gov.uk/def/coins/esa/esa-p512ba> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d3c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d3c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d3c> <http://www.w3.org/2000/01/rdf-schema#label> "ESA-D3C"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d3c> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESA-D3C"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d3c> <http://www.w3.org/2004/02/skos/core#notation> "esa-d3c" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d3c> <http://www.w3.org/2000/01/rdf-schema#comment> "Subsidies to public corporations" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d3c> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511ba> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511ba> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511ba> <http://www.w3.org/2000/01/rdf-schema#label> "ESA-P511BA"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511ba> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESA-P511BA"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511ba> <http://www.w3.org/2004/02/skos/core#notation> "esa-p511ba" .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511ba> <http://www.w3.org/2000/01/rdf-schema#comment> "Acquisitions of tangible fixed assets: dwellings" .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511ba> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511fb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511fb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511fb> <http://www.w3.org/2000/01/rdf-schema#label> "ESA-P511FB"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511fb> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESA-P511FB"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511fb> <http://www.w3.org/2004/02/skos/core#notation> "esa-p511fb" .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511fb> <http://www.w3.org/2000/01/rdf-schema#comment> "Disposals of tangible fixed assets: vehicles" .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511fb> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d6111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d6111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d6111> <http://www.w3.org/2000/01/rdf-schema#label> "ESA-D6111"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d6111> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESA-D6111"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d6111> <http://www.w3.org/2004/02/skos/core#notation> "esa-d6111" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d6111> <http://www.w3.org/2000/01/rdf-schema#comment> "Employers\u2019 actual social contributions" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d6111> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d92f> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d92f> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d92f> <http://www.w3.org/2000/01/rdf-schema#label> "ESA-D92F"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d92f> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESA-D92F"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d92f> <http://www.w3.org/2004/02/skos/core#notation> "esa-d92f" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d92f> <http://www.w3.org/2000/01/rdf-schema#comment> "Investment grants to and from rest of the world" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d92f> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d99e> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d99e> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d99e> <http://www.w3.org/2000/01/rdf-schema#label> "ESA-D99E"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d99e> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESA-D99E"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d99e> <http://www.w3.org/2004/02/skos/core#notation> "esa-d99e" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d99e> <http://www.w3.org/2000/01/rdf-schema#comment> "Other capital transfers to public corporations" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d99e> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-p512da> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-p512da> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/esa/esa-p512da> <http://www.w3.org/2000/01/rdf-schema#label> "ESA-P512DA"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-p512da> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESA-P512DA"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-p512da> <http://www.w3.org/2004/02/skos/core#notation> "esa-p512da" .
+<http://finance.data.gov.uk/def/coins/esa/esa-p512da> <http://www.w3.org/2000/01/rdf-schema#comment> "Acquisitions of intangible fixed assets: software licences." .
+<http://finance.data.gov.uk/def/coins/esa/esa-p512da> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-f3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-f3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/esa/esa-f3> <http://www.w3.org/2000/01/rdf-schema#label> "ESA-F3"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-f3> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESA-F3"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-f3> <http://www.w3.org/2004/02/skos/core#notation> "esa-f3" .
+<http://finance.data.gov.uk/def/coins/esa/esa-f3> <http://www.w3.org/2000/01/rdf-schema#comment> "Securities other than shares" .
+<http://finance.data.gov.uk/def/coins/esa/esa-f3> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d74a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d74a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d74a> <http://www.w3.org/2000/01/rdf-schema#label> "ESA-D74A"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d74a> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESA-D74A"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d74a> <http://www.w3.org/2004/02/skos/core#notation> "esa-d74a" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d74a> <http://www.w3.org/2000/01/rdf-schema#comment> "Current international cooperation: UK payments" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d74a> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511da> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511da> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511da> <http://www.w3.org/2000/01/rdf-schema#label> "ESA-P511DA"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511da> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESA-P511DA"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511da> <http://www.w3.org/2004/02/skos/core#notation> "esa-p511da" .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511da> <http://www.w3.org/2000/01/rdf-schema#comment> "Acquisitions of tangible fixed assets: infrastructure assets" .
+<http://finance.data.gov.uk/def/coins/esa/esa-p511da> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-k221> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-k221> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/esa/esa-k221> <http://www.w3.org/2000/01/rdf-schema#label> "ESA-K221"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-k221> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESA-K221"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-k221> <http://www.w3.org/2004/02/skos/core#notation> "esa-k221" .
+<http://finance.data.gov.uk/def/coins/esa/esa-k221> <http://www.w3.org/2000/01/rdf-schema#comment> "Acquisitions of intangible non-produced assets" .
+<http://finance.data.gov.uk/def/coins/esa/esa-k221> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d623> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Esa> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d623> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/esa/esa-d623> <http://www.w3.org/2000/01/rdf-schema#label> "ESA-D623"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d623> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESA-D623"@en .
+<http://finance.data.gov.uk/def/coins/esa/esa-d623> <http://www.w3.org/2004/02/skos/core#notation> "esa-d623" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d623> <http://www.w3.org/2000/01/rdf-schema#comment> "Unfunded employee social benefits" .
+<http://finance.data.gov.uk/def/coins/esa/esa-d623> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/esa> .
+<http://finance.data.gov.uk/def/coins/statistical-concept/esa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/sdmx#Concept> .
+<http://finance.data.gov.uk/def/coins/statistical-concept/esa> <http://www.w3.org/2000/01/rdf-schema#label> "ESA"@en .
+<http://finance.data.gov.uk/def/coins/statistical-concept/esa> <http://www.w3.org/2004/02/skos/core#prefLabel> "ESA"@en .
+<http://finance.data.gov.uk/def/coins/statistical-concept/esa> <http://www.w3.org/2000/01/rdf-schema#comment> "Similar to NACs (see below). Used to group SCoAs by their economic nature. Codes are See link for more details: consistent with the European System of Accounts (1995) (ESA 1995). Used by the Office for National Statistics " .
+<http://finance.data.gov.uk/def/coins/statistical-concept/esa> <http://purl.org/dc/terms/source> <http://www.hm-treasury.gov.uk/d/coins_guidance.pdf> .
+<http://finance.data.gov.uk/def/coins/statistical-concept/esa> <http://www.epimorphics.com/vocabs/coins-generate#columnName> "esa" .

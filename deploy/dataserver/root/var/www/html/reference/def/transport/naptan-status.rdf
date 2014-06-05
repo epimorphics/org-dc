@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+   xmlns:status="http://transport.data.gov.uk/def/naptan-status/"
+   xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <skos:ConceptScheme rdf:about="http://transport.data.gov.uk/def/naptan-status">
+    <skos:hasTopConcept rdf:resource="http://transport.data.gov.uk/def/naptan-status/active"/>
+    <skos:hasTopConcept rdf:resource="http://transport.data.gov.uk/def/naptan-status/inactive"/>
+    <skos:hasTopConcept rdf:resource="http://transport.data.gov.uk/def/naptan-status/pending"/>
+    <skos:prefLabel xml:lang="en">Status</skos:prefLabel>
+  </skos:ConceptScheme>
+  <rdfs:Class rdf:about="http://transport.data.gov.uk/def/naptan-status/Status">
+    <rdfs:label xml:lang="en">Status</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdfs:Class>
+  <status:Status rdf:about="http://transport.data.gov.uk/def/naptan-status/active">
+    <skos:note xml:lang="en">Entity is active.</skos:note>
+    <skos:prefLabel xml:lang="en">Active</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://transport.data.gov.uk/def/naptan-status"/>
+  </status:Status>
+  <status:Status rdf:about="http://transport.data.gov.uk/def/naptan-status/inactive">
+    <skos:note xml:lang="en">Entity is inactive.</skos:note>
+    <skos:prefLabel xml:lang="en">Inactive</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://transport.data.gov.uk/def/naptan-status"/>
+  </status:Status>
+  <status:Status rdf:about="http://transport.data.gov.uk/def/naptan-status/pending">
+    <skos:note xml:lang="en">Entity is still active but is in the process of being made inactive.</skos:note>
+    <skos:prefLabel xml:lang="en">Pending</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://transport.data.gov.uk/def/naptan-status"/>
+  </status:Status>
+</rdf:RDF>

@@ -1,0 +1,2956 @@
+# Generated 2010-11-09T16:53:40+00:00
+
+@prefix rdf:                <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:               <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:                <http://www.w3.org/2002/07/owl#> .
+@prefix skos:               <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd:                <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:               <http://xmlns.com/foaf/0.1/> .
+@prefix void:               <http://rdfs.org/ns/void#> .
+@prefix dcterms:            <http://purl.org/dc/terms/> .
+@prefix sdmx:               <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept:       <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:     <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:     <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:       <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-code:          <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:       <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix qb:                 <http://purl.org/linked-data/cube#> .
+@prefix coins-data:         <http://source.data.gov.uk/data/coins/> .
+@prefix coins-dsd:          <http://finance.data.gov.uk/dsd/coins/> .
+@prefix coins-dimension:    <http://finance.data.gov.uk/dsd/coins/dimension/> .
+@prefix coins-attribute:    <http://finance.data.gov.uk/dsd/coins/attribute/> .
+@prefix coins-measure:      <http://finance.data.gov.uk/dsd/coins/measure/> .
+@prefix coins-slicekey:     <http://finance.data.gov.uk/dsd/coins/slice/> .
+
+<http://finance.data.gov.uk/def/coins/statistical-concept/department-code>
+    a sdmx:Concept;
+    rdfs:label "department code"@en;
+    skos:prefLabel "department code"@en;
+    rdfs:comment """Organisation, or department, codes comprise three alpha characters followed
+       by three numeric characters, e.g. MOD017. The alpha characters originally related to the
+       name of the department, but the direct linkage may have been lost when the names of
+       departments have changed, e.g. DTI084 is the code for the Department of Business Innovation and
+       Science but that department was originally known as the Department of Trade and Industry
+       when the COINS coding structure was established.""";
+    <http://purl.org/dc/terms/source> <http://www.hm-treasury.gov.uk/d/coins_guidance.pdf>;
+    <http://www.epimorphics.com/vocabs/coins-generate#columnName> "department_code"
+    .
+
+<http://finance.data.gov.uk/def/coins/DepartmentCode>
+    a rdfs:Class, owl:Class;
+    rdfs:subClassOf skos:Concept;
+    rdfs:label "department code values class"@en;
+    skos:prefLabel "department code values class"@en;
+    rdfs:comment "The class of values in the department code code-list scheme";
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code>
+    a skos:ConceptScheme;
+    rdfs:label "department code code list concept scheme"@en;
+    skos:prefLabel "department code code list concept scheme"@en;
+    skos:hasTopConcept <http://finance.data.gov.uk/def/coins/department-code/aal022>,
+          <http://finance.data.gov.uk/def/coins/department-code/abr017>,
+          <http://finance.data.gov.uk/def/coins/department-code/ace048>,
+          <http://finance.data.gov.uk/def/coins/department-code/aci202>,
+          <http://finance.data.gov.uk/def/coins/department-code/afs902>,
+          <http://finance.data.gov.uk/def/coins/department-code/ahc084>,
+          <http://finance.data.gov.uk/def/coins/department-code/ali022>,
+          <http://finance.data.gov.uk/def/coins/department-code/ara035>,
+          <http://finance.data.gov.uk/def/coins/department-code/ari201>,
+          <http://finance.data.gov.uk/def/coins/department-code/auc085>,
+          <http://finance.data.gov.uk/def/coins/department-code/bec022>,
+          <http://finance.data.gov.uk/def/coins/department-code/bnc084>,
+          <http://finance.data.gov.uk/def/coins/department-code/bpc003>,
+          <http://finance.data.gov.uk/def/coins/department-code/brc084>,
+          <http://finance.data.gov.uk/def/coins/department-code/bti013>,
+          <http://finance.data.gov.uk/def/coins/department-code/btp004>,
+          <http://finance.data.gov.uk/def/coins/department-code/bts208>,
+          <http://finance.data.gov.uk/def/coins/department-code/bwb003>,
+          <http://finance.data.gov.uk/def/coins/department-code/bya087>,
+          <http://finance.data.gov.uk/def/coins/department-code/caa004>,
+          <http://finance.data.gov.uk/def/coins/department-code/cab010>,
+          <http://finance.data.gov.uk/def/coins/department-code/ccl084>,
+          <http://finance.data.gov.uk/def/coins/department-code/ccp084>,
+          <http://finance.data.gov.uk/def/coins/department-code/ccr034>,
+          <http://finance.data.gov.uk/def/coins/department-code/cdf034>,
+          <http://finance.data.gov.uk/def/coins/department-code/cds084>,
+          <http://finance.data.gov.uk/def/coins/department-code/cea203>,
+          <http://finance.data.gov.uk/def/coins/department-code/cen083>,
+          <http://finance.data.gov.uk/def/coins/department-code/ces014>,
+          <http://finance.data.gov.uk/def/coins/department-code/cex086>,
+          <http://finance.data.gov.uk/def/coins/department-code/cfa022>,
+          <http://finance.data.gov.uk/def/coins/department-code/cft048>,
+          <http://finance.data.gov.uk/def/coins/department-code/cfw003>,
+          <http://finance.data.gov.uk/def/coins/department-code/cha033>,
+          <http://finance.data.gov.uk/def/coins/department-code/chc009>,
+          <http://finance.data.gov.uk/def/coins/department-code/chi033>,
+          <http://finance.data.gov.uk/def/coins/department-code/cic034>,
+          <http://finance.data.gov.uk/def/coins/department-code/cic047>,
+          <http://finance.data.gov.uk/def/coins/department-code/cip034>,
+          <http://finance.data.gov.uk/def/coins/department-code/cit022>,
+          <http://finance.data.gov.uk/def/coins/department-code/cja047>,
+          <http://finance.data.gov.uk/def/coins/department-code/cla085>,
+          <http://finance.data.gov.uk/def/coins/department-code/cmc084>,
+          <http://finance.data.gov.uk/def/coins/department-code/cna003>,
+          <http://finance.data.gov.uk/def/coins/department-code/coh084>,
+          <http://finance.data.gov.uk/def/coins/department-code/coi010>,
+          <http://finance.data.gov.uk/def/coins/department-code/col084>,
+          <http://finance.data.gov.uk/def/coins/department-code/cps016>,
+          <http://finance.data.gov.uk/def/coins/department-code/cpt034>,
+          <http://finance.data.gov.uk/def/coins/department-code/cra075>,
+          <http://finance.data.gov.uk/def/coins/department-code/crc075>,
+          <http://finance.data.gov.uk/def/coins/department-code/cre034>,
+          <http://finance.data.gov.uk/def/coins/department-code/cru003>,
+          <http://finance.data.gov.uk/def/coins/department-code/csc033>,
+          <http://finance.data.gov.uk/def/coins/department-code/cvh085>,
+          <http://finance.data.gov.uk/def/coins/department-code/dan017>,
+          <http://finance.data.gov.uk/def/coins/department-code/dar201>,
+          <http://finance.data.gov.uk/def/coins/department-code/dca202>,
+          <http://finance.data.gov.uk/def/coins/department-code/dcl084>,
+          <http://finance.data.gov.uk/def/coins/department-code/dcm048>,
+          <http://finance.data.gov.uk/def/coins/department-code/dec066>,
+          <http://finance.data.gov.uk/def/coins/department-code/del207>,
+          <http://finance.data.gov.uk/def/coins/department-code/den206>,
+          <http://finance.data.gov.uk/def/coins/department-code/des022>,
+          <http://finance.data.gov.uk/def/coins/department-code/det204>,
+          <http://finance.data.gov.uk/def/coins/department-code/dfp205>,
+          <http://finance.data.gov.uk/def/coins/department-code/dft004>,
+          <http://finance.data.gov.uk/def/coins/department-code/did030>,
+          <http://finance.data.gov.uk/def/coins/department-code/dis063>,
+          <http://finance.data.gov.uk/def/coins/department-code/dns049>,
+          <http://finance.data.gov.uk/def/coins/department-code/dof061>,
+          <http://finance.data.gov.uk/def/coins/department-code/doh033>,
+          <http://finance.data.gov.uk/def/coins/department-code/dpm085>,
+          <http://finance.data.gov.uk/def/coins/department-code/drc032>,
+          <http://finance.data.gov.uk/def/coins/department-code/drd209>,
+          <http://finance.data.gov.uk/def/coins/department-code/dsa004>,
+          <http://finance.data.gov.uk/def/coins/department-code/dsd210>,
+          <http://finance.data.gov.uk/def/coins/department-code/dst017>,
+          <http://finance.data.gov.uk/def/coins/department-code/dti084>,
+          <http://finance.data.gov.uk/def/coins/department-code/dvl004>,
+          <http://finance.data.gov.uk/def/coins/department-code/dwp032>,
+          <http://finance.data.gov.uk/def/coins/department-code/ecg025>,
+          <http://finance.data.gov.uk/def/coins/department-code/ecn211>,
+          <http://finance.data.gov.uk/def/coins/department-code/efr003>,
+          <http://finance.data.gov.uk/def/coins/department-code/eit022>,
+          <http://finance.data.gov.uk/def/coins/department-code/elc011>,
+          <http://finance.data.gov.uk/def/coins/department-code/elai>,
+          <http://finance.data.gov.uk/def/coins/department-code/eni203>,
+          <http://finance.data.gov.uk/def/coins/department-code/env003>,
+          <http://finance.data.gov.uk/def/coins/department-code/eoc084>,
+          <http://finance.data.gov.uk/def/coins/department-code/epa075>,
+          <http://finance.data.gov.uk/def/coins/department-code/eps084>,
+          <http://finance.data.gov.uk/def/coins/department-code/ept085>,
+          <http://finance.data.gov.uk/def/coins/department-code/esr084>,
+          <http://finance.data.gov.uk/def/coins/department-code/eun207>,
+          <http://finance.data.gov.uk/def/coins/department-code/fcm028>,
+          <http://finance.data.gov.uk/def/coins/department-code/fco027>,
+          <http://finance.data.gov.uk/def/coins/department-code/fec075>,
+          <http://finance.data.gov.uk/def/coins/department-code/ffb003>,
+          <http://finance.data.gov.uk/def/coins/department-code/fha201>,
+          <http://finance.data.gov.uk/def/coins/department-code/fia208>,
+          <http://finance.data.gov.uk/def/coins/department-code/fsa026>,
+          <http://finance.data.gov.uk/def/coins/department-code/fsc085>,
+          <http://finance.data.gov.uk/def/coins/department-code/fsr029>,
+          <http://finance.data.gov.uk/def/coins/department-code/fss034>,
+          <http://finance.data.gov.uk/def/coins/department-code/gad031>,
+          <http://finance.data.gov.uk/def/coins/department-code/gbg048>,
+          <http://finance.data.gov.uk/def/coins/department-code/gec084>,
+          <http://finance.data.gov.uk/def/coins/department-code/gef025>,
+          <http://finance.data.gov.uk/def/coins/department-code/geo064>,
+          <http://finance.data.gov.uk/def/coins/department-code/gla003>,
+          <http://finance.data.gov.uk/def/coins/department-code/gtc022>,
+          <http://finance.data.gov.uk/def/coins/department-code/hbl048>,
+          <http://finance.data.gov.uk/def/coins/department-code/hcp085>,
+          <http://finance.data.gov.uk/def/coins/department-code/hdc003>,
+          <http://finance.data.gov.uk/def/coins/department-code/hef022>,
+          <http://finance.data.gov.uk/def/coins/department-code/hgc003>,
+          <http://finance.data.gov.uk/def/coins/department-code/hgt089>,
+          <http://finance.data.gov.uk/def/coins/department-code/hie075>,
+          <http://finance.data.gov.uk/def/coins/department-code/hmc015>,
+          <http://finance.data.gov.uk/def/coins/department-code/hmt087>,
+          <http://finance.data.gov.uk/def/coins/department-code/hoa038>,
+          <http://finance.data.gov.uk/def/coins/department-code/hoc036>,
+          <http://finance.data.gov.uk/def/coins/department-code/hof034>,
+          <http://finance.data.gov.uk/def/coins/department-code/hol037>,
+          <http://finance.data.gov.uk/def/coins/department-code/hom075>,
+          <http://finance.data.gov.uk/def/coins/department-code/hpg033>,
+          <http://finance.data.gov.uk/def/coins/department-code/hsc032>,
+          <http://finance.data.gov.uk/def/coins/department-code/hsp208>,
+          <http://finance.data.gov.uk/def/coins/department-code/hyo017>,
+          <http://finance.data.gov.uk/def/coins/department-code/iip022>,
+          <http://finance.data.gov.uk/def/coins/department-code/ilr041>,
+          <http://finance.data.gov.uk/def/coins/department-code/ils081>,
+          <http://finance.data.gov.uk/def/coins/department-code/inl204>,
+          <http://finance.data.gov.uk/def/coins/department-code/ipo034>,
+          <http://finance.data.gov.uk/def/coins/department-code/ips069>,
+          <http://finance.data.gov.uk/def/coins/department-code/isc034>,
+          <http://finance.data.gov.uk/def/coins/department-code/jps908>,
+          <http://finance.data.gov.uk/def/coins/department-code/kew003>,
+          <http://finance.data.gov.uk/def/coins/department-code/lab075>,
+          <http://finance.data.gov.uk/def/coins/department-code/las096>,
+          <http://finance.data.gov.uk/def/coins/department-code/lcd047>,
+          <http://finance.data.gov.uk/def/coins/department-code/lcn210>,
+          <http://finance.data.gov.uk/def/coins/department-code/lec047>,
+          <http://finance.data.gov.uk/def/coins/department-code/lrg045>,
+          <http://finance.data.gov.uk/def/coins/department-code/lsc022>,
+          <http://finance.data.gov.uk/def/coins/department-code/ltg085>,
+          <http://finance.data.gov.uk/def/coins/department-code/lts075>,
+          <http://finance.data.gov.uk/def/coins/department-code/mdc003>,
+          <http://finance.data.gov.uk/def/coins/department-code/meo017>,
+          <http://finance.data.gov.uk/def/coins/department-code/mir033>,
+          <http://finance.data.gov.uk/def/coins/department-code/mlc003>,
+          <http://finance.data.gov.uk/def/coins/department-code/mod017>,
+          <http://finance.data.gov.uk/def/coins/department-code/mrc084>,
+          <http://finance.data.gov.uk/def/coins/department-code/naf017>,
+          <http://finance.data.gov.uk/def/coins/department-code/nao050>,
+          <http://finance.data.gov.uk/def/coins/department-code/nat003>,
+          <http://finance.data.gov.uk/def/coins/department-code/naw090>,
+          <http://finance.data.gov.uk/def/coins/department-code/ncc084>,
+          <http://finance.data.gov.uk/def/coins/department-code/nci034>,
+          <http://finance.data.gov.uk/def/coins/department-code/ncr034>,
+          <http://finance.data.gov.uk/def/coins/department-code/ncs022>,
+          <http://finance.data.gov.uk/def/coins/department-code/nda084>,
+          <http://finance.data.gov.uk/def/coins/department-code/nen003>,
+          <http://finance.data.gov.uk/def/coins/department-code/ner084>,
+          <http://finance.data.gov.uk/def/coins/department-code/nfc003>,
+          <http://finance.data.gov.uk/def/coins/department-code/ngs075>,
+          <http://finance.data.gov.uk/def/coins/department-code/nhe033>,
+          <http://finance.data.gov.uk/def/coins/department-code/nhp903>,
+          <http://finance.data.gov.uk/def/coins/department-code/nic081.cga>,
+          <http://finance.data.gov.uk/def/coins/department-code/nic081>,
+          <http://finance.data.gov.uk/def/coins/department-code/nie099>,
+          <http://finance.data.gov.uk/def/coins/department-code/nio097>,
+          <http://finance.data.gov.uk/def/coins/department-code/njc081>,
+          <http://finance.data.gov.uk/def/coins/department-code/nlc048>,
+          <http://finance.data.gov.uk/def/coins/department-code/nld048>,
+          <http://finance.data.gov.uk/def/coins/department-code/nls075>,
+          <http://finance.data.gov.uk/def/coins/department-code/nmn202>,
+          <http://finance.data.gov.uk/def/coins/department-code/nmu075>,
+          <http://finance.data.gov.uk/def/coins/department-code/nilai>,
+          <http://finance.data.gov.uk/def/coins/department-code/nrg084>,
+          <http://finance.data.gov.uk/def/coins/department-code/nsg062>,
+          <http://finance.data.gov.uk/def/coins/department-code/ntb204>,
+          <http://finance.data.gov.uk/def/coins/department-code/ofm211>,
+          <http://finance.data.gov.uk/def/coins/department-code/oft074>,
+          <http://finance.data.gov.uk/def/coins/department-code/oge020>,
+          <http://finance.data.gov.uk/def/coins/department-code/oic047>,
+          <http://finance.data.gov.uk/def/coins/department-code/ois022>,
+          <http://finance.data.gov.uk/def/coins/department-code/ons005>,
+          <http://finance.data.gov.uk/def/coins/department-code/opa032>,
+          <http://finance.data.gov.uk/def/coins/department-code/opc060>,
+          <http://finance.data.gov.uk/def/coins/department-code/ops017>,
+          <http://finance.data.gov.uk/def/coins/department-code/organisati>,
+          <http://finance.data.gov.uk/def/coins/department-code/orr088>,
+          <http://finance.data.gov.uk/def/coins/department-code/oss907>,
+          <http://finance.data.gov.uk/def/coins/department-code/ows057>,
+          <http://finance.data.gov.uk/def/coins/department-code/pab034>,
+          <http://finance.data.gov.uk/def/coins/department-code/pao084>,
+          <http://finance.data.gov.uk/def/coins/department-code/pbn097>,
+          <http://finance.data.gov.uk/def/coins/department-code/pcb032>,
+          <http://finance.data.gov.uk/def/coins/department-code/pco065>,
+          <http://finance.data.gov.uk/def/coins/department-code/pcs901>,
+          <http://finance.data.gov.uk/def/coins/department-code/pfs022>,
+          <http://finance.data.gov.uk/def/coins/department-code/phl033>,
+          <http://finance.data.gov.uk/def/coins/department-code/pit034>,
+          <http://finance.data.gov.uk/def/coins/department-code/pmd208>,
+          <http://finance.data.gov.uk/def/coins/department-code/pon097>,
+          <http://finance.data.gov.uk/def/coins/department-code/ppa084>,
+          <http://finance.data.gov.uk/def/coins/department-code/ppf032>,
+          <http://finance.data.gov.uk/def/coins/department-code/pro067>,
+          <http://finance.data.gov.uk/def/coins/department-code/psc006>,
+          <http://finance.data.gov.uk/def/coins/department-code/psn097>,
+          <http://finance.data.gov.uk/def/coins/department-code/qca022>,
+          <http://finance.data.gov.uk/def/coins/department-code/qec085>,
+          <http://finance.data.gov.uk/def/coins/department-code/qia022>,
+          <http://finance.data.gov.uk/def/coins/department-code/qqp017>,
+          <http://finance.data.gov.uk/def/coins/department-code/rbg075>,
+          <http://finance.data.gov.uk/def/coins/department-code/rcm048>,
+          <http://finance.data.gov.uk/def/coins/department-code/rcp046>,
+          <http://finance.data.gov.uk/def/coins/department-code/rda084>,
+          <http://finance.data.gov.uk/def/coins/department-code/reg212>,
+          <http://finance.data.gov.uk/def/coins/department-code/rel032>,
+          <http://finance.data.gov.uk/def/coins/department-code/rhc017>,
+          <http://finance.data.gov.uk/def/coins/department-code/rmh084>,
+          <http://finance.data.gov.uk/def/coins/department-code/rmt087>,
+          <http://finance.data.gov.uk/def/coins/department-code/sac075>,
+          <http://finance.data.gov.uk/def/coins/department-code/sbe085>,
+          <http://finance.data.gov.uk/def/coins/department-code/scn202>,
+          <http://finance.data.gov.uk/def/coins/department-code/sco042>,
+          <http://finance.data.gov.uk/def/coins/department-code/slai>,
+          <http://finance.data.gov.uk/def/coins/department-code/sct075>,
+          <http://finance.data.gov.uk/def/coins/department-code/sen075>,
+          <http://finance.data.gov.uk/def/coins/department-code/sfo019>,
+          <http://finance.data.gov.uk/def/coins/department-code/she075>,
+          <http://finance.data.gov.uk/def/coins/department-code/sia003>,
+          <http://finance.data.gov.uk/def/coins/department-code/siy034>,
+          <http://finance.data.gov.uk/def/coins/department-code/slc022>,
+          <http://finance.data.gov.uk/def/coins/department-code/snh075>,
+          <http://finance.data.gov.uk/def/coins/department-code/sni909>,
+          <http://finance.data.gov.uk/def/coins/department-code/sps075>,
+          <http://finance.data.gov.uk/def/coins/department-code/sqa075>,
+          <http://finance.data.gov.uk/def/coins/department-code/sra004>,
+          <http://finance.data.gov.uk/def/coins/department-code/ssd022>,
+          <http://finance.data.gov.uk/def/coins/department-code/sss075>,
+          <http://finance.data.gov.uk/def/coins/department-code/stp084>,
+          <http://finance.data.gov.uk/def/coins/department-code/stu022>,
+          <http://finance.data.gov.uk/def/coins/department-code/tps904>,
+          <http://finance.data.gov.uk/def/coins/department-code/tsc068>,
+          <http://finance.data.gov.uk/def/coins/department-code/tta022>,
+          <http://finance.data.gov.uk/def/coins/department-code/udc085>,
+          <http://finance.data.gov.uk/def/coins/department-code/uka084>,
+          <http://finance.data.gov.uk/def/coins/department-code/ukp905>,
+          <http://finance.data.gov.uk/def/coins/department-code/use207>,
+          <http://finance.data.gov.uk/def/coins/department-code/vos004>,
+          <http://finance.data.gov.uk/def/coins/department-code/vts085>,
+          <http://finance.data.gov.uk/def/coins/department-code/wag090>,
+          <http://finance.data.gov.uk/def/coins/department-code/wel203>,
+          <http://finance.data.gov.uk/def/coins/department-code/wlai>,
+          <http://finance.data.gov.uk/def/coins/department-code/wfc048>,
+          <http://finance.data.gov.uk/def/coins/department-code/wmd084>,
+          <http://finance.data.gov.uk/def/coins/department-code/wnu085>,
+          <http://finance.data.gov.uk/def/coins/department-code/wof091>,
+          <http://finance.data.gov.uk/def/coins/department-code/yjb034>,
+          <http://finance.data.gov.uk/def/coins/department-code/yjb047>
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/aal022>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "AAL022"@en;
+    skos:prefLabel "AAL022"@en;
+    skos:notation "aal022";
+    rdfs:comment "Adventure Activities Licensing Authority";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/abr017>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "ABR017"@en;
+    skos:prefLabel "ABR017"@en;
+    skos:notation "abr017";
+    rdfs:comment "Army Base Repair Organisation";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/ace048>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "ACE048"@en;
+    skos:prefLabel "ACE048"@en;
+    skos:notation "ace048";
+    rdfs:comment "Arts Council of England";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/aci202>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "ACI202"@en;
+    skos:prefLabel "ACI202"@en;
+    skos:notation "aci202";
+    rdfs:comment "Arts Council of Northern Ireland";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/afs902>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "AFS902"@en;
+    skos:prefLabel "AFS902"@en;
+    skos:notation "afs902";
+    rdfs:comment "Armed Forces Retired Pay, Pensions etc";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/ahc084>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "AHC084"@en;
+    skos:prefLabel "AHC084"@en;
+    skos:notation "ahc084";
+    rdfs:comment "Arts and Humanities Research Council";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/ali022>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "ALI022"@en;
+    skos:prefLabel "ALI022"@en;
+    skos:notation "ali022";
+    rdfs:comment "Adult Learning Inspectorate";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/ara035>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "ARA035"@en;
+    skos:prefLabel "ARA035"@en;
+    skos:notation "ara035";
+    rdfs:comment "Assets Recovery Agency";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/ari201>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "ARI201"@en;
+    skos:prefLabel "ARI201"@en;
+    skos:notation "ari201";
+    rdfs:comment "Agrifood and Biosciences Institute of Northern Ireland";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/auc085>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "AUC085"@en;
+    skos:prefLabel "AUC085"@en;
+    skos:notation "auc085";
+    rdfs:comment "Audit Commission";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/bec022>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "BEC022"@en;
+    skos:prefLabel "BEC022"@en;
+    skos:notation "bec022";
+    rdfs:comment "British Educational Communications and Technology Agency";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/bnc084>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "BNC084"@en;
+    skos:prefLabel "BNC084"@en;
+    skos:notation "bnc084";
+    rdfs:comment "British Nuclear Fuels plc";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/bpc003>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "BPC003"@en;
+    skos:prefLabel "BPC003"@en;
+    skos:notation "bpc003";
+    rdfs:comment "British Potato Council";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/brc084>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "BRC084"@en;
+    skos:prefLabel "BRC084"@en;
+    skos:notation "brc084";
+    rdfs:comment "Biotechnology and Biological Sciences Research Council";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/bti013>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "BTI013"@en;
+    skos:prefLabel "BTI013"@en;
+    skos:notation "bti013";
+    rdfs:comment "UK Trade & Investment";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/btp004>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "BTP004"@en;
+    skos:prefLabel "BTP004"@en;
+    skos:notation "btp004";
+    rdfs:comment "British Transport Police";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/bts208>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "BTS208"@en;
+    skos:prefLabel "BTS208"@en;
+    skos:notation "bts208";
+    rdfs:comment "Northern Ireland Blood Transfusion Service";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/bwb003>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "BWB003"@en;
+    skos:prefLabel "BWB003"@en;
+    skos:notation "bwb003";
+    rdfs:comment "British Waterways Board";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/bya087>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "BYA087"@en;
+    skos:prefLabel "BYA087"@en;
+    skos:notation "bya087";
+    rdfs:comment "OGC Buying Solutions";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/caa004>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "CAA004"@en;
+    skos:prefLabel "CAA004"@en;
+    skos:notation "caa004";
+    rdfs:comment "Civil Aviation Authority";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/cab010>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "CAB010"@en;
+    skos:prefLabel "CAB010"@en;
+    skos:notation "cab010";
+    rdfs:comment "Cabinet Office";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/ccl084>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "CCL084"@en;
+    skos:prefLabel "CCL084"@en;
+    skos:notation "ccl084";
+    rdfs:comment "Council for the Central Laboratory of the Research Councils";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/ccp084>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "CCP084"@en;
+    skos:prefLabel "CCP084"@en;
+    skos:notation "ccp084";
+    rdfs:comment "Postwatch";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/ccr034>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "CCR034"@en;
+    skos:prefLabel "CCR034"@en;
+    skos:notation "ccr034";
+    rdfs:comment "Criminal Cases Review Commission - from 07-08 CCR047";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/cdf034>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "CDF034"@en;
+    skos:prefLabel "CDF034"@en;
+    skos:notation "cdf034";
+    rdfs:comment "Community Development Foundation - from 07-08 CDF085";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/cds084>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "CDS084"@en;
+    skos:prefLabel "CDS084"@en;
+    skos:notation "cds084";
+    rdfs:comment "Council for the Central Laboratory of the Research Councils - Diamond Synchro";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/cea203>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "CEA203"@en;
+    skos:prefLabel "CEA203"@en;
+    skos:notation "cea203";
+    rdfs:comment "Northern Ireland Council for the Curriculum, Examinations and Assessment";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/cen083>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "CEN083"@en;
+    skos:prefLabel "CEN083"@en;
+    skos:notation "cen083";
+    rdfs:comment "HMT Central Exchequer not in HMT Accounts but in HMT DEL";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/ces014>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "CES014"@en;
+    skos:prefLabel "CES014"@en;
+    skos:notation "ces014";
+    rdfs:comment "Crown Estate Office";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/cex086>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "CEX086"@en;
+    skos:prefLabel "CEX086"@en;
+    skos:notation "cex086";
+    rdfs:comment "HMT Central Exchequer";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/cfa022>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "CFA022"@en;
+    skos:prefLabel "CFA022"@en;
+    skos:notation "cfa022";
+    rdfs:comment "Children and Family Court Advisory and Support Service";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/cft048>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "CFT048"@en;
+    skos:prefLabel "CFT048"@en;
+    skos:notation "cft048";
+    rdfs:comment "Channel Four Television Corporation";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/cfw003>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "CFW003"@en;
+    skos:prefLabel "CFW003"@en;
+    skos:notation "cfw003";
+    rdfs:comment "Consumer Council for Water";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/cha033>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "CHA033"@en;
+    skos:prefLabel "CHA033"@en;
+    skos:notation "cha033";
+    rdfs:comment "Commission for Healthcare & Audit Inspection (The Healthcare Commission)";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/chc009>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "CHC009"@en;
+    skos:prefLabel "CHC009"@en;
+    skos:notation "chc009";
+    rdfs:comment "Charity Commission";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/chi033>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "CHI033"@en;
+    skos:prefLabel "CHI033"@en;
+    skos:notation "chi033";
+    rdfs:comment "Commission for Health Improvement";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/cic034>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "CIC034"@en;
+    skos:prefLabel "CIC034"@en;
+    skos:notation "cic034";
+    rdfs:comment "Criminal Injuries Compensation Authority - from 07-08 CIC047";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/cic047>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "CIC047"@en;
+    skos:prefLabel "CIC047"@en;
+    skos:notation "cic047";
+    rdfs:comment "Criminal Injuries Compensation Authority";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/cip034>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "CIP034"@en;
+    skos:prefLabel "CIP034"@en;
+    skos:notation "cip034";
+    rdfs:comment "Criminal Injuries Compensation Authority Panel";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/cit022>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "CIT022"@en;
+    skos:prefLabel "CIT022"@en;
+    skos:notation "cit022";
+    rdfs:comment "Construction Industry Training Board - from 07-08 CIT063 and from 09-10 CIT084";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/cja047>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "CJA047"@en;
+    skos:prefLabel "CJA047"@en;
+    skos:notation "cja047";
+    rdfs:comment "Commission for Judicial Appointments";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/cla085>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "CLA085"@en;
+    skos:prefLabel "CLA085"@en;
+    skos:notation "cla085";
+    rdfs:comment "Commission for Local Administration";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/cmc084>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "CMC084"@en;
+    skos:prefLabel "CMC084"@en;
+    skos:notation "cmc084";
+    rdfs:comment "Competition Commission";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/cna003>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "CNA003"@en;
+    skos:prefLabel "CNA003"@en;
+    skos:notation "cna003";
+    rdfs:comment "Countryside Agency";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/coh084>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "COH084"@en;
+    skos:prefLabel "COH084"@en;
+    skos:notation "coh084";
+    rdfs:comment "Companies House";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/coi010>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "COI010"@en;
+    skos:prefLabel "COI010"@en;
+    skos:notation "coi010";
+    rdfs:comment "Central Office of Information";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/col084>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "COL084"@en;
+    skos:prefLabel "COL084"@en;
+    skos:notation "col084";
+    rdfs:comment "Coal Authority - from 08-09 COL066";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/cps016>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "CPS016"@en;
+    skos:prefLabel "CPS016"@en;
+    skos:notation "cps016";
+    rdfs:comment "The Crown Prosecution Service";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/cpt034>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "CPT034"@en;
+    skos:prefLabel "CPT034"@en;
+    skos:notation "cpt034";
+    rdfs:comment "Central Police Training And Development Authority";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/cra075>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "CRA075"@en;
+    skos:prefLabel "CRA075"@en;
+    skos:notation "cra075";
+    rdfs:comment "Scottish Childrens Reporter Administration";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/crc075>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "CRC075"@en;
+    skos:prefLabel "CRC075"@en;
+    skos:notation "crc075";
+    rdfs:comment "Scottish Criminal Cases Review Commission";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/cre034>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "CRE034"@en;
+    skos:prefLabel "CRE034"@en;
+    skos:notation "cre034";
+    rdfs:comment "Commission for Racial Equality";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/cru003>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "CRU003"@en;
+    skos:prefLabel "CRU003"@en;
+    skos:notation "cru003";
+    rdfs:comment "Commission for Rural Communities";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/csc033>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "CSC033"@en;
+    skos:prefLabel "CSC033"@en;
+    skos:notation "csc033";
+    rdfs:comment "Commission for Social Care Inspection for England";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/cvh085>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "CVH085"@en;
+    skos:prefLabel "CVH085"@en;
+    skos:notation "cvh085";
+    rdfs:comment "Castle Vale Housing Action Trust";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/dan017>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "DAN017"@en;
+    skos:prefLabel "DAN017"@en;
+    skos:notation "dan017";
+    rdfs:comment "Defence Aviation Repair Agency";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/dar201>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "DAR201"@en;
+    skos:prefLabel "DAR201"@en;
+    skos:notation "dar201";
+    rdfs:comment "Department of Agriculture and Rural Development - Northern Ireland";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/dca202>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "DCA202"@en;
+    skos:prefLabel "DCA202"@en;
+    skos:notation "dca202";
+    rdfs:comment "Department of Culture Arts and Leisure - Northern Ireland";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/dcl084>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "DCL084"@en;
+    skos:prefLabel "DCL084"@en;
+    skos:notation "dcl084";
+    rdfs:comment "Design Council";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/dcm048>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "DCM048"@en;
+    skos:prefLabel "DCM048"@en;
+    skos:notation "dcm048";
+    rdfs:comment "Department for Culture, Media and Sport";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/dec066>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "DEC066"@en;
+    skos:prefLabel "DEC066"@en;
+    skos:notation "dec066";
+    rdfs:comment "Department of Energy and Climate Change";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/del207>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "DEL207"@en;
+    skos:prefLabel "DEL207"@en;
+    skos:notation "del207";
+    rdfs:comment "Department for Employment and Learning - Northern Ireland";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/den206>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "DEN206"@en;
+    skos:prefLabel "DEN206"@en;
+    skos:notation "den206";
+    rdfs:comment "Department of the Environment - Northern Ireland";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/des022>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "DES022"@en;
+    skos:prefLabel "DES022"@en;
+    skos:notation "des022";
+    rdfs:comment "Department for Children, Schools and Families";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/det204>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "DET204"@en;
+    skos:prefLabel "DET204"@en;
+    skos:notation "det204";
+    rdfs:comment "Department of Enterprise Trade and Investment - Northern Ireland";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/dfp205>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "DFP205"@en;
+    skos:prefLabel "DFP205"@en;
+    skos:notation "dfp205";
+    rdfs:comment "Department of Finance and Personnel - Northern Ireland";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/dft004>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "DFT004"@en;
+    skos:prefLabel "DFT004"@en;
+    skos:notation "dft004";
+    rdfs:comment "Department for Transport";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/did030>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "DID030"@en;
+    skos:prefLabel "DID030"@en;
+    skos:notation "did030";
+    rdfs:comment "Department for International Development";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/dis063>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "DIS063"@en;
+    skos:prefLabel "DIS063"@en;
+    skos:notation "dis063";
+    rdfs:comment "Department for Innovation, Universities and Skills";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/dns049>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "DNS049"@en;
+    skos:prefLabel "DNS049"@en;
+    skos:notation "dns049";
+    rdfs:comment "National Savings and Investments";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/dof061>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "DOF061"@en;
+    skos:prefLabel "DOF061"@en;
+    skos:notation "dof061";
+    rdfs:comment "Deputy Prime Minister's Office";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/doh033>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "DOH033"@en;
+    skos:prefLabel "DOH033"@en;
+    skos:notation "doh033";
+    rdfs:comment "Department of Health";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/dpm085>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "DPM085"@en;
+    skos:prefLabel "DPM085"@en;
+    skos:notation "dpm085";
+    rdfs:comment "Department for Communities and Local Government";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/drc032>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "DRC032"@en;
+    skos:prefLabel "DRC032"@en;
+    skos:notation "drc032";
+    rdfs:comment "Disability Rights Commission";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/drd209>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "DRD209"@en;
+    skos:prefLabel "DRD209"@en;
+    skos:notation "drd209";
+    rdfs:comment "Department for Regional Development - Northern Ireland";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/dsa004>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "DSA004"@en;
+    skos:prefLabel "DSA004"@en;
+    skos:notation "dsa004";
+    rdfs:comment "Driving Standards Agency";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/dsd210>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "DSD210"@en;
+    skos:prefLabel "DSD210"@en;
+    skos:notation "dsd210";
+    rdfs:comment "Department for Social Development - Northern Ireland";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/dst017>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "DST017"@en;
+    skos:prefLabel "DST017"@en;
+    skos:notation "dst017";
+    rdfs:comment "Defence Science and Technology Laboratory";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/dti084>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "DTI084"@en;
+    skos:prefLabel "DTI084"@en;
+    skos:notation "dti084";
+    rdfs:comment "Department for Business Innovation and Skills";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/dvl004>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "DVL004"@en;
+    skos:prefLabel "DVL004"@en;
+    skos:notation "dvl004";
+    rdfs:comment "Driver and Vehicle Licensing Agency";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/dwp032>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "DWP032"@en;
+    skos:prefLabel "DWP032"@en;
+    skos:notation "dwp032";
+    rdfs:comment "Department for Work and Pensions";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/ecg025>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "ECG025"@en;
+    skos:prefLabel "ECG025"@en;
+    skos:notation "ecg025";
+    rdfs:comment "Export Credits Guarantee Department";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/ecn211>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "ECN211"@en;
+    skos:prefLabel "ECN211"@en;
+    skos:notation "ecn211";
+    rdfs:comment "Equality Commission for Northern Ireland";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/efr003>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "EFR003"@en;
+    skos:prefLabel "EFR003"@en;
+    skos:notation "efr003";
+    rdfs:comment "Department for Environment, Food and Rural Affairs";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/eit022>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "EIT022"@en;
+    skos:prefLabel "EIT022"@en;
+    skos:notation "eit022";
+    rdfs:comment "Engineering Construction Industry Training Board - from 07-08 EIT063 and from 09";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/elc011>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "ELC011"@en;
+    skos:prefLabel "ELC011"@en;
+    skos:notation "elc011";
+    rdfs:comment "Electoral Commission";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/elai>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "English LG Adjustment/Input"@en;
+    skos:prefLabel "English LG Adjustment/Input"@en;
+    skos:notation "elai";
+    rdfs:comment "English Local Government Adjustment/Input";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/eni203>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "ENI203"@en;
+    skos:prefLabel "ENI203"@en;
+    skos:notation "eni203";
+    rdfs:comment "Department of Education - Northern Ireland";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/env003>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "ENV003"@en;
+    skos:prefLabel "ENV003"@en;
+    skos:notation "env003";
+    rdfs:comment "Environment Agency";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/eoc084>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "EOC084"@en;
+    skos:prefLabel "EOC084"@en;
+    skos:notation "eoc084";
+    rdfs:comment "Equal Opportunities Commission";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/epa075>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "EPA075"@en;
+    skos:prefLabel "EPA075"@en;
+    skos:notation "epa075";
+    rdfs:comment "Scottish Environment Protection Agency";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/eps084>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "EPS084"@en;
+    skos:prefLabel "EPS084"@en;
+    skos:notation "eps084";
+    rdfs:comment "Engineering and Physical Sciences Research Council";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/ept085>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "EPT085"@en;
+    skos:prefLabel "EPT085"@en;
+    skos:notation "ept085";
+    rdfs:comment "English Partnerships";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/esr084>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "ESR084"@en;
+    skos:prefLabel "ESR084"@en;
+    skos:notation "esr084";
+    rdfs:comment "Economic and Social Research Council";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/eun207>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "EUN207"@en;
+    skos:prefLabel "EUN207"@en;
+    skos:notation "eun207";
+    rdfs:comment "Enterprise Ulster - Northern Ireland";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/fcm028>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "FCM028"@en;
+    skos:prefLabel "FCM028"@en;
+    skos:notation "fcm028";
+    rdfs:comment "Forestry Commission";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/fco027>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "FCO027"@en;
+    skos:prefLabel "FCO027"@en;
+    skos:notation "fco027";
+    rdfs:comment "Foreign and Commonwealth Office";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/fec075>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "FEC075"@en;
+    skos:prefLabel "FEC075"@en;
+    skos:notation "fec075";
+    rdfs:comment "Scottish Further Education Funding Council";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/ffb003>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "FFB003"@en;
+    skos:prefLabel "FFB003"@en;
+    skos:notation "ffb003";
+    rdfs:comment "Food from Britain";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/fha201>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "FHA201"@en;
+    skos:prefLabel "FHA201"@en;
+    skos:notation "fha201";
+    rdfs:comment "Northern Ireland Fishery Harbour Authority";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/fia208>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "FIA208"@en;
+    skos:prefLabel "FIA208"@en;
+    skos:notation "fia208";
+    rdfs:comment "Northern Ireland Fire and Rescue Service";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/fsa026>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "FSA026"@en;
+    skos:prefLabel "FSA026"@en;
+    skos:notation "fsa026";
+    rdfs:comment "Food Standards Agency";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/fsc085>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "FSC085"@en;
+    skos:prefLabel "FSC085"@en;
+    skos:notation "fsc085";
+    rdfs:comment "Fire Service College";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/fsr029>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "FSR029"@en;
+    skos:prefLabel "FSR029"@en;
+    skos:notation "fsr029";
+    rdfs:comment "Registry of Friendly Societies";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/fss034>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "FSS034"@en;
+    skos:prefLabel "FSS034"@en;
+    skos:notation "fss034";
+    rdfs:comment "Forensic Science Service";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/gad031>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "GAD031"@en;
+    skos:prefLabel "GAD031"@en;
+    skos:notation "gad031";
+    rdfs:comment "Government Actuary's Department";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/gbg048>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "GBG048"@en;
+    skos:prefLabel "GBG048"@en;
+    skos:notation "gbg048";
+    rdfs:comment "Gambling Commission";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/gec084>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "GEC084"@en;
+    skos:prefLabel "GEC084"@en;
+    skos:notation "gec084";
+    rdfs:comment "Energy Watch";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/gef025>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "GEF025"@en;
+    skos:prefLabel "GEF025"@en;
+    skos:notation "gef025";
+    rdfs:comment "Guaranteed Export Finance Corporation";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/geo064>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "GEO064"@en;
+    skos:prefLabel "GEO064"@en;
+    skos:notation "geo064";
+    rdfs:comment "Government Equalities Office";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/gla003>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "GLA003"@en;
+    skos:prefLabel "GLA003"@en;
+    skos:notation "gla003";
+    rdfs:comment "Gangmasters Licensing Authority";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/gtc022>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "GTC022"@en;
+    skos:prefLabel "GTC022"@en;
+    skos:notation "gtc022";
+    rdfs:comment "General Teaching Council";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/hbl048>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "HBL048"@en;
+    skos:prefLabel "HBL048"@en;
+    skos:notation "hbl048";
+    rdfs:comment "Horserace Betting Levy Board";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/hcp085>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "HCP085"@en;
+    skos:prefLabel "HCP085"@en;
+    skos:notation "hcp085";
+    rdfs:comment "Housing Corporation";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/hdc003>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "HDC003"@en;
+    skos:prefLabel "HDC003"@en;
+    skos:notation "hdc003";
+    rdfs:comment "Horticultural Development Council";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/hef022>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "HEF022"@en;
+    skos:prefLabel "HEF022"@en;
+    skos:notation "hef022";
+    rdfs:comment "Higher Education Funding Council for England - from 07-08 HEF063 and from 09-10";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/hgc003>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "HGC003"@en;
+    skos:prefLabel "HGC003"@en;
+    skos:notation "hgc003";
+    rdfs:comment "Home Grown Cereals Authority";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/hgt089>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "HGT089"@en;
+    skos:prefLabel "HGT089"@en;
+    skos:notation "hgt089";
+    rdfs:comment "HM Procurator General and Treasury Solicitor";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/hie075>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "HIE075"@en;
+    skos:prefLabel "HIE075"@en;
+    skos:notation "hie075";
+    rdfs:comment "Highlands and Islands Enterprise";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/hmc015>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "HMC015"@en;
+    skos:prefLabel "HMC015"@en;
+    skos:notation "hmc015";
+    rdfs:comment "HM Customs and Excise";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/hmt087>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "HMT087"@en;
+    skos:prefLabel "HMT087"@en;
+    skos:notation "hmt087";
+    rdfs:comment "HM Treasury";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/hoa038>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "HOA038"@en;
+    skos:prefLabel "HOA038"@en;
+    skos:notation "hoa038";
+    rdfs:comment "House of Commons: Administration";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/hoc036>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "HOC036"@en;
+    skos:prefLabel "HOC036"@en;
+    skos:notation "hoc036";
+    rdfs:comment "House of Commons: Members";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/hof034>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "HOF034"@en;
+    skos:prefLabel "HOF034"@en;
+    skos:notation "hof034";
+    rdfs:comment "Home Office";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/hol037>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "HOL037"@en;
+    skos:prefLabel "HOL037"@en;
+    skos:notation "hol037";
+    rdfs:comment "House of Lords";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/hom075>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "HOM075"@en;
+    skos:prefLabel "HOM075"@en;
+    skos:notation "hom075";
+    rdfs:comment "Scottish Homes";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/hpg033>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "HPG033"@en;
+    skos:prefLabel "HPG033"@en;
+    skos:notation "hpg033";
+    rdfs:comment "Health Protection Agency";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/hsc032>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "HSC032"@en;
+    skos:prefLabel "HSC032"@en;
+    skos:notation "hsc032";
+    rdfs:comment "Health and Safety Commission and Executive";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/hsp208>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "HSP208"@en;
+    skos:prefLabel "HSP208"@en;
+    skos:notation "hsp208";
+    rdfs:comment "Department of Health Social Services & Public Safety";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/hyo017>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "HYO017"@en;
+    skos:prefLabel "HYO017"@en;
+    skos:notation "hyo017";
+    rdfs:comment "UK Hydrographic Office";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/iip022>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "IIP022"@en;
+    skos:prefLabel "IIP022"@en;
+    skos:notation "iip022";
+    rdfs:comment "Investors in People UK - BIS minor body for 09-10";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/ilr041>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "ILR041"@en;
+    skos:prefLabel "ILR041"@en;
+    skos:notation "ilr041";
+    rdfs:comment "HM Revenue and Customs";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/ils081>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "ILS081"@en;
+    skos:prefLabel "ILS081"@en;
+    skos:notation "ils081";
+    rdfs:comment "Northern Ireland Legal Services Commission";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/inl204>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "INL204"@en;
+    skos:prefLabel "INL204"@en;
+    skos:notation "inl204";
+    rdfs:comment "Invest Northern Ireland";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/ipo034>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "IPO034"@en;
+    skos:prefLabel "IPO034"@en;
+    skos:notation "ipo034";
+    rdfs:comment "Independent Police Complaints Commission";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/ips069>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "IPS069"@en;
+    skos:prefLabel "IPS069"@en;
+    skos:notation "ips069";
+    rdfs:comment "Independent Parliamentary Standards Authority";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/isc034>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "ISC034"@en;
+    skos:prefLabel "ISC034"@en;
+    skos:notation "isc034";
+    rdfs:comment "Office of the Immigration Services Commissioner";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/jps908>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "JPS908"@en;
+    skos:prefLabel "JPS908"@en;
+    skos:notation "jps908";
+    rdfs:comment "Ministry of Justice: Judicial Pensions Scheme";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/kew003>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "KEW003"@en;
+    skos:prefLabel "KEW003"@en;
+    skos:notation "kew003";
+    rdfs:comment "Royal Botanic Gardens, Kew";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/lab075>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "LAB075"@en;
+    skos:prefLabel "LAB075"@en;
+    skos:notation "lab075";
+    rdfs:comment "Scottish Legal Aid Board";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/las096>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "LAS096"@en;
+    skos:prefLabel "LAS096"@en;
+    skos:notation "las096";
+    rdfs:comment "Local authorities self-financed expenditure";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/lcd047>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "LCD047"@en;
+    skos:prefLabel "LCD047"@en;
+    skos:notation "lcd047";
+    rdfs:comment "Ministry of Justice";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/lcn210>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "LCN210"@en;
+    skos:prefLabel "LCN210"@en;
+    skos:notation "lcn210";
+    rdfs:comment "Laganside Corporation - Northern Ireland";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/lec047>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "LEC047"@en;
+    skos:prefLabel "LEC047"@en;
+    skos:notation "lec047";
+    rdfs:comment "Legal Services Commission";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/lrg045>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "LRG045"@en;
+    skos:prefLabel "LRG045"@en;
+    skos:notation "lrg045";
+    rdfs:comment "Land Registry";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/lsc022>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "LSC022"@en;
+    skos:prefLabel "LSC022"@en;
+    skos:notation "lsc022";
+    rdfs:comment "Learning and Skills Council - from 07-08 LSC063 and from 09-10 LSC084";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/ltg085>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "LTG085"@en;
+    skos:prefLabel "LTG085"@en;
+    skos:notation "ltg085";
+    rdfs:comment "London Thames Gateway Development Corporation";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/lts075>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "LTS075"@en;
+    skos:prefLabel "LTS075"@en;
+    skos:notation "lts075";
+    rdfs:comment "Learning and Teaching Scotland";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/mdc003>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "MDC003"@en;
+    skos:prefLabel "MDC003"@en;
+    skos:notation "mdc003";
+    rdfs:comment "Milk Development Council";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/meo017>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "MEO017"@en;
+    skos:prefLabel "MEO017"@en;
+    skos:notation "meo017";
+    rdfs:comment "Meteorological Office";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/mir033>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "MIR033"@en;
+    skos:prefLabel "MIR033"@en;
+    skos:notation "mir033";
+    rdfs:comment "Monitor - Independent Regulator of NHS Foundation Trusts";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/mlc003>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "MLC003"@en;
+    skos:prefLabel "MLC003"@en;
+    skos:notation "mlc003";
+    rdfs:comment "Meat and Livestock Commission";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/mod017>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "MOD017"@en;
+    skos:prefLabel "MOD017"@en;
+    skos:notation "mod017";
+    rdfs:comment "Ministry of Defence";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/mrc084>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "MRC084"@en;
+    skos:prefLabel "MRC084"@en;
+    skos:notation "mrc084";
+    rdfs:comment "Medical Research Council";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/naf017>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "NAF017"@en;
+    skos:prefLabel "NAF017"@en;
+    skos:notation "naf017";
+    rdfs:comment "Navy, Army and Air Force Institute";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/nao050>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "NAO050"@en;
+    skos:prefLabel "NAO050"@en;
+    skos:notation "nao050";
+    rdfs:comment "National Audit Office";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/nat003>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "NAT003"@en;
+    skos:prefLabel "NAT003"@en;
+    skos:notation "nat003";
+    rdfs:comment "English Nature";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/naw090>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "NAW090"@en;
+    skos:prefLabel "NAW090"@en;
+    skos:notation "naw090";
+    rdfs:comment "National Assembly for Wales";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/ncc084>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "NCC084"@en;
+    skos:prefLabel "NCC084"@en;
+    skos:notation "ncc084";
+    rdfs:comment "National Consumer Council - from 1 October 2009 CFO084";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/nci034>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "NCI034"@en;
+    skos:prefLabel "NCI034"@en;
+    skos:notation "nci034";
+    rdfs:comment "National Criminal Intelligence Service";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/ncr034>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "NCR034"@en;
+    skos:prefLabel "NCR034"@en;
+    skos:notation "ncr034";
+    rdfs:comment "National Crime Squad";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/ncs022>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "NCS022"@en;
+    skos:prefLabel "NCS022"@en;
+    skos:notation "ncs022";
+    rdfs:comment "National College for School Leadership";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/nda084>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "NDA084"@en;
+    skos:prefLabel "NDA084"@en;
+    skos:notation "nda084";
+    rdfs:comment "Nuclear Decommissioning Authority - from 08-09 NDA066";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/nen003>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "NEN003"@en;
+    skos:prefLabel "NEN003"@en;
+    skos:notation "nen003";
+    rdfs:comment "Natural England";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/ner084>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "NER084"@en;
+    skos:prefLabel "NER084"@en;
+    skos:notation "ner084";
+    rdfs:comment "Natural Environment Research Council";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/nfc003>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "NFC003"@en;
+    skos:prefLabel "NFC003"@en;
+    skos:notation "nfc003";
+    rdfs:comment "National Forest Company";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/ngs075>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "NGS075"@en;
+    skos:prefLabel "NGS075"@en;
+    skos:notation "ngs075";
+    rdfs:comment "National Galleries of Scotland";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/nhe033>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "NHE033"@en;
+    skos:prefLabel "NHE033"@en;
+    skos:notation "nhe033";
+    rdfs:comment "National Health Service Trusts";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/nhp903>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "NHP903"@en;
+    skos:prefLabel "NHP903"@en;
+    skos:notation "nhp903";
+    rdfs:comment "National Health Service Pension Scheme";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/nic081.cga>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "NIC081.CGA.ELM"@en;
+    skos:prefLabel "NIC081.CGA.ELM"@en;
+    skos:notation "nic081.cga";
+    rdfs:comment "Northern Ireland Court Service.CGA.ELM";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/nic081>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "NIC081"@en;
+    skos:prefLabel "NIC081"@en;
+    skos:notation "nic081";
+    rdfs:comment "Northern Ireland Court Service";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/nie099>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "NIE099"@en;
+    skos:prefLabel "NIE099"@en;
+    skos:notation "nie099";
+    rdfs:comment "Northern Ireland Executive";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/nio097>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "NIO097"@en;
+    skos:prefLabel "NIO097"@en;
+    skos:notation "nio097";
+    rdfs:comment "Northern Ireland Office";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/njc081>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "NJC081"@en;
+    skos:prefLabel "NJC081"@en;
+    skos:notation "njc081";
+    rdfs:comment "Northern Ireland Judicial Appointments Commission";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/nlc048>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "NLC048"@en;
+    skos:prefLabel "NLC048"@en;
+    skos:notation "nlc048";
+    rdfs:comment "National Lottery Commission";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/nld048>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "NLD048"@en;
+    skos:prefLabel "NLD048"@en;
+    skos:notation "nld048";
+    rdfs:comment "National Lottery Distribution Fund";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/nls075>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "NLS075"@en;
+    skos:prefLabel "NLS075"@en;
+    skos:notation "nls075";
+    rdfs:comment "National Library of Scotland";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/nmn202>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "NMN202"@en;
+    skos:prefLabel "NMN202"@en;
+    skos:notation "nmn202";
+    rdfs:comment "National Museums and Galleries of Northern Ireland";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/nmu075>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "NMU075"@en;
+    skos:prefLabel "NMU075"@en;
+    skos:notation "nmu075";
+    rdfs:comment "National Museums of Scotland";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/nilai>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "Northern Irish LG Adjustment/Input"@en;
+    skos:prefLabel "Northern Irish LG Adjustment/Input"@en;
+    skos:notation "nilai";
+    rdfs:comment "Northern Irish Local Government Adjustment/Input";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/nrg084>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "NRG084"@en;
+    skos:prefLabel "NRG084"@en;
+    skos:notation "nrg084";
+    rdfs:comment "British Energy";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/nsg062>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "NSG062"@en;
+    skos:prefLabel "NSG062"@en;
+    skos:notation "nsg062";
+    rdfs:comment "National School of Government";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/ntb204>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "NTB204"@en;
+    skos:prefLabel "NTB204"@en;
+    skos:notation "ntb204";
+    rdfs:comment "Northern Ireland Tourist Board";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/ofm211>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "OFM211"@en;
+    skos:prefLabel "OFM211"@en;
+    skos:notation "ofm211";
+    rdfs:comment "Office of the First Minister and Deputy First Minister - Northern Ireland";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/oft074>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "OFT074"@en;
+    skos:prefLabel "OFT074"@en;
+    skos:notation "oft074";
+    rdfs:comment "Office of Fair Trading";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/oge020>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "OGE020"@en;
+    skos:prefLabel "OGE020"@en;
+    skos:notation "oge020";
+    rdfs:comment "Office of Gas and Electricity Markets";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/oic047>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "OIC047"@en;
+    skos:prefLabel "OIC047"@en;
+    skos:notation "oic047";
+    rdfs:comment "Office of the Information Commissioner";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/ois022>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "OIS022"@en;
+    skos:prefLabel "OIS022"@en;
+    skos:notation "ois022";
+    rdfs:comment "Office for Standards in Education, Children's Services and Skills";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/ons005>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "ONS005"@en;
+    skos:prefLabel "ONS005"@en;
+    skos:notation "ons005";
+    rdfs:comment "Office for National Statistics";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/opa032>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "OPA032"@en;
+    skos:prefLabel "OPA032"@en;
+    skos:notation "opa032";
+    rdfs:comment "Occupational Pensions Regulatory Authority";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/opc060>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "OPC060"@en;
+    skos:prefLabel "OPC060"@en;
+    skos:notation "opc060";
+    rdfs:comment "Office of the Parliamentary Commissioner for Administration and Health Se...";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/ops017>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "OPS017"@en;
+    skos:prefLabel "OPS017"@en;
+    skos:notation "ops017";
+    rdfs:comment "Oil and Pipelines Agency";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/organisati>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "Organisation.NA"@en;
+    skos:prefLabel "Organisation.NA"@en;
+    skos:notation "organisati";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/orr088>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "ORR088"@en;
+    skos:prefLabel "ORR088"@en;
+    skos:notation "orr088";
+    rdfs:comment "Office of Rail Regulation";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/oss907>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "OSS907"@en;
+    skos:prefLabel "OSS907"@en;
+    skos:notation "oss907";
+    rdfs:comment "Department for International Development: Overseas Superannuation";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/ows057>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "OWS057"@en;
+    skos:prefLabel "OWS057"@en;
+    skos:notation "ows057";
+    rdfs:comment "Water Services Regulation Authority";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/pab034>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "PAB034"@en;
+    skos:prefLabel "PAB034"@en;
+    skos:notation "pab034";
+    rdfs:comment "Parole Board - from 07-08 PAB047";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/pao084>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "PAO084"@en;
+    skos:prefLabel "PAO084"@en;
+    skos:notation "pao084";
+    rdfs:comment "Patent Office";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/pbn097>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "PBN097"@en;
+    skos:prefLabel "PBN097"@en;
+    skos:notation "pbn097";
+    rdfs:comment "Probation Board for Northern Ireland";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/pcb032>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "PCB032"@en;
+    skos:prefLabel "PCB032"@en;
+    skos:notation "pcb032";
+    rdfs:comment "Pensions Compensation Board";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/pco065>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "PCO065"@en;
+    skos:prefLabel "PCO065"@en;
+    skos:notation "pco065";
+    rdfs:comment "Privy Council Office";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/pcs901>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "PCS901"@en;
+    skos:prefLabel "PCS901"@en;
+    skos:notation "pcs901";
+    rdfs:comment "Cabinet Office: Civil superannuation";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/pfs022>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "PFS022"@en;
+    skos:prefLabel "PFS022"@en;
+    skos:notation "pfs022";
+    rdfs:comment "Partnerships for Schools";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/phl033>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "PHL033"@en;
+    skos:prefLabel "PHL033"@en;
+    skos:notation "phl033";
+    rdfs:comment "Public Health Laboratory Service";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/pit034>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "PIT034"@en;
+    skos:prefLabel "PIT034"@en;
+    skos:notation "pit034";
+    rdfs:comment "Police Information Technology Organisation";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/pmd208>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "PMD208"@en;
+    skos:prefLabel "PMD208"@en;
+    skos:notation "pmd208";
+    rdfs:comment "Northern Ireland Medical and Dental Training Agency";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/pon097>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "PON097"@en;
+    skos:prefLabel "PON097"@en;
+    skos:notation "pon097";
+    rdfs:comment "Police Ombudsman for Northern Ireland";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/ppa084>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "PPA084"@en;
+    skos:prefLabel "PPA084"@en;
+    skos:notation "ppa084";
+    rdfs:comment "Particle Physics and Astronomy Research Council";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/ppf032>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "PPF032"@en;
+    skos:prefLabel "PPF032"@en;
+    skos:notation "ppf032";
+    rdfs:comment "Pension Protection Fund";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/pro067>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "PRO067"@en;
+    skos:prefLabel "PRO067"@en;
+    skos:notation "pro067";
+    rdfs:comment "The National Archives";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/psc006>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "PSC006"@en;
+    skos:prefLabel "PSC006"@en;
+    skos:notation "psc006";
+    rdfs:comment "Postal Services Commission";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/psn097>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "PSN097"@en;
+    skos:prefLabel "PSN097"@en;
+    skos:notation "psn097";
+    rdfs:comment "Police Service of Northern Ireland";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/qca022>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "QCA022"@en;
+    skos:prefLabel "QCA022"@en;
+    skos:notation "qca022";
+    rdfs:comment "Qualifications and Curriculum Authority";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/qec085>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "QEC085"@en;
+    skos:prefLabel "QEC085"@en;
+    skos:notation "qec085";
+    rdfs:comment "The Queen Elizabeth II Conference Centre";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/qia022>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "QIA022"@en;
+    skos:prefLabel "QIA022"@en;
+    skos:notation "qia022";
+    rdfs:comment "Quality Improvement Agency - from 07-08 QIA063";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/qqp017>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "QQP017"@en;
+    skos:prefLabel "QQP017"@en;
+    skos:notation "qqp017";
+    rdfs:comment "QinetiQ plc";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/rbg075>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "RBG075"@en;
+    skos:prefLabel "RBG075"@en;
+    skos:notation "rbg075";
+    rdfs:comment "Royal Botanic Garden, Edinburgh";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/rcm048>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "RCM048"@en;
+    skos:prefLabel "RCM048"@en;
+    skos:notation "rcm048";
+    rdfs:comment "Museums, Libraries and Archives Council";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/rcp046>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "RCP046"@en;
+    skos:prefLabel "RCP046"@en;
+    skos:notation "rcp046";
+    rdfs:comment "Revenue and Customs Prosecutions Office";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/rda084>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "RDA084"@en;
+    skos:prefLabel "RDA084"@en;
+    skos:notation "rda084";
+    rdfs:comment "Regional Development Agencies (RDAs) - all NDPB RDAs - budget and forecast";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/reg212>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "REG212"@en;
+    skos:prefLabel "REG212"@en;
+    skos:notation "reg212";
+    rdfs:comment "Northern Ireland Authority for Energy Regulation";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/rel032>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "REL032"@en;
+    skos:prefLabel "REL032"@en;
+    skos:notation "rel032";
+    rdfs:comment "Remploy Ltd";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/rhc017>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "RHC017"@en;
+    skos:prefLabel "RHC017"@en;
+    skos:notation "rhc017";
+    rdfs:comment "Royal Hospital, Chelsea";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/rmh084>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "RMH084"@en;
+    skos:prefLabel "RMH084"@en;
+    skos:notation "rmh084";
+    rdfs:comment "Royal Mail Holdings plc";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/rmt087>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "RMT087"@en;
+    skos:prefLabel "RMT087"@en;
+    skos:notation "rmt087";
+    rdfs:comment "Royal Mint";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/sac075>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "SAC075"@en;
+    skos:prefLabel "SAC075"@en;
+    skos:notation "sac075";
+    rdfs:comment "Scottish Arts Council";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/sbe085>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "SBE085"@en;
+    skos:prefLabel "SBE085"@en;
+    skos:notation "sbe085";
+    rdfs:comment "Standards Board for England";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/scn202>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "SCN202"@en;
+    skos:prefLabel "SCN202"@en;
+    skos:notation "scn202";
+    rdfs:comment "Sports Council for Northern Ireland";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/sco042>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "SCO042"@en;
+    skos:prefLabel "SCO042"@en;
+    skos:notation "sco042";
+    rdfs:comment "Scotland Office";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/slai>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "Scottish LG Adjustment/Input"@en;
+    skos:prefLabel "Scottish LG Adjustment/Input"@en;
+    skos:notation "slai";
+    rdfs:comment "Scottish Local Government Adjustment/Input";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/sct075>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "SCT075"@en;
+    skos:prefLabel "SCT075"@en;
+    skos:notation "sct075";
+    rdfs:comment "Scottish Government";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/sen075>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "SEN075"@en;
+    skos:prefLabel "SEN075"@en;
+    skos:notation "sen075";
+    rdfs:comment "Scottish Enterprise";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/sfo019>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "SFO019"@en;
+    skos:prefLabel "SFO019"@en;
+    skos:notation "sfo019";
+    rdfs:comment "Serious Fraud Office";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/she075>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "SHE075"@en;
+    skos:prefLabel "SHE075"@en;
+    skos:notation "she075";
+    rdfs:comment "Scottish Higher Education Funding Council";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/sia003>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "SIA003"@en;
+    skos:prefLabel "SIA003"@en;
+    skos:notation "sia003";
+    rdfs:comment "SeaFish Industry Authority";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/siy034>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "SIY034"@en;
+    skos:prefLabel "SIY034"@en;
+    skos:notation "siy034";
+    rdfs:comment "Security Industry Authority";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/slc022>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "SLC022"@en;
+    skos:prefLabel "SLC022"@en;
+    skos:notation "slc022";
+    rdfs:comment "Student Loans Company Ltd - from 07-08 SLC063 and from 09-10 DTI084";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/snh075>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "SNH075"@en;
+    skos:prefLabel "SNH075"@en;
+    skos:notation "snh075";
+    rdfs:comment "Scottish Natural Heritage";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/sni909>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "SNI909"@en;
+    skos:prefLabel "SNI909"@en;
+    skos:notation "sni909";
+    rdfs:comment "Teachers Superanuation Scheme Statements - Northern Ireland";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/sps075>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "SPS075"@en;
+    skos:prefLabel "SPS075"@en;
+    skos:notation "sps075";
+    rdfs:comment "Sport Scotland";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/sqa075>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "SQA075"@en;
+    skos:prefLabel "SQA075"@en;
+    skos:notation "sqa075";
+    rdfs:comment "Scottish Qualifications Authority";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/sra004>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "SRA004"@en;
+    skos:prefLabel "SRA004"@en;
+    skos:notation "sra004";
+    rdfs:comment "Strategic Rail Authority";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/ssd022>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "SSD022"@en;
+    skos:prefLabel "SSD022"@en;
+    skos:notation "ssd022";
+    rdfs:comment "Sector Skills Development Agency - from 07-08 SSD063";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/sss075>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "SSS075"@en;
+    skos:prefLabel "SSS075"@en;
+    skos:notation "sss075";
+    rdfs:comment "Scottish Screen";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/stp084>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "STP084"@en;
+    skos:prefLabel "STP084"@en;
+    skos:notation "stp084";
+    rdfs:comment "Simpler Trade Procedures Board";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/stu022>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "STU022"@en;
+    skos:prefLabel "STU022"@en;
+    skos:notation "stu022";
+    rdfs:comment "School Food Trust";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/tps904>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "TPS904"@en;
+    skos:prefLabel "TPS904"@en;
+    skos:notation "tps904";
+    rdfs:comment "Teachers' Pension Scheme (England & Wales)";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/tsc068>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "TSC068"@en;
+    skos:prefLabel "TSC068"@en;
+    skos:notation "tsc068";
+    rdfs:comment "The Supreme Court";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/tta022>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "TTA022"@en;
+    skos:prefLabel "TTA022"@en;
+    skos:notation "tta022";
+    rdfs:comment "Training and Development Agency for Schools";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/udc085>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "UDC085"@en;
+    skos:prefLabel "UDC085"@en;
+    skos:notation "udc085";
+    rdfs:comment "Thurrock Urban Development Corporation";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/uka084>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "UKA084"@en;
+    skos:prefLabel "UKA084"@en;
+    skos:notation "uka084";
+    rdfs:comment "United Kingdom Atomic Energy Authority";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/ukp905>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "UKP905"@en;
+    skos:prefLabel "UKP905"@en;
+    skos:notation "ukp905";
+    rdfs:comment "Department for Business, Enterprise & Regulatory Reform: UKAEA pension schemes";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/use207>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "USE207"@en;
+    skos:prefLabel "USE207"@en;
+    skos:notation "use207";
+    rdfs:comment "Ulster Supported Employment Limited - Northern Ireland";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/vos004>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "VOS004"@en;
+    skos:prefLabel "VOS004"@en;
+    skos:notation "vos004";
+    rdfs:comment "Vehicle and Operator Services Agency";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/vts085>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "VTS085"@en;
+    skos:prefLabel "VTS085"@en;
+    skos:notation "vts085";
+    rdfs:comment "The Valuation Tribunal Service";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/wag090>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "WAG090"@en;
+    skos:prefLabel "WAG090"@en;
+    skos:notation "wag090";
+    rdfs:comment "Welsh Assembly Government";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/wel203>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "WEL203"@en;
+    skos:prefLabel "WEL203"@en;
+    skos:notation "wel203";
+    rdfs:comment "Western Education and Library Board - Northern Ireland";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/wlai>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "Welsh LG Adjustment/Input"@en;
+    skos:prefLabel "Welsh LG Adjustment/Input"@en;
+    skos:notation "wlai";
+    rdfs:comment "Welsh Local Government Adjustment/Input";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/wfc048>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "WFC048"@en;
+    skos:prefLabel "WFC048"@en;
+    skos:notation "wfc048";
+    rdfs:comment "Welsh Fourth Channel Authority";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/wmd084>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "WMD084"@en;
+    skos:prefLabel "WMD084"@en;
+    skos:notation "wmd084";
+    rdfs:comment "Advantage West Midlands";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/wnu085>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "WNU085"@en;
+    skos:prefLabel "WNU085"@en;
+    skos:notation "wnu085";
+    rdfs:comment "West Northants UDC";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/wof091>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "WOF091"@en;
+    skos:prefLabel "WOF091"@en;
+    skos:notation "wof091";
+    rdfs:comment "Wales Office";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/yjb034>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "YJB034"@en;
+    skos:prefLabel "YJB034"@en;
+    skos:notation "yjb034";
+    rdfs:comment "Youth Justice Board for England and Wales - from 07-08 YJB047";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-code/yjb047>
+    a <http://finance.data.gov.uk/def/coins/DepartmentCode>, skos:Concept;
+    rdfs:label "YJB047"@en;
+    skos:prefLabel "YJB047"@en;
+    skos:notation "yjb047";
+    rdfs:comment "Youth Justice Board for England and Wales";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-code>;
+    
+    .

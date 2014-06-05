@@ -1,0 +1,69 @@
+# Generated 2010-11-09T16:53:44+00:00
+
+@prefix rdf:                <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:               <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:                <http://www.w3.org/2002/07/owl#> .
+@prefix skos:               <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd:                <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:               <http://xmlns.com/foaf/0.1/> .
+@prefix void:               <http://rdfs.org/ns/void#> .
+@prefix dcterms:            <http://purl.org/dc/terms/> .
+@prefix sdmx:               <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept:       <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:     <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:     <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:       <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-code:          <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:       <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix qb:                 <http://purl.org/linked-data/cube#> .
+@prefix coins-data:         <http://source.data.gov.uk/data/coins/> .
+@prefix coins-dsd:          <http://finance.data.gov.uk/dsd/coins/> .
+@prefix coins-dimension:    <http://finance.data.gov.uk/dsd/coins/dimension/> .
+@prefix coins-attribute:    <http://finance.data.gov.uk/dsd/coins/attribute/> .
+@prefix coins-measure:      <http://finance.data.gov.uk/dsd/coins/measure/> .
+@prefix coins-slicekey:     <http://finance.data.gov.uk/dsd/coins/slice/> .
+
+<http://finance.data.gov.uk/def/coins/statistical-concept/pesa-1-1>
+    a sdmx:Concept;
+    rdfs:label "pesa 1.1"@en;
+    skos:prefLabel "pesa 1.1"@en;
+    rdfs:comment """Identifies expenditure feeding into Social Security in PESA table 1.1.""";
+    <http://purl.org/dc/terms/source> <http://www.hm-treasury.gov.uk/d/coins_guidance.pdf>;
+    <http://www.epimorphics.com/vocabs/coins-generate#columnName> "pesa_1_1"
+    .
+
+<http://finance.data.gov.uk/def/coins/Pesa11>
+    a rdfs:Class, owl:Class;
+    rdfs:subClassOf skos:Concept;
+    rdfs:label "pesa 1.1 values class"@en;
+    skos:prefLabel "pesa 1.1 values class"@en;
+    rdfs:comment "The class of values in the pesa 1.1 code-list scheme";
+    .
+
+<http://finance.data.gov.uk/def/coins/pesa-1-1>
+    a skos:ConceptScheme;
+    rdfs:label "pesa 1.1 code list concept scheme"@en;
+    skos:prefLabel "pesa 1.1 code list concept scheme"@en;
+    skos:hasTopConcept <http://finance.data.gov.uk/def/coins/pesa-1-1/p11ss>,
+          <http://finance.data.gov.uk/def/coins/pesa-1-1/p11ssd>
+    .
+
+<http://finance.data.gov.uk/def/coins/pesa-1-1/p11ss>
+    a <http://finance.data.gov.uk/def/coins/Pesa11>, skos:Concept;
+    rdfs:label "PESA_1_1_Soc_Sec"@en;
+    skos:prefLabel "PESA_1_1_Soc_Sec"@en;
+    skos:notation "p11ss";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/pesa-1-1>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/pesa-1-1/p11ssd>
+    a <http://finance.data.gov.uk/def/coins/Pesa11>, skos:Concept;
+    rdfs:label "PESA_1_1_Soc_Sec_DWP"@en;
+    skos:prefLabel "PESA_1_1_Soc_Sec_DWP"@en;
+    skos:notation "p11ssd";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/pesa-1-1>;
+    
+    .

@@ -1,0 +1,810 @@
+<rdf:RDF
+    xmlns:protonTop="http://proton.semanticweb.org/2005/04/protont#"
+    xmlns:sumo="http://www.ontologyportal.org/translations/SUMO.owl.txt#"
+    xmlns:protonUpper="http://proton.semanticweb.org/2005/04/protonu#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:geonames="http://www.geonames.org/ontology#"
+    xmlns:swbpTime="http://www.w3.org/2006/time#"
+    xmlns="http://statistics.data.gov.uk/def/Foundation/"
+    xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+    xmlns:skos="http://www.w3.org/2008/05/skos#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:frbr="http://purl.org/vocab/frbr/core#"
+    xmlns:goodRelations="http://purl.org/goodrelations/v1#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:skos-xl="http://www.w3.org/2008/05/skos-xl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:dolce="http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <owl:Ontology rdf:about="http://statistics.data.gov.uk/def/Foundation/">
+    <owl:imports rdf:resource="http://www.w3.org/2008/05/skos-xl"/>
+    <owl:imports rdf:resource="http://www.w3.org/2008/05/skos"/>
+    <owl:imports rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    <rdfs:comment>An example foundation ontology developed to accompany the experimental EDUBase dataset. Based on Dolce-lite. Utilizes SKOS, SKOS-XL and Dublin Core Elements. Cross links to FRBR ontology, FOAF, DOLCE-lite and Proton.</rdfs:comment>
+  </owl:Ontology>
+  <owl:Class rdf:about="http://statistics.data.gov.uk/def/Foundation/InformationResource">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.org/dc/elements/1.1/date"/>
+        <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <recommendedProperty rdf:resource="http://purl.org/dc/elements/1.1/creator"/>
+    <recommendedProperty rdf:resource="http://purl.org/dc/elements/1.1/date"/>
+    <recommendedProperty rdf:resource="http://purl.org/dc/elements/1.1/title"/>
+    <owl:disjointWith rdf:resource="http://statistics.data.gov.uk/def/Foundation/ProductInstance"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="http://statistics.data.gov.uk/def/Foundation/Agent"/>
+    </owl:disjointWith>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://statistics.data.gov.uk/def/Foundation/Object"/>
+    </rdfs:subClassOf>
+    <linkedConcept rdf:resource="http://proton.semanticweb.org/2005/04/protont#InformationResource"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Information resource</rdfs:label>
+    <recommendedProperty rdf:resource="http://purl.org/dc/elements/1.1/source"/>
+    <recommendedProperty rdf:resource="http://purl.org/dc/elements/1.1/subject"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.org/dc/elements/1.1/creator"/>
+        <owl:allValuesFrom>
+          <owl:Class rdf:about="http://statistics.data.gov.uk/def/Foundation/Agent"/>
+        </owl:allValuesFrom>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <recommendedProperty rdf:resource="http://purl.org/dc/elements/1.1/rights"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.org/dc/elements/1.1/subject"/>
+        <owl:allValuesFrom>
+          <rdf:Description rdf:about="http://www.w3.org/2008/05/skos#Concept">
+            <rdfs:subClassOf>
+              <owl:Class rdf:about="http://statistics.data.gov.uk/def/Foundation/Abstract"/>
+            </rdfs:subClassOf>
+          </rdf:Description>
+        </owl:allValuesFrom>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.org/dc/elements/1.1/contributor"/>
+        <owl:allValuesFrom>
+          <owl:Class rdf:about="http://statistics.data.gov.uk/def/Foundation/Agent"/>
+        </owl:allValuesFrom>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <recommendedProperty rdf:resource="http://purl.org/dc/elements/1.1/type"/>
+    <recommendedProperty rdf:resource="http://purl.org/dc/elements/1.1/format"/>
+    <rdfs:comment>InformationResource denotes an information resource with identity, as defined in Dublin Core (DC2003ISO). A document (physical or electronic), message or other information object. We recommend use of Dublic Core elements for basic descriptive metadata and guide usage by restricting the range of some dc elements.</rdfs:comment>
+    <owl:disjointWith>
+      <owl:Class rdf:about="http://statistics.data.gov.uk/def/Foundation/GeoLocation"/>
+    </owl:disjointWith>
+    <recommendedProperty rdf:resource="http://purl.org/dc/elements/1.1/contributor"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.org/dc/elements/1.1/source"/>
+        <owl:allValuesFrom rdf:resource="http://statistics.data.gov.uk/def/Foundation/InformationResource"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://statistics.data.gov.uk/def/Foundation/TimeInterval">
+    <linkedConcept rdf:resource="http://www.w3.org/2006/time#Interval"/>
+    <linkedConcept rdf:resource="http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#time-interval"/>
+    <linkedConcept rdf:resource="http://www.ontologyportal.org/translations/SUMO.owl.txt#TimeInterval"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://statistics.data.gov.uk/def/Foundation/TemporalRegion"/>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Time interval</rdfs:label>
+    <rdfs:comment>An interval of time.  Note that a TimeInterval has both an extent and a location on a timeline.  Note too that a TimeInterval has no gaps, i.e. this class contains only convex time intervals.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://statistics.data.gov.uk/def/Foundation/Agent">
+    <linkedConcept rdf:resource="http://proton.semanticweb.org/2005/04/protont#Agent"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="http://statistics.data.gov.uk/def/Foundation/GeoLocation"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="http://statistics.data.gov.uk/def/Foundation/ProductInstance"/>
+    <owl:disjointWith rdf:resource="http://statistics.data.gov.uk/def/Foundation/InformationResource"/>
+    <linkedConcept rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    <linkedConcept rdf:resource="http://www.ontologyportal.org/translations/SUMO.owl.txt#Agent"/>
+    <rdfs:label>Agent</rdfs:label>
+    <rdfs:comment>Something or someone that can act on its own and produce changes in the world.</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://statistics.data.gov.uk/def/Foundation/Object"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://statistics.data.gov.uk/def/Foundation/Meeting">
+    <linkedConcept rdf:resource="http://www.owl-ontologies.com/file1.owl#Meeting"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://statistics.data.gov.uk/def/Foundation/participant"/>
+        </owl:onProperty>
+        <owl:allValuesFrom rdf:resource="http://statistics.data.gov.uk/def/Foundation/Agent"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://statistics.data.gov.uk/def/Foundation/Event"/>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Meeting</rdfs:label>
+    <rdfs:comment>Any sort of formal or semi-formal meeting such as a business meeting.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://statistics.data.gov.uk/def/Foundation/Entity">
+    <linkedConcept rdf:resource="http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#particular"/>
+    <rdfs:label>Entity</rdfs:label>
+    <rdfs:comment>Root of the foundational ontology. Includes objects, processes and abstractions.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://statistics.data.gov.uk/def/Foundation/Man">
+    <linkedConcept rdf:resource="http://www.ontologyportal.org/translations/SUMO.owl.txt#Man"/>
+    <linkedConcept rdf:resource="http://www.owl-ontologies.com/file1.owl#Man"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://statistics.data.gov.uk/def/Foundation/Person"/>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Man</rdfs:label>
+    <rdfs:comment>Class of male persons.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://statistics.data.gov.uk/def/Foundation/Person">
+    <owl:disjointWith>
+      <owl:Class rdf:about="http://statistics.data.gov.uk/def/Foundation/Group"/>
+    </owl:disjointWith>
+    <linkedConcept rdf:resource="http://proton.semanticweb.org/2005/04/protont#Person"/>
+    <linkedConcept rdf:resource="http://purl.org/vocab/frbr/core#Person"/>
+    <linkedConcept rdf:resource="http://www.ontologyportal.org/translations/SUMO.owl.txt#Human"/>
+    <linkedConcept rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:subClassOf rdf:resource="http://statistics.data.gov.uk/def/Foundation/Agent"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Person</rdfs:label>
+    <rdfs:comment>An individual, a human being</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://statistics.data.gov.uk/def/Foundation/ReligousOrganization">
+    <linkedConcept rdf:resource="http://www.ontologyportal.org/translations/SUMO.owl.txt#ReligiousOrganization"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://statistics.data.gov.uk/def/Foundation/Organization"/>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Religous group</rdfs:label>
+    <rdfs:comment>An Organization whose members share a set of religious beliefs.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://statistics.data.gov.uk/def/Foundation/WeightedRelation">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <rdf:Property rdf:about="http://statistics.data.gov.uk/def/Foundation/weight"/>
+        </owl:onProperty>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://statistics.data.gov.uk/def/Foundation/NaryRelation"/>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Weighted relation</rdfs:label>
+    <rdfs:comment>A relation containing a weight (e.g. an associated probablilty) and an object or literal value.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://statistics.data.gov.uk/def/Foundation/Endurant">
+    <owl:disjointWith>
+      <owl:Class rdf:about="http://statistics.data.gov.uk/def/Foundation/Perdurant"/>
+    </owl:disjointWith>
+    <linkedConcept rdf:resource="http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#endurant"/>
+    <rdfs:subClassOf rdf:resource="http://statistics.data.gov.uk/def/Foundation/Entity"/>
+    <rdfs:label>Endurant</rdfs:label>
+    <rdfs:comment>Endurants exists in time, values of some properties might different over time but the Endurant has a constant identity. Endurants can participate in processes. Philosophically speaking they are independent essential wholes.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://statistics.data.gov.uk/def/Foundation/Organization">
+    <linkedConcept rdf:resource="http://www.ontologyportal.org/translations/SUMO.owl.txt#Organization"/>
+    <linkedConcept rdf:resource="http://proton.semanticweb.org/2005/04/protont#Organization"/>
+    <linkedConcept rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://statistics.data.gov.uk/def/Foundation/Group"/>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Organization</rdfs:label>
+    <rdfs:comment>An Organization is a corporate or similar institution. The members of an Organization typically have a common purpose or function. Note that this class also covers divisions, departments, etc. of organizations.  For example, both the Shell Corporation and the accounting department at Shell would both be instances of Organization. </rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://statistics.data.gov.uk/def/Foundation/Abstract">
+    <linkedConcept rdf:resource="http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#abstract"/>
+    <rdfs:subClassOf rdf:resource="http://statistics.data.gov.uk/def/Foundation/Entity"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Abstract</rdfs:label>
+    <rdfs:comment>Something, which neither happens nor exists. &#xD;
+The main characteristic of abstract entities is that  they do not have spatial &#xD;
+nor temporal qualities, and they are not qualities themselves.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://statistics.data.gov.uk/def/Foundation/ObjectFeature">
+    <owl:disjointWith>
+      <owl:Class rdf:about="http://statistics.data.gov.uk/def/Foundation/Object"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="http://statistics.data.gov.uk/def/Foundation/AmountOfMatter"/>
+    </owl:disjointWith>
+    <linkedConcept rdf:resource="http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#feature"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://statistics.data.gov.uk/def/Foundation/partOf"/>
+        </owl:onProperty>
+        <owl:allValuesFrom>
+          <owl:Class rdf:about="http://statistics.data.gov.uk/def/Foundation/Object"/>
+        </owl:allValuesFrom>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://statistics.data.gov.uk/def/Foundation/Endurant"/>
+    <rdfs:label xml:lang="en">Object feature</rdfs:label>
+    <rdfs:comment>Something which can't exist on its own but is a feature of some physical object, e.g. a bump, hole, region, spot.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://statistics.data.gov.uk/def/Foundation/TimeDependentRelation">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <rdf:Property rdf:about="http://statistics.data.gov.uk/def/Foundation/inContext"/>
+        </owl:onProperty>
+        <owl:allValuesFrom rdf:resource="http://statistics.data.gov.uk/def/Foundation/TimeInterval"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://statistics.data.gov.uk/def/Foundation/QualifiedBinaryRelation"/>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Time dependent relation</rdfs:label>
+    <rdfs:comment>Reification of a time-dependent relation. A special case of a QualifiedBinaryRelation where the context should be a time interval.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://statistics.data.gov.uk/def/Foundation/BusinessActivity">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://statistics.data.gov.uk/def/Foundation/Process"/>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Business activity</rdfs:label>
+    <rdfs:comment>Some shared business endeavour. Use for ongoing activities as opposed to projects that have clear cut start/end time courses.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://statistics.data.gov.uk/def/Foundation/Object">
+    <owl:disjointWith rdf:resource="http://statistics.data.gov.uk/def/Foundation/ObjectFeature"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="http://statistics.data.gov.uk/def/Foundation/AmountOfMatter"/>
+    </owl:disjointWith>
+    <linkedConcept rdf:resource="http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#physical-object"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://statistics.data.gov.uk/def/Foundation/partOf"/>
+        </owl:onProperty>
+        <owl:allValuesFrom rdf:resource="http://statistics.data.gov.uk/def/Foundation/Object"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://statistics.data.gov.uk/def/Foundation/Endurant"/>
+    <rdfs:label>Object</rdfs:label>
+    <rdfs:comment>Physical objects. Endurants with unity and some independent existence.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://statistics.data.gov.uk/def/Foundation/AmountOfMatter">
+    <owl:disjointWith rdf:resource="http://statistics.data.gov.uk/def/Foundation/ObjectFeature"/>
+    <owl:disjointWith rdf:resource="http://statistics.data.gov.uk/def/Foundation/Object"/>
+    <linkedConcept rdf:resource="http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#amount-of-matter"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://statistics.data.gov.uk/def/Foundation/partOf"/>
+        </owl:onProperty>
+        <owl:allValuesFrom rdf:resource="http://statistics.data.gov.uk/def/Foundation/AmountOfMatter"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://statistics.data.gov.uk/def/Foundation/Endurant"/>
+    <rdfs:label>Amount of matter</rdfs:label>
+    <rdfs:comment>Things like "water", "clay" which have no unity (the combination of two amounts of clay is just a single amount of clay), aka "stuff".</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://statistics.data.gov.uk/def/Foundation/Relation">
+    <linkedConcept rdf:resource="http://www.ontologyportal.org/translations/SUMO.owl.txt#Relation"/>
+    <rdfs:subClassOf rdf:resource="http://statistics.data.gov.uk/def/Foundation/Abstract"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Relation</rdfs:label>
+    <rdfs:comment>Class of relations. Mostly used for when we are reifiying complex relations as objects and so does not itself break the DL constraints, could be used as a category of general relations as done in SUMO in which case we would be forced into OWL/full.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://statistics.data.gov.uk/def/Foundation/Instant">
+    <linkedConcept rdf:resource="http://www.w3.org/2006/time#Instant"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://statistics.data.gov.uk/def/Foundation/TemporalRegion"/>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Instant</rdfs:label>
+    <rdfs:comment>A point in time. Can have either a hasBeginning or hasEnding value, if it has both they should be the same.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://statistics.data.gov.uk/def/Foundation/Region">
+    <linkedConcept rdf:resource="http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#region"/>
+    <rdfs:subClassOf rdf:resource="http://statistics.data.gov.uk/def/Foundation/Abstract"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Region</rdfs:label>
+    <rdfs:comment>A region of some measurement space such as a time interval, spatial region or colour space.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://statistics.data.gov.uk/def/Foundation/GeoLocation">
+    <owl:disjointWith rdf:resource="http://statistics.data.gov.uk/def/Foundation/InformationResource"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Geographic Location</rdfs:label>
+    <owl:disjointWith rdf:resource="http://statistics.data.gov.uk/def/Foundation/Agent"/>
+    <linkedConcept rdf:resource="http://proton.semanticweb.org/2005/04/protont#Location"/>
+    <rdfs:comment>A geospatial location, encompasses locations with extent (e.g. countries) as well as features which can be treated as point-like for some purposes (e.g. a bridge or road junction). Normally designated by a Geonames URI.</rdfs:comment>
+    <linkedConcept rdf:resource="http://purl.org/vocab/frbr/core#place"/>
+    <owl:disjointWith rdf:resource="http://statistics.data.gov.uk/def/Foundation/ProductInstance"/>
+    <rdfs:subClassOf rdf:resource="http://statistics.data.gov.uk/def/Foundation/Object"/>
+    <linkedConcept rdf:resource="http://www.ontologyportal.org/translations/SUMO.owl.txt#GeographicArea"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://statistics.data.gov.uk/def/Foundation/GeoFeature">
+    <linkedConcept rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <rdfs:subClassOf rdf:resource="http://statistics.data.gov.uk/def/Foundation/GeoLocation"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Geo Feature</rdfs:label>
+    <rdfs:comment>A geographical feature such as a river, mountain, including man made features such as cities and bridges. Ususally designated by a Geonames URI with associated descriptive information.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://statistics.data.gov.uk/def/Foundation/SpatialRegion">
+    <linkedConcept rdf:resource="http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#spatial-region"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://statistics.data.gov.uk/def/Foundation/partOf"/>
+        </owl:onProperty>
+        <owl:allValuesFrom rdf:resource="http://statistics.data.gov.uk/def/Foundation/SpatialRegion"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://statistics.data.gov.uk/def/Foundation/Region"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Spatial region</rdfs:label>
+    <rdfs:comment>A region of space in some measurement system including a polygonal boundary of a geographic space or a region of 3D space.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://statistics.data.gov.uk/def/Foundation/FnOfTime_int">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom>
+          <owl:Class rdf:about="http://statistics.data.gov.uk/def/Foundation/Datum_int"/>
+        </owl:allValuesFrom>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://statistics.data.gov.uk/def/Foundation/datum"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://statistics.data.gov.uk/def/Foundation/FnOfTime"/>
+    </rdfs:subClassOf>
+    <rdfs:comment>Represents an integer-valued function of time</rdfs:comment>
+    <rdfs:label>Function of time (integer)</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://statistics.data.gov.uk/def/Foundation/TemporalRegion">
+    <linkedConcept rdf:resource="http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#temporal-region"/>
+    <linkedConcept rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://statistics.data.gov.uk/def/Foundation/partOf"/>
+        </owl:onProperty>
+        <owl:allValuesFrom rdf:resource="http://statistics.data.gov.uk/def/Foundation/TemporalRegion"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://statistics.data.gov.uk/def/Foundation/Region"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Temporal region</rdfs:label>
+    <rdfs:comment>A region of time such as a specific instant or time interval. Can also be used for things like Geological ages.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://statistics.data.gov.uk/def/Foundation/Division">
+    <linkedConcept rdf:resource="http://www.owl-ontologies.com/file1.owl#Division"/>
+    <rdfs:subClassOf rdf:resource="http://statistics.data.gov.uk/def/Foundation/Organization"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Division</rdfs:label>
+    <rdfs:comment>Branch, division, department, laboratory, etc. within an organisation. Usually, not an independent legal entity. </rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://statistics.data.gov.uk/def/Foundation/Country">
+    <linkedConcept rdf:resource="http://www.geonames.org/ontology#Country"/>
+    <rdfs:subClassOf rdf:resource="http://statistics.data.gov.uk/def/Foundation/GeoLocation"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Country</rdfs:label>
+    <rdfs:comment>A country, normally designated by a GeoNames URI.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://statistics.data.gov.uk/def/Foundation/Project">
+    <linkedConcept rdf:resource="http://www.owl-ontologies.com/file1.owl#Project"/>
+    <linkedConcept rdf:resource="http://xmlns.com/foaf/0.1/Project"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://statistics.data.gov.uk/def/Foundation/participant"/>
+        </owl:onProperty>
+        <owl:allValuesFrom rdf:resource="http://statistics.data.gov.uk/def/Foundation/Agent"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://statistics.data.gov.uk/def/Foundation/Process"/>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Project</rdfs:label>
+    <rdfs:comment>A project or collective endeavour of some kind. Typically a project has a definite inception, set of goals and conclusion.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://statistics.data.gov.uk/def/Foundation/InformationSource">
+    <rdfs:subClassOf rdf:resource="http://statistics.data.gov.uk/def/Foundation/InformationResource"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Information source</rdfs:label>
+    <rdfs:comment>A storage system, content management system, or other source from which information resources like Documents can be obtained. The aggregate can itself be regarded as an InformationResource though metadata on the InformationSource should be used to describe the name and authorship of the source rather of the union of the contained resources.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://statistics.data.gov.uk/def/Foundation/Process">
+    <linkedConcept rdf:resource="http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#process"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://statistics.data.gov.uk/def/Foundation/Perdurant"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">Process</rdfs:label>
+    <rdfs:comment>We split perdurants into just events and processes according to atomicity. A process has some substructure to it, it extends over time and might have discrete or continuous phases, whereas as an event has no interesting substructure. This division is relative to a given viewpoint. For example a meeting could be modelled as a process if one is recording different stages of a meeting with time ordering or might be a simple event. The two viewpoints are not regarded as disjoint.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://statistics.data.gov.uk/def/Foundation/Document">
+    <linkedConcept rdf:resource="http://proton.semanticweb.org/2005/04/protont#Document"/>
+    <linkedConcept rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+    <rdfs:subClassOf rdf:resource="http://statistics.data.gov.uk/def/Foundation/InformationResource"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Document</rdfs:label>
+    <rdfs:comment>A document, does not distinguish electronic and physical copies. Not limited to text documents.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://statistics.data.gov.uk/def/Foundation/FnOfTime">
+    <rdfs:comment>Represents an integer-valued function of time</rdfs:comment>
+    <rdfs:label>Function of time</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://statistics.data.gov.uk/def/Foundation/GovernmentOrganization">
+    <linkedConcept rdf:resource="http://www.ontologyportal.org/translations/SUMO.owl.txt#GovernmentOrganization"/>
+    <rdfs:subClassOf rdf:resource="http://statistics.data.gov.uk/def/Foundation/Organization"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Government organization</rdfs:label>
+    <rdfs:comment>GovernmentOrganization is the &#xD;
+class of official Organizations that are concerned with the government &#xD;
+of a GeopoliticalArea at some level.  They may be a subOrganization &#xD;
+of a government.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://statistics.data.gov.uk/def/Foundation/EducationalOrganization">
+    <linkedConcept rdf:resource="http://www.ontologyportal.org/translations/SUMO.owl.txt#EducationalOrganization"/>
+    <rdfs:subClassOf rdf:resource="http://statistics.data.gov.uk/def/Foundation/Organization"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Educational organization</rdfs:label>
+    <rdfs:comment>A EducationalOrganization is &#xD;
+an institution of learning. Some examples are public and private K-12 &#xD;
+schools, and colleges and universities.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://statistics.data.gov.uk/def/Foundation/Datum">
+    <rdfs:comment>A single value in a function (typically of time)</rdfs:comment>
+    <rdfs:label>Datum</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://statistics.data.gov.uk/def/Foundation/Woman">
+    <linkedConcept rdf:resource="http://www.owl-ontologies.com/file1.owl#Woman"/>
+    <linkedConcept rdf:resource="http://www.ontologyportal.org/translations/SUMO.owl.txt#Woman"/>
+    <rdfs:subClassOf rdf:resource="http://statistics.data.gov.uk/def/Foundation/Person"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Woman</rdfs:label>
+    <rdfs:comment>Class of female persons.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://statistics.data.gov.uk/def/Foundation/Perdurant">
+    <linkedConcept rdf:resource="http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#perdurant"/>
+    <rdfs:subClassOf rdf:resource="http://statistics.data.gov.uk/def/Foundation/Entity"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Perdurant</rdfs:label>
+    <rdfs:comment>Perdurants (AKA occurrences) comprise what are variously called events, processes, phenomena, activities and states. They can have temporal parts or spatial parts. For instance, the first movement of (an execution of) a symphony is a temporal part of the symphony. On the other hand, the play performed by the left side of the orchestra is a spatial part. In both cases, these parts are occurrences themselves. We assume that objects cannot be parts of occurrences, but rather they participate in them. Philosophers say that endurants are entities that are in time, while lacking temporal parts (so to speak, all their parts flow with them in time). Perdurants, on the contrary, are entities that happen in time, and can have temporal parts (all their parts are fixed in time).</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://statistics.data.gov.uk/def/Foundation/NaryRelation">
+    <rdfs:subClassOf rdf:resource="http://statistics.data.gov.uk/def/Foundation/Relation"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >N-ary relation</rdfs:label>
+    <rdfs:comment>Superclass of all types of reified n-ary relations. Instances link to the participating objects via hasArgument properties.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://statistics.data.gov.uk/def/Foundation/Datum_int">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="http://statistics.data.gov.uk/def/Foundation/val"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://statistics.data.gov.uk/def/Foundation/Datum"/>
+    <rdfs:comment>A single (integer) value in a function (typically of time)</rdfs:comment>
+    <rdfs:label>Datum (integer)</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://statistics.data.gov.uk/def/Foundation/QualifiedBinaryRelation">
+    <rdfs:subClassOf rdf:resource="http://statistics.data.gov.uk/def/Foundation/NaryRelation"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Qualified binary relation</rdfs:label>
+    <rdfs:comment>A relation which would normally be regard as binary (e.g. memberOf, hasColour) but where the value is dependent upon some context like time. We model this as an n-ary relation where the qualifying context is given by the value of the 'inContext' property and the qualified value is given by the unique 'hasArgument' value.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://statistics.data.gov.uk/def/Foundation/Event">
+    <linkedConcept rdf:resource="http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#event"/>
+    <linkedConcept rdf:resource="http://purl.org/vocab/frbr/core#Event"/>
+    <rdfs:subClassOf rdf:resource="http://statistics.data.gov.uk/def/Foundation/Perdurant"/>
+    <rdfs:label xml:lang="en">Event</rdfs:label>
+    <rdfs:comment>We split perdurants into just events and processes according to atomicity. A process has some substructure to it, it extends over time and might have discrete or continuous phases, whereas as an event has no interesting substructure. This division is relative to a given viewpoint. For example a meeting could be modelled as a process if one is recording different stages of a meeting with time ordering or might be a simple event. The two viewpoints are not regarded as disjoint.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://statistics.data.gov.uk/def/Foundation/Group">
+    <owl:disjointWith rdf:resource="http://statistics.data.gov.uk/def/Foundation/Person"/>
+    <linkedConcept rdf:resource="http://proton.semanticweb.org/2005/04/protont#Group"/>
+    <linkedConcept rdf:resource="http://www.ontologyportal.org/translations/SUMO.owl.txt#Group"/>
+    <rdfs:subClassOf rdf:resource="http://statistics.data.gov.uk/def/Foundation/Agent"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Group</rdfs:label>
+    <rdfs:comment>A Collection of Agents, e.g. a flock of sheep, a herd of goats, or the local Boy Scout troop.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://statistics.data.gov.uk/def/Foundation/Corporation">
+    <linkedConcept rdf:resource="http://www.ontologyportal.org/translations/SUMO.owl.txt#Corporation"/>
+    <linkedConcept rdf:resource="http://purl.org/vocab/frbr/core#CorporateBody"/>
+    <linkedConcept rdf:resource="http://purl.org/goodrelations/v1#BusinessEntity"/>
+    <rdfs:subClassOf rdf:resource="http://statistics.data.gov.uk/def/Foundation/Organization"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Corporation</rdfs:label>
+    <rdfs:comment>An Organization that has a special legal status &#xD;
+that allows a group of persons to act as a CommercialAgent and that insulates &#xD;
+the owners (shareholders) from many liabilities that might result from the &#xD;
+corporation's operation.</rdfs:comment>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="http://statistics.data.gov.uk/def/Foundation/intervalDuring">
+    <linkedConcept rdf:resource="http://www.w3.org/2006/time#intervalDuring"/>
+    <rdfs:range rdf:resource="http://statistics.data.gov.uk/def/Foundation/TimeInterval"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >intervalDuring</rdfs:label>
+    <rdfs:domain rdf:resource="http://statistics.data.gov.uk/def/Foundation/TimeInterval"/>
+    <rdfs:comment>Indicates that one time interval (the subject) occurs during the other (object) time interval, i.e. it begins after the object time interval has begun and ends before the object interval ends.</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://statistics.data.gov.uk/def/Foundation/occursAtTime">
+    <rdfs:range rdf:resource="http://statistics.data.gov.uk/def/Foundation/TemporalRegion"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >occurs at time</rdfs:label>
+    <rdfs:domain rdf:resource="http://statistics.data.gov.uk/def/Foundation/Perdurant"/>
+    <rdfs:comment>The time or time interval at which an event or process takes place.</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://statistics.data.gov.uk/def/Foundation/childOrganizationOf">
+    <linkedConcept rdf:resource="http://proton.semanticweb.org/2005/04/protont#childOrganizationOf"/>
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:about="http://statistics.data.gov.uk/def/Foundation/partOf"/>
+    </rdfs:subPropertyOf>
+    <rdfs:range rdf:resource="http://statistics.data.gov.uk/def/Foundation/Organization"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >child organization of</rdfs:label>
+    <rdfs:domain rdf:resource="http://statistics.data.gov.uk/def/Foundation/Organization"/>
+    <rdfs:comment>Indicates that some organization (such as a division) is part of some parent organization.</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://statistics.data.gov.uk/def/Foundation/participatesIn">
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="http://statistics.data.gov.uk/def/Foundation/participant"/>
+    </owl:inverseOf>
+    <linkedConcept rdf:resource="http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#participant-in"/>
+    <rdfs:range rdf:resource="http://statistics.data.gov.uk/def/Foundation/Perdurant"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >participates in</rdfs:label>
+    <rdfs:domain rdf:resource="http://statistics.data.gov.uk/def/Foundation/Endurant"/>
+    <rdfs:comment>General relationship between things (Endurants) and the processes (Perdurants) in which they might particpate. For example, links a person to their life history or an actor to a business process.</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://statistics.data.gov.uk/def/Foundation/objectValue">
+    <rdfs:subPropertyOf>
+      <rdf:Property rdf:about="http://statistics.data.gov.uk/def/Foundation/hasArgument"/>
+    </rdfs:subPropertyOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >object value</rdfs:label>
+    <rdfs:domain rdf:resource="http://statistics.data.gov.uk/def/Foundation/NaryRelation"/>
+    <rdfs:comment>Gives an object (aka Individual) valued argument for an n-ary relationship, such as a weighted relation.</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://statistics.data.gov.uk/def/Foundation/locatedAt">
+    <linkedConcept rdf:resource="http://proton.semanticweb.org/2005/04/protont#locatedIn"/>
+    <rdfs:range rdf:resource="http://statistics.data.gov.uk/def/Foundation/GeoLocation"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >located at</rdfs:label>
+    <rdfs:domain rdf:resource="http://statistics.data.gov.uk/def/Foundation/Object"/>
+    <rdfs:comment>The location at which a thing exists or is currently situated.</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://statistics.data.gov.uk/def/Foundation/partOf">
+    <rdfs:range rdf:resource="http://statistics.data.gov.uk/def/Foundation/Entity"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >part of</rdfs:label>
+    <rdfs:domain rdf:resource="http://statistics.data.gov.uk/def/Foundation/Entity"/>
+    <rdfs:comment>General mereology relation of one thing being part of another.</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://statistics.data.gov.uk/def/Foundation/hasSource">
+    <rdfs:range rdf:resource="http://statistics.data.gov.uk/def/Foundation/InformationSource"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >has source</rdfs:label>
+    <rdfs:domain rdf:resource="http://statistics.data.gov.uk/def/Foundation/InformationResource"/>
+    <rdfs:comment>Indicates an information source from which the subject resource could be obtained.</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://statistics.data.gov.uk/def/Foundation/intervalFinishes">
+    <linkedConcept rdf:resource="http://www.w3.org/2006/time#intervalFinishes"/>
+    <rdfs:range rdf:resource="http://statistics.data.gov.uk/def/Foundation/TimeInterval"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >intervalFinishes</rdfs:label>
+    <rdfs:domain rdf:resource="http://statistics.data.gov.uk/def/Foundation/TimeInterval"/>
+    <rdfs:comment>Indicates that one time interval (the subject) finishes the other (object) time interval, i.e. end start at the same time but it starts after the object interval starts.</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://statistics.data.gov.uk/def/Foundation/intervalStarts">
+    <linkedConcept rdf:resource="http://www.w3.org/2006/time#intervalStarts"/>
+    <rdfs:range rdf:resource="http://statistics.data.gov.uk/def/Foundation/TimeInterval"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >intervalStarts</rdfs:label>
+    <rdfs:domain rdf:resource="http://statistics.data.gov.uk/def/Foundation/TimeInterval"/>
+    <rdfs:comment>Indicates that one time interval (the subject) starts the other (object) time interval, i.e. they start at the same time but it ends before the object interval ends.</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://statistics.data.gov.uk/def/Foundation/before">
+    <rdfs:range rdf:resource="http://statistics.data.gov.uk/def/Foundation/TemporalRegion"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >before</rdfs:label>
+    <rdfs:domain rdf:resource="http://statistics.data.gov.uk/def/Foundation/TemporalRegion"/>
+    <rdfs:comment>Indicates that one interval (the subject) ends before another (the object) begins.</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://statistics.data.gov.uk/def/Foundation/datum">
+    <rdfs:range rdf:resource="http://statistics.data.gov.uk/def/Foundation/Datum"/>
+    <rdfs:domain rdf:resource="http://statistics.data.gov.uk/def/Foundation/FnOfTime"/>
+    <rdfs:comment>links a function of time to a particular timestamped value</rdfs:comment>
+    <rdfs:label>datum</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://statistics.data.gov.uk/def/Foundation/inCountry">
+    <linkedConcept rdf:resource="http://www.geonames.org/ontology#inCountry"/>
+    <rdfs:subPropertyOf rdf:resource="http://statistics.data.gov.uk/def/Foundation/locatedAt"/>
+    <rdfs:range rdf:resource="http://statistics.data.gov.uk/def/Foundation/Country"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >in country</rdfs:label>
+    <rdfs:domain rdf:resource="http://statistics.data.gov.uk/def/Foundation/GeoFeature"/>
+    <rdfs:comment>The country in which a geographical feature is located.</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://statistics.data.gov.uk/def/Foundation/intervalEquals">
+    <linkedConcept rdf:resource="http://www.w3.org/2006/time#intervalEquals"/>
+    <rdfs:range rdf:resource="http://statistics.data.gov.uk/def/Foundation/TimeInterval"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >intervalEquals</rdfs:label>
+    <rdfs:domain rdf:resource="http://statistics.data.gov.uk/def/Foundation/TimeInterval"/>
+    <rdfs:comment>Indicates that the two time intervals are the same (same beginning and ending).</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://statistics.data.gov.uk/def/Foundation/intervalMeets">
+    <linkedConcept rdf:resource="http://www.w3.org/2006/time#intervalMeets"/>
+    <rdfs:range rdf:resource="http://statistics.data.gov.uk/def/Foundation/TimeInterval"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >intervalMeets</rdfs:label>
+    <rdfs:domain rdf:resource="http://statistics.data.gov.uk/def/Foundation/TimeInterval"/>
+    <rdfs:comment>Indicates that one time interval (the subject) meets the other (object) time interval, i.e. it ends as the object interval begins.</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://statistics.data.gov.uk/def/Foundation/responsibleParticipant">
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:about="http://statistics.data.gov.uk/def/Foundation/participant"/>
+    </rdfs:subPropertyOf>
+    <rdfs:range rdf:resource="http://statistics.data.gov.uk/def/Foundation/Agent"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >responsible participant</rdfs:label>
+    <rdfs:comment>A person (or other agent) responsible for a particular event or process like a meeting or project.</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://statistics.data.gov.uk/def/Foundation/contactDetails">
+    <rdfs:range rdf:resource="http://www.w3.org/2006/vcard/ns#VCard"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >contact details</rdfs:label>
+    <rdfs:domain rdf:resource="http://statistics.data.gov.uk/def/Foundation/Agent"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://statistics.data.gov.uk/def/Foundation/occursAt">
+    <rdfs:range rdf:resource="http://statistics.data.gov.uk/def/Foundation/GeoLocation"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >occurs at</rdfs:label>
+    <rdfs:domain rdf:resource="http://statistics.data.gov.uk/def/Foundation/Perdurant"/>
+    <rdfs:comment>The location at which an event or process takes place.</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://statistics.data.gov.uk/def/Foundation/versionOf">
+    <rdfs:range rdf:resource="http://statistics.data.gov.uk/def/Foundation/InformationResource"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >version of</rdfs:label>
+    <rdfs:domain rdf:resource="http://statistics.data.gov.uk/def/Foundation/InformationResource"/>
+    <rdfs:comment>Indicates that one InformationResource is a a version of some other resource. Note this is more restricted relation that dc:source, dc:source could indicate some set of primary references works used in the generation of a wholly new InformationResource whereas versionOf would only be used betweens successive refinements or copies of the essentially the same resource.</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://statistics.data.gov.uk/def/Foundation/contactPerson">
+    <rdfs:range rdf:resource="http://statistics.data.gov.uk/def/Foundation/Agent"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >contact person</rdfs:label>
+    <rdfs:comment>Person (or other agent) who can act as a contact point for some activity or product.</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://statistics.data.gov.uk/def/Foundation/after">
+    <rdfs:range rdf:resource="http://statistics.data.gov.uk/def/Foundation/TemporalRegion"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >after</rdfs:label>
+    <rdfs:domain rdf:resource="http://statistics.data.gov.uk/def/Foundation/TemporalRegion"/>
+    <rdfs:comment>Indicates that one interval (the subject) starts after another (the object) ends.</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://statistics.data.gov.uk/def/Foundation/memberOf">
+    <rdfs:range rdf:resource="http://statistics.data.gov.uk/def/Foundation/Group"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >member of</rdfs:label>
+    <rdfs:domain rdf:resource="http://statistics.data.gov.uk/def/Foundation/Agent"/>
+    <rdfs:comment>Indicates that an agent is a member of some group, for example a person being a member of an organization like a Corporation.</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://statistics.data.gov.uk/def/Foundation/participant">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >participant</rdfs:label>
+    <rdfs:comment>Indicates some person or object that partipates in a process or event.</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://statistics.data.gov.uk/def/Foundation/intervalOverlaps">
+    <linkedConcept rdf:resource="http://www.w3.org/2006/time#intervalOverlaps"/>
+    <rdfs:range rdf:resource="http://statistics.data.gov.uk/def/Foundation/TimeInterval"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >intevalOverlaps</rdfs:label>
+    <rdfs:domain rdf:resource="http://statistics.data.gov.uk/def/Foundation/TimeInterval"/>
+    <rdfs:comment>Indicates that one time interval (the subject) overlaps the other (object) time interval, i.e. it begins before the object time interval has begun and ends during the object interval ends.</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://statistics.data.gov.uk/def/Foundation/definitiveSource">
+    <rdfs:subPropertyOf rdf:resource="http://statistics.data.gov.uk/def/Foundation/hasSource"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >definitive source</rdfs:label>
+    <rdfs:comment>Indicates the definitive source from which this resource was, or could be, obtained.</rdfs:comment>
+  </owl:ObjectProperty>
+  <rdf:Property rdf:about="http://statistics.data.gov.uk/def/Foundation/weight">
+    <rdfs:subPropertyOf>
+      <rdf:Property rdf:about="http://statistics.data.gov.uk/def/Foundation/hasArgument"/>
+    </rdfs:subPropertyOf>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >weight</rdfs:label>
+    <rdfs:domain rdf:resource="http://statistics.data.gov.uk/def/Foundation/WeightedRelation"/>
+    <rdfs:comment>Gives the probability or other weighted associated with a weighted attribute or relation.</rdfs:comment>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://statistics.data.gov.uk/def/Foundation/hasArgument">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >has argument</rdfs:label>
+    <rdfs:domain rdf:resource="http://statistics.data.gov.uk/def/Foundation/NaryRelation"/>
+    <rdfs:comment>Links a reified n-ary relationship to one of its arguments. Subproperties of this can be used to indicate specific roles in the n-ary realtionship.</rdfs:comment>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://statistics.data.gov.uk/def/Foundation/inContext">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >in context</rdfs:label>
+    <rdfs:domain rdf:resource="http://statistics.data.gov.uk/def/Foundation/QualifiedBinaryRelation"/>
+    <rdfs:comment>Gives the context of a qualified relationship, e.g. the TimeInterval during which a binary property value is valid.</rdfs:comment>
+  </rdf:Property>
+  <owl:DatatypeProperty rdf:about="http://statistics.data.gov.uk/def/Foundation/hasEnding">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >has ending</rdfs:label>
+    <rdfs:domain rdf:resource="http://statistics.data.gov.uk/def/Foundation/TemporalRegion"/>
+    <rdfs:comment>The end of a time interval or the time value of a time instant. Optional (since the interval may be unbounded) but unique.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://statistics.data.gov.uk/def/Foundation/val">
+    <rdfs:domain rdf:resource="http://statistics.data.gov.uk/def/Foundation/Datum"/>
+    <rdfs:comment>gives the value of a datum</rdfs:comment>
+    <rdfs:label>value</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://statistics.data.gov.uk/def/Foundation/literalValue">
+    <rdfs:subPropertyOf rdf:resource="http://statistics.data.gov.uk/def/Foundation/hasArgument"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >literal value</rdfs:label>
+    <rdfs:domain rdf:resource="http://statistics.data.gov.uk/def/Foundation/NaryRelation"/>
+    <rdfs:comment>Gives an data valued argument for an n-ary relationship, such as a weighted relation.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://statistics.data.gov.uk/def/Foundation/acronym">
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2008/05/skos#altLabel"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >acronym</rdfs:label>
+    <rdfs:comment>A special case of an alternate label where the label is an acronym for the preffered (or maybe an alt) label.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://statistics.data.gov.uk/def/Foundation/date">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <rdfs:domain rdf:resource="http://statistics.data.gov.uk/def/Foundation/Datum"/>
+    <rdfs:comment>gives the time point of a datum in a time-valued function, to a resolution of 1 day</rdfs:comment>
+    <rdfs:label>at date</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://statistics.data.gov.uk/def/Foundation/hasBeginning">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >has beginning</rdfs:label>
+    <rdfs:domain rdf:resource="http://statistics.data.gov.uk/def/Foundation/TemporalRegion"/>
+    <rdfs:comment>The beginning of a time interval or the time value of a time instant. Optional (since the interval may be unbounded) but unique.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://statistics.data.gov.uk/def/Foundation/time">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdfs:domain rdf:resource="http://statistics.data.gov.uk/def/Foundation/Datum"/>
+    <rdfs:comment>gives the time point of a datum in a time-valued function</rdfs:comment>
+    <rdfs:label>at time</rdfs:label>
+  </owl:DatatypeProperty>
+  <rdf:Description rdf:about="http://www.w3.org/2008/05/skos#ConceptScheme">
+    <rdfs:subClassOf rdf:resource="http://statistics.data.gov.uk/def/Foundation/Abstract"/>
+  </rdf:Description>
+  <owl:AnnotationProperty rdf:about="http://statistics.data.gov.uk/def/Foundation/linkedConcept">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >linked concept</rdfs:label>
+    <rdfs:comment>Used to link related concepts across ontologies. In many cases if an application can commit to both source and target ontologies then the linkedConcept relation can be treated as owl:equivalentClass or owl:equivalentProperty. However, in some cases we may not be able to commit to all of the axioms in the linked ontology, for example it might assert two concepts as disjoin where we allow a single entity to be simultaneously regarded from the perspective of both concepts. SHOULD only be used when the concepts are near equivalents, not as a shorthand for "vaguely related somehow".</rdfs:comment>
+  </owl:AnnotationProperty>
+  <owl:AnnotationProperty rdf:about="http://statistics.data.gov.uk/def/Foundation/recommendedProperty">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >recommended Property</rdfs:label>
+    <rdfs:comment>Used to link a class to a set of properties that might often be used on instances of the class. Used especially when the properties have an open domain and/or reside in an external namespace to show expected usage patterns that are not obvious from the pure axiom structured on the ontology.</rdfs:comment>
+  </owl:AnnotationProperty>
+  <rdf:Description rdf:about="http://www.w3.org/2008/05/skos#Collection">
+    <rdfs:subClassOf rdf:resource="http://statistics.data.gov.uk/def/Foundation/Abstract"/>
+  </rdf:Description>
+</rdf:RDF>

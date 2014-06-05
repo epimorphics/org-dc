@@ -1,0 +1,850 @@
+# Generated 2010-11-09T16:53:44+00:00
+
+@prefix rdf:                <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:               <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:                <http://www.w3.org/2002/07/owl#> .
+@prefix skos:               <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd:                <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:               <http://xmlns.com/foaf/0.1/> .
+@prefix void:               <http://rdfs.org/ns/void#> .
+@prefix dcterms:            <http://purl.org/dc/terms/> .
+@prefix sdmx:               <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept:       <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:     <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:     <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:       <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-code:          <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:       <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix qb:                 <http://purl.org/linked-data/cube#> .
+@prefix coins-data:         <http://source.data.gov.uk/data/coins/> .
+@prefix coins-dsd:          <http://finance.data.gov.uk/dsd/coins/> .
+@prefix coins-dimension:    <http://finance.data.gov.uk/dsd/coins/dimension/> .
+@prefix coins-attribute:    <http://finance.data.gov.uk/dsd/coins/attribute/> .
+@prefix coins-measure:      <http://finance.data.gov.uk/dsd/coins/measure/> .
+@prefix coins-slicekey:     <http://finance.data.gov.uk/dsd/coins/slice/> .
+
+<http://finance.data.gov.uk/def/coins/statistical-concept/estimate-line-last-year>
+    a sdmx:Concept;
+    rdfs:label "estimate line last year"@en;
+    skos:prefLabel "estimate line last year"@en;
+    rdfs:comment """Used to identify specific sections (ie functions) in Supply Estimates in the previous financial year.""";
+    <http://purl.org/dc/terms/source> <http://www.hm-treasury.gov.uk/d/coins_guidance.pdf>;
+    <http://www.epimorphics.com/vocabs/coins-generate#columnName> "estimate_line_last_year"
+    .
+
+<http://finance.data.gov.uk/def/coins/EstimateLineLastYear>
+    a rdfs:Class, owl:Class;
+    rdfs:subClassOf skos:Concept;
+    rdfs:label "estimate line last year values class"@en;
+    skos:prefLabel "estimate line last year values class"@en;
+    rdfs:comment "The class of values in the estimate line last year code-list scheme";
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-line-last-year>
+    a skos:ConceptScheme;
+    rdfs:label "estimate line last year code list concept scheme"@en;
+    skos:prefLabel "estimate line last year code list concept scheme"@en;
+    skos:hasTopConcept <http://finance.data.gov.uk/def/coins/estimate-line-last-year/e01ly>,
+          <http://finance.data.gov.uk/def/coins/estimate-line-last-year/e02ly>,
+          <http://finance.data.gov.uk/def/coins/estimate-line-last-year/e03ly>,
+          <http://finance.data.gov.uk/def/coins/estimate-line-last-year/e04ly>,
+          <http://finance.data.gov.uk/def/coins/estimate-line-last-year/e05ly>,
+          <http://finance.data.gov.uk/def/coins/estimate-line-last-year/e06ly>,
+          <http://finance.data.gov.uk/def/coins/estimate-line-last-year/e07ly>,
+          <http://finance.data.gov.uk/def/coins/estimate-line-last-year/e08ly>,
+          <http://finance.data.gov.uk/def/coins/estimate-line-last-year/e09ly>,
+          <http://finance.data.gov.uk/def/coins/estimate-line-last-year/e10ly>,
+          <http://finance.data.gov.uk/def/coins/estimate-line-last-year/e11ly>,
+          <http://finance.data.gov.uk/def/coins/estimate-line-last-year/e12ly>,
+          <http://finance.data.gov.uk/def/coins/estimate-line-last-year/e13ly>,
+          <http://finance.data.gov.uk/def/coins/estimate-line-last-year/e14ly>,
+          <http://finance.data.gov.uk/def/coins/estimate-line-last-year/e15ly>,
+          <http://finance.data.gov.uk/def/coins/estimate-line-last-year/e16ly>,
+          <http://finance.data.gov.uk/def/coins/estimate-line-last-year/e17ly>,
+          <http://finance.data.gov.uk/def/coins/estimate-line-last-year/e18ly>,
+          <http://finance.data.gov.uk/def/coins/estimate-line-last-year/e19ly>,
+          <http://finance.data.gov.uk/def/coins/estimate-line-last-year/e20ly>,
+          <http://finance.data.gov.uk/def/coins/estimate-line-last-year/e21ly>,
+          <http://finance.data.gov.uk/def/coins/estimate-line-last-year/e22ly>,
+          <http://finance.data.gov.uk/def/coins/estimate-line-last-year/e23ly>,
+          <http://finance.data.gov.uk/def/coins/estimate-line-last-year/e24ly>,
+          <http://finance.data.gov.uk/def/coins/estimate-line-last-year/e25ly>,
+          <http://finance.data.gov.uk/def/coins/estimate-line-last-year/e26ly>,
+          <http://finance.data.gov.uk/def/coins/estimate-line-last-year/e27ly>,
+          <http://finance.data.gov.uk/def/coins/estimate-line-last-year/e28ly>,
+          <http://finance.data.gov.uk/def/coins/estimate-line-last-year/e29ly>,
+          <http://finance.data.gov.uk/def/coins/estimate-line-last-year/e30ly>,
+          <http://finance.data.gov.uk/def/coins/estimate-line-last-year/e31ly>,
+          <http://finance.data.gov.uk/def/coins/estimate-line-last-year/e32ly>,
+          <http://finance.data.gov.uk/def/coins/estimate-line-last-year/e33ly>,
+          <http://finance.data.gov.uk/def/coins/estimate-line-last-year/e34ly>,
+          <http://finance.data.gov.uk/def/coins/estimate-line-last-year/e35ly>,
+          <http://finance.data.gov.uk/def/coins/estimate-line-last-year/e36ly>,
+          <http://finance.data.gov.uk/def/coins/estimate-line-last-year/e37ly>,
+          <http://finance.data.gov.uk/def/coins/estimate-line-last-year/e38ly>,
+          <http://finance.data.gov.uk/def/coins/estimate-line-last-year/e39ly>,
+          <http://finance.data.gov.uk/def/coins/estimate-line-last-year/e40ly>,
+          <http://finance.data.gov.uk/def/coins/estimate-line-last-year/e41ly>,
+          <http://finance.data.gov.uk/def/coins/estimate-line-last-year/e42ly>,
+          <http://finance.data.gov.uk/def/coins/estimate-line-last-year/e43ly>,
+          <http://finance.data.gov.uk/def/coins/estimate-line-last-year/e44ly>,
+          <http://finance.data.gov.uk/def/coins/estimate-line-last-year/e45ly>,
+          <http://finance.data.gov.uk/def/coins/estimate-line-last-year/e46ly>,
+          <http://finance.data.gov.uk/def/coins/estimate-line-last-year/e47ly>,
+          <http://finance.data.gov.uk/def/coins/estimate-line-last-year/e48ly>,
+          <http://finance.data.gov.uk/def/coins/estimate-line-last-year/e49ly>,
+          <http://finance.data.gov.uk/def/coins/estimate-line-last-year/e50ly>,
+          <http://finance.data.gov.uk/def/coins/estimate-line-last-year/e51ly>,
+          <http://finance.data.gov.uk/def/coins/estimate-line-last-year/e52ly>,
+          <http://finance.data.gov.uk/def/coins/estimate-line-last-year/e53ly>,
+          <http://finance.data.gov.uk/def/coins/estimate-line-last-year/e54ly>,
+          <http://finance.data.gov.uk/def/coins/estimate-line-last-year/e55ly>,
+          <http://finance.data.gov.uk/def/coins/estimate-line-last-year/e56ly>,
+          <http://finance.data.gov.uk/def/coins/estimate-line-last-year/e57ly>,
+          <http://finance.data.gov.uk/def/coins/estimate-line-last-year/e58ly>,
+          <http://finance.data.gov.uk/def/coins/estimate-line-last-year/e59ly>,
+          <http://finance.data.gov.uk/def/coins/estimate-line-last-year/e60ly>,
+          <http://finance.data.gov.uk/def/coins/estimate-line-last-year/e61ly>,
+          <http://finance.data.gov.uk/def/coins/estimate-line-last-year/e62ly>,
+          <http://finance.data.gov.uk/def/coins/estimate-line-last-year/e63ly>,
+          <http://finance.data.gov.uk/def/coins/estimate-line-last-year/e64ly>,
+          <http://finance.data.gov.uk/def/coins/estimate-line-last-year/e65ly>,
+          <http://finance.data.gov.uk/def/coins/estimate-line-last-year/e66ly>,
+          <http://finance.data.gov.uk/def/coins/estimate-line-last-year/e67ly>,
+          <http://finance.data.gov.uk/def/coins/estimate-line-last-year/e78ly>,
+          <http://finance.data.gov.uk/def/coins/estimate-line-last-year/e80ly>,
+          <http://finance.data.gov.uk/def/coins/estimate-line-last-year/e86ly>,
+          <http://finance.data.gov.uk/def/coins/estimate-line-last-year/e97ly>,
+          <http://finance.data.gov.uk/def/coins/estimate-line-last-year/e98ly>,
+          <http://finance.data.gov.uk/def/coins/estimate-line-last-year/e99ly>
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-line-last-year/e01ly>
+    a <http://finance.data.gov.uk/def/coins/EstimateLineLastYear>, skos:Concept;
+    rdfs:label "EL01_last-yr"@en;
+    skos:prefLabel "EL01_last-yr"@en;
+    skos:notation "e01ly";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-line-last-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-line-last-year/e02ly>
+    a <http://finance.data.gov.uk/def/coins/EstimateLineLastYear>, skos:Concept;
+    rdfs:label "EL02_last-yr"@en;
+    skos:prefLabel "EL02_last-yr"@en;
+    skos:notation "e02ly";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-line-last-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-line-last-year/e03ly>
+    a <http://finance.data.gov.uk/def/coins/EstimateLineLastYear>, skos:Concept;
+    rdfs:label "EL03_last-yr"@en;
+    skos:prefLabel "EL03_last-yr"@en;
+    skos:notation "e03ly";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-line-last-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-line-last-year/e04ly>
+    a <http://finance.data.gov.uk/def/coins/EstimateLineLastYear>, skos:Concept;
+    rdfs:label "EL04_last-yr"@en;
+    skos:prefLabel "EL04_last-yr"@en;
+    skos:notation "e04ly";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-line-last-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-line-last-year/e05ly>
+    a <http://finance.data.gov.uk/def/coins/EstimateLineLastYear>, skos:Concept;
+    rdfs:label "EL05_last-yr"@en;
+    skos:prefLabel "EL05_last-yr"@en;
+    skos:notation "e05ly";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-line-last-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-line-last-year/e06ly>
+    a <http://finance.data.gov.uk/def/coins/EstimateLineLastYear>, skos:Concept;
+    rdfs:label "EL06_last-yr"@en;
+    skos:prefLabel "EL06_last-yr"@en;
+    skos:notation "e06ly";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-line-last-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-line-last-year/e07ly>
+    a <http://finance.data.gov.uk/def/coins/EstimateLineLastYear>, skos:Concept;
+    rdfs:label "EL07_last-yr"@en;
+    skos:prefLabel "EL07_last-yr"@en;
+    skos:notation "e07ly";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-line-last-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-line-last-year/e08ly>
+    a <http://finance.data.gov.uk/def/coins/EstimateLineLastYear>, skos:Concept;
+    rdfs:label "EL08_last-yr"@en;
+    skos:prefLabel "EL08_last-yr"@en;
+    skos:notation "e08ly";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-line-last-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-line-last-year/e09ly>
+    a <http://finance.data.gov.uk/def/coins/EstimateLineLastYear>, skos:Concept;
+    rdfs:label "EL09_last-yr"@en;
+    skos:prefLabel "EL09_last-yr"@en;
+    skos:notation "e09ly";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-line-last-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-line-last-year/e10ly>
+    a <http://finance.data.gov.uk/def/coins/EstimateLineLastYear>, skos:Concept;
+    rdfs:label "EL10_last-yr"@en;
+    skos:prefLabel "EL10_last-yr"@en;
+    skos:notation "e10ly";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-line-last-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-line-last-year/e11ly>
+    a <http://finance.data.gov.uk/def/coins/EstimateLineLastYear>, skos:Concept;
+    rdfs:label "EL11_last-yr"@en;
+    skos:prefLabel "EL11_last-yr"@en;
+    skos:notation "e11ly";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-line-last-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-line-last-year/e12ly>
+    a <http://finance.data.gov.uk/def/coins/EstimateLineLastYear>, skos:Concept;
+    rdfs:label "EL12_last-yr"@en;
+    skos:prefLabel "EL12_last-yr"@en;
+    skos:notation "e12ly";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-line-last-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-line-last-year/e13ly>
+    a <http://finance.data.gov.uk/def/coins/EstimateLineLastYear>, skos:Concept;
+    rdfs:label "EL13_last-yr"@en;
+    skos:prefLabel "EL13_last-yr"@en;
+    skos:notation "e13ly";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-line-last-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-line-last-year/e14ly>
+    a <http://finance.data.gov.uk/def/coins/EstimateLineLastYear>, skos:Concept;
+    rdfs:label "EL14_last-yr"@en;
+    skos:prefLabel "EL14_last-yr"@en;
+    skos:notation "e14ly";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-line-last-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-line-last-year/e15ly>
+    a <http://finance.data.gov.uk/def/coins/EstimateLineLastYear>, skos:Concept;
+    rdfs:label "EL15_last-yr"@en;
+    skos:prefLabel "EL15_last-yr"@en;
+    skos:notation "e15ly";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-line-last-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-line-last-year/e16ly>
+    a <http://finance.data.gov.uk/def/coins/EstimateLineLastYear>, skos:Concept;
+    rdfs:label "EL16_last-yr"@en;
+    skos:prefLabel "EL16_last-yr"@en;
+    skos:notation "e16ly";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-line-last-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-line-last-year/e17ly>
+    a <http://finance.data.gov.uk/def/coins/EstimateLineLastYear>, skos:Concept;
+    rdfs:label "EL17_last-yr"@en;
+    skos:prefLabel "EL17_last-yr"@en;
+    skos:notation "e17ly";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-line-last-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-line-last-year/e18ly>
+    a <http://finance.data.gov.uk/def/coins/EstimateLineLastYear>, skos:Concept;
+    rdfs:label "EL18_last-yr"@en;
+    skos:prefLabel "EL18_last-yr"@en;
+    skos:notation "e18ly";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-line-last-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-line-last-year/e19ly>
+    a <http://finance.data.gov.uk/def/coins/EstimateLineLastYear>, skos:Concept;
+    rdfs:label "EL19_last-yr"@en;
+    skos:prefLabel "EL19_last-yr"@en;
+    skos:notation "e19ly";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-line-last-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-line-last-year/e20ly>
+    a <http://finance.data.gov.uk/def/coins/EstimateLineLastYear>, skos:Concept;
+    rdfs:label "EL20_last-yr"@en;
+    skos:prefLabel "EL20_last-yr"@en;
+    skos:notation "e20ly";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-line-last-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-line-last-year/e21ly>
+    a <http://finance.data.gov.uk/def/coins/EstimateLineLastYear>, skos:Concept;
+    rdfs:label "EL21_last-yr"@en;
+    skos:prefLabel "EL21_last-yr"@en;
+    skos:notation "e21ly";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-line-last-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-line-last-year/e22ly>
+    a <http://finance.data.gov.uk/def/coins/EstimateLineLastYear>, skos:Concept;
+    rdfs:label "EL22_last-yr"@en;
+    skos:prefLabel "EL22_last-yr"@en;
+    skos:notation "e22ly";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-line-last-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-line-last-year/e23ly>
+    a <http://finance.data.gov.uk/def/coins/EstimateLineLastYear>, skos:Concept;
+    rdfs:label "EL23_last-yr"@en;
+    skos:prefLabel "EL23_last-yr"@en;
+    skos:notation "e23ly";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-line-last-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-line-last-year/e24ly>
+    a <http://finance.data.gov.uk/def/coins/EstimateLineLastYear>, skos:Concept;
+    rdfs:label "EL24_last-yr"@en;
+    skos:prefLabel "EL24_last-yr"@en;
+    skos:notation "e24ly";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-line-last-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-line-last-year/e25ly>
+    a <http://finance.data.gov.uk/def/coins/EstimateLineLastYear>, skos:Concept;
+    rdfs:label "EL25_last-yr"@en;
+    skos:prefLabel "EL25_last-yr"@en;
+    skos:notation "e25ly";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-line-last-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-line-last-year/e26ly>
+    a <http://finance.data.gov.uk/def/coins/EstimateLineLastYear>, skos:Concept;
+    rdfs:label "EL26_last-yr"@en;
+    skos:prefLabel "EL26_last-yr"@en;
+    skos:notation "e26ly";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-line-last-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-line-last-year/e27ly>
+    a <http://finance.data.gov.uk/def/coins/EstimateLineLastYear>, skos:Concept;
+    rdfs:label "EL27_last-yr"@en;
+    skos:prefLabel "EL27_last-yr"@en;
+    skos:notation "e27ly";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-line-last-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-line-last-year/e28ly>
+    a <http://finance.data.gov.uk/def/coins/EstimateLineLastYear>, skos:Concept;
+    rdfs:label "EL28_last-yr"@en;
+    skos:prefLabel "EL28_last-yr"@en;
+    skos:notation "e28ly";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-line-last-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-line-last-year/e29ly>
+    a <http://finance.data.gov.uk/def/coins/EstimateLineLastYear>, skos:Concept;
+    rdfs:label "EL29_last-yr"@en;
+    skos:prefLabel "EL29_last-yr"@en;
+    skos:notation "e29ly";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-line-last-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-line-last-year/e30ly>
+    a <http://finance.data.gov.uk/def/coins/EstimateLineLastYear>, skos:Concept;
+    rdfs:label "EL30_last-yr"@en;
+    skos:prefLabel "EL30_last-yr"@en;
+    skos:notation "e30ly";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-line-last-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-line-last-year/e31ly>
+    a <http://finance.data.gov.uk/def/coins/EstimateLineLastYear>, skos:Concept;
+    rdfs:label "EL31_last-yr"@en;
+    skos:prefLabel "EL31_last-yr"@en;
+    skos:notation "e31ly";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-line-last-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-line-last-year/e32ly>
+    a <http://finance.data.gov.uk/def/coins/EstimateLineLastYear>, skos:Concept;
+    rdfs:label "EL32_last-yr"@en;
+    skos:prefLabel "EL32_last-yr"@en;
+    skos:notation "e32ly";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-line-last-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-line-last-year/e33ly>
+    a <http://finance.data.gov.uk/def/coins/EstimateLineLastYear>, skos:Concept;
+    rdfs:label "EL33_last-yr"@en;
+    skos:prefLabel "EL33_last-yr"@en;
+    skos:notation "e33ly";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-line-last-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-line-last-year/e34ly>
+    a <http://finance.data.gov.uk/def/coins/EstimateLineLastYear>, skos:Concept;
+    rdfs:label "EL34_last-yr"@en;
+    skos:prefLabel "EL34_last-yr"@en;
+    skos:notation "e34ly";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-line-last-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-line-last-year/e35ly>
+    a <http://finance.data.gov.uk/def/coins/EstimateLineLastYear>, skos:Concept;
+    rdfs:label "EL35_last-yr"@en;
+    skos:prefLabel "EL35_last-yr"@en;
+    skos:notation "e35ly";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-line-last-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-line-last-year/e36ly>
+    a <http://finance.data.gov.uk/def/coins/EstimateLineLastYear>, skos:Concept;
+    rdfs:label "EL36_last-yr"@en;
+    skos:prefLabel "EL36_last-yr"@en;
+    skos:notation "e36ly";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-line-last-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-line-last-year/e37ly>
+    a <http://finance.data.gov.uk/def/coins/EstimateLineLastYear>, skos:Concept;
+    rdfs:label "EL37_last-yr"@en;
+    skos:prefLabel "EL37_last-yr"@en;
+    skos:notation "e37ly";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-line-last-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-line-last-year/e38ly>
+    a <http://finance.data.gov.uk/def/coins/EstimateLineLastYear>, skos:Concept;
+    rdfs:label "EL38_last-yr"@en;
+    skos:prefLabel "EL38_last-yr"@en;
+    skos:notation "e38ly";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-line-last-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-line-last-year/e39ly>
+    a <http://finance.data.gov.uk/def/coins/EstimateLineLastYear>, skos:Concept;
+    rdfs:label "EL39_last-yr"@en;
+    skos:prefLabel "EL39_last-yr"@en;
+    skos:notation "e39ly";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-line-last-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-line-last-year/e40ly>
+    a <http://finance.data.gov.uk/def/coins/EstimateLineLastYear>, skos:Concept;
+    rdfs:label "EL40_last-yr"@en;
+    skos:prefLabel "EL40_last-yr"@en;
+    skos:notation "e40ly";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-line-last-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-line-last-year/e41ly>
+    a <http://finance.data.gov.uk/def/coins/EstimateLineLastYear>, skos:Concept;
+    rdfs:label "EL41_last-yr"@en;
+    skos:prefLabel "EL41_last-yr"@en;
+    skos:notation "e41ly";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-line-last-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-line-last-year/e42ly>
+    a <http://finance.data.gov.uk/def/coins/EstimateLineLastYear>, skos:Concept;
+    rdfs:label "EL42_last-yr"@en;
+    skos:prefLabel "EL42_last-yr"@en;
+    skos:notation "e42ly";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-line-last-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-line-last-year/e43ly>
+    a <http://finance.data.gov.uk/def/coins/EstimateLineLastYear>, skos:Concept;
+    rdfs:label "EL43_last-yr"@en;
+    skos:prefLabel "EL43_last-yr"@en;
+    skos:notation "e43ly";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-line-last-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-line-last-year/e44ly>
+    a <http://finance.data.gov.uk/def/coins/EstimateLineLastYear>, skos:Concept;
+    rdfs:label "EL44_last-yr"@en;
+    skos:prefLabel "EL44_last-yr"@en;
+    skos:notation "e44ly";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-line-last-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-line-last-year/e45ly>
+    a <http://finance.data.gov.uk/def/coins/EstimateLineLastYear>, skos:Concept;
+    rdfs:label "EL45_last-yr"@en;
+    skos:prefLabel "EL45_last-yr"@en;
+    skos:notation "e45ly";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-line-last-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-line-last-year/e46ly>
+    a <http://finance.data.gov.uk/def/coins/EstimateLineLastYear>, skos:Concept;
+    rdfs:label "EL46_last-yr"@en;
+    skos:prefLabel "EL46_last-yr"@en;
+    skos:notation "e46ly";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-line-last-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-line-last-year/e47ly>
+    a <http://finance.data.gov.uk/def/coins/EstimateLineLastYear>, skos:Concept;
+    rdfs:label "EL47_last-yr"@en;
+    skos:prefLabel "EL47_last-yr"@en;
+    skos:notation "e47ly";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-line-last-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-line-last-year/e48ly>
+    a <http://finance.data.gov.uk/def/coins/EstimateLineLastYear>, skos:Concept;
+    rdfs:label "EL48_last-yr"@en;
+    skos:prefLabel "EL48_last-yr"@en;
+    skos:notation "e48ly";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-line-last-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-line-last-year/e49ly>
+    a <http://finance.data.gov.uk/def/coins/EstimateLineLastYear>, skos:Concept;
+    rdfs:label "EL49_last-yr"@en;
+    skos:prefLabel "EL49_last-yr"@en;
+    skos:notation "e49ly";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-line-last-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-line-last-year/e50ly>
+    a <http://finance.data.gov.uk/def/coins/EstimateLineLastYear>, skos:Concept;
+    rdfs:label "EL50_last-yr"@en;
+    skos:prefLabel "EL50_last-yr"@en;
+    skos:notation "e50ly";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-line-last-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-line-last-year/e51ly>
+    a <http://finance.data.gov.uk/def/coins/EstimateLineLastYear>, skos:Concept;
+    rdfs:label "EL51_last-yr"@en;
+    skos:prefLabel "EL51_last-yr"@en;
+    skos:notation "e51ly";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-line-last-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-line-last-year/e52ly>
+    a <http://finance.data.gov.uk/def/coins/EstimateLineLastYear>, skos:Concept;
+    rdfs:label "EL52_last-yr"@en;
+    skos:prefLabel "EL52_last-yr"@en;
+    skos:notation "e52ly";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-line-last-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-line-last-year/e53ly>
+    a <http://finance.data.gov.uk/def/coins/EstimateLineLastYear>, skos:Concept;
+    rdfs:label "EL53_last-yr"@en;
+    skos:prefLabel "EL53_last-yr"@en;
+    skos:notation "e53ly";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-line-last-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-line-last-year/e54ly>
+    a <http://finance.data.gov.uk/def/coins/EstimateLineLastYear>, skos:Concept;
+    rdfs:label "EL54_last-yr"@en;
+    skos:prefLabel "EL54_last-yr"@en;
+    skos:notation "e54ly";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-line-last-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-line-last-year/e55ly>
+    a <http://finance.data.gov.uk/def/coins/EstimateLineLastYear>, skos:Concept;
+    rdfs:label "EL55_last-yr"@en;
+    skos:prefLabel "EL55_last-yr"@en;
+    skos:notation "e55ly";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-line-last-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-line-last-year/e56ly>
+    a <http://finance.data.gov.uk/def/coins/EstimateLineLastYear>, skos:Concept;
+    rdfs:label "EL56_last-yr"@en;
+    skos:prefLabel "EL56_last-yr"@en;
+    skos:notation "e56ly";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-line-last-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-line-last-year/e57ly>
+    a <http://finance.data.gov.uk/def/coins/EstimateLineLastYear>, skos:Concept;
+    rdfs:label "EL57_last-yr"@en;
+    skos:prefLabel "EL57_last-yr"@en;
+    skos:notation "e57ly";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-line-last-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-line-last-year/e58ly>
+    a <http://finance.data.gov.uk/def/coins/EstimateLineLastYear>, skos:Concept;
+    rdfs:label "EL58_last-yr"@en;
+    skos:prefLabel "EL58_last-yr"@en;
+    skos:notation "e58ly";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-line-last-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-line-last-year/e59ly>
+    a <http://finance.data.gov.uk/def/coins/EstimateLineLastYear>, skos:Concept;
+    rdfs:label "EL59_last-yr"@en;
+    skos:prefLabel "EL59_last-yr"@en;
+    skos:notation "e59ly";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-line-last-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-line-last-year/e60ly>
+    a <http://finance.data.gov.uk/def/coins/EstimateLineLastYear>, skos:Concept;
+    rdfs:label "EL60_last-yr"@en;
+    skos:prefLabel "EL60_last-yr"@en;
+    skos:notation "e60ly";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-line-last-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-line-last-year/e61ly>
+    a <http://finance.data.gov.uk/def/coins/EstimateLineLastYear>, skos:Concept;
+    rdfs:label "EL61_last-yr"@en;
+    skos:prefLabel "EL61_last-yr"@en;
+    skos:notation "e61ly";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-line-last-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-line-last-year/e62ly>
+    a <http://finance.data.gov.uk/def/coins/EstimateLineLastYear>, skos:Concept;
+    rdfs:label "EL62_last-yr"@en;
+    skos:prefLabel "EL62_last-yr"@en;
+    skos:notation "e62ly";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-line-last-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-line-last-year/e63ly>
+    a <http://finance.data.gov.uk/def/coins/EstimateLineLastYear>, skos:Concept;
+    rdfs:label "EL63_last-yr"@en;
+    skos:prefLabel "EL63_last-yr"@en;
+    skos:notation "e63ly";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-line-last-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-line-last-year/e64ly>
+    a <http://finance.data.gov.uk/def/coins/EstimateLineLastYear>, skos:Concept;
+    rdfs:label "EL64_last-yr"@en;
+    skos:prefLabel "EL64_last-yr"@en;
+    skos:notation "e64ly";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-line-last-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-line-last-year/e65ly>
+    a <http://finance.data.gov.uk/def/coins/EstimateLineLastYear>, skos:Concept;
+    rdfs:label "EL65_last-yr"@en;
+    skos:prefLabel "EL65_last-yr"@en;
+    skos:notation "e65ly";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-line-last-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-line-last-year/e66ly>
+    a <http://finance.data.gov.uk/def/coins/EstimateLineLastYear>, skos:Concept;
+    rdfs:label "EL66_last-yr"@en;
+    skos:prefLabel "EL66_last-yr"@en;
+    skos:notation "e66ly";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-line-last-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-line-last-year/e67ly>
+    a <http://finance.data.gov.uk/def/coins/EstimateLineLastYear>, skos:Concept;
+    rdfs:label "EL67_last-yr"@en;
+    skos:prefLabel "EL67_last-yr"@en;
+    skos:notation "e67ly";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-line-last-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-line-last-year/e78ly>
+    a <http://finance.data.gov.uk/def/coins/EstimateLineLastYear>, skos:Concept;
+    rdfs:label "EL78_last-yr"@en;
+    skos:prefLabel "EL78_last-yr"@en;
+    skos:notation "e78ly";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-line-last-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-line-last-year/e80ly>
+    a <http://finance.data.gov.uk/def/coins/EstimateLineLastYear>, skos:Concept;
+    rdfs:label "EL80_last-yr"@en;
+    skos:prefLabel "EL80_last-yr"@en;
+    skos:notation "e80ly";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-line-last-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-line-last-year/e86ly>
+    a <http://finance.data.gov.uk/def/coins/EstimateLineLastYear>, skos:Concept;
+    rdfs:label "EL86_last-yr"@en;
+    skos:prefLabel "EL86_last-yr"@en;
+    skos:notation "e86ly";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-line-last-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-line-last-year/e97ly>
+    a <http://finance.data.gov.uk/def/coins/EstimateLineLastYear>, skos:Concept;
+    rdfs:label "EL97_last-yr"@en;
+    skos:prefLabel "EL97_last-yr"@en;
+    skos:notation "e97ly";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-line-last-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-line-last-year/e98ly>
+    a <http://finance.data.gov.uk/def/coins/EstimateLineLastYear>, skos:Concept;
+    rdfs:label "EL98_last-yr"@en;
+    skos:prefLabel "EL98_last-yr"@en;
+    skos:notation "e98ly";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-line-last-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-line-last-year/e99ly>
+    a <http://finance.data.gov.uk/def/coins/EstimateLineLastYear>, skos:Concept;
+    rdfs:label "EL99_last-yr"@en;
+    skos:prefLabel "EL99_last-yr"@en;
+    skos:notation "e99ly";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-line-last-year>;
+    
+    .

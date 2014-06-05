@@ -1,0 +1,674 @@
+<rdf:RDF
+    xmlns:sdmx-subject="http://purl.org/linked-data/sdmx/2009/subject#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:sdmx-dimension="http://purl.org/linked-data/sdmx/2009/dimension#"
+    xmlns:sdmx-measure="http://purl.org/linked-data/sdmx/2009/measure#"
+    xmlns:sdmx-attribute="http://purl.org/linked-data/sdmx/2009/attribute#"
+    xmlns:coins-data="http://source.data.gov.uk/data/coins/"
+    xmlns:coins-dsd="http://finance.data.gov.uk/dsd/coins/"
+    xmlns:coins-dimension="http://finance.data.gov.uk/dsd/coins/dimension/"
+    xmlns:void="http://rdfs.org/ns/void#"
+    xmlns:coins-measure="http://finance.data.gov.uk/dsd/coins/measure/"
+    xmlns:j.0="http://www.epimorphics.com/vocabs/coins-generate#"
+    xmlns:coins-attribute="http://finance.data.gov.uk/dsd/coins/attribute/"
+    xmlns:sdmx-concept="http://purl.org/linked-data/sdmx/2009/concept#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:coins-slicekey="http://finance.data.gov.uk/dsd/coins/slice/"
+    xmlns:sdmx="http://purl.org/linked-data/sdmx#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:sdmx-code="http://purl.org/linked-data/sdmx/2009/code#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:j.1="http://finance.data.gov.uk/def/coins/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:qb="http://purl.org/linked-data/cube#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <rdfs:Class rdf:about="http://finance.data.gov.uk/def/coins/EstimateNumberLastYear">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:label xml:lang="en">estimate number last year values class</rdfs:label>
+    <skos:prefLabel xml:lang="en">estimate number last year values class</skos:prefLabel>
+    <rdfs:comment>The class of values in the estimate number last year code-list scheme</rdfs:comment>
+  </rdfs:Class>
+  <sdmx:Concept rdf:about="http://finance.data.gov.uk/def/coins/statistical-concept/estimate-number-last-year">
+    <rdfs:label xml:lang="en">estimate number last year</rdfs:label>
+    <skos:prefLabel xml:lang="en">estimate number last year</skos:prefLabel>
+    <rdfs:comment>Identifies the department or organisation to whose supply Estimates for the last year the data are posted.</rdfs:comment>
+    <dcterms:source rdf:resource="http://www.hm-treasury.gov.uk/d/coins_guidance.pdf"/>
+    <j.0:columnName>estimate_number_last_year</j.0:columnName>
+  </sdmx:Concept>
+  <skos:ConceptScheme rdf:about="http://finance.data.gov.uk/def/coins/estimate-number-last-year">
+    <skos:hasTopConcept>
+      <j.1:EstimateNumberLastYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-number-last-year/m37ly">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ME37_last-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">ME37_last-yr</skos:prefLabel>
+        <skos:notation>m37ly</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-number-last-year"/>
+      </j.1:EstimateNumberLastYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateNumberLastYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-number-last-year/m53ly">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ME53_last-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">ME53_last-yr</skos:prefLabel>
+        <skos:notation>m53ly</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-number-last-year"/>
+      </j.1:EstimateNumberLastYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateNumberLastYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-number-last-year/m14ly">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ME14_last-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">ME14_last-yr</skos:prefLabel>
+        <skos:notation>m14ly</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-number-last-year"/>
+      </j.1:EstimateNumberLastYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateNumberLastYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-number-last-year/m31ly">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ME31_last-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">ME31_last-yr</skos:prefLabel>
+        <skos:notation>m31ly</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-number-last-year"/>
+      </j.1:EstimateNumberLastYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateNumberLastYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-number-last-year/m58ly">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ME58_last-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">ME58_last-yr</skos:prefLabel>
+        <skos:notation>m58ly</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-number-last-year"/>
+      </j.1:EstimateNumberLastYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateNumberLastYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-number-last-year/m36ly">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ME36_last-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">ME36_last-yr</skos:prefLabel>
+        <skos:notation>m36ly</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-number-last-year"/>
+      </j.1:EstimateNumberLastYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateNumberLastYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-number-last-year/m44ly">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ME44_last-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">ME44_last-yr</skos:prefLabel>
+        <skos:notation>m44ly</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-number-last-year"/>
+      </j.1:EstimateNumberLastYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateNumberLastYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-number-last-year/m03ly">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ME03_last-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">ME03_last-yr</skos:prefLabel>
+        <skos:notation>m03ly</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-number-last-year"/>
+      </j.1:EstimateNumberLastYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateNumberLastYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-number-last-year/m09ly">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ME09_last-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">ME09_last-yr</skos:prefLabel>
+        <skos:notation>m09ly</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-number-last-year"/>
+      </j.1:EstimateNumberLastYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateNumberLastYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-number-last-year/m61ly">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ME61_last-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">ME61_last-yr</skos:prefLabel>
+        <skos:notation>m61ly</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-number-last-year"/>
+      </j.1:EstimateNumberLastYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateNumberLastYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-number-last-year/m60ly">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ME60_last-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">ME60_last-yr</skos:prefLabel>
+        <skos:notation>m60ly</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-number-last-year"/>
+      </j.1:EstimateNumberLastYear>
+    </skos:hasTopConcept>
+    <skos:prefLabel xml:lang="en">estimate number last year code list concept scheme</skos:prefLabel>
+    <skos:hasTopConcept>
+      <j.1:EstimateNumberLastYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-number-last-year/m52ly">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ME52_last-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">ME52_last-yr</skos:prefLabel>
+        <skos:notation>m52ly</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-number-last-year"/>
+      </j.1:EstimateNumberLastYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateNumberLastYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-number-last-year/m63ly">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ME63_last-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">ME63_last-yr</skos:prefLabel>
+        <skos:notation>m63ly</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-number-last-year"/>
+      </j.1:EstimateNumberLastYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateNumberLastYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-number-last-year/m07ly">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ME07_last-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">ME07_last-yr</skos:prefLabel>
+        <skos:notation>m07ly</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-number-last-year"/>
+      </j.1:EstimateNumberLastYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateNumberLastYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-number-last-year/m33ly">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ME33_last-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">ME33_last-yr</skos:prefLabel>
+        <skos:notation>m33ly</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-number-last-year"/>
+      </j.1:EstimateNumberLastYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateNumberLastYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-number-last-year/m29ly">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ME29_last-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">ME29_last-yr</skos:prefLabel>
+        <skos:notation>m29ly</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-number-last-year"/>
+      </j.1:EstimateNumberLastYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateNumberLastYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-number-last-year/m55ly">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ME55_last-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">ME55_last-yr</skos:prefLabel>
+        <skos:notation>m55ly</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-number-last-year"/>
+      </j.1:EstimateNumberLastYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateNumberLastYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-number-last-year/m05ly">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ME05_last-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">ME05_last-yr</skos:prefLabel>
+        <skos:notation>m05ly</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-number-last-year"/>
+      </j.1:EstimateNumberLastYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateNumberLastYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-number-last-year/m66ly">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ME66_last-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">ME66_last-yr</skos:prefLabel>
+        <skos:notation>m66ly</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-number-last-year"/>
+      </j.1:EstimateNumberLastYear>
+    </skos:hasTopConcept>
+    <rdfs:label xml:lang="en">estimate number last year code list concept scheme</rdfs:label>
+    <skos:hasTopConcept>
+      <j.1:EstimateNumberLastYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-number-last-year/m11ly">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ME11_last-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">ME11_last-yr</skos:prefLabel>
+        <skos:notation>m11ly</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-number-last-year"/>
+      </j.1:EstimateNumberLastYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateNumberLastYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-number-last-year/m62ly">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ME62_last-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">ME62_last-yr</skos:prefLabel>
+        <skos:notation>m62ly</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-number-last-year"/>
+      </j.1:EstimateNumberLastYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateNumberLastYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-number-last-year/m26ly">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ME26_last-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">ME26_last-yr</skos:prefLabel>
+        <skos:notation>m26ly</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-number-last-year"/>
+      </j.1:EstimateNumberLastYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateNumberLastYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-number-last-year/mly1">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">MEWA_last-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">MEWA_last-yr</skos:prefLabel>
+        <skos:notation>mly1</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-number-last-year"/>
+      </j.1:EstimateNumberLastYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateNumberLastYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-number-last-year/m34ly">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ME34_last-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">ME34_last-yr</skos:prefLabel>
+        <skos:notation>m34ly</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-number-last-year"/>
+      </j.1:EstimateNumberLastYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateNumberLastYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-number-last-year/m35ly">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ME35_last-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">ME35_last-yr</skos:prefLabel>
+        <skos:notation>m35ly</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-number-last-year"/>
+      </j.1:EstimateNumberLastYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateNumberLastYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-number-last-year/m15ly">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ME15_last-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">ME15_last-yr</skos:prefLabel>
+        <skos:notation>m15ly</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-number-last-year"/>
+      </j.1:EstimateNumberLastYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateNumberLastYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-number-last-year/m18ly">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ME18_last-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">ME18_last-yr</skos:prefLabel>
+        <skos:notation>m18ly</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-number-last-year"/>
+      </j.1:EstimateNumberLastYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateNumberLastYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-number-last-year/m17ly">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ME17_last-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">ME17_last-yr</skos:prefLabel>
+        <skos:notation>m17ly</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-number-last-year"/>
+      </j.1:EstimateNumberLastYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateNumberLastYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-number-last-year/m50ly">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ME50_last-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">ME50_last-yr</skos:prefLabel>
+        <skos:notation>m50ly</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-number-last-year"/>
+      </j.1:EstimateNumberLastYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateNumberLastYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-number-last-year/m56ly">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ME56_last-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">ME56_last-yr</skos:prefLabel>
+        <skos:notation>m56ly</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-number-last-year"/>
+      </j.1:EstimateNumberLastYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateNumberLastYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-number-last-year/m64ly">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ME64_last-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">ME64_last-yr</skos:prefLabel>
+        <skos:notation>m64ly</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-number-last-year"/>
+      </j.1:EstimateNumberLastYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateNumberLastYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-number-last-year/m01ly">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ME01_last-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">ME01_last-yr</skos:prefLabel>
+        <skos:notation>m01ly</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-number-last-year"/>
+      </j.1:EstimateNumberLastYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateNumberLastYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-number-last-year/m25ly">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ME25_last-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">ME25_last-yr</skos:prefLabel>
+        <skos:notation>m25ly</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-number-last-year"/>
+      </j.1:EstimateNumberLastYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateNumberLastYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-number-last-year/m16ly">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ME16_last-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">ME16_last-yr</skos:prefLabel>
+        <skos:notation>m16ly</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-number-last-year"/>
+      </j.1:EstimateNumberLastYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateNumberLastYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-number-last-year/m54ly">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ME54_last-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">ME54_last-yr</skos:prefLabel>
+        <skos:notation>m54ly</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-number-last-year"/>
+      </j.1:EstimateNumberLastYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateNumberLastYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-number-last-year/mly">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">MEIX_last-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">MEIX_last-yr</skos:prefLabel>
+        <skos:notation>mly</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-number-last-year"/>
+      </j.1:EstimateNumberLastYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateNumberLastYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-number-last-year/m10ly">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ME10_last-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">ME10_last-yr</skos:prefLabel>
+        <skos:notation>m10ly</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-number-last-year"/>
+      </j.1:EstimateNumberLastYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateNumberLastYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-number-last-year/m24ly">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ME24_last-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">ME24_last-yr</skos:prefLabel>
+        <skos:notation>m24ly</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-number-last-year"/>
+      </j.1:EstimateNumberLastYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateNumberLastYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-number-last-year/m48ly">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ME48_last-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">ME48_last-yr</skos:prefLabel>
+        <skos:notation>m48ly</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-number-last-year"/>
+      </j.1:EstimateNumberLastYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateNumberLastYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-number-last-year/m51ly">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ME51_last-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">ME51_last-yr</skos:prefLabel>
+        <skos:notation>m51ly</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-number-last-year"/>
+      </j.1:EstimateNumberLastYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateNumberLastYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-number-last-year/m02ly">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ME02_last-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">ME02_last-yr</skos:prefLabel>
+        <skos:notation>m02ly</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-number-last-year"/>
+      </j.1:EstimateNumberLastYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateNumberLastYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-number-last-year/m40ly">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ME40_last-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">ME40_last-yr</skos:prefLabel>
+        <skos:notation>m40ly</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-number-last-year"/>
+      </j.1:EstimateNumberLastYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateNumberLastYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-number-last-year/m43ly">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ME43_last-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">ME43_last-yr</skos:prefLabel>
+        <skos:notation>m43ly</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-number-last-year"/>
+      </j.1:EstimateNumberLastYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateNumberLastYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-number-last-year/m20ly">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ME20_last-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">ME20_last-yr</skos:prefLabel>
+        <skos:notation>m20ly</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-number-last-year"/>
+      </j.1:EstimateNumberLastYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateNumberLastYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-number-last-year/m41ly">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ME41_last-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">ME41_last-yr</skos:prefLabel>
+        <skos:notation>m41ly</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-number-last-year"/>
+      </j.1:EstimateNumberLastYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateNumberLastYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-number-last-year/m19ly">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ME19_last-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">ME19_last-yr</skos:prefLabel>
+        <skos:notation>m19ly</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-number-last-year"/>
+      </j.1:EstimateNumberLastYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateNumberLastYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-number-last-year/m45ly">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ME45_last-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">ME45_last-yr</skos:prefLabel>
+        <skos:notation>m45ly</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-number-last-year"/>
+      </j.1:EstimateNumberLastYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateNumberLastYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-number-last-year/m27ly">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ME27_last-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">ME27_last-yr</skos:prefLabel>
+        <skos:notation>m27ly</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-number-last-year"/>
+      </j.1:EstimateNumberLastYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateNumberLastYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-number-last-year/m46ly">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ME46_last-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">ME46_last-yr</skos:prefLabel>
+        <skos:notation>m46ly</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-number-last-year"/>
+      </j.1:EstimateNumberLastYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateNumberLastYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-number-last-year/m08ly">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ME08_last-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">ME08_last-yr</skos:prefLabel>
+        <skos:notation>m08ly</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-number-last-year"/>
+      </j.1:EstimateNumberLastYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateNumberLastYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-number-last-year/m32ly">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ME32_last-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">ME32_last-yr</skos:prefLabel>
+        <skos:notation>m32ly</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-number-last-year"/>
+      </j.1:EstimateNumberLastYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateNumberLastYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-number-last-year/mly0">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">MESX_last-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">MESX_last-yr</skos:prefLabel>
+        <skos:notation>mly0</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-number-last-year"/>
+      </j.1:EstimateNumberLastYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateNumberLastYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-number-last-year/m13ly">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ME13_last-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">ME13_last-yr</skos:prefLabel>
+        <skos:notation>m13ly</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-number-last-year"/>
+      </j.1:EstimateNumberLastYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateNumberLastYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-number-last-year/m28ly">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ME28_last-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">ME28_last-yr</skos:prefLabel>
+        <skos:notation>m28ly</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-number-last-year"/>
+      </j.1:EstimateNumberLastYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateNumberLastYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-number-last-year/m57ly">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ME57_last-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">ME57_last-yr</skos:prefLabel>
+        <skos:notation>m57ly</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-number-last-year"/>
+      </j.1:EstimateNumberLastYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateNumberLastYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-number-last-year/m21ly">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ME21_last-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">ME21_last-yr</skos:prefLabel>
+        <skos:notation>m21ly</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-number-last-year"/>
+      </j.1:EstimateNumberLastYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateNumberLastYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-number-last-year/m06ly">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ME06_last-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">ME06_last-yr</skos:prefLabel>
+        <skos:notation>m06ly</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-number-last-year"/>
+      </j.1:EstimateNumberLastYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateNumberLastYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-number-last-year/m12ly">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ME12_last-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">ME12_last-yr</skos:prefLabel>
+        <skos:notation>m12ly</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-number-last-year"/>
+      </j.1:EstimateNumberLastYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateNumberLastYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-number-last-year/m23ly">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ME23_last-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">ME23_last-yr</skos:prefLabel>
+        <skos:notation>m23ly</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-number-last-year"/>
+      </j.1:EstimateNumberLastYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateNumberLastYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-number-last-year/m47ly">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ME47_last-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">ME47_last-yr</skos:prefLabel>
+        <skos:notation>m47ly</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-number-last-year"/>
+      </j.1:EstimateNumberLastYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateNumberLastYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-number-last-year/m65ly">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ME65_last-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">ME65_last-yr</skos:prefLabel>
+        <skos:notation>m65ly</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-number-last-year"/>
+      </j.1:EstimateNumberLastYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateNumberLastYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-number-last-year/m22ly">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ME22_last-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">ME22_last-yr</skos:prefLabel>
+        <skos:notation>m22ly</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-number-last-year"/>
+      </j.1:EstimateNumberLastYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateNumberLastYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-number-last-year/m04ly">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ME04_last-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">ME04_last-yr</skos:prefLabel>
+        <skos:notation>m04ly</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-number-last-year"/>
+      </j.1:EstimateNumberLastYear>
+    </skos:hasTopConcept>
+  </skos:ConceptScheme>
+</rdf:RDF>

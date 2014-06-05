@@ -1,0 +1,372 @@
+@prefix rdf:            <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:           <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:            <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:            <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:           <http://www.w3.org/2004/02/skos/core#> .
+@prefix foaf:           <http://xmlns.com/foaf/0.1/> .
+@prefix vs:             <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix scovo:          <http://purl.org/NET/scovo#> .
+@prefix void:           <http://rdfs.org/ns/void#> .
+@prefix qb:             <http://purl.org/linked-data/cube#> .
+@prefix dcterms:        <http://purl.org/dc/terms/> .
+@prefix interval:       <http://reference.data.gov.uk/def/intervals/>.
+@prefix org:            <http://www.w3.org/ns/org#> .
+@prefix vcard:          <http://www.w3.org/2006/vcard/ns#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+
+@prefix payment:        <http://reference.data.gov.uk/def/payment#>.
+
+# Meta data -----------------------------------------------------------
+
+<http://reference.data.gov.uk/def/payment#>
+    a owl:Ontology;
+    owl:versionInfo "0.7";
+    rdfs:label "Payments ontology"@en;
+    rdfs:comment "Vocabulary for representing payments, such as government expenditures, using the data cube representation."@en;
+    dcterms:created  "2010-08-06"^^xsd:date;
+    dcterms:modified "2010-11-16"^^xsd:date;
+
+    dcterms:contributor [foaf:mbox "jeni@jenitennison.com"; foaf:name "Jeni Tennison"];
+    dcterms:contributor [foaf:mbox "dave@epimorphics.com";  foaf:name "Dave Reynolds"];
+
+    dcterms:license <http://www.opendatacommons.org/licenses/pddl/1.0/> ;
+    .
+    
+# -- Core classes -----------------------------------------------------------
+
+payment:PaymentDataset a rdfs:Class, owl:Class;
+    rdfs:label "Payment data set"@en;
+    rdfs:comment "A set of payments or expenditures, laid out as a cube of data"@en;
+    rdfs:subClassOf qb:DataSet;
+    vs:term_status "stable";
+    rdfs:isDefinedBy <http://reference.data.gov.uk/def/payment#> ;
+    .
+
+payment:ExpenditureLine a rdfs:Class, owl:Class;
+    rdfs:label "Expenditure Line"@en;
+    rdfs:comment "An item of expenditure that can be classified or assigned to a cost centre"@en;
+    rdfs:subClassOf qb:Observation;
+    vs:term_status "stable";
+    rdfs:isDefinedBy <http://reference.data.gov.uk/def/payment#> ;
+    .
+
+payment:Payment  a rdfs:Class, owl:Class;
+    rdfs:label "Payment"@en;
+    rdfs:comment "A payment to a supplier for some goods or services, may correspond to one or more expenditure lines"@en;
+    rdfs:subClassOf qb:Slice;
+    vs:term_status "stable";
+    rdfs:isDefinedBy <http://reference.data.gov.uk/def/payment#> ;
+    # cardinality constraints
+    rdfs:subClassOf [ a owl:Restriction;
+        owl:onProperty payment:payer;
+        owl:minCardinality 1;
+    ];
+    rdfs:subClassOf [ a owl:Restriction;
+        owl:onProperty payment:payee;
+        owl:minCardinality 1;
+    ];
+    rdfs:subClassOf [ a owl:Restriction;
+        owl:onProperty payment:date;
+        owl:minCardinality 1;
+    ];
+    .
+
+payment:Purchase a rdfs:Class, owl:Class;
+    rdfs:label "Purchase"@en;
+    rdfs:comment "The overall goods or service for which the payment was made"@en;
+    vs:term_status "stable";
+    rdfs:isDefinedBy <http://reference.data.gov.uk/def/payment#> ;
+    .
+
+# -- Property aliases to clarify structure for non-cube viewpoints --------
+
+payment:expenditureLine a rdf:Property, owl:ObjectProperty;
+    rdfs:label "expenditure line"@en;
+    rdfs:comment "Links a payment to the individual expenditure lines associated with it."@en;
+    rdfs:subPropertyOf qb:observation;
+    rdfs:domain payment:Payment;
+    rdfs:range  payment:ExpenditureLine;
+    vs:term_status "stable";
+    rdfs:isDefinedBy <http://reference.data.gov.uk/def/payment#> ;
+    .
+
+# -- Dimensions - which can be used to structure the cube -----------------
+
+payment:payer a rdf:Property, owl:ObjectProperty, qb:DimensionProperty;
+    rdfs:label "payer"@en;
+    rdfs:comment "The entity which made the payment."@en;
+    rdfs:domain payment:Payment;
+    rdfs:range foaf:Agent;    
+    vs:term_status "stable";
+    rdfs:isDefinedBy <http://reference.data.gov.uk/def/payment#> ;
+    .
+
+payment:payee a rdf:Property, owl:ObjectProperty, qb:DimensionProperty;
+    rdfs:label "payee"@en;
+    rdfs:comment "The entity to which the payment was made."@en;
+    rdfs:domain payment:Payment;
+    rdfs:range foaf:Agent;
+    vs:term_status "stable";
+    rdfs:isDefinedBy <http://reference.data.gov.uk/def/payment#> ;
+    .
+
+payment:date a rdf:Property, owl:ObjectProperty, qb:DimensionProperty;
+    rdfs:label "date"@en;
+    rdfs:comment "The date the payment is deemed to have occurred."@en;
+    rdfs:domain payment:Payment;
+    rdfs:range interval:Interval;
+    vs:term_status "stable";
+    rdfs:isDefinedBy <http://reference.data.gov.uk/def/payment#> ;
+    .
+
+payment:expenditureCategory a rdf:Property, owl:ObjectProperty, qb:DimensionProperty;
+    rdfs:label "expenditure category"@en;
+    rdfs:comment """The category of expenditure in some appropriate categorization scheme (such as the Best Value Account Code of Practice categories). If the scheme is hierarchical then this should at least designate the narrowest (most fine grain) applicable code and can additionally designate the broader codes. Multiple code schemes can be used within the same dataset and consuming applications can use the skos:inScheme (and the rdf:type) of the code to determine the scheme."""@en;
+    rdfs:domain payment:ExpenditureLine;
+    rdfs:range  skos:Concept;
+    vs:term_status "stable";
+    rdfs:isDefinedBy <http://reference.data.gov.uk/def/payment#> ;
+    .
+
+payment:expenditureCode a rdf:Property, owl:DataTypeProperty;
+    rdfs:label "expenditure code"@en;
+    rdfs:comment """An (optional) internal code for the expenditure category. Such codes may not be useful across organizations but retaining them in a dataset may aid comparability of datasets within an organization and help with tracing back requests for further information. The internal code may actually be an amalgam of multiple different categories (e.g. may denote both the subjective and objective classifications of an expenditure)."""@en;
+    rdfs:domain payment:ExpenditureLine;
+    vs:term_status "stable";
+    rdfs:isDefinedBy <http://reference.data.gov.uk/def/payment#> ;
+    .
+
+payment:payment a rdf:Property, owl:ObjectProperty, qb:DimensionProperty;
+    rdfs:label "payment"@en;
+    rdfs:comment "Indicates the payment of which this expenditure line is a part."@en;
+    rdfs:domain payment:ExpenditureLine;
+    rdfs:range payment:Payment;
+    vs:term_status "stable";
+    rdfs:isDefinedBy <http://reference.data.gov.uk/def/payment#> ;
+    .
+
+# -- Measures - values that can be associated with a single observation in the cube ----------
+
+payment:grossAmount a rdf:Property, owl:DatatypeProperty, qb:MeasureProperty;
+    rdfs:label "gross amount"@en;
+    rdfs:comment "The amount paid, inclusive of any tax (whether reclaimable or not)"@en;
+    rdfs:range xsd:decimal;
+    rdfs:domain payment:ExpenditureLine;
+    vs:term_status "stable";
+    rdfs:isDefinedBy <http://reference.data.gov.uk/def/payment#> ;
+    .
+
+payment:netAmount a rdf:Property, owl:DatatypeProperty, qb:MeasureProperty;
+    rdfs:label "net amount"@en;
+    rdfs:comment "The net amount of the payment. This is the effective cost to the payer after any reclaimable tax has been deducted."@en;
+    rdfs:range xsd:decimal;
+    rdfs:domain payment:ExpenditureLine;
+    vs:term_status "stable";
+    rdfs:isDefinedBy <http://reference.data.gov.uk/def/payment#> ;
+    .
+
+# -- Attributes - qualify the measured value -------------------------------------------
+
+payment:currency a qb:AttributeProperty;
+    rdfs:label "currency"@en;
+    rdfs:comment "Currency in which a payment was made, typically attached to the dataset for single currency datasets."@en;
+    qb:concept sdmx-concept:currency;           # optional cross link
+    vs:term_status "stable";
+    rdfs:isDefinedBy <http://reference.data.gov.uk/def/payment#> ;
+    .
+
+# -- Descriptive properties for Payments and Expenditure lines -------------------------
+
+payment:order
+  a rdf:Property ;
+  rdfs:label "order"@en ;
+  rdfs:comment "Indicates an order associated with this payment (optional)."@en;
+  rdfs:domain payment:Payment;
+    vs:term_status "stable";
+    rdfs:isDefinedBy <http://reference.data.gov.uk/def/payment#> ;
+  .
+
+payment:invoice
+  a rdf:Property  ;
+  rdfs:label "invoice"@en ;
+  rdfs:comment "Indicates an invoice associated with this payment (optional)."@en;
+  rdfs:domain payment:Payment;
+    vs:term_status "stable";
+    rdfs:isDefinedBy <http://reference.data.gov.uk/def/payment#> ;
+  .
+
+payment:contract
+  a rdf:Property ;
+  rdfs:label "contract"@en ;
+  rdfs:comment "Indicates a contract associated with this payment (optional)."@en;
+  rdfs:domain payment:Payment ;
+    vs:term_status "stable";
+    rdfs:isDefinedBy <http://reference.data.gov.uk/def/payment#> ;
+  .
+
+payment:reference
+    a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "reference"@en;
+    rdfs:comment """A reference number, code or label which identifies the payment. Not unique across different suppliers."""@en;
+    rdfs:domain payment:Payment ;
+    vs:term_status "stable";
+    rdfs:isDefinedBy <http://reference.data.gov.uk/def/payment#> ;
+    .
+
+payment:totalNetAmount a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "total net amount"@en;
+    rdfs:range xsd:decimal;
+    rdfs:domain qb:Slice;
+    vs:term_status "stable";
+    rdfs:isDefinedBy <http://reference.data.gov.uk/def/payment#> ;
+    .
+
+payment:totalGrossAmount a rdf:Property, owl:DatatypeProperty, qb:MeasureProperty;
+    rdfs:label "total gross amount"@en;
+    rdfs:range xsd:decimal;
+    rdfs:domain qb:Slice;
+    vs:term_status "stable";
+    rdfs:isDefinedBy <http://reference.data.gov.uk/def/payment#> ;
+    .
+
+payment:purchase a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "purchase"@en;
+    rdfs:comment "Indicates the overall goods or service for which the payment was made."@en;
+    rdfs:domain payment:Payment;
+    rdfs:range  payment:Purchase;
+    vs:term_status "stable";
+    rdfs:isDefinedBy <http://reference.data.gov.uk/def/payment#> ;
+    .
+
+payment:procurementCategory a rdf:Property, owl:ObjectProperty;
+    rdfs:label "procurement category"@en;
+    rdfs:comment "A classification for the goods or services for which the payment was made."@en;
+    rdfs:domain payment:Purchase;
+    rdfs:range skos:Concept;
+    vs:term_status "stable";
+    rdfs:isDefinedBy <http://reference.data.gov.uk/def/payment#> ;
+    .
+
+payment:narrative
+  a rdf:Property , owl:DatatypeProperty ;
+  rdfs:label "narrative"@en ;
+  rdfs:comment "A narrative description of the goods or services that were supplied."@en ;
+  rdfs:domain payment:Purchase;
+    vs:term_status "stable";
+    rdfs:isDefinedBy <http://reference.data.gov.uk/def/payment#> ;
+ .
+
+# -- Structure relationships -------------------------------------------------------
+
+payment:unit a rdf:Property, owl:ObjectProperty;
+    rdfs:label "unit"@en;
+    rdfs:comment """Optionally indicates a particular organizational 
+unit (Department, Directorate etc) of the payer organization associated with the payment.
+Use org:classification to link the unit to a categorization of types of units to 
+support cross-comparison. For example, in the UK Local Authority spend application
+then the ESDToolkit-maintained list of Department Types may be a suitable code list."""@en;
+    rdfs:domain payment:Payment;
+    vs:term_status "stable";
+    rdfs:range  org:OrganizationalUnit ;
+    .
+
+# -- Data structure definitions -------------------------------------------------------
+
+payment:payments-with-expenditure-structure a qb:DataStructureDefinition, rdfs:Resource;
+    rdfs:label "expenditure structure"@en;
+    rdfs:comment "The structure of a cube containing expenditure level information along with payments.";
+
+    qb:component 
+        [qb:dimension payment:payer],
+        [qb:dimension payment:payee],
+        [qb:dimension payment:date],
+        [qb:dimension payment:expenditureCategory],
+        [qb:dimension payment:payment],
+
+        [qb:measure   payment:netAmount],
+
+	[qb:attribute payment:currency];
+
+    rdfs:isDefinedBy <http://reference.data.gov.uk/def/payment#> ;
+    .
+
+payment:payment-slice a qb:SliceKey, rdfs:Resource;
+    rdfs:label "payment slice"@en;
+    rdfs:comment "The definition of a slice through an expenditure cube that corresponds to all the expenditures in a single payment."@en;
+    qb:componentProperty payment:payer, payment:payee, payment:date, payment:payment ;
+    rdfs:isDefinedBy <http://reference.data.gov.uk/def/payment#> ;
+    .
+
+# -- Expenditure codes for capital/revenue -------------------------------------------------------
+
+payment:expenditure-category a skos:ConceptScheme, rdfs:Resource;
+    rdfs:label "Exenditure category scheme"@en;
+    rdfs:comment "A code scheme for classifying expenditures as capital/revenue."@en;
+    skos:hasTopConcept payment:capital, payment:revenue ;
+    vs:term_status "stable";
+    rdfs:isDefinedBy <http://reference.data.gov.uk/def/payment#> ;
+    rdfs:seeAlso <http://www.hmrc.gov.uk/manuals/bimmanual/bim35010.htm> ;
+    .
+
+payment:ExpenditureCategory a rdfs:Class, owl:Class;
+    rdfs:label "Expenditure categories"@en;
+    rdfs:comment "The set of expenditure categories in the expenditure-category scheme for capital/revenue."@en ;
+    rdfs:subClassOf skos:Concept ;
+    vs:term_status "stable";
+    rdfs:seeAlso <http://www.hmrc.gov.uk/manuals/bimmanual/bim35010.htm> ;
+    rdfs:isDefinedBy <http://reference.data.gov.uk/def/payment#> ;
+    .
+
+payment:capital a skos:Concept, payment:ExpenditureCategory, rdfs:Resource;
+    rdfs:label "Capital"@en;
+    rdfs:comment "Indicates a capital expenditure."@en;
+    skos:topConceptOf payment:expenditure-category;
+    skos:inScheme payment:expenditure-category;
+    skos:notation "Capital" ;
+    vs:term_status "stable";
+    rdfs:seeAlso <http://www.hmrc.gov.uk/manuals/bimmanual/bim35010.htm> ;
+    rdfs:isDefinedBy <http://reference.data.gov.uk/def/payment#> ;
+    .
+
+payment:revenue a skos:Concept, payment:ExpenditureCategory, rdfs:Resource;
+    rdfs:label "Revenue"@en;
+    rdfs:comment "Indicates a revenue expenditure."@en;
+    skos:topConceptOf payment:expenditure-category;
+    skos:inScheme payment:expenditure-category;
+    skos:notation "Revenue" ;
+    vs:term_status "stable";
+    rdfs:seeAlso <http://www.hmrc.gov.uk/manuals/bimmanual/bim35010.htm> ;
+    rdfs:isDefinedBy <http://reference.data.gov.uk/def/payment#> ;
+    .
+      
+# -- Support for recording redaction -------------------------------------------------------
+
+# payment:redacted a rdf:Property, owl:AnnotationProperty, qb:AttributeProperty;
+#     rdfs:label "redacted"@en;
+#     rdfs:comment """Annotation used to indicate that a particular property of the resource
+# has been redacted. Any value for the property present in the dataset will be a dummy
+# value (e.g. the string "REDACTED"). For example, if the payee information is
+# redacted the payment would be annotated with <code>:payment123 payment:redacted payment:payee</code>.
+# If only the payee name is redacted but other fields of the payee such as location 
+# or internal reference number are correct then the redaction annotation would be attached
+# to the payee resource instead <code>:payee 123 payment:redacted rdfs:label</code>. Note that the
+# notion of redaction is context and dataset dependent so it is recommended that when 
+# exporting datasets for cross-set integration then the redacted annotation and the 
+# indicated properties should be omitted from the export."""@en;
+#     rdfs:range  rdf:Property ;
+#     vs:term_status "proposed";
+#     rdfs:isDefinedBy <http://reference.data.gov.uk/def/payment#> ;
+#     .
+
+payment:Redaction a rdfs:Class, owl:Class;
+    rdfs:label "Redaction"@en;
+    rdfs:comment """An instance of Redaction can be used in place of the actual value 
+in a dataset to indicate that this is a replacement for the true data value which has
+been redacted. Typically the Redaction resource will be a blank note. It is recommended 
+that it have an appropriate rdfs:label (e.g. REDACTED). If further information on the
+reaction is available then dcterms properties should be used to carry those, in partcular
+dct:description can be used to convey a description of the redaction and reasons"""@en;
+    vs:term_status "proposed";
+    rdfs:isDefinedBy <http://reference.data.gov.uk/def/payment#> ;
+    .
+   

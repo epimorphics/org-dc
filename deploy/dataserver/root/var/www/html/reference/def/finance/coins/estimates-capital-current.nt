@@ -1,0 +1,63 @@
+<http://finance.data.gov.uk/def/coins/estimates-capital-current/e-oth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/EstimatesCapitalCurrent> .
+<http://finance.data.gov.uk/def/coins/estimates-capital-current/e-oth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/estimates-capital-current/e-oth> <http://www.w3.org/2000/01/rdf-schema#label> "E-OTH"@en .
+<http://finance.data.gov.uk/def/coins/estimates-capital-current/e-oth> <http://www.w3.org/2004/02/skos/core#prefLabel> "E-OTH"@en .
+<http://finance.data.gov.uk/def/coins/estimates-capital-current/e-oth> <http://www.w3.org/2004/02/skos/core#notation> "e-oth" .
+<http://finance.data.gov.uk/def/coins/estimates-capital-current/e-oth> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/estimates-capital-current/e-oth> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/estimates-capital-current> .
+<http://finance.data.gov.uk/def/coins/estimates-capital-current/e-a-and-g> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/EstimatesCapitalCurrent> .
+<http://finance.data.gov.uk/def/coins/estimates-capital-current/e-a-and-g> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/estimates-capital-current/e-a-and-g> <http://www.w3.org/2000/01/rdf-schema#label> "E-A&G"@en .
+<http://finance.data.gov.uk/def/coins/estimates-capital-current/e-a-and-g> <http://www.w3.org/2004/02/skos/core#prefLabel> "E-A&G"@en .
+<http://finance.data.gov.uk/def/coins/estimates-capital-current/e-a-and-g> <http://www.w3.org/2004/02/skos/core#notation> "e-a-and-g" .
+<http://finance.data.gov.uk/def/coins/estimates-capital-current/e-a-and-g> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/estimates-capital-current/e-a-and-g> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/estimates-capital-current> .
+<http://finance.data.gov.uk/def/coins/estimates-capital-current/e-gra> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/EstimatesCapitalCurrent> .
+<http://finance.data.gov.uk/def/coins/estimates-capital-current/e-gra> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/estimates-capital-current/e-gra> <http://www.w3.org/2000/01/rdf-schema#label> "E-GRA"@en .
+<http://finance.data.gov.uk/def/coins/estimates-capital-current/e-gra> <http://www.w3.org/2004/02/skos/core#prefLabel> "E-GRA"@en .
+<http://finance.data.gov.uk/def/coins/estimates-capital-current/e-gra> <http://www.w3.org/2004/02/skos/core#notation> "e-gra" .
+<http://finance.data.gov.uk/def/coins/estimates-capital-current/e-gra> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/estimates-capital-current/e-gra> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/estimates-capital-current> .
+<http://finance.data.gov.uk/def/coins/estimates-capital-current/e-cap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/EstimatesCapitalCurrent> .
+<http://finance.data.gov.uk/def/coins/estimates-capital-current/e-cap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/estimates-capital-current/e-cap> <http://www.w3.org/2000/01/rdf-schema#label> "E-CAP"@en .
+<http://finance.data.gov.uk/def/coins/estimates-capital-current/e-cap> <http://www.w3.org/2004/02/skos/core#prefLabel> "E-CAP"@en .
+<http://finance.data.gov.uk/def/coins/estimates-capital-current/e-cap> <http://www.w3.org/2004/02/skos/core#notation> "e-cap" .
+<http://finance.data.gov.uk/def/coins/estimates-capital-current/e-cap> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/estimates-capital-current/e-cap> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/estimates-capital-current> .
+<http://finance.data.gov.uk/def/coins/estimates-capital-current/e-a-and-o> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/EstimatesCapitalCurrent> .
+<http://finance.data.gov.uk/def/coins/estimates-capital-current/e-a-and-o> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/estimates-capital-current/e-a-and-o> <http://www.w3.org/2000/01/rdf-schema#label> "E-A&O"@en .
+<http://finance.data.gov.uk/def/coins/estimates-capital-current/e-a-and-o> <http://www.w3.org/2004/02/skos/core#prefLabel> "E-A&O"@en .
+<http://finance.data.gov.uk/def/coins/estimates-capital-current/e-a-and-o> <http://www.w3.org/2004/02/skos/core#notation> "e-a-and-o" .
+<http://finance.data.gov.uk/def/coins/estimates-capital-current/e-a-and-o> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/estimates-capital-current/e-a-and-o> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/estimates-capital-current> .
+<http://finance.data.gov.uk/def/coins/EstimatesCapitalCurrent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://finance.data.gov.uk/def/coins/EstimatesCapitalCurrent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://finance.data.gov.uk/def/coins/EstimatesCapitalCurrent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/EstimatesCapitalCurrent> <http://www.w3.org/2000/01/rdf-schema#label> "estimates capital current values class"@en .
+<http://finance.data.gov.uk/def/coins/EstimatesCapitalCurrent> <http://www.w3.org/2004/02/skos/core#prefLabel> "estimates capital current values class"@en .
+<http://finance.data.gov.uk/def/coins/EstimatesCapitalCurrent> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of values in the estimates capital current code-list scheme" .
+<http://finance.data.gov.uk/def/coins/estimates-capital-current/e-nul> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/EstimatesCapitalCurrent> .
+<http://finance.data.gov.uk/def/coins/estimates-capital-current/e-nul> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/estimates-capital-current/e-nul> <http://www.w3.org/2000/01/rdf-schema#label> "E-NUL"@en .
+<http://finance.data.gov.uk/def/coins/estimates-capital-current/e-nul> <http://www.w3.org/2004/02/skos/core#prefLabel> "E-NUL"@en .
+<http://finance.data.gov.uk/def/coins/estimates-capital-current/e-nul> <http://www.w3.org/2004/02/skos/core#notation> "e-nul" .
+<http://finance.data.gov.uk/def/coins/estimates-capital-current/e-nul> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/estimates-capital-current/e-nul> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/estimates-capital-current> .
+<http://finance.data.gov.uk/def/coins/estimates-capital-current> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://finance.data.gov.uk/def/coins/estimates-capital-current> <http://www.w3.org/2000/01/rdf-schema#label> "estimates capital current code list concept scheme"@en .
+<http://finance.data.gov.uk/def/coins/estimates-capital-current> <http://www.w3.org/2004/02/skos/core#prefLabel> "estimates capital current code list concept scheme"@en .
+<http://finance.data.gov.uk/def/coins/estimates-capital-current> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/estimates-capital-current/e-a-and-g> .
+<http://finance.data.gov.uk/def/coins/estimates-capital-current> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/estimates-capital-current/e-a-and-o> .
+<http://finance.data.gov.uk/def/coins/estimates-capital-current> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/estimates-capital-current/e-cap> .
+<http://finance.data.gov.uk/def/coins/estimates-capital-current> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/estimates-capital-current/e-gra> .
+<http://finance.data.gov.uk/def/coins/estimates-capital-current> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/estimates-capital-current/e-nul> .
+<http://finance.data.gov.uk/def/coins/estimates-capital-current> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/estimates-capital-current/e-oth> .
+<http://finance.data.gov.uk/def/coins/statistical-concept/estimates-capital-current> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/sdmx#Concept> .
+<http://finance.data.gov.uk/def/coins/statistical-concept/estimates-capital-current> <http://www.w3.org/2000/01/rdf-schema#label> "estimates capital current"@en .
+<http://finance.data.gov.uk/def/coins/statistical-concept/estimates-capital-current> <http://www.w3.org/2004/02/skos/core#prefLabel> "estimates capital current"@en .
+<http://finance.data.gov.uk/def/coins/statistical-concept/estimates-capital-current> <http://www.w3.org/2000/01/rdf-schema#comment> "Signifies if data appears on the capital or resource columns of the Estimate." .
+<http://finance.data.gov.uk/def/coins/statistical-concept/estimates-capital-current> <http://purl.org/dc/terms/source> <http://www.hm-treasury.gov.uk/d/coins_guidance.pdf> .
+<http://finance.data.gov.uk/def/coins/statistical-concept/estimates-capital-current> <http://www.epimorphics.com/vocabs/coins-generate#columnName> "estimates_capital_current" .

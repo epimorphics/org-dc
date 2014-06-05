@@ -1,0 +1,751 @@
+# Generated 2010-11-09T16:53:44+00:00
+
+@prefix rdf:                <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:               <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:                <http://www.w3.org/2002/07/owl#> .
+@prefix skos:               <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd:                <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:               <http://xmlns.com/foaf/0.1/> .
+@prefix void:               <http://rdfs.org/ns/void#> .
+@prefix dcterms:            <http://purl.org/dc/terms/> .
+@prefix sdmx:               <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept:       <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:     <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:     <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:       <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-code:          <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:       <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix qb:                 <http://purl.org/linked-data/cube#> .
+@prefix coins-data:         <http://source.data.gov.uk/data/coins/> .
+@prefix coins-dsd:          <http://finance.data.gov.uk/dsd/coins/> .
+@prefix coins-dimension:    <http://finance.data.gov.uk/dsd/coins/dimension/> .
+@prefix coins-attribute:    <http://finance.data.gov.uk/dsd/coins/attribute/> .
+@prefix coins-measure:      <http://finance.data.gov.uk/dsd/coins/measure/> .
+@prefix coins-slicekey:     <http://finance.data.gov.uk/dsd/coins/slice/> .
+
+<http://finance.data.gov.uk/def/coins/statistical-concept/data-type>
+    a sdmx:Concept;
+    rdfs:label "data type"@en;
+    skos:prefLabel "data type"@en;
+    rdfs:comment """Identifies whether the data are Plans & Outturn or Forecast Outturn. Some data are identified as being part of a numbered snapshot, which represent data taken at a fixed point in time.""";
+    <http://epimorphics.com/vocabs/coins-generator#source> <http://www.hm-treasury.gov.uk/d/coins_guidance.pdf>;
+    <http://www.epimorphics.com/vocabs/coins-generate#columnName> "data_type"
+    .
+
+<http://finance.data.gov.uk/def/coins/DataType>
+    a rdfs:Class, owl:Class;
+    rdfs:subClassOf skos:Concept;
+    rdfs:label "data type values class"@en;
+    skos:prefLabel "data type values class"@en;
+    rdfs:comment "The class of values in the data type code-list scheme";
+    .
+
+<http://finance.data.gov.uk/def/coins/data-type>
+    a skos:ConceptScheme;
+    rdfs:label "data type code list concept scheme"@en;
+    skos:prefLabel "data type code list concept scheme"@en;
+    skos:hasTopConcept <http://finance.data.gov.uk/def/coins/data-type/foa>,
+          <http://finance.data.gov.uk/def/coins/data-type/foa0>,
+          <http://finance.data.gov.uk/def/coins/data-type/fod>,
+          <http://finance.data.gov.uk/def/coins/data-type/fof>,
+          <http://finance.data.gov.uk/def/coins/data-type/foj>,
+          <http://finance.data.gov.uk/def/coins/data-type/foj0>,
+          <http://finance.data.gov.uk/def/coins/data-type/foj1>,
+          <http://finance.data.gov.uk/def/coins/data-type/fom>,
+          <http://finance.data.gov.uk/def/coins/data-type/fom0>,
+          <http://finance.data.gov.uk/def/coins/data-type/fon>,
+          <http://finance.data.gov.uk/def/coins/data-type/foo>,
+          <http://finance.data.gov.uk/def/coins/data-type/foq1i>,
+          <http://finance.data.gov.uk/def/coins/data-type/foq2i>,
+          <http://finance.data.gov.uk/def/coins/data-type/foq3i>,
+          <http://finance.data.gov.uk/def/coins/data-type/fos>,
+          <http://finance.data.gov.uk/def/coins/data-type/outturn>,
+          <http://finance.data.gov.uk/def/coins/data-type/plans>,
+          <http://finance.data.gov.uk/def/coins/data-type/snapshot0>,
+          <http://finance.data.gov.uk/def/coins/data-type/snapshot10>,
+          <http://finance.data.gov.uk/def/coins/data-type/snapshot11>,
+          <http://finance.data.gov.uk/def/coins/data-type/snapshot12>,
+          <http://finance.data.gov.uk/def/coins/data-type/snapshot13>,
+          <http://finance.data.gov.uk/def/coins/data-type/snapshot14>,
+          <http://finance.data.gov.uk/def/coins/data-type/snapshot17>,
+          <http://finance.data.gov.uk/def/coins/data-type/snapshot18>,
+          <http://finance.data.gov.uk/def/coins/data-type/snapshot19>,
+          <http://finance.data.gov.uk/def/coins/data-type/snapshot1>,
+          <http://finance.data.gov.uk/def/coins/data-type/snapshot20>,
+          <http://finance.data.gov.uk/def/coins/data-type/snapshot21>,
+          <http://finance.data.gov.uk/def/coins/data-type/snapshot22>,
+          <http://finance.data.gov.uk/def/coins/data-type/snapshot23>,
+          <http://finance.data.gov.uk/def/coins/data-type/snapshot24>,
+          <http://finance.data.gov.uk/def/coins/data-type/snapshot25>,
+          <http://finance.data.gov.uk/def/coins/data-type/snapshot26>,
+          <http://finance.data.gov.uk/def/coins/data-type/snapshot27>,
+          <http://finance.data.gov.uk/def/coins/data-type/snapshot28>,
+          <http://finance.data.gov.uk/def/coins/data-type/snapshot29>,
+          <http://finance.data.gov.uk/def/coins/data-type/snapshot30>,
+          <http://finance.data.gov.uk/def/coins/data-type/snapshot31>,
+          <http://finance.data.gov.uk/def/coins/data-type/snapshot32>,
+          <http://finance.data.gov.uk/def/coins/data-type/snapshot33>,
+          <http://finance.data.gov.uk/def/coins/data-type/snapshot34>,
+          <http://finance.data.gov.uk/def/coins/data-type/snapshot35>,
+          <http://finance.data.gov.uk/def/coins/data-type/snapshot36>,
+          <http://finance.data.gov.uk/def/coins/data-type/snapshot37>,
+          <http://finance.data.gov.uk/def/coins/data-type/snapshot38>,
+          <http://finance.data.gov.uk/def/coins/data-type/snapshot39>,
+          <http://finance.data.gov.uk/def/coins/data-type/snapshot3>,
+          <http://finance.data.gov.uk/def/coins/data-type/snapshot40>,
+          <http://finance.data.gov.uk/def/coins/data-type/snapshot41>,
+          <http://finance.data.gov.uk/def/coins/data-type/snapshot42>,
+          <http://finance.data.gov.uk/def/coins/data-type/snapshot43>,
+          <http://finance.data.gov.uk/def/coins/data-type/snapshot44>,
+          <http://finance.data.gov.uk/def/coins/data-type/snapshot45>,
+          <http://finance.data.gov.uk/def/coins/data-type/snapshot46>,
+          <http://finance.data.gov.uk/def/coins/data-type/snapshot47>,
+          <http://finance.data.gov.uk/def/coins/data-type/snapshot48>,
+          <http://finance.data.gov.uk/def/coins/data-type/snapshot49>,
+          <http://finance.data.gov.uk/def/coins/data-type/snapshot4>,
+          <http://finance.data.gov.uk/def/coins/data-type/snapshot50>,
+          <http://finance.data.gov.uk/def/coins/data-type/snapshot5>,
+          <http://finance.data.gov.uk/def/coins/data-type/snapshot7>,
+          <http://finance.data.gov.uk/def/coins/data-type/snapshot8>,
+          <http://finance.data.gov.uk/def/coins/data-type/snapshot9>
+    .
+
+<http://finance.data.gov.uk/def/coins/data-type/foa>
+    a <http://finance.data.gov.uk/def/coins/DataType>, skos:Concept;
+    rdfs:label "Forecast Outturn April"@en;
+    skos:prefLabel "Forecast Outturn April"@en;
+    skos:notation "foa";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/data-type>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/data-type/foa0>
+    a <http://finance.data.gov.uk/def/coins/DataType>, skos:Concept;
+    rdfs:label "Forecast Outturn August"@en;
+    skos:prefLabel "Forecast Outturn August"@en;
+    skos:notation "foa0";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/data-type>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/data-type/fod>
+    a <http://finance.data.gov.uk/def/coins/DataType>, skos:Concept;
+    rdfs:label "Forecast Outturn December"@en;
+    skos:prefLabel "Forecast Outturn December"@en;
+    skos:notation "fod";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/data-type>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/data-type/fof>
+    a <http://finance.data.gov.uk/def/coins/DataType>, skos:Concept;
+    rdfs:label "Forecast Outturn February"@en;
+    skos:prefLabel "Forecast Outturn February"@en;
+    skos:notation "fof";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/data-type>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/data-type/foj>
+    a <http://finance.data.gov.uk/def/coins/DataType>, skos:Concept;
+    rdfs:label "Forecast Outturn January"@en;
+    skos:prefLabel "Forecast Outturn January"@en;
+    skos:notation "foj";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/data-type>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/data-type/foj0>
+    a <http://finance.data.gov.uk/def/coins/DataType>, skos:Concept;
+    rdfs:label "Forecast Outturn July"@en;
+    skos:prefLabel "Forecast Outturn July"@en;
+    skos:notation "foj0";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/data-type>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/data-type/foj1>
+    a <http://finance.data.gov.uk/def/coins/DataType>, skos:Concept;
+    rdfs:label "Forecast Outturn June"@en;
+    skos:prefLabel "Forecast Outturn June"@en;
+    skos:notation "foj1";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/data-type>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/data-type/fom>
+    a <http://finance.data.gov.uk/def/coins/DataType>, skos:Concept;
+    rdfs:label "Forecast Outturn March"@en;
+    skos:prefLabel "Forecast Outturn March"@en;
+    skos:notation "fom";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/data-type>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/data-type/fom0>
+    a <http://finance.data.gov.uk/def/coins/DataType>, skos:Concept;
+    rdfs:label "Forecast Outturn May"@en;
+    skos:prefLabel "Forecast Outturn May"@en;
+    skos:notation "fom0";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/data-type>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/data-type/fon>
+    a <http://finance.data.gov.uk/def/coins/DataType>, skos:Concept;
+    rdfs:label "Forecast Outturn November"@en;
+    skos:prefLabel "Forecast Outturn November"@en;
+    skos:notation "fon";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/data-type>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/data-type/foo>
+    a <http://finance.data.gov.uk/def/coins/DataType>, skos:Concept;
+    rdfs:label "Forecast Outturn October"@en;
+    skos:prefLabel "Forecast Outturn October"@en;
+    skos:notation "foo";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/data-type>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/data-type/foq1i>
+    a <http://finance.data.gov.uk/def/coins/DataType>, skos:Concept;
+    rdfs:label "Forecast Outturn Q1 Input"@en;
+    skos:prefLabel "Forecast Outturn Q1 Input"@en;
+    skos:notation "foq1i";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/data-type>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/data-type/foq2i>
+    a <http://finance.data.gov.uk/def/coins/DataType>, skos:Concept;
+    rdfs:label "Forecast Outturn Q2 Input"@en;
+    skos:prefLabel "Forecast Outturn Q2 Input"@en;
+    skos:notation "foq2i";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/data-type>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/data-type/foq3i>
+    a <http://finance.data.gov.uk/def/coins/DataType>, skos:Concept;
+    rdfs:label "Forecast Outturn Q3 Input"@en;
+    skos:prefLabel "Forecast Outturn Q3 Input"@en;
+    skos:notation "foq3i";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/data-type>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/data-type/fos>
+    a <http://finance.data.gov.uk/def/coins/DataType>, skos:Concept;
+    rdfs:label "Forecast Outturn September"@en;
+    skos:prefLabel "Forecast Outturn September"@en;
+    skos:notation "fos";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/data-type>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/data-type/outturn>
+    a <http://finance.data.gov.uk/def/coins/DataType>, skos:Concept;
+    rdfs:label "Outturn"@en;
+    skos:prefLabel "Outturn"@en;
+    skos:notation "outturn";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/data-type>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/data-type/plans>
+    a <http://finance.data.gov.uk/def/coins/DataType>, skos:Concept;
+    rdfs:label "Plans"@en;
+    skos:prefLabel "Plans"@en;
+    skos:notation "plans";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/data-type>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/data-type/snapshot0>
+    a <http://finance.data.gov.uk/def/coins/DataType>, skos:Concept;
+    rdfs:label "Snapshot0"@en;
+    skos:prefLabel "Snapshot0"@en;
+    skos:notation "snapshot0";
+    rdfs:comment "Forecast Outturn Fixed Plan (M-Pack)";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/data-type>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/data-type/snapshot10>
+    a <http://finance.data.gov.uk/def/coins/DataType>, skos:Concept;
+    rdfs:label "Snapshot10"@en;
+    skos:prefLabel "Snapshot10"@en;
+    skos:notation "snapshot10";
+    rdfs:comment "Plans PBR 2006";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/data-type>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/data-type/snapshot11>
+    a <http://finance.data.gov.uk/def/coins/DataType>, skos:Concept;
+    rdfs:label "Snapshot11"@en;
+    skos:prefLabel "Snapshot11"@en;
+    skos:notation "snapshot11";
+    rdfs:comment "CYO CRA";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/data-type>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/data-type/snapshot12>
+    a <http://finance.data.gov.uk/def/coins/DataType>, skos:Concept;
+    rdfs:label "Snapshot12"@en;
+    skos:prefLabel "Snapshot12"@en;
+    skos:notation "snapshot12";
+    rdfs:comment "CYP CRA";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/data-type>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/data-type/snapshot13>
+    a <http://finance.data.gov.uk/def/coins/DataType>, skos:Concept;
+    rdfs:label "Snapshot13"@en;
+    skos:prefLabel "Snapshot13"@en;
+    skos:notation "snapshot13";
+    rdfs:comment "PEOWP 2007 Outturn";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/data-type>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/data-type/snapshot14>
+    a <http://finance.data.gov.uk/def/coins/DataType>, skos:Concept;
+    rdfs:label "Snapshot14"@en;
+    skos:prefLabel "Snapshot14"@en;
+    skos:notation "snapshot14";
+    rdfs:comment "PEOWP 2007 Plans";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/data-type>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/data-type/snapshot17>
+    a <http://finance.data.gov.uk/def/coins/DataType>, skos:Concept;
+    rdfs:label "Snapshot17"@en;
+    skos:prefLabel "Snapshot17"@en;
+    skos:notation "snapshot17";
+    rdfs:comment "CYO BUD";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/data-type>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/data-type/snapshot18>
+    a <http://finance.data.gov.uk/def/coins/DataType>, skos:Concept;
+    rdfs:label "Snapshot18"@en;
+    skos:prefLabel "Snapshot18"@en;
+    skos:notation "snapshot18";
+    rdfs:comment "CYP BUD";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/data-type>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/data-type/snapshot19>
+    a <http://finance.data.gov.uk/def/coins/DataType>, skos:Concept;
+    rdfs:label "Snapshot19"@en;
+    skos:prefLabel "Snapshot19"@en;
+    skos:notation "snapshot19";
+    rdfs:comment "Outturn ME Snapshot April 2007";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/data-type>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/data-type/snapshot1>
+    a <http://finance.data.gov.uk/def/coins/DataType>, skos:Concept;
+    rdfs:label "Snapshot1"@en;
+    skos:prefLabel "Snapshot1"@en;
+    skos:notation "snapshot1";
+    rdfs:comment "PEOWP 2009 Outturn";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/data-type>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/data-type/snapshot20>
+    a <http://finance.data.gov.uk/def/coins/DataType>, skos:Concept;
+    rdfs:label "Snapshot20"@en;
+    skos:prefLabel "Snapshot20"@en;
+    skos:notation "snapshot20";
+    rdfs:comment "Plans ME Snapshot April 2007";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/data-type>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/data-type/snapshot21>
+    a <http://finance.data.gov.uk/def/coins/DataType>, skos:Concept;
+    rdfs:label "Snapshot21"@en;
+    skos:prefLabel "Snapshot21"@en;
+    skos:notation "snapshot21";
+    rdfs:comment "Outturn Winter Supp October 2007";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/data-type>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/data-type/snapshot22>
+    a <http://finance.data.gov.uk/def/coins/DataType>, skos:Concept;
+    rdfs:label "Snapshot22"@en;
+    skos:prefLabel "Snapshot22"@en;
+    skos:notation "snapshot22";
+    rdfs:comment "Plans Winter Supp October 2007";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/data-type>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/data-type/snapshot23>
+    a <http://finance.data.gov.uk/def/coins/DataType>, skos:Concept;
+    rdfs:label "Snapshot23"@en;
+    skos:prefLabel "Snapshot23"@en;
+    skos:notation "snapshot23";
+    rdfs:comment "Jan 09 Plans Supplementary Estimates";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/data-type>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/data-type/snapshot24>
+    a <http://finance.data.gov.uk/def/coins/DataType>, skos:Concept;
+    rdfs:label "Snapshot24"@en;
+    skos:prefLabel "Snapshot24"@en;
+    skos:notation "snapshot24";
+    rdfs:comment "CYP SP SUP";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/data-type>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/data-type/snapshot25>
+    a <http://finance.data.gov.uk/def/coins/DataType>, skos:Concept;
+    rdfs:label "Snapshot25"@en;
+    skos:prefLabel "Snapshot25"@en;
+    skos:notation "snapshot25";
+    rdfs:comment "PBR 2009 Nov 19 Plans";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/data-type>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/data-type/snapshot26>
+    a <http://finance.data.gov.uk/def/coins/DataType>, skos:Concept;
+    rdfs:label "Snapshot26"@en;
+    skos:prefLabel "Snapshot26"@en;
+    skos:notation "snapshot26";
+    rdfs:comment "PBR 2009 Nov 2 Outturn";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/data-type>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/data-type/snapshot27>
+    a <http://finance.data.gov.uk/def/coins/DataType>, skos:Concept;
+    rdfs:label "Snapshot27"@en;
+    skos:prefLabel "Snapshot27"@en;
+    skos:notation "snapshot27";
+    rdfs:comment "Plans Jan 08";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/data-type>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/data-type/snapshot28>
+    a <http://finance.data.gov.uk/def/coins/DataType>, skos:Concept;
+    rdfs:label "Snapshot28"@en;
+    skos:prefLabel "Snapshot28"@en;
+    skos:notation "snapshot28";
+    rdfs:comment "Outturn Jan 08";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/data-type>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/data-type/snapshot29>
+    a <http://finance.data.gov.uk/def/coins/DataType>, skos:Concept;
+    rdfs:label "Snapshot29"@en;
+    skos:prefLabel "Snapshot29"@en;
+    skos:notation "snapshot29";
+    rdfs:comment "Plans Spring Supp Feb 08";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/data-type>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/data-type/snapshot30>
+    a <http://finance.data.gov.uk/def/coins/DataType>, skos:Concept;
+    rdfs:label "Snapshot30"@en;
+    skos:prefLabel "Snapshot30"@en;
+    skos:notation "snapshot30";
+    rdfs:comment "PLANS FEB08";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/data-type>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/data-type/snapshot31>
+    a <http://finance.data.gov.uk/def/coins/DataType>, skos:Concept;
+    rdfs:label "Snapshot31"@en;
+    skos:prefLabel "Snapshot31"@en;
+    skos:notation "snapshot31";
+    rdfs:comment "OUTTURN FEB08";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/data-type>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/data-type/snapshot32>
+    a <http://finance.data.gov.uk/def/coins/DataType>, skos:Concept;
+    rdfs:label "Snapshot32"@en;
+    skos:prefLabel "Snapshot32"@en;
+    skos:notation "snapshot32";
+    rdfs:comment "OUTTURN 2 FEB08";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/data-type>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/data-type/snapshot33>
+    a <http://finance.data.gov.uk/def/coins/DataType>, skos:Concept;
+    rdfs:label "Snapshot33"@en;
+    skos:prefLabel "Snapshot33"@en;
+    skos:notation "snapshot33";
+    rdfs:comment "PLANS 2 MAR08";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/data-type>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/data-type/snapshot34>
+    a <http://finance.data.gov.uk/def/coins/DataType>, skos:Concept;
+    rdfs:label "Snapshot34"@en;
+    skos:prefLabel "Snapshot34"@en;
+    skos:notation "snapshot34";
+    rdfs:comment "Outturn ME Snapshot March 2008";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/data-type>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/data-type/snapshot35>
+    a <http://finance.data.gov.uk/def/coins/DataType>, skos:Concept;
+    rdfs:label "Snapshot35"@en;
+    skos:prefLabel "Snapshot35"@en;
+    skos:notation "snapshot35";
+    rdfs:comment "Plans ME Snapshot March 2008";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/data-type>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/data-type/snapshot36>
+    a <http://finance.data.gov.uk/def/coins/DataType>, skos:Concept;
+    rdfs:label "Snapshot36"@en;
+    skos:prefLabel "Snapshot36"@en;
+    skos:notation "snapshot36";
+    rdfs:comment "PEOWP 2008 Outturn";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/data-type>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/data-type/snapshot37>
+    a <http://finance.data.gov.uk/def/coins/DataType>, skos:Concept;
+    rdfs:label "Snapshot37"@en;
+    skos:prefLabel "Snapshot37"@en;
+    skos:notation "snapshot37";
+    rdfs:comment "Plans Summer Supp August 2008";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/data-type>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/data-type/snapshot38>
+    a <http://finance.data.gov.uk/def/coins/DataType>, skos:Concept;
+    rdfs:label "Snapshot38"@en;
+    skos:prefLabel "Snapshot38"@en;
+    skos:notation "snapshot38";
+    rdfs:comment "Outturn Summer Supp August 2008";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/data-type>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/data-type/snapshot39>
+    a <http://finance.data.gov.uk/def/coins/DataType>, skos:Concept;
+    rdfs:label "Snapshot39"@en;
+    skos:prefLabel "Snapshot39"@en;
+    skos:notation "snapshot39";
+    rdfs:comment "2008 PBR Outturn";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/data-type>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/data-type/snapshot3>
+    a <http://finance.data.gov.uk/def/coins/DataType>, skos:Concept;
+    rdfs:label "Snapshot3"@en;
+    skos:prefLabel "Snapshot3"@en;
+    skos:notation "snapshot3";
+    rdfs:comment "Outturn ME and PESA May 2009";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/data-type>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/data-type/snapshot40>
+    a <http://finance.data.gov.uk/def/coins/DataType>, skos:Concept;
+    rdfs:label "Snapshot40"@en;
+    skos:prefLabel "Snapshot40"@en;
+    skos:notation "snapshot40";
+    rdfs:comment "2008 PBR Plans";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/data-type>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/data-type/snapshot41>
+    a <http://finance.data.gov.uk/def/coins/DataType>, skos:Concept;
+    rdfs:label "Snapshot41"@en;
+    skos:prefLabel "Snapshot41"@en;
+    skos:notation "snapshot41";
+    rdfs:comment "Plans Out of Turn Supplementary Estimate";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/data-type>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/data-type/snapshot42>
+    a <http://finance.data.gov.uk/def/coins/DataType>, skos:Concept;
+    rdfs:label "Snapshot42"@en;
+    skos:prefLabel "Snapshot42"@en;
+    skos:notation "snapshot42";
+    rdfs:comment "Outturn PBR OCT 2008";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/data-type>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/data-type/snapshot43>
+    a <http://finance.data.gov.uk/def/coins/DataType>, skos:Concept;
+    rdfs:label "Snapshot43"@en;
+    skos:prefLabel "Snapshot43"@en;
+    skos:notation "snapshot43";
+    rdfs:comment "Plans PBR OCT 2008";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/data-type>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/data-type/snapshot44>
+    a <http://finance.data.gov.uk/def/coins/DataType>, skos:Concept;
+    rdfs:label "Snapshot44"@en;
+    skos:prefLabel "Snapshot44"@en;
+    skos:notation "snapshot44";
+    rdfs:comment "Outturn Winter Supp November 2008";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/data-type>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/data-type/snapshot45>
+    a <http://finance.data.gov.uk/def/coins/DataType>, skos:Concept;
+    rdfs:label "Snapshot45"@en;
+    skos:prefLabel "Snapshot45"@en;
+    skos:notation "snapshot45";
+    rdfs:comment "Plans Winter Supp November 2008";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/data-type>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/data-type/snapshot46>
+    a <http://finance.data.gov.uk/def/coins/DataType>, skos:Concept;
+    rdfs:label "Snapshot46"@en;
+    skos:prefLabel "Snapshot46"@en;
+    skos:notation "snapshot46";
+    rdfs:comment "CRA Plans December 2008";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/data-type>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/data-type/snapshot47>
+    a <http://finance.data.gov.uk/def/coins/DataType>, skos:Concept;
+    rdfs:label "Snapshot47"@en;
+    skos:prefLabel "Snapshot47"@en;
+    skos:notation "snapshot47";
+    rdfs:comment "CRA Outturn December 2008";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/data-type>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/data-type/snapshot48>
+    a <http://finance.data.gov.uk/def/coins/DataType>, skos:Concept;
+    rdfs:label "Snapshot48"@en;
+    skos:prefLabel "Snapshot48"@en;
+    skos:notation "snapshot48";
+    rdfs:comment "Outturn Budget January 2009";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/data-type>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/data-type/snapshot49>
+    a <http://finance.data.gov.uk/def/coins/DataType>, skos:Concept;
+    rdfs:label "Snapshot49"@en;
+    skos:prefLabel "Snapshot49"@en;
+    skos:notation "snapshot49";
+    rdfs:comment "Plans Budget January 2009";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/data-type>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/data-type/snapshot4>
+    a <http://finance.data.gov.uk/def/coins/DataType>, skos:Concept;
+    rdfs:label "Snapshot4"@en;
+    skos:prefLabel "Snapshot4"@en;
+    skos:notation "snapshot4";
+    rdfs:comment "Plans ME and PESA May 2009";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/data-type>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/data-type/snapshot50>
+    a <http://finance.data.gov.uk/def/coins/DataType>, skos:Concept;
+    rdfs:label "Snapshot50"@en;
+    skos:prefLabel "Snapshot50"@en;
+    skos:notation "snapshot50";
+    rdfs:comment "Plans Budget 09 March";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/data-type>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/data-type/snapshot5>
+    a <http://finance.data.gov.uk/def/coins/DataType>, skos:Concept;
+    rdfs:label "Snapshot5"@en;
+    skos:prefLabel "Snapshot5"@en;
+    skos:notation "snapshot5";
+    rdfs:comment "Outturn Budget 09 March";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/data-type>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/data-type/snapshot7>
+    a <http://finance.data.gov.uk/def/coins/DataType>, skos:Concept;
+    rdfs:label "Snapshot7"@en;
+    skos:prefLabel "Snapshot7"@en;
+    skos:notation "snapshot7";
+    rdfs:comment "PBR 2007 Outturn";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/data-type>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/data-type/snapshot8>
+    a <http://finance.data.gov.uk/def/coins/DataType>, skos:Concept;
+    rdfs:label "Snapshot8"@en;
+    skos:prefLabel "Snapshot8"@en;
+    skos:notation "snapshot8";
+    rdfs:comment "2007 PBR Plans";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/data-type>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/data-type/snapshot9>
+    a <http://finance.data.gov.uk/def/coins/DataType>, skos:Concept;
+    rdfs:label "Snapshot9"@en;
+    skos:prefLabel "Snapshot9"@en;
+    skos:notation "snapshot9";
+    rdfs:comment "Outturn PBR 2006";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/data-type>;
+    
+    .

@@ -1,0 +1,804 @@
+<rdf:RDF
+    xmlns:sdmx-subject="http://purl.org/linked-data/sdmx/2009/subject#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:sdmx-dimension="http://purl.org/linked-data/sdmx/2009/dimension#"
+    xmlns:sdmx-measure="http://purl.org/linked-data/sdmx/2009/measure#"
+    xmlns:sdmx-attribute="http://purl.org/linked-data/sdmx/2009/attribute#"
+    xmlns:coins-data="http://source.data.gov.uk/data/coins/"
+    xmlns:coins-dsd="http://finance.data.gov.uk/dsd/coins/"
+    xmlns:coins-dimension="http://finance.data.gov.uk/dsd/coins/dimension/"
+    xmlns:void="http://rdfs.org/ns/void#"
+    xmlns:coins-measure="http://finance.data.gov.uk/dsd/coins/measure/"
+    xmlns:j.0="http://www.epimorphics.com/vocabs/coins-generate#"
+    xmlns:coins-attribute="http://finance.data.gov.uk/dsd/coins/attribute/"
+    xmlns:sdmx-concept="http://purl.org/linked-data/sdmx/2009/concept#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:coins-slicekey="http://finance.data.gov.uk/dsd/coins/slice/"
+    xmlns:sdmx="http://purl.org/linked-data/sdmx#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:sdmx-code="http://purl.org/linked-data/sdmx/2009/code#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:j.1="http://finance.data.gov.uk/def/coins/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:qb="http://purl.org/linked-data/cube#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <rdfs:Class rdf:about="http://finance.data.gov.uk/def/coins/EstimateLineNextYear">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:label xml:lang="en">estimate line next year values class</rdfs:label>
+    <skos:prefLabel xml:lang="en">estimate line next year values class</skos:prefLabel>
+    <rdfs:comment>The class of values in the estimate line next year code-list scheme</rdfs:comment>
+  </rdfs:Class>
+  <sdmx:Concept rdf:about="http://finance.data.gov.uk/def/coins/statistical-concept/estimate-line-next-year">
+    <rdfs:label xml:lang="en">estimate line next year</rdfs:label>
+    <skos:prefLabel xml:lang="en">estimate line next year</skos:prefLabel>
+    <rdfs:comment>Used to identify specific sections (ie functions) in Supply Estimates in the next financial year.</rdfs:comment>
+    <dcterms:source rdf:resource="http://www.hm-treasury.gov.uk/d/coins_guidance.pdf"/>
+    <j.0:columnName>estimate_line_next_year</j.0:columnName>
+  </sdmx:Concept>
+  <skos:ConceptScheme rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year">
+    <skos:hasTopConcept>
+      <j.1:EstimateLineNextYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year/e48ny">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EL48_next-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL48_next-yr</skos:prefLabel>
+        <skos:notation>e48ny</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+      </j.1:EstimateLineNextYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateLineNextYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year/e80ny">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EL80_next-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL80_next-yr</skos:prefLabel>
+        <skos:notation>e80ny</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+      </j.1:EstimateLineNextYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateLineNextYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year/e98ny">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EL98_next-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL98_next-yr</skos:prefLabel>
+        <skos:notation>e98ny</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+      </j.1:EstimateLineNextYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateLineNextYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year/e06ny">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EL06_next-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL06_next-yr</skos:prefLabel>
+        <skos:notation>e06ny</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+      </j.1:EstimateLineNextYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateLineNextYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year/e23ny">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EL23_next-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL23_next-yr</skos:prefLabel>
+        <skos:notation>e23ny</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+      </j.1:EstimateLineNextYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateLineNextYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year/e24ny">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EL24_next-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL24_next-yr</skos:prefLabel>
+        <skos:notation>e24ny</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+      </j.1:EstimateLineNextYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateLineNextYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year/e34ny">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EL34_next-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL34_next-yr</skos:prefLabel>
+        <skos:notation>e34ny</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+      </j.1:EstimateLineNextYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateLineNextYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year/e20ny">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EL20_next-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL20_next-yr</skos:prefLabel>
+        <skos:notation>e20ny</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+      </j.1:EstimateLineNextYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateLineNextYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year/e67ny">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EL67_next-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL67_next-yr</skos:prefLabel>
+        <skos:notation>e67ny</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+      </j.1:EstimateLineNextYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateLineNextYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year/e52ny">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EL52_next-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL52_next-yr</skos:prefLabel>
+        <skos:notation>e52ny</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+      </j.1:EstimateLineNextYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateLineNextYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year/e53ny">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EL53_next-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL53_next-yr</skos:prefLabel>
+        <skos:notation>e53ny</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+      </j.1:EstimateLineNextYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateLineNextYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year/e49ny">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EL49_next-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL49_next-yr</skos:prefLabel>
+        <skos:notation>e49ny</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+      </j.1:EstimateLineNextYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateLineNextYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year/e10ny">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EL10_next-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL10_next-yr</skos:prefLabel>
+        <skos:notation>e10ny</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+      </j.1:EstimateLineNextYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateLineNextYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year/e31ny">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EL31_next-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL31_next-yr</skos:prefLabel>
+        <skos:notation>e31ny</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+      </j.1:EstimateLineNextYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateLineNextYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year/e63ny">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EL63_next-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL63_next-yr</skos:prefLabel>
+        <skos:notation>e63ny</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+      </j.1:EstimateLineNextYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateLineNextYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year/e59ny">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EL59_next-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL59_next-yr</skos:prefLabel>
+        <skos:notation>e59ny</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+      </j.1:EstimateLineNextYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateLineNextYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year/e66ny">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EL66_next-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL66_next-yr</skos:prefLabel>
+        <skos:notation>e66ny</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+      </j.1:EstimateLineNextYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateLineNextYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year/e29ny">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EL29_next-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL29_next-yr</skos:prefLabel>
+        <skos:notation>e29ny</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+      </j.1:EstimateLineNextYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateLineNextYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year/e17ny">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EL17_next-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL17_next-yr</skos:prefLabel>
+        <skos:notation>e17ny</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+      </j.1:EstimateLineNextYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateLineNextYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year/e42ny">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EL42_next-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL42_next-yr</skos:prefLabel>
+        <skos:notation>e42ny</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+      </j.1:EstimateLineNextYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateLineNextYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year/e64ny">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EL64_next-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL64_next-yr</skos:prefLabel>
+        <skos:notation>e64ny</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+      </j.1:EstimateLineNextYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateLineNextYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year/e35ny">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EL35_next-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL35_next-yr</skos:prefLabel>
+        <skos:notation>e35ny</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+      </j.1:EstimateLineNextYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateLineNextYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year/e56ny">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EL56_next-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL56_next-yr</skos:prefLabel>
+        <skos:notation>e56ny</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+      </j.1:EstimateLineNextYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateLineNextYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year/e08ny">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EL08_next-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL08_next-yr</skos:prefLabel>
+        <skos:notation>e08ny</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+      </j.1:EstimateLineNextYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateLineNextYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year/e78ny">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EL78_next-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL78_next-yr</skos:prefLabel>
+        <skos:notation>e78ny</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+      </j.1:EstimateLineNextYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateLineNextYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year/e14ny">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EL14_next-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL14_next-yr</skos:prefLabel>
+        <skos:notation>e14ny</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+      </j.1:EstimateLineNextYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateLineNextYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year/e03ny">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EL03_next-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL03_next-yr</skos:prefLabel>
+        <skos:notation>e03ny</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+      </j.1:EstimateLineNextYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateLineNextYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year/e04ny">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EL04_next-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL04_next-yr</skos:prefLabel>
+        <skos:notation>e04ny</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+      </j.1:EstimateLineNextYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateLineNextYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year/e28ny">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EL28_next-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL28_next-yr</skos:prefLabel>
+        <skos:notation>e28ny</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+      </j.1:EstimateLineNextYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateLineNextYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year/e45ny">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EL45_next-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL45_next-yr</skos:prefLabel>
+        <skos:notation>e45ny</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+      </j.1:EstimateLineNextYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateLineNextYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year/e19ny">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EL19_next-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL19_next-yr</skos:prefLabel>
+        <skos:notation>e19ny</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+      </j.1:EstimateLineNextYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateLineNextYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year/e09ny">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EL09_next-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL09_next-yr</skos:prefLabel>
+        <skos:notation>e09ny</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+      </j.1:EstimateLineNextYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateLineNextYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year/e21ny">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EL21_next-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL21_next-yr</skos:prefLabel>
+        <skos:notation>e21ny</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+      </j.1:EstimateLineNextYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateLineNextYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year/e99ny">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EL99_next-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL99_next-yr</skos:prefLabel>
+        <skos:notation>e99ny</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+      </j.1:EstimateLineNextYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateLineNextYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year/e36ny">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EL36_next-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL36_next-yr</skos:prefLabel>
+        <skos:notation>e36ny</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+      </j.1:EstimateLineNextYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateLineNextYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year/e50ny">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EL50_next-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL50_next-yr</skos:prefLabel>
+        <skos:notation>e50ny</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+      </j.1:EstimateLineNextYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateLineNextYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year/e15ny">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EL15_next-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL15_next-yr</skos:prefLabel>
+        <skos:notation>e15ny</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+      </j.1:EstimateLineNextYear>
+    </skos:hasTopConcept>
+    <rdfs:label xml:lang="en">estimate line next year code list concept scheme</rdfs:label>
+    <skos:hasTopConcept>
+      <j.1:EstimateLineNextYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year/e39ny">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EL39_next-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL39_next-yr</skos:prefLabel>
+        <skos:notation>e39ny</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+      </j.1:EstimateLineNextYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateLineNextYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year/e60ny">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EL60_next-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL60_next-yr</skos:prefLabel>
+        <skos:notation>e60ny</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+      </j.1:EstimateLineNextYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateLineNextYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year/e68ny">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EL68_next-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL68_next-yr</skos:prefLabel>
+        <skos:notation>e68ny</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+      </j.1:EstimateLineNextYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateLineNextYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year/e61ny">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EL61_next-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL61_next-yr</skos:prefLabel>
+        <skos:notation>e61ny</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+      </j.1:EstimateLineNextYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateLineNextYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year/e86ny">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EL86_next-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL86_next-yr</skos:prefLabel>
+        <skos:notation>e86ny</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+      </j.1:EstimateLineNextYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateLineNextYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year/e46ny">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EL46_next-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL46_next-yr</skos:prefLabel>
+        <skos:notation>e46ny</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+      </j.1:EstimateLineNextYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateLineNextYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year/e47ny">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EL47_next-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL47_next-yr</skos:prefLabel>
+        <skos:notation>e47ny</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+      </j.1:EstimateLineNextYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateLineNextYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year/e57ny">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EL57_next-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL57_next-yr</skos:prefLabel>
+        <skos:notation>e57ny</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+      </j.1:EstimateLineNextYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateLineNextYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year/e58ny">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EL58_next-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL58_next-yr</skos:prefLabel>
+        <skos:notation>e58ny</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+      </j.1:EstimateLineNextYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateLineNextYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year/e97ny">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EL97_next-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL97_next-yr</skos:prefLabel>
+        <skos:notation>e97ny</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+      </j.1:EstimateLineNextYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateLineNextYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year/e11ny">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EL11_next-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL11_next-yr</skos:prefLabel>
+        <skos:notation>e11ny</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+      </j.1:EstimateLineNextYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateLineNextYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year/e01ny">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EL01_next-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL01_next-yr</skos:prefLabel>
+        <skos:notation>e01ny</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+      </j.1:EstimateLineNextYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateLineNextYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year/e25ny">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EL25_next-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL25_next-yr</skos:prefLabel>
+        <skos:notation>e25ny</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+      </j.1:EstimateLineNextYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateLineNextYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year/e33ny">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EL33_next-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL33_next-yr</skos:prefLabel>
+        <skos:notation>e33ny</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+      </j.1:EstimateLineNextYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateLineNextYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year/e16ny">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EL16_next-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL16_next-yr</skos:prefLabel>
+        <skos:notation>e16ny</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+      </j.1:EstimateLineNextYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateLineNextYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year/e79ny">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EL79_next-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL79_next-yr</skos:prefLabel>
+        <skos:notation>e79ny</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+      </j.1:EstimateLineNextYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateLineNextYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year/e69ny">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EL69_next-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL69_next-yr</skos:prefLabel>
+        <skos:notation>e69ny</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+      </j.1:EstimateLineNextYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateLineNextYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year/e30ny">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EL30_next-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL30_next-yr</skos:prefLabel>
+        <skos:notation>e30ny</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+      </j.1:EstimateLineNextYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateLineNextYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year/e32ny">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EL32_next-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL32_next-yr</skos:prefLabel>
+        <skos:notation>e32ny</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+      </j.1:EstimateLineNextYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateLineNextYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year/e22ny">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EL22_next-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL22_next-yr</skos:prefLabel>
+        <skos:notation>e22ny</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+      </j.1:EstimateLineNextYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateLineNextYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year/e43ny">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EL43_next-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL43_next-yr</skos:prefLabel>
+        <skos:notation>e43ny</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+      </j.1:EstimateLineNextYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateLineNextYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year/e62ny">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EL62_next-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL62_next-yr</skos:prefLabel>
+        <skos:notation>e62ny</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+      </j.1:EstimateLineNextYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateLineNextYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year/e05ny">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EL05_next-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL05_next-yr</skos:prefLabel>
+        <skos:notation>e05ny</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+      </j.1:EstimateLineNextYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateLineNextYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year/e12ny">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EL12_next-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL12_next-yr</skos:prefLabel>
+        <skos:notation>e12ny</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+      </j.1:EstimateLineNextYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateLineNextYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year/e02ny">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EL02_next-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL02_next-yr</skos:prefLabel>
+        <skos:notation>e02ny</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+      </j.1:EstimateLineNextYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateLineNextYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year/e26ny">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EL26_next-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL26_next-yr</skos:prefLabel>
+        <skos:notation>e26ny</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+      </j.1:EstimateLineNextYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateLineNextYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year/e41ny">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EL41_next-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL41_next-yr</skos:prefLabel>
+        <skos:notation>e41ny</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+      </j.1:EstimateLineNextYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateLineNextYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year/e51ny">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EL51_next-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL51_next-yr</skos:prefLabel>
+        <skos:notation>e51ny</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+      </j.1:EstimateLineNextYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateLineNextYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year/e65ny">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EL65_next-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL65_next-yr</skos:prefLabel>
+        <skos:notation>e65ny</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+      </j.1:EstimateLineNextYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateLineNextYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year/e40ny">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EL40_next-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL40_next-yr</skos:prefLabel>
+        <skos:notation>e40ny</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+      </j.1:EstimateLineNextYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateLineNextYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year/e54ny">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EL54_next-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL54_next-yr</skos:prefLabel>
+        <skos:notation>e54ny</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+      </j.1:EstimateLineNextYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateLineNextYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year/e18ny">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EL18_next-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL18_next-yr</skos:prefLabel>
+        <skos:notation>e18ny</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+      </j.1:EstimateLineNextYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateLineNextYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year/e44ny">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EL44_next-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL44_next-yr</skos:prefLabel>
+        <skos:notation>e44ny</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+      </j.1:EstimateLineNextYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateLineNextYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year/e13ny">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EL13_next-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL13_next-yr</skos:prefLabel>
+        <skos:notation>e13ny</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+      </j.1:EstimateLineNextYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateLineNextYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year/e37ny">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EL37_next-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL37_next-yr</skos:prefLabel>
+        <skos:notation>e37ny</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+      </j.1:EstimateLineNextYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateLineNextYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year/e38ny">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EL38_next-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL38_next-yr</skos:prefLabel>
+        <skos:notation>e38ny</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+      </j.1:EstimateLineNextYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateLineNextYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year/e27ny">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EL27_next-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL27_next-yr</skos:prefLabel>
+        <skos:notation>e27ny</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+      </j.1:EstimateLineNextYear>
+    </skos:hasTopConcept>
+    <skos:prefLabel xml:lang="en">estimate line next year code list concept scheme</skos:prefLabel>
+    <skos:hasTopConcept>
+      <j.1:EstimateLineNextYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year/e55ny">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EL55_next-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL55_next-yr</skos:prefLabel>
+        <skos:notation>e55ny</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+      </j.1:EstimateLineNextYear>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:EstimateLineNextYear rdf:about="http://finance.data.gov.uk/def/coins/estimate-line-next-year/e07ny">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EL07_next-yr</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL07_next-yr</skos:prefLabel>
+        <skos:notation>e07ny</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+      </j.1:EstimateLineNextYear>
+    </skos:hasTopConcept>
+  </skos:ConceptScheme>
+</rdf:RDF>

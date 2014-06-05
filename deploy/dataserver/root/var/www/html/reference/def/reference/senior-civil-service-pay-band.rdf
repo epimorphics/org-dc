@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:dct="http://purl.org/dc/terms/"
+   xmlns:foaf="http://xmlns.com/foaf/0.1/"
+   xmlns:gov="http://reference.data.gov.uk/def/central-government/"
+   xmlns:opmv="http://purl.org/net/opmv/ns#"
+   xmlns:org="http://www.w3.org/ns/org#"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+   xmlns:time="http://www.w3.org/2006/time#"
+   xmlns:void="http://rdfs.org/ns/void#"
+   xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+   xmlns="http://reference.data.gov.uk/def/senior-civil-service-pay-band/">
+  <rdfs:Class rdf:about="http://reference.data.gov.uk/def/senior-civil-service-pay-band/PayBand">
+    <rdfs:isDefinedBy rdf:resource="http://reference.data.gov.uk/def/senior-civil-service-pay-band"/>
+    <rdfs:label xml:lang="en">Pay Band</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdfs:Class>
+  <rdf:Property rdf:about="http://reference.data.gov.uk/def/senior-civil-service-pay-band/payBand">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://reference.data.gov.uk/def/senior-civil-service-pay-band"/>
+    <rdfs:label xml:lang="en">Pay Band</rdfs:label>
+    <rdfs:range rdf:resource="http://reference.data.gov.uk/def/senior-civil-service-pay-band/PayBand"/>
+  </rdf:Property>
+  <skos:ConceptScheme rdf:about="http://reference.data.gov.uk/def/senior-civil-service-pay-band">
+    <dct:source rdf:resource="http://www.cabinetoffice.gov.uk/about-cabinet-office/plans-performance/scs-pay-ranges.aspx"/>
+    <dct:temporal rdf:resource="http://reference.data.gov.uk/id/government-year/2010-2011"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <rdfs:label xml:lang="en">Senior Civil Service Pay Bands</rdfs:label>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/senior-civil-service-pay-band/PermSec"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/senior-civil-service-pay-band/SCS1"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/senior-civil-service-pay-band/SCS1A"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/senior-civil-service-pay-band/SCS2"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/senior-civil-service-pay-band/SCS3"/>
+  </skos:ConceptScheme>
+  <PayBand rdf:about="http://reference.data.gov.uk/def/senior-civil-service-pay-band/SCS1">
+    <gov:salaryRange>
+      <gov:SalaryRange>
+        <gov:lowerBound rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">58200.0</gov:lowerBound>
+        <gov:upperBound rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">117800.0</gov:upperBound>
+      </gov:SalaryRange>
+    </gov:salaryRange>
+    <skos:isTopConceptOf rdf:resource="http://reference.data.gov.uk/def/senior-civil-service-pay-band"/>
+    <skos:prefLabel xml:lang="en">SCS1</skos:prefLabel>
+  </PayBand>
+  <PayBand rdf:about="http://reference.data.gov.uk/def/senior-civil-service-pay-band/SCS1A">
+    <gov:salaryRange>
+      <gov:SalaryRange>
+        <gov:lowerBound rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">67600.0</gov:lowerBound>
+        <gov:upperBound rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">128900.0</gov:upperBound>
+      </gov:SalaryRange>
+    </gov:salaryRange>
+    <skos:isTopConceptOf rdf:resource="http://reference.data.gov.uk/def/senior-civil-service-pay-band"/>
+    <skos:prefLabel xml:lang="en">SCS1A</skos:prefLabel>
+  </PayBand>
+  <PayBand rdf:about="http://reference.data.gov.uk/def/senior-civil-service-pay-band/SCS2">
+    <gov:salaryRange>
+      <gov:SalaryRange>
+        <gov:lowerBound rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">82900.0</gov:lowerBound>
+        <gov:upperBound rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">162500.0</gov:upperBound>
+      </gov:SalaryRange>
+    </gov:salaryRange>
+    <skos:isTopConceptOf rdf:resource="http://reference.data.gov.uk/def/senior-civil-service-pay-band"/>
+    <skos:prefLabel xml:lang="en">SCS2</skos:prefLabel>
+  </PayBand>
+  <PayBand rdf:about="http://reference.data.gov.uk/def/senior-civil-service-pay-band/SCS3">
+    <gov:salaryRange>
+      <gov:SalaryRange>
+        <gov:lowerBound rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">101500.0</gov:lowerBound>
+        <gov:upperBound rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">208100.0</gov:upperBound>
+      </gov:SalaryRange>
+    </gov:salaryRange>
+    <skos:isTopConceptOf rdf:resource="http://reference.data.gov.uk/def/senior-civil-service-pay-band"/>
+    <skos:prefLabel xml:lang="en">SCS3</skos:prefLabel>
+  </PayBand>
+  <PayBand rdf:about="http://reference.data.gov.uk/def/senior-civil-service-pay-band/PermSec">
+    <gov:salaryRange>
+      <gov:SalaryRange>
+        <gov:lowerBound rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">141836.0</gov:lowerBound>
+        <gov:upperBound rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">277349.0</gov:upperBound>
+      </gov:SalaryRange>
+    </gov:salaryRange>
+    <skos:isTopConceptOf rdf:resource="http://reference.data.gov.uk/def/senior-civil-service-pay-band"/>
+    <skos:prefLabel xml:lang="en">SCS3</skos:prefLabel>
+  </PayBand>
+</rdf:RDF>

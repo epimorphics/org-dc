@@ -1,0 +1,102 @@
+# Generated 2010-11-09T16:53:43+00:00
+
+@prefix rdf:                <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:               <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:                <http://www.w3.org/2002/07/owl#> .
+@prefix skos:               <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd:                <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:               <http://xmlns.com/foaf/0.1/> .
+@prefix void:               <http://rdfs.org/ns/void#> .
+@prefix dcterms:            <http://purl.org/dc/terms/> .
+@prefix sdmx:               <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept:       <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:     <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:     <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:       <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-code:          <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:       <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix qb:                 <http://purl.org/linked-data/cube#> .
+@prefix coins-data:         <http://source.data.gov.uk/data/coins/> .
+@prefix coins-dsd:          <http://finance.data.gov.uk/dsd/coins/> .
+@prefix coins-dimension:    <http://finance.data.gov.uk/dsd/coins/dimension/> .
+@prefix coins-attribute:    <http://finance.data.gov.uk/dsd/coins/attribute/> .
+@prefix coins-measure:      <http://finance.data.gov.uk/dsd/coins/measure/> .
+@prefix coins-slicekey:     <http://finance.data.gov.uk/dsd/coins/slice/> .
+
+<http://finance.data.gov.uk/def/coins/statistical-concept/cga-body-type>
+    a sdmx:Concept;
+    rdfs:label "CGA body type"@en;
+    skos:prefLabel "CGA body type"@en;
+    rdfs:comment """ndicates whether central government bodies are departments, NDPBs, health trusts etc""";
+    <http://purl.org/dc/terms/source> <http://www.hm-treasury.gov.uk/d/coins_guidance.pdf>;
+    <http://www.epimorphics.com/vocabs/coins-generate#columnName> "cga_body_type"
+    .
+
+<http://finance.data.gov.uk/def/coins/CgaBodyType>
+    a rdfs:Class, owl:Class;
+    rdfs:subClassOf skos:Concept;
+    rdfs:label "CGA body type values class"@en;
+    skos:prefLabel "CGA body type values class"@en;
+    rdfs:comment "The class of values in the CGA body type code-list scheme";
+    .
+
+<http://finance.data.gov.uk/def/coins/cga-body-type>
+    a skos:ConceptScheme;
+    rdfs:label "CGA body type code list concept scheme"@en;
+    skos:prefLabel "CGA body type code list concept scheme"@en;
+    skos:hasTopConcept <http://finance.data.gov.uk/def/coins/cga-body-type/dept>,
+          <http://finance.data.gov.uk/def/coins/cga-body-type/minor>,
+          <http://finance.data.gov.uk/def/coins/cga-body-type/ndpb>,
+          <http://finance.data.gov.uk/def/coins/cga-body-type/ps>,
+          <http://finance.data.gov.uk/def/coins/cga-body-type/trust>
+    .
+
+<http://finance.data.gov.uk/def/coins/cga-body-type/dept>
+    a <http://finance.data.gov.uk/def/coins/CgaBodyType>, skos:Concept;
+    rdfs:label "Dept"@en;
+    skos:prefLabel "Dept"@en;
+    skos:notation "dept";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cga-body-type>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cga-body-type/minor>
+    a <http://finance.data.gov.uk/def/coins/CgaBodyType>, skos:Concept;
+    rdfs:label "Minor"@en;
+    skos:prefLabel "Minor"@en;
+    skos:notation "minor";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cga-body-type>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cga-body-type/ndpb>
+    a <http://finance.data.gov.uk/def/coins/CgaBodyType>, skos:Concept;
+    rdfs:label "NDPB"@en;
+    skos:prefLabel "NDPB"@en;
+    skos:notation "ndpb";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cga-body-type>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cga-body-type/ps>
+    a <http://finance.data.gov.uk/def/coins/CgaBodyType>, skos:Concept;
+    rdfs:label "Pension Scheme"@en;
+    skos:prefLabel "Pension Scheme"@en;
+    skos:notation "ps";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cga-body-type>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cga-body-type/trust>
+    a <http://finance.data.gov.uk/def/coins/CgaBodyType>, skos:Concept;
+    rdfs:label "Trust"@en;
+    skos:prefLabel "Trust"@en;
+    skos:notation "trust";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cga-body-type>;
+    
+    .

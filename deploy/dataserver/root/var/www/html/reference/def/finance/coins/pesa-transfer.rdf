@@ -1,0 +1,144 @@
+<rdf:RDF
+    xmlns:sdmx-subject="http://purl.org/linked-data/sdmx/2009/subject#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:sdmx-dimension="http://purl.org/linked-data/sdmx/2009/dimension#"
+    xmlns:sdmx-measure="http://purl.org/linked-data/sdmx/2009/measure#"
+    xmlns:sdmx-attribute="http://purl.org/linked-data/sdmx/2009/attribute#"
+    xmlns:coins-data="http://source.data.gov.uk/data/coins/"
+    xmlns:coins-dsd="http://finance.data.gov.uk/dsd/coins/"
+    xmlns:coins-dimension="http://finance.data.gov.uk/dsd/coins/dimension/"
+    xmlns:void="http://rdfs.org/ns/void#"
+    xmlns:coins-measure="http://finance.data.gov.uk/dsd/coins/measure/"
+    xmlns:j.0="http://www.epimorphics.com/vocabs/coins-generate#"
+    xmlns:coins-attribute="http://finance.data.gov.uk/dsd/coins/attribute/"
+    xmlns:sdmx-concept="http://purl.org/linked-data/sdmx/2009/concept#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:coins-slicekey="http://finance.data.gov.uk/dsd/coins/slice/"
+    xmlns:sdmx="http://purl.org/linked-data/sdmx#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:sdmx-code="http://purl.org/linked-data/sdmx/2009/code#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:j.1="http://finance.data.gov.uk/def/coins/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:qb="http://purl.org/linked-data/cube#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <rdfs:Class rdf:about="http://finance.data.gov.uk/def/coins/PesaTransfer">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:label xml:lang="en">pesa transfer values class</rdfs:label>
+    <skos:prefLabel xml:lang="en">pesa transfer values class</skos:prefLabel>
+    <rdfs:comment>The class of values in the pesa transfer code-list scheme</rdfs:comment>
+  </rdfs:Class>
+  <sdmx:Concept rdf:about="http://finance.data.gov.uk/def/coins/statistical-concept/pesa-transfer">
+    <rdfs:label xml:lang="en">pesa transfer</rdfs:label>
+    <skos:prefLabel xml:lang="en">pesa transfer</skos:prefLabel>
+    <rdfs:comment>Identifies transactions to be included in a consolidated view of public sector spending on a National Accounts’ basis. Also groups departments’ functions for Supply Estimates’ purposes.</rdfs:comment>
+    <dcterms:source rdf:resource="http://www.hm-treasury.gov.uk/d/coins_guidance.pdf"/>
+    <j.0:columnName>pesa_transfer</j.0:columnName>
+  </sdmx:Concept>
+  <skos:ConceptScheme rdf:about="http://finance.data.gov.uk/def/coins/pesa-transfer">
+    <skos:hasTopConcept>
+      <j.1:PesaTransfer rdf:about="http://finance.data.gov.uk/def/coins/pesa-transfer/oncl">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">OTHRCUR_NONEMP_CG_LG</rdfs:label>
+        <skos:prefLabel xml:lang="en">OTHRCUR_NONEMP_CG_LG</skos:prefLabel>
+        <skos:notation>oncl</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/pesa-transfer"/>
+      </j.1:PesaTransfer>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:PesaTransfer rdf:about="http://finance.data.gov.uk/def/coins/pesa-transfer/ccl1">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">CAPGRAN_CG_LG</rdfs:label>
+        <skos:prefLabel xml:lang="en">CAPGRAN_CG_LG</skos:prefLabel>
+        <skos:notation>ccl1</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/pesa-transfer"/>
+      </j.1:PesaTransfer>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:PesaTransfer rdf:about="http://finance.data.gov.uk/def/coins/pesa-transfer/ccl2">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">CAPTRANAB_CG_LG</rdfs:label>
+        <skos:prefLabel xml:lang="en">CAPTRANAB_CG_LG</skos:prefLabel>
+        <skos:notation>ccl2</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/pesa-transfer"/>
+      </j.1:PesaTransfer>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:PesaTransfer rdf:about="http://finance.data.gov.uk/def/coins/pesa-transfer/ccl0">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">CAPGRANAB_CG_LG</rdfs:label>
+        <skos:prefLabel xml:lang="en">CAPGRANAB_CG_LG</skos:prefLabel>
+        <skos:notation>ccl0</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/pesa-transfer"/>
+      </j.1:PesaTransfer>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:PesaTransfer rdf:about="http://finance.data.gov.uk/def/coins/pesa-transfer/cnp">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">CURTRAN_NONEMP_PC</rdfs:label>
+        <skos:prefLabel xml:lang="en">CURTRAN_NONEMP_PC</skos:prefLabel>
+        <skos:notation>cnp</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/pesa-transfer"/>
+      </j.1:PesaTransfer>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:PesaTransfer rdf:about="http://finance.data.gov.uk/def/coins/pesa-transfer/ccl">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">CAPFORM_CG_LG</rdfs:label>
+        <skos:prefLabel xml:lang="en">CAPFORM_CG_LG</skos:prefLabel>
+        <skos:notation>ccl</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/pesa-transfer"/>
+      </j.1:PesaTransfer>
+    </skos:hasTopConcept>
+    <skos:prefLabel xml:lang="en">pesa transfer code list concept scheme</skos:prefLabel>
+    <skos:hasTopConcept>
+      <j.1:PesaTransfer rdf:about="http://finance.data.gov.uk/def/coins/pesa-transfer/cncl">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">CURTRAN_NONEMP_CG_LG</rdfs:label>
+        <skos:prefLabel xml:lang="en">CURTRAN_NONEMP_CG_LG</skos:prefLabel>
+        <skos:notation>cncl</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/pesa-transfer"/>
+      </j.1:PesaTransfer>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:PesaTransfer rdf:about="http://finance.data.gov.uk/def/coins/pesa-transfer/ccl3">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">CURTRANAB_CG_LG</rdfs:label>
+        <skos:prefLabel xml:lang="en">CURTRANAB_CG_LG</skos:prefLabel>
+        <skos:notation>ccl3</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/pesa-transfer"/>
+      </j.1:PesaTransfer>
+    </skos:hasTopConcept>
+    <rdfs:label xml:lang="en">pesa transfer code list concept scheme</rdfs:label>
+    <skos:hasTopConcept>
+      <j.1:PesaTransfer rdf:about="http://finance.data.gov.uk/def/coins/pesa-transfer/cecl">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">CURTRAN_EMP_CG_LG</rdfs:label>
+        <skos:prefLabel xml:lang="en">CURTRAN_EMP_CG_LG</skos:prefLabel>
+        <skos:notation>cecl</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/pesa-transfer"/>
+      </j.1:PesaTransfer>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:PesaTransfer rdf:about="http://finance.data.gov.uk/def/coins/pesa-transfer/oecl">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">OTHRCUR_EMP_CG_LG</rdfs:label>
+        <skos:prefLabel xml:lang="en">OTHRCUR_EMP_CG_LG</skos:prefLabel>
+        <skos:notation>oecl</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/pesa-transfer"/>
+      </j.1:PesaTransfer>
+    </skos:hasTopConcept>
+  </skos:ConceptScheme>
+</rdf:RDF>

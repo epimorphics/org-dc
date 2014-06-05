@@ -1,0 +1,37 @@
+@prefix dct:     <http://purl.org/dc/terms/> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix void: 	 <http://rdfs.org/ns/void#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix org: 	<http://www.w3.org/ns/org#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix parl:    <http://reference.data.gov.uk/def/parliament/> .
+@base <http://reference.data.gov.uk/def/peer-role/> .
+
+<http://reference.data.gov.uk/def/peer-role> a skos:ConceptScheme , void:DataSet ;
+  rdfs:label "Peer Roles"@en ;
+  dct:title "Peer Roles"@en ;
+  skos:prefLabel "Peer Roles"@en ;
+  skos:topConcept <lord-spiritual> , <lord-temporal> ;
+  void:exampleResource <lord-spiritual> , <lord-temporal> ;
+  void:vocabulary skos: , parl: , org: .
+
+<lord-spiritual>
+  a org:Role ;
+  skos:prefLabel "Lord Spiritual"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/peer-role> ;	
+  skos:note "Describes Bishops of the Church of England who sit in The House of Lords, but do not normally vote on matters of law or state."@en ;
+  skos:note <http://en.wikipedia.org/wiki/Lords_Spiritual> ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Lords_Spiritual> ;
+  org:roleProperty parl:memberOf .
+
+<lord-temporal>
+  a org:Role ;
+  skos:prefLabel "Lord Temporal"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/peer-role> ;	
+  skos:note "Describes life peers or hereditary peers who sit in The House of Lords."@en ;
+  skos:note  <http://en.wikipedia.org/wiki/Lords_Temporal> ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Lords_Temporal> ;
+  org:roleProperty parl:memberOf .

@@ -1,0 +1,629 @@
+<rdf:RDF
+    xmlns:sdmx-subject="http://purl.org/linked-data/sdmx/2009/subject#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:sdmx-dimension="http://purl.org/linked-data/sdmx/2009/dimension#"
+    xmlns:sdmx-measure="http://purl.org/linked-data/sdmx/2009/measure#"
+    xmlns:sdmx-attribute="http://purl.org/linked-data/sdmx/2009/attribute#"
+    xmlns:coins-data="http://source.data.gov.uk/data/coins/"
+    xmlns:coins-dsd="http://finance.data.gov.uk/dsd/coins/"
+    xmlns:coins-dimension="http://finance.data.gov.uk/dsd/coins/dimension/"
+    xmlns:void="http://rdfs.org/ns/void#"
+    xmlns:coins-measure="http://finance.data.gov.uk/dsd/coins/measure/"
+    xmlns:coins-attribute="http://finance.data.gov.uk/dsd/coins/attribute/"
+    xmlns:sdmx-concept="http://purl.org/linked-data/sdmx/2009/concept#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:coins-slicekey="http://finance.data.gov.uk/dsd/coins/slice/"
+    xmlns:sdmx="http://purl.org/linked-data/sdmx#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:sdmx-code="http://purl.org/linked-data/sdmx/2009/code#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:qb="http://purl.org/linked-data/cube#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <qb:SliceKey rdf:about="http://finance.data.gov.uk/dsd/coins/slice/refPeriod-dataType">
+    <rdfs:label>time, data-type slice</rdfs:label>
+    <rdfs:comment>Represents slices indexed by time and data-type (e.g. outturn, snapshot)</rdfs:comment>
+    <qb:componentProperty>
+      <qb:CodedProperty rdf:about="http://purl.org/linked-data/sdmx/2009/dimension#refPeriod">
+        <skos:notation>t_time</skos:notation>
+        <qb:concept rdf:resource="http://finance.data.gov.uk/def/coins/statistical-concept/time"/>
+        <rdf:type rdf:resource="http://purl.org/linked-data/cube#DimensionProperty"/>
+      </qb:CodedProperty>
+    </qb:componentProperty>
+    <qb:componentProperty rdf:resource="http://finance.data.gov.uk/dsd/coins/dimension/data-type"/>
+  </qb:SliceKey>
+  <qb:DataStructureDefinition rdf:about="http://finance.data.gov.uk/dsd/coins">
+    <qb:component rdf:parseType="Resource">
+      <qb:componentProperty>
+        <qb:AttributeProperty rdf:about="http://finance.data.gov.uk/dsd/coins/attribute/budgetCapitalCurrent">
+          <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+          <rdf:type rdf:resource="http://purl.org/linked-data/cube#CodedProperty"/>
+          <rdfs:label xml:lang="en">budget-capital-current attribute</rdfs:label>
+          <rdfs:comment>Attribute property representing budget capital current</rdfs:comment>
+          <rdfs:range rdf:resource="http://finance.data.gov.uk/def/coins/budget-capital-current/BudgetCapitalCurrent"/>
+          <qb:concept rdf:resource="http://finance.data.gov.uk/def/coins/statistical-concept/budget-capital-current"/>
+          <qb:codeList rdf:resource="http://finance.data.gov.uk/def/coins/budget-capital-current"/>
+          <skos:notation>budget_capital_current</skos:notation>
+        </qb:AttributeProperty>
+      </qb:componentProperty>
+    </qb:component>
+    <qb:component rdf:parseType="Resource">
+      <qb:componentProperty>
+        <qb:AttributeProperty rdf:about="http://finance.data.gov.uk/dsd/coins/attribute/departmentGroup">
+          <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+          <rdf:type rdf:resource="http://purl.org/linked-data/cube#CodedProperty"/>
+          <rdfs:label xml:lang="en">department-group attribute</rdfs:label>
+          <rdfs:comment>Attribute property representing department group</rdfs:comment>
+          <rdfs:range rdf:resource="http://finance.data.gov.uk/def/coins/department-group/DepartmentGroup"/>
+          <qb:concept rdf:resource="http://finance.data.gov.uk/def/coins/statistical-concept/department-group"/>
+          <qb:codeList rdf:resource="http://finance.data.gov.uk/def/coins/department-group"/>
+          <skos:notation>department_group</skos:notation>
+        </qb:AttributeProperty>
+      </qb:componentProperty>
+    </qb:component>
+    <qb:component rdf:parseType="Resource">
+      <qb:componentProperty>
+        <qb:DimensionProperty rdf:about="http://finance.data.gov.uk/dsd/coins/dimension/accountCode">
+          <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+          <rdf:type rdf:resource="http://purl.org/linked-data/cube#CodedProperty"/>
+          <rdfs:label xml:lang="en">account-code dimension</rdfs:label>
+          <rdfs:comment>Dimension property representing account code</rdfs:comment>
+          <rdfs:range rdf:resource="http://finance.data.gov.uk/def/coins/account-code/AccountCode"/>
+          <qb:concept rdf:resource="http://finance.data.gov.uk/def/coins/statistical-concept/account-code"/>
+          <qb:codeList rdf:resource="http://finance.data.gov.uk/def/coins/account-code"/>
+          <skos:notation>account_code</skos:notation>
+        </qb:DimensionProperty>
+      </qb:componentProperty>
+      <qb:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+      >4</qb:order>
+    </qb:component>
+    <qb:component rdf:parseType="Resource">
+      <qb:componentProperty>
+        <qb:AttributeProperty rdf:about="http://finance.data.gov.uk/dsd/coins/attribute/pesaDelivery">
+          <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+          <rdf:type rdf:resource="http://purl.org/linked-data/cube#CodedProperty"/>
+          <rdfs:label xml:lang="en">pesa-delivery attribute</rdfs:label>
+          <rdfs:comment>Attribute property representing pesa delivery</rdfs:comment>
+          <rdfs:range rdf:resource="http://finance.data.gov.uk/def/coins/pesa-delivery/PesaDelivery"/>
+          <qb:concept rdf:resource="http://finance.data.gov.uk/def/coins/statistical-concept/pesa-delivery"/>
+          <qb:codeList rdf:resource="http://finance.data.gov.uk/def/coins/pesa-delivery"/>
+          <skos:notation>pesa_delivery</skos:notation>
+        </qb:AttributeProperty>
+      </qb:componentProperty>
+    </qb:component>
+    <qb:component rdf:parseType="Resource">
+      <qb:componentProperty>
+        <qb:DimensionProperty rdf:about="http://finance.data.gov.uk/dsd/coins/dimension/counterpartyCode">
+          <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+          <rdf:type rdf:resource="http://purl.org/linked-data/cube#CodedProperty"/>
+          <rdfs:label xml:lang="en">counterparty-code dimension</rdfs:label>
+          <rdfs:comment>Dimension property representing counterparty code</rdfs:comment>
+          <rdfs:range rdf:resource="http://finance.data.gov.uk/def/coins/counterparty-code/CounterpartyCode"/>
+          <qb:concept rdf:resource="http://finance.data.gov.uk/def/coins/statistical-concept/counterparty-code"/>
+          <qb:codeList rdf:resource="http://finance.data.gov.uk/def/coins/counterparty-code"/>
+          <skos:notation>counterparty_code</skos:notation>
+        </qb:DimensionProperty>
+      </qb:componentProperty>
+      <qb:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+      >6</qb:order>
+    </qb:component>
+    <qb:component rdf:parseType="Resource">
+      <qb:componentProperty>
+        <qb:AttributeProperty rdf:about="http://finance.data.gov.uk/dsd/coins/attribute/activityCode">
+          <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+          <rdf:type rdf:resource="http://purl.org/linked-data/cube#CodedProperty"/>
+          <rdfs:label xml:lang="en">activity-code attribute</rdfs:label>
+          <rdfs:comment>Attribute property representing activity code</rdfs:comment>
+          <rdfs:range rdf:resource="http://finance.data.gov.uk/def/coins/activity-code/ActivityCode"/>
+          <qb:concept rdf:resource="http://finance.data.gov.uk/def/coins/statistical-concept/activity-code"/>
+          <qb:codeList rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+          <skos:notation>activity_code</skos:notation>
+        </qb:AttributeProperty>
+      </qb:componentProperty>
+    </qb:component>
+    <qb:component rdf:parseType="Resource">
+      <qb:componentProperty>
+        <qb:AttributeProperty rdf:about="http://finance.data.gov.uk/dsd/coins/attribute/requestForResources">
+          <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+          <rdf:type rdf:resource="http://purl.org/linked-data/cube#CodedProperty"/>
+          <rdfs:label xml:lang="en">request-for-resources attribute</rdfs:label>
+          <rdfs:comment>Attribute property representing request for resources</rdfs:comment>
+          <rdfs:range rdf:resource="http://finance.data.gov.uk/def/coins/request-for-resources/RequestForResources"/>
+          <qb:concept rdf:resource="http://finance.data.gov.uk/def/coins/statistical-concept/request-for-resources"/>
+          <qb:codeList rdf:resource="http://finance.data.gov.uk/def/coins/request-for-resources"/>
+          <skos:notation>request_for_resources</skos:notation>
+        </qb:AttributeProperty>
+      </qb:componentProperty>
+    </qb:component>
+    <qb:component rdf:parseType="Resource">
+      <qb:componentProperty>
+        <qb:AttributeProperty rdf:about="http://finance.data.gov.uk/dsd/coins/attribute/sbi">
+          <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+          <rdf:type rdf:resource="http://purl.org/linked-data/cube#CodedProperty"/>
+          <rdfs:label xml:lang="en">sbi attribute</rdfs:label>
+          <rdfs:comment>Attribute property representing sbi</rdfs:comment>
+          <rdfs:range rdf:resource="http://finance.data.gov.uk/def/coins/sbi/Sbi"/>
+          <qb:concept rdf:resource="http://finance.data.gov.uk/def/coins/statistical-concept/sbi"/>
+          <qb:codeList rdf:resource="http://finance.data.gov.uk/def/coins/sbi"/>
+          <skos:notation>sbi</skos:notation>
+        </qb:AttributeProperty>
+      </qb:componentProperty>
+    </qb:component>
+    <qb:component rdf:parseType="Resource">
+      <qb:componentProperty>
+        <qb:AttributeProperty rdf:about="http://finance.data.gov.uk/dsd/coins/attribute/signage">
+          <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+          <rdf:type rdf:resource="http://purl.org/linked-data/cube#CodedProperty"/>
+          <rdfs:label xml:lang="en">signage attribute</rdfs:label>
+          <rdfs:comment>Attribute property representing signage</rdfs:comment>
+          <rdfs:range rdf:resource="http://finance.data.gov.uk/def/coins/signage/Signage"/>
+          <qb:concept rdf:resource="http://finance.data.gov.uk/def/coins/statistical-concept/signage"/>
+          <qb:codeList rdf:resource="http://finance.data.gov.uk/def/coins/signage"/>
+          <skos:notation>signage</skos:notation>
+        </qb:AttributeProperty>
+      </qb:componentProperty>
+    </qb:component>
+    <qb:component rdf:parseType="Resource">
+      <qb:componentProperty>
+        <qb:AttributeProperty rdf:about="http://finance.data.gov.uk/dsd/coins/attribute/estimateLineLastYear">
+          <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+          <rdf:type rdf:resource="http://purl.org/linked-data/cube#CodedProperty"/>
+          <rdfs:label xml:lang="en">estimate-line-last-year attribute</rdfs:label>
+          <rdfs:comment>Attribute property representing estimate line last year</rdfs:comment>
+          <rdfs:range rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-last-year/EstimateLineLastYear"/>
+          <qb:concept rdf:resource="http://finance.data.gov.uk/def/coins/statistical-concept/estimate-line-last-year"/>
+          <qb:codeList rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-last-year"/>
+          <skos:notation>estimate_line_last_year</skos:notation>
+        </qb:AttributeProperty>
+      </qb:componentProperty>
+    </qb:component>
+    <qb:component rdf:parseType="Resource">
+      <qb:componentProperty>
+        <qb:AttributeProperty rdf:about="http://finance.data.gov.uk/dsd/coins/attribute/estimateLineNextYear">
+          <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+          <rdf:type rdf:resource="http://purl.org/linked-data/cube#CodedProperty"/>
+          <rdfs:label xml:lang="en">estimate-line-next-year attribute</rdfs:label>
+          <rdfs:comment>Attribute property representing estimate line next year</rdfs:comment>
+          <rdfs:range rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year/EstimateLineNextYear"/>
+          <qb:concept rdf:resource="http://finance.data.gov.uk/def/coins/statistical-concept/estimate-line-next-year"/>
+          <qb:codeList rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line-next-year"/>
+          <skos:notation>estimate_line_next_year</skos:notation>
+        </qb:AttributeProperty>
+      </qb:componentProperty>
+    </qb:component>
+    <qb:component rdf:parseType="Resource">
+      <qb:componentProperty>
+        <qb:AttributeProperty rdf:about="http://finance.data.gov.uk/dsd/coins/attribute/estimateNumberNextYear">
+          <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+          <rdf:type rdf:resource="http://purl.org/linked-data/cube#CodedProperty"/>
+          <rdfs:label xml:lang="en">estimate-number-next-year attribute</rdfs:label>
+          <rdfs:comment>Attribute property representing estimate number next year</rdfs:comment>
+          <rdfs:range rdf:resource="http://finance.data.gov.uk/def/coins/estimate-number-next-year/EstimateNumberNextYear"/>
+          <qb:concept rdf:resource="http://finance.data.gov.uk/def/coins/statistical-concept/estimate-number-next-year"/>
+          <qb:codeList rdf:resource="http://finance.data.gov.uk/def/coins/estimate-number-next-year"/>
+          <skos:notation>estimate_number_next_year</skos:notation>
+        </qb:AttributeProperty>
+      </qb:componentProperty>
+    </qb:component>
+    <qb:component rdf:parseType="Resource">
+      <qb:componentProperty>
+        <qb:AttributeProperty rdf:about="http://finance.data.gov.uk/dsd/coins/attribute/estimatesCapitalCurrent">
+          <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+          <rdf:type rdf:resource="http://purl.org/linked-data/cube#CodedProperty"/>
+          <rdfs:label xml:lang="en">estimates-capital-current attribute</rdfs:label>
+          <rdfs:comment>Attribute property representing estimates capital current</rdfs:comment>
+          <rdfs:range rdf:resource="http://finance.data.gov.uk/def/coins/estimates-capital-current/EstimatesCapitalCurrent"/>
+          <qb:concept rdf:resource="http://finance.data.gov.uk/def/coins/statistical-concept/estimates-capital-current"/>
+          <qb:codeList rdf:resource="http://finance.data.gov.uk/def/coins/estimates-capital-current"/>
+          <skos:notation>estimates_capital_current</skos:notation>
+        </qb:AttributeProperty>
+      </qb:componentProperty>
+    </qb:component>
+    <qb:component rdf:parseType="Resource">
+      <qb:componentProperty>
+        <qb:AttributeProperty rdf:about="http://finance.data.gov.uk/dsd/coins/attribute/cgaBodyType">
+          <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+          <rdf:type rdf:resource="http://purl.org/linked-data/cube#CodedProperty"/>
+          <rdfs:label xml:lang="en">cga-body-type attribute</rdfs:label>
+          <rdfs:comment>Attribute property representing cga body type</rdfs:comment>
+          <rdfs:range rdf:resource="http://finance.data.gov.uk/def/coins/cga-body-type/CgaBodyType"/>
+          <qb:concept rdf:resource="http://finance.data.gov.uk/def/coins/statistical-concept/cga-body-type"/>
+          <qb:codeList rdf:resource="http://finance.data.gov.uk/def/coins/cga-body-type"/>
+          <skos:notation>cga_body_type</skos:notation>
+        </qb:AttributeProperty>
+      </qb:componentProperty>
+    </qb:component>
+    <qb:component rdf:parseType="Resource">
+      <qb:componentProperty>
+        <qb:AttributeProperty rdf:about="http://finance.data.gov.uk/dsd/coins/attribute/programmeAdmin">
+          <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+          <rdf:type rdf:resource="http://purl.org/linked-data/cube#CodedProperty"/>
+          <rdfs:label xml:lang="en">programme-admin attribute</rdfs:label>
+          <rdfs:comment>Attribute property representing programme admin</rdfs:comment>
+          <rdfs:range rdf:resource="http://finance.data.gov.uk/def/coins/programme-admin/ProgrammeAdmin"/>
+          <qb:concept rdf:resource="http://finance.data.gov.uk/def/coins/statistical-concept/programme-admin"/>
+          <qb:codeList rdf:resource="http://finance.data.gov.uk/def/coins/programme-admin"/>
+          <skos:notation>programme_admin</skos:notation>
+        </qb:AttributeProperty>
+      </qb:componentProperty>
+    </qb:component>
+    <qb:component rdf:parseType="Resource">
+      <qb:componentProperty>
+        <qb:AttributeProperty rdf:about="http://finance.data.gov.uk/dsd/coins/attribute/pesa11">
+          <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+          <rdf:type rdf:resource="http://purl.org/linked-data/cube#CodedProperty"/>
+          <rdfs:label xml:lang="en">pesa-1-1 attribute</rdfs:label>
+          <rdfs:comment>Attribute property representing pesa 1 1</rdfs:comment>
+          <rdfs:range rdf:resource="http://finance.data.gov.uk/def/coins/pesa-1-1/Pesa11"/>
+          <qb:concept rdf:resource="http://finance.data.gov.uk/def/coins/statistical-concept/pesa-1-1"/>
+          <qb:codeList rdf:resource="http://finance.data.gov.uk/def/coins/pesa-1-1"/>
+          <skos:notation>pesa_1_1</skos:notation>
+        </qb:AttributeProperty>
+      </qb:componentProperty>
+    </qb:component>
+    <qb:component rdf:parseType="Resource">
+      <qb:componentProperty>
+        <qb:DimensionProperty rdf:about="http://finance.data.gov.uk/dsd/coins/dimension/dataSubtype">
+          <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+          <rdf:type rdf:resource="http://purl.org/linked-data/cube#CodedProperty"/>
+          <rdfs:label xml:lang="en">data-subtype dimension</rdfs:label>
+          <rdfs:comment>Dimension property representing data subtype</rdfs:comment>
+          <rdfs:range rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype/DataSubtype"/>
+          <qb:concept rdf:resource="http://finance.data.gov.uk/def/coins/statistical-concept/data-subtype"/>
+          <qb:codeList rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+          <skos:notation>data_subtype</skos:notation>
+        </qb:DimensionProperty>
+      </qb:componentProperty>
+      <qb:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+      >2</qb:order>
+    </qb:component>
+    <qb:component rdf:parseType="Resource">
+      <qb:componentProperty>
+        <qb:DimensionProperty rdf:about="http://finance.data.gov.uk/dsd/coins/dimension/programmeObjectCode">
+          <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+          <rdf:type rdf:resource="http://purl.org/linked-data/cube#CodedProperty"/>
+          <rdfs:label xml:lang="en">programme-object-code dimension</rdfs:label>
+          <rdfs:comment>Dimension property representing programme object code</rdfs:comment>
+          <rdfs:range rdf:resource="http://finance.data.gov.uk/def/coins/programme-object-code/ProgrammeObjectCode"/>
+          <qb:concept rdf:resource="http://finance.data.gov.uk/def/coins/statistical-concept/programme-object-code"/>
+          <qb:codeList rdf:resource="http://finance.data.gov.uk/def/coins/programme-object-code"/>
+          <skos:notation>programme_object_code</skos:notation>
+        </qb:DimensionProperty>
+      </qb:componentProperty>
+      <qb:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+      >5</qb:order>
+    </qb:component>
+    <qb:component rdf:parseType="Resource">
+      <qb:componentProperty>
+        <qb:AttributeProperty rdf:about="http://finance.data.gov.uk/dsd/coins/attribute/accountingAuthority">
+          <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+          <rdf:type rdf:resource="http://purl.org/linked-data/cube#CodedProperty"/>
+          <rdfs:label xml:lang="en">accounting-authority attribute</rdfs:label>
+          <rdfs:comment>Attribute property representing accounting authority</rdfs:comment>
+          <rdfs:range rdf:resource="http://finance.data.gov.uk/def/coins/accounting-authority/AccountingAuthority"/>
+          <qb:concept rdf:resource="http://finance.data.gov.uk/def/coins/statistical-concept/accounting-authority"/>
+          <qb:codeList rdf:resource="http://finance.data.gov.uk/def/coins/accounting-authority"/>
+          <skos:notation>accounting_authority</skos:notation>
+        </qb:AttributeProperty>
+      </qb:componentProperty>
+    </qb:component>
+    <qb:component rdf:parseType="Resource">
+      <qb:componentProperty>
+        <qb:AttributeProperty rdf:about="http://finance.data.gov.uk/dsd/coins/attribute/esa">
+          <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+          <rdf:type rdf:resource="http://purl.org/linked-data/cube#CodedProperty"/>
+          <rdfs:label xml:lang="en">esa attribute</rdfs:label>
+          <rdfs:comment>Attribute property representing esa</rdfs:comment>
+          <rdfs:range rdf:resource="http://finance.data.gov.uk/def/coins/esa/Esa"/>
+          <qb:concept rdf:resource="http://finance.data.gov.uk/def/coins/statistical-concept/esa"/>
+          <qb:codeList rdf:resource="http://finance.data.gov.uk/def/coins/esa"/>
+          <skos:notation>esa</skos:notation>
+        </qb:AttributeProperty>
+      </qb:componentProperty>
+    </qb:component>
+    <qb:component rdf:parseType="Resource">
+      <qb:componentProperty>
+        <qb:AttributeProperty rdf:about="http://finance.data.gov.uk/dsd/coins/attribute/budgetBoundary">
+          <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+          <rdf:type rdf:resource="http://purl.org/linked-data/cube#CodedProperty"/>
+          <rdfs:label xml:lang="en">budget-boundary attribute</rdfs:label>
+          <rdfs:comment>Attribute property representing budget boundary</rdfs:comment>
+          <rdfs:range rdf:resource="http://finance.data.gov.uk/def/coins/budget-boundary/BudgetBoundary"/>
+          <qb:concept rdf:resource="http://finance.data.gov.uk/def/coins/statistical-concept/budget-boundary"/>
+          <qb:codeList rdf:resource="http://finance.data.gov.uk/def/coins/budget-boundary"/>
+          <skos:notation>budget_boundary</skos:notation>
+        </qb:AttributeProperty>
+      </qb:componentProperty>
+    </qb:component>
+    <qb:component rdf:parseType="Resource">
+      <qb:componentProperty>
+        <qb:AttributeProperty rdf:about="http://finance.data.gov.uk/dsd/coins/attribute/requestForResourcesLastYear">
+          <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+          <rdf:type rdf:resource="http://purl.org/linked-data/cube#CodedProperty"/>
+          <rdfs:label xml:lang="en">request-for-resources-last-year attribute</rdfs:label>
+          <rdfs:comment>Attribute property representing request for resources last year</rdfs:comment>
+          <rdfs:range rdf:resource="http://finance.data.gov.uk/def/coins/request-for-resources-last-year/RequestForResourcesLastYear"/>
+          <qb:concept rdf:resource="http://finance.data.gov.uk/def/coins/statistical-concept/request-for-resources-last-year"/>
+          <qb:codeList rdf:resource="http://finance.data.gov.uk/def/coins/request-for-resources-last-year"/>
+          <skos:notation>request_for_resources_last_year</skos:notation>
+        </qb:AttributeProperty>
+      </qb:componentProperty>
+    </qb:component>
+    <qb:component rdf:parseType="Resource">
+      <qb:componentProperty>
+        <qb:AttributeProperty rdf:about="http://finance.data.gov.uk/dsd/coins/attribute/estimateNumber">
+          <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+          <rdf:type rdf:resource="http://purl.org/linked-data/cube#CodedProperty"/>
+          <rdfs:label xml:lang="en">estimate-number attribute</rdfs:label>
+          <rdfs:comment>Attribute property representing estimate number</rdfs:comment>
+          <rdfs:range rdf:resource="http://finance.data.gov.uk/def/coins/estimate-number/EstimateNumber"/>
+          <qb:concept rdf:resource="http://finance.data.gov.uk/def/coins/statistical-concept/estimate-number"/>
+          <qb:codeList rdf:resource="http://finance.data.gov.uk/def/coins/estimate-number"/>
+          <skos:notation>estimate_number</skos:notation>
+        </qb:AttributeProperty>
+      </qb:componentProperty>
+    </qb:component>
+    <qb:component rdf:parseType="Resource">
+      <qb:componentProperty>
+        <qb:AttributeProperty rdf:about="http://finance.data.gov.uk/dsd/coins/attribute/territory">
+          <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+          <rdf:type rdf:resource="http://purl.org/linked-data/cube#CodedProperty"/>
+          <rdfs:label xml:lang="en">territory attribute</rdfs:label>
+          <rdfs:comment>Attribute property representing territory</rdfs:comment>
+          <rdfs:range rdf:resource="http://finance.data.gov.uk/def/coins/territory/Territory"/>
+          <qb:concept rdf:resource="http://finance.data.gov.uk/def/coins/statistical-concept/territory"/>
+          <qb:codeList rdf:resource="http://finance.data.gov.uk/def/coins/territory"/>
+          <skos:notation>territory</skos:notation>
+        </qb:AttributeProperty>
+      </qb:componentProperty>
+    </qb:component>
+    <qb:component rdf:parseType="Resource">
+      <qb:componentProperty>
+        <qb:AttributeProperty rdf:about="http://finance.data.gov.uk/dsd/coins/attribute/pesaServices">
+          <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+          <rdf:type rdf:resource="http://purl.org/linked-data/cube#CodedProperty"/>
+          <rdfs:label xml:lang="en">pesa-services attribute</rdfs:label>
+          <rdfs:comment>Attribute property representing pesa services</rdfs:comment>
+          <rdfs:range rdf:resource="http://finance.data.gov.uk/def/coins/pesa-services/PesaServices"/>
+          <qb:concept rdf:resource="http://finance.data.gov.uk/def/coins/statistical-concept/pesa-services"/>
+          <qb:codeList rdf:resource="http://finance.data.gov.uk/def/coins/pesa-services"/>
+          <skos:notation>pesa_services</skos:notation>
+        </qb:AttributeProperty>
+      </qb:componentProperty>
+    </qb:component>
+    <qb:component rdf:parseType="Resource">
+      <qb:componentProperty rdf:resource="http://purl.org/linked-data/sdmx/2009/dimension#refPeriod"/>
+      <qb:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+      >0</qb:order>
+    </qb:component>
+    <qb:component rdf:parseType="Resource">
+      <qb:componentProperty>
+        <qb:DimensionProperty rdf:about="http://finance.data.gov.uk/dsd/coins/dimension/departmentCode">
+          <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+          <rdf:type rdf:resource="http://purl.org/linked-data/cube#CodedProperty"/>
+          <rdfs:label xml:lang="en">department-code dimension</rdfs:label>
+          <rdfs:comment>Dimension property representing department code</rdfs:comment>
+          <rdfs:range rdf:resource="http://finance.data.gov.uk/def/coins/department-code/DepartmentCode"/>
+          <qb:concept rdf:resource="http://finance.data.gov.uk/def/coins/statistical-concept/department-code"/>
+          <qb:codeList rdf:resource="http://finance.data.gov.uk/def/coins/department-code"/>
+          <skos:notation>department_code</skos:notation>
+        </qb:DimensionProperty>
+      </qb:componentProperty>
+      <qb:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+      >3</qb:order>
+    </qb:component>
+    <qb:component rdf:parseType="Resource">
+      <qb:componentProperty>
+        <qb:AttributeProperty rdf:about="http://finance.data.gov.uk/dsd/coins/attribute/incomeCategory">
+          <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+          <rdf:type rdf:resource="http://purl.org/linked-data/cube#CodedProperty"/>
+          <rdfs:label xml:lang="en">income-category attribute</rdfs:label>
+          <rdfs:comment>Attribute property representing income category</rdfs:comment>
+          <rdfs:range rdf:resource="http://finance.data.gov.uk/def/coins/income-category/IncomeCategory"/>
+          <qb:concept rdf:resource="http://finance.data.gov.uk/def/coins/statistical-concept/income-category"/>
+          <qb:codeList rdf:resource="http://finance.data.gov.uk/def/coins/income-category"/>
+          <skos:notation>income_category</skos:notation>
+        </qb:AttributeProperty>
+      </qb:componentProperty>
+    </qb:component>
+    <qb:component rdf:parseType="Resource">
+      <qb:componentProperty>
+        <qb:AttributeProperty rdf:about="http://finance.data.gov.uk/dsd/coins/attribute/cofog">
+          <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+          <rdf:type rdf:resource="http://purl.org/linked-data/cube#CodedProperty"/>
+          <rdfs:label xml:lang="en">cofog attribute</rdfs:label>
+          <rdfs:comment>Attribute property representing cofog</rdfs:comment>
+          <rdfs:range rdf:resource="http://finance.data.gov.uk/def/coins/cofog/Cofog"/>
+          <qb:concept rdf:resource="http://finance.data.gov.uk/def/coins/statistical-concept/cofog"/>
+          <qb:codeList rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+          <skos:notation>cofog</skos:notation>
+        </qb:AttributeProperty>
+      </qb:componentProperty>
+    </qb:component>
+    <qb:component rdf:parseType="Resource">
+      <qb:componentProperty>
+        <qb:AttributeProperty rdf:about="http://finance.data.gov.uk/dsd/coins/attribute/pesaCurrentGrants">
+          <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+          <rdf:type rdf:resource="http://purl.org/linked-data/cube#CodedProperty"/>
+          <rdfs:label xml:lang="en">pesa-current-grants attribute</rdfs:label>
+          <rdfs:comment>Attribute property representing pesa current grants</rdfs:comment>
+          <rdfs:range rdf:resource="http://finance.data.gov.uk/def/coins/pesa-current-grants/PesaCurrentGrants"/>
+          <qb:concept rdf:resource="http://finance.data.gov.uk/def/coins/statistical-concept/pesa-current-grants"/>
+          <qb:codeList rdf:resource="http://finance.data.gov.uk/def/coins/pesa-current-grants"/>
+          <skos:notation>pesa_current_grants</skos:notation>
+        </qb:AttributeProperty>
+      </qb:componentProperty>
+    </qb:component>
+    <qb:component rdf:parseType="Resource">
+      <qb:componentProperty>
+        <qb:AttributeProperty rdf:about="http://finance.data.gov.uk/dsd/coins/attribute/accountsCapitalCurrent">
+          <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+          <rdf:type rdf:resource="http://purl.org/linked-data/cube#CodedProperty"/>
+          <rdfs:label xml:lang="en">accounts-capital-current attribute</rdfs:label>
+          <rdfs:comment>Attribute property representing accounts capital current</rdfs:comment>
+          <rdfs:range rdf:resource="http://finance.data.gov.uk/def/coins/accounts-capital-current/AccountsCapitalCurrent"/>
+          <qb:concept rdf:resource="http://finance.data.gov.uk/def/coins/statistical-concept/accounts-capital-current"/>
+          <qb:codeList rdf:resource="http://finance.data.gov.uk/def/coins/accounts-capital-current"/>
+          <skos:notation>accounts_capital_current</skos:notation>
+        </qb:AttributeProperty>
+      </qb:componentProperty>
+    </qb:component>
+    <qb:component rdf:parseType="Resource">
+      <qb:componentProperty>
+        <qb:AttributeProperty rdf:about="http://finance.data.gov.uk/dsd/coins/attribute/programmeObjectGroupCode">
+          <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+          <rdf:type rdf:resource="http://purl.org/linked-data/cube#CodedProperty"/>
+          <rdfs:label xml:lang="en">programme-object-group-code attribute</rdfs:label>
+          <rdfs:comment>Attribute property representing programme object group code</rdfs:comment>
+          <rdfs:range rdf:resource="http://finance.data.gov.uk/def/coins/programme-object-group-code/ProgrammeObjectGroupCode"/>
+          <qb:concept rdf:resource="http://finance.data.gov.uk/def/coins/statistical-concept/programme-object-group-code"/>
+          <qb:codeList rdf:resource="http://finance.data.gov.uk/def/coins/programme-object-group-code"/>
+          <skos:notation>programme_object_group_code</skos:notation>
+        </qb:AttributeProperty>
+      </qb:componentProperty>
+    </qb:component>
+    <qb:component rdf:parseType="Resource">
+      <qb:componentProperty>
+        <qb:AttributeProperty rdf:about="http://finance.data.gov.uk/dsd/coins/attribute/requestForResourcesNextYear">
+          <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+          <rdf:type rdf:resource="http://purl.org/linked-data/cube#CodedProperty"/>
+          <rdfs:label xml:lang="en">request-for-resources-next-year attribute</rdfs:label>
+          <rdfs:comment>Attribute property representing request for resources next year</rdfs:comment>
+          <rdfs:range rdf:resource="http://finance.data.gov.uk/def/coins/request-for-resources-next-year/RequestForResourcesNextYear"/>
+          <qb:concept rdf:resource="http://finance.data.gov.uk/def/coins/statistical-concept/request-for-resources-next-year"/>
+          <qb:codeList rdf:resource="http://finance.data.gov.uk/def/coins/request-for-resources-next-year"/>
+          <skos:notation>request_for_resources_next_year</skos:notation>
+        </qb:AttributeProperty>
+      </qb:componentProperty>
+    </qb:component>
+    <qb:component rdf:parseType="Resource">
+      <qb:componentProperty>
+        <qb:AttributeProperty rdf:about="http://finance.data.gov.uk/dsd/coins/attribute/resourceCapital">
+          <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+          <rdf:type rdf:resource="http://purl.org/linked-data/cube#CodedProperty"/>
+          <rdfs:label xml:lang="en">resource-capital attribute</rdfs:label>
+          <rdfs:comment>Attribute property representing resource capital</rdfs:comment>
+          <rdfs:range rdf:resource="http://finance.data.gov.uk/def/coins/resource-capital/ResourceCapital"/>
+          <qb:concept rdf:resource="http://finance.data.gov.uk/def/coins/statistical-concept/resource-capital"/>
+          <qb:codeList rdf:resource="http://finance.data.gov.uk/def/coins/resource-capital"/>
+          <skos:notation>resource_capital</skos:notation>
+        </qb:AttributeProperty>
+      </qb:componentProperty>
+    </qb:component>
+    <qb:component rdf:parseType="Resource">
+      <qb:componentProperty>
+        <qb:AttributeProperty rdf:about="http://finance.data.gov.uk/dsd/coins/attribute/sector">
+          <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+          <rdf:type rdf:resource="http://purl.org/linked-data/cube#CodedProperty"/>
+          <rdfs:label xml:lang="en">sector attribute</rdfs:label>
+          <rdfs:comment>Attribute property representing sector</rdfs:comment>
+          <rdfs:range rdf:resource="http://finance.data.gov.uk/def/coins/sector/Sector"/>
+          <qb:concept rdf:resource="http://finance.data.gov.uk/def/coins/statistical-concept/sector"/>
+          <qb:codeList rdf:resource="http://finance.data.gov.uk/def/coins/sector"/>
+          <skos:notation>sector</skos:notation>
+        </qb:AttributeProperty>
+      </qb:componentProperty>
+    </qb:component>
+    <qb:component rdf:parseType="Resource">
+      <qb:componentProperty>
+        <qb:MeasureProperty rdf:about="http://finance.data.gov.uk/dsd/coins/measure/amount">
+          <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+          <rdfs:label xml:lang="en">amount in thousands of pounds</rdfs:label>
+          <rdfs:comment>Represents the amount being reported, in thousands of pounds Sterling</rdfs:comment>
+          <rdfs:subPropertyOf rdf:resource="http://purl.org/linked-data/sdmx/2009/measure#obsValue"/>
+          <rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#value"/>
+          <sdmx-attribute:unitMeasure rdf:resource="http://finance.data.gov.uk/def/currency/GBP"/>
+          <sdmx-attribute:unitMult rdf:resource="http://purl.org/linked-data/sdmx/2009/code#unitMult-3"/>
+        </qb:MeasureProperty>
+      </qb:componentProperty>
+      <qb:componentAttachment rdf:resource="http://purl.org/linked-data/cube#DataSet"/>
+    </qb:component>
+    <qb:component rdf:parseType="Resource">
+      <qb:componentProperty>
+        <qb:AttributeProperty rdf:about="http://finance.data.gov.uk/dsd/coins/attribute/pesaTransfer">
+          <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+          <rdf:type rdf:resource="http://purl.org/linked-data/cube#CodedProperty"/>
+          <rdfs:label xml:lang="en">pesa-transfer attribute</rdfs:label>
+          <rdfs:comment>Attribute property representing pesa transfer</rdfs:comment>
+          <rdfs:range rdf:resource="http://finance.data.gov.uk/def/coins/pesa-transfer/PesaTransfer"/>
+          <qb:concept rdf:resource="http://finance.data.gov.uk/def/coins/statistical-concept/pesa-transfer"/>
+          <qb:codeList rdf:resource="http://finance.data.gov.uk/def/coins/pesa-transfer"/>
+          <skos:notation>pesa_transfer</skos:notation>
+        </qb:AttributeProperty>
+      </qb:componentProperty>
+    </qb:component>
+    <qb:component rdf:parseType="Resource">
+      <qb:componentProperty>
+        <qb:AttributeProperty rdf:about="http://finance.data.gov.uk/dsd/coins/attribute/estimateLine">
+          <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+          <rdf:type rdf:resource="http://purl.org/linked-data/cube#CodedProperty"/>
+          <rdfs:label xml:lang="en">estimate-line attribute</rdfs:label>
+          <rdfs:comment>Attribute property representing estimate line</rdfs:comment>
+          <rdfs:range rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line/EstimateLine"/>
+          <qb:concept rdf:resource="http://finance.data.gov.uk/def/coins/statistical-concept/estimate-line"/>
+          <qb:codeList rdf:resource="http://finance.data.gov.uk/def/coins/estimate-line"/>
+          <skos:notation>estimate_line</skos:notation>
+        </qb:AttributeProperty>
+      </qb:componentProperty>
+    </qb:component>
+    <qb:component rdf:parseType="Resource">
+      <qb:componentProperty>
+        <qb:DimensionProperty rdf:about="http://finance.data.gov.uk/dsd/coins/dimension/dataType">
+          <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+          <rdf:type rdf:resource="http://purl.org/linked-data/cube#CodedProperty"/>
+          <rdfs:label xml:lang="en">data-type dimension</rdfs:label>
+          <rdfs:comment>Dimension property representing data type</rdfs:comment>
+          <rdfs:range rdf:resource="http://finance.data.gov.uk/def/coins/data-type/DataType"/>
+          <qb:concept rdf:resource="http://finance.data.gov.uk/def/coins/statistical-concept/data-type"/>
+          <qb:codeList rdf:resource="http://finance.data.gov.uk/def/coins/data-type"/>
+          <skos:notation>data_type</skos:notation>
+        </qb:DimensionProperty>
+      </qb:componentProperty>
+      <qb:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+      >1</qb:order>
+    </qb:component>
+    <qb:component rdf:parseType="Resource">
+      <qb:componentProperty>
+        <qb:AttributeProperty rdf:about="http://finance.data.gov.uk/dsd/coins/attribute/estimateNumberLastYear">
+          <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+          <rdf:type rdf:resource="http://purl.org/linked-data/cube#CodedProperty"/>
+          <rdfs:label xml:lang="en">estimate-number-last-year attribute</rdfs:label>
+          <rdfs:comment>Attribute property representing estimate number last year</rdfs:comment>
+          <rdfs:range rdf:resource="http://finance.data.gov.uk/def/coins/estimate-number-last-year/EstimateNumberLastYear"/>
+          <qb:concept rdf:resource="http://finance.data.gov.uk/def/coins/statistical-concept/estimate-number-last-year"/>
+          <qb:codeList rdf:resource="http://finance.data.gov.uk/def/coins/estimate-number-last-year"/>
+          <skos:notation>estimate_number_last_year</skos:notation>
+        </qb:AttributeProperty>
+      </qb:componentProperty>
+    </qb:component>
+    <qb:component rdf:parseType="Resource">
+      <qb:componentProperty>
+        <qb:AttributeProperty rdf:about="http://finance.data.gov.uk/dsd/coins/attribute/estimatesAina">
+          <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+          <rdf:type rdf:resource="http://purl.org/linked-data/cube#CodedProperty"/>
+          <rdfs:label xml:lang="en">estimates-aina attribute</rdfs:label>
+          <rdfs:comment>Attribute property representing estimates aina</rdfs:comment>
+          <rdfs:range rdf:resource="http://finance.data.gov.uk/def/coins/estimates-aina/EstimatesAina"/>
+          <qb:concept rdf:resource="http://finance.data.gov.uk/def/coins/statistical-concept/estimates-aina"/>
+          <qb:codeList rdf:resource="http://finance.data.gov.uk/def/coins/estimates-aina"/>
+          <skos:notation>estimates_aina</skos:notation>
+        </qb:AttributeProperty>
+      </qb:componentProperty>
+    </qb:component>
+    <qb:component rdf:parseType="Resource">
+      <qb:componentProperty>
+        <qb:AttributeProperty rdf:about="http://finance.data.gov.uk/dsd/coins/attribute/nac">
+          <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+          <rdf:type rdf:resource="http://purl.org/linked-data/cube#CodedProperty"/>
+          <rdfs:label xml:lang="en">nac attribute</rdfs:label>
+          <rdfs:comment>Attribute property representing nac</rdfs:comment>
+          <rdfs:range rdf:resource="http://finance.data.gov.uk/def/coins/nac/Nac"/>
+          <qb:concept rdf:resource="http://finance.data.gov.uk/def/coins/statistical-concept/nac"/>
+          <qb:codeList rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+          <skos:notation>nac</skos:notation>
+        </qb:AttributeProperty>
+      </qb:componentProperty>
+    </qb:component>
+  </qb:DataStructureDefinition>
+</rdf:RDF>

@@ -1,0 +1,1818 @@
+# Generated 2010-11-09T16:53:43+00:00
+
+@prefix rdf:                <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:               <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:                <http://www.w3.org/2002/07/owl#> .
+@prefix skos:               <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd:                <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:               <http://xmlns.com/foaf/0.1/> .
+@prefix void:               <http://rdfs.org/ns/void#> .
+@prefix dcterms:            <http://purl.org/dc/terms/> .
+@prefix sdmx:               <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept:       <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:     <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:     <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:       <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-code:          <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:       <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix qb:                 <http://purl.org/linked-data/cube#> .
+@prefix coins-data:         <http://source.data.gov.uk/data/coins/> .
+@prefix coins-dsd:          <http://finance.data.gov.uk/dsd/coins/> .
+@prefix coins-dimension:    <http://finance.data.gov.uk/dsd/coins/dimension/> .
+@prefix coins-attribute:    <http://finance.data.gov.uk/dsd/coins/attribute/> .
+@prefix coins-measure:      <http://finance.data.gov.uk/dsd/coins/measure/> .
+@prefix coins-slicekey:     <http://finance.data.gov.uk/dsd/coins/slice/> .
+
+<http://finance.data.gov.uk/def/coins/statistical-concept/cofog>
+    a sdmx:Concept;
+    rdfs:label "COFOG"@en;
+    skos:prefLabel "COFOG"@en;
+    rdfs:comment """Classification of Functions of Government – classifies Programme Object codes by socio economic purpose consistent with United Nations definitions and also adopted by Eurostat. Used to populate a number of tables in PESA.""";
+    <http://purl.org/dc/terms/source> <http://www.hm-treasury.gov.uk/d/coins_guidance.pdf>;
+    <http://www.epimorphics.com/vocabs/coins-generate#columnName> "cofog"
+    .
+
+<http://finance.data.gov.uk/def/coins/Cofog>
+    a rdfs:Class, owl:Class;
+    rdfs:subClassOf skos:Concept;
+    rdfs:label "COFOG values class"@en;
+    skos:prefLabel "COFOG values class"@en;
+    rdfs:comment "The class of values in the COFOG code-list scheme";
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog>
+    a skos:ConceptScheme;
+    rdfs:label "COFOG code list concept scheme"@en;
+    skos:prefLabel "COFOG code list concept scheme"@en;
+    skos:hasTopConcept <http://finance.data.gov.uk/def/coins/cofog/cofog01010>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog010100>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog010101>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog010102>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog010103>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog01020>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog01030>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog010300>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog010301>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog010302>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog0104>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog0105>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog0106>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog01070>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog010700>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog010701>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog0108>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog0201>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog0202>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog0203>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog0204>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog0205>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog03010>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog030100>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog030101>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog0302>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog03030>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog030300>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog030301>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog0304>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog0305>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog0306>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog04010>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog040100>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog040101>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog04020>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog040200>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog040201>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog040202>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog040203>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog040204>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog04030>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog040300>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog040301>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog040302>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog040303>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog040304>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog04040>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog040400>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog040401>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog04050>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog040500>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog040501>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog040502>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog040503>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog040504>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog040505>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog040506>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog040507>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog0406>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog04070>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog040700>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog040701>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog04080>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog040800>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog040801>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog040802>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog040803>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog040804>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog040805>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog0409>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog0501>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog0502>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog0503>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog0504>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog0505>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog0506>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog06010>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog060100>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog060101>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog0602>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog0603>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog0604>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog0605>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog0606>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog07010>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog070100>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog07020>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog070200>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog070201>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog070202>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog070203>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog07030>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog070300>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog070301>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog0704>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog0705>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog0706>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog07a00>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog07b00>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog0801>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog0802>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog0803>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog0804>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog0805>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog0806>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog09010>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog090100>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog090101>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog090102>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog090103>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog09020>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog090200>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog090201>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog090202>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog090203>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog0902s>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog0902x>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog09030>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog090300>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog090301>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog09040>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog090400>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog090401>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog090402>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog090403>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog090404>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog09050>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog090500>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog090501>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog09060>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog090600>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog090601>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog09070>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog09080>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog090800>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog090801>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog10010>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog100100>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog100101>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog1001p>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog1001x>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog10020>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog100200>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog100201>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog10030>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog10040>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog100400>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog100401>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog10050>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog100500>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog1006>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog10070>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog100700>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog1008>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofog1009>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofogna01>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofogna02>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofogna03>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofogna04>,
+          <http://finance.data.gov.uk/def/coins/cofog/cofognaec>
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog01010>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG010100"@en;
+    skos:prefLabel "COFOG010100"@en;
+    skos:notation "cofog01010";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog010100>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG010101"@en;
+    skos:prefLabel "COFOG010101"@en;
+    skos:notation "cofog010100";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog010101>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG010101/COFOG0606"@en;
+    skos:prefLabel "COFOG010101/COFOG0606"@en;
+    skos:notation "cofog010101";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog010102>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG010102"@en;
+    skos:prefLabel "COFOG010102"@en;
+    skos:notation "cofog010102";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog010103>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG010103"@en;
+    skos:prefLabel "COFOG010103"@en;
+    skos:notation "cofog010103";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog01020>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG010200"@en;
+    skos:prefLabel "COFOG010200"@en;
+    skos:notation "cofog01020";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog01030>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG010300"@en;
+    skos:prefLabel "COFOG010300"@en;
+    skos:notation "cofog01030";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog010300>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG010301"@en;
+    skos:prefLabel "COFOG010301"@en;
+    skos:notation "cofog010300";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog010301>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG010302"@en;
+    skos:prefLabel "COFOG010302"@en;
+    skos:notation "cofog010301";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog010302>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG010303"@en;
+    skos:prefLabel "COFOG010303"@en;
+    skos:notation "cofog010302";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog0104>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG0104"@en;
+    skos:prefLabel "COFOG0104"@en;
+    skos:notation "cofog0104";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog0105>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG0105"@en;
+    skos:prefLabel "COFOG0105"@en;
+    skos:notation "cofog0105";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog0106>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG0106"@en;
+    skos:prefLabel "COFOG0106"@en;
+    skos:notation "cofog0106";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog01070>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG010701"@en;
+    skos:prefLabel "COFOG010701"@en;
+    skos:notation "cofog01070";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog010700>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG010702"@en;
+    skos:prefLabel "COFOG010702"@en;
+    skos:notation "cofog010700";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog010701>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG010703"@en;
+    skos:prefLabel "COFOG010703"@en;
+    skos:notation "cofog010701";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog0108>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG0108"@en;
+    skos:prefLabel "COFOG0108"@en;
+    skos:notation "cofog0108";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog0201>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG0201"@en;
+    skos:prefLabel "COFOG0201"@en;
+    skos:notation "cofog0201";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog0202>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG0202"@en;
+    skos:prefLabel "COFOG0202"@en;
+    skos:notation "cofog0202";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog0203>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG0203"@en;
+    skos:prefLabel "COFOG0203"@en;
+    skos:notation "cofog0203";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog0204>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG0204"@en;
+    skos:prefLabel "COFOG0204"@en;
+    skos:notation "cofog0204";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog0205>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG0205"@en;
+    skos:prefLabel "COFOG0205"@en;
+    skos:notation "cofog0205";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog03010>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG030100"@en;
+    skos:prefLabel "COFOG030100"@en;
+    skos:notation "cofog03010";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog030100>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG030101"@en;
+    skos:prefLabel "COFOG030101"@en;
+    skos:notation "cofog030100";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog030101>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG030102"@en;
+    skos:prefLabel "COFOG030102"@en;
+    skos:notation "cofog030101";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog0302>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG0302"@en;
+    skos:prefLabel "COFOG0302"@en;
+    skos:notation "cofog0302";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog03030>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG030300"@en;
+    skos:prefLabel "COFOG030300"@en;
+    skos:notation "cofog03030";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog030300>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG030301"@en;
+    skos:prefLabel "COFOG030301"@en;
+    skos:notation "cofog030300";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog030301>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG030302"@en;
+    skos:prefLabel "COFOG030302"@en;
+    skos:notation "cofog030301";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog0304>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG0304"@en;
+    skos:prefLabel "COFOG0304"@en;
+    skos:notation "cofog0304";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog0305>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG0305"@en;
+    skos:prefLabel "COFOG0305"@en;
+    skos:notation "cofog0305";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog0306>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG0306"@en;
+    skos:prefLabel "COFOG0306"@en;
+    skos:notation "cofog0306";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog04010>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG040100"@en;
+    skos:prefLabel "COFOG040100"@en;
+    skos:notation "cofog04010";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog040100>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG040101"@en;
+    skos:prefLabel "COFOG040101"@en;
+    skos:notation "cofog040100";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog040101>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG040102"@en;
+    skos:prefLabel "COFOG040102"@en;
+    skos:notation "cofog040101";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog04020>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG040200"@en;
+    skos:prefLabel "COFOG040200"@en;
+    skos:notation "cofog04020";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog040200>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG04020100"@en;
+    skos:prefLabel "COFOG04020100"@en;
+    skos:notation "cofog040200";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog040201>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG04020101"@en;
+    skos:prefLabel "COFOG04020101"@en;
+    skos:notation "cofog040201";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog040202>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG04020102"@en;
+    skos:prefLabel "COFOG04020102"@en;
+    skos:notation "cofog040202";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog040203>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG040202"@en;
+    skos:prefLabel "COFOG040202"@en;
+    skos:notation "cofog040203";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog040204>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG040203"@en;
+    skos:prefLabel "COFOG040203"@en;
+    skos:notation "cofog040204";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog04030>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG040300"@en;
+    skos:prefLabel "COFOG040300"@en;
+    skos:notation "cofog04030";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog040300>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG040301"@en;
+    skos:prefLabel "COFOG040301"@en;
+    skos:notation "cofog040300";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog040301>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG040302"@en;
+    skos:prefLabel "COFOG040302"@en;
+    skos:notation "cofog040301";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog040302>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG040303"@en;
+    skos:prefLabel "COFOG040303"@en;
+    skos:notation "cofog040302";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog040303>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG040305"@en;
+    skos:prefLabel "COFOG040305"@en;
+    skos:notation "cofog040303";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog040304>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG040306"@en;
+    skos:prefLabel "COFOG040306"@en;
+    skos:notation "cofog040304";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog04040>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG040400"@en;
+    skos:prefLabel "COFOG040400"@en;
+    skos:notation "cofog04040";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog040400>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG040402"@en;
+    skos:prefLabel "COFOG040402"@en;
+    skos:notation "cofog040400";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog040401>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG040403"@en;
+    skos:prefLabel "COFOG040403"@en;
+    skos:notation "cofog040401";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog04050>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG040500"@en;
+    skos:prefLabel "COFOG040500"@en;
+    skos:notation "cofog04050";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog040500>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG04050100"@en;
+    skos:prefLabel "COFOG04050100"@en;
+    skos:notation "cofog040500";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog040501>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG04050101"@en;
+    skos:prefLabel "COFOG04050101"@en;
+    skos:notation "cofog040501";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog040502>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG04050102"@en;
+    skos:prefLabel "COFOG04050102"@en;
+    skos:notation "cofog040502";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog040503>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG04050103"@en;
+    skos:prefLabel "COFOG04050103"@en;
+    skos:notation "cofog040503";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog040504>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG040502"@en;
+    skos:prefLabel "COFOG040502"@en;
+    skos:notation "cofog040504";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog040505>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG040503"@en;
+    skos:prefLabel "COFOG040503"@en;
+    skos:notation "cofog040505";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog040506>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG040504"@en;
+    skos:prefLabel "COFOG040504"@en;
+    skos:notation "cofog040506";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog040507>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG040505"@en;
+    skos:prefLabel "COFOG040505"@en;
+    skos:notation "cofog040507";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog0406>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG0406"@en;
+    skos:prefLabel "COFOG0406"@en;
+    skos:notation "cofog0406";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog04070>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG040700"@en;
+    skos:prefLabel "COFOG040700"@en;
+    skos:notation "cofog04070";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog040700>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG040702"@en;
+    skos:prefLabel "COFOG040702"@en;
+    skos:notation "cofog040700";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog040701>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG040703"@en;
+    skos:prefLabel "COFOG040703"@en;
+    skos:notation "cofog040701";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog04080>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG040800"@en;
+    skos:prefLabel "COFOG040800"@en;
+    skos:notation "cofog04080";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog040800>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG040801"@en;
+    skos:prefLabel "COFOG040801"@en;
+    skos:notation "cofog040800";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog040801>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG040802"@en;
+    skos:prefLabel "COFOG040802"@en;
+    skos:notation "cofog040801";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog040802>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG040803"@en;
+    skos:prefLabel "COFOG040803"@en;
+    skos:notation "cofog040802";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog040803>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG040804"@en;
+    skos:prefLabel "COFOG040804"@en;
+    skos:notation "cofog040803";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog040804>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG040805"@en;
+    skos:prefLabel "COFOG040805"@en;
+    skos:notation "cofog040804";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog040805>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG040807"@en;
+    skos:prefLabel "COFOG040807"@en;
+    skos:notation "cofog040805";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog0409>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG0409"@en;
+    skos:prefLabel "COFOG0409"@en;
+    skos:notation "cofog0409";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog0501>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG0501"@en;
+    skos:prefLabel "COFOG0501"@en;
+    skos:notation "cofog0501";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog0502>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG0502"@en;
+    skos:prefLabel "COFOG0502"@en;
+    skos:notation "cofog0502";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog0503>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG0503"@en;
+    skos:prefLabel "COFOG0503"@en;
+    skos:notation "cofog0503";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog0504>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG0504"@en;
+    skos:prefLabel "COFOG0504"@en;
+    skos:notation "cofog0504";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog0505>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG0505"@en;
+    skos:prefLabel "COFOG0505"@en;
+    skos:notation "cofog0505";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog0506>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG0506"@en;
+    skos:prefLabel "COFOG0506"@en;
+    skos:notation "cofog0506";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog06010>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG060100"@en;
+    skos:prefLabel "COFOG060100"@en;
+    skos:notation "cofog06010";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog060100>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG060101"@en;
+    skos:prefLabel "COFOG060101"@en;
+    skos:notation "cofog060100";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog060101>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG060102"@en;
+    skos:prefLabel "COFOG060102"@en;
+    skos:notation "cofog060101";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog0602>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG0602"@en;
+    skos:prefLabel "COFOG0602"@en;
+    skos:notation "cofog0602";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog0603>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG0603"@en;
+    skos:prefLabel "COFOG0603"@en;
+    skos:notation "cofog0603";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog0604>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG0604"@en;
+    skos:prefLabel "COFOG0604"@en;
+    skos:notation "cofog0604";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog0605>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG0605"@en;
+    skos:prefLabel "COFOG0605"@en;
+    skos:notation "cofog0605";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog0606>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG0606"@en;
+    skos:prefLabel "COFOG0606"@en;
+    skos:notation "cofog0606";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog07010>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG070101"@en;
+    skos:prefLabel "COFOG070101"@en;
+    skos:notation "cofog07010";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog070100>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG070103"@en;
+    skos:prefLabel "COFOG070103"@en;
+    skos:notation "cofog070100";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog07020>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG070200"@en;
+    skos:prefLabel "COFOG070200"@en;
+    skos:notation "cofog07020";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog070200>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG070201"@en;
+    skos:prefLabel "COFOG070201"@en;
+    skos:notation "cofog070200";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog070201>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG070202"@en;
+    skos:prefLabel "COFOG070202"@en;
+    skos:notation "cofog070201";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog070202>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG070203"@en;
+    skos:prefLabel "COFOG070203"@en;
+    skos:notation "cofog070202";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog070203>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG070204"@en;
+    skos:prefLabel "COFOG070204"@en;
+    skos:notation "cofog070203";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog07030>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG070300"@en;
+    skos:prefLabel "COFOG070300"@en;
+    skos:notation "cofog07030";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog070300>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG070301"@en;
+    skos:prefLabel "COFOG070301"@en;
+    skos:notation "cofog070300";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog070301>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG070302"@en;
+    skos:prefLabel "COFOG070302"@en;
+    skos:notation "cofog070301";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog0704>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG0704"@en;
+    skos:prefLabel "COFOG0704"@en;
+    skos:notation "cofog0704";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog0705>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG0705"@en;
+    skos:prefLabel "COFOG0705"@en;
+    skos:notation "cofog0705";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog0706>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG0706"@en;
+    skos:prefLabel "COFOG0706"@en;
+    skos:notation "cofog0706";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog07a00>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG07A00"@en;
+    skos:prefLabel "COFOG07A00"@en;
+    skos:notation "cofog07a00";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog07b00>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG07B00"@en;
+    skos:prefLabel "COFOG07B00"@en;
+    skos:notation "cofog07b00";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog0801>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG0801"@en;
+    skos:prefLabel "COFOG0801"@en;
+    skos:notation "cofog0801";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog0802>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG0802"@en;
+    skos:prefLabel "COFOG0802"@en;
+    skos:notation "cofog0802";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog0803>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG0803"@en;
+    skos:prefLabel "COFOG0803"@en;
+    skos:notation "cofog0803";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog0804>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG0804"@en;
+    skos:prefLabel "COFOG0804"@en;
+    skos:notation "cofog0804";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog0805>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG0805"@en;
+    skos:prefLabel "COFOG0805"@en;
+    skos:notation "cofog0805";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog0806>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG0806"@en;
+    skos:prefLabel "COFOG0806"@en;
+    skos:notation "cofog0806";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog09010>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG090100"@en;
+    skos:prefLabel "COFOG090100"@en;
+    skos:notation "cofog09010";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog090100>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG090101XSS"@en;
+    skos:prefLabel "COFOG090101XSS"@en;
+    skos:notation "cofog090100";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog090101>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG09010200"@en;
+    skos:prefLabel "COFOG09010200"@en;
+    skos:notation "cofog090101";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog090102>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG09010200/COFOG090200"@en;
+    skos:prefLabel "COFOG09010200/COFOG090200"@en;
+    skos:notation "cofog090102";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog090103>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG090102XSS"@en;
+    skos:prefLabel "COFOG090102XSS"@en;
+    skos:notation "cofog090103";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog09020>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG090200"@en;
+    skos:prefLabel "COFOG090200"@en;
+    skos:notation "cofog09020";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog090200>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG090201SS"@en;
+    skos:prefLabel "COFOG090201SS"@en;
+    skos:notation "cofog090200";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog090201>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG090201XSS"@en;
+    skos:prefLabel "COFOG090201XSS"@en;
+    skos:notation "cofog090201";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog090202>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG090202SS"@en;
+    skos:prefLabel "COFOG090202SS"@en;
+    skos:notation "cofog090202";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog090203>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG090202XSS"@en;
+    skos:prefLabel "COFOG090202XSS"@en;
+    skos:notation "cofog090203";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog0902s>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG0902SS"@en;
+    skos:prefLabel "COFOG0902SS"@en;
+    skos:notation "cofog0902s";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog0902x>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG0902XSS"@en;
+    skos:prefLabel "COFOG0902XSS"@en;
+    skos:notation "cofog0902x";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog09030>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG090300"@en;
+    skos:prefLabel "COFOG090300"@en;
+    skos:notation "cofog09030";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog090300>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG090301"@en;
+    skos:prefLabel "COFOG090301"@en;
+    skos:notation "cofog090300";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog090301>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG090302"@en;
+    skos:prefLabel "COFOG090302"@en;
+    skos:notation "cofog090301";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog09040>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG090400"@en;
+    skos:prefLabel "COFOG090400"@en;
+    skos:notation "cofog09040";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog090400>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG09040100"@en;
+    skos:prefLabel "COFOG09040100"@en;
+    skos:notation "cofog090400";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog090401>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG09040101"@en;
+    skos:prefLabel "COFOG09040101"@en;
+    skos:notation "cofog090401";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog090402>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG09040200"@en;
+    skos:prefLabel "COFOG09040200"@en;
+    skos:notation "cofog090402";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog090403>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG09040201"@en;
+    skos:prefLabel "COFOG09040201"@en;
+    skos:notation "cofog090403";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog090404>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG09040201/COFOG090800"@en;
+    skos:prefLabel "COFOG09040201/COFOG090800"@en;
+    skos:notation "cofog090404";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog09050>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG090500"@en;
+    skos:prefLabel "COFOG090500"@en;
+    skos:notation "cofog09050";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog090500>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG090501"@en;
+    skos:prefLabel "COFOG090501"@en;
+    skos:notation "cofog090500";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog090501>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG090502"@en;
+    skos:prefLabel "COFOG090502"@en;
+    skos:notation "cofog090501";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog09060>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG090600"@en;
+    skos:prefLabel "COFOG090600"@en;
+    skos:notation "cofog09060";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog090600>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG090601"@en;
+    skos:prefLabel "COFOG090601"@en;
+    skos:notation "cofog090600";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog090601>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG090602"@en;
+    skos:prefLabel "COFOG090602"@en;
+    skos:notation "cofog090601";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog09070>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG090700"@en;
+    skos:prefLabel "COFOG090700"@en;
+    skos:notation "cofog09070";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog09080>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG090800"@en;
+    skos:prefLabel "COFOG090800"@en;
+    skos:notation "cofog09080";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog090800>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG090801"@en;
+    skos:prefLabel "COFOG090801"@en;
+    skos:notation "cofog090800";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog090801>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG090802"@en;
+    skos:prefLabel "COFOG090802"@en;
+    skos:notation "cofog090801";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog10010>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG100101PSS"@en;
+    skos:prefLabel "COFOG100101PSS"@en;
+    skos:notation "cofog10010";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog100100>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG100101XPSS"@en;
+    skos:prefLabel "COFOG100101XPSS"@en;
+    skos:notation "cofog100100";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog100101>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG100102XPSS"@en;
+    skos:prefLabel "COFOG100102XPSS"@en;
+    skos:notation "cofog100101";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog1001p>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG1001PSS"@en;
+    skos:prefLabel "COFOG1001PSS"@en;
+    skos:notation "cofog1001p";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog1001x>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG1001XPSS"@en;
+    skos:prefLabel "COFOG1001XPSS"@en;
+    skos:notation "cofog1001x";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog10020>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG100200"@en;
+    skos:prefLabel "COFOG100200"@en;
+    skos:notation "cofog10020";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog100200>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG100201"@en;
+    skos:prefLabel "COFOG100201"@en;
+    skos:notation "cofog100200";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog100201>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG100202"@en;
+    skos:prefLabel "COFOG100202"@en;
+    skos:notation "cofog100201";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog10030>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG100301"@en;
+    skos:prefLabel "COFOG100301"@en;
+    skos:notation "cofog10030";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog10040>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG100400"@en;
+    skos:prefLabel "COFOG100400"@en;
+    skos:notation "cofog10040";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog100400>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG100401"@en;
+    skos:prefLabel "COFOG100401"@en;
+    skos:notation "cofog100400";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog100401>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG100402"@en;
+    skos:prefLabel "COFOG100402"@en;
+    skos:notation "cofog100401";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog10050>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG100501"@en;
+    skos:prefLabel "COFOG100501"@en;
+    skos:notation "cofog10050";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog100500>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG100502"@en;
+    skos:prefLabel "COFOG100502"@en;
+    skos:notation "cofog100500";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog1006>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG1006"@en;
+    skos:prefLabel "COFOG1006"@en;
+    skos:notation "cofog1006";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog10070>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG100701"@en;
+    skos:prefLabel "COFOG100701"@en;
+    skos:notation "cofog10070";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog100700>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG100702"@en;
+    skos:prefLabel "COFOG100702"@en;
+    skos:notation "cofog100700";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog1008>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG1008"@en;
+    skos:prefLabel "COFOG1008"@en;
+    skos:notation "cofog1008";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofog1009>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOG1009"@en;
+    skos:prefLabel "COFOG1009"@en;
+    skos:notation "cofog1009";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofogna01>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOGNA01"@en;
+    skos:prefLabel "COFOGNA01"@en;
+    skos:notation "cofogna01";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofogna02>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOGNA02"@en;
+    skos:prefLabel "COFOGNA02"@en;
+    skos:notation "cofogna02";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofogna03>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOGNA03"@en;
+    skos:prefLabel "COFOGNA03"@en;
+    skos:notation "cofogna03";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofogna04>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOGNA04"@en;
+    skos:prefLabel "COFOGNA04"@en;
+    skos:notation "cofogna04";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/cofog/cofognaec>
+    a <http://finance.data.gov.uk/def/coins/Cofog>, skos:Concept;
+    rdfs:label "COFOGNAEC"@en;
+    skos:prefLabel "COFOGNAEC"@en;
+    skos:notation "cofognaec";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/cofog>;
+    
+    .

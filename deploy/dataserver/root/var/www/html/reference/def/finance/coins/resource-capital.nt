@@ -1,0 +1,39 @@
+<http://finance.data.gov.uk/def/coins/statistical-concept/resource-capital> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/sdmx#Concept> .
+<http://finance.data.gov.uk/def/coins/statistical-concept/resource-capital> <http://www.w3.org/2000/01/rdf-schema#label> "resource capital"@en .
+<http://finance.data.gov.uk/def/coins/statistical-concept/resource-capital> <http://www.w3.org/2004/02/skos/core#prefLabel> "resource capital"@en .
+<http://finance.data.gov.uk/def/coins/statistical-concept/resource-capital> <http://www.w3.org/2000/01/rdf-schema#comment> "Gives the classification for budgets under the 2010-11 budgetary framework" .
+<http://finance.data.gov.uk/def/coins/statistical-concept/resource-capital> <http://purl.org/dc/terms/source> <http://www.hm-treasury.gov.uk/d/coins_guidance.pdf> .
+<http://finance.data.gov.uk/def/coins/statistical-concept/resource-capital> <http://www.epimorphics.com/vocabs/coins-generate#columnName> "resource_capital" .
+<http://finance.data.gov.uk/def/coins/resource-capital> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://finance.data.gov.uk/def/coins/resource-capital> <http://www.w3.org/2000/01/rdf-schema#label> "resource capital code list concept scheme"@en .
+<http://finance.data.gov.uk/def/coins/resource-capital> <http://www.w3.org/2004/02/skos/core#prefLabel> "resource capital code list concept scheme"@en .
+<http://finance.data.gov.uk/def/coins/resource-capital> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/resource-capital/capital> .
+<http://finance.data.gov.uk/def/coins/resource-capital> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/resource-capital/nrc> .
+<http://finance.data.gov.uk/def/coins/resource-capital> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/resource-capital/resource> .
+<http://finance.data.gov.uk/def/coins/resource-capital/resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/ResourceCapital> .
+<http://finance.data.gov.uk/def/coins/resource-capital/resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/resource-capital/resource> <http://www.w3.org/2000/01/rdf-schema#label> "Resource"@en .
+<http://finance.data.gov.uk/def/coins/resource-capital/resource> <http://www.w3.org/2004/02/skos/core#prefLabel> "Resource"@en .
+<http://finance.data.gov.uk/def/coins/resource-capital/resource> <http://www.w3.org/2004/02/skos/core#notation> "resource" .
+<http://finance.data.gov.uk/def/coins/resource-capital/resource> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/resource-capital/resource> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/resource-capital> .
+<http://finance.data.gov.uk/def/coins/resource-capital/nrc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/ResourceCapital> .
+<http://finance.data.gov.uk/def/coins/resource-capital/nrc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/resource-capital/nrc> <http://www.w3.org/2000/01/rdf-schema#label> "Not Resource/Capital"@en .
+<http://finance.data.gov.uk/def/coins/resource-capital/nrc> <http://www.w3.org/2004/02/skos/core#prefLabel> "Not Resource/Capital"@en .
+<http://finance.data.gov.uk/def/coins/resource-capital/nrc> <http://www.w3.org/2004/02/skos/core#notation> "nrc" .
+<http://finance.data.gov.uk/def/coins/resource-capital/nrc> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/resource-capital/nrc> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/resource-capital> .
+<http://finance.data.gov.uk/def/coins/resource-capital/capital> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/ResourceCapital> .
+<http://finance.data.gov.uk/def/coins/resource-capital/capital> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/resource-capital/capital> <http://www.w3.org/2000/01/rdf-schema#label> "Capital"@en .
+<http://finance.data.gov.uk/def/coins/resource-capital/capital> <http://www.w3.org/2004/02/skos/core#prefLabel> "Capital"@en .
+<http://finance.data.gov.uk/def/coins/resource-capital/capital> <http://www.w3.org/2004/02/skos/core#notation> "capital" .
+<http://finance.data.gov.uk/def/coins/resource-capital/capital> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/resource-capital/capital> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/resource-capital> .
+<http://finance.data.gov.uk/def/coins/ResourceCapital> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://finance.data.gov.uk/def/coins/ResourceCapital> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://finance.data.gov.uk/def/coins/ResourceCapital> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/ResourceCapital> <http://www.w3.org/2000/01/rdf-schema#label> "resource capital values class"@en .
+<http://finance.data.gov.uk/def/coins/ResourceCapital> <http://www.w3.org/2004/02/skos/core#prefLabel> "resource capital values class"@en .
+<http://finance.data.gov.uk/def/coins/ResourceCapital> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of values in the resource capital code-list scheme" .

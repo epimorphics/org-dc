@@ -1,0 +1,31 @@
+<http://finance.data.gov.uk/def/coins/statistical-concept/pesa-delivery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/sdmx#Concept> .
+<http://finance.data.gov.uk/def/coins/statistical-concept/pesa-delivery> <http://www.w3.org/2000/01/rdf-schema#label> "pesa delivery"@en .
+<http://finance.data.gov.uk/def/coins/statistical-concept/pesa-delivery> <http://www.w3.org/2004/02/skos/core#prefLabel> "pesa delivery"@en .
+<http://finance.data.gov.uk/def/coins/statistical-concept/pesa-delivery> <http://www.w3.org/2000/01/rdf-schema#comment> "Used to identify whether data can be identified as benefiting particular regions. " .
+<http://finance.data.gov.uk/def/coins/statistical-concept/pesa-delivery> <http://purl.org/dc/terms/source> <http://www.hm-treasury.gov.uk/d/coins_guidance.pdf> .
+<http://finance.data.gov.uk/def/coins/statistical-concept/pesa-delivery> <http://www.epimorphics.com/vocabs/coins-generate#columnName> "pesa_delivery" .
+<http://finance.data.gov.uk/def/coins/pesa-delivery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://finance.data.gov.uk/def/coins/pesa-delivery> <http://www.w3.org/2000/01/rdf-schema#label> "pesa delivery code list concept scheme"@en .
+<http://finance.data.gov.uk/def/coins/pesa-delivery> <http://www.w3.org/2004/02/skos/core#prefLabel> "pesa delivery code list concept scheme"@en .
+<http://finance.data.gov.uk/def/coins/pesa-delivery> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/pesa-delivery/nr> .
+<http://finance.data.gov.uk/def/coins/pesa-delivery> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/pesa-delivery/regional> .
+<http://finance.data.gov.uk/def/coins/PesaDelivery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://finance.data.gov.uk/def/coins/PesaDelivery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://finance.data.gov.uk/def/coins/PesaDelivery> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/PesaDelivery> <http://www.w3.org/2000/01/rdf-schema#label> "pesa delivery values class"@en .
+<http://finance.data.gov.uk/def/coins/PesaDelivery> <http://www.w3.org/2004/02/skos/core#prefLabel> "pesa delivery values class"@en .
+<http://finance.data.gov.uk/def/coins/PesaDelivery> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of values in the pesa delivery code-list scheme" .
+<http://finance.data.gov.uk/def/coins/pesa-delivery/regional> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/PesaDelivery> .
+<http://finance.data.gov.uk/def/coins/pesa-delivery/regional> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/pesa-delivery/regional> <http://www.w3.org/2000/01/rdf-schema#label> "Regional"@en .
+<http://finance.data.gov.uk/def/coins/pesa-delivery/regional> <http://www.w3.org/2004/02/skos/core#prefLabel> "Regional"@en .
+<http://finance.data.gov.uk/def/coins/pesa-delivery/regional> <http://www.w3.org/2004/02/skos/core#notation> "regional" .
+<http://finance.data.gov.uk/def/coins/pesa-delivery/regional> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/pesa-delivery/regional> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/pesa-delivery> .
+<http://finance.data.gov.uk/def/coins/pesa-delivery/nr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/PesaDelivery> .
+<http://finance.data.gov.uk/def/coins/pesa-delivery/nr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/pesa-delivery/nr> <http://www.w3.org/2000/01/rdf-schema#label> "Non-Regional"@en .
+<http://finance.data.gov.uk/def/coins/pesa-delivery/nr> <http://www.w3.org/2004/02/skos/core#prefLabel> "Non-Regional"@en .
+<http://finance.data.gov.uk/def/coins/pesa-delivery/nr> <http://www.w3.org/2004/02/skos/core#notation> "nr" .
+<http://finance.data.gov.uk/def/coins/pesa-delivery/nr> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/pesa-delivery/nr> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/pesa-delivery> .

@@ -1,0 +1,470 @@
+<http://finance.data.gov.uk/dsd/coins/attribute/pesaDelivery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#AttributeProperty> .
+<http://finance.data.gov.uk/dsd/coins/attribute/pesaDelivery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://finance.data.gov.uk/dsd/coins/attribute/pesaDelivery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#CodedProperty> .
+<http://finance.data.gov.uk/dsd/coins/attribute/pesaDelivery> <http://www.w3.org/2000/01/rdf-schema#label> "pesa-delivery attribute"@en .
+<http://finance.data.gov.uk/dsd/coins/attribute/pesaDelivery> <http://www.w3.org/2000/01/rdf-schema#comment> "Attribute property representing pesa delivery" .
+<http://finance.data.gov.uk/dsd/coins/attribute/pesaDelivery> <http://www.w3.org/2000/01/rdf-schema#range> <http://finance.data.gov.uk/def/coins/pesa-delivery/PesaDelivery> .
+<http://finance.data.gov.uk/dsd/coins/attribute/pesaDelivery> <http://purl.org/linked-data/cube#concept> <http://finance.data.gov.uk/def/coins/statistical-concept/pesa-delivery> .
+<http://finance.data.gov.uk/dsd/coins/attribute/pesaDelivery> <http://purl.org/linked-data/cube#codeList> <http://finance.data.gov.uk/def/coins/pesa-delivery> .
+<http://finance.data.gov.uk/dsd/coins/attribute/pesaDelivery> <http://www.w3.org/2004/02/skos/core#notation> "pesa_delivery" .
+<http://finance.data.gov.uk/dsd/coins/attribute/estimatesCapitalCurrent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#AttributeProperty> .
+<http://finance.data.gov.uk/dsd/coins/attribute/estimatesCapitalCurrent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://finance.data.gov.uk/dsd/coins/attribute/estimatesCapitalCurrent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#CodedProperty> .
+<http://finance.data.gov.uk/dsd/coins/attribute/estimatesCapitalCurrent> <http://www.w3.org/2000/01/rdf-schema#label> "estimates-capital-current attribute"@en .
+<http://finance.data.gov.uk/dsd/coins/attribute/estimatesCapitalCurrent> <http://www.w3.org/2000/01/rdf-schema#comment> "Attribute property representing estimates capital current" .
+<http://finance.data.gov.uk/dsd/coins/attribute/estimatesCapitalCurrent> <http://www.w3.org/2000/01/rdf-schema#range> <http://finance.data.gov.uk/def/coins/estimates-capital-current/EstimatesCapitalCurrent> .
+<http://finance.data.gov.uk/dsd/coins/attribute/estimatesCapitalCurrent> <http://purl.org/linked-data/cube#concept> <http://finance.data.gov.uk/def/coins/statistical-concept/estimates-capital-current> .
+<http://finance.data.gov.uk/dsd/coins/attribute/estimatesCapitalCurrent> <http://purl.org/linked-data/cube#codeList> <http://finance.data.gov.uk/def/coins/estimates-capital-current> .
+<http://finance.data.gov.uk/dsd/coins/attribute/estimatesCapitalCurrent> <http://www.w3.org/2004/02/skos/core#notation> "estimates_capital_current" .
+<http://finance.data.gov.uk/dsd/coins/attribute/requestForResources> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#AttributeProperty> .
+<http://finance.data.gov.uk/dsd/coins/attribute/requestForResources> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://finance.data.gov.uk/dsd/coins/attribute/requestForResources> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#CodedProperty> .
+<http://finance.data.gov.uk/dsd/coins/attribute/requestForResources> <http://www.w3.org/2000/01/rdf-schema#label> "request-for-resources attribute"@en .
+<http://finance.data.gov.uk/dsd/coins/attribute/requestForResources> <http://www.w3.org/2000/01/rdf-schema#comment> "Attribute property representing request for resources" .
+<http://finance.data.gov.uk/dsd/coins/attribute/requestForResources> <http://www.w3.org/2000/01/rdf-schema#range> <http://finance.data.gov.uk/def/coins/request-for-resources/RequestForResources> .
+<http://finance.data.gov.uk/dsd/coins/attribute/requestForResources> <http://purl.org/linked-data/cube#concept> <http://finance.data.gov.uk/def/coins/statistical-concept/request-for-resources> .
+<http://finance.data.gov.uk/dsd/coins/attribute/requestForResources> <http://purl.org/linked-data/cube#codeList> <http://finance.data.gov.uk/def/coins/request-for-resources> .
+<http://finance.data.gov.uk/dsd/coins/attribute/requestForResources> <http://www.w3.org/2004/02/skos/core#notation> "request_for_resources" .
+_:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7fe1 <http://purl.org/linked-data/cube#componentProperty> <http://finance.data.gov.uk/dsd/coins/attribute/pesaTransfer> .
+_:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7fda <http://purl.org/linked-data/cube#componentProperty> <http://finance.data.gov.uk/dsd/coins/attribute/sbi> .
+_:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7ff4 <http://purl.org/linked-data/cube#componentProperty> <http://finance.data.gov.uk/dsd/coins/attribute/budgetCapitalCurrent> .
+<http://finance.data.gov.uk/dsd/coins/attribute/pesaTransfer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#AttributeProperty> .
+<http://finance.data.gov.uk/dsd/coins/attribute/pesaTransfer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://finance.data.gov.uk/dsd/coins/attribute/pesaTransfer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#CodedProperty> .
+<http://finance.data.gov.uk/dsd/coins/attribute/pesaTransfer> <http://www.w3.org/2000/01/rdf-schema#label> "pesa-transfer attribute"@en .
+<http://finance.data.gov.uk/dsd/coins/attribute/pesaTransfer> <http://www.w3.org/2000/01/rdf-schema#comment> "Attribute property representing pesa transfer" .
+<http://finance.data.gov.uk/dsd/coins/attribute/pesaTransfer> <http://www.w3.org/2000/01/rdf-schema#range> <http://finance.data.gov.uk/def/coins/pesa-transfer/PesaTransfer> .
+<http://finance.data.gov.uk/dsd/coins/attribute/pesaTransfer> <http://purl.org/linked-data/cube#concept> <http://finance.data.gov.uk/def/coins/statistical-concept/pesa-transfer> .
+<http://finance.data.gov.uk/dsd/coins/attribute/pesaTransfer> <http://purl.org/linked-data/cube#codeList> <http://finance.data.gov.uk/def/coins/pesa-transfer> .
+<http://finance.data.gov.uk/dsd/coins/attribute/pesaTransfer> <http://www.w3.org/2004/02/skos/core#notation> "pesa_transfer" .
+_:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7fed <http://purl.org/linked-data/cube#componentProperty> <http://finance.data.gov.uk/dsd/coins/attribute/estimateLineNextYear> .
+<http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://www.w3.org/2004/02/skos/core#notation> "t_time" .
+<http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://purl.org/linked-data/cube#concept> <http://finance.data.gov.uk/def/coins/statistical-concept/time> .
+<http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#CodedProperty> .
+<http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#DimensionProperty> .
+_:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7fd9 <http://purl.org/linked-data/cube#componentProperty> <http://finance.data.gov.uk/dsd/coins/attribute/sector> .
+<http://finance.data.gov.uk/dsd/coins/attribute/programmeObjectGroupCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#AttributeProperty> .
+<http://finance.data.gov.uk/dsd/coins/attribute/programmeObjectGroupCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://finance.data.gov.uk/dsd/coins/attribute/programmeObjectGroupCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#CodedProperty> .
+<http://finance.data.gov.uk/dsd/coins/attribute/programmeObjectGroupCode> <http://www.w3.org/2000/01/rdf-schema#label> "programme-object-group-code attribute"@en .
+<http://finance.data.gov.uk/dsd/coins/attribute/programmeObjectGroupCode> <http://www.w3.org/2000/01/rdf-schema#comment> "Attribute property representing programme object group code" .
+<http://finance.data.gov.uk/dsd/coins/attribute/programmeObjectGroupCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://finance.data.gov.uk/def/coins/programme-object-group-code/ProgrammeObjectGroupCode> .
+<http://finance.data.gov.uk/dsd/coins/attribute/programmeObjectGroupCode> <http://purl.org/linked-data/cube#concept> <http://finance.data.gov.uk/def/coins/statistical-concept/programme-object-group-code> .
+<http://finance.data.gov.uk/dsd/coins/attribute/programmeObjectGroupCode> <http://purl.org/linked-data/cube#codeList> <http://finance.data.gov.uk/def/coins/programme-object-group-code> .
+<http://finance.data.gov.uk/dsd/coins/attribute/programmeObjectGroupCode> <http://www.w3.org/2004/02/skos/core#notation> "programme_object_group_code" .
+_:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7ffa <http://purl.org/linked-data/cube#componentProperty> <http://finance.data.gov.uk/dsd/coins/dimension/programmeObjectCode> .
+_:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7ffa <http://purl.org/linked-data/cube#order> "5"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://finance.data.gov.uk/dsd/coins/attribute/estimateNumberLastYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#AttributeProperty> .
+<http://finance.data.gov.uk/dsd/coins/attribute/estimateNumberLastYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://finance.data.gov.uk/dsd/coins/attribute/estimateNumberLastYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#CodedProperty> .
+<http://finance.data.gov.uk/dsd/coins/attribute/estimateNumberLastYear> <http://www.w3.org/2000/01/rdf-schema#label> "estimate-number-last-year attribute"@en .
+<http://finance.data.gov.uk/dsd/coins/attribute/estimateNumberLastYear> <http://www.w3.org/2000/01/rdf-schema#comment> "Attribute property representing estimate number last year" .
+<http://finance.data.gov.uk/dsd/coins/attribute/estimateNumberLastYear> <http://www.w3.org/2000/01/rdf-schema#range> <http://finance.data.gov.uk/def/coins/estimate-number-last-year/EstimateNumberLastYear> .
+<http://finance.data.gov.uk/dsd/coins/attribute/estimateNumberLastYear> <http://purl.org/linked-data/cube#concept> <http://finance.data.gov.uk/def/coins/statistical-concept/estimate-number-last-year> .
+<http://finance.data.gov.uk/dsd/coins/attribute/estimateNumberLastYear> <http://purl.org/linked-data/cube#codeList> <http://finance.data.gov.uk/def/coins/estimate-number-last-year> .
+<http://finance.data.gov.uk/dsd/coins/attribute/estimateNumberLastYear> <http://www.w3.org/2004/02/skos/core#notation> "estimate_number_last_year" .
+<http://finance.data.gov.uk/dsd/coins/attribute/pesa11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#AttributeProperty> .
+<http://finance.data.gov.uk/dsd/coins/attribute/pesa11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://finance.data.gov.uk/dsd/coins/attribute/pesa11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#CodedProperty> .
+<http://finance.data.gov.uk/dsd/coins/attribute/pesa11> <http://www.w3.org/2000/01/rdf-schema#label> "pesa-1-1 attribute"@en .
+<http://finance.data.gov.uk/dsd/coins/attribute/pesa11> <http://www.w3.org/2000/01/rdf-schema#comment> "Attribute property representing pesa 1 1" .
+<http://finance.data.gov.uk/dsd/coins/attribute/pesa11> <http://www.w3.org/2000/01/rdf-schema#range> <http://finance.data.gov.uk/def/coins/pesa-1-1/Pesa11> .
+<http://finance.data.gov.uk/dsd/coins/attribute/pesa11> <http://purl.org/linked-data/cube#concept> <http://finance.data.gov.uk/def/coins/statistical-concept/pesa-1-1> .
+<http://finance.data.gov.uk/dsd/coins/attribute/pesa11> <http://purl.org/linked-data/cube#codeList> <http://finance.data.gov.uk/def/coins/pesa-1-1> .
+<http://finance.data.gov.uk/dsd/coins/attribute/pesa11> <http://www.w3.org/2004/02/skos/core#notation> "pesa_1_1" .
+<http://finance.data.gov.uk/dsd/coins/attribute/budgetBoundary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#AttributeProperty> .
+<http://finance.data.gov.uk/dsd/coins/attribute/budgetBoundary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://finance.data.gov.uk/dsd/coins/attribute/budgetBoundary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#CodedProperty> .
+<http://finance.data.gov.uk/dsd/coins/attribute/budgetBoundary> <http://www.w3.org/2000/01/rdf-schema#label> "budget-boundary attribute"@en .
+<http://finance.data.gov.uk/dsd/coins/attribute/budgetBoundary> <http://www.w3.org/2000/01/rdf-schema#comment> "Attribute property representing budget boundary" .
+<http://finance.data.gov.uk/dsd/coins/attribute/budgetBoundary> <http://www.w3.org/2000/01/rdf-schema#range> <http://finance.data.gov.uk/def/coins/budget-boundary/BudgetBoundary> .
+<http://finance.data.gov.uk/dsd/coins/attribute/budgetBoundary> <http://purl.org/linked-data/cube#concept> <http://finance.data.gov.uk/def/coins/statistical-concept/budget-boundary> .
+<http://finance.data.gov.uk/dsd/coins/attribute/budgetBoundary> <http://purl.org/linked-data/cube#codeList> <http://finance.data.gov.uk/def/coins/budget-boundary> .
+<http://finance.data.gov.uk/dsd/coins/attribute/budgetBoundary> <http://www.w3.org/2004/02/skos/core#notation> "budget_boundary" .
+_:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7fe6 <http://purl.org/linked-data/cube#componentProperty> <http://finance.data.gov.uk/dsd/coins/attribute/nac> .
+<http://finance.data.gov.uk/dsd/coins/attribute/resourceCapital> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#AttributeProperty> .
+<http://finance.data.gov.uk/dsd/coins/attribute/resourceCapital> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://finance.data.gov.uk/dsd/coins/attribute/resourceCapital> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#CodedProperty> .
+<http://finance.data.gov.uk/dsd/coins/attribute/resourceCapital> <http://www.w3.org/2000/01/rdf-schema#label> "resource-capital attribute"@en .
+<http://finance.data.gov.uk/dsd/coins/attribute/resourceCapital> <http://www.w3.org/2000/01/rdf-schema#comment> "Attribute property representing resource capital" .
+<http://finance.data.gov.uk/dsd/coins/attribute/resourceCapital> <http://www.w3.org/2000/01/rdf-schema#range> <http://finance.data.gov.uk/def/coins/resource-capital/ResourceCapital> .
+<http://finance.data.gov.uk/dsd/coins/attribute/resourceCapital> <http://purl.org/linked-data/cube#concept> <http://finance.data.gov.uk/def/coins/statistical-concept/resource-capital> .
+<http://finance.data.gov.uk/dsd/coins/attribute/resourceCapital> <http://purl.org/linked-data/cube#codeList> <http://finance.data.gov.uk/def/coins/resource-capital> .
+<http://finance.data.gov.uk/dsd/coins/attribute/resourceCapital> <http://www.w3.org/2004/02/skos/core#notation> "resource_capital" .
+_:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7fdf <http://purl.org/linked-data/cube#componentProperty> <http://finance.data.gov.uk/dsd/coins/attribute/programmeObjectGroupCode> .
+<http://finance.data.gov.uk/dsd/coins/dimension/dataType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#DimensionProperty> .
+<http://finance.data.gov.uk/dsd/coins/dimension/dataType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://finance.data.gov.uk/dsd/coins/dimension/dataType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#CodedProperty> .
+<http://finance.data.gov.uk/dsd/coins/dimension/dataType> <http://www.w3.org/2000/01/rdf-schema#label> "data-type dimension"@en .
+<http://finance.data.gov.uk/dsd/coins/dimension/dataType> <http://www.w3.org/2000/01/rdf-schema#comment> "Dimension property representing data type" .
+<http://finance.data.gov.uk/dsd/coins/dimension/dataType> <http://www.w3.org/2000/01/rdf-schema#range> <http://finance.data.gov.uk/def/coins/data-type/DataType> .
+<http://finance.data.gov.uk/dsd/coins/dimension/dataType> <http://purl.org/linked-data/cube#concept> <http://finance.data.gov.uk/def/coins/statistical-concept/data-type> .
+<http://finance.data.gov.uk/dsd/coins/dimension/dataType> <http://purl.org/linked-data/cube#codeList> <http://finance.data.gov.uk/def/coins/data-type> .
+<http://finance.data.gov.uk/dsd/coins/dimension/dataType> <http://www.w3.org/2004/02/skos/core#notation> "data_type" .
+_:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7ff9 <http://purl.org/linked-data/cube#componentProperty> <http://finance.data.gov.uk/dsd/coins/dimension/counterpartyCode> .
+_:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7ff9 <http://purl.org/linked-data/cube#order> "6"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://finance.data.gov.uk/dsd/coins/dimension/counterpartyCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#DimensionProperty> .
+<http://finance.data.gov.uk/dsd/coins/dimension/counterpartyCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://finance.data.gov.uk/dsd/coins/dimension/counterpartyCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#CodedProperty> .
+<http://finance.data.gov.uk/dsd/coins/dimension/counterpartyCode> <http://www.w3.org/2000/01/rdf-schema#label> "counterparty-code dimension"@en .
+<http://finance.data.gov.uk/dsd/coins/dimension/counterpartyCode> <http://www.w3.org/2000/01/rdf-schema#comment> "Dimension property representing counterparty code" .
+<http://finance.data.gov.uk/dsd/coins/dimension/counterpartyCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://finance.data.gov.uk/def/coins/counterparty-code/CounterpartyCode> .
+<http://finance.data.gov.uk/dsd/coins/dimension/counterpartyCode> <http://purl.org/linked-data/cube#concept> <http://finance.data.gov.uk/def/coins/statistical-concept/counterparty-code> .
+<http://finance.data.gov.uk/dsd/coins/dimension/counterpartyCode> <http://purl.org/linked-data/cube#codeList> <http://finance.data.gov.uk/def/coins/counterparty-code> .
+<http://finance.data.gov.uk/dsd/coins/dimension/counterpartyCode> <http://www.w3.org/2004/02/skos/core#notation> "counterparty_code" .
+<http://finance.data.gov.uk/dsd/coins/attribute/requestForResourcesLastYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#AttributeProperty> .
+<http://finance.data.gov.uk/dsd/coins/attribute/requestForResourcesLastYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://finance.data.gov.uk/dsd/coins/attribute/requestForResourcesLastYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#CodedProperty> .
+<http://finance.data.gov.uk/dsd/coins/attribute/requestForResourcesLastYear> <http://www.w3.org/2000/01/rdf-schema#label> "request-for-resources-last-year attribute"@en .
+<http://finance.data.gov.uk/dsd/coins/attribute/requestForResourcesLastYear> <http://www.w3.org/2000/01/rdf-schema#comment> "Attribute property representing request for resources last year" .
+<http://finance.data.gov.uk/dsd/coins/attribute/requestForResourcesLastYear> <http://www.w3.org/2000/01/rdf-schema#range> <http://finance.data.gov.uk/def/coins/request-for-resources-last-year/RequestForResourcesLastYear> .
+<http://finance.data.gov.uk/dsd/coins/attribute/requestForResourcesLastYear> <http://purl.org/linked-data/cube#concept> <http://finance.data.gov.uk/def/coins/statistical-concept/request-for-resources-last-year> .
+<http://finance.data.gov.uk/dsd/coins/attribute/requestForResourcesLastYear> <http://purl.org/linked-data/cube#codeList> <http://finance.data.gov.uk/def/coins/request-for-resources-last-year> .
+<http://finance.data.gov.uk/dsd/coins/attribute/requestForResourcesLastYear> <http://www.w3.org/2004/02/skos/core#notation> "request_for_resources_last_year" .
+<http://finance.data.gov.uk/dsd/coins/attribute/pesaCurrentGrants> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#AttributeProperty> .
+<http://finance.data.gov.uk/dsd/coins/attribute/pesaCurrentGrants> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://finance.data.gov.uk/dsd/coins/attribute/pesaCurrentGrants> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#CodedProperty> .
+<http://finance.data.gov.uk/dsd/coins/attribute/pesaCurrentGrants> <http://www.w3.org/2000/01/rdf-schema#label> "pesa-current-grants attribute"@en .
+<http://finance.data.gov.uk/dsd/coins/attribute/pesaCurrentGrants> <http://www.w3.org/2000/01/rdf-schema#comment> "Attribute property representing pesa current grants" .
+<http://finance.data.gov.uk/dsd/coins/attribute/pesaCurrentGrants> <http://www.w3.org/2000/01/rdf-schema#range> <http://finance.data.gov.uk/def/coins/pesa-current-grants/PesaCurrentGrants> .
+<http://finance.data.gov.uk/dsd/coins/attribute/pesaCurrentGrants> <http://purl.org/linked-data/cube#concept> <http://finance.data.gov.uk/def/coins/statistical-concept/pesa-current-grants> .
+<http://finance.data.gov.uk/dsd/coins/attribute/pesaCurrentGrants> <http://purl.org/linked-data/cube#codeList> <http://finance.data.gov.uk/def/coins/pesa-current-grants> .
+<http://finance.data.gov.uk/dsd/coins/attribute/pesaCurrentGrants> <http://www.w3.org/2004/02/skos/core#notation> "pesa_current_grants" .
+_:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7fe0 <http://purl.org/linked-data/cube#componentProperty> <http://finance.data.gov.uk/dsd/coins/attribute/programmeAdmin> .
+<http://finance.data.gov.uk/dsd/coins/attribute/nac> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#AttributeProperty> .
+<http://finance.data.gov.uk/dsd/coins/attribute/nac> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://finance.data.gov.uk/dsd/coins/attribute/nac> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#CodedProperty> .
+<http://finance.data.gov.uk/dsd/coins/attribute/nac> <http://www.w3.org/2000/01/rdf-schema#label> "nac attribute"@en .
+<http://finance.data.gov.uk/dsd/coins/attribute/nac> <http://www.w3.org/2000/01/rdf-schema#comment> "Attribute property representing nac" .
+<http://finance.data.gov.uk/dsd/coins/attribute/nac> <http://www.w3.org/2000/01/rdf-schema#range> <http://finance.data.gov.uk/def/coins/nac/Nac> .
+<http://finance.data.gov.uk/dsd/coins/attribute/nac> <http://purl.org/linked-data/cube#concept> <http://finance.data.gov.uk/def/coins/statistical-concept/nac> .
+<http://finance.data.gov.uk/dsd/coins/attribute/nac> <http://purl.org/linked-data/cube#codeList> <http://finance.data.gov.uk/def/coins/nac> .
+<http://finance.data.gov.uk/dsd/coins/attribute/nac> <http://www.w3.org/2004/02/skos/core#notation> "nac" .
+_:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7ff3 <http://purl.org/linked-data/cube#componentProperty> <http://finance.data.gov.uk/dsd/coins/attribute/cgaBodyType> .
+<http://finance.data.gov.uk/dsd/coins/measure/amount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#MeasureProperty> .
+<http://finance.data.gov.uk/dsd/coins/measure/amount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://finance.data.gov.uk/dsd/coins/measure/amount> <http://www.w3.org/2000/01/rdf-schema#label> "amount in thousands of pounds"@en .
+<http://finance.data.gov.uk/dsd/coins/measure/amount> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the amount being reported, in thousands of pounds Sterling" .
+<http://finance.data.gov.uk/dsd/coins/measure/amount> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/linked-data/sdmx/2009/measure#obsValue> .
+<http://finance.data.gov.uk/dsd/coins/measure/amount> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> .
+<http://finance.data.gov.uk/dsd/coins/measure/amount> <http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure> <http://finance.data.gov.uk/def/currency/GBP> .
+<http://finance.data.gov.uk/dsd/coins/measure/amount> <http://purl.org/linked-data/sdmx/2009/attribute#unitMult> <http://purl.org/linked-data/sdmx/2009/code#unitMult-3> .
+_:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7fec <http://purl.org/linked-data/cube#componentProperty> <http://finance.data.gov.uk/dsd/coins/attribute/estimateNumber> .
+<http://finance.data.gov.uk/dsd/coins/attribute/pesaServices> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#AttributeProperty> .
+<http://finance.data.gov.uk/dsd/coins/attribute/pesaServices> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://finance.data.gov.uk/dsd/coins/attribute/pesaServices> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#CodedProperty> .
+<http://finance.data.gov.uk/dsd/coins/attribute/pesaServices> <http://www.w3.org/2000/01/rdf-schema#label> "pesa-services attribute"@en .
+<http://finance.data.gov.uk/dsd/coins/attribute/pesaServices> <http://www.w3.org/2000/01/rdf-schema#comment> "Attribute property representing pesa services" .
+<http://finance.data.gov.uk/dsd/coins/attribute/pesaServices> <http://www.w3.org/2000/01/rdf-schema#range> <http://finance.data.gov.uk/def/coins/pesa-services/PesaServices> .
+<http://finance.data.gov.uk/dsd/coins/attribute/pesaServices> <http://purl.org/linked-data/cube#concept> <http://finance.data.gov.uk/def/coins/statistical-concept/pesa-services> .
+<http://finance.data.gov.uk/dsd/coins/attribute/pesaServices> <http://purl.org/linked-data/cube#codeList> <http://finance.data.gov.uk/def/coins/pesa-services> .
+<http://finance.data.gov.uk/dsd/coins/attribute/pesaServices> <http://www.w3.org/2004/02/skos/core#notation> "pesa_services" .
+_:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7fd8 <http://purl.org/linked-data/cube#componentProperty> <http://finance.data.gov.uk/dsd/coins/attribute/signage> .
+_:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7fff <http://purl.org/linked-data/cube#componentProperty> <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> .
+_:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7fff <http://purl.org/linked-data/cube#order> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://finance.data.gov.uk/dsd/coins/dimension/dataSubtype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#DimensionProperty> .
+<http://finance.data.gov.uk/dsd/coins/dimension/dataSubtype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://finance.data.gov.uk/dsd/coins/dimension/dataSubtype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#CodedProperty> .
+<http://finance.data.gov.uk/dsd/coins/dimension/dataSubtype> <http://www.w3.org/2000/01/rdf-schema#label> "data-subtype dimension"@en .
+<http://finance.data.gov.uk/dsd/coins/dimension/dataSubtype> <http://www.w3.org/2000/01/rdf-schema#comment> "Dimension property representing data subtype" .
+<http://finance.data.gov.uk/dsd/coins/dimension/dataSubtype> <http://www.w3.org/2000/01/rdf-schema#range> <http://finance.data.gov.uk/def/coins/data-subtype/DataSubtype> .
+<http://finance.data.gov.uk/dsd/coins/dimension/dataSubtype> <http://purl.org/linked-data/cube#concept> <http://finance.data.gov.uk/def/coins/statistical-concept/data-subtype> .
+<http://finance.data.gov.uk/dsd/coins/dimension/dataSubtype> <http://purl.org/linked-data/cube#codeList> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/dsd/coins/dimension/dataSubtype> <http://www.w3.org/2004/02/skos/core#notation> "data_subtype" .
+<http://finance.data.gov.uk/dsd/coins/attribute/signage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#AttributeProperty> .
+<http://finance.data.gov.uk/dsd/coins/attribute/signage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://finance.data.gov.uk/dsd/coins/attribute/signage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#CodedProperty> .
+<http://finance.data.gov.uk/dsd/coins/attribute/signage> <http://www.w3.org/2000/01/rdf-schema#label> "signage attribute"@en .
+<http://finance.data.gov.uk/dsd/coins/attribute/signage> <http://www.w3.org/2000/01/rdf-schema#comment> "Attribute property representing signage" .
+<http://finance.data.gov.uk/dsd/coins/attribute/signage> <http://www.w3.org/2000/01/rdf-schema#range> <http://finance.data.gov.uk/def/coins/signage/Signage> .
+<http://finance.data.gov.uk/dsd/coins/attribute/signage> <http://purl.org/linked-data/cube#concept> <http://finance.data.gov.uk/def/coins/statistical-concept/signage> .
+<http://finance.data.gov.uk/dsd/coins/attribute/signage> <http://purl.org/linked-data/cube#codeList> <http://finance.data.gov.uk/def/coins/signage> .
+<http://finance.data.gov.uk/dsd/coins/attribute/signage> <http://www.w3.org/2004/02/skos/core#notation> "signage" .
+<http://finance.data.gov.uk/dsd/coins/attribute/requestForResourcesNextYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#AttributeProperty> .
+<http://finance.data.gov.uk/dsd/coins/attribute/requestForResourcesNextYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://finance.data.gov.uk/dsd/coins/attribute/requestForResourcesNextYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#CodedProperty> .
+<http://finance.data.gov.uk/dsd/coins/attribute/requestForResourcesNextYear> <http://www.w3.org/2000/01/rdf-schema#label> "request-for-resources-next-year attribute"@en .
+<http://finance.data.gov.uk/dsd/coins/attribute/requestForResourcesNextYear> <http://www.w3.org/2000/01/rdf-schema#comment> "Attribute property representing request for resources next year" .
+<http://finance.data.gov.uk/dsd/coins/attribute/requestForResourcesNextYear> <http://www.w3.org/2000/01/rdf-schema#range> <http://finance.data.gov.uk/def/coins/request-for-resources-next-year/RequestForResourcesNextYear> .
+<http://finance.data.gov.uk/dsd/coins/attribute/requestForResourcesNextYear> <http://purl.org/linked-data/cube#concept> <http://finance.data.gov.uk/def/coins/statistical-concept/request-for-resources-next-year> .
+<http://finance.data.gov.uk/dsd/coins/attribute/requestForResourcesNextYear> <http://purl.org/linked-data/cube#codeList> <http://finance.data.gov.uk/def/coins/request-for-resources-next-year> .
+<http://finance.data.gov.uk/dsd/coins/attribute/requestForResourcesNextYear> <http://www.w3.org/2004/02/skos/core#notation> "request_for_resources_next_year" .
+<http://finance.data.gov.uk/dsd/coins/attribute/estimatesAina> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#AttributeProperty> .
+<http://finance.data.gov.uk/dsd/coins/attribute/estimatesAina> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://finance.data.gov.uk/dsd/coins/attribute/estimatesAina> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#CodedProperty> .
+<http://finance.data.gov.uk/dsd/coins/attribute/estimatesAina> <http://www.w3.org/2000/01/rdf-schema#label> "estimates-aina attribute"@en .
+<http://finance.data.gov.uk/dsd/coins/attribute/estimatesAina> <http://www.w3.org/2000/01/rdf-schema#comment> "Attribute property representing estimates aina" .
+<http://finance.data.gov.uk/dsd/coins/attribute/estimatesAina> <http://www.w3.org/2000/01/rdf-schema#range> <http://finance.data.gov.uk/def/coins/estimates-aina/EstimatesAina> .
+<http://finance.data.gov.uk/dsd/coins/attribute/estimatesAina> <http://purl.org/linked-data/cube#concept> <http://finance.data.gov.uk/def/coins/statistical-concept/estimates-aina> .
+<http://finance.data.gov.uk/dsd/coins/attribute/estimatesAina> <http://purl.org/linked-data/cube#codeList> <http://finance.data.gov.uk/def/coins/estimates-aina> .
+<http://finance.data.gov.uk/dsd/coins/attribute/estimatesAina> <http://www.w3.org/2004/02/skos/core#notation> "estimates_aina" .
+_:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7fe5 <http://purl.org/linked-data/cube#componentProperty> <http://finance.data.gov.uk/dsd/coins/attribute/pesa11> .
+_:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7fde <http://purl.org/linked-data/cube#componentProperty> <http://finance.data.gov.uk/dsd/coins/attribute/requestForResources> .
+_:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7ff8 <http://purl.org/linked-data/cube#componentProperty> <http://finance.data.gov.uk/dsd/coins/attribute/accountingAuthority> .
+<http://finance.data.gov.uk/dsd/coins/attribute/estimateLineLastYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#AttributeProperty> .
+<http://finance.data.gov.uk/dsd/coins/attribute/estimateLineLastYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://finance.data.gov.uk/dsd/coins/attribute/estimateLineLastYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#CodedProperty> .
+<http://finance.data.gov.uk/dsd/coins/attribute/estimateLineLastYear> <http://www.w3.org/2000/01/rdf-schema#label> "estimate-line-last-year attribute"@en .
+<http://finance.data.gov.uk/dsd/coins/attribute/estimateLineLastYear> <http://www.w3.org/2000/01/rdf-schema#comment> "Attribute property representing estimate line last year" .
+<http://finance.data.gov.uk/dsd/coins/attribute/estimateLineLastYear> <http://www.w3.org/2000/01/rdf-schema#range> <http://finance.data.gov.uk/def/coins/estimate-line-last-year/EstimateLineLastYear> .
+<http://finance.data.gov.uk/dsd/coins/attribute/estimateLineLastYear> <http://purl.org/linked-data/cube#concept> <http://finance.data.gov.uk/def/coins/statistical-concept/estimate-line-last-year> .
+<http://finance.data.gov.uk/dsd/coins/attribute/estimateLineLastYear> <http://purl.org/linked-data/cube#codeList> <http://finance.data.gov.uk/def/coins/estimate-line-last-year> .
+<http://finance.data.gov.uk/dsd/coins/attribute/estimateLineLastYear> <http://www.w3.org/2004/02/skos/core#notation> "estimate_line_last_year" .
+<http://finance.data.gov.uk/dsd/coins/dimension/accountCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#DimensionProperty> .
+<http://finance.data.gov.uk/dsd/coins/dimension/accountCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://finance.data.gov.uk/dsd/coins/dimension/accountCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#CodedProperty> .
+<http://finance.data.gov.uk/dsd/coins/dimension/accountCode> <http://www.w3.org/2000/01/rdf-schema#label> "account-code dimension"@en .
+<http://finance.data.gov.uk/dsd/coins/dimension/accountCode> <http://www.w3.org/2000/01/rdf-schema#comment> "Dimension property representing account code" .
+<http://finance.data.gov.uk/dsd/coins/dimension/accountCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://finance.data.gov.uk/def/coins/account-code/AccountCode> .
+<http://finance.data.gov.uk/dsd/coins/dimension/accountCode> <http://purl.org/linked-data/cube#concept> <http://finance.data.gov.uk/def/coins/statistical-concept/account-code> .
+<http://finance.data.gov.uk/dsd/coins/dimension/accountCode> <http://purl.org/linked-data/cube#codeList> <http://finance.data.gov.uk/def/coins/account-code> .
+<http://finance.data.gov.uk/dsd/coins/dimension/accountCode> <http://www.w3.org/2004/02/skos/core#notation> "account_code" .
+<http://finance.data.gov.uk/dsd/coins/attribute/accountingAuthority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#AttributeProperty> .
+<http://finance.data.gov.uk/dsd/coins/attribute/accountingAuthority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://finance.data.gov.uk/dsd/coins/attribute/accountingAuthority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#CodedProperty> .
+<http://finance.data.gov.uk/dsd/coins/attribute/accountingAuthority> <http://www.w3.org/2000/01/rdf-schema#label> "accounting-authority attribute"@en .
+<http://finance.data.gov.uk/dsd/coins/attribute/accountingAuthority> <http://www.w3.org/2000/01/rdf-schema#comment> "Attribute property representing accounting authority" .
+<http://finance.data.gov.uk/dsd/coins/attribute/accountingAuthority> <http://www.w3.org/2000/01/rdf-schema#range> <http://finance.data.gov.uk/def/coins/accounting-authority/AccountingAuthority> .
+<http://finance.data.gov.uk/dsd/coins/attribute/accountingAuthority> <http://purl.org/linked-data/cube#concept> <http://finance.data.gov.uk/def/coins/statistical-concept/accounting-authority> .
+<http://finance.data.gov.uk/dsd/coins/attribute/accountingAuthority> <http://purl.org/linked-data/cube#codeList> <http://finance.data.gov.uk/def/coins/accounting-authority> .
+<http://finance.data.gov.uk/dsd/coins/attribute/accountingAuthority> <http://www.w3.org/2004/02/skos/core#notation> "accounting_authority" .
+_:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7ff2 <http://purl.org/linked-data/cube#componentProperty> <http://finance.data.gov.uk/dsd/coins/attribute/cofog> .
+_:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7feb <http://purl.org/linked-data/cube#componentProperty> <http://finance.data.gov.uk/dsd/coins/attribute/estimateNumberLastYear> .
+_:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7fd7 <http://purl.org/linked-data/cube#componentProperty> <http://finance.data.gov.uk/dsd/coins/attribute/territory> .
+_:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7ffe <http://purl.org/linked-data/cube#componentProperty> <http://finance.data.gov.uk/dsd/coins/dimension/dataType> .
+_:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7ffe <http://purl.org/linked-data/cube#order> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://finance.data.gov.uk/dsd/coins/attribute/estimateNumberNextYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#AttributeProperty> .
+<http://finance.data.gov.uk/dsd/coins/attribute/estimateNumberNextYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://finance.data.gov.uk/dsd/coins/attribute/estimateNumberNextYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#CodedProperty> .
+<http://finance.data.gov.uk/dsd/coins/attribute/estimateNumberNextYear> <http://www.w3.org/2000/01/rdf-schema#label> "estimate-number-next-year attribute"@en .
+<http://finance.data.gov.uk/dsd/coins/attribute/estimateNumberNextYear> <http://www.w3.org/2000/01/rdf-schema#comment> "Attribute property representing estimate number next year" .
+<http://finance.data.gov.uk/dsd/coins/attribute/estimateNumberNextYear> <http://www.w3.org/2000/01/rdf-schema#range> <http://finance.data.gov.uk/def/coins/estimate-number-next-year/EstimateNumberNextYear> .
+<http://finance.data.gov.uk/dsd/coins/attribute/estimateNumberNextYear> <http://purl.org/linked-data/cube#concept> <http://finance.data.gov.uk/def/coins/statistical-concept/estimate-number-next-year> .
+<http://finance.data.gov.uk/dsd/coins/attribute/estimateNumberNextYear> <http://purl.org/linked-data/cube#codeList> <http://finance.data.gov.uk/def/coins/estimate-number-next-year> .
+<http://finance.data.gov.uk/dsd/coins/attribute/estimateNumberNextYear> <http://www.w3.org/2004/02/skos/core#notation> "estimate_number_next_year" .
+_:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7fe4 <http://purl.org/linked-data/cube#componentProperty> <http://finance.data.gov.uk/dsd/coins/attribute/pesaCurrentGrants> .
+_:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7fdd <http://purl.org/linked-data/cube#componentProperty> <http://finance.data.gov.uk/dsd/coins/attribute/requestForResourcesLastYear> .
+_:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7ff7 <http://purl.org/linked-data/cube#componentProperty> <http://finance.data.gov.uk/dsd/coins/attribute/accountsCapitalCurrent> .
+<http://finance.data.gov.uk/dsd/coins/attribute/budgetCapitalCurrent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#AttributeProperty> .
+<http://finance.data.gov.uk/dsd/coins/attribute/budgetCapitalCurrent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://finance.data.gov.uk/dsd/coins/attribute/budgetCapitalCurrent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#CodedProperty> .
+<http://finance.data.gov.uk/dsd/coins/attribute/budgetCapitalCurrent> <http://www.w3.org/2000/01/rdf-schema#label> "budget-capital-current attribute"@en .
+<http://finance.data.gov.uk/dsd/coins/attribute/budgetCapitalCurrent> <http://www.w3.org/2000/01/rdf-schema#comment> "Attribute property representing budget capital current" .
+<http://finance.data.gov.uk/dsd/coins/attribute/budgetCapitalCurrent> <http://www.w3.org/2000/01/rdf-schema#range> <http://finance.data.gov.uk/def/coins/budget-capital-current/BudgetCapitalCurrent> .
+<http://finance.data.gov.uk/dsd/coins/attribute/budgetCapitalCurrent> <http://purl.org/linked-data/cube#concept> <http://finance.data.gov.uk/def/coins/statistical-concept/budget-capital-current> .
+<http://finance.data.gov.uk/dsd/coins/attribute/budgetCapitalCurrent> <http://purl.org/linked-data/cube#codeList> <http://finance.data.gov.uk/def/coins/budget-capital-current> .
+<http://finance.data.gov.uk/dsd/coins/attribute/budgetCapitalCurrent> <http://www.w3.org/2004/02/skos/core#notation> "budget_capital_current" .
+<http://finance.data.gov.uk/dsd/coins/attribute/sbi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#AttributeProperty> .
+<http://finance.data.gov.uk/dsd/coins/attribute/sbi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://finance.data.gov.uk/dsd/coins/attribute/sbi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#CodedProperty> .
+<http://finance.data.gov.uk/dsd/coins/attribute/sbi> <http://www.w3.org/2000/01/rdf-schema#label> "sbi attribute"@en .
+<http://finance.data.gov.uk/dsd/coins/attribute/sbi> <http://www.w3.org/2000/01/rdf-schema#comment> "Attribute property representing sbi" .
+<http://finance.data.gov.uk/dsd/coins/attribute/sbi> <http://www.w3.org/2000/01/rdf-schema#range> <http://finance.data.gov.uk/def/coins/sbi/Sbi> .
+<http://finance.data.gov.uk/dsd/coins/attribute/sbi> <http://purl.org/linked-data/cube#concept> <http://finance.data.gov.uk/def/coins/statistical-concept/sbi> .
+<http://finance.data.gov.uk/dsd/coins/attribute/sbi> <http://purl.org/linked-data/cube#codeList> <http://finance.data.gov.uk/def/coins/sbi> .
+<http://finance.data.gov.uk/dsd/coins/attribute/sbi> <http://www.w3.org/2004/02/skos/core#notation> "sbi" .
+_:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7ff1 <http://purl.org/linked-data/cube#componentProperty> <http://finance.data.gov.uk/dsd/coins/attribute/departmentGroup> .
+_:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7fea <http://purl.org/linked-data/cube#componentProperty> <http://finance.data.gov.uk/dsd/coins/attribute/estimateNumberNextYear> .
+<http://finance.data.gov.uk/dsd/coins> <http://purl.org/linked-data/cube#component> _:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7fd9 .
+<http://finance.data.gov.uk/dsd/coins> <http://purl.org/linked-data/cube#component> _:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7ffe .
+<http://finance.data.gov.uk/dsd/coins> <http://purl.org/linked-data/cube#component> _:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7fd6 .
+<http://finance.data.gov.uk/dsd/coins> <http://purl.org/linked-data/cube#component> _:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7feb .
+<http://finance.data.gov.uk/dsd/coins> <http://purl.org/linked-data/cube#component> _:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7fe9 .
+<http://finance.data.gov.uk/dsd/coins> <http://purl.org/linked-data/cube#component> _:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7ff9 .
+<http://finance.data.gov.uk/dsd/coins> <http://purl.org/linked-data/cube#component> _:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7fe6 .
+<http://finance.data.gov.uk/dsd/coins> <http://purl.org/linked-data/cube#component> _:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7ffb .
+<http://finance.data.gov.uk/dsd/coins> <http://purl.org/linked-data/cube#component> _:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7ff5 .
+<http://finance.data.gov.uk/dsd/coins> <http://purl.org/linked-data/cube#component> _:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7fe2 .
+<http://finance.data.gov.uk/dsd/coins> <http://purl.org/linked-data/cube#component> _:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7ff2 .
+<http://finance.data.gov.uk/dsd/coins> <http://purl.org/linked-data/cube#component> _:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7fdd .
+<http://finance.data.gov.uk/dsd/coins> <http://purl.org/linked-data/cube#component> _:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7fda .
+<http://finance.data.gov.uk/dsd/coins> <http://purl.org/linked-data/cube#component> _:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7fd8 .
+<http://finance.data.gov.uk/dsd/coins> <http://purl.org/linked-data/cube#component> _:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7fed .
+<http://finance.data.gov.uk/dsd/coins> <http://purl.org/linked-data/cube#component> _:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7fea .
+<http://finance.data.gov.uk/dsd/coins> <http://purl.org/linked-data/cube#component> _:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7fdf .
+<http://finance.data.gov.uk/dsd/coins> <http://purl.org/linked-data/cube#component> _:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7fe8 .
+<http://finance.data.gov.uk/dsd/coins> <http://purl.org/linked-data/cube#component> _:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7fe5 .
+<http://finance.data.gov.uk/dsd/coins> <http://purl.org/linked-data/cube#component> _:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7ffd .
+<http://finance.data.gov.uk/dsd/coins> <http://purl.org/linked-data/cube#component> _:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7ffa .
+<http://finance.data.gov.uk/dsd/coins> <http://purl.org/linked-data/cube#component> _:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7fe4 .
+<http://finance.data.gov.uk/dsd/coins> <http://purl.org/linked-data/cube#component> _:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7fe1 .
+<http://finance.data.gov.uk/dsd/coins> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#DataStructureDefinition> .
+<http://finance.data.gov.uk/dsd/coins> <http://purl.org/linked-data/cube#component> _:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7ff8 .
+<http://finance.data.gov.uk/dsd/coins> <http://purl.org/linked-data/cube#component> _:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7ff4 .
+<http://finance.data.gov.uk/dsd/coins> <http://purl.org/linked-data/cube#component> _:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7ff1 .
+<http://finance.data.gov.uk/dsd/coins> <http://purl.org/linked-data/cube#component> _:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7fdc .
+<http://finance.data.gov.uk/dsd/coins> <http://purl.org/linked-data/cube#component> _:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7fef .
+<http://finance.data.gov.uk/dsd/coins> <http://purl.org/linked-data/cube#component> _:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7fd7 .
+<http://finance.data.gov.uk/dsd/coins> <http://purl.org/linked-data/cube#component> _:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7fec .
+<http://finance.data.gov.uk/dsd/coins> <http://purl.org/linked-data/cube#component> _:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7fde .
+<http://finance.data.gov.uk/dsd/coins> <http://purl.org/linked-data/cube#component> _:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7fff .
+<http://finance.data.gov.uk/dsd/coins> <http://purl.org/linked-data/cube#component> _:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7fe7 .
+<http://finance.data.gov.uk/dsd/coins> <http://purl.org/linked-data/cube#component> _:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7ffc .
+<http://finance.data.gov.uk/dsd/coins> <http://purl.org/linked-data/cube#component> _:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7fe3 .
+<http://finance.data.gov.uk/dsd/coins> <http://purl.org/linked-data/cube#component> _:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7ff7 .
+<http://finance.data.gov.uk/dsd/coins> <http://purl.org/linked-data/cube#component> _:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7ff6 .
+<http://finance.data.gov.uk/dsd/coins> <http://purl.org/linked-data/cube#component> _:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7ff3 .
+<http://finance.data.gov.uk/dsd/coins> <http://purl.org/linked-data/cube#component> _:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7fe0 .
+<http://finance.data.gov.uk/dsd/coins> <http://purl.org/linked-data/cube#component> _:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7fee .
+<http://finance.data.gov.uk/dsd/coins> <http://purl.org/linked-data/cube#component> _:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7ff0 .
+<http://finance.data.gov.uk/dsd/coins> <http://purl.org/linked-data/cube#component> _:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7fdb .
+<http://finance.data.gov.uk/dsd/coins/dimension/departmentCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#DimensionProperty> .
+<http://finance.data.gov.uk/dsd/coins/dimension/departmentCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://finance.data.gov.uk/dsd/coins/dimension/departmentCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#CodedProperty> .
+<http://finance.data.gov.uk/dsd/coins/dimension/departmentCode> <http://www.w3.org/2000/01/rdf-schema#label> "department-code dimension"@en .
+<http://finance.data.gov.uk/dsd/coins/dimension/departmentCode> <http://www.w3.org/2000/01/rdf-schema#comment> "Dimension property representing department code" .
+<http://finance.data.gov.uk/dsd/coins/dimension/departmentCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://finance.data.gov.uk/def/coins/department-code/DepartmentCode> .
+<http://finance.data.gov.uk/dsd/coins/dimension/departmentCode> <http://purl.org/linked-data/cube#concept> <http://finance.data.gov.uk/def/coins/statistical-concept/department-code> .
+<http://finance.data.gov.uk/dsd/coins/dimension/departmentCode> <http://purl.org/linked-data/cube#codeList> <http://finance.data.gov.uk/def/coins/department-code> .
+<http://finance.data.gov.uk/dsd/coins/dimension/departmentCode> <http://www.w3.org/2004/02/skos/core#notation> "department_code" .
+_:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7fd6 <http://purl.org/linked-data/cube#componentProperty> <http://finance.data.gov.uk/dsd/coins/measure/amount> .
+_:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7fd6 <http://purl.org/linked-data/cube#componentAttachment> <http://purl.org/linked-data/cube#DataSet> .
+_:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7ffd <http://purl.org/linked-data/cube#componentProperty> <http://finance.data.gov.uk/dsd/coins/dimension/dataSubtype> .
+_:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7ffd <http://purl.org/linked-data/cube#order> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://finance.data.gov.uk/dsd/coins/attribute/estimateLine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#AttributeProperty> .
+<http://finance.data.gov.uk/dsd/coins/attribute/estimateLine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://finance.data.gov.uk/dsd/coins/attribute/estimateLine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#CodedProperty> .
+<http://finance.data.gov.uk/dsd/coins/attribute/estimateLine> <http://www.w3.org/2000/01/rdf-schema#label> "estimate-line attribute"@en .
+<http://finance.data.gov.uk/dsd/coins/attribute/estimateLine> <http://www.w3.org/2000/01/rdf-schema#comment> "Attribute property representing estimate line" .
+<http://finance.data.gov.uk/dsd/coins/attribute/estimateLine> <http://www.w3.org/2000/01/rdf-schema#range> <http://finance.data.gov.uk/def/coins/estimate-line/EstimateLine> .
+<http://finance.data.gov.uk/dsd/coins/attribute/estimateLine> <http://purl.org/linked-data/cube#concept> <http://finance.data.gov.uk/def/coins/statistical-concept/estimate-line> .
+<http://finance.data.gov.uk/dsd/coins/attribute/estimateLine> <http://purl.org/linked-data/cube#codeList> <http://finance.data.gov.uk/def/coins/estimate-line> .
+<http://finance.data.gov.uk/dsd/coins/attribute/estimateLine> <http://www.w3.org/2004/02/skos/core#notation> "estimate_line" .
+_:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7fe9 <http://purl.org/linked-data/cube#componentProperty> <http://finance.data.gov.uk/dsd/coins/attribute/estimatesAina> .
+<http://finance.data.gov.uk/dsd/coins/attribute/estimateNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#AttributeProperty> .
+<http://finance.data.gov.uk/dsd/coins/attribute/estimateNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://finance.data.gov.uk/dsd/coins/attribute/estimateNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#CodedProperty> .
+<http://finance.data.gov.uk/dsd/coins/attribute/estimateNumber> <http://www.w3.org/2000/01/rdf-schema#label> "estimate-number attribute"@en .
+<http://finance.data.gov.uk/dsd/coins/attribute/estimateNumber> <http://www.w3.org/2000/01/rdf-schema#comment> "Attribute property representing estimate number" .
+<http://finance.data.gov.uk/dsd/coins/attribute/estimateNumber> <http://www.w3.org/2000/01/rdf-schema#range> <http://finance.data.gov.uk/def/coins/estimate-number/EstimateNumber> .
+<http://finance.data.gov.uk/dsd/coins/attribute/estimateNumber> <http://purl.org/linked-data/cube#concept> <http://finance.data.gov.uk/def/coins/statistical-concept/estimate-number> .
+<http://finance.data.gov.uk/dsd/coins/attribute/estimateNumber> <http://purl.org/linked-data/cube#codeList> <http://finance.data.gov.uk/def/coins/estimate-number> .
+<http://finance.data.gov.uk/dsd/coins/attribute/estimateNumber> <http://www.w3.org/2004/02/skos/core#notation> "estimate_number" .
+<http://finance.data.gov.uk/dsd/coins/attribute/cgaBodyType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#AttributeProperty> .
+<http://finance.data.gov.uk/dsd/coins/attribute/cgaBodyType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://finance.data.gov.uk/dsd/coins/attribute/cgaBodyType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#CodedProperty> .
+<http://finance.data.gov.uk/dsd/coins/attribute/cgaBodyType> <http://www.w3.org/2000/01/rdf-schema#label> "cga-body-type attribute"@en .
+<http://finance.data.gov.uk/dsd/coins/attribute/cgaBodyType> <http://www.w3.org/2000/01/rdf-schema#comment> "Attribute property representing cga body type" .
+<http://finance.data.gov.uk/dsd/coins/attribute/cgaBodyType> <http://www.w3.org/2000/01/rdf-schema#range> <http://finance.data.gov.uk/def/coins/cga-body-type/CgaBodyType> .
+<http://finance.data.gov.uk/dsd/coins/attribute/cgaBodyType> <http://purl.org/linked-data/cube#concept> <http://finance.data.gov.uk/def/coins/statistical-concept/cga-body-type> .
+<http://finance.data.gov.uk/dsd/coins/attribute/cgaBodyType> <http://purl.org/linked-data/cube#codeList> <http://finance.data.gov.uk/def/coins/cga-body-type> .
+<http://finance.data.gov.uk/dsd/coins/attribute/cgaBodyType> <http://www.w3.org/2004/02/skos/core#notation> "cga_body_type" .
+_:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7fe3 <http://purl.org/linked-data/cube#componentProperty> <http://finance.data.gov.uk/dsd/coins/attribute/pesaDelivery> .
+_:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7fdc <http://purl.org/linked-data/cube#componentProperty> <http://finance.data.gov.uk/dsd/coins/attribute/requestForResourcesNextYear> .
+<http://finance.data.gov.uk/dsd/coins/attribute/estimateLineNextYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#AttributeProperty> .
+<http://finance.data.gov.uk/dsd/coins/attribute/estimateLineNextYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://finance.data.gov.uk/dsd/coins/attribute/estimateLineNextYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#CodedProperty> .
+<http://finance.data.gov.uk/dsd/coins/attribute/estimateLineNextYear> <http://www.w3.org/2000/01/rdf-schema#label> "estimate-line-next-year attribute"@en .
+<http://finance.data.gov.uk/dsd/coins/attribute/estimateLineNextYear> <http://www.w3.org/2000/01/rdf-schema#comment> "Attribute property representing estimate line next year" .
+<http://finance.data.gov.uk/dsd/coins/attribute/estimateLineNextYear> <http://www.w3.org/2000/01/rdf-schema#range> <http://finance.data.gov.uk/def/coins/estimate-line-next-year/EstimateLineNextYear> .
+<http://finance.data.gov.uk/dsd/coins/attribute/estimateLineNextYear> <http://purl.org/linked-data/cube#concept> <http://finance.data.gov.uk/def/coins/statistical-concept/estimate-line-next-year> .
+<http://finance.data.gov.uk/dsd/coins/attribute/estimateLineNextYear> <http://purl.org/linked-data/cube#codeList> <http://finance.data.gov.uk/def/coins/estimate-line-next-year> .
+<http://finance.data.gov.uk/dsd/coins/attribute/estimateLineNextYear> <http://www.w3.org/2004/02/skos/core#notation> "estimate_line_next_year" .
+_:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7ff6 <http://purl.org/linked-data/cube#componentProperty> <http://finance.data.gov.uk/dsd/coins/attribute/activityCode> .
+_:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7fef <http://purl.org/linked-data/cube#componentProperty> <http://finance.data.gov.uk/dsd/coins/attribute/estimateLine> .
+<http://finance.data.gov.uk/dsd/coins/attribute/territory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#AttributeProperty> .
+<http://finance.data.gov.uk/dsd/coins/attribute/territory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://finance.data.gov.uk/dsd/coins/attribute/territory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#CodedProperty> .
+<http://finance.data.gov.uk/dsd/coins/attribute/territory> <http://www.w3.org/2000/01/rdf-schema#label> "territory attribute"@en .
+<http://finance.data.gov.uk/dsd/coins/attribute/territory> <http://www.w3.org/2000/01/rdf-schema#comment> "Attribute property representing territory" .
+<http://finance.data.gov.uk/dsd/coins/attribute/territory> <http://www.w3.org/2000/01/rdf-schema#range> <http://finance.data.gov.uk/def/coins/territory/Territory> .
+<http://finance.data.gov.uk/dsd/coins/attribute/territory> <http://purl.org/linked-data/cube#concept> <http://finance.data.gov.uk/def/coins/statistical-concept/territory> .
+<http://finance.data.gov.uk/dsd/coins/attribute/territory> <http://purl.org/linked-data/cube#codeList> <http://finance.data.gov.uk/def/coins/territory> .
+<http://finance.data.gov.uk/dsd/coins/attribute/territory> <http://www.w3.org/2004/02/skos/core#notation> "territory" .
+<http://finance.data.gov.uk/dsd/coins/attribute/esa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#AttributeProperty> .
+<http://finance.data.gov.uk/dsd/coins/attribute/esa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://finance.data.gov.uk/dsd/coins/attribute/esa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#CodedProperty> .
+<http://finance.data.gov.uk/dsd/coins/attribute/esa> <http://www.w3.org/2000/01/rdf-schema#label> "esa attribute"@en .
+<http://finance.data.gov.uk/dsd/coins/attribute/esa> <http://www.w3.org/2000/01/rdf-schema#comment> "Attribute property representing esa" .
+<http://finance.data.gov.uk/dsd/coins/attribute/esa> <http://www.w3.org/2000/01/rdf-schema#range> <http://finance.data.gov.uk/def/coins/esa/Esa> .
+<http://finance.data.gov.uk/dsd/coins/attribute/esa> <http://purl.org/linked-data/cube#concept> <http://finance.data.gov.uk/def/coins/statistical-concept/esa> .
+<http://finance.data.gov.uk/dsd/coins/attribute/esa> <http://purl.org/linked-data/cube#codeList> <http://finance.data.gov.uk/def/coins/esa> .
+<http://finance.data.gov.uk/dsd/coins/attribute/esa> <http://www.w3.org/2004/02/skos/core#notation> "esa" .
+_:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7ff0 <http://purl.org/linked-data/cube#componentProperty> <http://finance.data.gov.uk/dsd/coins/attribute/esa> .
+<http://finance.data.gov.uk/dsd/coins/attribute/cofog> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#AttributeProperty> .
+<http://finance.data.gov.uk/dsd/coins/attribute/cofog> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://finance.data.gov.uk/dsd/coins/attribute/cofog> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#CodedProperty> .
+<http://finance.data.gov.uk/dsd/coins/attribute/cofog> <http://www.w3.org/2000/01/rdf-schema#label> "cofog attribute"@en .
+<http://finance.data.gov.uk/dsd/coins/attribute/cofog> <http://www.w3.org/2000/01/rdf-schema#comment> "Attribute property representing cofog" .
+<http://finance.data.gov.uk/dsd/coins/attribute/cofog> <http://www.w3.org/2000/01/rdf-schema#range> <http://finance.data.gov.uk/def/coins/cofog/Cofog> .
+<http://finance.data.gov.uk/dsd/coins/attribute/cofog> <http://purl.org/linked-data/cube#concept> <http://finance.data.gov.uk/def/coins/statistical-concept/cofog> .
+<http://finance.data.gov.uk/dsd/coins/attribute/cofog> <http://purl.org/linked-data/cube#codeList> <http://finance.data.gov.uk/def/coins/cofog> .
+<http://finance.data.gov.uk/dsd/coins/attribute/cofog> <http://www.w3.org/2004/02/skos/core#notation> "cofog" .
+<http://finance.data.gov.uk/dsd/coins/attribute/accountsCapitalCurrent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#AttributeProperty> .
+<http://finance.data.gov.uk/dsd/coins/attribute/accountsCapitalCurrent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://finance.data.gov.uk/dsd/coins/attribute/accountsCapitalCurrent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#CodedProperty> .
+<http://finance.data.gov.uk/dsd/coins/attribute/accountsCapitalCurrent> <http://www.w3.org/2000/01/rdf-schema#label> "accounts-capital-current attribute"@en .
+<http://finance.data.gov.uk/dsd/coins/attribute/accountsCapitalCurrent> <http://www.w3.org/2000/01/rdf-schema#comment> "Attribute property representing accounts capital current" .
+<http://finance.data.gov.uk/dsd/coins/attribute/accountsCapitalCurrent> <http://www.w3.org/2000/01/rdf-schema#range> <http://finance.data.gov.uk/def/coins/accounts-capital-current/AccountsCapitalCurrent> .
+<http://finance.data.gov.uk/dsd/coins/attribute/accountsCapitalCurrent> <http://purl.org/linked-data/cube#concept> <http://finance.data.gov.uk/def/coins/statistical-concept/accounts-capital-current> .
+<http://finance.data.gov.uk/dsd/coins/attribute/accountsCapitalCurrent> <http://purl.org/linked-data/cube#codeList> <http://finance.data.gov.uk/def/coins/accounts-capital-current> .
+<http://finance.data.gov.uk/dsd/coins/attribute/accountsCapitalCurrent> <http://www.w3.org/2004/02/skos/core#notation> "accounts_capital_current" .
+_:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7ffc <http://purl.org/linked-data/cube#componentProperty> <http://finance.data.gov.uk/dsd/coins/dimension/departmentCode> .
+_:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7ffc <http://purl.org/linked-data/cube#order> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7fe8 <http://purl.org/linked-data/cube#componentProperty> <http://finance.data.gov.uk/dsd/coins/attribute/estimatesCapitalCurrent> .
+<http://finance.data.gov.uk/dsd/coins/dimension/programmeObjectCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#DimensionProperty> .
+<http://finance.data.gov.uk/dsd/coins/dimension/programmeObjectCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://finance.data.gov.uk/dsd/coins/dimension/programmeObjectCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#CodedProperty> .
+<http://finance.data.gov.uk/dsd/coins/dimension/programmeObjectCode> <http://www.w3.org/2000/01/rdf-schema#label> "programme-object-code dimension"@en .
+<http://finance.data.gov.uk/dsd/coins/dimension/programmeObjectCode> <http://www.w3.org/2000/01/rdf-schema#comment> "Dimension property representing programme object code" .
+<http://finance.data.gov.uk/dsd/coins/dimension/programmeObjectCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://finance.data.gov.uk/def/coins/programme-object-code/ProgrammeObjectCode> .
+<http://finance.data.gov.uk/dsd/coins/dimension/programmeObjectCode> <http://purl.org/linked-data/cube#concept> <http://finance.data.gov.uk/def/coins/statistical-concept/programme-object-code> .
+<http://finance.data.gov.uk/dsd/coins/dimension/programmeObjectCode> <http://purl.org/linked-data/cube#codeList> <http://finance.data.gov.uk/def/coins/programme-object-code> .
+<http://finance.data.gov.uk/dsd/coins/dimension/programmeObjectCode> <http://www.w3.org/2004/02/skos/core#notation> "programme_object_code" .
+<http://finance.data.gov.uk/dsd/coins/attribute/departmentGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#AttributeProperty> .
+<http://finance.data.gov.uk/dsd/coins/attribute/departmentGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://finance.data.gov.uk/dsd/coins/attribute/departmentGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#CodedProperty> .
+<http://finance.data.gov.uk/dsd/coins/attribute/departmentGroup> <http://www.w3.org/2000/01/rdf-schema#label> "department-group attribute"@en .
+<http://finance.data.gov.uk/dsd/coins/attribute/departmentGroup> <http://www.w3.org/2000/01/rdf-schema#comment> "Attribute property representing department group" .
+<http://finance.data.gov.uk/dsd/coins/attribute/departmentGroup> <http://www.w3.org/2000/01/rdf-schema#range> <http://finance.data.gov.uk/def/coins/department-group/DepartmentGroup> .
+<http://finance.data.gov.uk/dsd/coins/attribute/departmentGroup> <http://purl.org/linked-data/cube#concept> <http://finance.data.gov.uk/def/coins/statistical-concept/department-group> .
+<http://finance.data.gov.uk/dsd/coins/attribute/departmentGroup> <http://purl.org/linked-data/cube#codeList> <http://finance.data.gov.uk/def/coins/department-group> .
+<http://finance.data.gov.uk/dsd/coins/attribute/departmentGroup> <http://www.w3.org/2004/02/skos/core#notation> "department_group" .
+<http://finance.data.gov.uk/dsd/coins/attribute/sector> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#AttributeProperty> .
+<http://finance.data.gov.uk/dsd/coins/attribute/sector> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://finance.data.gov.uk/dsd/coins/attribute/sector> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#CodedProperty> .
+<http://finance.data.gov.uk/dsd/coins/attribute/sector> <http://www.w3.org/2000/01/rdf-schema#label> "sector attribute"@en .
+<http://finance.data.gov.uk/dsd/coins/attribute/sector> <http://www.w3.org/2000/01/rdf-schema#comment> "Attribute property representing sector" .
+<http://finance.data.gov.uk/dsd/coins/attribute/sector> <http://www.w3.org/2000/01/rdf-schema#range> <http://finance.data.gov.uk/def/coins/sector/Sector> .
+<http://finance.data.gov.uk/dsd/coins/attribute/sector> <http://purl.org/linked-data/cube#concept> <http://finance.data.gov.uk/def/coins/statistical-concept/sector> .
+<http://finance.data.gov.uk/dsd/coins/attribute/sector> <http://purl.org/linked-data/cube#codeList> <http://finance.data.gov.uk/def/coins/sector> .
+<http://finance.data.gov.uk/dsd/coins/attribute/sector> <http://www.w3.org/2004/02/skos/core#notation> "sector" .
+_:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7fe2 <http://purl.org/linked-data/cube#componentProperty> <http://finance.data.gov.uk/dsd/coins/attribute/pesaServices> .
+<http://finance.data.gov.uk/dsd/coins/attribute/activityCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#AttributeProperty> .
+<http://finance.data.gov.uk/dsd/coins/attribute/activityCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://finance.data.gov.uk/dsd/coins/attribute/activityCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#CodedProperty> .
+<http://finance.data.gov.uk/dsd/coins/attribute/activityCode> <http://www.w3.org/2000/01/rdf-schema#label> "activity-code attribute"@en .
+<http://finance.data.gov.uk/dsd/coins/attribute/activityCode> <http://www.w3.org/2000/01/rdf-schema#comment> "Attribute property representing activity code" .
+<http://finance.data.gov.uk/dsd/coins/attribute/activityCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://finance.data.gov.uk/def/coins/activity-code/ActivityCode> .
+<http://finance.data.gov.uk/dsd/coins/attribute/activityCode> <http://purl.org/linked-data/cube#concept> <http://finance.data.gov.uk/def/coins/statistical-concept/activity-code> .
+<http://finance.data.gov.uk/dsd/coins/attribute/activityCode> <http://purl.org/linked-data/cube#codeList> <http://finance.data.gov.uk/def/coins/activity-code> .
+<http://finance.data.gov.uk/dsd/coins/attribute/activityCode> <http://www.w3.org/2004/02/skos/core#notation> "activity_code" .
+_:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7fdb <http://purl.org/linked-data/cube#componentProperty> <http://finance.data.gov.uk/dsd/coins/attribute/resourceCapital> .
+_:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7ff5 <http://purl.org/linked-data/cube#componentProperty> <http://finance.data.gov.uk/dsd/coins/attribute/budgetBoundary> .
+_:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7fee <http://purl.org/linked-data/cube#componentProperty> <http://finance.data.gov.uk/dsd/coins/attribute/estimateLineLastYear> .
+<http://finance.data.gov.uk/dsd/coins/slice/refPeriod-dataType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#SliceKey> .
+<http://finance.data.gov.uk/dsd/coins/slice/refPeriod-dataType> <http://www.w3.org/2000/01/rdf-schema#label> "time, data-type slice" .
+<http://finance.data.gov.uk/dsd/coins/slice/refPeriod-dataType> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents slices indexed by time and data-type (e.g. outturn, snapshot)" .
+<http://finance.data.gov.uk/dsd/coins/slice/refPeriod-dataType> <http://purl.org/linked-data/cube#componentProperty> <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> .
+<http://finance.data.gov.uk/dsd/coins/slice/refPeriod-dataType> <http://purl.org/linked-data/cube#componentProperty> <http://finance.data.gov.uk/dsd/coins/dimension/data-type> .
+<http://finance.data.gov.uk/dsd/coins/attribute/programmeAdmin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#AttributeProperty> .
+<http://finance.data.gov.uk/dsd/coins/attribute/programmeAdmin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://finance.data.gov.uk/dsd/coins/attribute/programmeAdmin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#CodedProperty> .
+<http://finance.data.gov.uk/dsd/coins/attribute/programmeAdmin> <http://www.w3.org/2000/01/rdf-schema#label> "programme-admin attribute"@en .
+<http://finance.data.gov.uk/dsd/coins/attribute/programmeAdmin> <http://www.w3.org/2000/01/rdf-schema#comment> "Attribute property representing programme admin" .
+<http://finance.data.gov.uk/dsd/coins/attribute/programmeAdmin> <http://www.w3.org/2000/01/rdf-schema#range> <http://finance.data.gov.uk/def/coins/programme-admin/ProgrammeAdmin> .
+<http://finance.data.gov.uk/dsd/coins/attribute/programmeAdmin> <http://purl.org/linked-data/cube#concept> <http://finance.data.gov.uk/def/coins/statistical-concept/programme-admin> .
+<http://finance.data.gov.uk/dsd/coins/attribute/programmeAdmin> <http://purl.org/linked-data/cube#codeList> <http://finance.data.gov.uk/def/coins/programme-admin> .
+<http://finance.data.gov.uk/dsd/coins/attribute/programmeAdmin> <http://www.w3.org/2004/02/skos/core#notation> "programme_admin" .
+_:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7ffb <http://purl.org/linked-data/cube#componentProperty> <http://finance.data.gov.uk/dsd/coins/dimension/accountCode> .
+_:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7ffb <http://purl.org/linked-data/cube#order> "4"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:AX2dX120ec5c3X3aX12c5969b8cdX3aXX2dX7fe7 <http://purl.org/linked-data/cube#componentProperty> <http://finance.data.gov.uk/dsd/coins/attribute/incomeCategory> .
+<http://finance.data.gov.uk/dsd/coins/attribute/incomeCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#AttributeProperty> .
+<http://finance.data.gov.uk/dsd/coins/attribute/incomeCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://finance.data.gov.uk/dsd/coins/attribute/incomeCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#CodedProperty> .
+<http://finance.data.gov.uk/dsd/coins/attribute/incomeCategory> <http://www.w3.org/2000/01/rdf-schema#label> "income-category attribute"@en .
+<http://finance.data.gov.uk/dsd/coins/attribute/incomeCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "Attribute property representing income category" .
+<http://finance.data.gov.uk/dsd/coins/attribute/incomeCategory> <http://www.w3.org/2000/01/rdf-schema#range> <http://finance.data.gov.uk/def/coins/income-category/IncomeCategory> .
+<http://finance.data.gov.uk/dsd/coins/attribute/incomeCategory> <http://purl.org/linked-data/cube#concept> <http://finance.data.gov.uk/def/coins/statistical-concept/income-category> .
+<http://finance.data.gov.uk/dsd/coins/attribute/incomeCategory> <http://purl.org/linked-data/cube#codeList> <http://finance.data.gov.uk/def/coins/income-category> .
+<http://finance.data.gov.uk/dsd/coins/attribute/incomeCategory> <http://www.w3.org/2004/02/skos/core#notation> "income_category" .

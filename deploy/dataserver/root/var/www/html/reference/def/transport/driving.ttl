@@ -1,0 +1,80 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix sdmx-measure: <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-dim: <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-att: <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix driving: <http://transport.data.gov.uk/def/driving/> .
+@prefix test: <http://transport.data.gov.uk/def/driving-test/> .
+
+# Schema
+
+<http://transport.data.gov.uk/def/driving>
+  rdfs:label "Driving Vocabulary" ;
+  rdfs:comment "A set of classes and properties to do with driving."@en ;
+  .
+
+# Classes
+
+driving:TestCentre a rdfs:Class ;
+  rdfs:label "Driving Test Centre"@en ;
+  rdfs:subClassOf org:Site ;
+  rdfs:isDefinedBy <http://transport.data.gov.uk/def/driving> .
+
+driving:TheoryTestCentre a rdfs:Class ;
+  rdfs:label "Driving Theory Test Centre"@en ;
+  rdfs:subClassOf driving:TestCentre ;
+  rdfs:isDefinedBy <http://transport.data.gov.uk/def/driving> .
+
+driving:PracticalTestCentre a rdfs:Class ;
+  rdfs:label "Driving Practical Test Centre"@en ;
+  rdfs:subClassOf driving:TestCentre ;
+  rdfs:isDefinedBy <http://transport.data.gov.uk/def/driving> .
+
+driving:TestAvailability a rdfs:Class ;
+  rdfs:label "Driving Test Availability"@en ;
+  rdfs:subClassOf qb:Observation ;
+  rdfs:isDefinedBy <http://transport.data.gov.uk/def/driving> .
+
+# Properties
+
+driving:testCentre a rdf:Property , owl:ObjectProperty ;
+  rdfs:label "Test Centre"@en ;
+  rdfs:range driving:TestCentre ;
+  rdfs:isDefinedBy <http://transport.data.gov.uk/def/driving> .
+
+driving:offersTest a rdf:Property , owl:ObjectProperty ;
+  rdfs:label "Offers Test"@en ;
+  rdfs:subPropertyOf test:drivingTest ;
+  rdfs:domain driving:TestCentre ;
+  rdfs:range test:DrivingTest ;
+  rdfs:isDefinedBy <http://transport.data.gov.uk/def/driving> .
+
+driving:testAvailability a rdf:Property , owl:ObjectProperty ;
+  rdfs:label "Test Availability"@en ;
+  rdfs:domain driving:TestCentre ;
+  rdfs:range driving:TestAvailability ;
+  rdfs:isDefinedBy <http://transport.data.gov.uk/def/driving> .
+
+# QB Dataset structure
+
+driving:test-availability-structure 
+  a qb:DataStructureDefinition ;
+  rdfs:label "Dataset Structure for Driving Test Availability"@en ;
+  qb:component 
+    driving:test-centre-component , 
+    driving:time-period-component , 
+    driving:driving-test-component , 
+    driving:obs-value-component , 
+    driving:unit-measure-component .
+
+driving:test-centre-component  qb:dimension driving:testCentre .
+driving:time-period-component  qb:dimension sdmx-dim:timePeriod .
+driving:driving-test-component qb:dimension test:drivingTest .
+driving:obs-value-component    qb:measure   sdmx-measure:obsValue .
+driving:unit-measure-component qb:attribute sdmx-att:unitMeasure .

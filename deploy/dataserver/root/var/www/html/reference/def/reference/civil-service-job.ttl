@@ -1,0 +1,363 @@
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix dct:     <http://purl.org/dc/terms/> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix void:    <http://rdfs.org/ns/void#> .
+@prefix time:    <http://www.w3.org/2006/time#> .
+@prefix opmv:    <http://purl.org/net/opmv/ns#> .
+@prefix org:     <http://www.w3.org/ns/org#> .
+@prefix gov:     <http://reference.data.gov.uk/def/central-government/> .
+@prefix :        <http://reference.data.gov.uk/def/civil-service-job/> .
+
+:Job a rdfs:Class ;
+  rdfs:label "Job"@en ;
+  rdfs:subClassOf skos:Concept ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/civil-service-job> .
+
+:job a rdf:Property , owl:ObjectProperty ;
+  rdfs:label "Job"@en ;
+  rdfs:range :Job ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/civil-service-job> .
+
+<http://reference.data.gov.uk/def/civil-service-job> a skos:ConceptScheme , void:Dataset ;
+  rdfs:label "Civil Service Jobs"@en ;
+  skos:hasTopConcept :not-in-post , :analyst , :business-manager , :communications-manager , :communications-support-officer , :correspondence-manager , :diary-manager , :economist , :executive-assistant , :finance-officer , :finance-support-officer , :hr-officer , :hr-support-officer , :internal-audit-support-officer , :internal-auditor , :it-manager , :it-support-officer , :junior-analyst , :knowledge-information-management-manager , :knowledge-information-management-support-officer , :legal-adviser , :legal-support-officer , :office-manager , :operational-manager , :operational-researcher , :operations-support-officer , :policy-adviser , :policy-support-officer , :press-officer , :principal-private-secretary , :private-secretary , :procurement-officer , :procurement-support-officer- , :programme-manager , :programme-officer-manager , :programme-support-officer , :project-manager , :project-support-officer , :review-support-officer , :review-team-leader , :senior-analyst , :senior-communications-manager , :senior-correspondence-manager , :senior-economist , :senior-finance-manager , :senior-hr-manager , :senior-information-manager , :senior-internal-auditor , :senior-it-manager , :senior-legal-adviser , :senior-operational-manager , :senior-operational-researcher , :senior-policy-adviser , :senior-press-officer , :senior-procurement-officer , :senior-project-manager , :senior-statistician , :senior-tax-officer , :senior-technical-adviser , :senior-web-manager , :statistical-support-officer , :statistician , :tax-officer , :tax-support-officer , :technical-adviser , :technical-support-officer , :web-manager .
+
+:not-in-post 
+  a :Job ;
+  skos:prefLabel "Not in post"@en ;
+  skos:altLabel "Not in Post"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-job> .
+
+:analyst 
+  a :Job ;
+  skos:prefLabel "Analyst"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-job> .
+
+:business-manager 
+  a :Job ;
+  skos:prefLabel "Business Manager"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-job> .
+
+:communications-manager 
+  a :Job ;
+  skos:prefLabel "Communications Manager"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-job> .
+
+:communications-support-officer 
+  a :Job ;
+  skos:prefLabel "Communications Support Officer"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-job> .
+
+:correspondence-manager 
+  a :Job ;
+  skos:prefLabel "Correspondence Manager"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-job> .
+
+:diary-manager 
+  a :Job ;
+  skos:prefLabel "Diary Manager"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-job> .
+
+:economist 
+  a :Job ;
+  skos:prefLabel "Economist"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-job> .
+
+:executive-assistant 
+  a :Job ;
+  skos:prefLabel "Executive Assistant"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-job> .
+
+:finance-officer 
+  a :Job ;
+  skos:prefLabel "Finance Officer"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-job> .
+
+:finance-support-officer 
+  a :Job ;
+  skos:prefLabel "Finance Support Officer"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-job> .
+
+:hr-officer 
+  a :Job ;
+  skos:prefLabel "HR Officer"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-job> .
+
+:hr-support-officer 
+  a :Job ;
+  skos:prefLabel "HR Support Officer"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-job> .
+
+:internal-audit-support-officer 
+  a :Job ;
+  skos:prefLabel "Internal Audit Support Officer"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-job> .
+
+:internal-auditor 
+  a :Job ;
+  skos:prefLabel "Internal Auditor"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-job> .
+
+:it-manager 
+  a :Job ;
+  skos:prefLabel "IT Manager"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-job> .
+
+:it-support-officer 
+  a :Job ;
+  skos:prefLabel "IT Support Officer"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-job> .
+
+:junior-analyst 
+  a :Job ;
+  skos:prefLabel "Junior Analyst"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-job> .
+
+:knowledge-information-management-manager 
+  a :Job ;
+  skos:prefLabel "Knowledge Information Management Manager"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-job> .
+
+:knowledge-information-management-support-officer 
+  a :Job ;
+  skos:prefLabel "Knowledge Information Management Support Officer"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-job> .
+
+:legal-adviser 
+  a :Job ;
+  skos:prefLabel "Legal Adviser"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-job> .
+
+:legal-support-officer 
+  a :Job ;
+  skos:prefLabel "Legal Support Officer"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-job> .
+
+:office-manager 
+  a :Job ;
+  skos:prefLabel "Office Manager"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-job> .
+
+:operational-manager 
+  a :Job ;
+  skos:prefLabel "Operational Manager"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-job> .
+
+:operational-researcher 
+  a :Job ;
+  skos:prefLabel "Operational Researcher"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-job> .
+
+:operations-support-officer 
+  a :Job ;
+  skos:prefLabel "Operations Support Officer"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-job> .
+
+:policy-adviser 
+  a :Job ;
+  skos:prefLabel "Policy Adviser"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-job> .
+
+:policy-support-officer 
+  a :Job ;
+  skos:prefLabel "Policy Support Officer"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-job> .
+
+:press-officer 
+  a :Job ;
+  skos:prefLabel "Press Officer"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-job> .
+
+:principal-private-secretary 
+  a :Job ;
+  skos:prefLabel "Principal Private Secretary"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-job> .
+
+:private-secretary 
+  a :Job ;
+  skos:prefLabel "Private Secretary"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-job> .
+
+:procurement-officer 
+  a :Job ;
+  skos:prefLabel "Procurement Officer"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-job> .
+
+:procurement-support-officer- 
+  a :Job ;
+  skos:prefLabel "Procurement Support Officer"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-job> .
+
+:programme-manager 
+  a :Job ;
+  skos:prefLabel "Programme Manager"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-job> .
+
+:programme-officer-manager 
+  a :Job ;
+  skos:prefLabel "Programme Officer Manager"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-job> .
+
+:programme-support-officer 
+  a :Job ;
+  skos:prefLabel "Programme Support Officer"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-job> .
+
+:project-manager 
+  a :Job ;
+  skos:prefLabel "Project Manager"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-job> .
+
+:project-support-officer 
+  a :Job ;
+  skos:prefLabel "Project Support Officer"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-job> .
+
+:review-support-officer 
+  a :Job ;
+  skos:prefLabel "Review Support Officer"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-job> .
+
+:review-team-leader 
+  a :Job ;
+  skos:prefLabel "Review Team Leader"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-job> .
+
+:senior-analyst 
+  a :Job ;
+  skos:prefLabel "Senior Analyst"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-job> .
+
+:senior-communications-manager 
+  a :Job ;
+  skos:prefLabel "Senior Communications Manager"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-job> .
+
+:senior-correspondence-manager 
+  a :Job ;
+  skos:prefLabel "Senior Correspondence Manager"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-job> .
+
+:senior-economist 
+  a :Job ;
+  skos:prefLabel "Senior Economist"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-job> .
+
+:senior-finance-manager 
+  a :Job ;
+  skos:prefLabel "Senior Finance Manager"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-job> .
+
+:senior-hr-manager 
+  a :Job ;
+  skos:prefLabel "Senior HR Manager"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-job> .
+
+:senior-information-manager 
+  a :Job ;
+  skos:prefLabel "Senior Information Manager"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-job> .
+
+:senior-internal-auditor 
+  a :Job ;
+  skos:prefLabel "Senior Internal Auditor"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-job> .
+
+:senior-it-manager 
+  a :Job ;
+  skos:prefLabel "Senior IT Manager"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-job> .
+
+:senior-legal-adviser 
+  a :Job ;
+  skos:prefLabel "Senior Legal Adviser"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-job> .
+
+:senior-operational-manager 
+  a :Job ;
+  skos:prefLabel "Senior Operational Manager"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-job> .
+
+:senior-operational-researcher 
+  a :Job ;
+  skos:prefLabel "Senior Operational Researcher"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-job> .
+
+:senior-policy-adviser 
+  a :Job ;
+  skos:prefLabel "Senior Policy Adviser"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-job> .
+
+:senior-press-officer 
+  a :Job ;
+  skos:prefLabel "Senior Press Officer"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-job> .
+
+:senior-procurement-officer 
+  a :Job ;
+  skos:prefLabel "Senior Procurement Officer"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-job> .
+
+:senior-project-manager 
+  a :Job ;
+  skos:prefLabel "Senior Project Manager"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-job> .
+
+:senior-statistician 
+  a :Job ;
+  skos:prefLabel "Senior Statistician"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-job> .
+
+:senior-tax-officer 
+  a :Job ;
+  skos:prefLabel "Senior Tax Officer"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-job> .
+
+:senior-technical-adviser 
+  a :Job ;
+  skos:prefLabel "Senior Technical Adviser"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-job> .
+
+:senior-web-manager 
+  a :Job ;
+  skos:prefLabel "Senior Web Manager"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-job> .
+
+:statistical-support-officer 
+  a :Job ;
+  skos:prefLabel "Statistical Support Officer"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-job> .
+
+:statistician 
+  a :Job ;
+  skos:prefLabel "Statistician"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-job> .
+
+:tax-officer 
+  a :Job ;
+  skos:prefLabel "Tax Officer"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-job> .
+
+:tax-support-officer 
+  a :Job ;
+  skos:prefLabel "Tax Support Officer"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-job> .
+
+:technical-adviser 
+  a :Job ;
+  skos:prefLabel "Technical Adviser"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-job> .
+
+:technical-support-officer 
+  a :Job ;
+  skos:prefLabel "Technical Support Officer"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-job> .
+
+:web-manager 
+  a :Job ;
+  skos:prefLabel "Web Manager"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-job> .

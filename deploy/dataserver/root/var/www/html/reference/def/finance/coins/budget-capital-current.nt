@@ -1,0 +1,47 @@
+<http://finance.data.gov.uk/def/coins/BudgetCapitalCurrent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://finance.data.gov.uk/def/coins/BudgetCapitalCurrent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://finance.data.gov.uk/def/coins/BudgetCapitalCurrent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/BudgetCapitalCurrent> <http://www.w3.org/2000/01/rdf-schema#label> "budget capital current values class"@en .
+<http://finance.data.gov.uk/def/coins/BudgetCapitalCurrent> <http://www.w3.org/2004/02/skos/core#prefLabel> "budget capital current values class"@en .
+<http://finance.data.gov.uk/def/coins/BudgetCapitalCurrent> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of values in the budget capital current code-list scheme" .
+<http://finance.data.gov.uk/def/coins/budget-capital-current/b-cap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/BudgetCapitalCurrent> .
+<http://finance.data.gov.uk/def/coins/budget-capital-current/b-cap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/budget-capital-current/b-cap> <http://www.w3.org/2000/01/rdf-schema#label> "B-CAP"@en .
+<http://finance.data.gov.uk/def/coins/budget-capital-current/b-cap> <http://www.w3.org/2004/02/skos/core#prefLabel> "B-CAP"@en .
+<http://finance.data.gov.uk/def/coins/budget-capital-current/b-cap> <http://www.w3.org/2004/02/skos/core#notation> "b-cap" .
+<http://finance.data.gov.uk/def/coins/budget-capital-current/b-cap> <http://www.w3.org/2000/01/rdf-schema#comment> "Capital budget" .
+<http://finance.data.gov.uk/def/coins/budget-capital-current/b-cap> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/budget-capital-current> .
+<http://finance.data.gov.uk/def/coins/budget-capital-current/b-con> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/BudgetCapitalCurrent> .
+<http://finance.data.gov.uk/def/coins/budget-capital-current/b-con> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/budget-capital-current/b-con> <http://www.w3.org/2000/01/rdf-schema#label> "B-CON"@en .
+<http://finance.data.gov.uk/def/coins/budget-capital-current/b-con> <http://www.w3.org/2004/02/skos/core#prefLabel> "B-CON"@en .
+<http://finance.data.gov.uk/def/coins/budget-capital-current/b-con> <http://www.w3.org/2004/02/skos/core#notation> "b-con" .
+<http://finance.data.gov.uk/def/coins/budget-capital-current/b-con> <http://www.w3.org/2000/01/rdf-schema#comment> "Consumption (scores to Near-cash with Resource Budget)" .
+<http://finance.data.gov.uk/def/coins/budget-capital-current/b-con> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/budget-capital-current> .
+<http://finance.data.gov.uk/def/coins/budget-capital-current/b-nul> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/BudgetCapitalCurrent> .
+<http://finance.data.gov.uk/def/coins/budget-capital-current/b-nul> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/budget-capital-current/b-nul> <http://www.w3.org/2000/01/rdf-schema#label> "B-NUL"@en .
+<http://finance.data.gov.uk/def/coins/budget-capital-current/b-nul> <http://www.w3.org/2004/02/skos/core#prefLabel> "B-NUL"@en .
+<http://finance.data.gov.uk/def/coins/budget-capital-current/b-nul> <http://www.w3.org/2004/02/skos/core#notation> "b-nul" .
+<http://finance.data.gov.uk/def/coins/budget-capital-current/b-nul> <http://www.w3.org/2000/01/rdf-schema#comment> "Outside budgets" .
+<http://finance.data.gov.uk/def/coins/budget-capital-current/b-nul> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/budget-capital-current> .
+<http://finance.data.gov.uk/def/coins/budget-capital-current/b-nch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/BudgetCapitalCurrent> .
+<http://finance.data.gov.uk/def/coins/budget-capital-current/b-nch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/budget-capital-current/b-nch> <http://www.w3.org/2000/01/rdf-schema#label> "B-NCH"@en .
+<http://finance.data.gov.uk/def/coins/budget-capital-current/b-nch> <http://www.w3.org/2004/02/skos/core#prefLabel> "B-NCH"@en .
+<http://finance.data.gov.uk/def/coins/budget-capital-current/b-nch> <http://www.w3.org/2004/02/skos/core#notation> "b-nch" .
+<http://finance.data.gov.uk/def/coins/budget-capital-current/b-nch> <http://www.w3.org/2000/01/rdf-schema#comment> "Non cash (scores to Non-cash with Resource Budget)" .
+<http://finance.data.gov.uk/def/coins/budget-capital-current/b-nch> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/budget-capital-current> .
+<http://finance.data.gov.uk/def/coins/budget-capital-current> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://finance.data.gov.uk/def/coins/budget-capital-current> <http://www.w3.org/2000/01/rdf-schema#label> "budget capital current code list concept scheme"@en .
+<http://finance.data.gov.uk/def/coins/budget-capital-current> <http://www.w3.org/2004/02/skos/core#prefLabel> "budget capital current code list concept scheme"@en .
+<http://finance.data.gov.uk/def/coins/budget-capital-current> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/budget-capital-current/b-cap> .
+<http://finance.data.gov.uk/def/coins/budget-capital-current> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/budget-capital-current/b-con> .
+<http://finance.data.gov.uk/def/coins/budget-capital-current> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/budget-capital-current/b-nch> .
+<http://finance.data.gov.uk/def/coins/budget-capital-current> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/budget-capital-current/b-nul> .
+<http://finance.data.gov.uk/def/coins/statistical-concept/budget-capital-current> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/sdmx#Concept> .
+<http://finance.data.gov.uk/def/coins/statistical-concept/budget-capital-current> <http://www.w3.org/2000/01/rdf-schema#label> "budget capital current"@en .
+<http://finance.data.gov.uk/def/coins/statistical-concept/budget-capital-current> <http://www.w3.org/2004/02/skos/core#prefLabel> "budget capital current"@en .
+<http://finance.data.gov.uk/def/coins/statistical-concept/budget-capital-current> <http://www.w3.org/2000/01/rdf-schema#comment> "Gives the classification of transactions for budget purposes under the 2009-10 budgetary framework: See the Consolidated Budgeting Guidance 2010 11 for background information." .
+<http://finance.data.gov.uk/def/coins/statistical-concept/budget-capital-current> <http://purl.org/dc/terms/source> <http://www.hm-treasury.gov.uk/d/coins_guidance.pdf> .
+<http://finance.data.gov.uk/def/coins/statistical-concept/budget-capital-current> <http://www.epimorphics.com/vocabs/coins-generate#columnName> "budget_capital_current" .

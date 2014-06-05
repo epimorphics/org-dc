@@ -1,0 +1,734 @@
+@base					<http://environment.data.gov.uk/def/bathing-water-quality> .
+@prefix :        		<http://environment.data.gov.uk/def/bathing-water-quality/> .
+
+# Prefix for Monitoring Point Locations under INSPIRE environmental monitoring facilities theme.
+@prefix	loc-bwq:		<http://location.data.gov.uk/def/ef/SamplingPoint/> .
+
+# Prefix for Bathing Waters (associated with Monitoring Points) as ref-data under environment.data.gov.uk.
+@prefix	env-bw:			<http://environment.data.gov.uk/def/bathing-water/> .
+
+@prefix rdfs:    		<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:     		<http://www.w3.org/2002/07/owl#> .
+@prefix xsd:     		<http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:     		<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb:      		<http://purl.org/linked-data/cube#> .
+@prefix time:	 		<http://www.w3.org/2006/time#> .
+@prefix	interval:       <http://reference.data.gov.uk/def/intervals/> .
+@prefix skos:   	    <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms:        <http://purl.org/dc/terms/> .
+@prefix foaf:           <http://xmlns.com/foaf/0.1/> .
+
+
+@prefix sdmx-attribute: <http://purl.org/linked-data/sdmx/2009/sdmx-attribute#> .
+
+<>
+      a       owl:Ontology ;
+      dcterms:created		"2010-08-16"^^xsd:date;
+	  dcterms:modified		"2010-12-15"^^xsd:date;
+	  dcterms:contributor	[foaf:mbox "skw@epimorphics.com"; foaf:name "Stuart Williams"@en];
+	  # add your names here
+
+	  dcterms:license 	<http://www.opendatacommons.org/licenses/pddl/1.0/> ;
+      
+      owl:imports <http://purl.org/linked-data/cube>,
+                  <http://www.w3.org/2006/time>,
+                  <http://www.w3.org/2004/02/skos/core>,
+                  <http://reference.data.gov.uk/def/intervals>,
+                  <http://purl.org/linked-data/cube> ;
+      
+      owl:versionInfo "0.1"^^xsd:string .
+
+			
+###############################################################
+#
+# Annual bathing water compliance DSD.
+#
+###############################################################
+:complainceDsd
+	a						qb:DataStructureDefinition;
+	rdfs:comment			"A DSD for Bathing Water Quality Annual Compliance assessment reporting."@en;
+	rdfs:label				"bwq annual compliance DSD"@en;
+	rdfs:isDefinedBy		<>;
+	qb:component			[qb:dimension	:bathingWater],
+							[qb:dimension	:samplingPoint],
+							[qb:dimension	:sampleYear],
+							[qb:measure		:complianceClassification],
+							[qb:attribute	:inYearDetail]
+							.
+:inYearDetail
+		a					qb:AttributeProperty;
+		rdfs:label			"in-year detail"@en;
+		rdfs:comment		"A property which relates an annual assessment for a bathing water with the in-year samples from which the assessment was computed"@en;
+		rdfs:isDefinedBy	<>;
+		rdfs:domain			:ComplianceAssessment;
+		rdfs:range			:BySamplingPointYearSlice;
+		.
+		
+###############################################################
+# Annual Compliance Slice Keys
+###############################################################						
+:complianceByYearKey
+	a						qb:SliceKey;
+	rdfs:label				"By Year Annual Compliance Slice Key"@en;
+	rdfs:comment			"A slice key for grouping annual compliance assessments by year."@en;
+	rdfs:isDefinedBy		<>;
+	qb:componentProperty	:sampleYear;
+	.
+							
+:complianceBySamplingPointKey
+	a						qb:SliceKey;
+	rdfs:label				"By sampling point annual compliance slice key"@en;
+	rdfs:comment			"A slice key for grouping annual compliance assessments by sampling point."@en;
+	rdfs:isDefinedBy		<>;
+	qb:componentProperty	:samplingPoint;
+	.
+							
+###############################################################
+# Annual Compliance Slices
+###############################################################
+:ComplianceByYearSlice
+	a						owl:Class, rdfs:Class;
+	rdfs:label				"Annual compliance slice by assessment year. (Class)"@en;
+	rdfs:isDefinedBy		<>;
+	rdfs:subClassOf			qb:Slice,
+							[ a owl:Restriction;
+							  owl:onProperty	qb:sliceStructure;
+							  owl:hasValue		:complianceByYearKey;
+							]
+	.
+						
+							
+:ComplianceBySamplingPointSlice
+	a						owl:Class, rdfs:Class;
+	rdfs:label				"Annual compliance slice by sampling point. (Class)"@en;
+	rdfs:isDefinedBy		<>;
+	rdfs:subClassOf			qb:Slice,
+							[ a owl:Restriction;
+							  owl:onProperty	qb:sliceStructure;
+							  owl:hasValue		:complianceBySamplingPointKey;
+							]
+	.
+###############################################################
+# Annual Compliance Datasets
+###############################################################								
+:ComplianceDataset	
+		a					owl:Class,rdfs:Class;	
+		rdfs:subClassOf		qb:Dataset,
+							[ 	a 				owl:Restriction;
+								owl:onProperty	qb:structure;
+								owl:hasValue	:complianceDsd;	
+							];
+		rdfs:isDefinedBy	<>;
+		rdfs:label			"BWQ Annual Assessment Dataset (Class)"@en;
+		rdfs:comment 		"A specialisation of qb:Dataset for Annual Bathing Water Quality assesments."@en;
+		.	
+
+###############################################################
+#
+# Specialised qb:Observation subclass for Bathing Water annual assessments.
+#
+###############################################################
+:ComplianceAssessment
+		a					owl:Class, rdfs:Class;
+		rdfs:label			"Bathing Water Quality Annual Assessment"@en;
+		rdfs:comment		"Specialised qb:Observation subclass for Bathing Water Quality Annual Assessments."@en;
+		rdfs:subClassOf		qb:Observation;
+		rdfs:isDefinedBy	<>;
+		.
+
+###############################################################
+#
+# Main in year bathing water quality in-season sample assessment DSD.
+#
+###############################################################
+:sampleDsd
+		a       			qb:DataStructureDefinition ;
+		rdfs:comment 		"A DSD for reporting Bathing Water Quality in-year samples."@en ;
+		rdfs:label			"bwq in-year sample DSD"@en;
+		rdfs:isDefinedBy	<>;
+      
+		qb:component		[qb:dimension 	:bathingWater],
+							[qb:dimension 	:samplingPoint],
+							[qb:dimension 	:sampleWeek],
+							[qb:dimension	:sampleYear],
+
+							[qb:measure		:totalColiformCount],      [qb:attribute :totalColiformQualifier],
+							[qb:measure		:faecalColiformCount],     [qb:attribute :faecalColiformQualifier],
+							[qb:measure		:faecalStreptococciCount], [qb:attribute :faecalStreptococciQualifier],
+							[qb:measure		:entrovirusCount],		   [qb:attribute :entrovirusQualifier],
+							[qb:measure		:salmonellaPresent],
+							[qb:measure 	:sampleClassification],
+	
+							[qb:attribute 	:sampleDateTime],
+							[qb:attribute	:abnormalWeatherException];
+	  				
+	  	qb:sliceKey			:bySamplingPointKey,
+							:byWeekKey,
+							:byYearKey,
+							:bySamplingPointYearKey;
+        .
+
+    
+      
+###############################################################
+# In-year Sample Slice Keys
+###############################################################						
+:bySamplingPointKey
+		a					qb:SliceKey;
+		rdfs:label			"By Sampling Point Slice Key"@en;
+		rdfs:comment		"A Slice Key for grouping samples by sampling point"@en;
+		rdfs:isDefinedBy	<>;
+		qb:componentProperty
+							:samplingPoint 
+		.
+
+:byWeekKey
+		a					qb:SliceKey;
+		rdfs:label			"By Sample Week Slice Key"@en;
+		rdfs:comment		"A Slice Key for grouping samples by sample week"@en;
+		rdfs:isDefinedBy	<>;
+		qb:componentProperty#
+							:sampleWeek;
+		.
+
+:byYearKey
+		a					qb:SliceKey;
+		rdfs:label			"By Sample Year Slice Key"@en;
+		rdfs:comment		"A Slice Key for grouping samples by sample year"@en;
+		rdfs:isDefinedBy	<>;
+		qb:componentProperty
+							:sampleYear;
+		.
+
+###############################################################
+# In-year Sample Slices
+###############################################################						
+:bySamplingPointYearKey
+		a					qb:SliceKey;
+		rdfs:label			"By Sampling Point and By Sample Year Slice Key"@en;
+		rdfs:comment		"A Slice Key for grouping samples by sampling point and sample year"@en;
+		rdfs:isDefinedBy	<>;
+		qb:componentProperty	
+							:samplingPoint,:sampleYear;
+		.
+
+
+:SampleDataset	
+		a					owl:Class, rdfs:Class;	
+		rdfs:subClassOf		qb:Dataset,
+							[ 	a 				owl:Restriction;
+								owl:onProperty	qb:structure;
+								owl:hasValue	:sampleDsd;	
+							];
+		rdfs:isDefinedBy	<>;
+		rdfs:label	"BWQ Sample Dataset (Class)"@en;
+		rdfs:comment "A specialisation of qb:Dataset for In-Year Bathing Water Quality Sample data."@en;
+		.
+		
+:BySamplingPointSlice
+		a					owl:Class, rdfs:Class;
+		rdfs:label			"Slice by sampling point."@en;
+		rdfs:comment		"A specialised subclass of qb:Slice for bath water quality sample dataset slices by sampling point."@en;
+		rdfs:isDefinedBy	<>;
+		rdfs:subClassOf		qb:Slice,
+							[	a	owl:Restriction;
+								owl:onProperty		qb:sliceStructure;
+								owl:hasValue		:bySamplingPointKey;
+							];
+		.
+				
+:ByWeekSlice
+		a					owl:Class, rdfs:Class;
+		rdfs:label			"Slice by sample week."@en;
+		rdfs:comment		"A specialised subclass of qb:Slice for bath water quality sample dataset slices by the week in which the sample was taken."@en;
+		rdfs:isDefinedBy	<>;
+		rdfs:subClassOf		qb:Slice,
+							[	a	owl:Restriction;
+								owl:onProperty		qb:sliceStructure;
+								owl:hasValue		:byWeekKey;
+							];
+		.
+		
+:ByYearSlice
+		a					owl:Class, rdfs:Class;
+		rdfs:label			"Slice by sample year"@en;
+		rdfs:comment		"A specialised subclass of qb:Slice for bath water quality sample dataset slices by the year in which the sample was taken."@en;
+		rdfs:isDefinedBy	<>;
+		rdfs:subClassOf		qb:Slice,
+							[	a	owl:Restriction;
+								owl:onProperty		qb:sliceStructure;
+								owl:hasValue		:byYearKey;
+							];
+		.
+:BySamplingPointYearSlice
+		a					owl:Class, rdfs:Class;
+		rdfs:label			"Slice by sampling point and year"@en;
+		rdfs:comment		"A specialised subclass of qb:Slice for bath water quality sample dataset slices by sampling point and sample year."@en;
+		rdfs:isDefinedBy	<>;
+		rdfs:subClassOf		qb:Slice,
+							[	a	owl:Restriction;
+								owl:onProperty		qb:sliceStructure;
+								owl:hasValue		:bySamplingPointYearKey;
+							];
+		.
+		
+:LatestSampleSlice
+		a					owl:Class, rdfs:Class;
+		rdfs:label			"Latest In-Season Assessment Slice (Class)"@en;
+		rdfs:comment		"A category of (key-less) slice for gathering the most recent in season sample assessments"@en;
+		rdfs:subClassOf		qb:Slice;
+		.
+		
+			
+###############################################################
+#
+# Specialised qb:Observation subclass for Bathing Water Quality Sample Assessments.
+#
+###############################################################
+:SampleAssessment
+		a					owl:Class, rdfs:Class;
+		rdfs:label			"Bathing Water Quality In-Year Sample Assessment"@en;
+		rdfs:comment		"Specialised qb:Observation subclass for Bathing Water Quality In-Year Sample Assessments."@en;
+		rdfs:subClassOf		qb:Observation;
+		rdfs:isDefinedBy	<>;
+		.
+
+###############################################################
+#
+# SampleAssessment Dimensions.
+#
+###############################################################
+#
+:sampleYear
+		a					qb:DimensionProperty;
+		rdfs:label			"The calendar year for which the sample is representative."@en;
+		rdfs:range			interval:CalendarYear;
+		rdfs:isDefinedBy	<>;
+		.
+
+#	
+:sampleWeek
+		a					qb:DimensionProperty;
+		rdfs:label			"The calendar week for which the sample is representative."@en;
+		rdfs:range			interval:CalendarWeek;
+		rdfs:isDefinedBy	<>;
+		.
+	
+#
+:samplingPoint
+		a					qb:DimensionProperty;
+		rdfs:label			"The sampling point where the sample was taken."@en;
+		rdfs:range			loc-bwq:SamplingPoint;
+		rdfs:isDefinedBy	<>;
+		.
+
+#
+:bathingWater
+		a					qb:DimensionProperty;
+		rdfs:label			"The bathing water from which the sample was taken."@en;
+		rdfs:range			env-bw:BathingWater;	
+		rdfs:isDefinedBy	<>;
+		.
+
+###############################################################
+#
+# BWQ - SampleAssessment measures and attribute
+#
+###############################################################
+:sampleDateTime
+		a 					qb:AttributeProperty;
+		rdfs:label			"The date/time at which a sample was taken"@en;
+		rdfs:range			time:Instant;
+		rdfs:isDefinedBy	<>;
+		.
+
+:totalColiformCount
+		a					qb:MeasureProperty;
+		rdfs:label			"Total Coliform Count"@en;
+		rdfs:comment		"The total number of colonies of coliform per 100ml water sample."@en;
+		rdfs:range			xsd:integer;
+		rdfs:isDefinedBy	<>;
+		.
+	
+:totalColiformQualifier
+		a					qb:AttributeProperty, qb:CodedProperty;
+		rdfs:label			"Total Coliform Count Qualifier"@en;
+		rdfs:comment		">, < or actual qualifier for Total Coliform Count"@en;
+		rdfs:isDefinedBy	<>;
+		qb:codeList			:countQualifier;
+		rdfs:range			:CountQualifier;
+		.
+
+:faecalColiformCount
+		a					qb:MeasureProperty;
+		rdfs:label			"Faecal Coliform Count"@en;
+		rdfs:comment		"The number of colonies of faecal coliform per 100ml water sample."@en;
+		rdfs:isDefinedBy	<>;
+		rdfs:range			xsd:integer;
+		.
+
+:faecalColiformQualifier
+		a					qb:AttributeProperty, qb:CodedProperty;
+		rdfs:label			"Faecal Coliform Count Qualifier"@en;
+		rdfs:comment		">, < or actual qualifier for Faecal Coliform Count"@en;
+		rdfs:isDefinedBy	<>;
+		qb:codeList			:countQualifier;
+		rdfs:range			:CountQualifier;
+		.
+	
+:faecalStreptococciCount
+		a					qb:MeasureProperty;
+		rdfs:label			"Faecal Streptococci Count"@en;
+		rdfs:comment		"The number of colonies of faecal streptococci per 100ml water sample."@en;
+		rdfs:isDefinedBy	<>;
+		rdfs:range			xsd:integer;	
+		.
+	
+:faecalStreptococciQualifier
+		a					qb:AttributeProperty, qb:CodedProperty;
+		rdfs:label			"Faecal Streptococci Count Qualifier"@en;
+		rdfs:comment		">, < or actual qualifier for Faecal Streptococci Count"@en;
+		rdfs:isDefinedBy	<>;
+		qb:codeList			:countQualifier;
+		rdfs:range			:CountQualifier;
+		.
+
+:salmonellaPresent
+		a					qb:MeasureProperty, qb:CodedProperty;
+		rdfs:label			"Salmonella present indicator";
+		rdfs:comment		"An indicator of the presence of salmonella a water sample."@en;
+		rdfs:isDefinedBy	<>;
+		qb:codeList			:presence;
+		rdfs:range			:Presence;	
+		.
+	
+:entrovirusCount
+		a					qb:MeasureProperty;
+		rdfs:label			"Entro Virus Count"@en;
+		rdfs:comment		"The number of colonies ofentro virus per 100ml water sample."@en;
+		rdfs:isDefinedBy	<>;
+		rdfs:range			xsd:integer;	
+		.
+
+:entrovirusQualifier
+		a					qb:AttributeProperty, qb:CodedProperty;
+		rdfs:label			"Entro Virus Count Qualifier"@en;
+		rdfs:comment		">, < or actual qualifier for Entro Virus Count"@en;	
+		rdfs:isDefinedBy	<>;
+		qb:codeList			:countQualifier;
+		rdfs:range			:CountQualifier;
+		.
+	
+:sampleClassification
+		a					qb:MeasureProperty, qb:CodedProperty;
+		rdfs:label			"In-year bathing water quality classification"@en;
+		rdfs:comment 		"In year sample bathing water quality assesment: C(closed), G(Excellent), I(Good), F(Poor), N(Not classified)"@en;
+		rdfs:isDefinedBy	<>;
+		qb:codeList			:compliance;
+		rdfs:range			:Compliance;
+		.
+	
+:complianceClassification
+		a					qb:MeasureProperty, qb:CodedProperty;
+		rdfs:label			"Annual bathing water quality classification"@en;
+		rdfs:comment 		"Annual bathing water quality assesment: C(closed), G(Excellent), I(Good), F(Poor), N(Not classified)"@en;
+		rdfs:isDefinedBy	<>;
+		qb:codeList			:compliance;
+		rdfs:range			:Compliance;
+		.
+
+:abnormalWeatherException
+		a				qb:AttributeProperty;
+		dcterms:source	<http://www.environment-agency.gov.uk/homeandleisure/119855.aspx>;
+		rdfs:label		"Abnormal Weather Exception"@en;
+		rdfs:comment	"""Article 5 of the Bathing Waters Directive allows the Environment Agency to disregard results that exceed the bathing water standards if they were affected by floods, other natural disasters or abnormal weather conditions.
+
+This applies to both the mandatory and guideline bathing water quality standards.
+
+Our monitoring policy requires us to take bathing water samples according to a pre-determined timetable. We don't avoid taking samples because there is a forecast of wet weather. If it subsequently happens that there is a mandatory exceedence and the sample was affected by abnormally wet weather, flooding or natural disaster, we will make an application for a waiver.  If the application is successful the sample result will be disregarded when we assess compliance but it will not be removed from our public register.
+
+Our policy for waiving bathing water results as a result of abnormal weather conditions has been agreed with Defra.
+
+Abnormal weather for the purposes of the Bathing Water Directive is defined as a storm event with return period of at least 1 in 5 years. A storm event will usually have occurred between 1 to 48 hours before the sample was taken (exceptionally upto 72 hours for larger catchments). We use rainfall data from rain-gauges that are representative of the bathing water catchment and approved by the Met Office.  We then use this data to make an assessment based on the 1 in 5 year criteria.
+
+The sample results displayed in the 'What's in your Backyard' section of our website only hold the results used to assess Bathing Water Directive compliance. When a waiver is granted the result is removed from this site but is still  available to the public through our public register."""@en;
+		rdfs:isDefinedBy	<>;
+		rdfs:range	xsd:boolean;
+		.
+	
+###############################################################
+#
+# SKOS ConceptScheme for moreThan/lessThan count qualifiers.
+#
+###############################################################
+:countQualifier	
+		a					skos:ConceptScheme;
+		rdfs:label	 		"count qualifier codeset (Concept Scheme)"@en;
+		rdfs:isDefinedBy	<>;
+		rdfs:comment 		"A skos:ConceptScheme for count qualifier code points. Count qualifier codes indicate whether an actual count or upper/lower bounds to detection are being reported."@en;
+		skos:hasTopConcept	:moreThan, :lessThan, :actual;
+		.
+
+# Class for count qualifier codepoints.
+:CountQualifier	
+		a					owl:Class, rdfs:Class;
+		rdfs:label			"count qualifier code (Class)"@en;
+		rdfs:subClassOf		skos:Concept;
+		rdfs:comment		"An owl:Class, rdfs:Class for count qualifier code points"@en;
+		rdfs:isDefinedBy	<>;
+		.
+				
+# A datatype for count qualifier notation literal values. 
+:countQualiferCode	
+		a					rdfs:Datatype;
+		rdfs:label			"count qualifier notation code"@en;
+		rdfs:comment		"A datatype for count qualifier notation literal values."@en;
+		rdfs:isDefinedBy	<>;
+				.
+				
+# A skos:notation sub-property for signifying count qualifier notation datatyped values.
+:countQualifierNotation
+		a					rdfs:Property;
+		rdfs:comment		"A skos:notation sub-property for signifying count qualifier notation datatyped values."@en;
+		rdfs:isDefinedBy	<>;
+		rdfs:subPropertyOf	skos:notation;
+		rdfs:range			:countQualiferCode;
+		.					
+								
+:moreThan
+		a					:CountQualifier, skos:Concept;
+		skos:prefLabel		"More Than"@en;
+		rdfs:label			"More Than"@en;
+		rdfs:isDefinedBy	<>;
+		skos:inScheme		:countQualifier;
+		skos:topConceptOf	:countQualifier;
+		:countQualifierNotation	">"^^:countQualifierCode;
+		skos:notation			">"^^:countQualifierCode;
+		skos:definition			"'>' Indicates that the actual count value is more than the value given; that it exceeds a detection/measurement upper bound."@en;
+		.
+				
+:lessThan
+		a					:CountQualifier, skos:Concept;
+		skos:prefLabel		"Less Than"@en;
+		rdfs:isDefinedBy	<>;
+		rdfs:label			"Less Than"@en;
+		skos:inScheme		:countQualifier;
+		skos:topConceptOf	:countQualifier;
+		:countQualifierNotation	"<"^^:countQualifierCode;
+		skos:notation			"<"^^:countQualifierCode;
+		skos:definition			"'<' Indicates that the actual count value is less than the value given; that it is less than a detection/measurement lower bound."@en;
+		.
+		 
+
+:actual
+		a					:CountQualifier, skos:Concept;
+		skos:prefLabel		"Actual Count"@en;
+		rdfs:label			"Actual Count"@en;
+		rdfs:isDefinedBy	<>;
+		skos:inScheme		:countQualifier;
+		skos:topConceptOf	:countQualifier;
+		:countQualifierNotation	
+							"="^^:countQualifierCode;
+		skos:notation		"="^^:countQualifierCode;
+		skos:definition		"'=' indicates that the actual count value is as given."@en;
+		.
+				
+###############################################################
+#
+# SKOS ConceptScheme Detected, Undetected and Not Assessed indication of presense.
+#
+###############################################################
+# Codeset Class;
+:Presence
+		a					owl:Class, rdfs:Class;
+		rdfs:subClassOf		skos:Concept;
+		rdfs:label			"presence indicator codeset (Class)"@en;
+		rdfs:isDefinedBy	<>;
+		rdfs:comment		"A distinguished subClass of skos:Concept for :Presence code points."@en;
+		.
+			
+#Codeset ConceptScheme
+:presence
+		a					skos:ConceptScheme;
+		rdfs:label			"presence indicator code (ConceptScheme)";
+		rdfs:comment		"A skos:ConceptScheme for the :Presence code points. :Presence code points indicated the presence of some characteristic detected during an assessment process."@en;
+		rdfs:isDefinedBy	<>;
+		skos:hasTopConcept	:present, :not-present, :not-assessed;
+		.
+			
+#Codeset distinguished Notation Datatype
+:presenceCode
+		a					rdfs:Datatype;
+		rdfs:isDefinedBy	<>;
+	 	rdfs:comment		"A datatype for presence indicator notation literal values."@en;
+	 	.
+
+#Distinguished skos:notation subproperty
+:presenceNotation
+		a					rdf:Property;
+		rdfs:subClassOf		skos:notation;
+		rdfs:comment		"A skos:notation sub-property for signifying presence indication notation datatyped values."@en;
+		rdfs:isDefinedBy	<>;
+		rdfs:range			:presenceCode;
+		.			
+
+#Codepoint
+:present
+		a					:Presence, skos:Concept;
+		skos:prefLabel		"present"@en;
+		rdfs:label			"present"@en;
+		rdfs:isDefinedBy	<>;
+		skos:definition		"A coded property value to indicate that an assessement has detected the presence of some characteristic."@en;
+		:presenceNotation	"P"^^:presenceCode;
+		skos:notation		"P"^^:presenceCode;
+		skos:inScheme		:presence;
+		skos:topConceptOf	:presence;
+		.
+
+#Codepoint
+:not-present	
+		a					:Presence, skos:Concept;
+		skos:prefLabel		"not-present"@en;
+		rdfs:label			"not-present"@en;
+		rdfs:isDefinedBy	<>;
+		skos:definition		"A coded property value to indicate that an assessement has not detected the presence of some characteristic."@en;
+		:presenceNotation	"N"^^:presenceCode;
+		skos:notation		"N"^^:presenceCode;
+		skos:inScheme		:presence;
+		skos:topConceptOf	:presence;
+		.
+			
+#Codepoint
+:not-accessed	a				:Presence, skos:Concept;
+		skos:prefLabel		"not-assessed"@en;
+		rdfs:label			"not-assessed"@en;
+		rdfs:isDefinedBy	<>;
+		skos:definition		"A coded property value to indicate that an assessment of the presense of some characteristic has not been made."@en;
+		:presenceNotation	"n/a"^^:presenceCode;
+		skos:notation		"n/a"^^:presenceCode;
+		skos:inScheme		:presence;
+		skos:topConceptOf	:presence;
+		.			
+###############################################################
+#			
+# A SKOS ConceptScheme for bathing water compliance classification codes.
+#
+###############################################################
+:compliance	a	skos:ConceptScheme;
+		rdfs:label			"Bathing Water Quality Compliance Category codeset (ConceptScheme)"@en;
+		rdfs:comment		"A collection of Bathing Water Compliance codes derived from classifications given at <http://www.environment-agency.gov.uk/homeandleisure/37841.aspx>"@en;
+		rdfs:isDefinedBy	<>;
+		skos:note			" A SKOS ConceptScheme for bathing water compliance classification codes.";
+		skos:hasTopConcept	:C, :F, :G, :I, :N;
+		.
+		
+# A subclass of skos:Concept to collect all instances of bathing water compliance codes.
+:Compliance	a				owl:Class, rdfs:Class;
+		rdfs:label			"Bathing Water Quality Compliance Category code (Class)"@en;
+		rdfs:comment		"A subclass of skos:Concept to collect all instances of bathing water compliance codes.";
+		rdfs:isDefinedBy	<>;
+		rdfs:subClassOf		skos:Concept;
+		.
+			
+# A datatype for typing bwq compliance code skos:notations.
+:complianceCode 
+		a 					rdfs:Datatype;
+		rdfs:label			"compliance code notation datatype"@en;
+		rdfs:comment		"A datatype for typing bwq compliance code skos:notations."@en;
+		rdfs:isDefinedBy	<>;
+			.
+			
+# A specialisation of skos:notation for bwq compliance code notations
+:complianceCodeNotation	a				rdfs:Property;
+		rdfs:subPropertyOf	skos:notation;
+		rdfs:range			:complianceCode;
+		rdfs:isDefinedBy	<>;
+		.
+
+# SKOS Concept used as code-point to classify a bathing water as closed.
+:C		a			:Compliance, skos:Concept;
+		rdfs:isDefinedBy	<>;
+		skos:inScheme		:compliance;
+		skos:topConceptOf	:compliance;
+		skos:definition	"Closed indicates that the bathing water was closed during the bathing season."@en;
+		rdfs:label		"Closed"@en;
+		rdfs:label		"Ar gau"@cy;
+		skos:prefLabel	"Closed"@en;
+		skos:prefLabel	"Ar gau"@cy;
+		:complianceCodeNotation		"C"^^:complianceCode;
+		skos:notation				"C"^^:complianceCode;
+		dcterms:source 	<http://www.environment-agency.gov.uk/homeandleisure/37841.aspx>
+		.
+	
+# SKOS Concept used as code-point to classify a bathing water as poor.
+:F		a					:Compliance, skos:Concept;
+		rdfs:isDefinedBy	<>;
+		skos:inScheme		:compliance;
+		skos:topConceptOf	:compliance;
+		skos:definition	"""We count the number of certain types of bacteria which may indicate the presence of pollution, mainly from sewage or livestock waste. Total coliforms (TC), faecal coliforms (FC) and faecal streptococci (FS) are bacteria that are not directly harmful but indicate the presence of pollution. An increase in the concentrations of bacteria indicates a decrease in water quality. All values are colonies per 100ml of sample.
+		
+Sample limits used for \"Poor\" are TC: >10000; FC: >2000; FS: N/A.
+
+For annual assessments \"Poor\" means that fewer than 95% of the samples meet the required mandatory standards of the Directive; """@en;
+		rdfs:label		"Poor"@en;
+		rdfs:label		"Gwan"@cy;
+		skos:prefLabel	"Poor"@en;
+		skos:prefLabel	"Gwan"@cy;
+		:complianceCodeNotation		"F"^^:complianceCode;
+		skos:notation				"F"^^:complianceCode;
+		dcterms:source	<http://www.environment-agency.gov.uk/homeandleisure/37841.aspx>;
+		.
+
+# SKOS Concept used as code-point to classify a bathing water as good.
+:I		a			:Compliance, skos:Concept;
+		rdfs:isDefinedBy	<>;
+		skos:inScheme		:compliance;
+		skos:topConceptOf	:compliance;
+		skos:definition	"""We count the number of certain types of bacteria which may indicate the presence of pollution, mainly from sewage or livestock waste. Total coliforms (TC), faecal coliforms (FC) and faecal streptococci (FS) are bacteria that are not directly harmful but indicate the presence of pollution. An increase in the concentrations of bacteria indicates a decrease in water quality. All values are colonies per 100ml of sample.
+Sample limits used for \"Good\" are TC: ?10000; FC: ?2000; FS: N/A.
+ 
+For annual assessments \"Good\" means that at least 95% of the samples meet the mandatory standards of the Directive."""@en;
+		rdfs:label		"Good"@en;
+		rdfs:label		"Da"@cy;
+		skos:prefLabel	"Good"@en;
+		skos:prefLabel	"Da"@cy;
+		:complianceCodeNotation		"I"^^:complianceCode;
+		skos:notation				"I"^^:complianceCode;
+		dcterms:source	<http://www.environment-agency.gov.uk/homeandleisure/37841.aspx>;
+		.
+
+# SKOS Concept used as code-point to classify a bathing water as excellent.
+:G		a			:Compliance, skos:Concept;
+		rdfs:isDefinedBy	<>;
+		skos:inScheme		:compliance;
+		skos:topConceptOf	:compliance;
+		skos:definition	"""We count the number of certain types of bacteria which may indicate the presence of pollution, mainly from sewage or livestock waste. Total coliforms (TC), faecal coliforms (FC) and faecal streptococci (FS) are bacteria that are not directly harmful but indicate the presence of pollution. An increase in the concentrations of bacteria indicates a decrease in water quality. All values are colonies per 100ml of sample.
+
+Sample limits used for \"Excellent\" are TC: ?500; FC: ?100; FS: ?100.
+
+For annual assessments \"Excellent\" means the bathing water meets the criteria for the stricter UK guideline standards of the Directive (includes lower levels of concentrations and a third parameter (FS))."""@en;
+		rdfs:label		"Excellent"@en;
+		rdfs:label		"Rhagorol"@cy;
+		skos:prefLabel	"Excellent"@en;
+		skos:prefLabel	"Rhagorol"@cy;
+		:complianceCodeNotation		"G"^^:complianceCode;
+		skos:notation				"G"^^:complianceCode;
+		dcterms:source	<http://www.environment-agency.gov.uk/homeandleisure/37841.aspx>;
+		.
+
+
+# SKOS Concept used as code-point to classify a bathing water as not classified (sic).
+:N		a			:Compliance, skos:Concept;
+		rdfs:isDefinedBy	<>;
+		skos:inScheme		:compliance;
+		skos:topConceptOf	:compliance;
+		skos:definition	"Not Classified - explaination TBD"@en;
+		rdfs:label		"Not Classified"@en;
+		rdfs:label		"Heb ei Ddosbarthu"@cy;
+		skos:prefLabel	"Not Classified"@en;
+		skos:prefLabel	"Heb ei Ddosbarthu"@cy;
+		:complianceCodeNotation		"N"^^:complianceCode;
+		skos:notation				"N"^^:complianceCode;
+		dcterms:source	<http://www.environment-agency.gov.uk/homeandleisure/37841.aspx>;
+		.
+			

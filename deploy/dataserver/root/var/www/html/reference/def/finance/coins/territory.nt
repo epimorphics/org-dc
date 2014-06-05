@@ -1,0 +1,71 @@
+<http://finance.data.gov.uk/def/coins/statistical-concept/territory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/sdmx#Concept> .
+<http://finance.data.gov.uk/def/coins/statistical-concept/territory> <http://www.w3.org/2000/01/rdf-schema#label> "territory"@en .
+<http://finance.data.gov.uk/def/coins/statistical-concept/territory> <http://www.w3.org/2004/02/skos/core#prefLabel> "territory"@en .
+<http://finance.data.gov.uk/def/coins/statistical-concept/territory> <http://www.w3.org/2000/01/rdf-schema#comment> "This indicates the UK country in which residents benefit from that expenditure. Spending should be allocated to an area, or combination of areas, on the basis of who benefits from the spending." .
+<http://finance.data.gov.uk/def/coins/statistical-concept/territory> <http://purl.org/dc/terms/source> <http://www.hm-treasury.gov.uk/d/coins_guidance.pdf> .
+<http://finance.data.gov.uk/def/coins/statistical-concept/territory> <http://www.epimorphics.com/vocabs/coins-generate#columnName> "territory" .
+<http://finance.data.gov.uk/def/coins/territory/uk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Territory> .
+<http://finance.data.gov.uk/def/coins/territory/uk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/territory/uk> <http://www.w3.org/2000/01/rdf-schema#label> "UK"@en .
+<http://finance.data.gov.uk/def/coins/territory/uk> <http://www.w3.org/2004/02/skos/core#prefLabel> "UK"@en .
+<http://finance.data.gov.uk/def/coins/territory/uk> <http://www.w3.org/2004/02/skos/core#notation> "uk" .
+<http://finance.data.gov.uk/def/coins/territory/uk> <http://www.w3.org/2000/01/rdf-schema#comment> "United Kingdom" .
+<http://finance.data.gov.uk/def/coins/territory/uk> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/territory> .
+<http://finance.data.gov.uk/def/coins/Territory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://finance.data.gov.uk/def/coins/Territory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://finance.data.gov.uk/def/coins/Territory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/Territory> <http://www.w3.org/2000/01/rdf-schema#label> "territory values class"@en .
+<http://finance.data.gov.uk/def/coins/Territory> <http://www.w3.org/2004/02/skos/core#prefLabel> "territory values class"@en .
+<http://finance.data.gov.uk/def/coins/Territory> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of values in the territory code-list scheme" .
+<http://finance.data.gov.uk/def/coins/territory/eng> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Territory> .
+<http://finance.data.gov.uk/def/coins/territory/eng> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/territory/eng> <http://www.w3.org/2000/01/rdf-schema#label> "ENG"@en .
+<http://finance.data.gov.uk/def/coins/territory/eng> <http://www.w3.org/2004/02/skos/core#prefLabel> "ENG"@en .
+<http://finance.data.gov.uk/def/coins/territory/eng> <http://www.w3.org/2004/02/skos/core#notation> "eng" .
+<http://finance.data.gov.uk/def/coins/territory/eng> <http://www.w3.org/2000/01/rdf-schema#comment> "England" .
+<http://finance.data.gov.uk/def/coins/territory/eng> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/territory> .
+<http://finance.data.gov.uk/def/coins/territory> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/territory/sco> .
+<http://finance.data.gov.uk/def/coins/territory> <http://www.w3.org/2004/02/skos/core#prefLabel> "territory code list concept scheme"@en .
+<http://finance.data.gov.uk/def/coins/territory> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/territory/gb> .
+<http://finance.data.gov.uk/def/coins/territory> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/territory/ni> .
+<http://finance.data.gov.uk/def/coins/territory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://finance.data.gov.uk/def/coins/territory> <http://www.w3.org/2000/01/rdf-schema#label> "territory code list concept scheme"@en .
+<http://finance.data.gov.uk/def/coins/territory> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/territory/eng> .
+<http://finance.data.gov.uk/def/coins/territory> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/territory/wal> .
+<http://finance.data.gov.uk/def/coins/territory> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/territory/e-and-w> .
+<http://finance.data.gov.uk/def/coins/territory> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/territory/uk> .
+<http://finance.data.gov.uk/def/coins/territory/e-and-w> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Territory> .
+<http://finance.data.gov.uk/def/coins/territory/e-and-w> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/territory/e-and-w> <http://www.w3.org/2000/01/rdf-schema#label> "E&W"@en .
+<http://finance.data.gov.uk/def/coins/territory/e-and-w> <http://www.w3.org/2004/02/skos/core#prefLabel> "E&W"@en .
+<http://finance.data.gov.uk/def/coins/territory/e-and-w> <http://www.w3.org/2004/02/skos/core#notation> "e-and-w" .
+<http://finance.data.gov.uk/def/coins/territory/e-and-w> <http://www.w3.org/2000/01/rdf-schema#comment> "England and Wales" .
+<http://finance.data.gov.uk/def/coins/territory/e-and-w> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/territory> .
+<http://finance.data.gov.uk/def/coins/territory/ni> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Territory> .
+<http://finance.data.gov.uk/def/coins/territory/ni> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/territory/ni> <http://www.w3.org/2000/01/rdf-schema#label> "NI"@en .
+<http://finance.data.gov.uk/def/coins/territory/ni> <http://www.w3.org/2004/02/skos/core#prefLabel> "NI"@en .
+<http://finance.data.gov.uk/def/coins/territory/ni> <http://www.w3.org/2004/02/skos/core#notation> "ni" .
+<http://finance.data.gov.uk/def/coins/territory/ni> <http://www.w3.org/2000/01/rdf-schema#comment> "Northern Ireland" .
+<http://finance.data.gov.uk/def/coins/territory/ni> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/territory> .
+<http://finance.data.gov.uk/def/coins/territory/sco> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Territory> .
+<http://finance.data.gov.uk/def/coins/territory/sco> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/territory/sco> <http://www.w3.org/2000/01/rdf-schema#label> "SCO"@en .
+<http://finance.data.gov.uk/def/coins/territory/sco> <http://www.w3.org/2004/02/skos/core#prefLabel> "SCO"@en .
+<http://finance.data.gov.uk/def/coins/territory/sco> <http://www.w3.org/2004/02/skos/core#notation> "sco" .
+<http://finance.data.gov.uk/def/coins/territory/sco> <http://www.w3.org/2000/01/rdf-schema#comment> "Scotland" .
+<http://finance.data.gov.uk/def/coins/territory/sco> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/territory> .
+<http://finance.data.gov.uk/def/coins/territory/wal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Territory> .
+<http://finance.data.gov.uk/def/coins/territory/wal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/territory/wal> <http://www.w3.org/2000/01/rdf-schema#label> "WAL"@en .
+<http://finance.data.gov.uk/def/coins/territory/wal> <http://www.w3.org/2004/02/skos/core#prefLabel> "WAL"@en .
+<http://finance.data.gov.uk/def/coins/territory/wal> <http://www.w3.org/2004/02/skos/core#notation> "wal" .
+<http://finance.data.gov.uk/def/coins/territory/wal> <http://www.w3.org/2000/01/rdf-schema#comment> "Wales" .
+<http://finance.data.gov.uk/def/coins/territory/wal> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/territory> .
+<http://finance.data.gov.uk/def/coins/territory/gb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Territory> .
+<http://finance.data.gov.uk/def/coins/territory/gb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/territory/gb> <http://www.w3.org/2000/01/rdf-schema#label> "GB"@en .
+<http://finance.data.gov.uk/def/coins/territory/gb> <http://www.w3.org/2004/02/skos/core#prefLabel> "GB"@en .
+<http://finance.data.gov.uk/def/coins/territory/gb> <http://www.w3.org/2004/02/skos/core#notation> "gb" .
+<http://finance.data.gov.uk/def/coins/territory/gb> <http://www.w3.org/2000/01/rdf-schema#comment> "Great Britain" .
+<http://finance.data.gov.uk/def/coins/territory/gb> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/territory> .

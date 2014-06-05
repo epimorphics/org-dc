@@ -1,0 +1,186 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix intervals: <http://reference.data.gov.uk/def/intervals/> .
+@prefix opmv: <http://purl.org/net/opmv/ns#> .
+
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix gov: <http://reference.data.gov.uk/def/central-government/> .
+@prefix grade: <http://reference.data.gov.uk/def/civil-service-grade/> .
+@prefix job: <http://reference.data.gov.uk/def/civil-service-job/> .
+@prefix profession: <http://reference.data.gov.uk/def/civil-service-profession/> .
+@prefix : <http://reference.data.gov.uk/def/organogram/> .
+
+<http://reference.data.gov.uk/def/organogram>
+  a owl:Ontology , void:Dataset ;
+  rdfs:label "Organogram Data Vocabulary"@en ;
+  dct:title "Organogram Data Vocabulary"@en ;
+  dct:license <http://www.opendatacommons.org/licenses/pddl/1.0/> ;
+  dct:created "2010-10-17"^^xsd:date ;
+  dct:modified "2011-06-11"^^xsd:date ;
+  dct:contributor [
+    foaf:mbox "jeni@jenitennison.com"; 
+    foaf:name "Jeni Tennison";
+  ];
+  void:vocabulary rdfs: , owl: , : , org: , foaf: , skos: , time: , opmv: , gov: , qb: ;
+  .
+
+# -- Dimensions - which can be used to structure the cube -----------------
+
+:date a rdf:Property, owl:ObjectProperty, qb:DimensionProperty;
+  rdfs:label "Date"@en;
+  rdfs:comment "The date that the observation relates to."@en;
+  rdfs:domain qb:Observation;
+  rdfs:range intervals:CalendarDay;    
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/organogram/> ;
+  .
+
+:post a rdf:Property, owl:ObjectProperty, qb:DimensionProperty;
+  rdfs:label "Post"@en;
+  rdfs:comment "The post whose subordinates this statistic relates to."@en;
+  rdfs:domain qb:Observation;
+  rdfs:range gov:Post;    
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/organogram/> ;
+  .
+
+:tenure a rdf:Property, owl:ObjectProperty, qb:DimensionProperty;
+  rdfs:label "Tenure"@en ;
+  rdfs:comment "The tenure through which pay was given."@en ;
+  rdfs:domain qb:Observation ;
+  rdfs:range gov:Tenure ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/organogram/> ;
+  .
+
+:unit a rdf:Property, owl:ObjectProperty, qb:DimensionProperty;
+  rdfs:label "Unit"@en ;
+  rdfs:comment "The unit to which the junior posts belong."@en ;
+  rdfs:domain qb:Observation ;
+  rdfs:range org:OrganizationalUnit ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/organogram/> ;
+  .
+
+:reportingTo a rdf:Property, owl:ObjectProperty, qb:DimensionProperty;
+  rdfs:label "Reporting To"@en ;
+  rdfs:comment "The post to which the junior posts report."@en ;
+  rdfs:domain qb:Observation ;
+  rdfs:range gov:Post ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/organogram/> ;
+  .
+
+:grade a rdf:Property, owl:ObjectProperty, qb:DimensionProperty;
+  rdfs:label "Grade"@en;
+  rdfs:comment "The grade of the junior posts."@en;
+  rdfs:domain qb:Observation;
+  rdfs:range grade:Grade;    
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/organogram/> ;
+  .
+
+:job a rdf:Property, owl:ObjectProperty, qb:DimensionProperty;
+  rdfs:label "Job"@en;
+  rdfs:comment "The job performed by the junior posts."@en;
+  rdfs:domain qb:Observation;
+  rdfs:range job:Job;    
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/organogram/> ;
+  .
+
+:profession a rdf:Property, owl:ObjectProperty, qb:DimensionProperty;
+  rdfs:label "Profession"@en;
+  rdfs:comment "The profession of the junior posts."@en;
+  rdfs:domain qb:Observation;
+  rdfs:range profession:Profession;    
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/organogram/> ;
+  .
+
+# -- Measures - values that can be associated with a single observation in the cube ----------
+
+:salaryCostOfReports a rdf:Property, owl:DatatypeProperty, qb:MeasureProperty;
+  rdfs:label "Salary Cost of Reports"@en;
+  rdfs:comment "The total salary cost of each Deputy Director/SCS Pay Band 1 and 1A member and the non-SCS staff that report to this post. Salary costs are base pay (excluding bonuses and allowances) as at the date of the observation. To ensure that individual salaries cannot be identified from this information (for Deputy Director/SCS Pay Band 1 and 1A level and non-SCS grades), where the team is less than five people, the cost is rounded to the nearest £100,000. Where the team is one person only, the salary cost may be rounded to the nearest £100,000 or merged with the costs of another team."@en;
+  rdfs:range xsd:integer;
+  rdfs:domain qb:Observation;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/organogram/> ;
+  .
+
+:numberOfPosts a rdf:Property, owl:DatatypeProperty, qb:MeasureProperty;
+  rdfs:label "Number of Posts"@en;
+  rdfs:comment "The number of posts with this grade that report to the given post, as a full-time equivalent."@en;
+  rdfs:range xsd:decimal;
+  rdfs:domain qb:Observation;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/organogram/> ;
+  .
+
+:totalPay a rdf:Property, owl:DatatypeProperty, qb:MeasureProperty;
+  rdfs:label "Total Pay"@en;
+  rdfs:comment "The total pay received."@en;
+  rdfs:range xsd:decimal;
+  rdfs:domain qb:Observation;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/organogram/> ;
+  .
+
+# -- Attributes - qualify the measured value -------------------------------------------
+
+:currency a qb:AttributeProperty;
+  rdfs:label "currency"@en;
+  rdfs:comment "Currency in which the salary is paid, typically attached to the dataset for single currency datasets."@en;
+  qb:concept sdmx-concept:currency;           # optional cross link
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/organogram/> ;
+  .
+
+
+# -- Data structure definitions -------------------------------------------------------
+
+:salary-costs-of-reports a qb:DataStructureDefinition, rdfs:Resource;
+  rdfs:label "Salary Costs Data Structure"@en;
+  rdfs:comment "The structure of a cube containing data about the salary costs of the reports to a particular post on a particular day.";
+  qb:component 
+    [ qb:dimension :post ],
+    [ qb:dimension :date ],
+    [ qb:measure :salaryCostOfReports ],
+    [ qb:attribute :currency ];
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/organogram/> ;
+  .
+
+:number-of-posts a qb:DataStructureDefinition, rdfs:Resource;
+  rdfs:label "Number of Posts Data Structure"@en;
+  rdfs:comment "The structure of a cube containing data about the number of posts of different grades that report to a particular post on a particular day.";
+  qb:component 
+    [ qb:dimension :post ],
+    [ qb:dimension :grade ],
+    [ qb:dimension :date ],
+    [ qb:measure :numberOfPosts ];
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/organogram/> ;
+  .
+
+:total-pay a qb:DataStructureDefinition, rdfs:Resource;
+  rdfs:label "Total Pay Data Structure"@en;
+  rdfs:comment "The structure of a cube containing data about the total pay received for a particular tenure (a person in a post) on a particular day.";
+  qb:component 
+    [ qb:dimension :tenure ],
+    [ qb:dimension :date ],
+    [ qb:measure :totalPay ],
+    [ qb:attribute :currency ];
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/organogram/> ;
+  .
+
+:junior-posts a qb:DataStructureDefinition, rdfs:Resource;
+  rdfs:label "Junior Posts Data Structure"@en;
+  rdfs:comment "The structure of a cube containing data about the number of junior staff of different grades that report to a particular post from within a particular unit, with a particular job and a particular profession, on a particular day.";
+  qb:component 
+    [ qb:dimension :unit ],
+    [ qb:dimension :reportingTo ],
+    [ qb:dimension :grade ],
+    [ qb:dimension :job ],
+    [ qb:dimension :profession ],
+    [ qb:dimension :date ],
+    [ qb:measure :fullTimeEquivalent ];
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/organogram/> ;
+  .

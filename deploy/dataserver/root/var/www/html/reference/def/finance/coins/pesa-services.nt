@@ -1,0 +1,39 @@
+<http://finance.data.gov.uk/def/coins/statistical-concept/pesa-services> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/sdmx#Concept> .
+<http://finance.data.gov.uk/def/coins/statistical-concept/pesa-services> <http://www.w3.org/2000/01/rdf-schema#label> "pesa services"@en .
+<http://finance.data.gov.uk/def/coins/statistical-concept/pesa-services> <http://www.w3.org/2004/02/skos/core#prefLabel> "pesa services"@en .
+<http://finance.data.gov.uk/def/coins/statistical-concept/pesa-services> <http://www.w3.org/2000/01/rdf-schema#comment> "Used to identify whether services are provided to individuals or groups of people." .
+<http://finance.data.gov.uk/def/coins/statistical-concept/pesa-services> <http://purl.org/dc/terms/source> <http://www.hm-treasury.gov.uk/d/coins_guidance.pdf> .
+<http://finance.data.gov.uk/def/coins/statistical-concept/pesa-services> <http://www.epimorphics.com/vocabs/coins-generate#columnName> "pesa_services" .
+<http://finance.data.gov.uk/def/coins/pesa-services/individual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/PesaServices> .
+<http://finance.data.gov.uk/def/coins/pesa-services/individual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/pesa-services/individual> <http://www.w3.org/2000/01/rdf-schema#label> "Individual"@en .
+<http://finance.data.gov.uk/def/coins/pesa-services/individual> <http://www.w3.org/2004/02/skos/core#prefLabel> "Individual"@en .
+<http://finance.data.gov.uk/def/coins/pesa-services/individual> <http://www.w3.org/2004/02/skos/core#notation> "individual" .
+<http://finance.data.gov.uk/def/coins/pesa-services/individual> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/pesa-services/individual> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/pesa-services> .
+<http://finance.data.gov.uk/def/coins/pesa-services> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://finance.data.gov.uk/def/coins/pesa-services> <http://www.w3.org/2000/01/rdf-schema#label> "pesa services code list concept scheme"@en .
+<http://finance.data.gov.uk/def/coins/pesa-services> <http://www.w3.org/2004/02/skos/core#prefLabel> "pesa services code list concept scheme"@en .
+<http://finance.data.gov.uk/def/coins/pesa-services> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/pesa-services/collective> .
+<http://finance.data.gov.uk/def/coins/pesa-services> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/pesa-services/individual> .
+<http://finance.data.gov.uk/def/coins/pesa-services> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/pesa-services/oc> .
+<http://finance.data.gov.uk/def/coins/PesaServices> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://finance.data.gov.uk/def/coins/PesaServices> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://finance.data.gov.uk/def/coins/PesaServices> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/PesaServices> <http://www.w3.org/2000/01/rdf-schema#label> "pesa services values class"@en .
+<http://finance.data.gov.uk/def/coins/PesaServices> <http://www.w3.org/2004/02/skos/core#prefLabel> "pesa services values class"@en .
+<http://finance.data.gov.uk/def/coins/PesaServices> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of values in the pesa services code-list scheme" .
+<http://finance.data.gov.uk/def/coins/pesa-services/oc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/PesaServices> .
+<http://finance.data.gov.uk/def/coins/pesa-services/oc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/pesa-services/oc> <http://www.w3.org/2000/01/rdf-schema#label> "Outside CRA"@en .
+<http://finance.data.gov.uk/def/coins/pesa-services/oc> <http://www.w3.org/2004/02/skos/core#prefLabel> "Outside CRA"@en .
+<http://finance.data.gov.uk/def/coins/pesa-services/oc> <http://www.w3.org/2004/02/skos/core#notation> "oc" .
+<http://finance.data.gov.uk/def/coins/pesa-services/oc> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/pesa-services/oc> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/pesa-services> .
+<http://finance.data.gov.uk/def/coins/pesa-services/collective> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/PesaServices> .
+<http://finance.data.gov.uk/def/coins/pesa-services/collective> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/pesa-services/collective> <http://www.w3.org/2000/01/rdf-schema#label> "Collective"@en .
+<http://finance.data.gov.uk/def/coins/pesa-services/collective> <http://www.w3.org/2004/02/skos/core#prefLabel> "Collective"@en .
+<http://finance.data.gov.uk/def/coins/pesa-services/collective> <http://www.w3.org/2004/02/skos/core#notation> "collective" .
+<http://finance.data.gov.uk/def/coins/pesa-services/collective> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/pesa-services/collective> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/pesa-services> .

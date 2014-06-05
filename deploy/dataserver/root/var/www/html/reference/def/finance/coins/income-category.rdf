@@ -1,0 +1,164 @@
+<rdf:RDF
+    xmlns:sdmx-subject="http://purl.org/linked-data/sdmx/2009/subject#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:sdmx-dimension="http://purl.org/linked-data/sdmx/2009/dimension#"
+    xmlns:sdmx-measure="http://purl.org/linked-data/sdmx/2009/measure#"
+    xmlns:sdmx-attribute="http://purl.org/linked-data/sdmx/2009/attribute#"
+    xmlns:coins-data="http://source.data.gov.uk/data/coins/"
+    xmlns:coins-dsd="http://finance.data.gov.uk/dsd/coins/"
+    xmlns:coins-dimension="http://finance.data.gov.uk/dsd/coins/dimension/"
+    xmlns:void="http://rdfs.org/ns/void#"
+    xmlns:coins-measure="http://finance.data.gov.uk/dsd/coins/measure/"
+    xmlns:j.0="http://www.epimorphics.com/vocabs/coins-generate#"
+    xmlns:coins-attribute="http://finance.data.gov.uk/dsd/coins/attribute/"
+    xmlns:sdmx-concept="http://purl.org/linked-data/sdmx/2009/concept#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:coins-slicekey="http://finance.data.gov.uk/dsd/coins/slice/"
+    xmlns:sdmx="http://purl.org/linked-data/sdmx#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:sdmx-code="http://purl.org/linked-data/sdmx/2009/code#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:j.1="http://finance.data.gov.uk/def/coins/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:qb="http://purl.org/linked-data/cube#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <rdfs:Class rdf:about="http://finance.data.gov.uk/def/coins/IncomeCategory">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:label xml:lang="en">income category values class</rdfs:label>
+    <skos:prefLabel xml:lang="en">income category values class</skos:prefLabel>
+    <rdfs:comment>The class of values in the income category code-list scheme</rdfs:comment>
+  </rdfs:Class>
+  <sdmx:Concept rdf:about="http://finance.data.gov.uk/def/coins/statistical-concept/income-category">
+    <rdfs:label xml:lang="en">income category</rdfs:label>
+    <skos:prefLabel xml:lang="en">income category</skos:prefLabel>
+    <rdfs:comment>Determines where data appear in the Analysis of Appropriations in Aid Note of Supply Estimates.</rdfs:comment>
+    <dcterms:source rdf:resource="http://www.hm-treasury.gov.uk/d/coins_guidance.pdf"/>
+    <j.0:columnName>income_category</j.0:columnName>
+  </sdmx:Concept>
+  <skos:ConceptScheme rdf:about="http://finance.data.gov.uk/def/coins/income-category">
+    <skos:hasTopConcept>
+      <j.1:IncomeCategory rdf:about="http://finance.data.gov.uk/def/coins/income-category/bl">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Broadcast licence</rdfs:label>
+        <skos:prefLabel xml:lang="en">Broadcast licence</skos:prefLabel>
+        <skos:notation>bl</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/income-category"/>
+      </j.1:IncomeCategory>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:IncomeCategory rdf:about="http://finance.data.gov.uk/def/coins/income-category/og">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Other grants</rdfs:label>
+        <skos:prefLabel xml:lang="en">Other grants</skos:prefLabel>
+        <skos:notation>og</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/income-category"/>
+      </j.1:IncomeCategory>
+    </skos:hasTopConcept>
+    <rdfs:label xml:lang="en">income category code list concept scheme</rdfs:label>
+    <skos:hasTopConcept>
+      <j.1:IncomeCategory rdf:about="http://finance.data.gov.uk/def/coins/income-category/goods/serv">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Goods/services</rdfs:label>
+        <skos:prefLabel xml:lang="en">Goods/services</skos:prefLabel>
+        <skos:notation>goods/serv</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/income-category"/>
+      </j.1:IncomeCategory>
+    </skos:hasTopConcept>
+    <skos:prefLabel xml:lang="en">income category code list concept scheme</skos:prefLabel>
+    <skos:hasTopConcept>
+      <j.1:IncomeCategory rdf:about="http://finance.data.gov.uk/def/coins/income-category/eu-grants">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EU grants</rdfs:label>
+        <skos:prefLabel xml:lang="en">EU grants</skos:prefLabel>
+        <skos:notation>eu-grants</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/income-category"/>
+      </j.1:IncomeCategory>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:IncomeCategory rdf:about="http://finance.data.gov.uk/def/coins/income-category/interest/d">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Interest/dividends</rdfs:label>
+        <skos:prefLabel xml:lang="en">Interest/dividends</skos:prefLabel>
+        <skos:notation>interest/d</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/income-category"/>
+      </j.1:IncomeCategory>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:IncomeCategory rdf:about="http://finance.data.gov.uk/def/coins/income-category/sl">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Student loans</rdfs:label>
+        <skos:prefLabel xml:lang="en">Student loans</skos:prefLabel>
+        <skos:notation>sl</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/income-category"/>
+      </j.1:IncomeCategory>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:IncomeCategory rdf:about="http://finance.data.gov.uk/def/coins/income-category/lg">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Lottery grants</rdfs:label>
+        <skos:prefLabel xml:lang="en">Lottery grants</skos:prefLabel>
+        <skos:notation>lg</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/income-category"/>
+      </j.1:IncomeCategory>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:IncomeCategory rdf:about="http://finance.data.gov.uk/def/coins/income-category/assets">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Assets</rdfs:label>
+        <skos:prefLabel xml:lang="en">Assets</skos:prefLabel>
+        <skos:notation>assets</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/income-category"/>
+      </j.1:IncomeCategory>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:IncomeCategory rdf:about="http://finance.data.gov.uk/def/coins/income-category/cfers">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">CFERs</rdfs:label>
+        <skos:prefLabel xml:lang="en">CFERs</skos:prefLabel>
+        <skos:notation>cfers</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/income-category"/>
+      </j.1:IncomeCategory>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:IncomeCategory rdf:about="http://finance.data.gov.uk/def/coins/income-category/ps">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Pension scheme</rdfs:label>
+        <skos:prefLabel xml:lang="en">Pension scheme</skos:prefLabel>
+        <skos:notation>ps</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/income-category"/>
+      </j.1:IncomeCategory>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:IncomeCategory rdf:about="http://finance.data.gov.uk/def/coins/income-category/taxation">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Taxation</rdfs:label>
+        <skos:prefLabel xml:lang="en">Taxation</skos:prefLabel>
+        <skos:notation>taxation</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/income-category"/>
+      </j.1:IncomeCategory>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:IncomeCategory rdf:about="http://finance.data.gov.uk/def/coins/income-category/repayments">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Repayments</rdfs:label>
+        <skos:prefLabel xml:lang="en">Repayments</skos:prefLabel>
+        <skos:notation>repayments</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/income-category"/>
+      </j.1:IncomeCategory>
+    </skos:hasTopConcept>
+  </skos:ConceptScheme>
+</rdf:RDF>

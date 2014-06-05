@@ -1,0 +1,267 @@
+# Generated 2010-11-09T16:53:40+00:00
+
+@prefix rdf:                <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:               <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:                <http://www.w3.org/2002/07/owl#> .
+@prefix skos:               <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd:                <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:               <http://xmlns.com/foaf/0.1/> .
+@prefix void:               <http://rdfs.org/ns/void#> .
+@prefix dcterms:            <http://purl.org/dc/terms/> .
+@prefix sdmx:               <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept:       <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:     <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:     <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:       <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-code:          <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:       <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix qb:                 <http://purl.org/linked-data/cube#> .
+@prefix coins-data:         <http://source.data.gov.uk/data/coins/> .
+@prefix coins-dsd:          <http://finance.data.gov.uk/dsd/coins/> .
+@prefix coins-dimension:    <http://finance.data.gov.uk/dsd/coins/dimension/> .
+@prefix coins-attribute:    <http://finance.data.gov.uk/dsd/coins/attribute/> .
+@prefix coins-measure:      <http://finance.data.gov.uk/dsd/coins/measure/> .
+@prefix coins-slicekey:     <http://finance.data.gov.uk/dsd/coins/slice/> .
+
+<http://finance.data.gov.uk/def/coins/statistical-concept/accounting-authority>
+    a sdmx:Concept;
+    rdfs:label "accounting authority"@en;
+    skos:prefLabel "accounting authority"@en;
+    rdfs:comment """The accounting authority (AA) tag denotes the authority by which spending can occur i.e. whether it has been specifically voted by Parliament.""";
+    <http://purl.org/dc/terms/source> <http://www.hm-treasury.gov.uk/d/coins_guidance.pdf>;
+    <http://www.epimorphics.com/vocabs/coins-generate#columnName> "accounting_authority"
+    .
+
+<http://finance.data.gov.uk/def/coins/AccountingAuthority>
+    a rdfs:Class, owl:Class;
+    rdfs:subClassOf skos:Concept;
+    rdfs:label "accounting authority values class"@en;
+    skos:prefLabel "accounting authority values class"@en;
+    rdfs:comment "The class of values in the accounting authority code-list scheme";
+    .
+
+<http://finance.data.gov.uk/def/coins/accounting-authority>
+    a skos:ConceptScheme;
+    rdfs:label "accounting authority code list concept scheme"@en;
+    skos:prefLabel "accounting authority code list concept scheme"@en;
+    skos:hasTopConcept <http://finance.data.gov.uk/def/coins/accounting-authority/aa101>,
+          <http://finance.data.gov.uk/def/coins/accounting-authority/aa102>,
+          <http://finance.data.gov.uk/def/coins/accounting-authority/aa103>,
+          <http://finance.data.gov.uk/def/coins/accounting-authority/aa104>,
+          <http://finance.data.gov.uk/def/coins/accounting-authority/aa105>,
+          <http://finance.data.gov.uk/def/coins/accounting-authority/aa113>,
+          <http://finance.data.gov.uk/def/coins/accounting-authority/aa114>,
+          <http://finance.data.gov.uk/def/coins/accounting-authority/aa141>,
+          <http://finance.data.gov.uk/def/coins/accounting-authority/aa191>,
+          <http://finance.data.gov.uk/def/coins/accounting-authority/aa210>,
+          <http://finance.data.gov.uk/def/coins/accounting-authority/aa211>,
+          <http://finance.data.gov.uk/def/coins/accounting-authority/aa212>,
+          <http://finance.data.gov.uk/def/coins/accounting-authority/aa402>,
+          <http://finance.data.gov.uk/def/coins/accounting-authority/aa501>,
+          <http://finance.data.gov.uk/def/coins/accounting-authority/aa502>,
+          <http://finance.data.gov.uk/def/coins/accounting-authority/aa520>,
+          <http://finance.data.gov.uk/def/coins/accounting-authority/aa541>,
+          <http://finance.data.gov.uk/def/coins/accounting-authority/aa591>,
+          <http://finance.data.gov.uk/def/coins/accounting-authority/aa701>,
+          <http://finance.data.gov.uk/def/coins/accounting-authority/aa901>
+    .
+
+<http://finance.data.gov.uk/def/coins/accounting-authority/aa101>
+    a <http://finance.data.gov.uk/def/coins/AccountingAuthority>, skos:Concept;
+    rdfs:label "AA101"@en;
+    skos:prefLabel "AA101"@en;
+    skos:notation "aa101";
+    rdfs:comment "Central Government: Supply: all voted payments and receipts by central government departments";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/accounting-authority>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/accounting-authority/aa102>
+    a <http://finance.data.gov.uk/def/coins/AccountingAuthority>, skos:Concept;
+    rdfs:label "AA102"@en;
+    skos:prefLabel "AA102"@en;
+    skos:notation "aa102";
+    rdfs:comment "Central Government: Consolidated Fund Extra Receipts (CFER): non-voted: surplus appropriations in aid and other extra receipts payable to the Consolidated Fund that go through the Operating Cost Statement.";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/accounting-authority>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/accounting-authority/aa103>
+    a <http://finance.data.gov.uk/def/coins/AccountingAuthority>, skos:Concept;
+    rdfs:label "AA103"@en;
+    skos:prefLabel "AA103"@en;
+    skos:notation "aa103";
+    rdfs:comment "Central Government: Other Consolidated funds: non-voted: all payments and receipts related to the Consolidated Fund not included in AA101 or AA102.";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/accounting-authority>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/accounting-authority/aa104>
+    a <http://finance.data.gov.uk/def/coins/AccountingAuthority>, skos:Concept;
+    rdfs:label "AA104"@en;
+    skos:prefLabel "AA104"@en;
+    skos:notation "aa104";
+    rdfs:comment "National Loans Fund: non-voted: payments and receipts of the NLF on its lending transactions.";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/accounting-authority>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/accounting-authority/aa105>
+    a <http://finance.data.gov.uk/def/coins/AccountingAuthority>, skos:Concept;
+    rdfs:label "AA105"@en;
+    skos:prefLabel "AA105"@en;
+    skos:notation "aa105";
+    rdfs:comment "Central Government: National Insurance Fund: non-voted: payments and receipts of the GB National Insurance Fund.";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/accounting-authority>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/accounting-authority/aa113>
+    a <http://finance.data.gov.uk/def/coins/AccountingAuthority>, skos:Concept;
+    rdfs:label "AA113"@en;
+    skos:prefLabel "AA113"@en;
+    skos:notation "aa113";
+    rdfs:comment "Consolidated Fund Extra Receipts that do not pass through the Operating Cost Statement: non-voted";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/accounting-authority>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/accounting-authority/aa114>
+    a <http://finance.data.gov.uk/def/coins/AccountingAuthority>, skos:Concept;
+    rdfs:label "AA114"@en;
+    skos:prefLabel "AA114"@en;
+    skos:notation "aa114";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/accounting-authority>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/accounting-authority/aa141>
+    a <http://finance.data.gov.uk/def/coins/AccountingAuthority>, skos:Concept;
+    rdfs:label "AA141"@en;
+    skos:prefLabel "AA141"@en;
+    skos:notation "aa141";
+    rdfs:comment "Resource and capital expenditure of NDPBs in the central government sector: non-voted";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/accounting-authority>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/accounting-authority/aa191>
+    a <http://finance.data.gov.uk/def/coins/AccountingAuthority>, skos:Concept;
+    rdfs:label "AA191"@en;
+    skos:prefLabel "AA191"@en;
+    skos:notation "aa191";
+    rdfs:comment "Central Government: Other: non-voted: other central government payments and receipts not elsewhere specified.";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/accounting-authority>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/accounting-authority/aa210>
+    a <http://finance.data.gov.uk/def/coins/AccountingAuthority>, skos:Concept;
+    rdfs:label "AA210"@en;
+    skos:prefLabel "AA210"@en;
+    skos:notation "aa210";
+    rdfs:comment "Local Authority Expenditure: non-voted";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/accounting-authority>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/accounting-authority/aa211>
+    a <http://finance.data.gov.uk/def/coins/AccountingAuthority>, skos:Concept;
+    rdfs:label "AA211"@en;
+    skos:prefLabel "AA211"@en;
+    skos:notation "aa211";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/accounting-authority>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/accounting-authority/aa212>
+    a <http://finance.data.gov.uk/def/coins/AccountingAuthority>, skos:Concept;
+    rdfs:label "AA212"@en;
+    skos:prefLabel "AA212"@en;
+    skos:notation "aa212";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/accounting-authority>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/accounting-authority/aa402>
+    a <http://finance.data.gov.uk/def/coins/AccountingAuthority>, skos:Concept;
+    rdfs:label "AA402"@en;
+    skos:prefLabel "AA402"@en;
+    skos:notation "aa402";
+    rdfs:comment "Public corporations' own expenditure";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/accounting-authority>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/accounting-authority/aa501>
+    a <http://finance.data.gov.uk/def/coins/AccountingAuthority>, skos:Concept;
+    rdfs:label "AA501"@en;
+    skos:prefLabel "AA501"@en;
+    skos:notation "aa501";
+    rdfs:comment "Scotland, Wales and Northern Ireland Devolved Administrations: voted: expenditure of the devolved administrations that is analogous to Westminster Voted expenditure. Excludes CFERs in Scotland.";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/accounting-authority>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/accounting-authority/aa502>
+    a <http://finance.data.gov.uk/def/coins/AccountingAuthority>, skos:Concept;
+    rdfs:label "AA502"@en;
+    skos:prefLabel "AA502"@en;
+    skos:notation "aa502";
+    rdfs:comment "Scotland, Wales and Northern Ireland Devolved Administrations: non-voted: expenditure of the devolved administrations that is analogous to Westminster non-voted expenditure.";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/accounting-authority>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/accounting-authority/aa520>
+    a <http://finance.data.gov.uk/def/coins/AccountingAuthority>, skos:Concept;
+    rdfs:label "AA520"@en;
+    skos:prefLabel "AA520"@en;
+    skos:notation "aa520";
+    rdfs:comment "Scotland, Wales and Northern Ireland Devolved Administrations: Public Corporations' capital expenditure";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/accounting-authority>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/accounting-authority/aa541>
+    a <http://finance.data.gov.uk/def/coins/AccountingAuthority>, skos:Concept;
+    rdfs:label "AA541"@en;
+    skos:prefLabel "AA541"@en;
+    skos:notation "aa541";
+    rdfs:comment "Scotland, Wales and Northern Ireland Devolved Administrations: NDPB Expenditure: non-voted.";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/accounting-authority>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/accounting-authority/aa591>
+    a <http://finance.data.gov.uk/def/coins/AccountingAuthority>, skos:Concept;
+    rdfs:label "AA591"@en;
+    skos:prefLabel "AA591"@en;
+    skos:notation "aa591";
+    rdfs:comment "Scotland, Wales and Northern Ireland Devolved Administrations: Other: non-voted: Other devolved administration payments and receipts";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/accounting-authority>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/accounting-authority/aa701>
+    a <http://finance.data.gov.uk/def/coins/AccountingAuthority>, skos:Concept;
+    rdfs:label "AA701"@en;
+    skos:prefLabel "AA701"@en;
+    skos:notation "aa701";
+    rdfs:comment "Departmental Unallocated Provision: non-voted.";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/accounting-authority>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/accounting-authority/aa901>
+    a <http://finance.data.gov.uk/def/coins/AccountingAuthority>, skos:Concept;
+    rdfs:label "AA901"@en;
+    skos:prefLabel "AA901"@en;
+    skos:notation "aa901";
+    rdfs:comment "Other: non-voted: includes The Reserve and payments and receipts of debt interest by the public sector";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/accounting-authority>;
+    
+    .

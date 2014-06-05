@@ -1,0 +1,1654 @@
+<rdf:RDF
+    xmlns:sdmx-subject="http://purl.org/linked-data/sdmx/2009/subject#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:sdmx-dimension="http://purl.org/linked-data/sdmx/2009/dimension#"
+    xmlns:sdmx-measure="http://purl.org/linked-data/sdmx/2009/measure#"
+    xmlns:sdmx-attribute="http://purl.org/linked-data/sdmx/2009/attribute#"
+    xmlns:coins-data="http://source.data.gov.uk/data/coins/"
+    xmlns:coins-dsd="http://finance.data.gov.uk/dsd/coins/"
+    xmlns:coins-dimension="http://finance.data.gov.uk/dsd/coins/dimension/"
+    xmlns:void="http://rdfs.org/ns/void#"
+    xmlns:coins-measure="http://finance.data.gov.uk/dsd/coins/measure/"
+    xmlns:j.0="http://www.epimorphics.com/vocabs/coins-generate#"
+    xmlns:coins-attribute="http://finance.data.gov.uk/dsd/coins/attribute/"
+    xmlns:sdmx-concept="http://purl.org/linked-data/sdmx/2009/concept#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:coins-slicekey="http://finance.data.gov.uk/dsd/coins/slice/"
+    xmlns:sdmx="http://purl.org/linked-data/sdmx#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:sdmx-code="http://purl.org/linked-data/sdmx/2009/code#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:j.1="http://finance.data.gov.uk/def/coins/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:qb="http://purl.org/linked-data/cube#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <rdfs:Class rdf:about="http://finance.data.gov.uk/def/coins/Cofog">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:label xml:lang="en">COFOG values class</rdfs:label>
+    <skos:prefLabel xml:lang="en">COFOG values class</skos:prefLabel>
+    <rdfs:comment>The class of values in the COFOG code-list scheme</rdfs:comment>
+  </rdfs:Class>
+  <sdmx:Concept rdf:about="http://finance.data.gov.uk/def/coins/statistical-concept/cofog">
+    <rdfs:label xml:lang="en">COFOG</rdfs:label>
+    <skos:prefLabel xml:lang="en">COFOG</skos:prefLabel>
+    <rdfs:comment>Classification of Functions of Government – classifies Programme Object codes by socio economic purpose consistent with United Nations definitions and also adopted by Eurostat. Used to populate a number of tables in PESA.</rdfs:comment>
+    <dcterms:source rdf:resource="http://www.hm-treasury.gov.uk/d/coins_guidance.pdf"/>
+    <j.0:columnName>cofog</j.0:columnName>
+  </sdmx:Concept>
+  <skos:ConceptScheme rdf:about="http://finance.data.gov.uk/def/coins/cofog">
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog040506">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG040504</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG040504</skos:prefLabel>
+        <skos:notation>cofog040506</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog0902x">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG0902XSS</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG0902XSS</skos:prefLabel>
+        <skos:notation>cofog0902x</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog040300">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG040301</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG040301</skos:prefLabel>
+        <skos:notation>cofog040300</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog090501">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG090502</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG090502</skos:prefLabel>
+        <skos:notation>cofog090501</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog04020">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG040200</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG040200</skos:prefLabel>
+        <skos:notation>cofog04020</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog07b00">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG07B00</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG07B00</skos:prefLabel>
+        <skos:notation>cofog07b00</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog040200">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG04020100</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG04020100</skos:prefLabel>
+        <skos:notation>cofog040200</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog090800">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG090801</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG090801</skos:prefLabel>
+        <skos:notation>cofog090800</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog040500">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG04050100</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG04050100</skos:prefLabel>
+        <skos:notation>cofog040500</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog07a00">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG07A00</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG07A00</skos:prefLabel>
+        <skos:notation>cofog07a00</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog010302">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG010303</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG010303</skos:prefLabel>
+        <skos:notation>cofog010302</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog07020">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG070200</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG070200</skos:prefLabel>
+        <skos:notation>cofog07020</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog04040">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG040400</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG040400</skos:prefLabel>
+        <skos:notation>cofog04040</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog0803">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG0803</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG0803</skos:prefLabel>
+        <skos:notation>cofog0803</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog03030">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG030300</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG030300</skos:prefLabel>
+        <skos:notation>cofog03030</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog010701">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG010703</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG010703</skos:prefLabel>
+        <skos:notation>cofog010701</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog090202">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG090202SS</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG090202SS</skos:prefLabel>
+        <skos:notation>cofog090202</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog030100">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG030101</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG030101</skos:prefLabel>
+        <skos:notation>cofog030100</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog100500">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG100502</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG100502</skos:prefLabel>
+        <skos:notation>cofog100500</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog100400">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG100401</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG100401</skos:prefLabel>
+        <skos:notation>cofog100400</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog0902s">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG0902SS</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG0902SS</skos:prefLabel>
+        <skos:notation>cofog0902s</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog040507">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG040505</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG040505</skos:prefLabel>
+        <skos:notation>cofog040507</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog0104">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG0104</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG0104</skos:prefLabel>
+        <skos:notation>cofog0104</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog090100">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG090101XSS</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG090101XSS</skos:prefLabel>
+        <skos:notation>cofog090100</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog040301">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG040302</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG040302</skos:prefLabel>
+        <skos:notation>cofog040301</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog090400">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG09040100</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG09040100</skos:prefLabel>
+        <skos:notation>cofog090400</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog1008">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG1008</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG1008</skos:prefLabel>
+        <skos:notation>cofog1008</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog0203">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG0203</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG0203</skos:prefLabel>
+        <skos:notation>cofog0203</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <rdfs:label xml:lang="en">COFOG code list concept scheme</rdfs:label>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog0605">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG0605</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG0605</skos:prefLabel>
+        <skos:notation>cofog0605</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog0201">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG0201</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG0201</skos:prefLabel>
+        <skos:notation>cofog0201</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog0505">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG0505</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG0505</skos:prefLabel>
+        <skos:notation>cofog0505</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog0804">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG0804</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG0804</skos:prefLabel>
+        <skos:notation>cofog0804</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog01020">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG010200</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG010200</skos:prefLabel>
+        <skos:notation>cofog01020</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog09080">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG090800</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG090800</skos:prefLabel>
+        <skos:notation>cofog09080</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog0304">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG0304</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG0304</skos:prefLabel>
+        <skos:notation>cofog0304</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog100200">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG100201</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG100201</skos:prefLabel>
+        <skos:notation>cofog100200</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog010300">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG010301</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG010301</skos:prefLabel>
+        <skos:notation>cofog010300</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog1001p">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG1001PSS</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG1001PSS</skos:prefLabel>
+        <skos:notation>cofog1001p</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog040801">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG040802</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG040802</skos:prefLabel>
+        <skos:notation>cofog040801</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog070100">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG070103</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG070103</skos:prefLabel>
+        <skos:notation>cofog070100</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog0502">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG0502</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG0502</skos:prefLabel>
+        <skos:notation>cofog0502</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog0801">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG0801</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG0801</skos:prefLabel>
+        <skos:notation>cofog0801</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofogna03">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOGNA03</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOGNA03</skos:prefLabel>
+        <skos:notation>cofogna03</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog04050">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG040500</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG040500</skos:prefLabel>
+        <skos:notation>cofog04050</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog09020">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG090200</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG090200</skos:prefLabel>
+        <skos:notation>cofog09020</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog090404">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG09040201/COFOG090800</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG09040201/COFOG090800</skos:prefLabel>
+        <skos:notation>cofog090404</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog010101">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG010101/COFOG0606</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG010101/COFOG0606</skos:prefLabel>
+        <skos:notation>cofog010101</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog04070">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG040700</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG040700</skos:prefLabel>
+        <skos:notation>cofog04070</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog090102">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG09010200/COFOG090200</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG09010200/COFOG090200</skos:prefLabel>
+        <skos:notation>cofog090102</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog070201">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG070202</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG070202</skos:prefLabel>
+        <skos:notation>cofog070201</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog1006">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG1006</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG1006</skos:prefLabel>
+        <skos:notation>cofog1006</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog090203">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG090202XSS</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG090202XSS</skos:prefLabel>
+        <skos:notation>cofog090203</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog0305">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG0305</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG0305</skos:prefLabel>
+        <skos:notation>cofog0305</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog090301">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG090302</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG090302</skos:prefLabel>
+        <skos:notation>cofog090301</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog0706">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG0706</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG0706</skos:prefLabel>
+        <skos:notation>cofog0706</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog03010">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG030100</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG030100</skos:prefLabel>
+        <skos:notation>cofog03010</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog0603">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG0603</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG0603</skos:prefLabel>
+        <skos:notation>cofog0603</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog040304">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG040306</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG040306</skos:prefLabel>
+        <skos:notation>cofog040304</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog090401">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG09040101</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG09040101</skos:prefLabel>
+        <skos:notation>cofog090401</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog0503">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG0503</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG0503</skos:prefLabel>
+        <skos:notation>cofog0503</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog030301">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG030302</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG030302</skos:prefLabel>
+        <skos:notation>cofog030301</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog040204">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG040203</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG040203</skos:prefLabel>
+        <skos:notation>cofog040204</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog040504">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG040502</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG040502</skos:prefLabel>
+        <skos:notation>cofog040504</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog040400">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG040402</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG040402</skos:prefLabel>
+        <skos:notation>cofog040400</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofogna04">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOGNA04</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOGNA04</skos:prefLabel>
+        <skos:notation>cofogna04</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog0106">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG0106</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG0106</skos:prefLabel>
+        <skos:notation>cofog0106</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog0302">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG0302</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG0302</skos:prefLabel>
+        <skos:notation>cofog0302</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog040805">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG040807</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG040807</skos:prefLabel>
+        <skos:notation>cofog040805</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog010102">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG010102</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG010102</skos:prefLabel>
+        <skos:notation>cofog010102</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog09050">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG090500</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG090500</skos:prefLabel>
+        <skos:notation>cofog09050</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog10030">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG100301</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG100301</skos:prefLabel>
+        <skos:notation>cofog10030</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog040100">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG040101</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG040101</skos:prefLabel>
+        <skos:notation>cofog040100</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog090801">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG090802</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG090802</skos:prefLabel>
+        <skos:notation>cofog090801</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog040501">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG04050101</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG04050101</skos:prefLabel>
+        <skos:notation>cofog040501</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog040201">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG04020101</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG04020101</skos:prefLabel>
+        <skos:notation>cofog040201</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog09070">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG090700</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG090700</skos:prefLabel>
+        <skos:notation>cofog09070</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofogna01">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOGNA01</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOGNA01</skos:prefLabel>
+        <skos:notation>cofogna01</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog040700">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG040702</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG040702</skos:prefLabel>
+        <skos:notation>cofog040700</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog040802">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG040803</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG040803</skos:prefLabel>
+        <skos:notation>cofog040802</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog01010">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG010100</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG010100</skos:prefLabel>
+        <skos:notation>cofog01010</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog01070">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG010701</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG010701</skos:prefLabel>
+        <skos:notation>cofog01070</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog10040">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG100400</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG100400</skos:prefLabel>
+        <skos:notation>cofog10040</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog030101">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG030102</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG030102</skos:prefLabel>
+        <skos:notation>cofog030101</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog070300">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG070301</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG070301</skos:prefLabel>
+        <skos:notation>cofog070300</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog100401">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG100402</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG100402</skos:prefLabel>
+        <skos:notation>cofog100401</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog060101">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG060102</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG060102</skos:prefLabel>
+        <skos:notation>cofog060101</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog04030">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG040300</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG040300</skos:prefLabel>
+        <skos:notation>cofog04030</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog040302">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG040303</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG040303</skos:prefLabel>
+        <skos:notation>cofog040302</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog090101">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG09010200</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG09010200</skos:prefLabel>
+        <skos:notation>cofog090101</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog0204">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG0204</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG0204</skos:prefLabel>
+        <skos:notation>cofog0204</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog040202">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG04020102</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG04020102</skos:prefLabel>
+        <skos:notation>cofog040202</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog1009">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG1009</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG1009</skos:prefLabel>
+        <skos:notation>cofog1009</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog06010">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG060100</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG060100</skos:prefLabel>
+        <skos:notation>cofog06010</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog07030">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG070300</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG070300</skos:prefLabel>
+        <skos:notation>cofog07030</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofogna02">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOGNA02</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOGNA02</skos:prefLabel>
+        <skos:notation>cofogna02</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog090200">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG090201SS</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG090201SS</skos:prefLabel>
+        <skos:notation>cofog090200</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog040701">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG040703</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG040703</skos:prefLabel>
+        <skos:notation>cofog040701</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog100700">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG100702</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG100702</skos:prefLabel>
+        <skos:notation>cofog100700</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog0506">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG0506</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG0506</skos:prefLabel>
+        <skos:notation>cofog0506</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog0805">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG0805</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG0805</skos:prefLabel>
+        <skos:notation>cofog0805</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog040505">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG040503</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG040503</skos:prefLabel>
+        <skos:notation>cofog040505</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog090600">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG090601</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG090601</skos:prefLabel>
+        <skos:notation>cofog090600</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog090500">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG090501</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG090501</skos:prefLabel>
+        <skos:notation>cofog090500</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog10010">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG100101PSS</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG100101PSS</skos:prefLabel>
+        <skos:notation>cofog10010</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:prefLabel xml:lang="en">COFOG code list concept scheme</skos:prefLabel>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog010301">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG010302</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG010302</skos:prefLabel>
+        <skos:notation>cofog010301</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog0802">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG0802</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG0802</skos:prefLabel>
+        <skos:notation>cofog0802</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog010700">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG010702</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG010702</skos:prefLabel>
+        <skos:notation>cofog010700</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog090201">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG090201XSS</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG090201XSS</skos:prefLabel>
+        <skos:notation>cofog090201</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog01030">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG010300</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG010300</skos:prefLabel>
+        <skos:notation>cofog01030</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog090601">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG090602</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG090602</skos:prefLabel>
+        <skos:notation>cofog090601</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog090103">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG090102XSS</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG090102XSS</skos:prefLabel>
+        <skos:notation>cofog090103</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog070202">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG070203</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG070203</skos:prefLabel>
+        <skos:notation>cofog070202</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog0606">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG0606</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG0606</skos:prefLabel>
+        <skos:notation>cofog0606</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog0202">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG0202</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG0202</skos:prefLabel>
+        <skos:notation>cofog0202</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog10070">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG100701</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG100701</skos:prefLabel>
+        <skos:notation>cofog10070</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog0306">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG0306</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG0306</skos:prefLabel>
+        <skos:notation>cofog0306</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog1001x">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG1001XPSS</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG1001XPSS</skos:prefLabel>
+        <skos:notation>cofog1001x</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog0604">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG0604</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG0604</skos:prefLabel>
+        <skos:notation>cofog0604</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog09010">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG090100</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG090100</skos:prefLabel>
+        <skos:notation>cofog09010</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog090402">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG09040200</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG09040200</skos:prefLabel>
+        <skos:notation>cofog090402</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog0504">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG0504</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG0504</skos:prefLabel>
+        <skos:notation>cofog0504</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog040401">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG040403</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG040403</skos:prefLabel>
+        <skos:notation>cofog040401</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog010103">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG010103</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG010103</skos:prefLabel>
+        <skos:notation>cofog010103</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog04080">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG040800</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG040800</skos:prefLabel>
+        <skos:notation>cofog04080</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog0704">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG0704</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG0704</skos:prefLabel>
+        <skos:notation>cofog0704</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog040800">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG040801</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG040801</skos:prefLabel>
+        <skos:notation>cofog040800</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog040101">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG040102</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG040102</skos:prefLabel>
+        <skos:notation>cofog040101</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog0806">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG0806</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG0806</skos:prefLabel>
+        <skos:notation>cofog0806</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog07010">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG070101</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG070101</skos:prefLabel>
+        <skos:notation>cofog07010</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog070203">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG070204</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG070204</skos:prefLabel>
+        <skos:notation>cofog070203</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog0501">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG0501</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG0501</skos:prefLabel>
+        <skos:notation>cofog0501</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog040502">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG04050102</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG04050102</skos:prefLabel>
+        <skos:notation>cofog040502</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog09030">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG090300</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG090300</skos:prefLabel>
+        <skos:notation>cofog09030</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog0409">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG0409</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG0409</skos:prefLabel>
+        <skos:notation>cofog0409</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog100100">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG100101XPSS</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG100101XPSS</skos:prefLabel>
+        <skos:notation>cofog100100</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog040803">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG040804</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG040804</skos:prefLabel>
+        <skos:notation>cofog040803</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog090403">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG09040201</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG09040201</skos:prefLabel>
+        <skos:notation>cofog090403</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog010100">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG010101</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG010101</skos:prefLabel>
+        <skos:notation>cofog010100</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog09040">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG090400</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG090400</skos:prefLabel>
+        <skos:notation>cofog09040</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog10020">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG100200</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG100200</skos:prefLabel>
+        <skos:notation>cofog10020</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog070200">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG070201</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG070201</skos:prefLabel>
+        <skos:notation>cofog070200</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog0108">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG0108</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG0108</skos:prefLabel>
+        <skos:notation>cofog0108</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog09060">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG090600</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG090600</skos:prefLabel>
+        <skos:notation>cofog09060</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog0406">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG0406</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG0406</skos:prefLabel>
+        <skos:notation>cofog0406</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog090300">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG090301</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG090301</skos:prefLabel>
+        <skos:notation>cofog090300</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog070301">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG070302</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG070302</skos:prefLabel>
+        <skos:notation>cofog070301</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog0705">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG0705</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG0705</skos:prefLabel>
+        <skos:notation>cofog0705</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog0602">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG0602</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG0602</skos:prefLabel>
+        <skos:notation>cofog0602</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog100201">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG100202</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG100202</skos:prefLabel>
+        <skos:notation>cofog100201</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog040303">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG040305</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG040305</skos:prefLabel>
+        <skos:notation>cofog040303</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog030300">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG030301</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG030301</skos:prefLabel>
+        <skos:notation>cofog030300</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog040503">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG04050103</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG04050103</skos:prefLabel>
+        <skos:notation>cofog040503</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog04010">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG040100</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG040100</skos:prefLabel>
+        <skos:notation>cofog04010</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog040203">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG040202</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG040202</skos:prefLabel>
+        <skos:notation>cofog040203</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog0205">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG0205</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG0205</skos:prefLabel>
+        <skos:notation>cofog0205</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog0105">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG0105</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG0105</skos:prefLabel>
+        <skos:notation>cofog0105</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofognaec">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOGNAEC</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOGNAEC</skos:prefLabel>
+        <skos:notation>cofognaec</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog060100">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG060101</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG060101</skos:prefLabel>
+        <skos:notation>cofog060100</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog100101">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG100102XPSS</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG100102XPSS</skos:prefLabel>
+        <skos:notation>cofog100101</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog040804">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG040805</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG040805</skos:prefLabel>
+        <skos:notation>cofog040804</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Cofog rdf:about="http://finance.data.gov.uk/def/coins/cofog/cofog10050">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">COFOG100501</rdfs:label>
+        <skos:prefLabel xml:lang="en">COFOG100501</skos:prefLabel>
+        <skos:notation>cofog10050</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/cofog"/>
+      </j.1:Cofog>
+    </skos:hasTopConcept>
+  </skos:ConceptScheme>
+</rdf:RDF>

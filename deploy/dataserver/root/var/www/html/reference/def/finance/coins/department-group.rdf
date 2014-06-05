@@ -1,0 +1,624 @@
+<rdf:RDF
+    xmlns:sdmx-subject="http://purl.org/linked-data/sdmx/2009/subject#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:sdmx-dimension="http://purl.org/linked-data/sdmx/2009/dimension#"
+    xmlns:sdmx-measure="http://purl.org/linked-data/sdmx/2009/measure#"
+    xmlns:sdmx-attribute="http://purl.org/linked-data/sdmx/2009/attribute#"
+    xmlns:coins-data="http://source.data.gov.uk/data/coins/"
+    xmlns:coins-dsd="http://finance.data.gov.uk/dsd/coins/"
+    xmlns:coins-dimension="http://finance.data.gov.uk/dsd/coins/dimension/"
+    xmlns:void="http://rdfs.org/ns/void#"
+    xmlns:coins-measure="http://finance.data.gov.uk/dsd/coins/measure/"
+    xmlns:j.0="http://www.epimorphics.com/vocabs/coins-generate#"
+    xmlns:coins-attribute="http://finance.data.gov.uk/dsd/coins/attribute/"
+    xmlns:sdmx-concept="http://purl.org/linked-data/sdmx/2009/concept#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:coins-slicekey="http://finance.data.gov.uk/dsd/coins/slice/"
+    xmlns:sdmx="http://purl.org/linked-data/sdmx#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:sdmx-code="http://purl.org/linked-data/sdmx/2009/code#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:j.1="http://finance.data.gov.uk/def/coins/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:qb="http://purl.org/linked-data/cube#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <rdfs:Class rdf:about="http://finance.data.gov.uk/def/coins/DepartmentGroup">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:label xml:lang="en">department group values class</rdfs:label>
+    <skos:prefLabel xml:lang="en">department group values class</skos:prefLabel>
+    <rdfs:comment>The class of values in the department group code-list scheme</rdfs:comment>
+  </rdfs:Class>
+  <sdmx:Concept rdf:about="http://finance.data.gov.uk/def/coins/statistical-concept/department-group">
+    <rdfs:label xml:lang="en">department group</rdfs:label>
+    <skos:prefLabel xml:lang="en">department group</skos:prefLabel>
+    <rdfs:comment>Used to group organisations, such as NDPBs, which together form a departmental group.</rdfs:comment>
+    <dcterms:source rdf:resource="http://www.hm-treasury.gov.uk/d/coins_guidance.pdf"/>
+    <j.0:columnName>dept_group</j.0:columnName>
+  </sdmx:Concept>
+  <skos:ConceptScheme rdf:about="http://finance.data.gov.uk/def/coins/department-group">
+    <skos:hasTopConcept>
+      <j.1:DepartmentGroup rdf:about="http://finance.data.gov.uk/def/coins/department-group/dept030">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Dept030</rdfs:label>
+        <skos:prefLabel xml:lang="en">Dept030</skos:prefLabel>
+        <skos:notation>dept030</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/department-group"/>
+      </j.1:DepartmentGroup>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DepartmentGroup rdf:about="http://finance.data.gov.uk/def/coins/department-group/dept037">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Dept037</rdfs:label>
+        <skos:prefLabel xml:lang="en">Dept037</skos:prefLabel>
+        <skos:notation>dept037</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/department-group"/>
+      </j.1:DepartmentGroup>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DepartmentGroup rdf:about="http://finance.data.gov.uk/def/coins/department-group/dept035">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Dept035</rdfs:label>
+        <skos:prefLabel xml:lang="en">Dept035</skos:prefLabel>
+        <skos:notation>dept035</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/department-group"/>
+      </j.1:DepartmentGroup>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DepartmentGroup rdf:about="http://finance.data.gov.uk/def/coins/department-group/dept038">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Dept038</rdfs:label>
+        <skos:prefLabel xml:lang="en">Dept038</skos:prefLabel>
+        <skos:notation>dept038</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/department-group"/>
+      </j.1:DepartmentGroup>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DepartmentGroup rdf:about="http://finance.data.gov.uk/def/coins/department-group/dept036">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Dept036</rdfs:label>
+        <skos:prefLabel xml:lang="en">Dept036</skos:prefLabel>
+        <skos:notation>dept036</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/department-group"/>
+      </j.1:DepartmentGroup>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DepartmentGroup rdf:about="http://finance.data.gov.uk/def/coins/department-group/dept029">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Dept029</rdfs:label>
+        <skos:prefLabel xml:lang="en">Dept029</skos:prefLabel>
+        <skos:notation>dept029</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/department-group"/>
+      </j.1:DepartmentGroup>
+    </skos:hasTopConcept>
+    <skos:prefLabel xml:lang="en">department group code list concept scheme</skos:prefLabel>
+    <skos:hasTopConcept>
+      <j.1:DepartmentGroup rdf:about="http://finance.data.gov.uk/def/coins/department-group/dept067">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Dept067</rdfs:label>
+        <skos:prefLabel xml:lang="en">Dept067</skos:prefLabel>
+        <skos:notation>dept067</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/department-group"/>
+      </j.1:DepartmentGroup>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DepartmentGroup rdf:about="http://finance.data.gov.uk/def/coins/department-group/dept025">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Dept025</rdfs:label>
+        <skos:prefLabel xml:lang="en">Dept025</skos:prefLabel>
+        <skos:notation>dept025</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/department-group"/>
+      </j.1:DepartmentGroup>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DepartmentGroup rdf:about="http://finance.data.gov.uk/def/coins/department-group/dept041">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Dept041</rdfs:label>
+        <skos:prefLabel xml:lang="en">Dept041</skos:prefLabel>
+        <skos:notation>dept041</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/department-group"/>
+      </j.1:DepartmentGroup>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DepartmentGroup rdf:about="http://finance.data.gov.uk/def/coins/department-group/dept066">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Dept066</rdfs:label>
+        <skos:prefLabel xml:lang="en">Dept066</skos:prefLabel>
+        <skos:notation>dept066</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/department-group"/>
+      </j.1:DepartmentGroup>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DepartmentGroup rdf:about="http://finance.data.gov.uk/def/coins/department-group/dept017">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Dept017</rdfs:label>
+        <skos:prefLabel xml:lang="en">Dept017</skos:prefLabel>
+        <skos:notation>dept017</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/department-group"/>
+      </j.1:DepartmentGroup>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DepartmentGroup rdf:about="http://finance.data.gov.uk/def/coins/department-group/dept022">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Dept022</rdfs:label>
+        <skos:prefLabel xml:lang="en">Dept022</skos:prefLabel>
+        <skos:notation>dept022</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/department-group"/>
+      </j.1:DepartmentGroup>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DepartmentGroup rdf:about="http://finance.data.gov.uk/def/coins/department-group/dept075">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Dept075</rdfs:label>
+        <skos:prefLabel xml:lang="en">Dept075</skos:prefLabel>
+        <skos:notation>dept075</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/department-group"/>
+      </j.1:DepartmentGroup>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DepartmentGroup rdf:about="http://finance.data.gov.uk/def/coins/department-group/dept049">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Dept049</rdfs:label>
+        <skos:prefLabel xml:lang="en">Dept049</skos:prefLabel>
+        <skos:notation>dept049</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/department-group"/>
+      </j.1:DepartmentGroup>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DepartmentGroup rdf:about="http://finance.data.gov.uk/def/coins/department-group/dept047">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Dept047</rdfs:label>
+        <skos:prefLabel xml:lang="en">Dept047</skos:prefLabel>
+        <skos:notation>dept047</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/department-group"/>
+      </j.1:DepartmentGroup>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DepartmentGroup rdf:about="http://finance.data.gov.uk/def/coins/department-group/dept005">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Dept005</rdfs:label>
+        <skos:prefLabel xml:lang="en">Dept005</skos:prefLabel>
+        <skos:notation>dept005</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/department-group"/>
+      </j.1:DepartmentGroup>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DepartmentGroup rdf:about="http://finance.data.gov.uk/def/coins/department-group/dept063">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Dept063</rdfs:label>
+        <skos:prefLabel xml:lang="en">Dept063</skos:prefLabel>
+        <skos:notation>dept063</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/department-group"/>
+      </j.1:DepartmentGroup>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DepartmentGroup rdf:about="http://finance.data.gov.uk/def/coins/department-group/dept088">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Dept088</rdfs:label>
+        <skos:prefLabel xml:lang="en">Dept088</skos:prefLabel>
+        <skos:notation>dept088</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/department-group"/>
+      </j.1:DepartmentGroup>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DepartmentGroup rdf:about="http://finance.data.gov.uk/def/coins/department-group/dept046">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Dept046</rdfs:label>
+        <skos:prefLabel xml:lang="en">Dept046</skos:prefLabel>
+        <skos:notation>dept046</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/department-group"/>
+      </j.1:DepartmentGroup>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DepartmentGroup rdf:about="http://finance.data.gov.uk/def/coins/department-group/dept004">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Dept004</rdfs:label>
+        <skos:prefLabel xml:lang="en">Dept004</skos:prefLabel>
+        <skos:notation>dept004</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/department-group"/>
+      </j.1:DepartmentGroup>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DepartmentGroup rdf:about="http://finance.data.gov.uk/def/coins/department-group/dept062">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Dept062</rdfs:label>
+        <skos:prefLabel xml:lang="en">Dept062</skos:prefLabel>
+        <skos:notation>dept062</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/department-group"/>
+      </j.1:DepartmentGroup>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DepartmentGroup rdf:about="http://finance.data.gov.uk/def/coins/department-group/dept020">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Dept020</rdfs:label>
+        <skos:prefLabel xml:lang="en">Dept020</skos:prefLabel>
+        <skos:notation>dept020</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/department-group"/>
+      </j.1:DepartmentGroup>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DepartmentGroup rdf:about="http://finance.data.gov.uk/def/coins/department-group/dept010">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Dept010</rdfs:label>
+        <skos:prefLabel xml:lang="en">Dept010</skos:prefLabel>
+        <skos:notation>dept010</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/department-group"/>
+      </j.1:DepartmentGroup>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DepartmentGroup rdf:about="http://finance.data.gov.uk/def/coins/department-group/dept028">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Dept028</rdfs:label>
+        <skos:prefLabel xml:lang="en">Dept028</skos:prefLabel>
+        <skos:notation>dept028</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/department-group"/>
+      </j.1:DepartmentGroup>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DepartmentGroup rdf:about="http://finance.data.gov.uk/def/coins/department-group/dept033">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Dept033</rdfs:label>
+        <skos:prefLabel xml:lang="en">Dept033</skos:prefLabel>
+        <skos:notation>dept033</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/department-group"/>
+      </j.1:DepartmentGroup>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DepartmentGroup rdf:about="http://finance.data.gov.uk/def/coins/department-group/dept034">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Dept034</rdfs:label>
+        <skos:prefLabel xml:lang="en">Dept034</skos:prefLabel>
+        <skos:notation>dept034</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/department-group"/>
+      </j.1:DepartmentGroup>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DepartmentGroup rdf:about="http://finance.data.gov.uk/def/coins/department-group/dept065">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Dept065</rdfs:label>
+        <skos:prefLabel xml:lang="en">Dept065</skos:prefLabel>
+        <skos:notation>dept065</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/department-group"/>
+      </j.1:DepartmentGroup>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DepartmentGroup rdf:about="http://finance.data.gov.uk/def/coins/department-group/dept050">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Dept050</rdfs:label>
+        <skos:prefLabel xml:lang="en">Dept050</skos:prefLabel>
+        <skos:notation>dept050</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/department-group"/>
+      </j.1:DepartmentGroup>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DepartmentGroup rdf:about="http://finance.data.gov.uk/def/coins/department-group/dept081">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Dept081</rdfs:label>
+        <skos:prefLabel xml:lang="en">Dept081</skos:prefLabel>
+        <skos:notation>dept081</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/department-group"/>
+      </j.1:DepartmentGroup>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DepartmentGroup rdf:about="http://finance.data.gov.uk/def/coins/department-group/dept099">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Dept099</rdfs:label>
+        <skos:prefLabel xml:lang="en">Dept099</skos:prefLabel>
+        <skos:notation>dept099</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/department-group"/>
+      </j.1:DepartmentGroup>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DepartmentGroup rdf:about="http://finance.data.gov.uk/def/coins/department-group/dept019">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Dept019</rdfs:label>
+        <skos:prefLabel xml:lang="en">Dept019</skos:prefLabel>
+        <skos:notation>dept019</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/department-group"/>
+      </j.1:DepartmentGroup>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DepartmentGroup rdf:about="http://finance.data.gov.uk/def/coins/department-group/dept057">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Dept057</rdfs:label>
+        <skos:prefLabel xml:lang="en">Dept057</skos:prefLabel>
+        <skos:notation>dept057</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/department-group"/>
+      </j.1:DepartmentGroup>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DepartmentGroup rdf:about="http://finance.data.gov.uk/def/coins/department-group/dept089">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Dept089</rdfs:label>
+        <skos:prefLabel xml:lang="en">Dept089</skos:prefLabel>
+        <skos:notation>dept089</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/department-group"/>
+      </j.1:DepartmentGroup>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DepartmentGroup rdf:about="http://finance.data.gov.uk/def/coins/department-group/dept087">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Dept087</rdfs:label>
+        <skos:prefLabel xml:lang="en">Dept087</skos:prefLabel>
+        <skos:notation>dept087</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/department-group"/>
+      </j.1:DepartmentGroup>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DepartmentGroup rdf:about="http://finance.data.gov.uk/def/coins/department-group/dept015">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Dept015</rdfs:label>
+        <skos:prefLabel xml:lang="en">Dept015</skos:prefLabel>
+        <skos:notation>dept015</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/department-group"/>
+      </j.1:DepartmentGroup>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DepartmentGroup rdf:about="http://finance.data.gov.uk/def/coins/department-group/dept016">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Dept016</rdfs:label>
+        <skos:prefLabel xml:lang="en">Dept016</skos:prefLabel>
+        <skos:notation>dept016</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/department-group"/>
+      </j.1:DepartmentGroup>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DepartmentGroup rdf:about="http://finance.data.gov.uk/def/coins/department-group/dept074">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Dept074</rdfs:label>
+        <skos:prefLabel xml:lang="en">Dept074</skos:prefLabel>
+        <skos:notation>dept074</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/department-group"/>
+      </j.1:DepartmentGroup>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DepartmentGroup rdf:about="http://finance.data.gov.uk/def/coins/department-group/dept009">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Dept009</rdfs:label>
+        <skos:prefLabel xml:lang="en">Dept009</skos:prefLabel>
+        <skos:notation>dept009</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/department-group"/>
+      </j.1:DepartmentGroup>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DepartmentGroup rdf:about="http://finance.data.gov.uk/def/coins/department-group/dept045">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Dept045</rdfs:label>
+        <skos:prefLabel xml:lang="en">Dept045</skos:prefLabel>
+        <skos:notation>dept045</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/department-group"/>
+      </j.1:DepartmentGroup>
+    </skos:hasTopConcept>
+    <rdfs:label xml:lang="en">department group code list concept scheme</rdfs:label>
+    <skos:hasTopConcept>
+      <j.1:DepartmentGroup rdf:about="http://finance.data.gov.uk/def/coins/department-group/dept031">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Dept031</rdfs:label>
+        <skos:prefLabel xml:lang="en">Dept031</skos:prefLabel>
+        <skos:notation>dept031</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/department-group"/>
+      </j.1:DepartmentGroup>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DepartmentGroup rdf:about="http://finance.data.gov.uk/def/coins/department-group/dept003">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Dept003</rdfs:label>
+        <skos:prefLabel xml:lang="en">Dept003</skos:prefLabel>
+        <skos:notation>dept003</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/department-group"/>
+      </j.1:DepartmentGroup>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DepartmentGroup rdf:about="http://finance.data.gov.uk/def/coins/department-group/dept061">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Dept061</rdfs:label>
+        <skos:prefLabel xml:lang="en">Dept061</skos:prefLabel>
+        <skos:notation>dept061</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/department-group"/>
+      </j.1:DepartmentGroup>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DepartmentGroup rdf:about="http://finance.data.gov.uk/def/coins/department-group/dept097">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Dept097</rdfs:label>
+        <skos:prefLabel xml:lang="en">Dept097</skos:prefLabel>
+        <skos:notation>dept097</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/department-group"/>
+      </j.1:DepartmentGroup>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DepartmentGroup rdf:about="http://finance.data.gov.uk/def/coins/department-group/dept069">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Dept069</rdfs:label>
+        <skos:prefLabel xml:lang="en">Dept069</skos:prefLabel>
+        <skos:notation>dept069</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/department-group"/>
+      </j.1:DepartmentGroup>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DepartmentGroup rdf:about="http://finance.data.gov.uk/def/coins/department-group/dept027">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Dept027</rdfs:label>
+        <skos:prefLabel xml:lang="en">Dept027</skos:prefLabel>
+        <skos:notation>dept027</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/department-group"/>
+      </j.1:DepartmentGroup>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DepartmentGroup rdf:about="http://finance.data.gov.uk/def/coins/department-group/dept060">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Dept060</rdfs:label>
+        <skos:prefLabel xml:lang="en">Dept060</skos:prefLabel>
+        <skos:notation>dept060</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/department-group"/>
+      </j.1:DepartmentGroup>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DepartmentGroup rdf:about="http://finance.data.gov.uk/def/coins/department-group/dept085">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Dept085</rdfs:label>
+        <skos:prefLabel xml:lang="en">Dept085</skos:prefLabel>
+        <skos:notation>dept085</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/department-group"/>
+      </j.1:DepartmentGroup>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DepartmentGroup rdf:about="http://finance.data.gov.uk/def/coins/department-group/dept068">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Dept068</rdfs:label>
+        <skos:prefLabel xml:lang="en">Dept068</skos:prefLabel>
+        <skos:notation>dept068</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/department-group"/>
+      </j.1:DepartmentGroup>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DepartmentGroup rdf:about="http://finance.data.gov.uk/def/coins/department-group/dept026">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Dept026</rdfs:label>
+        <skos:prefLabel xml:lang="en">Dept026</skos:prefLabel>
+        <skos:notation>dept026</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/department-group"/>
+      </j.1:DepartmentGroup>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DepartmentGroup rdf:about="http://finance.data.gov.uk/def/coins/department-group/dept084">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Dept084</rdfs:label>
+        <skos:prefLabel xml:lang="en">Dept084</skos:prefLabel>
+        <skos:notation>dept084</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/department-group"/>
+      </j.1:DepartmentGroup>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DepartmentGroup rdf:about="http://finance.data.gov.uk/def/coins/department-group/dept032">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Dept032</rdfs:label>
+        <skos:prefLabel xml:lang="en">Dept032</skos:prefLabel>
+        <skos:notation>dept032</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/department-group"/>
+      </j.1:DepartmentGroup>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DepartmentGroup rdf:about="http://finance.data.gov.uk/def/coins/department-group/dept090">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Dept090</rdfs:label>
+        <skos:prefLabel xml:lang="en">Dept090</skos:prefLabel>
+        <skos:notation>dept090</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/department-group"/>
+      </j.1:DepartmentGroup>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DepartmentGroup rdf:about="http://finance.data.gov.uk/def/coins/department-group/dept048">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Dept048</rdfs:label>
+        <skos:prefLabel xml:lang="en">Dept048</skos:prefLabel>
+        <skos:notation>dept048</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/department-group"/>
+      </j.1:DepartmentGroup>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DepartmentGroup rdf:about="http://finance.data.gov.uk/def/coins/department-group/dept006">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Dept006</rdfs:label>
+        <skos:prefLabel xml:lang="en">Dept006</skos:prefLabel>
+        <skos:notation>dept006</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/department-group"/>
+      </j.1:DepartmentGroup>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DepartmentGroup rdf:about="http://finance.data.gov.uk/def/coins/department-group/dept064">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Dept064</rdfs:label>
+        <skos:prefLabel xml:lang="en">Dept064</skos:prefLabel>
+        <skos:notation>dept064</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/department-group"/>
+      </j.1:DepartmentGroup>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DepartmentGroup rdf:about="http://finance.data.gov.uk/def/coins/department-group/dept013">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Dept013</rdfs:label>
+        <skos:prefLabel xml:lang="en">Dept013</skos:prefLabel>
+        <skos:notation>dept013</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/department-group"/>
+      </j.1:DepartmentGroup>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DepartmentGroup rdf:about="http://finance.data.gov.uk/def/coins/department-group/dept011">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Dept011</rdfs:label>
+        <skos:prefLabel xml:lang="en">Dept011</skos:prefLabel>
+        <skos:notation>dept011</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/department-group"/>
+      </j.1:DepartmentGroup>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DepartmentGroup rdf:about="http://finance.data.gov.uk/def/coins/department-group/dept014">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Dept014</rdfs:label>
+        <skos:prefLabel xml:lang="en">Dept014</skos:prefLabel>
+        <skos:notation>dept014</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/department-group"/>
+      </j.1:DepartmentGroup>
+    </skos:hasTopConcept>
+  </skos:ConceptScheme>
+</rdf:RDF>

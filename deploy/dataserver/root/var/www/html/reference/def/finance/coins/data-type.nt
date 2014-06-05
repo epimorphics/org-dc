@@ -1,0 +1,527 @@
+<http://finance.data.gov.uk/def/coins/data-type/snapshot3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataType> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot3> <http://www.w3.org/2000/01/rdf-schema#label> "Snapshot3"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot3> <http://www.w3.org/2004/02/skos/core#prefLabel> "Snapshot3"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot3> <http://www.w3.org/2004/02/skos/core#notation> "snapshot3" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot3> <http://www.w3.org/2000/01/rdf-schema#comment> "Outturn ME and PESA May 2009" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot3> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-type> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot40> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataType> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot40> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot40> <http://www.w3.org/2000/01/rdf-schema#label> "Snapshot40"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot40> <http://www.w3.org/2004/02/skos/core#prefLabel> "Snapshot40"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot40> <http://www.w3.org/2004/02/skos/core#notation> "snapshot40" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot40> <http://www.w3.org/2000/01/rdf-schema#comment> "2008 PBR Plans" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot40> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-type> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataType> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot12> <http://www.w3.org/2000/01/rdf-schema#label> "Snapshot12"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot12> <http://www.w3.org/2004/02/skos/core#prefLabel> "Snapshot12"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot12> <http://www.w3.org/2004/02/skos/core#notation> "snapshot12" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot12> <http://www.w3.org/2000/01/rdf-schema#comment> "CYP CRA" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot12> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-type> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot25> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataType> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot25> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot25> <http://www.w3.org/2000/01/rdf-schema#label> "Snapshot25"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot25> <http://www.w3.org/2004/02/skos/core#prefLabel> "Snapshot25"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot25> <http://www.w3.org/2004/02/skos/core#notation> "snapshot25" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot25> <http://www.w3.org/2000/01/rdf-schema#comment> "PBR 2009 Nov 19 Plans" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot25> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-type> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot38> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataType> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot38> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot38> <http://www.w3.org/2000/01/rdf-schema#label> "Snapshot38"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot38> <http://www.w3.org/2004/02/skos/core#prefLabel> "Snapshot38"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot38> <http://www.w3.org/2004/02/skos/core#notation> "snapshot38" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot38> <http://www.w3.org/2000/01/rdf-schema#comment> "Outturn Summer Supp August 2008" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot38> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-type> .
+<http://finance.data.gov.uk/def/coins/statistical-concept/data-type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/sdmx#Concept> .
+<http://finance.data.gov.uk/def/coins/statistical-concept/data-type> <http://www.w3.org/2000/01/rdf-schema#label> "data type"@en .
+<http://finance.data.gov.uk/def/coins/statistical-concept/data-type> <http://www.w3.org/2004/02/skos/core#prefLabel> "data type"@en .
+<http://finance.data.gov.uk/def/coins/statistical-concept/data-type> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifies whether the data are Plans & Outturn or Forecast Outturn. Some data are identified as being part of a numbered snapshot, which represent data taken at a fixed point in time." .
+<http://finance.data.gov.uk/def/coins/statistical-concept/data-type> <http://epimorphics.com/vocabs/coins-generator#source> <http://www.hm-treasury.gov.uk/d/coins_guidance.pdf> .
+<http://finance.data.gov.uk/def/coins/statistical-concept/data-type> <http://www.epimorphics.com/vocabs/coins-generate#columnName> "data_type" .
+<http://finance.data.gov.uk/def/coins/data-type/foq1i> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataType> .
+<http://finance.data.gov.uk/def/coins/data-type/foq1i> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-type/foq1i> <http://www.w3.org/2000/01/rdf-schema#label> "Forecast Outturn Q1 Input"@en .
+<http://finance.data.gov.uk/def/coins/data-type/foq1i> <http://www.w3.org/2004/02/skos/core#prefLabel> "Forecast Outturn Q1 Input"@en .
+<http://finance.data.gov.uk/def/coins/data-type/foq1i> <http://www.w3.org/2004/02/skos/core#notation> "foq1i" .
+<http://finance.data.gov.uk/def/coins/data-type/foq1i> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-type/foq1i> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-type> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot32> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataType> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot32> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot32> <http://www.w3.org/2000/01/rdf-schema#label> "Snapshot32"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot32> <http://www.w3.org/2004/02/skos/core#prefLabel> "Snapshot32"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot32> <http://www.w3.org/2004/02/skos/core#notation> "snapshot32" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot32> <http://www.w3.org/2000/01/rdf-schema#comment> "OUTTURN 2 FEB08" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot32> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-type> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot45> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataType> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot45> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot45> <http://www.w3.org/2000/01/rdf-schema#label> "Snapshot45"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot45> <http://www.w3.org/2004/02/skos/core#prefLabel> "Snapshot45"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot45> <http://www.w3.org/2004/02/skos/core#notation> "snapshot45" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot45> <http://www.w3.org/2000/01/rdf-schema#comment> "Plans Winter Supp November 2008" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot45> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-type> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataType> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot8> <http://www.w3.org/2000/01/rdf-schema#label> "Snapshot8"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot8> <http://www.w3.org/2004/02/skos/core#prefLabel> "Snapshot8"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot8> <http://www.w3.org/2004/02/skos/core#notation> "snapshot8" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot8> <http://www.w3.org/2000/01/rdf-schema#comment> "2007 PBR Plans" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot8> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-type> .
+<http://finance.data.gov.uk/def/coins/data-type/foj0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataType> .
+<http://finance.data.gov.uk/def/coins/data-type/foj0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-type/foj0> <http://www.w3.org/2000/01/rdf-schema#label> "Forecast Outturn July"@en .
+<http://finance.data.gov.uk/def/coins/data-type/foj0> <http://www.w3.org/2004/02/skos/core#prefLabel> "Forecast Outturn July"@en .
+<http://finance.data.gov.uk/def/coins/data-type/foj0> <http://www.w3.org/2004/02/skos/core#notation> "foj0" .
+<http://finance.data.gov.uk/def/coins/data-type/foj0> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-type/foj0> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-type> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot17> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataType> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot17> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot17> <http://www.w3.org/2000/01/rdf-schema#label> "Snapshot17"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot17> <http://www.w3.org/2004/02/skos/core#prefLabel> "Snapshot17"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot17> <http://www.w3.org/2004/02/skos/core#notation> "snapshot17" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot17> <http://www.w3.org/2000/01/rdf-schema#comment> "CYO BUD" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot17> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-type> .
+<http://finance.data.gov.uk/def/coins/data-type/foj> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataType> .
+<http://finance.data.gov.uk/def/coins/data-type/foj> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-type/foj> <http://www.w3.org/2000/01/rdf-schema#label> "Forecast Outturn January"@en .
+<http://finance.data.gov.uk/def/coins/data-type/foj> <http://www.w3.org/2004/02/skos/core#prefLabel> "Forecast Outturn January"@en .
+<http://finance.data.gov.uk/def/coins/data-type/foj> <http://www.w3.org/2004/02/skos/core#notation> "foj" .
+<http://finance.data.gov.uk/def/coins/data-type/foj> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-type/foj> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-type> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataType> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot11> <http://www.w3.org/2000/01/rdf-schema#label> "Snapshot11"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot11> <http://www.w3.org/2004/02/skos/core#prefLabel> "Snapshot11"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot11> <http://www.w3.org/2004/02/skos/core#notation> "snapshot11" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot11> <http://www.w3.org/2000/01/rdf-schema#comment> "CYO CRA" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot11> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-type> .
+<http://finance.data.gov.uk/def/coins/data-type/foq3i> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataType> .
+<http://finance.data.gov.uk/def/coins/data-type/foq3i> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-type/foq3i> <http://www.w3.org/2000/01/rdf-schema#label> "Forecast Outturn Q3 Input"@en .
+<http://finance.data.gov.uk/def/coins/data-type/foq3i> <http://www.w3.org/2004/02/skos/core#prefLabel> "Forecast Outturn Q3 Input"@en .
+<http://finance.data.gov.uk/def/coins/data-type/foq3i> <http://www.w3.org/2004/02/skos/core#notation> "foq3i" .
+<http://finance.data.gov.uk/def/coins/data-type/foq3i> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-type/foq3i> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-type> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot24> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataType> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot24> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot24> <http://www.w3.org/2000/01/rdf-schema#label> "Snapshot24"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot24> <http://www.w3.org/2004/02/skos/core#prefLabel> "Snapshot24"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot24> <http://www.w3.org/2004/02/skos/core#notation> "snapshot24" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot24> <http://www.w3.org/2000/01/rdf-schema#comment> "CYP SP SUP" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot24> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-type> .
+<http://finance.data.gov.uk/def/coins/data-type/foa0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataType> .
+<http://finance.data.gov.uk/def/coins/data-type/foa0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-type/foa0> <http://www.w3.org/2000/01/rdf-schema#label> "Forecast Outturn August"@en .
+<http://finance.data.gov.uk/def/coins/data-type/foa0> <http://www.w3.org/2004/02/skos/core#prefLabel> "Forecast Outturn August"@en .
+<http://finance.data.gov.uk/def/coins/data-type/foa0> <http://www.w3.org/2004/02/skos/core#notation> "foa0" .
+<http://finance.data.gov.uk/def/coins/data-type/foa0> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-type/foa0> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-type> .
+<http://finance.data.gov.uk/def/coins/data-type/fod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataType> .
+<http://finance.data.gov.uk/def/coins/data-type/fod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-type/fod> <http://www.w3.org/2000/01/rdf-schema#label> "Forecast Outturn December"@en .
+<http://finance.data.gov.uk/def/coins/data-type/fod> <http://www.w3.org/2004/02/skos/core#prefLabel> "Forecast Outturn December"@en .
+<http://finance.data.gov.uk/def/coins/data-type/fod> <http://www.w3.org/2004/02/skos/core#notation> "fod" .
+<http://finance.data.gov.uk/def/coins/data-type/fod> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-type/fod> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-type> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot37> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataType> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot37> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot37> <http://www.w3.org/2000/01/rdf-schema#label> "Snapshot37"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot37> <http://www.w3.org/2004/02/skos/core#prefLabel> "Snapshot37"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot37> <http://www.w3.org/2004/02/skos/core#notation> "snapshot37" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot37> <http://www.w3.org/2000/01/rdf-schema#comment> "Plans Summer Supp August 2008" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot37> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-type> .
+<http://finance.data.gov.uk/def/coins/data-type/foo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataType> .
+<http://finance.data.gov.uk/def/coins/data-type/foo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-type/foo> <http://www.w3.org/2000/01/rdf-schema#label> "Forecast Outturn October"@en .
+<http://finance.data.gov.uk/def/coins/data-type/foo> <http://www.w3.org/2004/02/skos/core#prefLabel> "Forecast Outturn October"@en .
+<http://finance.data.gov.uk/def/coins/data-type/foo> <http://www.w3.org/2004/02/skos/core#notation> "foo" .
+<http://finance.data.gov.uk/def/coins/data-type/foo> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-type/foo> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-type> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot31> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataType> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot31> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot31> <http://www.w3.org/2000/01/rdf-schema#label> "Snapshot31"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot31> <http://www.w3.org/2004/02/skos/core#prefLabel> "Snapshot31"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot31> <http://www.w3.org/2004/02/skos/core#notation> "snapshot31" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot31> <http://www.w3.org/2000/01/rdf-schema#comment> "OUTTURN FEB08" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot31> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-type> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot44> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataType> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot44> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot44> <http://www.w3.org/2000/01/rdf-schema#label> "Snapshot44"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot44> <http://www.w3.org/2004/02/skos/core#prefLabel> "Snapshot44"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot44> <http://www.w3.org/2004/02/skos/core#notation> "snapshot44" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot44> <http://www.w3.org/2000/01/rdf-schema#comment> "Outturn Winter Supp November 2008" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot44> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-type> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataType> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot7> <http://www.w3.org/2000/01/rdf-schema#label> "Snapshot7"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot7> <http://www.w3.org/2004/02/skos/core#prefLabel> "Snapshot7"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot7> <http://www.w3.org/2004/02/skos/core#notation> "snapshot7" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot7> <http://www.w3.org/2000/01/rdf-schema#comment> "PBR 2007 Outturn" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot7> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-type> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot29> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataType> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot29> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot29> <http://www.w3.org/2000/01/rdf-schema#label> "Snapshot29"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot29> <http://www.w3.org/2004/02/skos/core#prefLabel> "Snapshot29"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot29> <http://www.w3.org/2004/02/skos/core#notation> "snapshot29" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot29> <http://www.w3.org/2000/01/rdf-schema#comment> "Plans Spring Supp Feb 08" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot29> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-type> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataType> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot1> <http://www.w3.org/2000/01/rdf-schema#label> "Snapshot1"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot1> <http://www.w3.org/2004/02/skos/core#prefLabel> "Snapshot1"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot1> <http://www.w3.org/2004/02/skos/core#notation> "snapshot1" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot1> <http://www.w3.org/2000/01/rdf-schema#comment> "PEOWP 2009 Outturn" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot1> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-type> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataType> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot10> <http://www.w3.org/2000/01/rdf-schema#label> "Snapshot10"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot10> <http://www.w3.org/2004/02/skos/core#prefLabel> "Snapshot10"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot10> <http://www.w3.org/2004/02/skos/core#notation> "snapshot10" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot10> <http://www.w3.org/2000/01/rdf-schema#comment> "Plans PBR 2006" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot10> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-type> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot23> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataType> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot23> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot23> <http://www.w3.org/2000/01/rdf-schema#label> "Snapshot23"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot23> <http://www.w3.org/2004/02/skos/core#prefLabel> "Snapshot23"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot23> <http://www.w3.org/2004/02/skos/core#notation> "snapshot23" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot23> <http://www.w3.org/2000/01/rdf-schema#comment> "Jan 09 Plans Supplementary Estimates" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot23> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-type> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot36> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataType> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot36> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot36> <http://www.w3.org/2000/01/rdf-schema#label> "Snapshot36"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot36> <http://www.w3.org/2004/02/skos/core#prefLabel> "Snapshot36"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot36> <http://www.w3.org/2004/02/skos/core#notation> "snapshot36" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot36> <http://www.w3.org/2000/01/rdf-schema#comment> "PEOWP 2008 Outturn" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot36> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-type> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot49> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataType> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot49> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot49> <http://www.w3.org/2000/01/rdf-schema#label> "Snapshot49"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot49> <http://www.w3.org/2004/02/skos/core#prefLabel> "Snapshot49"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot49> <http://www.w3.org/2004/02/skos/core#notation> "snapshot49" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot49> <http://www.w3.org/2000/01/rdf-schema#comment> "Plans Budget January 2009" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot49> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-type> .
+<http://finance.data.gov.uk/def/coins/data-type/fon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataType> .
+<http://finance.data.gov.uk/def/coins/data-type/fon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-type/fon> <http://www.w3.org/2000/01/rdf-schema#label> "Forecast Outturn November"@en .
+<http://finance.data.gov.uk/def/coins/data-type/fon> <http://www.w3.org/2004/02/skos/core#prefLabel> "Forecast Outturn November"@en .
+<http://finance.data.gov.uk/def/coins/data-type/fon> <http://www.w3.org/2004/02/skos/core#notation> "fon" .
+<http://finance.data.gov.uk/def/coins/data-type/fon> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-type/fon> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-type> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot30> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataType> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot30> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot30> <http://www.w3.org/2000/01/rdf-schema#label> "Snapshot30"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot30> <http://www.w3.org/2004/02/skos/core#prefLabel> "Snapshot30"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot30> <http://www.w3.org/2004/02/skos/core#notation> "snapshot30" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot30> <http://www.w3.org/2000/01/rdf-schema#comment> "PLANS FEB08" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot30> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-type> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot43> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataType> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot43> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot43> <http://www.w3.org/2000/01/rdf-schema#label> "Snapshot43"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot43> <http://www.w3.org/2004/02/skos/core#prefLabel> "Snapshot43"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot43> <http://www.w3.org/2004/02/skos/core#notation> "snapshot43" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot43> <http://www.w3.org/2000/01/rdf-schema#comment> "Plans PBR OCT 2008" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot43> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-type> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot28> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataType> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot28> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot28> <http://www.w3.org/2000/01/rdf-schema#label> "Snapshot28"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot28> <http://www.w3.org/2004/02/skos/core#prefLabel> "Snapshot28"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot28> <http://www.w3.org/2004/02/skos/core#notation> "snapshot28" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot28> <http://www.w3.org/2000/01/rdf-schema#comment> "Outturn Jan 08" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot28> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-type> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataType> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot0> <http://www.w3.org/2000/01/rdf-schema#label> "Snapshot0"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot0> <http://www.w3.org/2004/02/skos/core#prefLabel> "Snapshot0"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot0> <http://www.w3.org/2004/02/skos/core#notation> "snapshot0" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot0> <http://www.w3.org/2000/01/rdf-schema#comment> "Forecast Outturn Fixed Plan (M-Pack)" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot0> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-type> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot50> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataType> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot50> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot50> <http://www.w3.org/2000/01/rdf-schema#label> "Snapshot50"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot50> <http://www.w3.org/2004/02/skos/core#prefLabel> "Snapshot50"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot50> <http://www.w3.org/2004/02/skos/core#notation> "snapshot50" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot50> <http://www.w3.org/2000/01/rdf-schema#comment> "Plans Budget 09 March" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot50> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-type> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot22> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataType> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot22> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot22> <http://www.w3.org/2000/01/rdf-schema#label> "Snapshot22"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot22> <http://www.w3.org/2004/02/skos/core#prefLabel> "Snapshot22"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot22> <http://www.w3.org/2004/02/skos/core#notation> "snapshot22" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot22> <http://www.w3.org/2000/01/rdf-schema#comment> "Plans Winter Supp October 2007" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot22> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-type> .
+<http://finance.data.gov.uk/def/coins/data-type/fos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataType> .
+<http://finance.data.gov.uk/def/coins/data-type/fos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-type/fos> <http://www.w3.org/2000/01/rdf-schema#label> "Forecast Outturn September"@en .
+<http://finance.data.gov.uk/def/coins/data-type/fos> <http://www.w3.org/2004/02/skos/core#prefLabel> "Forecast Outturn September"@en .
+<http://finance.data.gov.uk/def/coins/data-type/fos> <http://www.w3.org/2004/02/skos/core#notation> "fos" .
+<http://finance.data.gov.uk/def/coins/data-type/fos> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-type/fos> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-type> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot35> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataType> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot35> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot35> <http://www.w3.org/2000/01/rdf-schema#label> "Snapshot35"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot35> <http://www.w3.org/2004/02/skos/core#prefLabel> "Snapshot35"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot35> <http://www.w3.org/2004/02/skos/core#notation> "snapshot35" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot35> <http://www.w3.org/2000/01/rdf-schema#comment> "Plans ME Snapshot March 2008" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot35> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-type> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot48> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataType> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot48> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot48> <http://www.w3.org/2000/01/rdf-schema#label> "Snapshot48"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot48> <http://www.w3.org/2004/02/skos/core#prefLabel> "Snapshot48"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot48> <http://www.w3.org/2004/02/skos/core#notation> "snapshot48" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot48> <http://www.w3.org/2000/01/rdf-schema#comment> "Outturn Budget January 2009" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot48> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-type> .
+<http://finance.data.gov.uk/def/coins/data-type/outturn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataType> .
+<http://finance.data.gov.uk/def/coins/data-type/outturn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-type/outturn> <http://www.w3.org/2000/01/rdf-schema#label> "Outturn"@en .
+<http://finance.data.gov.uk/def/coins/data-type/outturn> <http://www.w3.org/2004/02/skos/core#prefLabel> "Outturn"@en .
+<http://finance.data.gov.uk/def/coins/data-type/outturn> <http://www.w3.org/2004/02/skos/core#notation> "outturn" .
+<http://finance.data.gov.uk/def/coins/data-type/outturn> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-type/outturn> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-type> .
+<http://finance.data.gov.uk/def/coins/data-type/fom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataType> .
+<http://finance.data.gov.uk/def/coins/data-type/fom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-type/fom> <http://www.w3.org/2000/01/rdf-schema#label> "Forecast Outturn March"@en .
+<http://finance.data.gov.uk/def/coins/data-type/fom> <http://www.w3.org/2004/02/skos/core#prefLabel> "Forecast Outturn March"@en .
+<http://finance.data.gov.uk/def/coins/data-type/fom> <http://www.w3.org/2004/02/skos/core#notation> "fom" .
+<http://finance.data.gov.uk/def/coins/data-type/fom> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-type/fom> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-type> .
+<http://finance.data.gov.uk/def/coins/data-type/foq2i> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataType> .
+<http://finance.data.gov.uk/def/coins/data-type/foq2i> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-type/foq2i> <http://www.w3.org/2000/01/rdf-schema#label> "Forecast Outturn Q2 Input"@en .
+<http://finance.data.gov.uk/def/coins/data-type/foq2i> <http://www.w3.org/2004/02/skos/core#prefLabel> "Forecast Outturn Q2 Input"@en .
+<http://finance.data.gov.uk/def/coins/data-type/foq2i> <http://www.w3.org/2004/02/skos/core#notation> "foq2i" .
+<http://finance.data.gov.uk/def/coins/data-type/foq2i> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-type/foq2i> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-type> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot42> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataType> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot42> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot42> <http://www.w3.org/2000/01/rdf-schema#label> "Snapshot42"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot42> <http://www.w3.org/2004/02/skos/core#prefLabel> "Snapshot42"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot42> <http://www.w3.org/2004/02/skos/core#notation> "snapshot42" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot42> <http://www.w3.org/2000/01/rdf-schema#comment> "Outturn PBR OCT 2008" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot42> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-type> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataType> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot5> <http://www.w3.org/2000/01/rdf-schema#label> "Snapshot5"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot5> <http://www.w3.org/2004/02/skos/core#prefLabel> "Snapshot5"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot5> <http://www.w3.org/2004/02/skos/core#notation> "snapshot5" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot5> <http://www.w3.org/2000/01/rdf-schema#comment> "Outturn Budget 09 March" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot5> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-type> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot14> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataType> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot14> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot14> <http://www.w3.org/2000/01/rdf-schema#label> "Snapshot14"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot14> <http://www.w3.org/2004/02/skos/core#prefLabel> "Snapshot14"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot14> <http://www.w3.org/2004/02/skos/core#notation> "snapshot14" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot14> <http://www.w3.org/2000/01/rdf-schema#comment> "PEOWP 2007 Plans" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot14> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-type> .
+<http://finance.data.gov.uk/def/coins/data-type/plans> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataType> .
+<http://finance.data.gov.uk/def/coins/data-type/plans> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-type/plans> <http://www.w3.org/2000/01/rdf-schema#label> "Plans"@en .
+<http://finance.data.gov.uk/def/coins/data-type/plans> <http://www.w3.org/2004/02/skos/core#prefLabel> "Plans"@en .
+<http://finance.data.gov.uk/def/coins/data-type/plans> <http://www.w3.org/2004/02/skos/core#notation> "plans" .
+<http://finance.data.gov.uk/def/coins/data-type/plans> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-type/plans> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-type> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot27> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataType> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot27> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot27> <http://www.w3.org/2000/01/rdf-schema#label> "Snapshot27"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot27> <http://www.w3.org/2004/02/skos/core#prefLabel> "Snapshot27"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot27> <http://www.w3.org/2004/02/skos/core#notation> "snapshot27" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot27> <http://www.w3.org/2000/01/rdf-schema#comment> "Plans Jan 08" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot27> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-type> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot21> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataType> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot21> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot21> <http://www.w3.org/2000/01/rdf-schema#label> "Snapshot21"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot21> <http://www.w3.org/2004/02/skos/core#prefLabel> "Snapshot21"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot21> <http://www.w3.org/2004/02/skos/core#notation> "snapshot21" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot21> <http://www.w3.org/2000/01/rdf-schema#comment> "Outturn Winter Supp October 2007" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot21> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-type> .
+<http://finance.data.gov.uk/def/coins/data-type/foa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataType> .
+<http://finance.data.gov.uk/def/coins/data-type/foa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-type/foa> <http://www.w3.org/2000/01/rdf-schema#label> "Forecast Outturn April"@en .
+<http://finance.data.gov.uk/def/coins/data-type/foa> <http://www.w3.org/2004/02/skos/core#prefLabel> "Forecast Outturn April"@en .
+<http://finance.data.gov.uk/def/coins/data-type/foa> <http://www.w3.org/2004/02/skos/core#notation> "foa" .
+<http://finance.data.gov.uk/def/coins/data-type/foa> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-type/foa> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-type> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot34> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataType> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot34> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot34> <http://www.w3.org/2000/01/rdf-schema#label> "Snapshot34"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot34> <http://www.w3.org/2004/02/skos/core#prefLabel> "Snapshot34"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot34> <http://www.w3.org/2004/02/skos/core#notation> "snapshot34" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot34> <http://www.w3.org/2000/01/rdf-schema#comment> "Outturn ME Snapshot March 2008" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot34> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-type> .
+<http://finance.data.gov.uk/def/coins/data-type/fom0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataType> .
+<http://finance.data.gov.uk/def/coins/data-type/fom0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-type/fom0> <http://www.w3.org/2000/01/rdf-schema#label> "Forecast Outturn May"@en .
+<http://finance.data.gov.uk/def/coins/data-type/fom0> <http://www.w3.org/2004/02/skos/core#prefLabel> "Forecast Outturn May"@en .
+<http://finance.data.gov.uk/def/coins/data-type/fom0> <http://www.w3.org/2004/02/skos/core#notation> "fom0" .
+<http://finance.data.gov.uk/def/coins/data-type/fom0> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-type/fom0> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-type> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot47> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataType> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot47> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot47> <http://www.w3.org/2000/01/rdf-schema#label> "Snapshot47"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot47> <http://www.w3.org/2004/02/skos/core#prefLabel> "Snapshot47"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot47> <http://www.w3.org/2004/02/skos/core#notation> "snapshot47" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot47> <http://www.w3.org/2000/01/rdf-schema#comment> "CRA Outturn December 2008" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot47> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-type> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot19> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataType> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot19> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot19> <http://www.w3.org/2000/01/rdf-schema#label> "Snapshot19"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot19> <http://www.w3.org/2004/02/skos/core#prefLabel> "Snapshot19"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot19> <http://www.w3.org/2004/02/skos/core#notation> "snapshot19" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot19> <http://www.w3.org/2000/01/rdf-schema#comment> "Outturn ME Snapshot April 2007" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot19> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-type> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot41> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataType> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot41> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot41> <http://www.w3.org/2000/01/rdf-schema#label> "Snapshot41"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot41> <http://www.w3.org/2004/02/skos/core#prefLabel> "Snapshot41"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot41> <http://www.w3.org/2004/02/skos/core#notation> "snapshot41" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot41> <http://www.w3.org/2000/01/rdf-schema#comment> "Plans Out of Turn Supplementary Estimate" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot41> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-type> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataType> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot4> <http://www.w3.org/2000/01/rdf-schema#label> "Snapshot4"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot4> <http://www.w3.org/2004/02/skos/core#prefLabel> "Snapshot4"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot4> <http://www.w3.org/2004/02/skos/core#notation> "snapshot4" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot4> <http://www.w3.org/2000/01/rdf-schema#comment> "Plans ME and PESA May 2009" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot4> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-type> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot13> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataType> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot13> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot13> <http://www.w3.org/2000/01/rdf-schema#label> "Snapshot13"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot13> <http://www.w3.org/2004/02/skos/core#prefLabel> "Snapshot13"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot13> <http://www.w3.org/2004/02/skos/core#notation> "snapshot13" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot13> <http://www.w3.org/2000/01/rdf-schema#comment> "PEOWP 2007 Outturn" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot13> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-type> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot26> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataType> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot26> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot26> <http://www.w3.org/2000/01/rdf-schema#label> "Snapshot26"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot26> <http://www.w3.org/2004/02/skos/core#prefLabel> "Snapshot26"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot26> <http://www.w3.org/2004/02/skos/core#notation> "snapshot26" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot26> <http://www.w3.org/2000/01/rdf-schema#comment> "PBR 2009 Nov 2 Outturn" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot26> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-type> .
+<http://finance.data.gov.uk/def/coins/data-type/fof> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataType> .
+<http://finance.data.gov.uk/def/coins/data-type/fof> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-type/fof> <http://www.w3.org/2000/01/rdf-schema#label> "Forecast Outturn February"@en .
+<http://finance.data.gov.uk/def/coins/data-type/fof> <http://www.w3.org/2004/02/skos/core#prefLabel> "Forecast Outturn February"@en .
+<http://finance.data.gov.uk/def/coins/data-type/fof> <http://www.w3.org/2004/02/skos/core#notation> "fof" .
+<http://finance.data.gov.uk/def/coins/data-type/fof> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-type/fof> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-type> .
+<http://finance.data.gov.uk/def/coins/data-type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://finance.data.gov.uk/def/coins/data-type> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-type/snapshot27> .
+<http://finance.data.gov.uk/def/coins/data-type> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-type/snapshot12> .
+<http://finance.data.gov.uk/def/coins/data-type> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-type/snapshot26> .
+<http://finance.data.gov.uk/def/coins/data-type> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-type/snapshot31> .
+<http://finance.data.gov.uk/def/coins/data-type> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-type/snapshot7> .
+<http://finance.data.gov.uk/def/coins/data-type> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-type/foq3i> .
+<http://finance.data.gov.uk/def/coins/data-type> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-type/foj> .
+<http://finance.data.gov.uk/def/coins/data-type> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-type/snapshot17> .
+<http://finance.data.gov.uk/def/coins/data-type> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-type/foq2i> .
+<http://finance.data.gov.uk/def/coins/data-type> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-type/snapshot50> .
+<http://finance.data.gov.uk/def/coins/data-type> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-type/snapshot47> .
+<http://finance.data.gov.uk/def/coins/data-type> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-type/snapshot32> .
+<http://finance.data.gov.uk/def/coins/data-type> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-type/snapshot46> .
+<http://finance.data.gov.uk/def/coins/data-type> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-type/foj0> .
+<http://finance.data.gov.uk/def/coins/data-type> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-type/foo> .
+<http://finance.data.gov.uk/def/coins/data-type> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-type/snapshot18> .
+<http://finance.data.gov.uk/def/coins/data-type> <http://www.w3.org/2000/01/rdf-schema#label> "data type code list concept scheme"@en .
+<http://finance.data.gov.uk/def/coins/data-type> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-type/foq1i> .
+<http://finance.data.gov.uk/def/coins/data-type> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-type/snapshot23> .
+<http://finance.data.gov.uk/def/coins/data-type> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-type/snapshot37> .
+<http://finance.data.gov.uk/def/coins/data-type> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-type/snapshot22> .
+<http://finance.data.gov.uk/def/coins/data-type> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-type/fom0> .
+<http://finance.data.gov.uk/def/coins/data-type> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-type/snapshot3> .
+<http://finance.data.gov.uk/def/coins/data-type> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-type/fof> .
+<http://finance.data.gov.uk/def/coins/data-type> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-type/snapshot38> .
+<http://finance.data.gov.uk/def/coins/data-type> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-type/snapshot13> .
+<http://finance.data.gov.uk/def/coins/data-type> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-type/snapshot43> .
+<http://finance.data.gov.uk/def/coins/data-type> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-type/snapshot42> .
+<http://finance.data.gov.uk/def/coins/data-type> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-type/snapshot8> .
+<http://finance.data.gov.uk/def/coins/data-type> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-type/snapshot14> .
+<http://finance.data.gov.uk/def/coins/data-type> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-type/snapshot29> .
+<http://finance.data.gov.uk/def/coins/data-type> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-type/snapshot28> .
+<http://finance.data.gov.uk/def/coins/data-type> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-type/foa> .
+<http://finance.data.gov.uk/def/coins/data-type> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-type/snapshot33> .
+<http://finance.data.gov.uk/def/coins/data-type> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-type/snapshot9> .
+<http://finance.data.gov.uk/def/coins/data-type> <http://www.w3.org/2004/02/skos/core#prefLabel> "data type code list concept scheme"@en .
+<http://finance.data.gov.uk/def/coins/data-type> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-type/snapshot19> .
+<http://finance.data.gov.uk/def/coins/data-type> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-type/snapshot49> .
+<http://finance.data.gov.uk/def/coins/data-type> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-type/snapshot34> .
+<http://finance.data.gov.uk/def/coins/data-type> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-type/snapshot48> .
+<http://finance.data.gov.uk/def/coins/data-type> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-type/foj1> .
+<http://finance.data.gov.uk/def/coins/data-type> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-type/snapshot4> .
+<http://finance.data.gov.uk/def/coins/data-type> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-type/snapshot10> .
+<http://finance.data.gov.uk/def/coins/data-type> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-type/snapshot25> .
+<http://finance.data.gov.uk/def/coins/data-type> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-type/snapshot39> .
+<http://finance.data.gov.uk/def/coins/data-type> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-type/snapshot24> .
+<http://finance.data.gov.uk/def/coins/data-type> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-type/snapshot5> .
+<http://finance.data.gov.uk/def/coins/data-type> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-type/outturn> .
+<http://finance.data.gov.uk/def/coins/data-type> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-type/snapshot45> .
+<http://finance.data.gov.uk/def/coins/data-type> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-type/snapshot30> .
+<http://finance.data.gov.uk/def/coins/data-type> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-type/snapshot44> .
+<http://finance.data.gov.uk/def/coins/data-type> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-type/fon> .
+<http://finance.data.gov.uk/def/coins/data-type> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-type/fom> .
+<http://finance.data.gov.uk/def/coins/data-type> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-type/snapshot0> .
+<http://finance.data.gov.uk/def/coins/data-type> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-type/foa0> .
+<http://finance.data.gov.uk/def/coins/data-type> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-type/plans> .
+<http://finance.data.gov.uk/def/coins/data-type> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-type/snapshot21> .
+<http://finance.data.gov.uk/def/coins/data-type> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-type/snapshot35> .
+<http://finance.data.gov.uk/def/coins/data-type> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-type/snapshot20> .
+<http://finance.data.gov.uk/def/coins/data-type> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-type/snapshot1> .
+<http://finance.data.gov.uk/def/coins/data-type> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-type/fod> .
+<http://finance.data.gov.uk/def/coins/data-type> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-type/snapshot11> .
+<http://finance.data.gov.uk/def/coins/data-type> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-type/snapshot36> .
+<http://finance.data.gov.uk/def/coins/data-type> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-type/snapshot41> .
+<http://finance.data.gov.uk/def/coins/data-type> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-type/snapshot40> .
+<http://finance.data.gov.uk/def/coins/data-type> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-type/fos> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot39> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataType> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot39> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot39> <http://www.w3.org/2000/01/rdf-schema#label> "Snapshot39"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot39> <http://www.w3.org/2004/02/skos/core#prefLabel> "Snapshot39"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot39> <http://www.w3.org/2004/02/skos/core#notation> "snapshot39" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot39> <http://www.w3.org/2000/01/rdf-schema#comment> "2008 PBR Outturn" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot39> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-type> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot20> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataType> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot20> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot20> <http://www.w3.org/2000/01/rdf-schema#label> "Snapshot20"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot20> <http://www.w3.org/2004/02/skos/core#prefLabel> "Snapshot20"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot20> <http://www.w3.org/2004/02/skos/core#notation> "snapshot20" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot20> <http://www.w3.org/2000/01/rdf-schema#comment> "Plans ME Snapshot April 2007" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot20> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-type> .
+<http://finance.data.gov.uk/def/coins/DataType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://finance.data.gov.uk/def/coins/DataType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://finance.data.gov.uk/def/coins/DataType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/DataType> <http://www.w3.org/2000/01/rdf-schema#label> "data type values class"@en .
+<http://finance.data.gov.uk/def/coins/DataType> <http://www.w3.org/2004/02/skos/core#prefLabel> "data type values class"@en .
+<http://finance.data.gov.uk/def/coins/DataType> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of values in the data type code-list scheme" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot33> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataType> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot33> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot33> <http://www.w3.org/2000/01/rdf-schema#label> "Snapshot33"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot33> <http://www.w3.org/2004/02/skos/core#prefLabel> "Snapshot33"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot33> <http://www.w3.org/2004/02/skos/core#notation> "snapshot33" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot33> <http://www.w3.org/2000/01/rdf-schema#comment> "PLANS 2 MAR08" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot33> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-type> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot46> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataType> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot46> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot46> <http://www.w3.org/2000/01/rdf-schema#label> "Snapshot46"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot46> <http://www.w3.org/2004/02/skos/core#prefLabel> "Snapshot46"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot46> <http://www.w3.org/2004/02/skos/core#notation> "snapshot46" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot46> <http://www.w3.org/2000/01/rdf-schema#comment> "CRA Plans December 2008" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot46> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-type> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataType> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot9> <http://www.w3.org/2000/01/rdf-schema#label> "Snapshot9"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot9> <http://www.w3.org/2004/02/skos/core#prefLabel> "Snapshot9"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot9> <http://www.w3.org/2004/02/skos/core#notation> "snapshot9" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot9> <http://www.w3.org/2000/01/rdf-schema#comment> "Outturn PBR 2006" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot9> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-type> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot18> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataType> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot18> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot18> <http://www.w3.org/2000/01/rdf-schema#label> "Snapshot18"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot18> <http://www.w3.org/2004/02/skos/core#prefLabel> "Snapshot18"@en .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot18> <http://www.w3.org/2004/02/skos/core#notation> "snapshot18" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot18> <http://www.w3.org/2000/01/rdf-schema#comment> "CYP BUD" .
+<http://finance.data.gov.uk/def/coins/data-type/snapshot18> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-type> .
+<http://finance.data.gov.uk/def/coins/data-type/foj1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataType> .
+<http://finance.data.gov.uk/def/coins/data-type/foj1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-type/foj1> <http://www.w3.org/2000/01/rdf-schema#label> "Forecast Outturn June"@en .
+<http://finance.data.gov.uk/def/coins/data-type/foj1> <http://www.w3.org/2004/02/skos/core#prefLabel> "Forecast Outturn June"@en .
+<http://finance.data.gov.uk/def/coins/data-type/foj1> <http://www.w3.org/2004/02/skos/core#notation> "foj1" .
+<http://finance.data.gov.uk/def/coins/data-type/foj1> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-type/foj1> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-type> .

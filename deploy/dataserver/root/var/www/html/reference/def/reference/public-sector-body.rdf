@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:admingeo="http://data.ordnancesurvey.co.uk/ontology/admingeo/"
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:event="http://purl.org/NET/c4dm/event.owl#"
+   xmlns:foaf="http://xmlns.com/foaf/0.1/"
+   xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+   xmlns:gov="http://reference.data.gov.uk/def/central-government/"
+   xmlns:interval="http://reference.data.gov.uk/def/intervals/"
+   xmlns:org="http://www.w3.org/ns/org#"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:payment="http://reference.data.gov.uk/def/payment#"
+   xmlns:postcode="http://data.ordnancesurvey.co.uk/ontology/postcode/postcode"
+   xmlns:psb="http://reference.data.gov.uk/def/public-sector-body#"
+   xmlns:qb="http://purl.org/linked-data/cube#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+   xmlns:spatialrelations="http://data.ordnancesurvey.co.uk/ontology/spatialrelations/"
+   xmlns:statsGeo="http://statistics.data.gov.uk/def/administrative-geography/"
+   xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+   xmlns:void="http://rdfs.org/ns/void#"
+   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+   xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <owl:Ontology rdf:about="http://reference.data.gov.uk/def/public-sector-body#">
+    <dcterms:contributor>
+      <rdf:Description>
+        <foaf:mbox>dave@epimorphics.com</foaf:mbox>
+        <foaf:name>Dave Reynolds</foaf:name>
+      </rdf:Description>
+    </dcterms:contributor>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-09-07</dcterms:created>
+    <dcterms:license rdf:resource="http://www.opendatacommons.org/licenses/pddl/1.0/"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-10-27</dcterms:modified>
+    <rdfs:comment xml:lang="en">"Base vocabulary for public sector bodies such as Local Authorities, building upon generic org vocab. Designed to support:
+    &lt;ul&gt;&lt;li&gt;core metadata - type, name&lt;/li&gt;
+    &lt;li&gt;contact information&lt;/li&gt;
+    &lt;li&gt;senior executives&lt;/li&gt;
+    &lt;li&gt;organizational units with contact details and associated services&lt;/li&gt;</rdfs:comment>
+    <rdfs:label xml:lang="en">Public Sector Body base ontology</rdfs:label>
+    <owl:versionInfo>0.4</owl:versionInfo>
+  </owl:Ontology>
+  <rdfs:Class rdf:about="http://reference.data.gov.uk/def/public-sector-body#Body">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">Any form of public sector budy such as a local authority.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://reference.data.gov.uk/def/public-sector-body#"/>
+    <rdfs:label xml:lang="en">Public sector body</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:minCardinality>
+        <owl:onProperty rdf:resource="http://xmlns.com/foaf/0.1/mbox"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</owl:minCardinality>
+        <owl:onProperty rdf:resource="http://reference.data.gov.uk/def/public-sector-body#mainPhone"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</owl:minCardinality>
+        <owl:onProperty rdf:resource="http://reference.data.gov.uk/def/public-sector-body#phone"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</owl:minCardinality>
+        <owl:onProperty rdf:resource="http://xmlns.com/foaf/0.1/isPrimaryTopicOf"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</owl:minCardinality>
+        <owl:onProperty rdf:resource="http://reference.data.gov.uk/def/central-government/hasPost"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</owl:minCardinality>
+        <owl:onProperty rdf:resource="http://www.w3.org/ns/org#hasUnit"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:cardinality>
+        <owl:onProperty rdf:resource="http://reference.data.gov.uk/def/public-sector-body#officialName"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:cardinality>
+        <owl:onProperty rdf:resource="http://reference.data.gov.uk/def/public-sector-body#vernacularName"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:minCardinality>
+        <owl:onProperty rdf:resource="http://www.w3.org/ns/org#hasPrimarySite"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</owl:minCardinality>
+        <owl:onProperty rdf:resource="http://www.w3.org/ns/org#hasSite"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</owl:minCardinality>
+        <owl:onProperty rdf:resource="http://xmlns.com/foaf/0.1/holdsAccount"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</owl:minCardinality>
+        <owl:onProperty rdf:resource="http://xmlns.com/foaf/0.1/homepage"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</owl:minCardinality>
+        <owl:onProperty rdf:resource="http://reference.data.gov.uk/def/public-sector-body#contactForm"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</owl:minCardinality>
+        <owl:onProperty rdf:resource="http://reference.data.gov.uk/def/public-sector-body#contactInformation"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <vs:term_status>proposed</vs:term_status>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://reference.data.gov.uk/def/public-sector-body#LocalAuthority">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">Any form of public sector body with a regional coverage, including county councils, district councils and unitary authorities. 
+Relevant descriptive properties to consider include: &lt;ul&gt;
+&lt;li&gt;owl:sameAs links to statistics.gov.uk and others as desired (e.g. OpenlyLocal, dbpedia), 
+     to link to wikipedia use foaf:isPrimaryTopicOf&lt;/li&gt;
+&lt;li&gt;rdfs:label&lt;/li&gt;
+&lt;li&gt;psb:officialName, psb:vernacularName, skos:altLabel&lt;/li&gt;
+&lt;li&gt;psb:coverage link to the region served&lt;/li&gt;
+&lt;li&gt;skos:notation "xxxx"^^statsGeo:StandardCode giving the SNAC code&lt;/li&gt;
+&lt;li&gt;psb:localAuthorityType link to a categorization of the local authority, e.g. as provided by ESDToolit&lt;/li&gt;
+&lt;li&gt;org:hasPrimarySite with a VCard to give the location and contacts details for the main council site&lt;/li&gt;
+&lt;li&gt;org:hasSite for other sites&lt;/li&gt;
+&lt;li&gt;psb:mainPhone, psb:phone, psb:contactForm, psb:contactInformation&lt;/li&gt;
+&lt;li&gt;foaf:homepage, foaf:mbox, foaf:holdsAccount (if appropriate)&lt;/li&gt;
+&lt;li&gt;gov:hasPost for senior officers, especially chief execution&lt;/li&gt;
+&lt;li&gt;org:hasUnit links to organzation units (such as Departments or Directorates)
+&lt;/ul&gt;</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://reference.data.gov.uk/def/public-sector-body#"/>
+    <rdfs:label xml:lang="en">Local authority</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://reference.data.gov.uk/def/public-sector-body#Body"/>
+    <rdfs:subClassOf rdf:resource="http://statistics.data.gov.uk/def/administrative-geography/LocalAuthority"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:minCardinality>
+        <owl:onProperty rdf:resource="http://reference.data.gov.uk/def/public-sector-body#coverage"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:minCardinality>
+        <owl:onProperty rdf:resource="http://reference.data.gov.uk/def/public-sector-body#localAuthorityType"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</owl:minCardinality>
+        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#notation"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <vs:term_status>proposed</vs:term_status>
+  </rdfs:Class>
+  <rdf:Property rdf:about="http://reference.data.gov.uk/def/public-sector-body#localAuthorityType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">Gives a classification for the local authority in terms of a controlled list of types</rdfs:comment>
+    <rdfs:domain rdf:resource="http://reference.data.gov.uk/def/public-sector-body#LocalAuthority"/>
+    <rdfs:isDefinedBy rdf:resource="http://reference.data.gov.uk/def/public-sector-body#"/>
+    <rdfs:label xml:lang="en">local authority type</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/org#classification"/>
+    <vs:term_status>proposed</vs:term_status>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://reference.data.gov.uk/def/public-sector-body#officialName">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">The official name for a body or region, as defined in legislation</rdfs:comment>
+    <rdfs:label xml:lang="en">official name</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://reference.data.gov.uk/def/public-sector-body#vernacularName">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Commonly used name for a body or region, alternative non-preferred names can be given by skos:altLabel</rdfs:comment>
+    <rdfs:label xml:lang="en">official name</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://reference.data.gov.uk/def/public-sector-body#providesService">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">Indicates a service (described using SKOS) which is
+    provided by an organzation or a unit of an organization. </rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.w3.org/ns/org#Organization"/>
+    <rdfs:isDefinedBy rdf:resource="http://reference.data.gov.uk/def/public-sector-body#"/>
+    <rdfs:label xml:lang="en">provides services</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <vs:term_status>proposed</vs:term_status>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://reference.data.gov.uk/def/public-sector-body#coverage">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">The administrative area covered by this authority</rdfs:comment>
+    <rdfs:domain rdf:resource="http://reference.data.gov.uk/def/public-sector-body#LocalAuthority"/>
+    <rdfs:isDefinedBy rdf:resource="http://reference.data.gov.uk/def/public-sector-body#"/>
+    <rdfs:label xml:lang="en">coverage</rdfs:label>
+    <rdfs:range rdf:resource="http://data.ordnancesurvey.co.uk/ontology/admingeo/CivilAdministrativeArea"/>
+    <vs:term_status>proposed</vs:term_status>
+  </rdf:Property>
+  <rdfs:Class rdf:about="http://reference.data.gov.uk/def/public-sector-body#Contact">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">A means of contact including email, phone, mail addresses, physical site. Defined as a
+union of the vcard types (Address, Email, Tel) and org:Site. Provided so that contact annotations can
+e associated with any of these contact mechanisms.</rdfs:comment>
+    <rdfs:label xml:lang="en">contact details</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class>
+        <owl:unionOf>
+          <rdf:Description>
+            <rdf:first rdf:resource="http://www.w3.org/2006/vcard/ns#Address"/>
+            <rdf:rest>
+              <rdf:Description>
+                <rdf:first rdf:resource="http://www.w3.org/2006/vcard/ns#Email"/>
+                <rdf:rest>
+                  <rdf:Description>
+                    <rdf:first rdf:resource="http://www.w3.org/2006/vcard/ns#Tel"/>
+                    <rdf:rest>
+                      <rdf:Description>
+                        <rdf:first rdf:resource="http://www.w3.org/ns/org#Site"/>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                      </rdf:Description>
+                    </rdf:rest>
+                  </rdf:Description>
+                </rdf:rest>
+              </rdf:Description>
+            </rdf:rest>
+          </rdf:Description>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:subClassOf>
+  </rdfs:Class>
+  <rdf:Property rdf:about="http://reference.data.gov.uk/def/public-sector-body#mainPhone">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">The primary contact phone number, this should be a vcard:Tel using appropriate annotations to describe access information and purpose/coverage information</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://reference.data.gov.uk/def/public-sector-body#"/>
+    <rdfs:label xml:lang="en">main phone</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2006/vcard/ns#Tel"/>
+    <vs:term_status>proposed</vs:term_status>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://reference.data.gov.uk/def/public-sector-body#phone">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">A contact phone number, this should be a vcard:Tel using appropriate annotations to describe access information and purpose/coverage information</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://reference.data.gov.uk/def/public-sector-body#"/>
+    <rdfs:label xml:lang="en">phone</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2006/vcard/ns#Tel"/>
+    <vs:term_status>proposed</vs:term_status>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://reference.data.gov.uk/def/public-sector-body#accessInformation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">A textual description of access information for the contact point. 
+This might include opening hours or accessibility information.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://reference.data.gov.uk/def/public-sector-body#Contact"/>
+    <rdfs:isDefinedBy rdf:resource="http://reference.data.gov.uk/def/public-sector-body#"/>
+    <rdfs:label xml:lang="en">contact access information</rdfs:label>
+    <vs:term_status>proposed</vs:term_status>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://reference.data.gov.uk/def/public-sector-body#contactPurpose">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">A textual description of what the purpose of this access point is, 
+a description of the type of enquires handled.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://reference.data.gov.uk/def/public-sector-body#Contact"/>
+    <rdfs:isDefinedBy rdf:resource="http://reference.data.gov.uk/def/public-sector-body#"/>
+    <rdfs:label xml:lang="en">contact point purpose</rdfs:label>
+    <vs:term_status>proposed</vs:term_status>
+  </rdf:Property>
+  <rdfs:Class rdf:about="http://reference.data.gov.uk/def/public-sector-body#OutOfHours">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">A phone number for emergency or out-of-hours contact</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://reference.data.gov.uk/def/public-sector-body#"/>
+    <rdfs:label xml:lang="en">out-of-hours number</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/vcard/ns#tel"/>
+    <vs:term_status>proposed</vs:term_status>
+  </rdfs:Class>
+  <rdf:Property rdf:about="http://reference.data.gov.uk/def/public-sector-body#contactForm">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">gives a web contact form for the organization</rdfs:comment>
+    <rdfs:domain rdf:resource="http://reference.data.gov.uk/def/public-sector-body#Body"/>
+    <rdfs:isDefinedBy rdf:resource="http://reference.data.gov.uk/def/public-sector-body#"/>
+    <rdfs:label xml:lang="en">contact form</rdfs:label>
+    <vs:term_status>proposed</vs:term_status>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://reference.data.gov.uk/def/public-sector-body#contactInformation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">gives a web page listing contact details for the organization</rdfs:comment>
+    <rdfs:domain rdf:resource="http://reference.data.gov.uk/def/public-sector-body#Body"/>
+    <rdfs:isDefinedBy rdf:resource="http://reference.data.gov.uk/def/public-sector-body#"/>
+    <rdfs:label xml:lang="en">contact information</rdfs:label>
+    <vs:term_status>proposed</vs:term_status>
+  </rdf:Property>
+  <rdf:Description rdf:about="http://www.w3.org/ns/org#Site">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</owl:minCardinality>
+        <owl:onProperty rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#lat"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</owl:minCardinality>
+        <owl:onProperty rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#long"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</owl:minCardinality>
+        <owl:onProperty rdf:resource="http://data.ordnancesurvey.co.uk/ontology/spatialrelations/easting"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</owl:minCardinality>
+        <owl:onProperty rdf:resource="http://data.ordnancesurvey.co.uk/ontology/spatialrelations/northing"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</owl:minCardinality>
+        <owl:onProperty rdf:resource="http://reference.data.gov.uk/def/public-sector-body#accessInformation"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</owl:minCardinality>
+        <owl:onProperty rdf:resource="http://data.ordnancesurvey.co.uk/ontology/postcode/postcodepostcode"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </rdf:Description>
+  <rdfs:Class rdf:about="http://reference.data.gov.uk/def/public-sector-body#ChiefExecutive">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">Post of Chief Executive. The instances (different for each local authority) should
+link to the Authority using gov:postIn and to the individual currently holding the post using gov:heldBy/gov:holdsPost</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://reference.data.gov.uk/def/public-sector-body#"/>
+    <rdfs:label xml:lang="en">Chief Executive</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://reference.data.gov.uk/def/central-government/Post"/>
+    <vs:term_status>proposed</vs:term_status>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://reference.data.gov.uk/def/public-sector-body#Leader">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">Post of council leader. The instances (different for each local authority) should
+link to the Authority using gov:postIn and to the individual currently holding the post using gov:heldBy/gov:holdsPost</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://reference.data.gov.uk/def/public-sector-body#"/>
+    <rdfs:label xml:lang="en">Leader</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://reference.data.gov.uk/def/central-government/Post"/>
+    <vs:term_status>proposed</vs:term_status>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://reference.data.gov.uk/def/public-sector-body#DeputyLeader">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">Post of deputy council leader. The instances (different for each local authority) should
+link to the Authority using gov:postIn and to the individual currently holding the post using gov:heldBy/gov:holdsPost</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://reference.data.gov.uk/def/public-sector-body#"/>
+    <rdfs:label xml:lang="en">Deputy Leader</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://reference.data.gov.uk/def/central-government/Post"/>
+    <vs:term_status>proposed</vs:term_status>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://reference.data.gov.uk/def/public-sector-body#Chairman">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">Post of council chairman. The instances (different for each local authority) should
+link to the Authority using gov:postIn and to the individual currently holding the post using gov:heldBy/gov:holdsPost</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://reference.data.gov.uk/def/public-sector-body#"/>
+    <rdfs:label xml:lang="en">Chairman</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://reference.data.gov.uk/def/central-government/Post"/>
+    <vs:term_status>proposed</vs:term_status>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://reference.data.gov.uk/def/public-sector-body#Mayor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">Post of Mayor, covers Lord Mayors and elected Mayors. The instances (different for each local authority) 
+link to the Authority using gov:postIn and to the individual currently holding the post using gov:heldBy/gov:holdsPost.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://reference.data.gov.uk/def/public-sector-body#"/>
+    <rdfs:label xml:lang="en">Mayor</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://reference.data.gov.uk/def/central-government/Post"/>
+    <vs:term_status>proposed</vs:term_status>
+  </rdfs:Class>
+  <rdf:Property rdf:about="http://reference.data.gov.uk/def/public-sector-body#chiefExecutive">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">A short cut indicating the person who currently holds the post of Chief Executive of this local authority</rdfs:comment>
+    <rdfs:domain rdf:resource="http://reference.data.gov.uk/def/public-sector-body#LocalAuthority"/>
+    <rdfs:isDefinedBy rdf:resource="http://reference.data.gov.uk/def/public-sector-body#"/>
+    <rdfs:label xml:lang="en">chief executive</rdfs:label>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/org#hasMember"/>
+    <vs:term_status>proposed</vs:term_status>
+  </rdf:Property>
+</rdf:RDF>

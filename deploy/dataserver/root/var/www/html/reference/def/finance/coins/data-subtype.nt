@@ -1,0 +1,762 @@
+<http://finance.data.gov.uk/def/coins/data-subtype/omsa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/omsa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/omsa> <http://www.w3.org/2000/01/rdf-schema#label> "Outturn MOG Submitted Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/omsa> <http://www.w3.org/2004/02/skos/core#prefLabel> "Outturn MOG Submitted Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/omsa> <http://www.w3.org/2004/02/skos/core#notation> "omsa" .
+<http://finance.data.gov.uk/def/coins/data-subtype/omsa> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/omsa> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/omsa> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/draft> .
+<http://finance.data.gov.uk/def/coins/data-subtype/oidcaa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/oidcaa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/oidcaa> <http://www.w3.org/2000/01/rdf-schema#label> "Outturn Internal Dept Corrections Approved Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/oidcaa> <http://www.w3.org/2004/02/skos/core#prefLabel> "Outturn Internal Dept Corrections Approved Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/oidcaa> <http://www.w3.org/2004/02/skos/core#notation> "oidcaa" .
+<http://finance.data.gov.uk/def/coins/data-subtype/oidcaa> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/oidcaa> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/oidcaa> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/approved> .
+<http://finance.data.gov.uk/def/coins/data-subtype/so> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/so> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/so> <http://www.w3.org/2000/01/rdf-schema#label> "Submitted (Outturn)"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/so> <http://www.w3.org/2004/02/skos/core#prefLabel> "Submitted (Outturn)"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/so> <http://www.w3.org/2004/02/skos/core#notation> "so" .
+<http://finance.data.gov.uk/def/coins/data-subtype/so> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/so> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/so> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/approved> .
+<http://finance.data.gov.uk/def/coins/data-subtype/odiraa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/odiraa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/odiraa> <http://www.w3.org/2000/01/rdf-schema#label> "Outturn Dept Internal Restructuring Approved Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/odiraa> <http://www.w3.org/2004/02/skos/core#prefLabel> "Outturn Dept Internal Restructuring Approved Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/odiraa> <http://www.w3.org/2004/02/skos/core#notation> "odiraa" .
+<http://finance.data.gov.uk/def/coins/data-subtype/odiraa> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/odiraa> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/odiraa> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/approved> .
+<http://finance.data.gov.uk/def/coins/data-subtype/pefsbrsa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/pefsbrsa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/pefsbrsa> <http://www.w3.org/2000/01/rdf-schema#label> "Plans Excluded From Supps - Budget Regime Submitted Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/pefsbrsa> <http://www.w3.org/2004/02/skos/core#prefLabel> "Plans Excluded From Supps - Budget Regime Submitted Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/pefsbrsa> <http://www.w3.org/2004/02/skos/core#notation> "pefsbrsa" .
+<http://finance.data.gov.uk/def/coins/data-subtype/pefsbrsa> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/pefsbrsa> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/pefsbrsa> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/draft> .
+<http://finance.data.gov.uk/def/coins/data-subtype/rcsa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/rcsa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/rcsa> <http://www.w3.org/2000/01/rdf-schema#label> "Reserve Claims Submitted Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/rcsa> <http://www.w3.org/2004/02/skos/core#prefLabel> "Reserve Claims Submitted Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/rcsa> <http://www.w3.org/2004/02/skos/core#notation> "rcsa" .
+<http://finance.data.gov.uk/def/coins/data-subtype/rcsa> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/rcsa> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/rcsa> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/draft> .
+<http://finance.data.gov.uk/def/coins/data-subtype/pmaa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/pmaa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/pmaa> <http://www.w3.org/2000/01/rdf-schema#label> "Plans MOG Approved Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/pmaa> <http://www.w3.org/2004/02/skos/core#prefLabel> "Plans MOG Approved Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/pmaa> <http://www.w3.org/2004/02/skos/core#notation> "pmaa" .
+<http://finance.data.gov.uk/def/coins/data-subtype/pmaa> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/pmaa> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/pmaa> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/approved> .
+<http://finance.data.gov.uk/def/coins/data-subtype/pdcaa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/pdcaa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/pdcaa> <http://www.w3.org/2000/01/rdf-schema#label> "Plans Dept Corrections Approved Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/pdcaa> <http://www.w3.org/2004/02/skos/core#prefLabel> "Plans Dept Corrections Approved Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/pdcaa> <http://www.w3.org/2004/02/skos/core#notation> "pdcaa" .
+<http://finance.data.gov.uk/def/coins/data-subtype/pdcaa> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/pdcaa> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/pdcaa> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/approved> .
+<http://finance.data.gov.uk/def/coins/data-subtype/oh> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/oh> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/oh> <http://www.w3.org/2000/01/rdf-schema#label> "Outturn Historical"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/oh> <http://www.w3.org/2004/02/skos/core#prefLabel> "Outturn Historical"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/oh> <http://www.w3.org/2004/02/skos/core#notation> "oh" .
+<http://finance.data.gov.uk/def/coins/data-subtype/oh> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/oh> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/oh> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/draft> .
+<http://finance.data.gov.uk/def/coins/data-subtype/oeda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/oeda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/oeda> <http://www.w3.org/2000/01/rdf-schema#label> "Outturn Editorial Draft Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/oeda> <http://www.w3.org/2004/02/skos/core#prefLabel> "Outturn Editorial Draft Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/oeda> <http://www.w3.org/2004/02/skos/core#notation> "oeda" .
+<http://finance.data.gov.uk/def/coins/data-subtype/oeda> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/oeda> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/oeda> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/draft> .
+<http://finance.data.gov.uk/def/coins/data-subtype/eaa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/eaa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/eaa> <http://www.w3.org/2000/01/rdf-schema#label> "EYF Approved Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/eaa> <http://www.w3.org/2004/02/skos/core#prefLabel> "EYF Approved Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/eaa> <http://www.w3.org/2004/02/skos/core#notation> "eaa" .
+<http://finance.data.gov.uk/def/coins/data-subtype/eaa> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/eaa> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/eaa> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/approved> .
+<http://finance.data.gov.uk/def/coins/data-subtype/odda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/odda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/odda> <http://www.w3.org/2000/01/rdf-schema#label> "Outturn Departmental Draft Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/odda> <http://www.w3.org/2004/02/skos/core#prefLabel> "Outturn Departmental Draft Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/odda> <http://www.w3.org/2004/02/skos/core#notation> "odda" .
+<http://finance.data.gov.uk/def/coins/data-subtype/odda> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/odda> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/odda> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/draft> .
+<http://finance.data.gov.uk/def/coins/data-subtype/cfda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/cfda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/cfda> <http://www.w3.org/2000/01/rdf-schema#label> "Challenge Funds Draft Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/cfda> <http://www.w3.org/2004/02/skos/core#prefLabel> "Challenge Funds Draft Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/cfda> <http://www.w3.org/2004/02/skos/core#notation> "cfda" .
+<http://finance.data.gov.uk/def/coins/data-subtype/cfda> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/cfda> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/cfda> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/draft> .
+<http://finance.data.gov.uk/def/coins/data-subtype/ssda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/ssda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/ssda> <http://www.w3.org/2000/01/rdf-schema#label> "Sector Switch Draft Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/ssda> <http://www.w3.org/2004/02/skos/core#prefLabel> "Sector Switch Draft Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/ssda> <http://www.w3.org/2004/02/skos/core#notation> "ssda" .
+<http://finance.data.gov.uk/def/coins/data-subtype/ssda> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/ssda> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/ssda> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/draft> .
+<http://finance.data.gov.uk/def/coins/data-subtype/omaa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/omaa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/omaa> <http://www.w3.org/2000/01/rdf-schema#label> "Outturn MOG Approved Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/omaa> <http://www.w3.org/2004/02/skos/core#prefLabel> "Outturn MOG Approved Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/omaa> <http://www.w3.org/2004/02/skos/core#notation> "omaa" .
+<http://finance.data.gov.uk/def/coins/data-subtype/omaa> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/omaa> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/omaa> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/approved> .
+<http://finance.data.gov.uk/def/coins/data-subtype/rcaa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/rcaa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/rcaa> <http://www.w3.org/2000/01/rdf-schema#label> "Reserve Claims Approved Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/rcaa> <http://www.w3.org/2004/02/skos/core#prefLabel> "Reserve Claims Approved Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/rcaa> <http://www.w3.org/2004/02/skos/core#notation> "rcaa" .
+<http://finance.data.gov.uk/def/coins/data-subtype/rcaa> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/rcaa> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/rcaa> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/approved> .
+<http://finance.data.gov.uk/def/coins/data-subtype/pefsbraa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/pefsbraa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/pefsbraa> <http://www.w3.org/2000/01/rdf-schema#label> "Plans Excluded From Supps - Budget Regime Approved Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/pefsbraa> <http://www.w3.org/2004/02/skos/core#prefLabel> "Plans Excluded From Supps - Budget Regime Approved Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/pefsbraa> <http://www.w3.org/2004/02/skos/core#notation> "pefsbraa" .
+<http://finance.data.gov.uk/def/coins/data-subtype/pefsbraa> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/pefsbraa> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/pefsbraa> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/approved> .
+<http://finance.data.gov.uk/def/coins/data-subtype/fod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/fod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/fod> <http://www.w3.org/2000/01/rdf-schema#label> "Forecast Outturn (Draft)"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/fod> <http://www.w3.org/2004/02/skos/core#prefLabel> "Forecast Outturn (Draft)"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/fod> <http://www.w3.org/2004/02/skos/core#notation> "fod" .
+<http://finance.data.gov.uk/def/coins/data-subtype/fod> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/fod> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/fod> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/draft> .
+<http://finance.data.gov.uk/def/coins/data-subtype/pseda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/pseda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/pseda> <http://www.w3.org/2000/01/rdf-schema#label> "Plans Supplementary Estimates Draft Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/pseda> <http://www.w3.org/2004/02/skos/core#prefLabel> "Plans Supplementary Estimates Draft Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/pseda> <http://www.w3.org/2004/02/skos/core#notation> "pseda" .
+<http://finance.data.gov.uk/def/coins/data-subtype/pseda> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/pseda> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/pseda> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/draft> .
+<http://finance.data.gov.uk/def/coins/data-subtype/onbrda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/onbrda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/onbrda> <http://www.w3.org/2000/01/rdf-schema#label> "Outturn New Budget Regime Draft Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/onbrda> <http://www.w3.org/2004/02/skos/core#prefLabel> "Outturn New Budget Regime Draft Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/onbrda> <http://www.w3.org/2004/02/skos/core#notation> "onbrda" .
+<http://finance.data.gov.uk/def/coins/data-subtype/onbrda> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/onbrda> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/onbrda> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/draft> .
+<http://finance.data.gov.uk/def/coins/data-subtype/spda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/spda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/spda> <http://www.w3.org/2000/01/rdf-schema#label> "Spending Policy Draft Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/spda> <http://www.w3.org/2004/02/skos/core#prefLabel> "Spending Policy Draft Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/spda> <http://www.w3.org/2004/02/skos/core#notation> "spda" .
+<http://finance.data.gov.uk/def/coins/data-subtype/spda> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/spda> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/spda> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/draft> .
+<http://finance.data.gov.uk/def/coins/data-subtype/odsa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/odsa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/odsa> <http://www.w3.org/2000/01/rdf-schema#label> "Outturn Departmental Submitted Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/odsa> <http://www.w3.org/2004/02/skos/core#prefLabel> "Outturn Departmental Submitted Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/odsa> <http://www.w3.org/2004/02/skos/core#notation> "odsa" .
+<http://finance.data.gov.uk/def/coins/data-subtype/odsa> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/odsa> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/odsa> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/draft> .
+<http://finance.data.gov.uk/def/coins/data-subtype/cfsa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/cfsa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/cfsa> <http://www.w3.org/2000/01/rdf-schema#label> "Challenge Funds Submitted Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/cfsa> <http://www.w3.org/2004/02/skos/core#prefLabel> "Challenge Funds Submitted Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/cfsa> <http://www.w3.org/2004/02/skos/core#notation> "cfsa" .
+<http://finance.data.gov.uk/def/coins/data-subtype/cfsa> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/cfsa> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/cfsa> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/draft> .
+<http://finance.data.gov.uk/def/coins/data-subtype/bcda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/bcda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/bcda> <http://www.w3.org/2000/01/rdf-schema#label> "Budget Cover Draft Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/bcda> <http://www.w3.org/2004/02/skos/core#prefLabel> "Budget Cover Draft Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/bcda> <http://www.w3.org/2004/02/skos/core#notation> "bcda" .
+<http://finance.data.gov.uk/def/coins/data-subtype/bcda> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/bcda> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/bcda> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/draft> .
+<http://finance.data.gov.uk/def/coins/data-subtype/afda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/afda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/afda> <http://www.w3.org/2000/01/rdf-schema#label> "AME Forecast Draft Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/afda> <http://www.w3.org/2004/02/skos/core#prefLabel> "AME Forecast Draft Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/afda> <http://www.w3.org/2004/02/skos/core#notation> "afda" .
+<http://finance.data.gov.uk/def/coins/data-subtype/afda> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/afda> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/afda> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/draft> .
+<http://finance.data.gov.uk/def/coins/data-subtype/sssa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/sssa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/sssa> <http://www.w3.org/2000/01/rdf-schema#label> "Sector Switch Submitted Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/sssa> <http://www.w3.org/2004/02/skos/core#prefLabel> "Sector Switch Submitted Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/sssa> <http://www.w3.org/2004/02/skos/core#notation> "sssa" .
+<http://finance.data.gov.uk/def/coins/data-subtype/sssa> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/sssa> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/sssa> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/draft> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/oh> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/dipcaa> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/odirda> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/odda> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/cfaa> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/oeda> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/omaa> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/omsa> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/draa> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/spsa> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/onbrsa> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/odiraa> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/oefsbraa> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/sssa> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/pefsbrsa> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/fosa> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/afda> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/tuoda> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/oeaa> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/oidcsa> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/oefsbrda> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/psesa> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/otuosa> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/rcsa> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/cfda> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/pseda> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/pefsbrda> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/esa> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/ea> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/fod> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/eaa> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/tuoa> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/ssda> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/otuoda> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/onbraa> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/ssaa> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/odsa> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/pmsa> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/bcsa> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/otuoa> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/oidcaa> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/pidcsa> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2000/01/rdf-schema#label> "data subtype code list concept scheme"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/otsa> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/pefsbraa> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/pnbrsa> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/spaa> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/pnbrda> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/ph> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/pdirsa> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/pidcda> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/pseaa> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/rcaa> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/dipcsa> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/fos> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/so> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/afsa> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/toaa> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/eda> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/do> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/bcaa> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/pdcaa> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/spda> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/onbrda> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/dipcda> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/bcda> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/pdirda> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/pmaa> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/odaa> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/drsa> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/cfsa> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/odirsa> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/pnbraa> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/otaa> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/oidcda> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/eda0> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/drda> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/pdiraa> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#prefLabel> "data subtype code list concept scheme"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/pmda> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/oefsbrsa> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/omda> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/otda> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/afaa> .
+<http://finance.data.gov.uk/def/coins/data-subtype> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/data-subtype/rcda> .
+<http://finance.data.gov.uk/def/coins/data-subtype/psesa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/psesa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/psesa> <http://www.w3.org/2000/01/rdf-schema#label> "Plans Supplementary Estimates Submitted Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/psesa> <http://www.w3.org/2004/02/skos/core#prefLabel> "Plans Supplementary Estimates Submitted Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/psesa> <http://www.w3.org/2004/02/skos/core#notation> "psesa" .
+<http://finance.data.gov.uk/def/coins/data-subtype/psesa> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/psesa> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/psesa> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/draft> .
+<http://finance.data.gov.uk/def/coins/data-subtype/onbrsa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/onbrsa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/onbrsa> <http://www.w3.org/2000/01/rdf-schema#label> "Outturn New Budget Regime Submitted Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/onbrsa> <http://www.w3.org/2004/02/skos/core#prefLabel> "Outturn New Budget Regime Submitted Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/onbrsa> <http://www.w3.org/2004/02/skos/core#notation> "onbrsa" .
+<http://finance.data.gov.uk/def/coins/data-subtype/onbrsa> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/onbrsa> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/onbrsa> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/draft> .
+<http://finance.data.gov.uk/def/coins/data-subtype/pnbrda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/pnbrda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/pnbrda> <http://www.w3.org/2000/01/rdf-schema#label> "Plans New Budget Regime Draft Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/pnbrda> <http://www.w3.org/2004/02/skos/core#prefLabel> "Plans New Budget Regime Draft Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/pnbrda> <http://www.w3.org/2004/02/skos/core#notation> "pnbrda" .
+<http://finance.data.gov.uk/def/coins/data-subtype/pnbrda> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/pnbrda> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/pnbrda> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/draft> .
+<http://finance.data.gov.uk/def/coins/data-subtype/oeaa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/oeaa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/oeaa> <http://www.w3.org/2000/01/rdf-schema#label> "Outturn Editorial Approved Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/oeaa> <http://www.w3.org/2004/02/skos/core#prefLabel> "Outturn Editorial Approved Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/oeaa> <http://www.w3.org/2004/02/skos/core#notation> "oeaa" .
+<http://finance.data.gov.uk/def/coins/data-subtype/oeaa> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/oeaa> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/oeaa> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/approved> .
+<http://finance.data.gov.uk/def/coins/data-subtype/spsa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/spsa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/spsa> <http://www.w3.org/2000/01/rdf-schema#label> "Spending Policy Submitted Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/spsa> <http://www.w3.org/2004/02/skos/core#prefLabel> "Spending Policy Submitted Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/spsa> <http://www.w3.org/2004/02/skos/core#notation> "spsa" .
+<http://finance.data.gov.uk/def/coins/data-subtype/spsa> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/spsa> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/spsa> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/draft> .
+<http://finance.data.gov.uk/def/coins/data-subtype/otuoda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/otuoda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/otuoda> <http://www.w3.org/2000/01/rdf-schema#label> "Outturn Treasury Use Only Draft Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/otuoda> <http://www.w3.org/2004/02/skos/core#prefLabel> "Outturn Treasury Use Only Draft Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/otuoda> <http://www.w3.org/2004/02/skos/core#notation> "otuoda" .
+<http://finance.data.gov.uk/def/coins/data-subtype/otuoda> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/otuoda> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/otuoda> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/draft> .
+<http://finance.data.gov.uk/def/coins/data-subtype/odaa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/odaa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/odaa> <http://www.w3.org/2000/01/rdf-schema#label> "Outturn Departmental Approved Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/odaa> <http://www.w3.org/2004/02/skos/core#prefLabel> "Outturn Departmental Approved Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/odaa> <http://www.w3.org/2004/02/skos/core#notation> "odaa" .
+<http://finance.data.gov.uk/def/coins/data-subtype/odaa> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/odaa> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/odaa> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/approved> .
+<http://finance.data.gov.uk/def/coins/data-subtype/cfaa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/cfaa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/cfaa> <http://www.w3.org/2000/01/rdf-schema#label> "Challenge Funds Approved Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/cfaa> <http://www.w3.org/2004/02/skos/core#prefLabel> "Challenge Funds Approved Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/cfaa> <http://www.w3.org/2004/02/skos/core#notation> "cfaa" .
+<http://finance.data.gov.uk/def/coins/data-subtype/cfaa> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/cfaa> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/cfaa> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/approved> .
+<http://finance.data.gov.uk/def/coins/data-subtype/ssaa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/ssaa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/ssaa> <http://www.w3.org/2000/01/rdf-schema#label> "Sector Switch Approved Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/ssaa> <http://www.w3.org/2004/02/skos/core#prefLabel> "Sector Switch Approved Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/ssaa> <http://www.w3.org/2004/02/skos/core#notation> "ssaa" .
+<http://finance.data.gov.uk/def/coins/data-subtype/ssaa> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/ssaa> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/ssaa> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/approved> .
+<http://finance.data.gov.uk/def/coins/data-subtype/toaa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/toaa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/toaa> <http://www.w3.org/2000/01/rdf-schema#label> "Treasury Outturn Approved Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/toaa> <http://www.w3.org/2004/02/skos/core#prefLabel> "Treasury Outturn Approved Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/toaa> <http://www.w3.org/2004/02/skos/core#notation> "toaa" .
+<http://finance.data.gov.uk/def/coins/data-subtype/toaa> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/toaa> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/toaa> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/approved> .
+<http://finance.data.gov.uk/def/coins/data-subtype/bcsa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/bcsa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/bcsa> <http://www.w3.org/2000/01/rdf-schema#label> "Budget Cover Submitted Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/bcsa> <http://www.w3.org/2004/02/skos/core#prefLabel> "Budget Cover Submitted Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/bcsa> <http://www.w3.org/2004/02/skos/core#notation> "bcsa" .
+<http://finance.data.gov.uk/def/coins/data-subtype/bcsa> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/bcsa> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/bcsa> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/draft> .
+<http://finance.data.gov.uk/def/coins/data-subtype/otda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/otda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/otda> <http://www.w3.org/2000/01/rdf-schema#label> "Outturn Treasury Draft Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/otda> <http://www.w3.org/2004/02/skos/core#prefLabel> "Outturn Treasury Draft Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/otda> <http://www.w3.org/2004/02/skos/core#notation> "otda" .
+<http://finance.data.gov.uk/def/coins/data-subtype/otda> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/otda> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/otda> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/draft> .
+<http://finance.data.gov.uk/def/coins/data-subtype/afsa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/afsa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/afsa> <http://www.w3.org/2000/01/rdf-schema#label> "AME Forecast Submitted Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/afsa> <http://www.w3.org/2004/02/skos/core#prefLabel> "AME Forecast Submitted Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/afsa> <http://www.w3.org/2004/02/skos/core#notation> "afsa" .
+<http://finance.data.gov.uk/def/coins/data-subtype/afsa> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/afsa> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/afsa> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/draft> .
+<http://finance.data.gov.uk/def/coins/data-subtype/dipcda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/dipcda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/dipcda> <http://www.w3.org/2000/01/rdf-schema#label> "Dept Internal Policy Change Draft Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/dipcda> <http://www.w3.org/2004/02/skos/core#prefLabel> "Dept Internal Policy Change Draft Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/dipcda> <http://www.w3.org/2004/02/skos/core#notation> "dipcda" .
+<http://finance.data.gov.uk/def/coins/data-subtype/dipcda> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/dipcda> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/dipcda> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/draft> .
+<http://finance.data.gov.uk/def/coins/data-subtype/fos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/fos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/fos> <http://www.w3.org/2000/01/rdf-schema#label> "Forecast Outturn (Submitted)"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/fos> <http://www.w3.org/2004/02/skos/core#prefLabel> "Forecast Outturn (Submitted)"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/fos> <http://www.w3.org/2004/02/skos/core#notation> "fos" .
+<http://finance.data.gov.uk/def/coins/data-subtype/fos> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/fos> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/fos> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/draft> .
+<http://finance.data.gov.uk/def/coins/data-subtype/pseaa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/pseaa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/pseaa> <http://www.w3.org/2000/01/rdf-schema#label> "Plans Supplementary Estimates Approved Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/pseaa> <http://www.w3.org/2004/02/skos/core#prefLabel> "Plans Supplementary Estimates Approved Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/pseaa> <http://www.w3.org/2004/02/skos/core#notation> "pseaa" .
+<http://finance.data.gov.uk/def/coins/data-subtype/pseaa> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/pseaa> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/pseaa> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/approved> .
+<http://finance.data.gov.uk/def/coins/data-subtype/drda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/drda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/drda> <http://www.w3.org/2000/01/rdf-schema#label> "Discount Rate Draft Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/drda> <http://www.w3.org/2004/02/skos/core#prefLabel> "Discount Rate Draft Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/drda> <http://www.w3.org/2004/02/skos/core#notation> "drda" .
+<http://finance.data.gov.uk/def/coins/data-subtype/drda> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/drda> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/drda> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/draft> .
+<http://finance.data.gov.uk/def/coins/data-subtype/onbraa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/onbraa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/onbraa> <http://www.w3.org/2000/01/rdf-schema#label> "Outturn New Budget Regime Approved Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/onbraa> <http://www.w3.org/2004/02/skos/core#prefLabel> "Outturn New Budget Regime Approved Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/onbraa> <http://www.w3.org/2004/02/skos/core#notation> "onbraa" .
+<http://finance.data.gov.uk/def/coins/data-subtype/onbraa> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/onbraa> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/onbraa> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/approved> .
+<http://finance.data.gov.uk/def/coins/data-subtype/oefsbrda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/oefsbrda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/oefsbrda> <http://www.w3.org/2000/01/rdf-schema#label> "Outturn Excluded From Supps - Budget Regime Draft Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/oefsbrda> <http://www.w3.org/2004/02/skos/core#prefLabel> "Outturn Excluded From Supps - Budget Regime Draft Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/oefsbrda> <http://www.w3.org/2004/02/skos/core#notation> "oefsbrda" .
+<http://finance.data.gov.uk/def/coins/data-subtype/oefsbrda> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/oefsbrda> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/oefsbrda> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/draft> .
+<http://finance.data.gov.uk/def/coins/data-subtype/pidcda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/pidcda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/pidcda> <http://www.w3.org/2000/01/rdf-schema#label> "Plans Internal Dept Corrections Draft Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/pidcda> <http://www.w3.org/2004/02/skos/core#prefLabel> "Plans Internal Dept Corrections Draft Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/pidcda> <http://www.w3.org/2004/02/skos/core#notation> "pidcda" .
+<http://finance.data.gov.uk/def/coins/data-subtype/pidcda> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/pidcda> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/pidcda> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/draft> .
+<http://finance.data.gov.uk/def/coins/data-subtype/ph> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/ph> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/ph> <http://www.w3.org/2000/01/rdf-schema#label> "Plans Historical"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/ph> <http://www.w3.org/2004/02/skos/core#prefLabel> "Plans Historical"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/ph> <http://www.w3.org/2004/02/skos/core#notation> "ph" .
+<http://finance.data.gov.uk/def/coins/data-subtype/ph> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/ph> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/ph> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/draft> .
+<http://finance.data.gov.uk/def/coins/data-subtype/spaa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/spaa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/spaa> <http://www.w3.org/2000/01/rdf-schema#label> "Spending Policy Approved Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/spaa> <http://www.w3.org/2004/02/skos/core#prefLabel> "Spending Policy Approved Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/spaa> <http://www.w3.org/2004/02/skos/core#notation> "spaa" .
+<http://finance.data.gov.uk/def/coins/data-subtype/spaa> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/spaa> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/spaa> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/approved> .
+<http://finance.data.gov.uk/def/coins/data-subtype/pdirda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/pdirda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/pdirda> <http://www.w3.org/2000/01/rdf-schema#label> "Plans Dept Internal Restructuring Draft Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/pdirda> <http://www.w3.org/2004/02/skos/core#prefLabel> "Plans Dept Internal Restructuring Draft Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/pdirda> <http://www.w3.org/2004/02/skos/core#notation> "pdirda" .
+<http://finance.data.gov.uk/def/coins/data-subtype/pdirda> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/pdirda> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/pdirda> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/draft> .
+<http://finance.data.gov.uk/def/coins/DataSubtype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://finance.data.gov.uk/def/coins/DataSubtype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://finance.data.gov.uk/def/coins/DataSubtype> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/DataSubtype> <http://www.w3.org/2000/01/rdf-schema#label> "data subtype values class"@en .
+<http://finance.data.gov.uk/def/coins/DataSubtype> <http://www.w3.org/2004/02/skos/core#prefLabel> "data subtype values class"@en .
+<http://finance.data.gov.uk/def/coins/DataSubtype> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of values in the data subtype code-list scheme" .
+<http://finance.data.gov.uk/def/coins/data-subtype/pnbrsa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/pnbrsa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/pnbrsa> <http://www.w3.org/2000/01/rdf-schema#label> "Plans New Budget Regime Submitted Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/pnbrsa> <http://www.w3.org/2004/02/skos/core#prefLabel> "Plans New Budget Regime Submitted Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/pnbrsa> <http://www.w3.org/2004/02/skos/core#notation> "pnbrsa" .
+<http://finance.data.gov.uk/def/coins/data-subtype/pnbrsa> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/pnbrsa> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/pnbrsa> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/draft> .
+<http://finance.data.gov.uk/def/coins/data-subtype/oidcda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/oidcda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/oidcda> <http://www.w3.org/2000/01/rdf-schema#label> "Outturn Internal Dept Corrections Draft Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/oidcda> <http://www.w3.org/2004/02/skos/core#prefLabel> "Outturn Internal Dept Corrections Draft Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/oidcda> <http://www.w3.org/2004/02/skos/core#notation> "oidcda" .
+<http://finance.data.gov.uk/def/coins/data-subtype/oidcda> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/oidcda> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/oidcda> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/draft> .
+<http://finance.data.gov.uk/def/coins/data-subtype/odirda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/odirda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/odirda> <http://www.w3.org/2000/01/rdf-schema#label> "Outturn Dept Internal Restructuring Draft Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/odirda> <http://www.w3.org/2004/02/skos/core#prefLabel> "Outturn Dept Internal Restructuring Draft Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/odirda> <http://www.w3.org/2004/02/skos/core#notation> "odirda" .
+<http://finance.data.gov.uk/def/coins/data-subtype/odirda> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/odirda> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/odirda> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/draft> .
+<http://finance.data.gov.uk/def/coins/data-subtype/otuosa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/otuosa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/otuosa> <http://www.w3.org/2000/01/rdf-schema#label> "Outturn Treasury Use Only Submitted Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/otuosa> <http://www.w3.org/2004/02/skos/core#prefLabel> "Outturn Treasury Use Only Submitted Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/otuosa> <http://www.w3.org/2004/02/skos/core#notation> "otuosa" .
+<http://finance.data.gov.uk/def/coins/data-subtype/otuosa> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/otuosa> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/otuosa> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/draft> .
+<http://finance.data.gov.uk/def/coins/data-subtype/fosa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/fosa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/fosa> <http://www.w3.org/2000/01/rdf-schema#label> "Forecast Outturn Submitted Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/fosa> <http://www.w3.org/2004/02/skos/core#prefLabel> "Forecast Outturn Submitted Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/fosa> <http://www.w3.org/2004/02/skos/core#notation> "fosa" .
+<http://finance.data.gov.uk/def/coins/data-subtype/fosa> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/fosa> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/fosa> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/draft> .
+<http://finance.data.gov.uk/def/coins/data-subtype/pmda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/pmda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/pmda> <http://www.w3.org/2000/01/rdf-schema#label> "Plans MOG Draft Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/pmda> <http://www.w3.org/2004/02/skos/core#prefLabel> "Plans MOG Draft Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/pmda> <http://www.w3.org/2004/02/skos/core#notation> "pmda" .
+<http://finance.data.gov.uk/def/coins/data-subtype/pmda> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/pmda> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/pmda> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/draft> .
+<http://finance.data.gov.uk/def/coins/data-subtype/bcaa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/bcaa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/bcaa> <http://www.w3.org/2000/01/rdf-schema#label> "Budget Cover Approved Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/bcaa> <http://www.w3.org/2004/02/skos/core#prefLabel> "Budget Cover Approved Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/bcaa> <http://www.w3.org/2004/02/skos/core#notation> "bcaa" .
+<http://finance.data.gov.uk/def/coins/data-subtype/bcaa> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/bcaa> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/bcaa> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/approved> .
+<http://finance.data.gov.uk/def/coins/data-subtype/afaa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/afaa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/afaa> <http://www.w3.org/2000/01/rdf-schema#label> "AME Forecast Approved Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/afaa> <http://www.w3.org/2004/02/skos/core#prefLabel> "AME Forecast Approved Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/afaa> <http://www.w3.org/2004/02/skos/core#notation> "afaa" .
+<http://finance.data.gov.uk/def/coins/data-subtype/afaa> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/afaa> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/afaa> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/approved> .
+<http://finance.data.gov.uk/def/coins/data-subtype/tuoda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/tuoda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/tuoda> <http://www.w3.org/2000/01/rdf-schema#label> "Treasury Use Only Draft Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/tuoda> <http://www.w3.org/2004/02/skos/core#prefLabel> "Treasury Use Only Draft Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/tuoda> <http://www.w3.org/2004/02/skos/core#notation> "tuoda" .
+<http://finance.data.gov.uk/def/coins/data-subtype/tuoda> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/tuoda> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/tuoda> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/draft> .
+<http://finance.data.gov.uk/def/coins/data-subtype/otuoa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/otuoa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/otuoa> <http://www.w3.org/2000/01/rdf-schema#label> "Outturn Treasury Use Only Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/otuoa> <http://www.w3.org/2004/02/skos/core#prefLabel> "Outturn Treasury Use Only Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/otuoa> <http://www.w3.org/2004/02/skos/core#notation> "otuoa" .
+<http://finance.data.gov.uk/def/coins/data-subtype/otuoa> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/otuoa> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/otuoa> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/draft> .
+<http://finance.data.gov.uk/def/coins/data-subtype/otsa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/otsa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/otsa> <http://www.w3.org/2000/01/rdf-schema#label> "Outturn Treasury Submitted Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/otsa> <http://www.w3.org/2004/02/skos/core#prefLabel> "Outturn Treasury Submitted Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/otsa> <http://www.w3.org/2004/02/skos/core#notation> "otsa" .
+<http://finance.data.gov.uk/def/coins/data-subtype/otsa> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/otsa> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/otsa> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/draft> .
+<http://finance.data.gov.uk/def/coins/data-subtype/eda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/eda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/eda> <http://www.w3.org/2000/01/rdf-schema#label> "Editorial Draft Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/eda> <http://www.w3.org/2004/02/skos/core#prefLabel> "Editorial Draft Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/eda> <http://www.w3.org/2004/02/skos/core#notation> "eda" .
+<http://finance.data.gov.uk/def/coins/data-subtype/eda> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/eda> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/eda> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/draft> .
+<http://finance.data.gov.uk/def/coins/data-subtype/dipcsa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/dipcsa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/dipcsa> <http://www.w3.org/2000/01/rdf-schema#label> "Dept Internal Policy Change Submitted Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/dipcsa> <http://www.w3.org/2004/02/skos/core#prefLabel> "Dept Internal Policy Change Submitted Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/dipcsa> <http://www.w3.org/2004/02/skos/core#notation> "dipcsa" .
+<http://finance.data.gov.uk/def/coins/data-subtype/dipcsa> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/dipcsa> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/dipcsa> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/draft> .
+<http://finance.data.gov.uk/def/coins/statistical-concept/data-subtype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/sdmx#Concept> .
+<http://finance.data.gov.uk/def/coins/statistical-concept/data-subtype> <http://www.w3.org/2000/01/rdf-schema#label> "data subtype"@en .
+<http://finance.data.gov.uk/def/coins/statistical-concept/data-subtype> <http://www.w3.org/2004/02/skos/core#prefLabel> "data subtype"@en .
+<http://finance.data.gov.uk/def/coins/statistical-concept/data-subtype> <http://www.w3.org/2000/01/rdf-schema#comment> "This gives information about the reason why data was loaded onto COINS. It also describes the status of the data. Statuses are:\n    * Draft \u2013 data that are provisional, or in the process of being entered. Draft data never forms part of published outputs.\n    * Submitted \u2013 for Plans and Outturn, this is an intermediate stage in which adjustments have been finalised by the department but not yet checked by a Treasury spending team. For Forecast Outturn data, this represents the final status of the data.\n    * Approved \u2013 for Plans and Outturn, this indicates data which has been submitted by a department and then approved by a Treasury spending team.\n    " .
+<http://finance.data.gov.uk/def/coins/statistical-concept/data-subtype> <http://purl.org/dc/terms/source> <http://www.hm-treasury.gov.uk/d/coins_guidance.pdf> .
+<http://finance.data.gov.uk/def/coins/statistical-concept/data-subtype> <http://www.epimorphics.com/vocabs/coins-generate#columnName> "data_subtype" .
+<http://finance.data.gov.uk/def/coins/data-subtype/drsa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/drsa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/drsa> <http://www.w3.org/2000/01/rdf-schema#label> "Discount Rate Submitted Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/drsa> <http://www.w3.org/2004/02/skos/core#prefLabel> "Discount Rate Submitted Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/drsa> <http://www.w3.org/2004/02/skos/core#notation> "drsa" .
+<http://finance.data.gov.uk/def/coins/data-subtype/drsa> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/drsa> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/drsa> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/draft> .
+<http://finance.data.gov.uk/def/coins/data-subtype/pnbraa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/pnbraa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/pnbraa> <http://www.w3.org/2000/01/rdf-schema#label> "Plans New Budget Regime Approved Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/pnbraa> <http://www.w3.org/2004/02/skos/core#prefLabel> "Plans New Budget Regime Approved Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/pnbraa> <http://www.w3.org/2004/02/skos/core#notation> "pnbraa" .
+<http://finance.data.gov.uk/def/coins/data-subtype/pnbraa> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/pnbraa> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/pnbraa> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/approved> .
+<http://finance.data.gov.uk/def/coins/data-subtype/omda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/omda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/omda> <http://www.w3.org/2000/01/rdf-schema#label> "Outturn MOG Draft Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/omda> <http://www.w3.org/2004/02/skos/core#prefLabel> "Outturn MOG Draft Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/omda> <http://www.w3.org/2004/02/skos/core#notation> "omda" .
+<http://finance.data.gov.uk/def/coins/data-subtype/omda> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/omda> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/omda> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/draft> .
+<http://finance.data.gov.uk/def/coins/data-subtype/do> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/do> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/do> <http://www.w3.org/2000/01/rdf-schema#label> "Draft (Outturn)"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/do> <http://www.w3.org/2004/02/skos/core#prefLabel> "Draft (Outturn)"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/do> <http://www.w3.org/2004/02/skos/core#notation> "do" .
+<http://finance.data.gov.uk/def/coins/data-subtype/do> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/do> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/do> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/draft> .
+<http://finance.data.gov.uk/def/coins/data-subtype/pidcsa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/pidcsa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/pidcsa> <http://www.w3.org/2000/01/rdf-schema#label> "Plans Internal Dept Corrections Submitted Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/pidcsa> <http://www.w3.org/2004/02/skos/core#prefLabel> "Plans Internal Dept Corrections Submitted Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/pidcsa> <http://www.w3.org/2004/02/skos/core#notation> "pidcsa" .
+<http://finance.data.gov.uk/def/coins/data-subtype/pidcsa> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/pidcsa> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/pidcsa> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/draft> .
+<http://finance.data.gov.uk/def/coins/data-subtype/pdirsa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/pdirsa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/pdirsa> <http://www.w3.org/2000/01/rdf-schema#label> "Plans Dept Internal Restructuring Submitted Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/pdirsa> <http://www.w3.org/2004/02/skos/core#prefLabel> "Plans Dept Internal Restructuring Submitted Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/pdirsa> <http://www.w3.org/2004/02/skos/core#notation> "pdirsa" .
+<http://finance.data.gov.uk/def/coins/data-subtype/pdirsa> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/pdirsa> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/pdirsa> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/draft> .
+<http://finance.data.gov.uk/def/coins/data-subtype/oefsbrsa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/oefsbrsa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/oefsbrsa> <http://www.w3.org/2000/01/rdf-schema#label> "Outturn Excluded From Supps - Budget Regime Submitted Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/oefsbrsa> <http://www.w3.org/2004/02/skos/core#prefLabel> "Outturn Excluded From Supps - Budget Regime Submitted Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/oefsbrsa> <http://www.w3.org/2004/02/skos/core#notation> "oefsbrsa" .
+<http://finance.data.gov.uk/def/coins/data-subtype/oefsbrsa> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/oefsbrsa> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/oefsbrsa> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/draft> .
+<http://finance.data.gov.uk/def/coins/data-subtype/ea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/ea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/ea> <http://www.w3.org/2000/01/rdf-schema#label> "Editorial Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/ea> <http://www.w3.org/2004/02/skos/core#prefLabel> "Editorial Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/ea> <http://www.w3.org/2004/02/skos/core#notation> "ea" .
+<http://finance.data.gov.uk/def/coins/data-subtype/ea> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/ea> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/ea> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/draft> .
+<http://finance.data.gov.uk/def/coins/data-subtype/pefsbrda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/pefsbrda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/pefsbrda> <http://www.w3.org/2000/01/rdf-schema#label> "Plans Excluded From Supps - Budget Regime Draft Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/pefsbrda> <http://www.w3.org/2004/02/skos/core#prefLabel> "Plans Excluded From Supps - Budget Regime Draft Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/pefsbrda> <http://www.w3.org/2004/02/skos/core#notation> "pefsbrda" .
+<http://finance.data.gov.uk/def/coins/data-subtype/pefsbrda> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/pefsbrda> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/pefsbrda> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/draft> .
+<http://finance.data.gov.uk/def/coins/data-subtype/rcda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/rcda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/rcda> <http://www.w3.org/2000/01/rdf-schema#label> "Reserve Claims Draft Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/rcda> <http://www.w3.org/2004/02/skos/core#prefLabel> "Reserve Claims Draft Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/rcda> <http://www.w3.org/2004/02/skos/core#notation> "rcda" .
+<http://finance.data.gov.uk/def/coins/data-subtype/rcda> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/rcda> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/rcda> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/draft> .
+<http://finance.data.gov.uk/def/coins/data-subtype/oidcsa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/oidcsa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/oidcsa> <http://www.w3.org/2000/01/rdf-schema#label> "Outturn Internal Dept Corrections Submitted Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/oidcsa> <http://www.w3.org/2004/02/skos/core#prefLabel> "Outturn Internal Dept Corrections Submitted Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/oidcsa> <http://www.w3.org/2004/02/skos/core#notation> "oidcsa" .
+<http://finance.data.gov.uk/def/coins/data-subtype/oidcsa> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/oidcsa> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/oidcsa> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/draft> .
+<http://finance.data.gov.uk/def/coins/data-subtype/odirsa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/odirsa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/odirsa> <http://www.w3.org/2000/01/rdf-schema#label> "Outturn Dept Internal Restructuring Submitted Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/odirsa> <http://www.w3.org/2004/02/skos/core#prefLabel> "Outturn Dept Internal Restructuring Submitted Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/odirsa> <http://www.w3.org/2004/02/skos/core#notation> "odirsa" .
+<http://finance.data.gov.uk/def/coins/data-subtype/odirsa> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/odirsa> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/odirsa> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/draft> .
+<http://finance.data.gov.uk/def/coins/data-subtype/pmsa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/pmsa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/pmsa> <http://www.w3.org/2000/01/rdf-schema#label> "Plans MOG Submitted Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/pmsa> <http://www.w3.org/2004/02/skos/core#prefLabel> "Plans MOG Submitted Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/pmsa> <http://www.w3.org/2004/02/skos/core#notation> "pmsa" .
+<http://finance.data.gov.uk/def/coins/data-subtype/pmsa> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/pmsa> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/pmsa> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/draft> .
+<http://finance.data.gov.uk/def/coins/data-subtype/otaa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/otaa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/otaa> <http://www.w3.org/2000/01/rdf-schema#label> "Outturn Treasury Approved Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/otaa> <http://www.w3.org/2004/02/skos/core#prefLabel> "Outturn Treasury Approved Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/otaa> <http://www.w3.org/2004/02/skos/core#notation> "otaa" .
+<http://finance.data.gov.uk/def/coins/data-subtype/otaa> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/otaa> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/otaa> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/approved> .
+<http://finance.data.gov.uk/def/coins/data-subtype/dipcaa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/dipcaa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/dipcaa> <http://www.w3.org/2000/01/rdf-schema#label> "Dept Internal Policy Change Approved Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/dipcaa> <http://www.w3.org/2004/02/skos/core#prefLabel> "Dept Internal Policy Change Approved Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/dipcaa> <http://www.w3.org/2004/02/skos/core#notation> "dipcaa" .
+<http://finance.data.gov.uk/def/coins/data-subtype/dipcaa> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/dipcaa> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/dipcaa> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/approved> .
+<http://finance.data.gov.uk/def/coins/data-subtype/draa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/draa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/draa> <http://www.w3.org/2000/01/rdf-schema#label> "Discount Rate Approved Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/draa> <http://www.w3.org/2004/02/skos/core#prefLabel> "Discount Rate Approved Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/draa> <http://www.w3.org/2004/02/skos/core#notation> "draa" .
+<http://finance.data.gov.uk/def/coins/data-subtype/draa> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/draa> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/draa> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/approved> .
+<http://finance.data.gov.uk/def/coins/data-subtype/eda0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/eda0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/eda0> <http://www.w3.org/2000/01/rdf-schema#label> "EYF Draft Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/eda0> <http://www.w3.org/2004/02/skos/core#prefLabel> "EYF Draft Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/eda0> <http://www.w3.org/2004/02/skos/core#notation> "eda0" .
+<http://finance.data.gov.uk/def/coins/data-subtype/eda0> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/eda0> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/eda0> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/draft> .
+<http://finance.data.gov.uk/def/coins/data-subtype/oefsbraa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/oefsbraa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/oefsbraa> <http://www.w3.org/2000/01/rdf-schema#label> "Outturn Excluded From Supps - Budget Regime Approved Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/oefsbraa> <http://www.w3.org/2004/02/skos/core#prefLabel> "Outturn Excluded From Supps - Budget Regime Approved Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/oefsbraa> <http://www.w3.org/2004/02/skos/core#notation> "oefsbraa" .
+<http://finance.data.gov.uk/def/coins/data-subtype/oefsbraa> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/oefsbraa> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/oefsbraa> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/approved> .
+<http://finance.data.gov.uk/def/coins/data-subtype/esa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/esa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/esa> <http://www.w3.org/2000/01/rdf-schema#label> "EYF Submitted Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/esa> <http://www.w3.org/2004/02/skos/core#prefLabel> "EYF Submitted Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/esa> <http://www.w3.org/2004/02/skos/core#notation> "esa" .
+<http://finance.data.gov.uk/def/coins/data-subtype/esa> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/esa> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/esa> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/draft> .
+<http://finance.data.gov.uk/def/coins/data-subtype/pdiraa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/pdiraa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/pdiraa> <http://www.w3.org/2000/01/rdf-schema#label> "Plans Dept Internal Restructuring Approved Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/pdiraa> <http://www.w3.org/2004/02/skos/core#prefLabel> "Plans Dept Internal Restructuring Approved Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/pdiraa> <http://www.w3.org/2004/02/skos/core#notation> "pdiraa" .
+<http://finance.data.gov.uk/def/coins/data-subtype/pdiraa> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/pdiraa> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/pdiraa> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/approved> .
+<http://finance.data.gov.uk/def/coins/data-subtype/tuoa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/DataSubtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/tuoa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/data-subtype/tuoa> <http://www.w3.org/2000/01/rdf-schema#label> "Treasury Use Only Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/tuoa> <http://www.w3.org/2004/02/skos/core#prefLabel> "Treasury Use Only Adjustments"@en .
+<http://finance.data.gov.uk/def/coins/data-subtype/tuoa> <http://www.w3.org/2004/02/skos/core#notation> "tuoa" .
+<http://finance.data.gov.uk/def/coins/data-subtype/tuoa> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/data-subtype/tuoa> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/data-subtype> .
+<http://finance.data.gov.uk/def/coins/data-subtype/tuoa> <http://reference.data.gov.uk/def/status> <http://reference.data.gov.uk/def/status/draft> .

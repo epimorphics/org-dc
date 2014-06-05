@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:dct="http://purl.org/dc/terms/"
+   xmlns:foaf="http://xmlns.com/foaf/0.1/"
+   xmlns:gov="http://reference.data.gov.uk/def/central-government/"
+   xmlns:opmv="http://purl.org/net/opmv/ns#"
+   xmlns:org="http://www.w3.org/ns/org#"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+   xmlns:time="http://www.w3.org/2006/time#"
+   xmlns:void="http://rdfs.org/ns/void#"
+   xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+   xmlns="http://reference.data.gov.uk/def/civil-service-grade/">
+  <skos:ConceptScheme rdf:about="http://reference.data.gov.uk/def/civil-service-grade">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <rdfs:label xml:lang="en">Senior Civil Service Grades</rdfs:label>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-grade/SCS1"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-grade/SCS1A"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-grade/SCS2"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-grade/SCS3"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-grade/SCS4"/>
+  </skos:ConceptScheme>
+  <rdfs:Class rdf:about="http://reference.data.gov.uk/def/civil-service-grade/Grade">
+    <rdfs:isDefinedBy rdf:resource="http://reference.data.gov.uk/def/civil-service-grade"/>
+    <rdfs:label xml:lang="en">Grade</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdfs:Class>
+  <Grade rdf:about="http://reference.data.gov.uk/def/civil-service-grade/SCS1">
+    <skos:isTopConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-grade"/>
+    <skos:prefLabel xml:lang="en">SCS1</skos:prefLabel>
+  </Grade>
+  <Grade rdf:about="http://reference.data.gov.uk/def/civil-service-grade/SCS1A">
+    <skos:isTopConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-grade"/>
+    <skos:prefLabel xml:lang="en">SCS1A</skos:prefLabel>
+  </Grade>
+  <Grade rdf:about="http://reference.data.gov.uk/def/civil-service-grade/SCS2">
+    <skos:isTopConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-grade"/>
+    <skos:prefLabel xml:lang="en">SCS2</skos:prefLabel>
+  </Grade>
+  <Grade rdf:about="http://reference.data.gov.uk/def/civil-service-grade/SCS3">
+    <skos:isTopConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-grade"/>
+    <skos:prefLabel xml:lang="en">SCS3</skos:prefLabel>
+  </Grade>
+  <Grade rdf:about="http://reference.data.gov.uk/def/civil-service-grade/SCS4">
+    <skos:isTopConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-grade"/>
+    <skos:prefLabel xml:lang="en">SCS4</skos:prefLabel>
+  </Grade>
+  <rdf:Property rdf:about="http://reference.data.gov.uk/def/civil-service-grade/grade">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://reference.data.gov.uk/def/civil-service-grade"/>
+    <rdfs:label xml:lang="en">Grade</rdfs:label>
+    <rdfs:range rdf:resource="http://reference.data.gov.uk/def/civil-service-grade/Grade"/>
+  </rdf:Property>
+</rdf:RDF>

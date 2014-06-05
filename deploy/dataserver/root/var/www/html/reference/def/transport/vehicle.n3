@@ -1,0 +1,60 @@
+@base <http://transport.data.gov.uk/def/vehicle> .
+@prefix : <http://transport.data.gov.uk/def/vehicle/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<> a owl:Ontology ;
+  rdfs:label "Vehicles"@en .
+
+:VehicleType a owl:Class ;
+  a rdfs:Class ;
+  rdfs:label "Vehicle type"@en ;
+  owl:equivalentClass [
+    a owl:Class ;
+    owl:oneOf (
+      :bicycle :motorcycle :car :bus
+      :van :hgvr2 :hgvr3 :hgvr4 :hgva3
+      :hgva5 :hgva6 :hgv
+      :allMotorVehicles )
+  ] .
+
+:bicycle rdfs:label "Bicycle"@en ;
+         rdfs:comment "Pedal cycles."@en .
+
+:motorcycle rdfs:label "Motorcycle"@en ;
+            rdfs:comment "Two wheeled motor vehicles. Includes motorcycle combinations, scooters and mopeds."@en .
+
+:car rdfs:label "Car"@en ;
+     rdfs:comment "Cars and Taxis. Includes estate cars, light vans with windows to the rear of the driver's seat, passenger vehicles with 9 or fewer seats, three-wheeled cars, motorised invalid carriages, Land Rovers, Range Rovers and Jeeps. Cars towing caravans or trailers are counted as one vehicle."@en .
+
+:bus rdfs:label "Bus"@en ;
+     rdfs:comment "Buses and Coaches. Public service vehicles and works buses, which have a gross vehicle weight greater than 3,500kgs."@en .
+
+:van rdfs:label "Van"@en ;
+     rdfs:comment "Light Goods Vehicles. Goods vehicles up to 3,500 kgs. gross vehicle weight. Includes all car-based vans and those of the next larger carrying capacity such as transit vans. Also included are ambulances, pickups, milk floats and pedestrian controlled motor vehicles. Most of this group are delivery vans of one type or another."@en .
+
+:hgvr2 rdfs:label "HGVr2"@en ;
+       rdfs:comment "Rigid 2-axle Heavy Goods Vehicles."@en .
+
+:hgvr3 rdfs:label "HGVr3"@en ;
+       rdfs:comment "Rigid 3-axle Heavy Goods Vehicles."@en .
+
+:hgvr4 rdfs:label "HGVr4"@en ;
+       rdfs:comment "Rigid 4plus-axle Heavy Goods Vehicles."@en .
+
+:hgva3 rdfs:label "HGVa3"@en ;
+       rdfs:comment "Articulated 3 or 4-axle Heavy Goods Vehicles."@en .
+
+:hgva5 rdfs:label "HGVa5"@en ;
+       rdfs:comment "Articulated 5-axle Heavy Goods Vehicles."@en .
+
+:hgva6 rdfs:label "HGVa6"@en ;
+       rdfs:comment "Articulated 6plus-axle Heavy Goods Vehicles."@en .
+
+:hgv rdfs:label "All HGV"@en ;
+     rdfs:comment "Heavy Goods Vehicles total." .
+
+:allMotorVehicles rdfs:label "All Motor vehicles"@en ;
+                  rdfs:comment "All Motor Vehicles total."@en .

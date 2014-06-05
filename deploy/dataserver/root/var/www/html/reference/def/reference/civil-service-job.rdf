@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:dct="http://purl.org/dc/terms/"
+   xmlns:foaf="http://xmlns.com/foaf/0.1/"
+   xmlns:gov="http://reference.data.gov.uk/def/central-government/"
+   xmlns:opmv="http://purl.org/net/opmv/ns#"
+   xmlns:org="http://www.w3.org/ns/org#"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+   xmlns:time="http://www.w3.org/2006/time#"
+   xmlns:void="http://rdfs.org/ns/void#"
+   xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+   xmlns="http://reference.data.gov.uk/def/civil-service-job/">
+  <skos:ConceptScheme rdf:about="http://reference.data.gov.uk/def/civil-service-job">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <rdfs:label xml:lang="en">Civil Service Jobs</rdfs:label>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-job/analyst"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-job/business-manager"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-job/communications-manager"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-job/communications-support-officer"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-job/correspondence-manager"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-job/diary-manager"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-job/economist"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-job/executive-assistant"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-job/finance-officer"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-job/finance-support-officer"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-job/hr-officer"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-job/hr-support-officer"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-job/internal-audit-support-officer"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-job/internal-auditor"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-job/it-manager"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-job/it-support-officer"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-job/junior-analyst"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-job/knowledge-information-management-manager"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-job/knowledge-information-management-support-officer"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-job/legal-adviser"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-job/legal-support-officer"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-job/not-in-post"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-job/office-manager"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-job/operational-manager"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-job/operational-researcher"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-job/operations-support-officer"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-job/policy-adviser"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-job/policy-support-officer"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-job/press-officer"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-job/principal-private-secretary"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-job/private-secretary"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-job/procurement-officer"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-job/procurement-support-officer-"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-job/programme-manager"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-job/programme-officer-manager"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-job/programme-support-officer"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-job/project-manager"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-job/project-support-officer"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-job/review-support-officer"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-job/review-team-leader"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-job/senior-analyst"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-job/senior-communications-manager"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-job/senior-correspondence-manager"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-job/senior-economist"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-job/senior-finance-manager"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-job/senior-hr-manager"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-job/senior-information-manager"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-job/senior-internal-auditor"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-job/senior-it-manager"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-job/senior-legal-adviser"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-job/senior-operational-manager"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-job/senior-operational-researcher"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-job/senior-policy-adviser"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-job/senior-press-officer"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-job/senior-procurement-officer"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-job/senior-project-manager"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-job/senior-statistician"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-job/senior-tax-officer"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-job/senior-technical-adviser"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-job/senior-web-manager"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-job/statistical-support-officer"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-job/statistician"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-job/tax-officer"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-job/tax-support-officer"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-job/technical-adviser"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-job/technical-support-officer"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-job/web-manager"/>
+  </skos:ConceptScheme>
+  <rdfs:Class rdf:about="http://reference.data.gov.uk/def/civil-service-job/Job">
+    <rdfs:isDefinedBy rdf:resource="http://reference.data.gov.uk/def/civil-service-job"/>
+    <rdfs:label xml:lang="en">Job</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdfs:Class>
+  <Job rdf:about="http://reference.data.gov.uk/def/civil-service-job/analyst">
+    <skos:prefLabel xml:lang="en">Analyst</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-job"/>
+  </Job>
+  <Job rdf:about="http://reference.data.gov.uk/def/civil-service-job/business-manager">
+    <skos:prefLabel xml:lang="en">Business Manager</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-job"/>
+  </Job>
+  <Job rdf:about="http://reference.data.gov.uk/def/civil-service-job/communications-manager">
+    <skos:prefLabel xml:lang="en">Communications Manager</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-job"/>
+  </Job>
+  <Job rdf:about="http://reference.data.gov.uk/def/civil-service-job/communications-support-officer">
+    <skos:prefLabel xml:lang="en">Communications Support Officer</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-job"/>
+  </Job>
+  <Job rdf:about="http://reference.data.gov.uk/def/civil-service-job/correspondence-manager">
+    <skos:prefLabel xml:lang="en">Correspondence Manager</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-job"/>
+  </Job>
+  <Job rdf:about="http://reference.data.gov.uk/def/civil-service-job/diary-manager">
+    <skos:prefLabel xml:lang="en">Diary Manager</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-job"/>
+  </Job>
+  <Job rdf:about="http://reference.data.gov.uk/def/civil-service-job/economist">
+    <skos:prefLabel xml:lang="en">Economist</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-job"/>
+  </Job>
+  <Job rdf:about="http://reference.data.gov.uk/def/civil-service-job/executive-assistant">
+    <skos:prefLabel xml:lang="en">Executive Assistant</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-job"/>
+  </Job>
+  <Job rdf:about="http://reference.data.gov.uk/def/civil-service-job/finance-officer">
+    <skos:prefLabel xml:lang="en">Finance Officer</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-job"/>
+  </Job>
+  <Job rdf:about="http://reference.data.gov.uk/def/civil-service-job/finance-support-officer">
+    <skos:prefLabel xml:lang="en">Finance Support Officer</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-job"/>
+  </Job>
+  <Job rdf:about="http://reference.data.gov.uk/def/civil-service-job/hr-officer">
+    <skos:prefLabel xml:lang="en">HR Officer</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-job"/>
+  </Job>
+  <Job rdf:about="http://reference.data.gov.uk/def/civil-service-job/hr-support-officer">
+    <skos:prefLabel xml:lang="en">HR Support Officer</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-job"/>
+  </Job>
+  <Job rdf:about="http://reference.data.gov.uk/def/civil-service-job/internal-audit-support-officer">
+    <skos:prefLabel xml:lang="en">Internal Audit Support Officer</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-job"/>
+  </Job>
+  <Job rdf:about="http://reference.data.gov.uk/def/civil-service-job/internal-auditor">
+    <skos:prefLabel xml:lang="en">Internal Auditor</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-job"/>
+  </Job>
+  <Job rdf:about="http://reference.data.gov.uk/def/civil-service-job/it-manager">
+    <skos:prefLabel xml:lang="en">IT Manager</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-job"/>
+  </Job>
+  <Job rdf:about="http://reference.data.gov.uk/def/civil-service-job/it-support-officer">
+    <skos:prefLabel xml:lang="en">IT Support Officer</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-job"/>
+  </Job>
+  <rdf:Property rdf:about="http://reference.data.gov.uk/def/civil-service-job/job">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://reference.data.gov.uk/def/civil-service-job"/>
+    <rdfs:label xml:lang="en">Job</rdfs:label>
+    <rdfs:range rdf:resource="http://reference.data.gov.uk/def/civil-service-job/Job"/>
+  </rdf:Property>
+  <Job rdf:about="http://reference.data.gov.uk/def/civil-service-job/junior-analyst">
+    <skos:prefLabel xml:lang="en">Junior Analyst</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-job"/>
+  </Job>
+  <Job rdf:about="http://reference.data.gov.uk/def/civil-service-job/knowledge-information-management-manager">
+    <skos:prefLabel xml:lang="en">Knowledge Information Management Manager</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-job"/>
+  </Job>
+  <Job rdf:about="http://reference.data.gov.uk/def/civil-service-job/knowledge-information-management-support-officer">
+    <skos:prefLabel xml:lang="en">Knowledge Information Management Support Officer</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-job"/>
+  </Job>
+  <Job rdf:about="http://reference.data.gov.uk/def/civil-service-job/legal-adviser">
+    <skos:prefLabel xml:lang="en">Legal Adviser</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-job"/>
+  </Job>
+  <Job rdf:about="http://reference.data.gov.uk/def/civil-service-job/legal-support-officer">
+    <skos:prefLabel xml:lang="en">Legal Support Officer</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-job"/>
+  </Job>
+  <Job rdf:about="http://reference.data.gov.uk/def/civil-service-job/not-in-post">
+    <skos:altLabel xml:lang="en">Not in Post</skos:altLabel>
+    <skos:prefLabel xml:lang="en">Not in post</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-job"/>
+  </Job>
+  <Job rdf:about="http://reference.data.gov.uk/def/civil-service-job/office-manager">
+    <skos:prefLabel xml:lang="en">Office Manager</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-job"/>
+  </Job>
+  <Job rdf:about="http://reference.data.gov.uk/def/civil-service-job/operational-manager">
+    <skos:prefLabel xml:lang="en">Operational Manager</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-job"/>
+  </Job>
+  <Job rdf:about="http://reference.data.gov.uk/def/civil-service-job/operational-researcher">
+    <skos:prefLabel xml:lang="en">Operational Researcher</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-job"/>
+  </Job>
+  <Job rdf:about="http://reference.data.gov.uk/def/civil-service-job/operations-support-officer">
+    <skos:prefLabel xml:lang="en">Operations Support Officer</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-job"/>
+  </Job>
+  <Job rdf:about="http://reference.data.gov.uk/def/civil-service-job/policy-adviser">
+    <skos:prefLabel xml:lang="en">Policy Adviser</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-job"/>
+  </Job>
+  <Job rdf:about="http://reference.data.gov.uk/def/civil-service-job/policy-support-officer">
+    <skos:prefLabel xml:lang="en">Policy Support Officer</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-job"/>
+  </Job>
+  <Job rdf:about="http://reference.data.gov.uk/def/civil-service-job/press-officer">
+    <skos:prefLabel xml:lang="en">Press Officer</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-job"/>
+  </Job>
+  <Job rdf:about="http://reference.data.gov.uk/def/civil-service-job/principal-private-secretary">
+    <skos:prefLabel xml:lang="en">Principal Private Secretary</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-job"/>
+  </Job>
+  <Job rdf:about="http://reference.data.gov.uk/def/civil-service-job/private-secretary">
+    <skos:prefLabel xml:lang="en">Private Secretary</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-job"/>
+  </Job>
+  <Job rdf:about="http://reference.data.gov.uk/def/civil-service-job/procurement-officer">
+    <skos:prefLabel xml:lang="en">Procurement Officer</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-job"/>
+  </Job>
+  <Job rdf:about="http://reference.data.gov.uk/def/civil-service-job/procurement-support-officer-">
+    <skos:prefLabel xml:lang="en">Procurement Support Officer</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-job"/>
+  </Job>
+  <Job rdf:about="http://reference.data.gov.uk/def/civil-service-job/programme-manager">
+    <skos:prefLabel xml:lang="en">Programme Manager</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-job"/>
+  </Job>
+  <Job rdf:about="http://reference.data.gov.uk/def/civil-service-job/programme-officer-manager">
+    <skos:prefLabel xml:lang="en">Programme Officer Manager</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-job"/>
+  </Job>
+  <Job rdf:about="http://reference.data.gov.uk/def/civil-service-job/programme-support-officer">
+    <skos:prefLabel xml:lang="en">Programme Support Officer</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-job"/>
+  </Job>
+  <Job rdf:about="http://reference.data.gov.uk/def/civil-service-job/project-manager">
+    <skos:prefLabel xml:lang="en">Project Manager</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-job"/>
+  </Job>
+  <Job rdf:about="http://reference.data.gov.uk/def/civil-service-job/project-support-officer">
+    <skos:prefLabel xml:lang="en">Project Support Officer</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-job"/>
+  </Job>
+  <Job rdf:about="http://reference.data.gov.uk/def/civil-service-job/review-support-officer">
+    <skos:prefLabel xml:lang="en">Review Support Officer</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-job"/>
+  </Job>
+  <Job rdf:about="http://reference.data.gov.uk/def/civil-service-job/review-team-leader">
+    <skos:prefLabel xml:lang="en">Review Team Leader</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-job"/>
+  </Job>
+  <Job rdf:about="http://reference.data.gov.uk/def/civil-service-job/senior-analyst">
+    <skos:prefLabel xml:lang="en">Senior Analyst</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-job"/>
+  </Job>
+  <Job rdf:about="http://reference.data.gov.uk/def/civil-service-job/senior-communications-manager">
+    <skos:prefLabel xml:lang="en">Senior Communications Manager</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-job"/>
+  </Job>
+  <Job rdf:about="http://reference.data.gov.uk/def/civil-service-job/senior-correspondence-manager">
+    <skos:prefLabel xml:lang="en">Senior Correspondence Manager</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-job"/>
+  </Job>
+  <Job rdf:about="http://reference.data.gov.uk/def/civil-service-job/senior-economist">
+    <skos:prefLabel xml:lang="en">Senior Economist</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-job"/>
+  </Job>
+  <Job rdf:about="http://reference.data.gov.uk/def/civil-service-job/senior-finance-manager">
+    <skos:prefLabel xml:lang="en">Senior Finance Manager</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-job"/>
+  </Job>
+  <Job rdf:about="http://reference.data.gov.uk/def/civil-service-job/senior-hr-manager">
+    <skos:prefLabel xml:lang="en">Senior HR Manager</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-job"/>
+  </Job>
+  <Job rdf:about="http://reference.data.gov.uk/def/civil-service-job/senior-information-manager">
+    <skos:prefLabel xml:lang="en">Senior Information Manager</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-job"/>
+  </Job>
+  <Job rdf:about="http://reference.data.gov.uk/def/civil-service-job/senior-internal-auditor">
+    <skos:prefLabel xml:lang="en">Senior Internal Auditor</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-job"/>
+  </Job>
+  <Job rdf:about="http://reference.data.gov.uk/def/civil-service-job/senior-it-manager">
+    <skos:prefLabel xml:lang="en">Senior IT Manager</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-job"/>
+  </Job>
+  <Job rdf:about="http://reference.data.gov.uk/def/civil-service-job/senior-legal-adviser">
+    <skos:prefLabel xml:lang="en">Senior Legal Adviser</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-job"/>
+  </Job>
+  <Job rdf:about="http://reference.data.gov.uk/def/civil-service-job/senior-operational-manager">
+    <skos:prefLabel xml:lang="en">Senior Operational Manager</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-job"/>
+  </Job>
+  <Job rdf:about="http://reference.data.gov.uk/def/civil-service-job/senior-operational-researcher">
+    <skos:prefLabel xml:lang="en">Senior Operational Researcher</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-job"/>
+  </Job>
+  <Job rdf:about="http://reference.data.gov.uk/def/civil-service-job/senior-policy-adviser">
+    <skos:prefLabel xml:lang="en">Senior Policy Adviser</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-job"/>
+  </Job>
+  <Job rdf:about="http://reference.data.gov.uk/def/civil-service-job/senior-press-officer">
+    <skos:prefLabel xml:lang="en">Senior Press Officer</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-job"/>
+  </Job>
+  <Job rdf:about="http://reference.data.gov.uk/def/civil-service-job/senior-procurement-officer">
+    <skos:prefLabel xml:lang="en">Senior Procurement Officer</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-job"/>
+  </Job>
+  <Job rdf:about="http://reference.data.gov.uk/def/civil-service-job/senior-project-manager">
+    <skos:prefLabel xml:lang="en">Senior Project Manager</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-job"/>
+  </Job>
+  <Job rdf:about="http://reference.data.gov.uk/def/civil-service-job/senior-statistician">
+    <skos:prefLabel xml:lang="en">Senior Statistician</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-job"/>
+  </Job>
+  <Job rdf:about="http://reference.data.gov.uk/def/civil-service-job/senior-tax-officer">
+    <skos:prefLabel xml:lang="en">Senior Tax Officer</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-job"/>
+  </Job>
+  <Job rdf:about="http://reference.data.gov.uk/def/civil-service-job/senior-technical-adviser">
+    <skos:prefLabel xml:lang="en">Senior Technical Adviser</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-job"/>
+  </Job>
+  <Job rdf:about="http://reference.data.gov.uk/def/civil-service-job/senior-web-manager">
+    <skos:prefLabel xml:lang="en">Senior Web Manager</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-job"/>
+  </Job>
+  <Job rdf:about="http://reference.data.gov.uk/def/civil-service-job/statistical-support-officer">
+    <skos:prefLabel xml:lang="en">Statistical Support Officer</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-job"/>
+  </Job>
+  <Job rdf:about="http://reference.data.gov.uk/def/civil-service-job/statistician">
+    <skos:prefLabel xml:lang="en">Statistician</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-job"/>
+  </Job>
+  <Job rdf:about="http://reference.data.gov.uk/def/civil-service-job/tax-officer">
+    <skos:prefLabel xml:lang="en">Tax Officer</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-job"/>
+  </Job>
+  <Job rdf:about="http://reference.data.gov.uk/def/civil-service-job/tax-support-officer">
+    <skos:prefLabel xml:lang="en">Tax Support Officer</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-job"/>
+  </Job>
+  <Job rdf:about="http://reference.data.gov.uk/def/civil-service-job/technical-adviser">
+    <skos:prefLabel xml:lang="en">Technical Adviser</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-job"/>
+  </Job>
+  <Job rdf:about="http://reference.data.gov.uk/def/civil-service-job/technical-support-officer">
+    <skos:prefLabel xml:lang="en">Technical Support Officer</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-job"/>
+  </Job>
+  <Job rdf:about="http://reference.data.gov.uk/def/civil-service-job/web-manager">
+    <skos:prefLabel xml:lang="en">Web Manager</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-job"/>
+  </Job>
+</rdf:RDF>

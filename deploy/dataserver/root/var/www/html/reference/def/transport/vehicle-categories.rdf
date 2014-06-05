@@ -1,0 +1,137 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xml:base="http://transport.data.gov.uk/def/vehicle"
+>
+
+<skos:ConceptScheme rdf:about="">
+  <rdfs:label>Vehicle types</rdfs:label>
+  <skos:hasTopConcept rdf:resource="vehicle/vehicle" />
+</skos:ConceptScheme>
+
+<skos:Concept rdf:about="vehicle/vehicle">
+  <skos:prefLabel>Vehicles</skos:prefLabel>
+  <skos:narrower rdf:resource="vehicle/bicycle" />
+  <skos:narrower rdf:resource="vehicle/allMotorVehicles" />
+  <skos:inScheme rdf:resource="" />
+</skos:Concept>
+
+<skos:Concept rdf:about="vehicle/bicycle">
+  <skos:prefLabel>Bicycles</skos:prefLabel>
+  <skos:altLabel>Pedal cycles</skos:altLabel>
+  <skos:broader rdf:resource="vehicle/vehicle" />
+  <skos:inScheme rdf:resource="" />
+</skos:Concept>
+
+<skos:Concept rdf:about="vehicle/allMotorVehicles">
+  <skos:prefLabel>Motor Vehicles</skos:prefLabel>
+  <skos:broader rdf:resource="vehicle/vehicle" />
+  <skos:narrower rdf:resource="vehicle/motorbike" />
+  <skos:narrower rdf:resource="vehicle/car" />
+  <skos:narrower rdf:resource="vehicle/bus" />
+  <skos:narrower rdf:resource="vehicle/van" />
+  <skos:narrower rdf:resource="vehicle/HGV" />
+  <skos:inScheme rdf:resource="" />
+</skos:Concept>
+
+<skos:Concept rdf:about="vehicle/motorcycle">
+  <skos:prefLabel>Motorbikes</skos:prefLabel>
+  <skos:scopeNote>Includes motorcycle combinations, scooters and mopeds.</skos:scopeNote>
+  <skos:broader rdf:resource="vehicle/allMotorVehicles" />
+  <skos:inScheme rdf:resource="" />
+</skos:Concept>
+
+<skos:Concept rdf:about="vehicle/car">
+  <skos:prefLabel>Cars and Taxis</skos:prefLabel>
+  <skos:altLabel>Cars</skos:altLabel>
+  <skos:scopeNote>Includes estate cars, light vans with windows to the rear of the driver's seat, passenger vehicles with 9 or fewer seats, three-wheeled cars, motorised invalid carriages, Land Rovers, Range Rovers and Jeeps. Cars towing caravans or trailers are counted as one vehicle.</skos:scopeNote>
+  <skos:broader rdf:resource="vehicle/allMotorVehicles" />
+  <skos:inScheme rdf:resource="" />
+</skos:Concept>
+
+<skos:Concept rdf:about="vehicle/bus">
+  <skos:prefLabel>Buses and Coaches</skos:prefLabel>
+  <skos:altLabel>Buses</skos:altLabel>
+  <skos:definition>Public service vehicles and works buses, which have a gross vehicle weight greater than 3,500kgs.</skos:definition>
+  <skos:broader rdf:resource="vehicle/allMotorVehicles" />
+  <skos:inScheme rdf:resource="vehicle" />
+</skos:Concept>
+
+<skos:Concept rdf:about="vehicle/van">
+  <skos:prefLabel>Light Goods Vehicles</skos:prefLabel>
+  <skos:altLabel>Vans</skos:altLabel>
+  <skos:definition>Goods vehicles up to 3,500 kgs. gross vehicle weight.</skos:definition>
+  <skos:scopeNote>Includes all car-based vans and those of the next larger carrying capacity such as transit vans. Also included are ambulances, pickups, milk floats and pedestrian controlled motor vehicles. Most of this group are delivery vans of one type or another.</skos:scopeNote>
+  <skos:broader rdf:resource="vehicle/allMotorVehicles" />
+  <skos:inScheme rdf:resource="" />
+</skos:Concept>
+
+<skos:Concept rdf:about="vehicle/hgv">
+  <skos:prefLabel>Heavy Goods Vehicles</skos:prefLabel>
+  <skos:altLabel>HGVs</skos:altLabel>
+  <skos:definition>Goods vehicles over 3,500 kgs gross vehicle weight.</skos:definition>
+  <skos:scopeNote>Includes tractors (without trailers), road rollers, box vans and similar large vans. A two axle motor tractive unit without trailer is also included.</skos:scopeNote>
+  <skos:broader rdf:resource="vehicle/allMotorVehicles" />
+  <skos:narrower rdf:resource="vehicle/hgvr" />
+  <skos:narrower rdf:resource="vehicle/hgva" />
+  <skos:inScheme rdf:resource="" />
+</skos:Concept>
+
+<skos:Concept rdf:about="vehicle/hgvr">
+  <skos:prefLabel>Rigid Heavy Goods Vehicles</skos:prefLabel>
+  <skos:broader rdf:resource="vehicle/hgv" />
+  <skos:narrower rdf:resource="vehicle/hgvr2" />
+	<skos:narrower rdf:resource="vehicle/hgvr3" />
+	<skos:narrower rdf:resource="vehicle/hgvr4" />
+	<skos:inScheme rdf:resource="" />
+</skos:Concept>
+
+<skos:Concept rdf:about="vehicle/hgvr2">
+	<skos:prefLabel>Rigid 2-axle Heavy Goods Vehicles</skos:prefLabel>
+	<skos:broader rdf:resource="vehicle/hgvr" />
+	<skos:inScheme rdf:resource="" />
+</skos:Concept>
+
+<skos:Concept rdf:about="vehicle/hgvr3">
+	<skos:prefLabel>Rigid 3-axle Heavy Goods Vehicles</skos:prefLabel>
+	<skos:broader rdf:resource="vehicle/hgvr" />
+	<skos:inScheme rdf:resource="" />
+</skos:Concept>
+
+<skos:Concept rdf:about="vehicle/hgvr4">
+	<skos:prefLabel>Rigid 4plus-axle Heavy Goods Vehicles</skos:prefLabel>
+	<skos:broader rdf:resource="vehicle/hgvr" />
+	<skos:inScheme rdf:resource="" />
+</skos:Concept>
+
+<skos:Concept rdf:about="vehicle/hgva">
+	<skos:prefLabel>Articulated Heavy Goods Vehicles</skos:prefLabel>
+	<skos:broader rdf:resource="vehicle/hgv" />
+	<skos:narrower rdf:resource="vehicle/hgva3" />
+	<skos:narrower rdf:resource="vehicle/hgva5" />
+	<skos:narrower rdf:resource="vehicle/hgva6" />
+	<skos:inScheme rdf:resource="" />
+</skos:Concept>
+
+<skos:Concept rdf:about="vehicle/hgva3">
+	<skos:prefLabel>Articulated 3 or 4-axle Heavy Goods Vehicles</skos:prefLabel>
+	<skos:broader rdf:resource="vehicle/hgva" />
+	<skos:inScheme rdf:resource="" />
+</skos:Concept>
+
+<skos:Concept rdf:about="vehicle/hgva5">
+	<skos:prefLabel>Articulated 5-axle Heavy Goods Vehicles</skos:prefLabel>
+	<skos:broader rdf:resource="vehicle/hgva" />
+	<skos:inScheme rdf:resource="" />
+</skos:Concept>
+
+<skos:Concept rdf:about="vehicle/hgva6">
+	<skos:prefLabel>Articulated 6plus-axle Heavy Goods Vehicles</skos:prefLabel>
+	<skos:broader rdf:resource="vehicle/hgva" />
+	<skos:inScheme rdf:resource="" />
+</skos:Concept>
+
+</rdf:RDF>

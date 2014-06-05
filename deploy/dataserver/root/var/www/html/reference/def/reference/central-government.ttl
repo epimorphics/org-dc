@@ -1,0 +1,887 @@
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix dct:     <http://purl.org/dc/terms/> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix opmv:    <http://purl.org/net/opmv/ns#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix parl: <http://reference.data.gov.uk/def/parliament/> .
+@prefix payband: <http://reference.data.gov.uk/def/senior-civil-service-pay-band/> .
+@prefix : <http://reference.data.gov.uk/def/central-government/> .
+
+<http://reference.data.gov.uk/def/central-government>
+  a owl:Ontology , void:Dataset ;
+  rdfs:label "Central Government Ontology"@en ;
+  dct:title "Central Government Ontology"@en ;
+  rdfs:seeAlso
+    <http://www.direct.gov.uk/en/Governmentcitizensandrights/UKgovernment/Centralgovernmentandthemonarchy/DG_073444> ,
+    <http://www.direct.gov.uk/en/Governmentcitizensandrights/UKgovernment/Centralgovernmentandthemonarchy/DG_073446> ;
+  void:vocabulary rdfs: , owl: , : , org: , foaf: , skos: , time: , opmv: , parl: , payband: ;
+  void:exampleResource :GovernmentOrganisation , :Government , :Cabinet , :PublicBody , :MinisterialDepartment .
+
+## Classes ##
+
+# Organization Subclasses #
+
+:Government
+  a rdfs:Class ;
+  rdfs:label "Government"@en ;
+  rdfs:comment "A group of ministers, headed by a Prime Minister or First Minister. In America, this would be called an Administration. Each general election brings about the creation of a new Government."@en ;
+  rdfs:subClassOf org:Organization ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> .
+
+:DevolvedGovernment 
+  a rdfs:Class ;
+  rdfs:label "Devolved Government"@en ;
+  skos:prefLabel "Devolved Government"@en ;
+  skos:altLabel "Executive"@en ;
+  rdfs:subClassOf :Government ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> .
+
+:GovernmentOrganisation
+  a rdfs:Class ;
+  rdfs:label "Government"@en ;
+  rdfs:comment "Organisations that administer public policy. They serve Governments, and persist as organisations through multiple Governments."@en ;
+  rdfs:subClassOf org:Organization ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> .
+
+:DevolvedGovernmentOrganisation 
+  a rdfs:Class ;
+  rdfs:label "Devolved Government"@en ;
+  skos:prefLabel "Devolved Government"@en ;
+  skos:altLabel "Executive"@en ;
+  rdfs:subClassOf :GovernmentOrganisation ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> .
+
+:CivilService
+  a rdfs:Class ;
+  rdfs:label "Civil Service"@en ;
+  rdfs:comment "A civil service. In the UK there are three: the Home Civil Service, the Northern Ireland Civil Service and the Foreign Service."@en ;
+  rdfs:subClassOf org:Organization ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> .
+
+:Committee
+  a rdfs:Class ;
+  rdfs:label "Committee"@en ;
+  rdfs:comment "A committee is a kind of organisation that consists purely of meetings."@en ;
+  rdfs:subClassOf org:Organization ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> .
+
+:MinisterialCommittee
+  a rdfs:Class ;
+  rdfs:label "Ministerial Committee"@en ;
+  rdfs:comment "A committee made up of ministers."@en ;
+  rdfs:subClassOf :Committee ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> .
+
+:Cabinet
+  a rdfs:Class ;
+  rdfs:label "Cabinet"@en ;
+  skos:prefLabel "Cabinet"@en ;
+  rdfs:comment "Cabinet is the supreme decision-making body in government, dealing with the big issues of the day and the Government’s overall strategy."@en ;
+  rdfs:subClassOf :MinisterialCommittee ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> .
+
+:CabinetCommittee
+  a rdfs:Class ;
+  rdfs:label "Cabinet Committee"@en ;
+  skos:prefLabel "Cabinet Committee"@en ;
+  rdfs:comment "Cabinet committees reduce the burden on Cabinet by enabling collective decisions to be taken by a smaller group of ministers."@en ;
+  rdfs:comment "These are modelled as being units within government that report to a Cabinet."@en ;
+  rdfs:subClassOf :MinisterialCommittee , org:OrganizationalUnit ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> .
+
+:CivilServiceCommittee
+  a rdfs:Class ;
+  rdfs:label "Civil Service Committee"@en ;
+  rdfs:comment "A committee made up of civil servants."@en ;
+  rdfs:subClassOf :Committee ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> .
+
+:PublicBody
+  a rdfs:Class ;
+  rdfs:comment "A class whose for UK Government related public bodies comprised of Executive Agenices, Ministerial and Non-Ministerial Departments and Non-departmental public bodies."@en ;
+  rdfs:label "UK Public body"@en ;
+  rdfs:subClassOf org:FormalOrganization ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> ;
+  skos:prefLabel "UK Public body"@en .
+
+:Department
+  a rdfs:Class ;
+  rdfs:label "Government Department"@en ;
+  skos:prefLabel "Government Department"@en ;
+  rdfs:subClassOf :PublicBody ;
+  owl:disjointWith :NonDepartmentalPublicBody ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> ;
+  skos:note
+    <http://en.wikipedia.org/wiki/Departments_of_the_United_Kingdom_Government> ;
+  skos:note
+    <http://dbpedia.org/resource/Departments_of_the_United_Kingdom_Government> .
+
+:MinisterialDepartment
+  a rdfs:Class ;
+  rdfs:comment "Ministerial Departments are led politically by a Government Minister, normally a member of the Cabinet and cover matters that require direct political oversight."@en ;
+  rdfs:label "Ministerial department"@en ;
+  rdfs:subClassOf :PublicBody ;
+  owl:disjointWith :ExecutiveAgency , :NonMinisterialDepartment ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> ;
+  skos:prefLabel "Ministerial department"@en ;
+  skos:note
+    <http://en.wikipedia.org/wiki/Departments_of_the_United_Kingdom_Government> ;
+  rdfs:seeAlso
+    <http://dbpedia.org/resource/Departments_of_the_United_Kingdom_Government> .
+
+:NonMinisterialDepartment
+  a rdfs:Class ;
+  rdfs:comment "A non-ministerial government department is a department or ministry of a government that is not headed by a Government Minister or Government Secretary, and answers directly to a legislature"@en ;
+  rdfs:label "Non-ministerial department"@en ;
+  skos:prefLabel "Non-ministerial department"@en ;
+  rdfs:subClassOf :PublicBody ;
+  owl:disjointWith :MinisterialDepartment ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> ;
+  skos:note
+    <http://en.wikipedia.org/wiki/Non-ministerial_government_department> ;
+  skos:note
+    <http://dbpedia.org/resource/Non-ministerial_government_department> .
+
+:ExecutiveAgency
+  a rdfs:Class ;
+  rdfs:label "Executive agency"@en ;
+  rdfs:comment "An executive agency, also known as a next-step agency, is a part of a government department that is treated as managerially and budgetarily separate in order to carry out some part of the executive functions of the United Kingdom government, Scottish Government, Welsh Assembly or Northern Ireland Executive"@en ;
+  rdfs:subClassOf :PublicBody ;
+  owl:disjointWith :MinisterialDepartment , :NonDepartmentalPublicBody ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> ;
+  skos:prefLabel "Executive agency"@en ;
+  skos:note
+    <http://en.wikipedia.org/wiki/Executive_agency> ;
+  rdfs:seeAlso
+    <http://dbpedia.org/resource/Executive_agency> .
+
+:NonDepartmentalPublicBody
+  a rdfs:Class ;
+  rdfs:comment "A body which has a role in the processes of national Government, but is not a Government Department or part of one, and which accordingly operates to a greater or lesser extent at arm’s length from Ministers."@en ;
+  rdfs:label "Non-departmental public body"@en ;
+  skos:prefLabel "Non-departmental public body"@en ;
+  skos:altLabel "NDPB"@en ;
+  rdfs:subClassOf :PublicBody ;
+  owl:disjointWith :Department , :ExecutiveAgency ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> ;
+  skos:note
+    <http://en.wikipedia.org/wiki/Non-departmental_public_body> ;
+  rdfs:seeAlso
+    <http://dbpedia.org/resource/Non-departmental_public_body> .
+
+:AdvisoryNDPB
+  a rdfs:Class ;
+  rdfs:comment "Advisory NDPBs – provide independent, expert advice to Ministers on a wide range of issues.  Examples include the Low Pay Commission and the Committee on Standards in Public Life;"@en ;
+  rdfs:label "Advisory NDPB"@en ;
+  rdfs:subClassOf :NonDepartmentalPublicBody ;
+  owl:disjointWith :TribunalNDPB , :ExecutiveNDPB , :MonitoringNDPB ;
+  skos:prefLabel "Advisory NDPB"@en ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> ;
+  skos:note
+    <http://en.wikipedia.org/wiki/Non-departmental_public_body#Advisory_NDPBs> .
+
+:ExecutiveNDPB
+  a rdfs:Class ;
+  rdfs:comment "Typically established in statute and carrying out executive, administrative, regulatory and/or commercial functions.Examples include the Environment Agency, Regional Development Agencies and national museums and galleries"@en ;
+  rdfs:label "Executive NDPB"@en ;
+  rdfs:subClassOf :NonDepartmentalPublicBody ;
+  owl:disjointWith :TribunalNDPB , :MonitoringNDPB , :AdvisoryNDPB ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> ;
+  skos:prefLabel "Executive NDPB"@en ;
+  skos:note
+    <http://en.wikipedia.org/wiki/Non-departmental_public_body#Executive_NDPBs> ,
+    <http://en.wikipedia.org/wiki/Departments_of_the_United_Kingdom_Government> .
+
+:MonitoringNDPB
+  a rdfs:Class ;
+  rdfs:comment "Independent Monitoring Boards of Prisons, Immigration Removal Centres and Immigration Holding Rooms formerly known as Boards of Visitors, these are independent watchdogs of the prison system."@en ;
+  rdfs:label "Monitoring NDPBs"@en ;
+  rdfs:subClassOf :NonDepartmentalPublicBody ;
+  owl:disjointWith :TribunalNDPB , :ExecutiveNDPB , :AdvisoryNDPB ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> ;
+  skos:prefLabel "Monitoring NDPBs"@en ;
+  skos:note
+    <http://en.wikipedia.org/wiki/Non-departmental_public_body#Independent_monitoring_boards> .
+
+:TribunalNDPB
+  a rdfs:Class ;
+  rdfs:comment "Tribunal NDPBs have jurisdiction in a specialised field of law. Examples include Valuation Tribunals."@en ;
+  rdfs:label "Tribunal NDPB"@en ;
+  rdfs:subClassOf :NonDepartmentalPublicBody ;
+  owl:disjointWith :ExecutiveNDPB , :MonitoringNDPB , :AdvisoryNDPB ;
+  skos:prefLabel "Tribunal NDPB"@en ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> ;
+  skos:note
+    <http://en.wikipedia.org/wiki/Non-departmental_public_body#Tribunal_NDPBs> .
+
+:Secretariat
+  a rdfs:Class ;
+  rdfs:label "Secretariat"@en ;
+  rdfs:comment "An organisation that provides advice and support to another organisation, often a committee."@en ;
+  rdfs:subClassOf org:Organization ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> .
+
+## Posts ##
+
+:Post
+  a rdfs:Class ;
+  rdfs:label "Post"@en ;
+  rdfs:comment "A post that may be occupied by a one or more individuals at a time. This is used for when people are members of organisations ex officio. For example, the Secretary of State for Scotland attends Cabinet by virtue of being the Secretary of State for Scotland, not as an individual person."@en ;
+  skos:editorialNote "This is a subclass of org:Organization by virtue of the fact that a post may have multiple holders at the same time, or over a period of time."@en ;
+  rdfs:subClassOf org:Organization ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> .
+
+:CorporationSole
+  a rdfs:Class ;
+  rdfs:label "Corporation Sole"@en ;
+  rdfs:comment "A legal entity consisting of a single ('sole') incorporated office, occupied by a single ('sole') man or woman."@en ;
+  skos:editorialNote "This is a subclass of org:FormalOrganization by virtue of the fact that it has multiple members over a period of time, though by definition it only has one member at any one time."@en ;
+  rdfs:subClassOf org:FormalOrganization , :Post ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Corporation_sole> .
+
+:Tenure
+  a rdfs:Class ;
+  rdfs:label "Tenure"@en ;
+  rdfs:comment "The tenure of an individual in a particular Post. This is used to provide some extra information about the period of time during which an individual held a post, or the salary they received, and so on."@en ;
+  rdfs:subClassOf org:Membership ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> .
+
+# Ministerial Post #
+
+:GreatOfficerOfState
+  a rdfs:Class ;
+  rdfs:label "Great Officer of State"@en ;
+  rdfs:subClassOf :Post ;
+  skos:note <http://en.wikipedia.org/wiki/Great_Officer_of_State> ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Great_Officer_of_State> ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> .
+
+:Minister
+  a rdfs:Class ;
+  skos:prefLabel "Minister"@en ;
+  skos:altLabel "Minister of the Crown"@en ;
+  rdfs:subClassOf :Post ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> .
+
+:PrincipalSecretaryOfState
+  a rdfs:Class ;
+  rdfs:label "Principal Secretary of State"@en ;
+  skos:prefLabel "Principal Secretary of State"@en ;
+  skos:altLabel "Her Majesty's Principal Secretary of State"@en ;
+  rdfs:comment "Principal Secretaries of State are the highest-ranking ministers in the government, and most government departments have one Principal Secretary of State (or more). Most Principal Secretaries of State are titled 'Secretary of State' – although some have traditional titles, such as the Chancellor of the Exchequer and the Chief Whip."@en ;
+  rdfs:subClassOf :Minister ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> .
+
+:MinisterOfState
+  a rdfs:Class ;
+  rdfs:label "Minister of State"@en ;
+  rdfs:subClassOf :Minister ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> .
+
+:ParliamentaryUnderSecretary
+  a rdfs:Class ;
+  rdfs:label "Parliamentary Under-Secretary"@en ;
+  rdfs:subClassOf :Minister ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> .
+
+# Other Roles #
+
+:HonorificPost
+  a rdfs:Class ;
+  rdfs:label "Honorific Post"@en ;
+  rdfs:subClassOf :Post ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> .
+
+:Sinecure
+  a rdfs:Class ;
+  rdfs:label "Sinecure"@en ;
+  rdfs:subClassOf :Post ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> .
+
+# Home Civil Service Posts #
+
+:CivilServicePost
+  a rdfs:Class ;
+  rdfs:label "Civil Service Post"@en ;
+  rdfs:comment "A post within the civil service"@en ;
+  rdfs:subClassOf :Post ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> .
+
+:SeniorCivilServicePost
+  a rdfs:Class ;
+  rdfs:label "Senior Civil Service Post"@en ;
+  rdfs:comment "A senior post within the civil service"@en ;
+  rdfs:subClassOf :CivilServicePost ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> .
+
+:PermanentSecretary
+  a rdfs:Class ;
+  rdfs:label "Permanent Secretary"@en ;
+  rdfs:comment "The most senior civil servant in a department is a permanent secretary. Each supports the government minister who heads their department and who is accountable to Parliament for the department’s actions and performance."@en ;
+  rdfs:subClassOf :SeniorCivilServicePost ;
+  rdfs:seeAlso <http://www.civilservice.gov.uk/about/leadership/index.aspx> ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> ;
+  rdfs:subClasssOf [
+    a owl:Restriction ;
+    owl:onProperty payband:payBand ;
+    owl:hasValue payband:PermSec 
+  ] .
+
+:DirectorGeneral
+  a rdfs:Class ;
+  rdfs:label "Director General"@en ;
+  rdfs:subClassOf :SeniorCivilServicePost ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> ;
+  rdfs:subClasssOf [
+    a owl:Restriction ;
+    owl:onProperty payband:payBand ;
+    owl:hasValue payband:SCS3 
+  ] .
+
+:Director
+  a rdfs:Class ;
+  rdfs:label "Director"@en ;
+  rdfs:subClassOf :SeniorCivilServicePost ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> ;
+  rdfs:subClasssOf [
+    a owl:Restriction ;
+    owl:onProperty payband:payBand ;
+    owl:hasValue payband:SCS2 
+  ] .
+
+:DeputyDirector
+  a rdfs:Class ;
+  rdfs:label "Deputy Director"@en ;
+  rdfs:subClassOf :SeniorCivilServicePost ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> ;
+  rdfs:subClasssOf [
+    a owl:Restriction ;
+    owl:onProperty payband:payBand ;
+    owl:hasValue payband:SCS1 
+  ] .
+
+:Counsel
+  a rdfs:Class ;
+  rdfs:label "Parliamentary Counsel"@en ;
+  rdfs:subClassOf :SeniorCivilServicePost ;
+  rdfs:seeAlso <http://en.wikipedia.org/wiki/Parliamentary_Counsel> ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> .
+
+:ParliamentaryCounsel
+  a rdfs:Class ;
+  rdfs:label "Parliamentary Counsel"@en ;
+  rdfs:subClassOf :Counsel ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> ;
+  rdfs:subClasssOf [
+    a owl:Restriction ;
+    owl:onProperty payband:payBand ;
+    owl:hasValue payband:SCS3
+  ] .
+
+:DeputyParliamentaryCounsel
+  a rdfs:Class ;
+  rdfs:label "Deputy Parliamentary Counsel"@en ;
+  rdfs:subClassOf :Counsel ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> ;
+  rdfs:subClasssOf [
+    a owl:Restriction ;
+    owl:onProperty payband:payBand ;
+    owl:hasValue payband:SCS2
+  ] .
+
+:SeniorAssistantParliamentaryCounsel
+  a rdfs:Class ;
+  rdfs:label "Senior Assistant Parliamentary Counsel"@en ;
+  rdfs:subClassOf :Counsel ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> ;
+  rdfs:subClasssOf [
+    a owl:Restriction ;
+    owl:onProperty payband:payBand ;
+    owl:hasValue payband:SCS1A
+  ] .
+
+:AssistantParliamentaryCounsel
+  a rdfs:Class ;
+  rdfs:label "Assistant Parliamentary Counsel"@en ;
+  rdfs:subClassOf :Counsel ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> .
+
+## Change Events ##
+
+:MachineryOfGovernmentChangeEvent
+  a rdfs:Class ;
+  rdfs:label "Machinery of Government Change"@en ;
+  rdfs:comment "A change in one or more public bodies that may involve a renaming, a reallocation of responsibilities, the transfer of a unit, or various other changes that take place within government structure. Often these changes don't bring about "@en ;
+  rdfs:subClassOf org:ChangeEvent ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> .
+
+## Other Classes ##
+
+:SalaryRange a rdfs:Class ;
+  rdfs:label "Salary Range"@en ;
+  rdfs:comment "A salary range."@en ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> .
+
+:WorkingTime a rdfs:Class ;
+  rdfs:label "Working Time"@en ;
+  rdfs:comment "A representation of the amount that someone works."@en ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> .
+
+:NonDisclosure a rdfs:Class ;
+  rdfs:label "Non-Disclosure"@en ;
+  rdfs:comment "A representation of the non-disclosure of a piece of information."@en ;
+  rdfs:subClassOf rdf:Statement ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> .
+
+## Properties ##
+
+# Government related properties #
+
+:governmentOrganisationOf
+  a rdf:Property , owl:ObjectProperty ;
+  rdfs:subPropertyOf org:linkedTo ;
+  rdfs:label "Government Organisation Of"@en ;
+  rdfs:comment "The legislature that this government organisation is associated with."@en ;
+  rdfs:domain :GovernmentOrganisation ;
+  rdfs:range parl:Legislature ;
+  owl:inverseOf parl:legislatureOf ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> .
+
+:devolvesTo
+  a rdf:Property , owl:ObjectProperty ;
+  rdfs:subPropertyOf org:linkedTo ;
+  rdfs:label "Devolves To"@en ;
+  rdfs:comment "A devolved government organisation that this government organisation devolves power to."@en ;
+  rdfs:domain :GovernmentOrganisation ;
+  rdfs:range :DevolvedGovernmentOrganisation ;
+  owl:inverseOf :devolvedFrom ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> .
+
+:devolvedFrom
+  a rdf:Property , owl:ObjectProperty ;
+  rdfs:subPropertyOf org:linkedTo ;
+  rdfs:label "Devolved From"@en ;
+  rdfs:comment "A government organisation that this devolved government organisation is devolved from."@en ;
+  rdfs:domain :DevolvedGovernmentOrganisation ;
+  rdfs:range :GovernmentOrganisation ;
+  owl:inverseOf :devolvesTo ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> .
+
+:formedAt
+  a rdf:Property , owl:ObjectProperty ;
+  rdfs:subPropertyOf opmv:wasGeneratedAt ;
+  rdfs:label "Formed At"@en ;
+  rdfs:comment "The time at which the Government was formed."@en ;
+  rdfs:domain :Government ;
+  rdfs:range time:Instant ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> .
+
+:serves
+  a rdf:Property , owl:ObjectProperty ;
+  rdfs:subPropertyOf org:linkedTo ;
+  rdfs:label "Serves"@en ;
+  rdfs:comment "The Government that this government (as an organisation) serves."@en ;
+  rdfs:domain :GovernmentOrganisation ;
+  rdfs:range :Government ;
+  owl:inverseOf :servedBy ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> .
+
+:servedBy
+  a rdf:Property , owl:ObjectProperty ;
+  rdfs:subPropertyOf org:linkedTo ;
+  rdfs:label "Served By"@en ;
+  rdfs:comment "The government (organisation) that this Government is served by."@en ;
+  rdfs:domain :Government ;
+  rdfs:range :GovernmentOrganisation ;
+  owl:inverseOf :serves ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> .
+
+:headOfGovernment
+  a rdf:Property , owl:ObjectProperty ;
+  rdfs:subPropertyOf org:headOf ;
+  rdfs:label "Head of Government"@en ;
+  rdfs:comment "The government that this person (the Prime Minister or First Minister) is the head of."@en ;
+  rdfs:domain foaf:Person ;
+  rdfs:range :Government ;
+  owl:inverseOf :hasGovernmentHead ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> .
+
+:hasGovernmentHead
+  a rdf:Property , owl:ObjectProperty ;
+  rdfs:subPropertyOf org:hasMember ;
+  rdfs:label "Head of Government"@en ;
+  rdfs:comment "The head of this government (the Prime Minister or First Minister)."@en ;
+  rdfs:domain :Government ;
+  rdfs:range foaf:Person ;
+  owl:inverseOf :headOfGovernment ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> .
+
+:deputyHeadOfGovernment
+  a rdf:Property , owl:ObjectProperty ;
+  rdfs:subPropertyOf org:memberOf ;
+  rdfs:label "Deputy Head of Government"@en ;
+  rdfs:comment "The government that this person (the Deputy Prime Minister or Deputy First Minister) is the head of."@en ;
+  rdfs:domain foaf:Person ;
+  rdfs:range :Government ;
+  owl:inverseOf :hasGovernmentDeputyHead ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> .
+
+:hasGovernmentDeputyHead
+  a rdf:Property , owl:ObjectProperty ;
+  rdfs:subPropertyOf org:hasMember ;
+  rdfs:label "Deputy Head of Government"@en ;
+  rdfs:comment "The deputy head of this government (the Deputy Prime Minister or Deputy First Minister)."@en ;
+  rdfs:domain :Government ;
+  rdfs:range foaf:Person ;
+  owl:inverseOf :deputyHeadOfGovernment ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> .
+
+# Committee related properties #
+
+:chairOf
+  a rdf:Property , owl:ObjectProperty ;
+  rdfs:subPropertyOf org:headOf ;
+  rdfs:label "Chairs"@en ;
+  rdfs:comment "The committee that this person chairs."@en ;
+  rdfs:domain foaf:Person ;
+  rdfs:range :Committee ;
+  owl:inverseOf :hasChair ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> .
+
+:hasChair
+  a rdf:Property , owl:ObjectProperty ;
+  rdfs:subPropertyOf org:hasMember ;
+  rdfs:label "Chair"@en ;
+  rdfs:comment "The chair of this committee."@en ;
+  rdfs:domain :Committee ;
+  rdfs:range foaf:Person ;
+  owl:inverseOf :chairOf ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> .
+
+:deputyChairOf
+  a rdf:Property , owl:ObjectProperty ;
+  rdfs:subPropertyOf org:memberOf ;
+  rdfs:label "Deputy Chair Of"@en ;
+  rdfs:comment "The committee that this person is the deputy chair of."@en ;
+  rdfs:domain foaf:Person ;
+  rdfs:range :Committee ;
+  owl:inverseOf :hasDeputyChair ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> .
+
+:hasDeputyChair
+  a rdf:Property , owl:ObjectProperty ;
+  rdfs:subPropertyOf org:hasMember ;
+  rdfs:label "Deputy Chair"@en ;
+  rdfs:comment "The deputy chair of this committee."@en ;
+  rdfs:domain :Committee ;
+  rdfs:range foaf:Person ;
+  owl:inverseOf :deputyChairOf ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> .
+
+:supports
+  a rdf:Property , owl:ObjectProperty ;
+  rdfs:subPropertyOf org:linkedTo ;
+  rdfs:label "Supports"@en ;
+  rdfs:comment "This organisation provides support the object organisation."@en ;
+  rdfs:domain org:Organization ;
+  rdfs:range org:Organization ;
+  owl:inverseOf :supportedBy ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> .
+
+:supportedBy
+  a rdf:Property , owl:ObjectProperty ;
+  rdfs:subPropertyOf org:linkedTo ;
+  rdfs:label "Supported By"@en ;
+  rdfs:comment "This organisation is supported by object organisation."@en ;
+  rdfs:domain org:Organization ;
+  rdfs:range org:Organization ;
+  owl:inverseOf :supports ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> .
+
+:termsOfReference
+  a rdf:Property ;
+  rdfs:label "Terms of Reference"@en ;
+  rdfs:comment "The terms of reference for a committee."@en ;
+  skos:editorialNote "The range of gov:termsOfReference is kept deliberately open; it could be a literal string or a reference to a separate document as appropriate."@en ;
+  rdfs:domain :Committee ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> .
+
+# Cabinet related properties #
+
+:hasCabinet
+  a rdf:Property , owl:ObjectProperty ;
+  rdfs:subPropertyOf org:hasUnit ;
+  rdfs:label "Cabinet"@en ;
+  rdfs:comment "The cabinet of this government."@en ;
+  rdfs:domain :Government ;
+  rdfs:range :Cabinet ;
+  owl:inverseOf :cabinetOf ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> .
+
+:cabinetOf
+  a rdf:Property , owl:ObjectProperty ;
+  rdfs:subPropertyOf org:unitOf ;
+  rdfs:label "Cabinet Of"@en ;
+  rdfs:comment "The government or executive that this is the cabinet of."@en ;
+  rdfs:domain :Cabinet ;
+  rdfs:range :Government ;
+  owl:inverseOf :hasCabinet ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> .
+
+:memberOfCabinet
+  a rdf:Property , owl:ObjectProperty ;
+  rdfs:subPropertyOf org:memberOf ;
+  rdfs:label "Member of Cabinet"@en ;
+  rdfs:comment "The cabinet that this person a member of."@en ;
+  rdfs:domain :Post ;
+  rdfs:range :Cabinet ;
+  owl:inverseOf :hasCabinetMember ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> .
+
+:hasCabinetMember
+  a rdf:Property , owl:ObjectProperty ;
+  rdfs:subPropertyOf org:memberOf ;
+  rdfs:label "Member of Cabinet"@en ;
+  rdfs:comment "A member of this cabinet."@en ;
+  rdfs:domain :Cabinet ;
+  rdfs:range :Post ;
+  owl:inverseOf :memberOfCabinet ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> .
+
+:attendsCabinet
+  a rdf:Property , owl:ObjectProperty ;
+  rdfs:subPropertyOf org:memberOf ;
+  rdfs:label "Attends Cabinet"@en ;
+  rdfs:comment "The cabinet that this person attends (not as a full member)."@en ;
+  rdfs:domain :Post ;
+  rdfs:range :Cabinet ;
+  owl:inverseOf :hasCabinetAttendee ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> .
+
+:hasCabinetAttendee
+  a rdf:Property , owl:ObjectProperty ;
+  rdfs:subPropertyOf org:memberOf ;
+  rdfs:label "Cabinet Attendee"@en ;
+  rdfs:comment "An attendee of this cabinet."@en ;
+  rdfs:domain :Cabinet ;
+  rdfs:range :Post ;
+  owl:inverseOf :attendsCabinet ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> .
+
+# Cabinet committee related properties #
+
+:hasCabinetCommittee
+  a rdf:Property , owl:ObjectProperty ;
+  rdfs:subPropertyOf org:hasUnit ;
+  rdfs:label "Cabinet Committee"@en ;
+  rdfs:comment "A cabinet committee for this government."@en ;
+  rdfs:domain :Government ;
+  rdfs:range :CabinetCommittee ;
+  owl:inverseOf :cabinetCommitteeOf ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> .
+
+:cabinetCommitteeOf
+  a rdf:Property , owl:ObjectProperty ;
+  rdfs:subPropertyOf org:unitOf ;
+  rdfs:label "Cabinet Committee Of"@en ;
+  rdfs:comment "The government that this is a cabinet committee for."@en ;
+  rdfs:domain :CabinetCommittee ;
+  rdfs:range :Government ;
+  owl:inverseOf :hasCabinetCommittee ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> .
+
+# Post related properties #
+
+:holdsPost
+  a rdf:Property , owl:ObjectProperty ;
+  rdfs:label "Post"@en ;
+  rdfs:comment "Indicates a post held by someone."@en ;
+  rdfs:subPropertyOf org:memberOf ;
+  rdfs:domain foaf:Agent ;
+  rdfs:range :Post ;
+  owl:inverseOf :heldBy ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> .
+
+:heldBy
+  a rdf:Property , owl:ObjectProperty ;
+  rdfs:label "Postholder"@en ;
+  rdfs:comment "Indicates the agent who holds the post."@en ;
+  rdfs:subPropertyOf org:hasMember ;
+  rdfs:domain :Post ;
+  rdfs:range foaf:Agent ;
+  owl:inverseOf :holdsPost ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> .
+
+:postIn
+  a rdf:Property , owl:ObjectProperty ;
+  rdfs:label "Organisation"@en ;
+  rdfs:comment "Indicates the organisation that this is a post within."@en ;
+  rdfs:subPropertyOf org:memberOf ;
+  rdfs:domain :Post ;
+  rdfs:range org:Organization ;
+  owl:inverseOf :hasPost ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> .
+
+:hasPost
+  a rdf:Property , owl:ObjectProperty ;
+  rdfs:label "Post"@en ;
+  rdfs:comment "Indicates a post within the organisation."@en ;
+  rdfs:subPropertyOf org:memberOf ;
+  rdfs:domain org:Organization ;
+  rdfs:range :Post ;
+  owl:inverseOf :postIn ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> .
+
+:tenure
+  a rdf:Property , owl:ObjectProperty ;
+  rdfs:label "Tenure"@en ;
+  rdfs:comment "A description of the relationship between an individual and the post that they occupy."@en ;
+  rdfs:subPropertyOf org:hasMembership ;
+  rdfs:domain foaf:Agent ;
+  rdfs:range :Tenure ;
+  owl:inverseOf :postholder ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> .
+
+:postholder
+  a rdf:Property , owl:ObjectProperty ;
+  rdfs:label "Postholder"@en ;
+  rdfs:comment "The postholder in this Tenure"@en ;
+  rdfs:subPropertyOf org:member ;
+  rdfs:domain :Tenure ;
+  rdfs:range foaf:Agent ;
+  owl:inverseOf :tenure ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> .
+
+:post
+  a rdf:Property , owl:ObjectProperty ;
+  rdfs:label "Post"@en ;
+  rdfs:comment "The post held in this Tenure"@en ;
+  rdfs:subPropertyOf org:organization ;
+  rdfs:domain :Tenure ;
+  rdfs:range :Post ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> .
+
+
+
+# Department related properties #
+
+:parentDepartment
+  a rdf:Property , owl:FunctionalProperty , owl:ObjectProperty ;
+  rdfs:comment "A relation between an NDPB or an Executive Agency and their parent Government Department."@en ;
+  rdfs:label "parent department"@en ;
+  rdfs:subPropertyOf org:linkedTo ;
+  rdfs:domain [ 
+    a rdfs:Class ;
+    owl:unionOf (:ExecutiveAgency :NonDepartmentalPublicBody)
+  ] ;
+  rdfs:range :Department ;
+  owl:inverseOf :relatedBody ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> ;
+  skos:prefLabel "parent department"@en .
+
+:relatedBody
+  a rdf:Property , owl:ObjectProperty ;
+  rdfs:label "related body"@en ;
+  rdfs:comment "A relation between Minsiterial Departments and their associated Executive Agencies and NDPBs"@en ;
+  rdfs:subPropertyOf org:linkedTo ;
+  rdfs:domain :MinisterialDepartment ;
+  rdfs:range [ 
+    a rdfs:Class ;
+    owl:unionOf (:ExecutiveAgency :NonDepartmentalPublicBody)
+  ] ;
+  owl:inverseOf :parentDepartment ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> ;
+  skos:prefLabel "related body"@en .
+
+# Salary-related properties #
+
+:salary a rdf:Property , owl:DatatypeProperty ;
+  rdfs:label "Salary"@en ;
+  rdfs:domain org:Membership ;
+  rdfs:range xsd:decimal ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> .
+
+:salaryRange a rdf:Property , owl:ObjectProperty ;
+  rdfs:label "Salary Range"@en ;
+  rdfs:range :SalaryRange ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> .
+
+:fullTimeEquivalentSalary a rdf:Property , owl:ObjectProperty ;
+  rdfs:label "Full-time Equivalent Salary"@en ;
+  rdfs:subPropertyOf org:remuneration , :salaryRange ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> ;
+  rdfs:domain org:Membership ;
+  rdfs:range :SalaryRange .
+
+:salaryExcludingBenefits a rdf:Property , owl:ObjectProperty ;
+  rdfs:label "Salary Excluding Benefits"@en ;
+  rdfs:comment "Salary, not including taxable benefits, and not adjusted based on working time."@en ;
+  rdfs:subPropertyOf org:remuneration , :salaryRange ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> ;
+  rdfs:domain org:Membership ;
+  rdfs:range :SalaryRange .
+
+:salaryIncludingBenefits a rdf:Property , owl:ObjectProperty ;
+  rdfs:label "Salary Including Benefits"@en ;
+  rdfs:comment "Salary including taxable benefits, not adjusted based on working time."@en ;
+  rdfs:subPropertyOf org:remuneration , :salaryRange ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> ;
+  rdfs:domain org:Membership ;
+  rdfs:range :SalaryRange .
+
+:currency a rdf:Property , owl:ObjectProperty ;
+  rdfs:label "Currency"@en ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> ;
+  rdfs:domain :SalaryRange ;
+  rdfs:range skos:Concept .
+
+:lowerBound a rdf:Property , owl:DatatypeProperty ;
+  rdfs:label "Lower Bound"@en ;
+  rdfs:comment "The lower bound of a salary range."@en ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> ;
+  rdfs:domain :SalaryRange ;
+  rdfs:range xsd:decimal .
+
+:upperBound a rdf:Property , owl:DatatypeProperty ;
+  rdfs:label "Upper Bound"@en ;
+  rdfs:comment "The upper bound of a salary range."@en ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> ;
+  rdfs:domain :SalaryRange ;
+  rdfs:range xsd:decimal .
+
+# Working time related properties #
+
+:fullTimeEquivalent a rdf:Property , owl:DatatypeProperty ;
+  rdfs:label "Full-Time Equivalent"@en ;
+  rdfs:comment "The amount of time spent by the postholder in the post; a full-time equivalent of 1 indicates a full-time post."@en ;
+  rdfs:domain org:Membership ;
+  rdfs:range xsd:decimal ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> .
+
+:workingTime a rdf:Property , owl:ObjectProperty ;
+  rdfs:label "Working Time"@en ;
+  rdfs:comment "The contracted minimum working time for the position."@en ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> ;
+  rdfs:domain org:Membership ;
+  rdfs:range :WorkingTime .
+
+:timePeriod a rdf:Property , owl:ObjectProperty ;
+  rdfs:label "Time Period"@en ;
+  rdfs:comment "The amount of time spent working."@en ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> ;
+  rdfs:domain :WorkingTime ;
+  rdfs:range time:DurationDescription .
+
+:forEvery a rdf:Property , owl:ObjectProperty ;
+  rdfs:label "For Every"@en ;
+  rdfs:comment "The base period over which the amount of time spent working is measured."@en ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/central-government> ;
+  rdfs:domain :WorkingTime ;
+  rdfs:range time:DurationDescription .

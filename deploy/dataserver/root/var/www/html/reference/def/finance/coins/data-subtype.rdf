@@ -1,0 +1,962 @@
+<rdf:RDF
+    xmlns:sdmx-subject="http://purl.org/linked-data/sdmx/2009/subject#"
+    xmlns:sdmx-dimension="http://purl.org/linked-data/sdmx/2009/dimension#"
+    xmlns:sdmx-measure="http://purl.org/linked-data/sdmx/2009/measure#"
+    xmlns:coins-dsd="http://finance.data.gov.uk/dsd/coins/"
+    xmlns:j.0="http://www.epimorphics.com/vocabs/coins-generate#"
+    xmlns:coins-attribute="http://finance.data.gov.uk/dsd/coins/attribute/"
+    xmlns:sdmx-concept="http://purl.org/linked-data/sdmx/2009/concept#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:j.1="http://reference.data.gov.uk/def/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:sdmx-attribute="http://purl.org/linked-data/sdmx/2009/attribute#"
+    xmlns:coins-dimension="http://finance.data.gov.uk/dsd/coins/dimension/"
+    xmlns:coins-data="http://source.data.gov.uk/data/coins/"
+    xmlns:void="http://rdfs.org/ns/void#"
+    xmlns:coins-measure="http://finance.data.gov.uk/dsd/coins/measure/"
+    xmlns:coins-slicekey="http://finance.data.gov.uk/dsd/coins/slice/"
+    xmlns:sdmx="http://purl.org/linked-data/sdmx#"
+    xmlns:sdmx-code="http://purl.org/linked-data/sdmx/2009/code#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:j.2="http://finance.data.gov.uk/def/coins/"
+    xmlns:qb="http://purl.org/linked-data/cube#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <rdfs:Class rdf:about="http://finance.data.gov.uk/def/coins/DataSubtype">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:label xml:lang="en">data subtype values class</rdfs:label>
+    <skos:prefLabel xml:lang="en">data subtype values class</skos:prefLabel>
+    <rdfs:comment>The class of values in the data subtype code-list scheme</rdfs:comment>
+  </rdfs:Class>
+  <sdmx:Concept rdf:about="http://finance.data.gov.uk/def/coins/statistical-concept/data-subtype">
+    <rdfs:label xml:lang="en">data subtype</rdfs:label>
+    <skos:prefLabel xml:lang="en">data subtype</skos:prefLabel>
+    <rdfs:comment>This gives information about the reason why data was loaded onto COINS. It also describes the status of the data. Statuses are:
+    * Draft – data that are provisional, or in the process of being entered. Draft data never forms part of published outputs.
+    * Submitted – for Plans and Outturn, this is an intermediate stage in which adjustments have been finalised by the department but not yet checked by a Treasury spending team. For Forecast Outturn data, this represents the final status of the data.
+    * Approved – for Plans and Outturn, this indicates data which has been submitted by a department and then approved by a Treasury spending team.
+    </rdfs:comment>
+    <dcterms:source rdf:resource="http://www.hm-treasury.gov.uk/d/coins_guidance.pdf"/>
+    <j.0:columnName>data_subtype</j.0:columnName>
+  </sdmx:Concept>
+  <skos:ConceptScheme rdf:about="http://finance.data.gov.uk/def/coins/data-subtype">
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/oh">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Outturn Historical</rdfs:label>
+        <skos:prefLabel xml:lang="en">Outturn Historical</skos:prefLabel>
+        <skos:notation>oh</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/draft"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/dipcaa">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Dept Internal Policy Change Approved Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">Dept Internal Policy Change Approved Adjustments</skos:prefLabel>
+        <skos:notation>dipcaa</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/approved"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/odirda">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Outturn Dept Internal Restructuring Draft Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">Outturn Dept Internal Restructuring Draft Adjustments</skos:prefLabel>
+        <skos:notation>odirda</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/draft"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/odda">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Outturn Departmental Draft Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">Outturn Departmental Draft Adjustments</skos:prefLabel>
+        <skos:notation>odda</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/draft"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/cfaa">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Challenge Funds Approved Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">Challenge Funds Approved Adjustments</skos:prefLabel>
+        <skos:notation>cfaa</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/approved"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/oeda">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Outturn Editorial Draft Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">Outturn Editorial Draft Adjustments</skos:prefLabel>
+        <skos:notation>oeda</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/draft"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/omaa">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Outturn MOG Approved Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">Outturn MOG Approved Adjustments</skos:prefLabel>
+        <skos:notation>omaa</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/approved"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/omsa">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Outturn MOG Submitted Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">Outturn MOG Submitted Adjustments</skos:prefLabel>
+        <skos:notation>omsa</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/draft"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/draa">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Discount Rate Approved Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">Discount Rate Approved Adjustments</skos:prefLabel>
+        <skos:notation>draa</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/approved"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/spsa">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Spending Policy Submitted Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">Spending Policy Submitted Adjustments</skos:prefLabel>
+        <skos:notation>spsa</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/draft"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/onbrsa">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Outturn New Budget Regime Submitted Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">Outturn New Budget Regime Submitted Adjustments</skos:prefLabel>
+        <skos:notation>onbrsa</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/draft"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/odiraa">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Outturn Dept Internal Restructuring Approved Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">Outturn Dept Internal Restructuring Approved Adjustments</skos:prefLabel>
+        <skos:notation>odiraa</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/approved"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/oefsbraa">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Outturn Excluded From Supps - Budget Regime Approved Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">Outturn Excluded From Supps - Budget Regime Approved Adjustments</skos:prefLabel>
+        <skos:notation>oefsbraa</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/approved"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/sssa">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Sector Switch Submitted Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">Sector Switch Submitted Adjustments</skos:prefLabel>
+        <skos:notation>sssa</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/draft"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/pefsbrsa">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Plans Excluded From Supps - Budget Regime Submitted Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">Plans Excluded From Supps - Budget Regime Submitted Adjustments</skos:prefLabel>
+        <skos:notation>pefsbrsa</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/draft"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/fosa">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Forecast Outturn Submitted Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">Forecast Outturn Submitted Adjustments</skos:prefLabel>
+        <skos:notation>fosa</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/draft"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/afda">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">AME Forecast Draft Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">AME Forecast Draft Adjustments</skos:prefLabel>
+        <skos:notation>afda</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/draft"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/tuoda">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Treasury Use Only Draft Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">Treasury Use Only Draft Adjustments</skos:prefLabel>
+        <skos:notation>tuoda</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/draft"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/oeaa">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Outturn Editorial Approved Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">Outturn Editorial Approved Adjustments</skos:prefLabel>
+        <skos:notation>oeaa</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/approved"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/oidcsa">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Outturn Internal Dept Corrections Submitted Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">Outturn Internal Dept Corrections Submitted Adjustments</skos:prefLabel>
+        <skos:notation>oidcsa</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/draft"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/oefsbrda">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Outturn Excluded From Supps - Budget Regime Draft Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">Outturn Excluded From Supps - Budget Regime Draft Adjustments</skos:prefLabel>
+        <skos:notation>oefsbrda</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/draft"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/psesa">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Plans Supplementary Estimates Submitted Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">Plans Supplementary Estimates Submitted Adjustments</skos:prefLabel>
+        <skos:notation>psesa</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/draft"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/otuosa">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Outturn Treasury Use Only Submitted Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">Outturn Treasury Use Only Submitted Adjustments</skos:prefLabel>
+        <skos:notation>otuosa</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/draft"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/rcsa">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Reserve Claims Submitted Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">Reserve Claims Submitted Adjustments</skos:prefLabel>
+        <skos:notation>rcsa</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/draft"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/cfda">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Challenge Funds Draft Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">Challenge Funds Draft Adjustments</skos:prefLabel>
+        <skos:notation>cfda</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/draft"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/pseda">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Plans Supplementary Estimates Draft Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">Plans Supplementary Estimates Draft Adjustments</skos:prefLabel>
+        <skos:notation>pseda</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/draft"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/pefsbrda">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Plans Excluded From Supps - Budget Regime Draft Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">Plans Excluded From Supps - Budget Regime Draft Adjustments</skos:prefLabel>
+        <skos:notation>pefsbrda</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/draft"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/esa">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EYF Submitted Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">EYF Submitted Adjustments</skos:prefLabel>
+        <skos:notation>esa</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/draft"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/ea">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Editorial Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">Editorial Adjustments</skos:prefLabel>
+        <skos:notation>ea</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/draft"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/fod">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Forecast Outturn (Draft)</rdfs:label>
+        <skos:prefLabel xml:lang="en">Forecast Outturn (Draft)</skos:prefLabel>
+        <skos:notation>fod</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/draft"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/eaa">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EYF Approved Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">EYF Approved Adjustments</skos:prefLabel>
+        <skos:notation>eaa</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/approved"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/tuoa">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Treasury Use Only Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">Treasury Use Only Adjustments</skos:prefLabel>
+        <skos:notation>tuoa</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/draft"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/ssda">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Sector Switch Draft Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">Sector Switch Draft Adjustments</skos:prefLabel>
+        <skos:notation>ssda</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/draft"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/otuoda">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Outturn Treasury Use Only Draft Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">Outturn Treasury Use Only Draft Adjustments</skos:prefLabel>
+        <skos:notation>otuoda</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/draft"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/onbraa">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Outturn New Budget Regime Approved Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">Outturn New Budget Regime Approved Adjustments</skos:prefLabel>
+        <skos:notation>onbraa</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/approved"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/ssaa">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Sector Switch Approved Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">Sector Switch Approved Adjustments</skos:prefLabel>
+        <skos:notation>ssaa</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/approved"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/odsa">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Outturn Departmental Submitted Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">Outturn Departmental Submitted Adjustments</skos:prefLabel>
+        <skos:notation>odsa</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/draft"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/pmsa">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Plans MOG Submitted Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">Plans MOG Submitted Adjustments</skos:prefLabel>
+        <skos:notation>pmsa</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/draft"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/bcsa">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Budget Cover Submitted Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">Budget Cover Submitted Adjustments</skos:prefLabel>
+        <skos:notation>bcsa</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/draft"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/otuoa">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Outturn Treasury Use Only Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">Outturn Treasury Use Only Adjustments</skos:prefLabel>
+        <skos:notation>otuoa</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/draft"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/oidcaa">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Outturn Internal Dept Corrections Approved Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">Outturn Internal Dept Corrections Approved Adjustments</skos:prefLabel>
+        <skos:notation>oidcaa</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/approved"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/pidcsa">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Plans Internal Dept Corrections Submitted Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">Plans Internal Dept Corrections Submitted Adjustments</skos:prefLabel>
+        <skos:notation>pidcsa</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/draft"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <rdfs:label xml:lang="en">data subtype code list concept scheme</rdfs:label>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/otsa">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Outturn Treasury Submitted Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">Outturn Treasury Submitted Adjustments</skos:prefLabel>
+        <skos:notation>otsa</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/draft"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/pefsbraa">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Plans Excluded From Supps - Budget Regime Approved Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">Plans Excluded From Supps - Budget Regime Approved Adjustments</skos:prefLabel>
+        <skos:notation>pefsbraa</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/approved"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/pnbrsa">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Plans New Budget Regime Submitted Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">Plans New Budget Regime Submitted Adjustments</skos:prefLabel>
+        <skos:notation>pnbrsa</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/draft"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/spaa">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Spending Policy Approved Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">Spending Policy Approved Adjustments</skos:prefLabel>
+        <skos:notation>spaa</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/approved"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/pnbrda">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Plans New Budget Regime Draft Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">Plans New Budget Regime Draft Adjustments</skos:prefLabel>
+        <skos:notation>pnbrda</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/draft"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/ph">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Plans Historical</rdfs:label>
+        <skos:prefLabel xml:lang="en">Plans Historical</skos:prefLabel>
+        <skos:notation>ph</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/draft"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/pdirsa">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Plans Dept Internal Restructuring Submitted Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">Plans Dept Internal Restructuring Submitted Adjustments</skos:prefLabel>
+        <skos:notation>pdirsa</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/draft"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/pidcda">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Plans Internal Dept Corrections Draft Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">Plans Internal Dept Corrections Draft Adjustments</skos:prefLabel>
+        <skos:notation>pidcda</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/draft"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/pseaa">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Plans Supplementary Estimates Approved Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">Plans Supplementary Estimates Approved Adjustments</skos:prefLabel>
+        <skos:notation>pseaa</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/approved"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/rcaa">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Reserve Claims Approved Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">Reserve Claims Approved Adjustments</skos:prefLabel>
+        <skos:notation>rcaa</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/approved"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/dipcsa">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Dept Internal Policy Change Submitted Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">Dept Internal Policy Change Submitted Adjustments</skos:prefLabel>
+        <skos:notation>dipcsa</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/draft"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/fos">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Forecast Outturn (Submitted)</rdfs:label>
+        <skos:prefLabel xml:lang="en">Forecast Outturn (Submitted)</skos:prefLabel>
+        <skos:notation>fos</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/draft"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/so">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Submitted (Outturn)</rdfs:label>
+        <skos:prefLabel xml:lang="en">Submitted (Outturn)</skos:prefLabel>
+        <skos:notation>so</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/approved"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/afsa">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">AME Forecast Submitted Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">AME Forecast Submitted Adjustments</skos:prefLabel>
+        <skos:notation>afsa</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/draft"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/toaa">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Treasury Outturn Approved Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">Treasury Outturn Approved Adjustments</skos:prefLabel>
+        <skos:notation>toaa</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/approved"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/eda">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Editorial Draft Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">Editorial Draft Adjustments</skos:prefLabel>
+        <skos:notation>eda</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/draft"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/do">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Draft (Outturn)</rdfs:label>
+        <skos:prefLabel xml:lang="en">Draft (Outturn)</skos:prefLabel>
+        <skos:notation>do</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/draft"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/bcaa">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Budget Cover Approved Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">Budget Cover Approved Adjustments</skos:prefLabel>
+        <skos:notation>bcaa</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/approved"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/pdcaa">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Plans Dept Corrections Approved Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">Plans Dept Corrections Approved Adjustments</skos:prefLabel>
+        <skos:notation>pdcaa</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/approved"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/spda">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Spending Policy Draft Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">Spending Policy Draft Adjustments</skos:prefLabel>
+        <skos:notation>spda</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/draft"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/onbrda">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Outturn New Budget Regime Draft Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">Outturn New Budget Regime Draft Adjustments</skos:prefLabel>
+        <skos:notation>onbrda</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/draft"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/dipcda">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Dept Internal Policy Change Draft Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">Dept Internal Policy Change Draft Adjustments</skos:prefLabel>
+        <skos:notation>dipcda</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/draft"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/bcda">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Budget Cover Draft Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">Budget Cover Draft Adjustments</skos:prefLabel>
+        <skos:notation>bcda</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/draft"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/pdirda">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Plans Dept Internal Restructuring Draft Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">Plans Dept Internal Restructuring Draft Adjustments</skos:prefLabel>
+        <skos:notation>pdirda</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/draft"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/pmaa">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Plans MOG Approved Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">Plans MOG Approved Adjustments</skos:prefLabel>
+        <skos:notation>pmaa</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/approved"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/odaa">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Outturn Departmental Approved Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">Outturn Departmental Approved Adjustments</skos:prefLabel>
+        <skos:notation>odaa</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/approved"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/drsa">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Discount Rate Submitted Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">Discount Rate Submitted Adjustments</skos:prefLabel>
+        <skos:notation>drsa</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/draft"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/cfsa">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Challenge Funds Submitted Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">Challenge Funds Submitted Adjustments</skos:prefLabel>
+        <skos:notation>cfsa</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/draft"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/odirsa">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Outturn Dept Internal Restructuring Submitted Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">Outturn Dept Internal Restructuring Submitted Adjustments</skos:prefLabel>
+        <skos:notation>odirsa</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/draft"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/pnbraa">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Plans New Budget Regime Approved Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">Plans New Budget Regime Approved Adjustments</skos:prefLabel>
+        <skos:notation>pnbraa</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/approved"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/otaa">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Outturn Treasury Approved Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">Outturn Treasury Approved Adjustments</skos:prefLabel>
+        <skos:notation>otaa</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/approved"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/oidcda">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Outturn Internal Dept Corrections Draft Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">Outturn Internal Dept Corrections Draft Adjustments</skos:prefLabel>
+        <skos:notation>oidcda</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/draft"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/eda0">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EYF Draft Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">EYF Draft Adjustments</skos:prefLabel>
+        <skos:notation>eda0</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/draft"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/drda">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Discount Rate Draft Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">Discount Rate Draft Adjustments</skos:prefLabel>
+        <skos:notation>drda</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/draft"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/pdiraa">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Plans Dept Internal Restructuring Approved Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">Plans Dept Internal Restructuring Approved Adjustments</skos:prefLabel>
+        <skos:notation>pdiraa</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/approved"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:prefLabel xml:lang="en">data subtype code list concept scheme</skos:prefLabel>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/pmda">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Plans MOG Draft Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">Plans MOG Draft Adjustments</skos:prefLabel>
+        <skos:notation>pmda</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/draft"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/oefsbrsa">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Outturn Excluded From Supps - Budget Regime Submitted Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">Outturn Excluded From Supps - Budget Regime Submitted Adjustments</skos:prefLabel>
+        <skos:notation>oefsbrsa</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/draft"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/omda">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Outturn MOG Draft Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">Outturn MOG Draft Adjustments</skos:prefLabel>
+        <skos:notation>omda</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/draft"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/otda">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Outturn Treasury Draft Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">Outturn Treasury Draft Adjustments</skos:prefLabel>
+        <skos:notation>otda</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/draft"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/afaa">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">AME Forecast Approved Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">AME Forecast Approved Adjustments</skos:prefLabel>
+        <skos:notation>afaa</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/approved"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.2:DataSubtype rdf:about="http://finance.data.gov.uk/def/coins/data-subtype/rcda">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Reserve Claims Draft Adjustments</rdfs:label>
+        <skos:prefLabel xml:lang="en">Reserve Claims Draft Adjustments</skos:prefLabel>
+        <skos:notation>rcda</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-subtype"/>
+        <j.1:status rdf:resource="http://reference.data.gov.uk/def/status/draft"/>
+      </j.2:DataSubtype>
+    </skos:hasTopConcept>
+  </skos:ConceptScheme>
+</rdf:RDF>

@@ -1,0 +1,38 @@
+@prefix rdf:            <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:           <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:            <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:            <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:           <http://xmlns.com/foaf/0.1/> .
+@prefix vs:             <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix dcterms:        <http://purl.org/dc/terms/> .
+@prefix registration:   <http://reference.data.gov.uk/def/registration#> .
+
+# Meta data -----------------------------------------------------------
+
+<http://reference.data.gov.uk/def/registration#>
+    a owl:Ontology;
+    owl:versionInfo "0.1";
+    rdfs:label "Registration number vocabulary"@en;
+    rdfs:comment "Set of terms used to denote different registration schemes useful for identifying organizations. These can be used as the datatype of for a registration number and associated with the organization by means of, for example, org:identifier."@en;
+    dcterms:created  "2010-10-15"^^xsd:date;
+    dcterms:contributor [foaf:mbox "dave@epimorphics.com";  foaf:name "Dave Reynolds"];
+    dcterms:license <http://www.opendatacommons.org/licenses/pddl/1.0/> ;
+    .
+    
+# -- Registration schemes -----------------------------------------------------------
+
+registration:company-number a rdfs:Datatype;
+    rdfs:label "Company number"@en;
+    rdfs:comment "The registered number for a UK Limited company as registered with the Registrar of Companies (Companies House)"@en;
+    .
+
+registration:vat-number a rdfs:Datatype;
+    rdfs:label "VAT number"@en;
+    rdfs:comment "The registered VAT number for a UK company or Sole Trader as registered with HMRC."@en;
+    .
+
+registration:charity-number a rdfs:Datatype;
+    rdfs:label "Charity number"@en;
+    rdfs:comment "The registered number for a UK Charity as registered with the Charity Commission"@en;
+    .
+

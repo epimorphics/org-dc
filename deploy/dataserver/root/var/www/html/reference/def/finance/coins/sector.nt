@@ -1,0 +1,39 @@
+<http://finance.data.gov.uk/def/coins/sector/la> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Sector> .
+<http://finance.data.gov.uk/def/coins/sector/la> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/sector/la> <http://www.w3.org/2000/01/rdf-schema#label> "LA"@en .
+<http://finance.data.gov.uk/def/coins/sector/la> <http://www.w3.org/2004/02/skos/core#prefLabel> "LA"@en .
+<http://finance.data.gov.uk/def/coins/sector/la> <http://www.w3.org/2004/02/skos/core#notation> "la" .
+<http://finance.data.gov.uk/def/coins/sector/la> <http://www.w3.org/2000/01/rdf-schema#comment> "Local authority, including central government support for local authority" .
+<http://finance.data.gov.uk/def/coins/sector/la> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/sector> .
+<http://finance.data.gov.uk/def/coins/Sector> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://finance.data.gov.uk/def/coins/Sector> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://finance.data.gov.uk/def/coins/Sector> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/Sector> <http://www.w3.org/2000/01/rdf-schema#label> "sector values class"@en .
+<http://finance.data.gov.uk/def/coins/Sector> <http://www.w3.org/2004/02/skos/core#prefLabel> "sector values class"@en .
+<http://finance.data.gov.uk/def/coins/Sector> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of values in the sector code-list scheme" .
+<http://finance.data.gov.uk/def/coins/sector/cg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Sector> .
+<http://finance.data.gov.uk/def/coins/sector/cg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/sector/cg> <http://www.w3.org/2000/01/rdf-schema#label> "CG"@en .
+<http://finance.data.gov.uk/def/coins/sector/cg> <http://www.w3.org/2004/02/skos/core#prefLabel> "CG"@en .
+<http://finance.data.gov.uk/def/coins/sector/cg> <http://www.w3.org/2004/02/skos/core#notation> "cg" .
+<http://finance.data.gov.uk/def/coins/sector/cg> <http://www.w3.org/2000/01/rdf-schema#comment> "Central government" .
+<http://finance.data.gov.uk/def/coins/sector/cg> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/sector> .
+<http://finance.data.gov.uk/def/coins/sector/s6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Sector> .
+<http://finance.data.gov.uk/def/coins/sector/s6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/sector/s6> <http://www.w3.org/2000/01/rdf-schema#label> "S6"@en .
+<http://finance.data.gov.uk/def/coins/sector/s6> <http://www.w3.org/2004/02/skos/core#prefLabel> "S6"@en .
+<http://finance.data.gov.uk/def/coins/sector/s6> <http://www.w3.org/2004/02/skos/core#notation> "s6" .
+<http://finance.data.gov.uk/def/coins/sector/s6> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/sector/s6> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/sector> .
+<http://finance.data.gov.uk/def/coins/statistical-concept/sector> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/sdmx#Concept> .
+<http://finance.data.gov.uk/def/coins/statistical-concept/sector> <http://www.w3.org/2000/01/rdf-schema#label> "sector"@en .
+<http://finance.data.gov.uk/def/coins/statistical-concept/sector> <http://www.w3.org/2004/02/skos/core#prefLabel> "sector"@en .
+<http://finance.data.gov.uk/def/coins/statistical-concept/sector> <http://www.w3.org/2000/01/rdf-schema#comment> "The spending sector column denotes whether transactions relate to Central Government (CG) or Local Authority (LA) expenditure. Central Government includes CG bodies\u2019 transactions as well as support to Public Corporations but excludes support for local authorities. Local authority includes LA\u2019s own transactions or CG support for LA" .
+<http://finance.data.gov.uk/def/coins/statistical-concept/sector> <http://purl.org/dc/terms/source> <http://www.hm-treasury.gov.uk/d/coins_guidance.pdf> .
+<http://finance.data.gov.uk/def/coins/statistical-concept/sector> <http://www.epimorphics.com/vocabs/coins-generate#columnName> "sector" .
+<http://finance.data.gov.uk/def/coins/sector> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://finance.data.gov.uk/def/coins/sector> <http://www.w3.org/2000/01/rdf-schema#label> "sector code list concept scheme"@en .
+<http://finance.data.gov.uk/def/coins/sector> <http://www.w3.org/2004/02/skos/core#prefLabel> "sector code list concept scheme"@en .
+<http://finance.data.gov.uk/def/coins/sector> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/sector/cg> .
+<http://finance.data.gov.uk/def/coins/sector> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/sector/la> .
+<http://finance.data.gov.uk/def/coins/sector> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/sector/s6> .

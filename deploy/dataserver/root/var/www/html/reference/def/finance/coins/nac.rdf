@@ -1,0 +1,1254 @@
+<rdf:RDF
+    xmlns:sdmx-subject="http://purl.org/linked-data/sdmx/2009/subject#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:sdmx-dimension="http://purl.org/linked-data/sdmx/2009/dimension#"
+    xmlns:sdmx-measure="http://purl.org/linked-data/sdmx/2009/measure#"
+    xmlns:sdmx-attribute="http://purl.org/linked-data/sdmx/2009/attribute#"
+    xmlns:coins-data="http://source.data.gov.uk/data/coins/"
+    xmlns:coins-dsd="http://finance.data.gov.uk/dsd/coins/"
+    xmlns:coins-dimension="http://finance.data.gov.uk/dsd/coins/dimension/"
+    xmlns:void="http://rdfs.org/ns/void#"
+    xmlns:coins-measure="http://finance.data.gov.uk/dsd/coins/measure/"
+    xmlns:j.0="http://www.epimorphics.com/vocabs/coins-generate#"
+    xmlns:coins-attribute="http://finance.data.gov.uk/dsd/coins/attribute/"
+    xmlns:sdmx-concept="http://purl.org/linked-data/sdmx/2009/concept#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:coins-slicekey="http://finance.data.gov.uk/dsd/coins/slice/"
+    xmlns:sdmx="http://purl.org/linked-data/sdmx#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:sdmx-code="http://purl.org/linked-data/sdmx/2009/code#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:j.1="http://finance.data.gov.uk/def/coins/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:qb="http://purl.org/linked-data/cube#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <rdfs:Class rdf:about="http://finance.data.gov.uk/def/coins/Nac">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:label xml:lang="en">nac values class</rdfs:label>
+    <skos:prefLabel xml:lang="en">nac values class</skos:prefLabel>
+    <rdfs:comment>The class of values in the nac code-list scheme</rdfs:comment>
+  </rdfs:Class>
+  <sdmx:Concept rdf:about="http://finance.data.gov.uk/def/coins/statistical-concept/nac">
+    <rdfs:label xml:lang="en">nac</rdfs:label>
+    <skos:prefLabel xml:lang="en">nac</skos:prefLabel>
+    <rdfs:comment>The National Account Codes (NAC) groups Account Code transactions by their economic nature (e.g. pay, subsidies, capital grants etc).</rdfs:comment>
+    <dcterms:source rdf:resource="http://www.hm-treasury.gov.uk/d/coins_guidance.pdf"/>
+    <j.0:columnName>nac</j.0:columnName>
+  </sdmx:Concept>
+  <skos:ConceptScheme rdf:about="http://finance.data.gov.uk/def/coins/nac">
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/d1001">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">D1001</rdfs:label>
+        <skos:prefLabel xml:lang="en">D1001</skos:prefLabel>
+        <skos:notation>d1001</skos:notation>
+        <rdfs:comment>D10.01 Current grants to persons</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/h5001">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">H5001</rdfs:label>
+        <skos:prefLabel xml:lang="en">H5001</skos:prefLabel>
+        <skos:notation>h5001</skos:notation>
+        <rdfs:comment>H50.01 Net lending and investment abroad</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/k4001">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">K4001</rdfs:label>
+        <skos:prefLabel xml:lang="en">K4001</skos:prefLabel>
+        <skos:notation>k4001</skos:notation>
+        <rdfs:comment>K40.01 Central government’s receipt of dividends from joint ventures and associates, public corporations and other</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/b4501">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">B4501</rdfs:label>
+        <skos:prefLabel xml:lang="en">B4501</skos:prefLabel>
+        <skos:notation>b4501</skos:notation>
+        <rdfs:comment>B45.01 Licences/levies</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/n3001">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">N3001</rdfs:label>
+        <skos:prefLabel xml:lang="en">N3001</skos:prefLabel>
+        <skos:notation>n3001</skos:notation>
+        <rdfs:comment>N30.01 Capital grants made by the European Union to local authorities</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/e0601">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">E0601</rdfs:label>
+        <skos:prefLabel xml:lang="en">E0601</skos:prefLabel>
+        <skos:notation>e0601</skos:notation>
+        <rdfs:comment>E06.01 Sale of land (book value)</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/g1001">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">G1001</rdfs:label>
+        <skos:prefLabel xml:lang="en">G1001</skos:prefLabel>
+        <skos:notation>g1001</skos:notation>
+        <rdfs:comment>G10.01 Capital grants to companies</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/n1001">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">N1001</rdfs:label>
+        <skos:prefLabel xml:lang="en">N1001</skos:prefLabel>
+        <skos:notation>n1001</skos:notation>
+        <rdfs:comment>N10.01 Capital grants to local authorities: other</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/x0601">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">X0601</rdfs:label>
+        <skos:prefLabel xml:lang="en">X0601</skos:prefLabel>
+        <skos:notation>x0601</skos:notation>
+        <rdfs:comment>X06.01 Profit and loss on disposal of land</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/b9502">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">B9502</rdfs:label>
+        <skos:prefLabel xml:lang="en">B9502</skos:prefLabel>
+        <skos:notation>b9502</skos:notation>
+        <rdfs:comment>B95.02 Impairment of tangible/intangible fixed assets – catastrophic loss</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/r3001">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">R3001</rdfs:label>
+        <skos:prefLabel xml:lang="en">R3001</skos:prefLabel>
+        <skos:notation>r3001</skos:notation>
+        <rdfs:comment>R30.01 Capitalised finance leases: capital part of annual lease payments</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/b7201">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">B7201</rdfs:label>
+        <skos:prefLabel xml:lang="en">B7201</skos:prefLabel>
+        <skos:notation>b7201</skos:notation>
+        <rdfs:comment>B72.01 Expenditure on intangible single use military equipment</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/e2001">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">E2001</rdfs:label>
+        <skos:prefLabel xml:lang="en">E2001</skos:prefLabel>
+        <skos:notation>e2001</skos:notation>
+        <rdfs:comment>E20.01 Other tangible capital expenditure</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/b7101">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">B7101</rdfs:label>
+        <skos:prefLabel xml:lang="en">B7101</skos:prefLabel>
+        <skos:notation>b7101</skos:notation>
+        <rdfs:comment>B71.01 Receipts and depreciation costs relating to disposals of tangible single use military equipment</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/d4001">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">D4001</rdfs:label>
+        <skos:prefLabel xml:lang="en">D4001</skos:prefLabel>
+        <skos:notation>d4001</skos:notation>
+        <rdfs:comment>D40.01 PS pension schemes: in payment/receipt of pension contributions</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/x1201">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">X1201</rdfs:label>
+        <skos:prefLabel xml:lang="en">X1201</skos:prefLabel>
+        <skos:notation>x1201</skos:notation>
+        <rdfs:comment>X12.01 Profit and loss on disposal of company securities</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/d2001">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">D2001</rdfs:label>
+        <skos:prefLabel xml:lang="en">D2001</skos:prefLabel>
+        <skos:notation>d2001</skos:notation>
+        <rdfs:comment>D20.01 Current transfers abroad</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/w1601">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">W1601</rdfs:label>
+        <skos:prefLabel xml:lang="en">W1601</skos:prefLabel>
+        <skos:notation>w1601</skos:notation>
+        <rdfs:comment>W16.01 Payments to by one central government body to another and corresponding receipts</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/f2001">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">F2001</rdfs:label>
+        <skos:prefLabel xml:lang="en">F2001</skos:prefLabel>
+        <skos:notation>f2001</skos:notation>
+        <rdfs:comment>F20.01 Write-off of stock</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/k9001">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">K9001</rdfs:label>
+        <skos:prefLabel xml:lang="en">K9001</skos:prefLabel>
+        <skos:notation>k9001</skos:notation>
+        <rdfs:comment>K90.01 Departmental unallocated provision/capital expenditure to which an economic category cannot be assigned</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/s4001">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">S4001</rdfs:label>
+        <skos:prefLabel xml:lang="en">S4001</skos:prefLabel>
+        <skos:notation>s4001</skos:notation>
+        <rdfs:comment>S40.01 Taxes on income (including other licences)</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/n2001">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">N2001</rdfs:label>
+        <skos:prefLabel xml:lang="en">N2001</skos:prefLabel>
+        <skos:notation>n2001</skos:notation>
+        <rdfs:comment>N20.01 Capitalised grants to local authorities replacing loan charge grants/financing grants</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/e1504">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">E1504</rdfs:label>
+        <skos:prefLabel xml:lang="en">E1504</skos:prefLabel>
+        <skos:notation>e1504</skos:notation>
+        <rdfs:comment>E15.04 Purchases and sales of plant, machinery and equipment (includes works of art)</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/a1501">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">A1501</rdfs:label>
+        <skos:prefLabel xml:lang="en">A1501</skos:prefLabel>
+        <skos:notation>a1501</skos:notation>
+        <rdfs:comment>A15.01 Pay costs under this code other than to locally engaged staff overseas</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/z1001">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Z1001</rdfs:label>
+        <skos:prefLabel xml:lang="en">Z1001</skos:prefLabel>
+        <skos:notation>z1001</skos:notation>
+        <rdfs:comment>Z10.01 Other payments within central government</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/w9001">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">W9001</rdfs:label>
+        <skos:prefLabel xml:lang="en">W9001</skos:prefLabel>
+        <skos:notation>w9001</skos:notation>
+        <rdfs:comment>W90.01 Notional transfers from AME to DEL</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/m1501">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">M1501</rdfs:label>
+        <skos:prefLabel xml:lang="en">M1501</skos:prefLabel>
+        <skos:notation>m1501</skos:notation>
+        <rdfs:comment>M15.01 Current grants to local authorities outside AEF/AEG</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/f4701">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">F4701</rdfs:label>
+        <skos:prefLabel xml:lang="en">F4701</skos:prefLabel>
+        <skos:notation>f4701</skos:notation>
+        <rdfs:comment>F47.01 Total accruals to cash adjustments for non-voted resource expenditure scoring in OCS</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/h3502">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">H3502</rdfs:label>
+        <skos:prefLabel xml:lang="en">H3502</skos:prefLabel>
+        <skos:notation>h3502</skos:notation>
+        <rdfs:comment>H35.02 Equity withdrawals</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/f1001">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">F1001</rdfs:label>
+        <skos:prefLabel xml:lang="en">F1001</skos:prefLabel>
+        <skos:notation>f1001</skos:notation>
+        <rdfs:comment>F10.01 Receipts and expenditure on current assets including raw materials, work-in-progress and finished goods</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/w2001">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">W2001</rdfs:label>
+        <skos:prefLabel xml:lang="en">W2001</skos:prefLabel>
+        <skos:notation>w2001</skos:notation>
+        <rdfs:comment>W20.01 Broadcast licence revenue</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/d4002">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">D4002</rdfs:label>
+        <skos:prefLabel xml:lang="en">D4002</skos:prefLabel>
+        <skos:notation>d4002</skos:notation>
+        <rdfs:comment>Unknown sub-code of D40 Pensions in payment/pension contributions – main pension schemes</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/p1001">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">P1001</rdfs:label>
+        <skos:prefLabel xml:lang="en">P1001</skos:prefLabel>
+        <skos:notation>p1001</skos:notation>
+        <rdfs:comment>P10.01 Net lending to local authorities</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/g5001">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">G5001</rdfs:label>
+        <skos:prefLabel xml:lang="en">G5001</skos:prefLabel>
+        <skos:notation>g5001</skos:notation>
+        <rdfs:comment>G50.01 Capital grants to or from abroad</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/b8601">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">B8601</rdfs:label>
+        <skos:prefLabel xml:lang="en">B8601</skos:prefLabel>
+        <skos:notation>b8601</skos:notation>
+        <rdfs:comment>B86.01 Bad debts in connection with loans, grants and transfers</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/b9301">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">B9301</rdfs:label>
+        <skos:prefLabel xml:lang="en">B9301</skos:prefLabel>
+        <skos:notation>b9301</skos:notation>
+        <rdfs:comment>B93.01 Release from the government grant reserve</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <rdfs:label xml:lang="en">nac code list concept scheme</rdfs:label>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/x1101">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">X1101</rdfs:label>
+        <skos:prefLabel xml:lang="en">X1101</skos:prefLabel>
+        <skos:notation>x1101</skos:notation>
+        <rdfs:comment>X11.01 Profit and loss on disposal of existing buildings</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/s2501">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">S2501</rdfs:label>
+        <skos:prefLabel xml:lang="en">S2501</skos:prefLabel>
+        <skos:notation>s2501</skos:notation>
+        <rdfs:comment>S25.01 Payments/receipts of interest to/from abroad</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/b9501">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">B9501</rdfs:label>
+        <skos:prefLabel xml:lang="en">B9501</skos:prefLabel>
+        <skos:notation>b9501</skos:notation>
+        <rdfs:comment>B95.01 Impairment of tangible/intangible fixed assets</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/c3501">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">C3501</rdfs:label>
+        <skos:prefLabel xml:lang="en">C3501</skos:prefLabel>
+        <skos:notation>c3501</skos:notation>
+        <rdfs:comment>C35.01 Subsidies to public corporations</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/s7001">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">S7001</rdfs:label>
+        <skos:prefLabel xml:lang="en">S7001</skos:prefLabel>
+        <skos:notation>s7001</skos:notation>
+        <rdfs:comment>S70.01 Miscellaneous current transfers</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/g2001">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">G2001</rdfs:label>
+        <skos:prefLabel xml:lang="en">G2001</skos:prefLabel>
+        <skos:notation>g2001</skos:notation>
+        <rdfs:comment>G20.01 Capital grants to persons</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/f5601">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">F5601</rdfs:label>
+        <skos:prefLabel xml:lang="en">F5601</skos:prefLabel>
+        <skos:notation>f5601</skos:notation>
+        <rdfs:comment>F56.01 Cash Consolidated Fund Extra Receipts relating to capital</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/l3001">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">L3001</rdfs:label>
+        <skos:prefLabel xml:lang="en">L3001</skos:prefLabel>
+        <skos:notation>l3001</skos:notation>
+        <rdfs:comment>L30.01 Provisions relating to bad debts on loans – take-up and revaluations</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/b9507">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">B9507</rdfs:label>
+        <skos:prefLabel xml:lang="en">B9507</skos:prefLabel>
+        <skos:notation>b9507</skos:notation>
+        <rdfs:comment>B95.07 Revaluations of fixed/current tangible/intangible assets</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/s6001">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">S6001</rdfs:label>
+        <skos:prefLabel xml:lang="en">S6001</skos:prefLabel>
+        <skos:notation>s6001</skos:notation>
+        <rdfs:comment>S60.01 Rent income from sub-soil assets</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/f2502">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">F2502</rdfs:label>
+        <skos:prefLabel xml:lang="en">F2502</skos:prefLabel>
+        <skos:notation>f2502</skos:notation>
+        <rdfs:comment>Unknown sub-code of F25 Other changes in stocks</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/b3501">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">B3501</rdfs:label>
+        <skos:prefLabel xml:lang="en">B3501</skos:prefLabel>
+        <skos:notation>b3501</skos:notation>
+        <rdfs:comment>B35.01 All expenditure and receipts from another part of central of government where the corresponding payment is classified as National Accounts Code B3501</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/s2001">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">S2001</rdfs:label>
+        <skos:prefLabel xml:lang="en">S2001</skos:prefLabel>
+        <skos:notation>s2001</skos:notation>
+        <rdfs:comment>S20.01 Central government’s payments/receipts of interest to/from public corporations and TFs</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/l1001">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">L1001</rdfs:label>
+        <skos:prefLabel xml:lang="en">L1001</skos:prefLabel>
+        <skos:notation>l1001</skos:notation>
+        <rdfs:comment>L10.01 Provisions in line with pay and procurement – take up and revaluation</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/b9801">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">B9801</rdfs:label>
+        <skos:prefLabel xml:lang="en">B9801</skos:prefLabel>
+        <skos:notation>b9801</skos:notation>
+        <rdfs:comment>B98.01 Cost of capital charge relating to loans and public dividend capital</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/l4001">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">L4001</rdfs:label>
+        <skos:prefLabel xml:lang="en">L4001</skos:prefLabel>
+        <skos:notation>l4001</skos:notation>
+        <rdfs:comment>L40.01 Provisions for pension costs excluding interest on liabilities</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/s6501">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">S6501</rdfs:label>
+        <skos:prefLabel xml:lang="en">S6501</skos:prefLabel>
+        <skos:notation>s6501</skos:notation>
+        <rdfs:comment>S65.01 Miscellaneous financial transactions</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/w5001">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">W5001</rdfs:label>
+        <skos:prefLabel xml:lang="en">W5001</skos:prefLabel>
+        <skos:notation>w5001</skos:notation>
+        <rdfs:comment>W50.01 Loans with central government (non-trading) (net)</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/b9504">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">B9504</rdfs:label>
+        <skos:prefLabel xml:lang="en">B9504</skos:prefLabel>
+        <skos:notation>b9504</skos:notation>
+        <rdfs:comment>B95.04 Impairment of tangible/intangible fixed assets – unforeseen obsolescence</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/l4601">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">L4601</rdfs:label>
+        <skos:prefLabel xml:lang="en">L4601</skos:prefLabel>
+        <skos:notation>l4601</skos:notation>
+        <rdfs:comment>L46.01 Provisions for pensions costs release only</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/b8001">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">B8001</rdfs:label>
+        <skos:prefLabel xml:lang="en">B8001</skos:prefLabel>
+        <skos:notation>b8001</skos:notation>
+        <rdfs:comment>B80.01 Receipts of donations intended to finance resource expenditure</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/a1503">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">A1503</rdfs:label>
+        <skos:prefLabel xml:lang="en">A1503</skos:prefLabel>
+        <skos:notation>a1503</skos:notation>
+        <rdfs:comment>A15.03 Payments of accruing superannuation liability charges, UK staff</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/h2001">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">H2001</rdfs:label>
+        <skos:prefLabel xml:lang="en">H2001</skos:prefLabel>
+        <skos:notation>h2001</skos:notation>
+        <rdfs:comment>H20.01 Net lending to private sector – persons and non-profit making bodies</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/g4501">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">G4501</rdfs:label>
+        <skos:prefLabel xml:lang="en">G4501</skos:prefLabel>
+        <skos:notation>g4501</skos:notation>
+        <rdfs:comment>G45.01 Capital grants to public corporations (including nationalised industries)</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/h3501">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">H3501</rdfs:label>
+        <skos:prefLabel xml:lang="en">H3501</skos:prefLabel>
+        <skos:notation>h3501</skos:notation>
+        <rdfs:comment>H35.01 Net lending to public corporations and trading funds and the issue of Public Dividend Capital (excluding temporary lending to nationalised industries covered by J30)</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/e0501">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">E0501</rdfs:label>
+        <skos:prefLabel xml:lang="en">E0501</skos:prefLabel>
+        <skos:notation>e0501</skos:notation>
+        <rdfs:comment>E05.01 Purchase of land</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/w3001">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">W3001</rdfs:label>
+        <skos:prefLabel xml:lang="en">W3001</skos:prefLabel>
+        <skos:notation>w3001</skos:notation>
+        <rdfs:comment>W30.01 Transfers to the NI Exchequer/Scottish Consolidated Fund/Wales</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/f5001">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">F5001</rdfs:label>
+        <skos:prefLabel xml:lang="en">F5001</skos:prefLabel>
+        <skos:notation>f5001</skos:notation>
+        <rdfs:comment>F50.01 Excess cash to be surrendered as a CFER – accrual/cash adjustment</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/l4501">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">L4501</rdfs:label>
+        <skos:prefLabel xml:lang="en">L4501</skos:prefLabel>
+        <skos:notation>l4501</skos:notation>
+        <rdfs:comment>L45.01 Provisions for pension costs - interest on scheme liabilities only</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/e5101">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">E5101</rdfs:label>
+        <skos:prefLabel xml:lang="en">E5101</skos:prefLabel>
+        <skos:notation>e5101</skos:notation>
+        <rdfs:comment>E51.01 Sales of intangible fixed assets (book value)</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/d1002">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">D1002</rdfs:label>
+        <skos:prefLabel xml:lang="en">D1002</skos:prefLabel>
+        <skos:notation>d1002</skos:notation>
+        <rdfs:comment>D10.02 Current grants to non-profit making bodies serving person</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/f5701">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">F5701</rdfs:label>
+        <skos:prefLabel xml:lang="en">F5701</skos:prefLabel>
+        <skos:notation>f5701</skos:notation>
+        <rdfs:comment>F57.01 Other (current) cash Consolidated Fund Extra receipts</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/x1601">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">X1601</rdfs:label>
+        <skos:prefLabel xml:lang="en">X1601</skos:prefLabel>
+        <skos:notation>x1601</skos:notation>
+        <rdfs:comment>X16.01 Profit and loss on disposal of other tangible capital</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/m3001">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">M3001</rdfs:label>
+        <skos:prefLabel xml:lang="en">M3001</skos:prefLabel>
+        <skos:notation>m3001</skos:notation>
+        <rdfs:comment>M30.01 Current grants made by the European Union to local authorities</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/w1501">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">W1501</rdfs:label>
+        <skos:prefLabel xml:lang="en">W1501</skos:prefLabel>
+        <skos:notation>w1501</skos:notation>
+        <rdfs:comment>W15.01 Grant in aid to a NDPB in the central government sector</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/e1503">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">E1503</rdfs:label>
+        <skos:prefLabel xml:lang="en">E1503</skos:prefLabel>
+        <skos:notation>e1503</skos:notation>
+        <rdfs:comment>E15.03 Purchases and sales of vehicles</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/k1001">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">K1001</rdfs:label>
+        <skos:prefLabel xml:lang="en">K1001</skos:prefLabel>
+        <skos:notation>k1001</skos:notation>
+        <rdfs:comment>K10.01 Purchase of company securities</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/s1501">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">S1501</rdfs:label>
+        <skos:prefLabel xml:lang="en">S1501</skos:prefLabel>
+        <skos:notation>s1501</skos:notation>
+        <rdfs:comment>S15.01 Payments/receipts of interest to/from local authorities</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/b7001">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">B7001</rdfs:label>
+        <skos:prefLabel xml:lang="en">B7001</skos:prefLabel>
+        <skos:notation>b7001</skos:notation>
+        <rdfs:comment>B70.01 Expenditure on tangible single use military equipment</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/b9503">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">B9503</rdfs:label>
+        <skos:prefLabel xml:lang="en">B9503</skos:prefLabel>
+        <skos:notation>b9503</skos:notation>
+        <rdfs:comment>B95.03 Impairment of tangible/intangible fixed assets – abandonment of assets in course of construction</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/s3001">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">S3001</rdfs:label>
+        <skos:prefLabel xml:lang="en">S3001</skos:prefLabel>
+        <skos:notation>s3001</skos:notation>
+        <rdfs:comment>S30.01 Capitalised finance leases</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/w1001">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">W1001</rdfs:label>
+        <skos:prefLabel xml:lang="en">W1001</skos:prefLabel>
+        <skos:notation>w1001</skos:notation>
+        <rdfs:comment>W10.01 Grants to the National Insurance Fund</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/w4001">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">W4001</rdfs:label>
+        <skos:prefLabel xml:lang="en">W4001</skos:prefLabel>
+        <skos:notation>w4001</skos:notation>
+        <rdfs:comment>W40.01 Interest payments and receipts within central government</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/l2101">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">L2101</rdfs:label>
+        <skos:prefLabel xml:lang="en">L2101</skos:prefLabel>
+        <skos:notation>l2101</skos:notation>
+        <rdfs:comment>L21.01 Provisions in connection with grants and associated receipts – release</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/f2501">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">F2501</rdfs:label>
+        <skos:prefLabel xml:lang="en">F2501</skos:prefLabel>
+        <skos:notation>f2501</skos:notation>
+        <rdfs:comment>F25.01 Other changes in stock which impact on the capital budget</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/m1001">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">M1001</rdfs:label>
+        <skos:prefLabel xml:lang="en">M1001</skos:prefLabel>
+        <skos:notation>m1001</skos:notation>
+        <rdfs:comment>M10.01 Current grants to local authorities within AEF/AEG</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/b3502">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">B3502</rdfs:label>
+        <skos:prefLabel xml:lang="en">B3502</skos:prefLabel>
+        <skos:notation>b3502</skos:notation>
+        <rdfs:comment>B35.02 Receipts other than those exclusively from another part of general governmen</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/e1001">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">E1001</rdfs:label>
+        <skos:prefLabel xml:lang="en">E1001</skos:prefLabel>
+        <skos:notation>e1001</skos:notation>
+        <rdfs:comment>E10.01 Purchase of existing buildings</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/s4501">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">S4501</rdfs:label>
+        <skos:prefLabel xml:lang="en">S4501</skos:prefLabel>
+        <skos:notation>s4501</skos:notation>
+        <rdfs:comment>S45.01 National Health contributions</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/c2001">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">C2001</rdfs:label>
+        <skos:prefLabel xml:lang="en">C2001</skos:prefLabel>
+        <skos:notation>c2001</skos:notation>
+        <rdfs:comment>C20.01 Subsidies to central government and local authorities market kind of activity units, and quasi corporations</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/e5002">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">E5002</rdfs:label>
+        <skos:prefLabel xml:lang="en">E5002</skos:prefLabel>
+        <skos:notation>e5002</skos:notation>
+        <rdfs:comment>E50.02 In-house creation of intangible assets</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/b8501">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">B8501</rdfs:label>
+        <skos:prefLabel xml:lang="en">B8501</skos:prefLabel>
+        <skos:notation>b8501</skos:notation>
+        <rdfs:comment>B85.01 Bad debts in connection with pay, procurement and capital</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/x5101">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">X5101</rdfs:label>
+        <skos:prefLabel xml:lang="en">X5101</skos:prefLabel>
+        <skos:notation>x5101</skos:notation>
+        <rdfs:comment>X51.01 Profit and loss on disposal of intangible assets</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:prefLabel xml:lang="en">nac code list concept scheme</skos:prefLabel>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/b9506">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">B9506</rdfs:label>
+        <skos:prefLabel xml:lang="en">B9506</skos:prefLabel>
+        <skos:notation>b9506</skos:notation>
+        <rdfs:comment>B95.06 Impairment of tangible/intangible fixed assets – other impairments</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/e1601">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">E1601</rdfs:label>
+        <skos:prefLabel xml:lang="en">E1601</skos:prefLabel>
+        <skos:notation>e1601</skos:notation>
+        <rdfs:comment>E16.01 Sales of tangible capital (book value)</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/f5501">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">F5501</rdfs:label>
+        <skos:prefLabel xml:lang="en">F5501</skos:prefLabel>
+        <skos:notation>f5501</skos:notation>
+        <rdfs:comment>F55.01 Cash Consolidated Fund Extra Receipts</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/a1502">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">A1502</rdfs:label>
+        <skos:prefLabel xml:lang="en">A1502</skos:prefLabel>
+        <skos:notation>a1502</skos:notation>
+        <rdfs:comment>A15.02 Wages &amp; salaries and Employers' social contributions for locally engaged staff overseas</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/e8001">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">E8001</rdfs:label>
+        <skos:prefLabel xml:lang="en">E8001</skos:prefLabel>
+        <skos:notation>e8001</skos:notation>
+        <rdfs:comment>E80.01 Receipts of donations to finance capital expenditure</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/m4001">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">M4001</rdfs:label>
+        <skos:prefLabel xml:lang="en">M4001</skos:prefLabel>
+        <skos:notation>m4001</skos:notation>
+        <rdfs:comment>M40.01 Non-domestic rates</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/t3001">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">T3001</rdfs:label>
+        <skos:prefLabel xml:lang="en">T3001</skos:prefLabel>
+        <skos:notation>t3001</skos:notation>
+        <rdfs:comment>T30.01 Public corporations’ profit and losses</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/m2001">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">M2001</rdfs:label>
+        <skos:prefLabel xml:lang="en">M2001</skos:prefLabel>
+        <skos:notation>m2001</skos:notation>
+        <rdfs:comment>M20.01 Uncapitalised grants to local authorities covering loan charges</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/n4001">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">N4001</rdfs:label>
+        <skos:prefLabel xml:lang="en">N4001</skos:prefLabel>
+        <skos:notation>n4001</skos:notation>
+        <rdfs:comment>N40.01 Supported capital expenditure</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/k1201">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">K1201</rdfs:label>
+        <skos:prefLabel xml:lang="en">K1201</skos:prefLabel>
+        <skos:notation>k1201</skos:notation>
+        <rdfs:comment>K12.01 Sale of company securities (book value)</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/f4501">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">F4501</rdfs:label>
+        <skos:prefLabel xml:lang="en">F4501</skos:prefLabel>
+        <skos:notation>f4501</skos:notation>
+        <rdfs:comment>F45.01 Changes in creditors: resource expenditure – voted accruals/cash adjustments</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/b9001">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">B9001</rdfs:label>
+        <skos:prefLabel xml:lang="en">B9001</skos:prefLabel>
+        <skos:notation>b9001</skos:notation>
+        <rdfs:comment>B90.01 Depreciation (departments, NDPBs, agencies)</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/l3101">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">L3101</rdfs:label>
+        <skos:prefLabel xml:lang="en">L3101</skos:prefLabel>
+        <skos:notation>l3101</skos:notation>
+        <rdfs:comment>L31.01 Provisions relating to bad debts on loans – release</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/l2001">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">L2001</rdfs:label>
+        <skos:prefLabel xml:lang="en">L2001</skos:prefLabel>
+        <skos:notation>l2001</skos:notation>
+        <rdfs:comment>L20.01 Provisions in connection with grants and associated receipts – take-up and revaluations</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/s5001">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">S5001</rdfs:label>
+        <skos:prefLabel xml:lang="en">S5001</skos:prefLabel>
+        <skos:notation>s5001</skos:notation>
+        <rdfs:comment>S50.01 Taxes on products and production</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/e1101">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">E1101</rdfs:label>
+        <skos:prefLabel xml:lang="en">E1101</skos:prefLabel>
+        <skos:notation>e1101</skos:notation>
+        <rdfs:comment>E11.01 Sale of existing buildings (book value)</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/b9201">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">B9201</rdfs:label>
+        <skos:prefLabel xml:lang="en">B9201</skos:prefLabel>
+        <skos:notation>b9201</skos:notation>
+        <rdfs:comment>B92.01 Release from the donated assets reserve</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/e5001">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">E5001</rdfs:label>
+        <skos:prefLabel xml:lang="en">E5001</skos:prefLabel>
+        <skos:notation>e5001</skos:notation>
+        <rdfs:comment>E50.01 Bought in intangible assets</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/l1101">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">L1101</rdfs:label>
+        <skos:prefLabel xml:lang="en">L1101</skos:prefLabel>
+        <skos:notation>l1101</skos:notation>
+        <rdfs:comment>L11.01 Provisions in line with pay and procurement – release of provision only</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/e1502">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">E1502</rdfs:label>
+        <skos:prefLabel xml:lang="en">E1502</skos:prefLabel>
+        <skos:notation>e1502</skos:notation>
+        <rdfs:comment>E15.02 Expenditure on other new construction and improvements to existing other constructions and improvements to land</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/b9901">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">B9901</rdfs:label>
+        <skos:prefLabel xml:lang="en">B9901</skos:prefLabel>
+        <skos:notation>b9901</skos:notation>
+        <rdfs:comment>B99.01 Cost of capital charges other than B98</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/e1501">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">E1501</rdfs:label>
+        <skos:prefLabel xml:lang="en">E1501</skos:prefLabel>
+        <skos:notation>e1501</skos:notation>
+        <rdfs:comment>E15.01 Expenditure on new dwellings and improvements to existing dwellings</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/b7301">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">B7301</rdfs:label>
+        <skos:prefLabel xml:lang="en">B7301</skos:prefLabel>
+        <skos:notation>b7301</skos:notation>
+        <rdfs:comment>B73.01 Receipts and depreciation costs relating to disposals of intangible single use military equipment</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/c1001">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">C1001</rdfs:label>
+        <skos:prefLabel xml:lang="en">C1001</skos:prefLabel>
+        <skos:notation>c1001</skos:notation>
+        <rdfs:comment>C10.01 Subsidies to market producers (profit making firms)</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/d3001">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">D3001</rdfs:label>
+        <skos:prefLabel xml:lang="en">D3001</skos:prefLabel>
+        <skos:notation>d3001</skos:notation>
+        <rdfs:comment>D30.01 Subsidised loans to persons</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/f4001">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">F4001</rdfs:label>
+        <skos:prefLabel xml:lang="en">F4001</skos:prefLabel>
+        <skos:notation>f4001</skos:notation>
+        <rdfs:comment>F40.01 Changes in level of debtors</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/d9001">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">D9001</rdfs:label>
+        <skos:prefLabel xml:lang="en">D9001</skos:prefLabel>
+        <skos:notation>d9001</skos:notation>
+        <rdfs:comment>D90.01 Departmental unallocated provision including current expenditure which cannot be assigned to an economic category</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/b6001">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">B6001</rdfs:label>
+        <skos:prefLabel xml:lang="en">B6001</skos:prefLabel>
+        <skos:notation>b6001</skos:notation>
+        <rdfs:comment>B60.01 Payments and receipts of rent of land (not buildings)</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/s1001">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">S1001</rdfs:label>
+        <skos:prefLabel xml:lang="en">S1001</skos:prefLabel>
+        <skos:notation>s1001</skos:notation>
+        <rdfs:comment>S10.01 Interest received from persons</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/b3801">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">B3801</rdfs:label>
+        <skos:prefLabel xml:lang="en">B3801</skos:prefLabel>
+        <skos:notation>b3801</skos:notation>
+        <rdfs:comment>B38.01 Notional audit fees</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/k3001">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">K3001</rdfs:label>
+        <skos:prefLabel xml:lang="en">K3001</skos:prefLabel>
+        <skos:notation>k3001</skos:notation>
+        <rdfs:comment>K30.01 Dividends paid to/received from the private sector and the Bank of England</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Nac rdf:about="http://finance.data.gov.uk/def/coins/nac/h1001">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">H1001</rdfs:label>
+        <skos:prefLabel xml:lang="en">H1001</skos:prefLabel>
+        <skos:notation>h1001</skos:notation>
+        <rdfs:comment>H10.01 Net lending to private sector - companies</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/nac"/>
+      </j.1:Nac>
+    </skos:hasTopConcept>
+  </skos:ConceptScheme>
+</rdf:RDF>

@@ -1,0 +1,503 @@
+# Generated 2010-10-06T09:38:18+01:00
+
+@prefix rdf:                <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:               <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:                <http://www.w3.org/2002/07/owl#> .
+@prefix skos:               <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd:                <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:               <http://xmlns.com/foaf/0.1/> .
+@prefix void:               <http://rdfs.org/ns/void#> .
+@prefix dcterms:            <http://purl.org/dc/terms/> .
+@prefix sdmx:               <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept:       <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:     <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:     <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:       <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-code:          <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:       <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix qb:                 <http://purl.org/linked-data/cube#> .
+@prefix coins-data:         <http://source.data.gov.uk/data/coins/> .
+@prefix coins-dsd:          <http://finance.data.gov.uk/dsd/coins/> .
+@prefix coins-dimension:    <http://finance.data.gov.uk/dsd/coins/dimension/> .
+@prefix coins-attribute:    <http://finance.data.gov.uk/dsd/coins/attribute/> .
+@prefix coins-measure:      <http://finance.data.gov.uk/dsd/coins/measure/> .
+@prefix coins-slicekey:     <http://finance.data.gov.uk/dsd/coins/slice/> .
+
+<http://finance.data.gov.uk/dsd/coins>
+    a qb:DataStructureDefinition;
+    qb:component [qb:componentProperty sdmx-dimension:refPeriod; qb:order 0];
+    qb:component [qb:componentProperty coins-dimension:dataType; qb:order 1];
+    qb:component [qb:componentProperty coins-dimension:dataSubtype; qb:order 2];
+    qb:component [qb:componentProperty coins-dimension:departmentCode; qb:order 3];
+    qb:component [qb:componentProperty coins-dimension:accountCode; qb:order 4];
+    qb:component [qb:componentProperty coins-dimension:programmeObjectCode; qb:order 5];
+    qb:component [qb:componentProperty coins-dimension:counterpartyCode; qb:order 6];
+    qb:component [qb:componentProperty coins-attribute:accountingAuthority];
+    qb:component [qb:componentProperty coins-attribute:accountsCapitalCurrent];
+    qb:component [qb:componentProperty coins-attribute:activityCode];
+    qb:component [qb:componentProperty coins-attribute:budgetBoundary];
+    qb:component [qb:componentProperty coins-attribute:budgetCapitalCurrent];
+    qb:component [qb:componentProperty coins-attribute:cgaBodyType];
+    qb:component [qb:componentProperty coins-attribute:cofog];
+    qb:component [qb:componentProperty coins-attribute:departmentGroup];
+    qb:component [qb:componentProperty coins-attribute:esa];
+    qb:component [qb:componentProperty coins-attribute:estimateLine];
+    qb:component [qb:componentProperty coins-attribute:estimateLineLastYear];
+    qb:component [qb:componentProperty coins-attribute:estimateLineNextYear];
+    qb:component [qb:componentProperty coins-attribute:estimateNumber];
+    qb:component [qb:componentProperty coins-attribute:estimateNumberLastYear];
+    qb:component [qb:componentProperty coins-attribute:estimateNumberNextYear];
+    qb:component [qb:componentProperty coins-attribute:estimatesAina];
+    qb:component [qb:componentProperty coins-attribute:estimatesCapitalCurrent];
+    qb:component [qb:componentProperty coins-attribute:incomeCategory];
+    qb:component [qb:componentProperty coins-attribute:nac];
+    qb:component [qb:componentProperty coins-attribute:pesa11];
+    qb:component [qb:componentProperty coins-attribute:pesaCurrentGrants];
+    qb:component [qb:componentProperty coins-attribute:pesaDelivery];
+    qb:component [qb:componentProperty coins-attribute:pesaServices];
+    qb:component [qb:componentProperty coins-attribute:pesaTransfer];
+    qb:component [qb:componentProperty coins-attribute:programmeAdmin];
+    qb:component [qb:componentProperty coins-attribute:programmeObjectGroupCode];
+    qb:component [qb:componentProperty coins-attribute:requestForResources];
+    qb:component [qb:componentProperty coins-attribute:requestForResourcesLastYear];
+    qb:component [qb:componentProperty coins-attribute:requestForResourcesNextYear];
+    qb:component [qb:componentProperty coins-attribute:resourceCapital];
+    qb:component [qb:componentProperty coins-attribute:sbi];
+    qb:component [qb:componentProperty coins-attribute:sector];
+    qb:component [qb:componentProperty coins-attribute:signage];
+    qb:component [qb:componentProperty coins-attribute:territory];
+    qb:component [qb:componentProperty coins-measure:amount; qb:componentAttachment qb:DataSet];
+    .
+
+
+# Components
+############
+
+coins-dimension:dataType
+    a qb:DimensionProperty, rdf:Property, qb:CodedProperty;
+    rdfs:label "data-type dimension"@en;
+    rdfs:comment "Dimension property representing data type";
+    rdfs:range <http://finance.data.gov.uk/def/coins/data-type/DataType>;
+    qb:concept <http://finance.data.gov.uk/def/coins/statistical-concept/data-type>;
+    qb:codeList <http://finance.data.gov.uk/def/coins/data-type>;
+    skos:notation "data_type";
+    .
+
+coins-dimension:dataSubtype
+    a qb:DimensionProperty, rdf:Property, qb:CodedProperty;
+    rdfs:label "data-subtype dimension"@en;
+    rdfs:comment "Dimension property representing data subtype";
+    rdfs:range <http://finance.data.gov.uk/def/coins/data-subtype/DataSubtype>;
+    qb:concept <http://finance.data.gov.uk/def/coins/statistical-concept/data-subtype>;
+    qb:codeList <http://finance.data.gov.uk/def/coins/data-subtype>;
+    skos:notation "data_subtype";
+    .
+
+coins-dimension:departmentCode
+    a qb:DimensionProperty, rdf:Property, qb:CodedProperty;
+    rdfs:label "department-code dimension"@en;
+    rdfs:comment "Dimension property representing department code";
+    rdfs:range <http://finance.data.gov.uk/def/coins/department-code/DepartmentCode>;
+    qb:concept <http://finance.data.gov.uk/def/coins/statistical-concept/department-code>;
+    qb:codeList <http://finance.data.gov.uk/def/coins/department-code>;
+    skos:notation "department_code";
+    .
+
+coins-dimension:accountCode
+    a qb:DimensionProperty, rdf:Property, qb:CodedProperty;
+    rdfs:label "account-code dimension"@en;
+    rdfs:comment "Dimension property representing account code";
+    rdfs:range <http://finance.data.gov.uk/def/coins/account-code/AccountCode>;
+    qb:concept <http://finance.data.gov.uk/def/coins/statistical-concept/account-code>;
+    qb:codeList <http://finance.data.gov.uk/def/coins/account-code>;
+    skos:notation "account_code";
+    .
+
+coins-dimension:programmeObjectCode
+    a qb:DimensionProperty, rdf:Property, qb:CodedProperty;
+    rdfs:label "programme-object-code dimension"@en;
+    rdfs:comment "Dimension property representing programme object code";
+    rdfs:range <http://finance.data.gov.uk/def/coins/programme-object-code/ProgrammeObjectCode>;
+    qb:concept <http://finance.data.gov.uk/def/coins/statistical-concept/programme-object-code>;
+    qb:codeList <http://finance.data.gov.uk/def/coins/programme-object-code>;
+    skos:notation "programme_object_code";
+    .
+
+coins-dimension:counterpartyCode
+    a qb:DimensionProperty, rdf:Property, qb:CodedProperty;
+    rdfs:label "counterparty-code dimension"@en;
+    rdfs:comment "Dimension property representing counterparty code";
+    rdfs:range <http://finance.data.gov.uk/def/coins/counterparty-code/CounterpartyCode>;
+    qb:concept <http://finance.data.gov.uk/def/coins/statistical-concept/counterparty-code>;
+    qb:codeList <http://finance.data.gov.uk/def/coins/counterparty-code>;
+    skos:notation "counterparty_code";
+    .
+
+coins-attribute:accountingAuthority
+    a qb:AttributeProperty, rdf:Property, qb:CodedProperty;
+    rdfs:label "accounting-authority attribute"@en;
+    rdfs:comment "Attribute property representing accounting authority";
+    rdfs:range <http://finance.data.gov.uk/def/coins/accounting-authority/AccountingAuthority>;
+    qb:concept <http://finance.data.gov.uk/def/coins/statistical-concept/accounting-authority>;
+    qb:codeList <http://finance.data.gov.uk/def/coins/accounting-authority>;
+    skos:notation "accounting_authority";
+    .
+
+coins-attribute:accountsCapitalCurrent
+    a qb:AttributeProperty, rdf:Property, qb:CodedProperty;
+    rdfs:label "accounts-capital-current attribute"@en;
+    rdfs:comment "Attribute property representing accounts capital current";
+    rdfs:range <http://finance.data.gov.uk/def/coins/accounts-capital-current/AccountsCapitalCurrent>;
+    qb:concept <http://finance.data.gov.uk/def/coins/statistical-concept/accounts-capital-current>;
+    qb:codeList <http://finance.data.gov.uk/def/coins/accounts-capital-current>;
+    skos:notation "accounts_capital_current";
+    .
+
+coins-attribute:activityCode
+    a qb:AttributeProperty, rdf:Property, qb:CodedProperty;
+    rdfs:label "activity-code attribute"@en;
+    rdfs:comment "Attribute property representing activity code";
+    rdfs:range <http://finance.data.gov.uk/def/coins/activity-code/ActivityCode>;
+    qb:concept <http://finance.data.gov.uk/def/coins/statistical-concept/activity-code>;
+    qb:codeList <http://finance.data.gov.uk/def/coins/activity-code>;
+    skos:notation "activity_code";
+    .
+
+coins-attribute:budgetBoundary
+    a qb:AttributeProperty, rdf:Property, qb:CodedProperty;
+    rdfs:label "budget-boundary attribute"@en;
+    rdfs:comment "Attribute property representing budget boundary";
+    rdfs:range <http://finance.data.gov.uk/def/coins/budget-boundary/BudgetBoundary>;
+    qb:concept <http://finance.data.gov.uk/def/coins/statistical-concept/budget-boundary>;
+    qb:codeList <http://finance.data.gov.uk/def/coins/budget-boundary>;
+    skos:notation "budget_boundary";
+    .
+
+coins-attribute:budgetCapitalCurrent
+    a qb:AttributeProperty, rdf:Property, qb:CodedProperty;
+    rdfs:label "budget-capital-current attribute"@en;
+    rdfs:comment "Attribute property representing budget capital current";
+    rdfs:range <http://finance.data.gov.uk/def/coins/budget-capital-current/BudgetCapitalCurrent>;
+    qb:concept <http://finance.data.gov.uk/def/coins/statistical-concept/budget-capital-current>;
+    qb:codeList <http://finance.data.gov.uk/def/coins/budget-capital-current>;
+    skos:notation "budget_capital_current";
+    .
+
+coins-attribute:cgaBodyType
+    a qb:AttributeProperty, rdf:Property, qb:CodedProperty;
+    rdfs:label "cga-body-type attribute"@en;
+    rdfs:comment "Attribute property representing cga body type";
+    rdfs:range <http://finance.data.gov.uk/def/coins/cga-body-type/CgaBodyType>;
+    qb:concept <http://finance.data.gov.uk/def/coins/statistical-concept/cga-body-type>;
+    qb:codeList <http://finance.data.gov.uk/def/coins/cga-body-type>;
+    skos:notation "cga_body_type";
+    .
+
+coins-attribute:cofog
+    a qb:AttributeProperty, rdf:Property, qb:CodedProperty;
+    rdfs:label "cofog attribute"@en;
+    rdfs:comment "Attribute property representing cofog";
+    rdfs:range <http://finance.data.gov.uk/def/coins/cofog/Cofog>;
+    qb:concept <http://finance.data.gov.uk/def/coins/statistical-concept/cofog>;
+    qb:codeList <http://finance.data.gov.uk/def/coins/cofog>;
+    skos:notation "cofog";
+    .
+
+coins-attribute:departmentGroup
+    a qb:AttributeProperty, rdf:Property, qb:CodedProperty;
+    rdfs:label "department-group attribute"@en;
+    rdfs:comment "Attribute property representing department group";
+    rdfs:range <http://finance.data.gov.uk/def/coins/department-group/DepartmentGroup>;
+    qb:concept <http://finance.data.gov.uk/def/coins/statistical-concept/department-group>;
+    qb:codeList <http://finance.data.gov.uk/def/coins/department-group>;
+    skos:notation "department_group";
+    .
+
+coins-attribute:esa
+    a qb:AttributeProperty, rdf:Property, qb:CodedProperty;
+    rdfs:label "esa attribute"@en;
+    rdfs:comment "Attribute property representing esa";
+    rdfs:range <http://finance.data.gov.uk/def/coins/esa/Esa>;
+    qb:concept <http://finance.data.gov.uk/def/coins/statistical-concept/esa>;
+    qb:codeList <http://finance.data.gov.uk/def/coins/esa>;
+    skos:notation "esa";
+    .
+
+coins-attribute:estimateLine
+    a qb:AttributeProperty, rdf:Property, qb:CodedProperty;
+    rdfs:label "estimate-line attribute"@en;
+    rdfs:comment "Attribute property representing estimate line";
+    rdfs:range <http://finance.data.gov.uk/def/coins/estimate-line/EstimateLine>;
+    qb:concept <http://finance.data.gov.uk/def/coins/statistical-concept/estimate-line>;
+    qb:codeList <http://finance.data.gov.uk/def/coins/estimate-line>;
+    skos:notation "estimate_line";
+    .
+
+coins-attribute:estimateLineLastYear
+    a qb:AttributeProperty, rdf:Property, qb:CodedProperty;
+    rdfs:label "estimate-line-last-year attribute"@en;
+    rdfs:comment "Attribute property representing estimate line last year";
+    rdfs:range <http://finance.data.gov.uk/def/coins/estimate-line-last-year/EstimateLineLastYear>;
+    qb:concept <http://finance.data.gov.uk/def/coins/statistical-concept/estimate-line-last-year>;
+    qb:codeList <http://finance.data.gov.uk/def/coins/estimate-line-last-year>;
+    skos:notation "estimate_line_last_year";
+    .
+
+coins-attribute:estimateLineNextYear
+    a qb:AttributeProperty, rdf:Property, qb:CodedProperty;
+    rdfs:label "estimate-line-next-year attribute"@en;
+    rdfs:comment "Attribute property representing estimate line next year";
+    rdfs:range <http://finance.data.gov.uk/def/coins/estimate-line-next-year/EstimateLineNextYear>;
+    qb:concept <http://finance.data.gov.uk/def/coins/statistical-concept/estimate-line-next-year>;
+    qb:codeList <http://finance.data.gov.uk/def/coins/estimate-line-next-year>;
+    skos:notation "estimate_line_next_year";
+    .
+
+coins-attribute:estimateNumber
+    a qb:AttributeProperty, rdf:Property, qb:CodedProperty;
+    rdfs:label "estimate-number attribute"@en;
+    rdfs:comment "Attribute property representing estimate number";
+    rdfs:range <http://finance.data.gov.uk/def/coins/estimate-number/EstimateNumber>;
+    qb:concept <http://finance.data.gov.uk/def/coins/statistical-concept/estimate-number>;
+    qb:codeList <http://finance.data.gov.uk/def/coins/estimate-number>;
+    skos:notation "estimate_number";
+    .
+
+coins-attribute:estimateNumberLastYear
+    a qb:AttributeProperty, rdf:Property, qb:CodedProperty;
+    rdfs:label "estimate-number-last-year attribute"@en;
+    rdfs:comment "Attribute property representing estimate number last year";
+    rdfs:range <http://finance.data.gov.uk/def/coins/estimate-number-last-year/EstimateNumberLastYear>;
+    qb:concept <http://finance.data.gov.uk/def/coins/statistical-concept/estimate-number-last-year>;
+    qb:codeList <http://finance.data.gov.uk/def/coins/estimate-number-last-year>;
+    skos:notation "estimate_number_last_year";
+    .
+
+coins-attribute:estimateNumberNextYear
+    a qb:AttributeProperty, rdf:Property, qb:CodedProperty;
+    rdfs:label "estimate-number-next-year attribute"@en;
+    rdfs:comment "Attribute property representing estimate number next year";
+    rdfs:range <http://finance.data.gov.uk/def/coins/estimate-number-next-year/EstimateNumberNextYear>;
+    qb:concept <http://finance.data.gov.uk/def/coins/statistical-concept/estimate-number-next-year>;
+    qb:codeList <http://finance.data.gov.uk/def/coins/estimate-number-next-year>;
+    skos:notation "estimate_number_next_year";
+    .
+
+coins-attribute:estimatesAina
+    a qb:AttributeProperty, rdf:Property, qb:CodedProperty;
+    rdfs:label "estimates-aina attribute"@en;
+    rdfs:comment "Attribute property representing estimates aina";
+    rdfs:range <http://finance.data.gov.uk/def/coins/estimates-aina/EstimatesAina>;
+    qb:concept <http://finance.data.gov.uk/def/coins/statistical-concept/estimates-aina>;
+    qb:codeList <http://finance.data.gov.uk/def/coins/estimates-aina>;
+    skos:notation "estimates_aina";
+    .
+
+coins-attribute:estimatesCapitalCurrent
+    a qb:AttributeProperty, rdf:Property, qb:CodedProperty;
+    rdfs:label "estimates-capital-current attribute"@en;
+    rdfs:comment "Attribute property representing estimates capital current";
+    rdfs:range <http://finance.data.gov.uk/def/coins/estimates-capital-current/EstimatesCapitalCurrent>;
+    qb:concept <http://finance.data.gov.uk/def/coins/statistical-concept/estimates-capital-current>;
+    qb:codeList <http://finance.data.gov.uk/def/coins/estimates-capital-current>;
+    skos:notation "estimates_capital_current";
+    .
+
+coins-attribute:incomeCategory
+    a qb:AttributeProperty, rdf:Property, qb:CodedProperty;
+    rdfs:label "income-category attribute"@en;
+    rdfs:comment "Attribute property representing income category";
+    rdfs:range <http://finance.data.gov.uk/def/coins/income-category/IncomeCategory>;
+    qb:concept <http://finance.data.gov.uk/def/coins/statistical-concept/income-category>;
+    qb:codeList <http://finance.data.gov.uk/def/coins/income-category>;
+    skos:notation "income_category";
+    .
+
+coins-attribute:nac
+    a qb:AttributeProperty, rdf:Property, qb:CodedProperty;
+    rdfs:label "nac attribute"@en;
+    rdfs:comment "Attribute property representing nac";
+    rdfs:range <http://finance.data.gov.uk/def/coins/nac/Nac>;
+    qb:concept <http://finance.data.gov.uk/def/coins/statistical-concept/nac>;
+    qb:codeList <http://finance.data.gov.uk/def/coins/nac>;
+    skos:notation "nac";
+    .
+
+coins-attribute:pesa11
+    a qb:AttributeProperty, rdf:Property, qb:CodedProperty;
+    rdfs:label "pesa-1-1 attribute"@en;
+    rdfs:comment "Attribute property representing pesa 1 1";
+    rdfs:range <http://finance.data.gov.uk/def/coins/pesa-1-1/Pesa11>;
+    qb:concept <http://finance.data.gov.uk/def/coins/statistical-concept/pesa-1-1>;
+    qb:codeList <http://finance.data.gov.uk/def/coins/pesa-1-1>;
+    skos:notation "pesa_1_1";
+    .
+
+coins-attribute:pesaCurrentGrants
+    a qb:AttributeProperty, rdf:Property, qb:CodedProperty;
+    rdfs:label "pesa-current-grants attribute"@en;
+    rdfs:comment "Attribute property representing pesa current grants";
+    rdfs:range <http://finance.data.gov.uk/def/coins/pesa-current-grants/PesaCurrentGrants>;
+    qb:concept <http://finance.data.gov.uk/def/coins/statistical-concept/pesa-current-grants>;
+    qb:codeList <http://finance.data.gov.uk/def/coins/pesa-current-grants>;
+    skos:notation "pesa_current_grants";
+    .
+
+coins-attribute:pesaDelivery
+    a qb:AttributeProperty, rdf:Property, qb:CodedProperty;
+    rdfs:label "pesa-delivery attribute"@en;
+    rdfs:comment "Attribute property representing pesa delivery";
+    rdfs:range <http://finance.data.gov.uk/def/coins/pesa-delivery/PesaDelivery>;
+    qb:concept <http://finance.data.gov.uk/def/coins/statistical-concept/pesa-delivery>;
+    qb:codeList <http://finance.data.gov.uk/def/coins/pesa-delivery>;
+    skos:notation "pesa_delivery";
+    .
+
+coins-attribute:pesaServices
+    a qb:AttributeProperty, rdf:Property, qb:CodedProperty;
+    rdfs:label "pesa-services attribute"@en;
+    rdfs:comment "Attribute property representing pesa services";
+    rdfs:range <http://finance.data.gov.uk/def/coins/pesa-services/PesaServices>;
+    qb:concept <http://finance.data.gov.uk/def/coins/statistical-concept/pesa-services>;
+    qb:codeList <http://finance.data.gov.uk/def/coins/pesa-services>;
+    skos:notation "pesa_services";
+    .
+
+coins-attribute:pesaTransfer
+    a qb:AttributeProperty, rdf:Property, qb:CodedProperty;
+    rdfs:label "pesa-transfer attribute"@en;
+    rdfs:comment "Attribute property representing pesa transfer";
+    rdfs:range <http://finance.data.gov.uk/def/coins/pesa-transfer/PesaTransfer>;
+    qb:concept <http://finance.data.gov.uk/def/coins/statistical-concept/pesa-transfer>;
+    qb:codeList <http://finance.data.gov.uk/def/coins/pesa-transfer>;
+    skos:notation "pesa_transfer";
+    .
+
+coins-attribute:programmeAdmin
+    a qb:AttributeProperty, rdf:Property, qb:CodedProperty;
+    rdfs:label "programme-admin attribute"@en;
+    rdfs:comment "Attribute property representing programme admin";
+    rdfs:range <http://finance.data.gov.uk/def/coins/programme-admin/ProgrammeAdmin>;
+    qb:concept <http://finance.data.gov.uk/def/coins/statistical-concept/programme-admin>;
+    qb:codeList <http://finance.data.gov.uk/def/coins/programme-admin>;
+    skos:notation "programme_admin";
+    .
+
+coins-attribute:programmeObjectGroupCode
+    a qb:AttributeProperty, rdf:Property, qb:CodedProperty;
+    rdfs:label "programme-object-group-code attribute"@en;
+    rdfs:comment "Attribute property representing programme object group code";
+    rdfs:range <http://finance.data.gov.uk/def/coins/programme-object-group-code/ProgrammeObjectGroupCode>;
+    qb:concept <http://finance.data.gov.uk/def/coins/statistical-concept/programme-object-group-code>;
+    qb:codeList <http://finance.data.gov.uk/def/coins/programme-object-group-code>;
+    skos:notation "programme_object_group_code";
+    .
+
+coins-attribute:requestForResources
+    a qb:AttributeProperty, rdf:Property, qb:CodedProperty;
+    rdfs:label "request-for-resources attribute"@en;
+    rdfs:comment "Attribute property representing request for resources";
+    rdfs:range <http://finance.data.gov.uk/def/coins/request-for-resources/RequestForResources>;
+    qb:concept <http://finance.data.gov.uk/def/coins/statistical-concept/request-for-resources>;
+    qb:codeList <http://finance.data.gov.uk/def/coins/request-for-resources>;
+    skos:notation "request_for_resources";
+    .
+
+coins-attribute:requestForResourcesLastYear
+    a qb:AttributeProperty, rdf:Property, qb:CodedProperty;
+    rdfs:label "request-for-resources-last-year attribute"@en;
+    rdfs:comment "Attribute property representing request for resources last year";
+    rdfs:range <http://finance.data.gov.uk/def/coins/request-for-resources-last-year/RequestForResourcesLastYear>;
+    qb:concept <http://finance.data.gov.uk/def/coins/statistical-concept/request-for-resources-last-year>;
+    qb:codeList <http://finance.data.gov.uk/def/coins/request-for-resources-last-year>;
+    skos:notation "request_for_resources_last_year";
+    .
+
+coins-attribute:requestForResourcesNextYear
+    a qb:AttributeProperty, rdf:Property, qb:CodedProperty;
+    rdfs:label "request-for-resources-next-year attribute"@en;
+    rdfs:comment "Attribute property representing request for resources next year";
+    rdfs:range <http://finance.data.gov.uk/def/coins/request-for-resources-next-year/RequestForResourcesNextYear>;
+    qb:concept <http://finance.data.gov.uk/def/coins/statistical-concept/request-for-resources-next-year>;
+    qb:codeList <http://finance.data.gov.uk/def/coins/request-for-resources-next-year>;
+    skos:notation "request_for_resources_next_year";
+    .
+
+coins-attribute:resourceCapital
+    a qb:AttributeProperty, rdf:Property, qb:CodedProperty;
+    rdfs:label "resource-capital attribute"@en;
+    rdfs:comment "Attribute property representing resource capital";
+    rdfs:range <http://finance.data.gov.uk/def/coins/resource-capital/ResourceCapital>;
+    qb:concept <http://finance.data.gov.uk/def/coins/statistical-concept/resource-capital>;
+    qb:codeList <http://finance.data.gov.uk/def/coins/resource-capital>;
+    skos:notation "resource_capital";
+    .
+
+coins-attribute:sbi
+    a qb:AttributeProperty, rdf:Property, qb:CodedProperty;
+    rdfs:label "sbi attribute"@en;
+    rdfs:comment "Attribute property representing sbi";
+    rdfs:range <http://finance.data.gov.uk/def/coins/sbi/Sbi>;
+    qb:concept <http://finance.data.gov.uk/def/coins/statistical-concept/sbi>;
+    qb:codeList <http://finance.data.gov.uk/def/coins/sbi>;
+    skos:notation "sbi";
+    .
+
+coins-attribute:sector
+    a qb:AttributeProperty, rdf:Property, qb:CodedProperty;
+    rdfs:label "sector attribute"@en;
+    rdfs:comment "Attribute property representing sector";
+    rdfs:range <http://finance.data.gov.uk/def/coins/sector/Sector>;
+    qb:concept <http://finance.data.gov.uk/def/coins/statistical-concept/sector>;
+    qb:codeList <http://finance.data.gov.uk/def/coins/sector>;
+    skos:notation "sector";
+    .
+
+coins-attribute:signage
+    a qb:AttributeProperty, rdf:Property, qb:CodedProperty;
+    rdfs:label "signage attribute"@en;
+    rdfs:comment "Attribute property representing signage";
+    rdfs:range <http://finance.data.gov.uk/def/coins/signage/Signage>;
+    qb:concept <http://finance.data.gov.uk/def/coins/statistical-concept/signage>;
+    qb:codeList <http://finance.data.gov.uk/def/coins/signage>;
+    skos:notation "signage";
+    .
+
+coins-attribute:territory
+    a qb:AttributeProperty, rdf:Property, qb:CodedProperty;
+    rdfs:label "territory attribute"@en;
+    rdfs:comment "Attribute property representing territory";
+    rdfs:range <http://finance.data.gov.uk/def/coins/territory/Territory>;
+    qb:concept <http://finance.data.gov.uk/def/coins/statistical-concept/territory>;
+    qb:codeList <http://finance.data.gov.uk/def/coins/territory>;
+    skos:notation "territory";
+    .
+
+coins-measure:amount
+    a qb:MeasureProperty, rdf:Property;
+    rdfs:label "amount in thousands of pounds"@en;
+    rdfs:comment "Represents the amount being reported, in thousands of pounds Sterling";
+    rdfs:subPropertyOf sdmx-measure:obsValue, rdf:value;
+    sdmx-attribute:unitMeasure <http://finance.data.gov.uk/def/currency/GBP>;
+    sdmx-attribute:unitMult sdmx-code:unitMult-3;
+    .
+
+# Slice keys
+############
+
+<http://finance.data.gov.uk/dsd/coins/slice/refPeriod-dataType>
+    a qb:SliceKey;
+    rdfs:label "time, data-type slice";
+    rdfs:comment "Represents slices indexed by time and data-type (e.g. outturn, snapshot)";
+    qb:componentProperty sdmx-dimension:refPeriod;
+    qb:componentProperty coins-dimension:data-type;
+    .
+
+# Additional metadata
+#####################
+
+sdmx-dimension:refPeriod
+        skos:notation "t_time";
+        qb:concept <http://finance.data.gov.uk/def/coins/statistical-concept/time>;
+        rdf:type qb:CodedProperty, qb:DimensionProperty.
+

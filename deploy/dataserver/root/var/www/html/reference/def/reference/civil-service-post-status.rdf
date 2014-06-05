@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:dct="http://purl.org/dc/terms/"
+   xmlns:foaf="http://xmlns.com/foaf/0.1/"
+   xmlns:gov="http://reference.data.gov.uk/def/central-government/"
+   xmlns:opmv="http://purl.org/net/opmv/ns#"
+   xmlns:org="http://www.w3.org/ns/org#"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+   xmlns:time="http://www.w3.org/2006/time#"
+   xmlns:void="http://rdfs.org/ns/void#"
+   xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+   xmlns="http://reference.data.gov.uk/def/civil-service-post-status/">
+  <skos:ConceptScheme rdf:about="http://reference.data.gov.uk/def/civil-service-post-status">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <rdfs:label xml:lang="en">Civil Service Post Statuses</rdfs:label>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-post-status/current"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-post-status/eliminated"/>
+    <skos:hasTopConcept rdf:resource="http://reference.data.gov.uk/def/civil-service-post-status/vacant"/>
+  </skos:ConceptScheme>
+  <rdfs:Class rdf:about="http://reference.data.gov.uk/def/civil-service-post-status/PostStatus">
+    <rdfs:isDefinedBy rdf:resource="http://reference.data.gov.uk/def/civil-service-post-status"/>
+    <rdfs:label xml:lang="en">Post Status</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdfs:Class>
+  <PostStatus rdf:about="http://reference.data.gov.uk/def/civil-service-post-status/current">
+    <skos:isTopConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-post-status"/>
+    <skos:prefLabel xml:lang="en">Current</skos:prefLabel>
+  </PostStatus>
+  <PostStatus rdf:about="http://reference.data.gov.uk/def/civil-service-post-status/eliminated">
+    <skos:isTopConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-post-status"/>
+    <skos:prefLabel xml:lang="en">Eliminated</skos:prefLabel>
+  </PostStatus>
+  <rdf:Property rdf:about="http://reference.data.gov.uk/def/civil-service-post-status/postStatus">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://reference.data.gov.uk/def/civil-service-post-status"/>
+    <rdfs:label xml:lang="en">Post Status</rdfs:label>
+    <rdfs:range rdf:resource="http://reference.data.gov.uk/def/civil-service-post-status/PostStatus"/>
+  </rdf:Property>
+  <PostStatus rdf:about="http://reference.data.gov.uk/def/civil-service-post-status/vacant">
+    <skos:isTopConceptOf rdf:resource="http://reference.data.gov.uk/def/civil-service-post-status"/>
+    <skos:prefLabel xml:lang="en">Vacant</skos:prefLabel>
+  </PostStatus>
+</rdf:RDF>

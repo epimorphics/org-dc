@@ -1,0 +1,70 @@
+@base					<http://environment.data.gov.uk/def/bathing-water> .
+@prefix :        		<http://environment.data.gov.uk/def/bathing-water/> .
+
+# Prefix for Sampling Point Locations under INSPIRE environmental monitoring facilities theme.
+@prefix	loc-sp:		<http://location.data.gov.uk/def/ef/SamplingPoint/> .
+
+# Prefix for Bathing Waters (associated with Monitoring Points) as ref-data under environment.data.gov.uk.
+@prefix	def-bw:			<http://environment.data.gov.uk/def/bathing-water/> .
+
+@prefix rdfs:    		<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:     		<http://www.w3.org/2002/07/owl#> .
+@prefix xsd:     		<http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:     		<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb:      		<http://purl.org/linked-data/cube#> .
+@prefix time:	 		<http://www.w3.org/2006/time#> .
+@prefix	interval:       <http://reference.data.gov.uk/def/intervals/> .
+@prefix skos:   	    <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms:        <http://purl.org/dc/terms/> .
+@prefix foaf:           <http://xmlns.com/foaf/0.1/> .
+
+@prefix geo:			<http://www.w3.org/2003/01/geo/wgs84_pos#> .
+
+@prefix sdmx-attribute: <http://purl.org/linked-data/sdmx/2009/sdmx-attribute#> .
+
+<>
+      a       owl:Ontology ;
+      dcterms:created		"2010-08-28"^^xsd:date;
+	  dcterms:modified		"2010-08-28"^^xsd:date;
+	  dcterms:contributor	[foaf:mbox "skw@epimorphics.com"; foaf:name "Stuart Williams"@en];
+	  # add your names here
+
+	  dcterms:license 	<http://www.opendatacommons.org/licenses/pddl/1.0/> ;
+      
+      
+      owl:versionInfo "0.1"^^xsd:string .
+
+
+:BathingWater
+	a				owl:Class;
+	rdfs:label		"bathing water (Class)";
+	rdfs:comment	"A class of Bathing Waters relevant to the EU Bathing Water Directive, 2006/7/EC, see <http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2006:064:0037:0051:EN:PDF>";
+	rdfs:isDefinedBy	<>;
+	rdfs:subClassOf	geo:SpatialThing;
+	rdfs:seeAlso	<http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2006:064:0037:0051:EN:PDF>, 
+				    <http://www.legislation.gov.uk/uksi/2008/1097/made>;
+	.			
+
+:bathingWater
+	a				owl:ObjectProperty;
+	rdfs:label		"bathing water";
+	rdfs:comment	"a property for associating a bathing water with some thing."@en;
+	rdfs:isDefinedBy	<>;
+	rdfs:range		:BathingWater;
+	.
+
+	
+:eubwid
+	a	rdfs:Datatype;
+	rdfs:label		"Datatype for use in typed skos:notations"@en;
+	rdfs:isDefinedBy	<>;					
+	.
+
+:eubwidNotation
+	a					rdf:Property;
+	rdfs:isDefinedBy	<>;
+	rdfs:subPropertyOf	skos:notation;
+	rdfs:domain			:BathingWater;
+	rdfs:range			:eubwid;
+	rdfs:label 			"A skos:notation sub property for typed notations on bathing waters"@en;
+	.

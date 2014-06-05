@@ -1,0 +1,692 @@
+<rdf:RDF
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:time="http://www.w3.org/2006/time#"
+    xmlns="http://environment.data.gov.uk/def/bathing-water-quality/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:loc-bwq="http://location.data.gov.uk/def/ef/SamplingPoint/"
+    xmlns:interval="http://reference.data.gov.uk/def/intervals/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:sdmx-attribute="http://purl.org/linked-data/sdmx/2009/sdmx-attribute#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:env-bw="http://environment.data.gov.uk/def/bathing-water/"
+    xmlns:qb="http://purl.org/linked-data/cube#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <owl:Ontology rdf:about="http://environment.data.gov.uk/def/bathing-water-quality">
+    <dcterms:contributor rdf:parseType="Resource">
+      <foaf:mbox>skw@epimorphics.com</foaf:mbox>
+      <foaf:name xml:lang="en">Stuart Williams</foaf:name>
+    </dcterms:contributor>
+    <owl:imports rdf:resource="http://www.w3.org/2006/time"/>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+    >2010-08-16</dcterms:created>
+    <owl:imports rdf:resource="http://purl.org/linked-data/cube"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+    >2010-12-15</dcterms:modified>
+    <owl:imports rdf:resource="http://reference.data.gov.uk/def/intervals"/>
+    <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >0.1</owl:versionInfo>
+    <dcterms:license rdf:resource="http://www.opendatacommons.org/licenses/pddl/1.0/"/>
+  </owl:Ontology>
+  <rdfs:Datatype rdf:about="http://environment.data.gov.uk/def/bathing-water-quality/presenceCode">
+    <rdfs:isDefinedBy rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality"/>
+    <rdfs:comment xml:lang="en">A datatype for presence indicator notation literal values.</rdfs:comment>
+  </rdfs:Datatype>
+  <rdfs:Datatype rdf:about="http://environment.data.gov.uk/def/bathing-water-quality/countQualiferCode">
+    <rdfs:label xml:lang="en">count qualifier notation code</rdfs:label>
+    <rdfs:comment xml:lang="en">A datatype for count qualifier notation literal values.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality"/>
+  </rdfs:Datatype>
+  <rdfs:Datatype rdf:about="http://environment.data.gov.uk/def/bathing-water-quality/complianceCode">
+    <rdfs:label xml:lang="en">compliance code notation datatype</rdfs:label>
+    <rdfs:comment xml:lang="en">A datatype for typing bwq compliance code skos:notations.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality"/>
+  </rdfs:Datatype>
+  <owl:Class rdf:about="http://environment.data.gov.uk/def/bathing-water-quality/CountQualifier">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label xml:lang="en">count qualifier code (Class)</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:comment xml:lang="en">An owl:Class, rdfs:Class for count qualifier code points</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://environment.data.gov.uk/def/bathing-water-quality/LatestSampleSlice">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label xml:lang="en">Latest In-Season Assessment Slice (Class)</rdfs:label>
+    <rdfs:comment xml:lang="en">A category of (key-less) slice for gathering the most recent in season sample assessments</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://purl.org/linked-data/cube#Slice"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://environment.data.gov.uk/def/bathing-water-quality/SampleAssessment">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label xml:lang="en">Bathing Water Quality In-Year Sample Assessment</rdfs:label>
+    <rdfs:comment xml:lang="en">Specialised qb:Observation subclass for Bathing Water Quality In-Year Sample Assessments.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://purl.org/linked-data/cube#Observation"/>
+    <rdfs:isDefinedBy rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://environment.data.gov.uk/def/bathing-water-quality/ComplianceDataset">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/linked-data/cube#Dataset"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.org/linked-data/cube#structure"/>
+        <owl:hasValue rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality/complianceDsd"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:isDefinedBy rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality"/>
+    <rdfs:label xml:lang="en">BWQ Annual Assessment Dataset (Class)</rdfs:label>
+    <rdfs:comment xml:lang="en">A specialisation of qb:Dataset for Annual Bathing Water Quality assesments.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://environment.data.gov.uk/def/bathing-water-quality/ComplianceBySamplingPointSlice">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label xml:lang="en">Annual compliance slice by sampling point. (Class)</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/linked-data/cube#Slice"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.org/linked-data/cube#sliceStructure"/>
+        <owl:hasValue>
+          <qb:SliceKey rdf:about="http://environment.data.gov.uk/def/bathing-water-quality/complianceBySamplingPointKey">
+            <rdfs:label xml:lang="en">By sampling point annual compliance slice key</rdfs:label>
+            <rdfs:comment xml:lang="en">A slice key for grouping annual compliance assessments by sampling point.</rdfs:comment>
+            <rdfs:isDefinedBy rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality"/>
+            <qb:componentProperty>
+              <qb:DimensionProperty rdf:about="http://environment.data.gov.uk/def/bathing-water-quality/samplingPoint">
+                <rdfs:label xml:lang="en">The sampling point where the sample was taken.</rdfs:label>
+                <rdfs:range rdf:resource="http://location.data.gov.uk/def/ef/SamplingPoint/SamplingPoint"/>
+                <rdfs:isDefinedBy rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality"/>
+              </qb:DimensionProperty>
+            </qb:componentProperty>
+          </qb:SliceKey>
+        </owl:hasValue>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://environment.data.gov.uk/def/bathing-water-quality/Compliance">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label xml:lang="en">Bathing Water Quality Compliance Category code (Class)</rdfs:label>
+    <rdfs:comment>A subclass of skos:Concept to collect all instances of bathing water compliance codes.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://environment.data.gov.uk/def/bathing-water-quality/Presence">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:label xml:lang="en">presence indicator codeset (Class)</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality"/>
+    <rdfs:comment xml:lang="en">A distinguished subClass of skos:Concept for :Presence code points.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://environment.data.gov.uk/def/bathing-water-quality/BySamplingPointYearSlice">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label xml:lang="en">Slice by sampling point and year</rdfs:label>
+    <rdfs:comment xml:lang="en">A specialised subclass of qb:Slice for bath water quality sample dataset slices by sampling point and sample year.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/linked-data/cube#Slice"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.org/linked-data/cube#sliceStructure"/>
+        <owl:hasValue>
+          <qb:SliceKey rdf:about="http://environment.data.gov.uk/def/bathing-water-quality/bySamplingPointYearKey">
+            <rdfs:label xml:lang="en">By Sampling Point and By Sample Year Slice Key</rdfs:label>
+            <rdfs:comment xml:lang="en">A Slice Key for grouping samples by sampling point and sample year</rdfs:comment>
+            <rdfs:isDefinedBy rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality"/>
+            <qb:componentProperty rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality/samplingPoint"/>
+            <qb:componentProperty>
+              <qb:DimensionProperty rdf:about="http://environment.data.gov.uk/def/bathing-water-quality/sampleYear">
+                <rdfs:label xml:lang="en">The calendar year for which the sample is representative.</rdfs:label>
+                <rdfs:range rdf:resource="http://reference.data.gov.uk/def/intervals/CalendarYear"/>
+                <rdfs:isDefinedBy rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality"/>
+              </qb:DimensionProperty>
+            </qb:componentProperty>
+          </qb:SliceKey>
+        </owl:hasValue>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://environment.data.gov.uk/def/bathing-water-quality/ComplianceByYearSlice">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label xml:lang="en">Annual compliance slice by assessment year. (Class)</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/linked-data/cube#Slice"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.org/linked-data/cube#sliceStructure"/>
+        <owl:hasValue>
+          <qb:SliceKey rdf:about="http://environment.data.gov.uk/def/bathing-water-quality/complianceByYearKey">
+            <rdfs:label xml:lang="en">By Year Annual Compliance Slice Key</rdfs:label>
+            <rdfs:comment xml:lang="en">A slice key for grouping annual compliance assessments by year.</rdfs:comment>
+            <rdfs:isDefinedBy rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality"/>
+            <qb:componentProperty rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality/sampleYear"/>
+          </qb:SliceKey>
+        </owl:hasValue>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://environment.data.gov.uk/def/bathing-water-quality/ByWeekSlice">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label xml:lang="en">Slice by sample week.</rdfs:label>
+    <rdfs:comment xml:lang="en">A specialised subclass of qb:Slice for bath water quality sample dataset slices by the week in which the sample was taken.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/linked-data/cube#Slice"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.org/linked-data/cube#sliceStructure"/>
+        <owl:hasValue>
+          <qb:SliceKey rdf:about="http://environment.data.gov.uk/def/bathing-water-quality/byWeekKey">
+            <rdfs:label xml:lang="en">By Sample Week Slice Key</rdfs:label>
+            <rdfs:comment xml:lang="en">A Slice Key for grouping samples by sample week</rdfs:comment>
+            <rdfs:isDefinedBy rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality"/>
+            <qb:componentProperty>
+              <qb:DimensionProperty rdf:about="http://environment.data.gov.uk/def/bathing-water-quality/sampleWeek">
+                <rdfs:label xml:lang="en">The calendar week for which the sample is representative.</rdfs:label>
+                <rdfs:range rdf:resource="http://reference.data.gov.uk/def/intervals/CalendarWeek"/>
+                <rdfs:isDefinedBy rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality"/>
+              </qb:DimensionProperty>
+            </qb:componentProperty>
+          </qb:SliceKey>
+        </owl:hasValue>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://environment.data.gov.uk/def/bathing-water-quality/BySamplingPointSlice">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label xml:lang="en">Slice by sampling point.</rdfs:label>
+    <rdfs:comment xml:lang="en">A specialised subclass of qb:Slice for bath water quality sample dataset slices by sampling point.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/linked-data/cube#Slice"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.org/linked-data/cube#sliceStructure"/>
+        <owl:hasValue>
+          <qb:SliceKey rdf:about="http://environment.data.gov.uk/def/bathing-water-quality/bySamplingPointKey">
+            <rdfs:label xml:lang="en">By Sampling Point Slice Key</rdfs:label>
+            <rdfs:comment xml:lang="en">A Slice Key for grouping samples by sampling point</rdfs:comment>
+            <rdfs:isDefinedBy rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality"/>
+            <qb:componentProperty rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality/samplingPoint"/>
+          </qb:SliceKey>
+        </owl:hasValue>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://environment.data.gov.uk/def/bathing-water-quality/SampleDataset">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/linked-data/cube#Dataset"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.org/linked-data/cube#structure"/>
+        <owl:hasValue>
+          <qb:DataStructureDefinition rdf:about="http://environment.data.gov.uk/def/bathing-water-quality/sampleDsd">
+            <qb:component rdf:parseType="Resource">
+              <qb:measure>
+                <qb:MeasureProperty rdf:about="http://environment.data.gov.uk/def/bathing-water-quality/faecalStreptococciCount">
+                  <rdfs:label xml:lang="en">Faecal Streptococci Count</rdfs:label>
+                  <rdfs:comment xml:lang="en">The number of colonies of faecal streptococci per 100ml water sample.</rdfs:comment>
+                  <rdfs:isDefinedBy rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality"/>
+                  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                </qb:MeasureProperty>
+              </qb:measure>
+            </qb:component>
+            <qb:component rdf:parseType="Resource">
+              <qb:dimension rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality/sampleWeek"/>
+            </qb:component>
+            <qb:component rdf:parseType="Resource">
+              <qb:dimension rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality/samplingPoint"/>
+            </qb:component>
+            <qb:sliceKey rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality/bySamplingPointKey"/>
+            <qb:component rdf:parseType="Resource">
+              <qb:attribute>
+                <qb:AttributeProperty rdf:about="http://environment.data.gov.uk/def/bathing-water-quality/faecalColiformQualifier">
+                  <rdf:type rdf:resource="http://purl.org/linked-data/cube#CodedProperty"/>
+                  <rdfs:label xml:lang="en">Faecal Coliform Count Qualifier</rdfs:label>
+                  <rdfs:comment xml:lang="en">&gt;, &lt; or actual qualifier for Faecal Coliform Count</rdfs:comment>
+                  <rdfs:isDefinedBy rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality"/>
+                  <qb:codeList>
+                    <skos:ConceptScheme rdf:about="http://environment.data.gov.uk/def/bathing-water-quality/countQualifier">
+                      <rdfs:label xml:lang="en">count qualifier codeset (Concept Scheme)</rdfs:label>
+                      <rdfs:isDefinedBy rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality"/>
+                      <rdfs:comment xml:lang="en">A skos:ConceptScheme for count qualifier code points. Count qualifier codes indicate whether an actual count or upper/lower bounds to detection are being reported.</rdfs:comment>
+                      <skos:hasTopConcept>
+                        <CountQualifier rdf:about="http://environment.data.gov.uk/def/bathing-water-quality/moreThan">
+                          <skos:definition xml:lang="en">'&gt;' Indicates that the actual count value is more than the value given; that it exceeds a detection/measurement upper bound.</skos:definition>
+                          <skos:notation rdf:datatype="http://environment.data.gov.uk/def/bathing-water-quality/countQualifierCode"
+                          >&gt;</skos:notation>
+                          <rdfs:label xml:lang="en">More Than</rdfs:label>
+                          <rdfs:isDefinedBy rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality"/>
+                          <skos:topConceptOf rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality/countQualifier"/>
+                          <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+                          <skos:prefLabel xml:lang="en">More Than</skos:prefLabel>
+                          <skos:inScheme rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality/countQualifier"/>
+                          <countQualifierNotation rdf:datatype=
+                          "http://environment.data.gov.uk/def/bathing-water-quality/countQualifierCode"
+                          >&gt;</countQualifierNotation>
+                        </CountQualifier>
+                      </skos:hasTopConcept>
+                      <skos:hasTopConcept>
+                        <skos:Concept rdf:about="http://environment.data.gov.uk/def/bathing-water-quality/lessThan">
+                          <skos:notation rdf:datatype="http://environment.data.gov.uk/def/bathing-water-quality/countQualifierCode"
+                          >&lt;</skos:notation>
+                          <skos:inScheme rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality/countQualifier"/>
+                          <rdfs:isDefinedBy rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality"/>
+                          <skos:topConceptOf rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality/countQualifier"/>
+                          <skos:prefLabel xml:lang="en">Less Than</skos:prefLabel>
+                          <rdfs:label xml:lang="en">Less Than</rdfs:label>
+                          <rdf:type rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality/CountQualifier"/>
+                          <countQualifierNotation rdf:datatype=
+                          "http://environment.data.gov.uk/def/bathing-water-quality/countQualifierCode"
+                          >&lt;</countQualifierNotation>
+                          <skos:definition xml:lang="en">'&lt;' Indicates that the actual count value is less than the value given; that it is less than a detection/measurement lower bound.</skos:definition>
+                        </skos:Concept>
+                      </skos:hasTopConcept>
+                      <skos:hasTopConcept>
+                        <skos:Concept rdf:about="http://environment.data.gov.uk/def/bathing-water-quality/actual">
+                          <skos:prefLabel xml:lang="en">Actual Count</skos:prefLabel>
+                          <countQualifierNotation rdf:datatype=
+                          "http://environment.data.gov.uk/def/bathing-water-quality/countQualifierCode"
+                          >=</countQualifierNotation>
+                          <rdfs:isDefinedBy rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality"/>
+                          <rdfs:label xml:lang="en">Actual Count</rdfs:label>
+                          <skos:notation rdf:datatype="http://environment.data.gov.uk/def/bathing-water-quality/countQualifierCode"
+                          >=</skos:notation>
+                          <rdf:type rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality/CountQualifier"/>
+                          <skos:topConceptOf rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality/countQualifier"/>
+                          <skos:definition xml:lang="en">'=' indicates that the actual count value is as given.</skos:definition>
+                          <skos:inScheme rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality/countQualifier"/>
+                        </skos:Concept>
+                      </skos:hasTopConcept>
+                    </skos:ConceptScheme>
+                  </qb:codeList>
+                  <rdfs:range rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality/CountQualifier"/>
+                </qb:AttributeProperty>
+              </qb:attribute>
+            </qb:component>
+            <qb:component rdf:parseType="Resource">
+              <qb:attribute>
+                <qb:AttributeProperty rdf:about="http://environment.data.gov.uk/def/bathing-water-quality/abnormalWeatherException">
+                  <dcterms:source rdf:resource="http://www.environment-agency.gov.uk/homeandleisure/119855.aspx"/>
+                  <rdfs:label xml:lang="en">Abnormal Weather Exception</rdfs:label>
+                  <rdfs:comment xml:lang="en">Article 5 of the Bathing Waters Directive allows the Environment Agency to disregard results that exceed the bathing water standards if they were affected by floods, other natural disasters or abnormal weather conditions.&#xD;
+&#xD;
+This applies to both the mandatory and guideline bathing water quality standards.&#xD;
+&#xD;
+Our monitoring policy requires us to take bathing water samples according to a pre-determined timetable. We don't avoid taking samples because there is a forecast of wet weather. If it subsequently happens that there is a mandatory exceedence and the sample was affected by abnormally wet weather, flooding or natural disaster, we will make an application for a waiver.  If the application is successful the sample result will be disregarded when we assess compliance but it will not be removed from our public register.&#xD;
+&#xD;
+Our policy for waiving bathing water results as a result of abnormal weather conditions has been agreed with Defra.&#xD;
+&#xD;
+Abnormal weather for the purposes of the Bathing Water Directive is defined as a storm event with return period of at least 1 in 5 years. A storm event will usually have occurred between 1 to 48 hours before the sample was taken (exceptionally upto 72 hours for larger catchments). We use rainfall data from rain-gauges that are representative of the bathing water catchment and approved by the Met Office.  We then use this data to make an assessment based on the 1 in 5 year criteria.&#xD;
+&#xD;
+The sample results displayed in the 'What's in your Backyard' section of our website only hold the results used to assess Bathing Water Directive compliance. When a waiver is granted the result is removed from this site but is still  available to the public through our public register.</rdfs:comment>
+                  <rdfs:isDefinedBy rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality"/>
+                  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+                </qb:AttributeProperty>
+              </qb:attribute>
+            </qb:component>
+            <rdfs:label xml:lang="en">bwq in-year sample DSD</rdfs:label>
+            <qb:component rdf:parseType="Resource">
+              <qb:dimension>
+                <qb:DimensionProperty rdf:about="http://environment.data.gov.uk/def/bathing-water-quality/bathingWater">
+                  <rdfs:label xml:lang="en">The bathing water from which the sample was taken.</rdfs:label>
+                  <rdfs:range rdf:resource="http://environment.data.gov.uk/def/bathing-water/BathingWater"/>
+                  <rdfs:isDefinedBy rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality"/>
+                </qb:DimensionProperty>
+              </qb:dimension>
+            </qb:component>
+            <qb:component rdf:parseType="Resource">
+              <qb:attribute>
+                <qb:AttributeProperty rdf:about="http://environment.data.gov.uk/def/bathing-water-quality/sampleDateTime">
+                  <rdfs:label xml:lang="en">The date/time at which a sample was taken</rdfs:label>
+                  <rdfs:range rdf:resource="http://www.w3.org/2006/time#Instant"/>
+                  <rdfs:isDefinedBy rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality"/>
+                </qb:AttributeProperty>
+              </qb:attribute>
+            </qb:component>
+            <qb:sliceKey>
+              <qb:SliceKey rdf:about="http://environment.data.gov.uk/def/bathing-water-quality/byYearKey">
+                <rdfs:label xml:lang="en">By Sample Year Slice Key</rdfs:label>
+                <rdfs:comment xml:lang="en">A Slice Key for grouping samples by sample year</rdfs:comment>
+                <rdfs:isDefinedBy rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality"/>
+                <qb:componentProperty rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality/sampleYear"/>
+              </qb:SliceKey>
+            </qb:sliceKey>
+            <qb:component rdf:parseType="Resource">
+              <qb:measure>
+                <qb:MeasureProperty rdf:about="http://environment.data.gov.uk/def/bathing-water-quality/sampleClassification">
+                  <rdf:type rdf:resource="http://purl.org/linked-data/cube#CodedProperty"/>
+                  <rdfs:label xml:lang="en">In-year bathing water quality classification</rdfs:label>
+                  <rdfs:comment xml:lang="en">In year sample bathing water quality assesment: C(closed), G(Excellent), I(Good), F(Poor), N(Not classified)</rdfs:comment>
+                  <rdfs:isDefinedBy rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality"/>
+                  <qb:codeList>
+                    <skos:ConceptScheme rdf:about="http://environment.data.gov.uk/def/bathing-water-quality/compliance">
+                      <skos:hasTopConcept>
+                        <skos:Concept rdf:about="http://environment.data.gov.uk/def/bathing-water-quality/F">
+                          <skos:notation rdf:datatype="http://environment.data.gov.uk/def/bathing-water-quality/complianceCode"
+                          >F</skos:notation>
+                          <rdfs:isDefinedBy rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality"/>
+                          <skos:topConceptOf rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality/compliance"/>
+                          <dcterms:source rdf:resource="http://www.environment-agency.gov.uk/homeandleisure/37841.aspx"/>
+                          <rdf:type rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality/Compliance"/>
+                          <rdfs:label xml:lang="cy">Gwan</rdfs:label>
+                          <skos:definition xml:lang="en">We count the number of certain types of bacteria which may indicate the presence of pollution, mainly from sewage or livestock waste. Total coliforms (TC), faecal coliforms (FC) and faecal streptococci (FS) are bacteria that are not directly harmful but indicate the presence of pollution. An increase in the concentrations of bacteria indicates a decrease in water quality. All values are colonies per 100ml of sample.&#xD;
+		&#xD;
+Sample limits used for "Poor" are TC: &gt;10000; FC: &gt;2000; FS: N/A.&#xD;
+&#xD;
+For annual assessments "Poor" means that fewer than 95% of the samples meet the required mandatory standards of the Directive; </skos:definition>
+                          <skos:prefLabel xml:lang="cy">Gwan</skos:prefLabel>
+                          <skos:inScheme rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality/compliance"/>
+                          <rdfs:label xml:lang="en">Poor</rdfs:label>
+                          <skos:prefLabel xml:lang="en">Poor</skos:prefLabel>
+                          <complianceCodeNotation rdf:datatype=
+                          "http://environment.data.gov.uk/def/bathing-water-quality/complianceCode"
+                          >F</complianceCodeNotation>
+                        </skos:Concept>
+                      </skos:hasTopConcept>
+                      <rdfs:label xml:lang="en">Bathing Water Quality Compliance Category codeset (ConceptScheme)</rdfs:label>
+                      <skos:hasTopConcept>
+                        <Compliance rdf:about="http://environment.data.gov.uk/def/bathing-water-quality/N">
+                          <dcterms:source rdf:resource="http://www.environment-agency.gov.uk/homeandleisure/37841.aspx"/>
+                          <skos:inScheme rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality/compliance"/>
+                          <skos:definition xml:lang="en">Not Classified - explaination TBD</skos:definition>
+                          <skos:prefLabel xml:lang="cy">Heb ei Ddosbarthu</skos:prefLabel>
+                          <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+                          <rdfs:isDefinedBy rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality"/>
+                          <rdfs:label xml:lang="en">Not Classified</rdfs:label>
+                          <skos:prefLabel xml:lang="en">Not Classified</skos:prefLabel>
+                          <skos:topConceptOf rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality/compliance"/>
+                          <rdfs:label xml:lang="cy">Heb ei Ddosbarthu</rdfs:label>
+                          <skos:notation rdf:datatype="http://environment.data.gov.uk/def/bathing-water-quality/complianceCode"
+                          >N</skos:notation>
+                          <complianceCodeNotation rdf:datatype=
+                          "http://environment.data.gov.uk/def/bathing-water-quality/complianceCode"
+                          >N</complianceCodeNotation>
+                        </Compliance>
+                      </skos:hasTopConcept>
+                      <rdfs:comment xml:lang="en">A collection of Bathing Water Compliance codes derived from classifications given at &lt;http://www.environment-agency.gov.uk/homeandleisure/37841.aspx&gt;</rdfs:comment>
+                      <skos:hasTopConcept>
+                        <skos:Concept rdf:about="http://environment.data.gov.uk/def/bathing-water-quality/G">
+                          <skos:prefLabel xml:lang="cy">Rhagorol</skos:prefLabel>
+                          <skos:topConceptOf rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality/compliance"/>
+                          <complianceCodeNotation rdf:datatype=
+                          "http://environment.data.gov.uk/def/bathing-water-quality/complianceCode"
+                          >G</complianceCodeNotation>
+                          <rdfs:isDefinedBy rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality"/>
+                          <rdfs:label xml:lang="cy">Rhagorol</rdfs:label>
+                          <rdf:type rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality/Compliance"/>
+                          <skos:notation rdf:datatype="http://environment.data.gov.uk/def/bathing-water-quality/complianceCode"
+                          >G</skos:notation>
+                          <dcterms:source rdf:resource="http://www.environment-agency.gov.uk/homeandleisure/37841.aspx"/>
+                          <skos:inScheme rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality/compliance"/>
+                          <skos:prefLabel xml:lang="en">Excellent</skos:prefLabel>
+                          <skos:definition xml:lang="en">We count the number of certain types of bacteria which may indicate the presence of pollution, mainly from sewage or livestock waste. Total coliforms (TC), faecal coliforms (FC) and faecal streptococci (FS) are bacteria that are not directly harmful but indicate the presence of pollution. An increase in the concentrations of bacteria indicates a decrease in water quality. All values are colonies per 100ml of sample.&#xD;
+&#xD;
+Sample limits used for "Excellent" are TC: ?500; FC: ?100; FS: ?100.&#xD;
+&#xD;
+For annual assessments "Excellent" means the bathing water meets the criteria for the stricter UK guideline standards of the Directive (includes lower levels of concentrations and a third parameter (FS)).</skos:definition>
+                          <rdfs:label xml:lang="en">Excellent</rdfs:label>
+                        </skos:Concept>
+                      </skos:hasTopConcept>
+                      <skos:hasTopConcept>
+                        <Compliance rdf:about="http://environment.data.gov.uk/def/bathing-water-quality/I">
+                          <skos:inScheme rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality/compliance"/>
+                          <skos:definition xml:lang="en">We count the number of certain types of bacteria which may indicate the presence of pollution, mainly from sewage or livestock waste. Total coliforms (TC), faecal coliforms (FC) and faecal streptococci (FS) are bacteria that are not directly harmful but indicate the presence of pollution. An increase in the concentrations of bacteria indicates a decrease in water quality. All values are colonies per 100ml of sample.&#xD;
+Sample limits used for "Good" are TC: ?10000; FC: ?2000; FS: N/A.&#xD;
+ &#xD;
+For annual assessments "Good" means that at least 95% of the samples meet the mandatory standards of the Directive.</skos:definition>
+                          <rdfs:label xml:lang="en">Good</rdfs:label>
+                          <rdfs:isDefinedBy rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality"/>
+                          <skos:prefLabel xml:lang="en">Good</skos:prefLabel>
+                          <skos:prefLabel xml:lang="cy">Da</skos:prefLabel>
+                          <dcterms:source rdf:resource="http://www.environment-agency.gov.uk/homeandleisure/37841.aspx"/>
+                          <skos:topConceptOf rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality/compliance"/>
+                          <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+                          <rdfs:label xml:lang="cy">Da</rdfs:label>
+                          <complianceCodeNotation rdf:datatype=
+                          "http://environment.data.gov.uk/def/bathing-water-quality/complianceCode"
+                          >I</complianceCodeNotation>
+                          <skos:notation rdf:datatype="http://environment.data.gov.uk/def/bathing-water-quality/complianceCode"
+                          >I</skos:notation>
+                        </Compliance>
+                      </skos:hasTopConcept>
+                      <skos:hasTopConcept>
+                        <skos:Concept rdf:about="http://environment.data.gov.uk/def/bathing-water-quality/C">
+                          <skos:notation rdf:datatype="http://environment.data.gov.uk/def/bathing-water-quality/complianceCode"
+                          >C</skos:notation>
+                          <skos:definition xml:lang="en">Closed indicates that the bathing water was closed during the bathing season.</skos:definition>
+                          <skos:prefLabel xml:lang="cy">Ar gau</skos:prefLabel>
+                          <skos:inScheme rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality/compliance"/>
+                          <rdfs:isDefinedBy rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality"/>
+                          <skos:prefLabel xml:lang="en">Closed</skos:prefLabel>
+                          <rdfs:label xml:lang="cy">Ar gau</rdfs:label>
+                          <rdf:type rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality/Compliance"/>
+                          <skos:topConceptOf rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality/compliance"/>
+                          <dcterms:source rdf:resource="http://www.environment-agency.gov.uk/homeandleisure/37841.aspx"/>
+                          <rdfs:label xml:lang="en">Closed</rdfs:label>
+                          <complianceCodeNotation rdf:datatype=
+                          "http://environment.data.gov.uk/def/bathing-water-quality/complianceCode"
+                          >C</complianceCodeNotation>
+                        </skos:Concept>
+                      </skos:hasTopConcept>
+                      <skos:note> A SKOS ConceptScheme for bathing water compliance classification codes.</skos:note>
+                      <rdfs:isDefinedBy rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality"/>
+                    </skos:ConceptScheme>
+                  </qb:codeList>
+                  <rdfs:range rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality/Compliance"/>
+                </qb:MeasureProperty>
+              </qb:measure>
+            </qb:component>
+            <qb:sliceKey rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality/bySamplingPointYearKey"/>
+            <rdfs:isDefinedBy rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality"/>
+            <qb:component rdf:parseType="Resource">
+              <qb:measure>
+                <qb:MeasureProperty rdf:about="http://environment.data.gov.uk/def/bathing-water-quality/salmonellaPresent">
+                  <rdf:type rdf:resource="http://purl.org/linked-data/cube#CodedProperty"/>
+                  <rdfs:label>Salmonella present indicator</rdfs:label>
+                  <rdfs:comment xml:lang="en">An indicator of the presence of salmonella a water sample.</rdfs:comment>
+                  <rdfs:isDefinedBy rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality"/>
+                  <qb:codeList>
+                    <skos:ConceptScheme rdf:about="http://environment.data.gov.uk/def/bathing-water-quality/presence">
+                      <rdfs:label>presence indicator code (ConceptScheme)</rdfs:label>
+                      <rdfs:comment xml:lang="en">A skos:ConceptScheme for the :Presence code points. :Presence code points indicated the presence of some characteristic detected during an assessment process.</rdfs:comment>
+                      <rdfs:isDefinedBy rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality"/>
+                      <skos:hasTopConcept>
+                        <skos:Concept rdf:about="http://environment.data.gov.uk/def/bathing-water-quality/present">
+                          <skos:topConceptOf rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality/presence"/>
+                          <presenceNotation rdf:datatype="http://environment.data.gov.uk/def/bathing-water-quality/presenceCode"
+                          >P</presenceNotation>
+                          <rdfs:label xml:lang="en">present</rdfs:label>
+                          <skos:definition xml:lang="en">A coded property value to indicate that an assessement has detected the presence of some characteristic.</skos:definition>
+                          <rdf:type rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality/Presence"/>
+                          <skos:prefLabel xml:lang="en">present</skos:prefLabel>
+                          <skos:inScheme rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality/presence"/>
+                          <skos:notation rdf:datatype="http://environment.data.gov.uk/def/bathing-water-quality/presenceCode"
+                          >P</skos:notation>
+                          <rdfs:isDefinedBy rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality"/>
+                        </skos:Concept>
+                      </skos:hasTopConcept>
+                      <skos:hasTopConcept>
+                        <skos:Concept rdf:about="http://environment.data.gov.uk/def/bathing-water-quality/not-present">
+                          <presenceNotation rdf:datatype="http://environment.data.gov.uk/def/bathing-water-quality/presenceCode"
+                          >N</presenceNotation>
+                          <skos:prefLabel xml:lang="en">not-present</skos:prefLabel>
+                          <rdf:type rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality/Presence"/>
+                          <rdfs:isDefinedBy rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality"/>
+                          <skos:topConceptOf rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality/presence"/>
+                          <skos:definition xml:lang="en">A coded property value to indicate that an assessement has not detected the presence of some characteristic.</skos:definition>
+                          <rdfs:label xml:lang="en">not-present</rdfs:label>
+                          <skos:inScheme rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality/presence"/>
+                          <skos:notation rdf:datatype="http://environment.data.gov.uk/def/bathing-water-quality/presenceCode"
+                          >N</skos:notation>
+                        </skos:Concept>
+                      </skos:hasTopConcept>
+                      <skos:hasTopConcept rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality/not-assessed"/>
+                    </skos:ConceptScheme>
+                  </qb:codeList>
+                  <rdfs:range rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality/Presence"/>
+                </qb:MeasureProperty>
+              </qb:measure>
+            </qb:component>
+            <qb:component rdf:parseType="Resource">
+              <qb:measure>
+                <qb:MeasureProperty rdf:about="http://environment.data.gov.uk/def/bathing-water-quality/faecalColiformCount">
+                  <rdfs:label xml:lang="en">Faecal Coliform Count</rdfs:label>
+                  <rdfs:comment xml:lang="en">The number of colonies of faecal coliform per 100ml water sample.</rdfs:comment>
+                  <rdfs:isDefinedBy rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality"/>
+                  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                </qb:MeasureProperty>
+              </qb:measure>
+            </qb:component>
+            <qb:component rdf:parseType="Resource">
+              <qb:attribute>
+                <qb:AttributeProperty rdf:about="http://environment.data.gov.uk/def/bathing-water-quality/totalColiformQualifier">
+                  <rdf:type rdf:resource="http://purl.org/linked-data/cube#CodedProperty"/>
+                  <rdfs:label xml:lang="en">Total Coliform Count Qualifier</rdfs:label>
+                  <rdfs:comment xml:lang="en">&gt;, &lt; or actual qualifier for Total Coliform Count</rdfs:comment>
+                  <rdfs:isDefinedBy rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality"/>
+                  <qb:codeList rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality/countQualifier"/>
+                  <rdfs:range rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality/CountQualifier"/>
+                </qb:AttributeProperty>
+              </qb:attribute>
+            </qb:component>
+            <qb:component rdf:parseType="Resource">
+              <qb:attribute>
+                <qb:AttributeProperty rdf:about="http://environment.data.gov.uk/def/bathing-water-quality/entrovirusQualifier">
+                  <rdf:type rdf:resource="http://purl.org/linked-data/cube#CodedProperty"/>
+                  <rdfs:label xml:lang="en">Entro Virus Count Qualifier</rdfs:label>
+                  <rdfs:comment xml:lang="en">&gt;, &lt; or actual qualifier for Entro Virus Count</rdfs:comment>
+                  <rdfs:isDefinedBy rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality"/>
+                  <qb:codeList rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality/countQualifier"/>
+                  <rdfs:range rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality/CountQualifier"/>
+                </qb:AttributeProperty>
+              </qb:attribute>
+            </qb:component>
+            <qb:sliceKey rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality/byWeekKey"/>
+            <qb:component rdf:parseType="Resource">
+              <qb:measure>
+                <qb:MeasureProperty rdf:about="http://environment.data.gov.uk/def/bathing-water-quality/entrovirusCount">
+                  <rdfs:label xml:lang="en">Entro Virus Count</rdfs:label>
+                  <rdfs:comment xml:lang="en">The number of colonies ofentro virus per 100ml water sample.</rdfs:comment>
+                  <rdfs:isDefinedBy rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality"/>
+                  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                </qb:MeasureProperty>
+              </qb:measure>
+            </qb:component>
+            <qb:component rdf:parseType="Resource">
+              <qb:measure>
+                <qb:MeasureProperty rdf:about="http://environment.data.gov.uk/def/bathing-water-quality/totalColiformCount">
+                  <rdfs:label xml:lang="en">Total Coliform Count</rdfs:label>
+                  <rdfs:comment xml:lang="en">The total number of colonies of coliform per 100ml water sample.</rdfs:comment>
+                  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                  <rdfs:isDefinedBy rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality"/>
+                </qb:MeasureProperty>
+              </qb:measure>
+            </qb:component>
+            <qb:component rdf:parseType="Resource">
+              <qb:attribute>
+                <qb:AttributeProperty rdf:about="http://environment.data.gov.uk/def/bathing-water-quality/faecalStreptococciQualifier">
+                  <rdf:type rdf:resource="http://purl.org/linked-data/cube#CodedProperty"/>
+                  <rdfs:label xml:lang="en">Faecal Streptococci Count Qualifier</rdfs:label>
+                  <rdfs:comment xml:lang="en">&gt;, &lt; or actual qualifier for Faecal Streptococci Count</rdfs:comment>
+                  <rdfs:isDefinedBy rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality"/>
+                  <qb:codeList rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality/countQualifier"/>
+                  <rdfs:range rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality/CountQualifier"/>
+                </qb:AttributeProperty>
+              </qb:attribute>
+            </qb:component>
+            <rdfs:comment xml:lang="en">A DSD for reporting Bathing Water Quality in-year samples.</rdfs:comment>
+            <qb:component rdf:parseType="Resource">
+              <qb:dimension rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality/sampleYear"/>
+            </qb:component>
+          </qb:DataStructureDefinition>
+        </owl:hasValue>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:isDefinedBy rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality"/>
+    <rdfs:label xml:lang="en">BWQ Sample Dataset (Class)</rdfs:label>
+    <rdfs:comment xml:lang="en">A specialisation of qb:Dataset for In-Year Bathing Water Quality Sample data.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://environment.data.gov.uk/def/bathing-water-quality/ByYearSlice">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label xml:lang="en">Slice by sample year</rdfs:label>
+    <rdfs:comment xml:lang="en">A specialised subclass of qb:Slice for bath water quality sample dataset slices by the year in which the sample was taken.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/linked-data/cube#Slice"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.org/linked-data/cube#sliceStructure"/>
+        <owl:hasValue rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality/byYearKey"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://environment.data.gov.uk/def/bathing-water-quality/ComplianceAssessment">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label xml:lang="en">Bathing Water Quality Annual Assessment</rdfs:label>
+    <rdfs:comment xml:lang="en">Specialised qb:Observation subclass for Bathing Water Quality Annual Assessments.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://purl.org/linked-data/cube#Observation"/>
+    <rdfs:isDefinedBy rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality"/>
+  </owl:Class>
+  <rdf:Property rdf:about="http://environment.data.gov.uk/def/bathing-water-quality/presenceNotation">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#notation"/>
+    <rdfs:comment xml:lang="en">A skos:notation sub-property for signifying presence indication notation datatyped values.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality"/>
+    <rdfs:range rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality/presenceCode"/>
+  </rdf:Property>
+  <rdfs:Property rdf:about="http://environment.data.gov.uk/def/bathing-water-quality/complianceCodeNotation">
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#notation"/>
+    <rdfs:range rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality/complianceCode"/>
+    <rdfs:isDefinedBy rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality"/>
+  </rdfs:Property>
+  <skos:Concept rdf:about="http://environment.data.gov.uk/def/bathing-water-quality/not-accessed">
+    <presenceNotation rdf:datatype="http://environment.data.gov.uk/def/bathing-water-quality/presenceCode"
+    >n/a</presenceNotation>
+    <rdfs:isDefinedBy rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality"/>
+    <skos:inScheme rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality/presence"/>
+    <skos:definition xml:lang="en">A coded property value to indicate that an assessment of the presense of some characteristic has not been made.</skos:definition>
+    <skos:topConceptOf rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality/presence"/>
+    <rdfs:label xml:lang="en">not-assessed</rdfs:label>
+    <rdf:type rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality/Presence"/>
+    <skos:notation rdf:datatype="http://environment.data.gov.uk/def/bathing-water-quality/presenceCode"
+    >n/a</skos:notation>
+    <skos:prefLabel xml:lang="en">not-assessed</skos:prefLabel>
+  </skos:Concept>
+  <rdfs:Property rdf:about="http://environment.data.gov.uk/def/bathing-water-quality/countQualifierNotation">
+    <rdfs:comment xml:lang="en">A skos:notation sub-property for signifying count qualifier notation datatyped values.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#notation"/>
+    <rdfs:range rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality/countQualiferCode"/>
+  </rdfs:Property>
+  <qb:DataStructureDefinition rdf:about="http://environment.data.gov.uk/def/bathing-water-quality/complainceDsd">
+    <rdfs:comment xml:lang="en">A DSD for Bathing Water Quality Annual Compliance assessment reporting.</rdfs:comment>
+    <rdfs:label xml:lang="en">bwq annual compliance DSD</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality"/>
+    <qb:component rdf:parseType="Resource">
+      <qb:dimension rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality/bathingWater"/>
+    </qb:component>
+    <qb:component rdf:parseType="Resource">
+      <qb:dimension rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality/samplingPoint"/>
+    </qb:component>
+    <qb:component rdf:parseType="Resource">
+      <qb:dimension rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality/sampleYear"/>
+    </qb:component>
+    <qb:component rdf:parseType="Resource">
+      <qb:measure>
+        <qb:MeasureProperty rdf:about="http://environment.data.gov.uk/def/bathing-water-quality/complianceClassification">
+          <rdf:type rdf:resource="http://purl.org/linked-data/cube#CodedProperty"/>
+          <rdfs:label xml:lang="en">Annual bathing water quality classification</rdfs:label>
+          <rdfs:comment xml:lang="en">Annual bathing water quality assesment: C(closed), G(Excellent), I(Good), F(Poor), N(Not classified)</rdfs:comment>
+          <rdfs:isDefinedBy rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality"/>
+          <qb:codeList rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality/compliance"/>
+          <rdfs:range rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality/Compliance"/>
+        </qb:MeasureProperty>
+      </qb:measure>
+    </qb:component>
+    <qb:component rdf:parseType="Resource">
+      <qb:attribute>
+        <qb:AttributeProperty rdf:about="http://environment.data.gov.uk/def/bathing-water-quality/inYearDetail">
+          <rdfs:label xml:lang="en">in-year detail</rdfs:label>
+          <rdfs:comment xml:lang="en">A property which relates an annual assessment for a bathing water with the in-year samples from which the assessment was computed</rdfs:comment>
+          <rdfs:isDefinedBy rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality"/>
+          <rdfs:domain rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality/ComplianceAssessment"/>
+          <rdfs:range rdf:resource="http://environment.data.gov.uk/def/bathing-water-quality/BySamplingPointYearSlice"/>
+        </qb:AttributeProperty>
+      </qb:attribute>
+    </qb:component>
+  </qb:DataStructureDefinition>
+</rdf:RDF>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:foaf="http://xmlns.com/foaf/0.1/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:registration="http://reference.data.gov.uk/def/registration#"
+   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+   xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <owl:Ontology rdf:about="http://reference.data.gov.uk/def/registration#">
+    <dcterms:contributor>
+      <rdf:Description>
+        <foaf:mbox>dave@epimorphics.com</foaf:mbox>
+        <foaf:name>Dave Reynolds</foaf:name>
+      </rdf:Description>
+    </dcterms:contributor>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-10-15</dcterms:created>
+    <dcterms:license rdf:resource="http://www.opendatacommons.org/licenses/pddl/1.0/"/>
+    <rdfs:comment xml:lang="en">Set of terms used to denote different registration schemes useful for identifying organizations. These can be used as the datatype of for a registration number and associated with the organization by means of, for example, org:identifier.</rdfs:comment>
+    <rdfs:label xml:lang="en">Registration number vocabulary</rdfs:label>
+    <owl:versionInfo>0.1</owl:versionInfo>
+  </owl:Ontology>
+  <rdfs:Datatype rdf:about="http://reference.data.gov.uk/def/registration#company-number">
+    <rdfs:comment xml:lang="en">The registered number for a UK Limited company as registered with the Registrar of Companies (Companies House)</rdfs:comment>
+    <rdfs:label xml:lang="en">Company number</rdfs:label>
+  </rdfs:Datatype>
+  <rdfs:Datatype rdf:about="http://reference.data.gov.uk/def/registration#vat-number">
+    <rdfs:comment xml:lang="en">The registered VAT number for a UK company or Sole Trader as registered with HMRC.</rdfs:comment>
+    <rdfs:label xml:lang="en">VAT number</rdfs:label>
+  </rdfs:Datatype>
+  <rdfs:Datatype rdf:about="http://reference.data.gov.uk/def/registration#charity-number">
+    <rdfs:comment xml:lang="en">The registered number for a UK Charity as registered with the Charity Commission</rdfs:comment>
+    <rdfs:label xml:lang="en">Charity number</rdfs:label>
+  </rdfs:Datatype>
+</rdf:RDF>

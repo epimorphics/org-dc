@@ -1,0 +1,53 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix compass: <http://reference.data.gov.uk/def/compass/> .
+
+<http://reference.data.gov.uk/def/compass> a skos:ConceptScheme ;
+  skos:prefLabel "Compass Directions"@en .
+
+compass:Direction a rdfs:Class ;
+	rdfs:label "Compass Direction"@en ;
+	rdfs:subClassOf skos:Concept .
+
+compass:N a compass:Direction ;
+	skos:prefLabel "North"@en ;
+	skos:altLabel "N"@en ;
+	skos:topConceptOf <http://reference.data.gov.uk/def/compass> .
+
+compass:S a compass:Direction ;
+	skos:prefLabel "South"@en ;
+	skos:altLabel "S"@en ;
+	skos:topConceptOf <http://reference.data.gov.uk/def/compass> .
+
+compass:E a compass:Direction ;
+	skos:prefLabel "East"@en ;
+	skos:altLabel "E"@en ;
+	skos:topConceptOf <http://reference.data.gov.uk/def/compass> .
+
+compass:W a compass:Direction ;
+	skos:prefLabel "West"@en ;
+	skos:altLabel "W"@en ;
+	skos:topConceptOf <http://reference.data.gov.uk/def/compass> .
+
+compass:NE a compass:Direction ;
+	skos:prefLabel "North East"@en ;
+	skos:altLabel "NE"@en ;
+	skos:topConceptOf <http://reference.data.gov.uk/def/compass> .
+
+compass:NW a compass:Direction ;
+	skos:prefLabel "North West"@en ;
+	skos:altLabel "NW"@en ;
+	skos:topConceptOf <http://reference.data.gov.uk/def/compass> .
+
+compass:SE a compass:Direction ;
+	skos:prefLabel "South East"@en ;
+	skos:altLabel "SE"@en ;
+	skos:topConceptOf <http://reference.data.gov.uk/def/compass> .
+
+compass:SW a compass:Direction ;
+	skos:prefLabel "South West"@en ;
+	skos:altLabel "SW"@en ;
+	skos:topConceptOf <http://reference.data.gov.uk/def/compass> .

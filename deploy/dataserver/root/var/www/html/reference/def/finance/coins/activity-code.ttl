@@ -1,0 +1,1983 @@
+# Generated 2010-11-09T16:53:44+00:00
+
+@prefix rdf:                <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:               <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:                <http://www.w3.org/2002/07/owl#> .
+@prefix skos:               <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd:                <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:               <http://xmlns.com/foaf/0.1/> .
+@prefix void:               <http://rdfs.org/ns/void#> .
+@prefix dcterms:            <http://purl.org/dc/terms/> .
+@prefix sdmx:               <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept:       <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:     <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:     <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:       <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-code:          <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:       <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix qb:                 <http://purl.org/linked-data/cube#> .
+@prefix coins-data:         <http://source.data.gov.uk/data/coins/> .
+@prefix coins-dsd:          <http://finance.data.gov.uk/dsd/coins/> .
+@prefix coins-dimension:    <http://finance.data.gov.uk/dsd/coins/dimension/> .
+@prefix coins-attribute:    <http://finance.data.gov.uk/dsd/coins/attribute/> .
+@prefix coins-measure:      <http://finance.data.gov.uk/dsd/coins/measure/> .
+@prefix coins-slicekey:     <http://finance.data.gov.uk/dsd/coins/slice/> .
+
+<http://finance.data.gov.uk/def/coins/statistical-concept/activity-code>
+    a sdmx:Concept;
+    rdfs:label "activity code"@en;
+    skos:prefLabel "activity code"@en;
+    rdfs:comment """Used to allocate expenditure to Departmental Annual Reports and Supplementary Budgetary Information publications.""";
+    <http://purl.org/dc/terms/source> <http://www.hm-treasury.gov.uk/d/coins_guidance.pdf>;
+    <http://www.epimorphics.com/vocabs/coins-generate#columnName> "activity_code"
+    .
+
+<http://finance.data.gov.uk/def/coins/ActivityCode>
+    a rdfs:Class, owl:Class;
+    rdfs:subClassOf skos:Concept;
+    rdfs:label "activity code values class"@en;
+    skos:prefLabel "activity code values class"@en;
+    rdfs:comment "The class of values in the activity code code-list scheme";
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code>
+    a skos:ConceptScheme;
+    rdfs:label "activity code code list concept scheme"@en;
+    skos:prefLabel "activity code code list concept scheme"@en;
+    skos:hasTopConcept <http://finance.data.gov.uk/def/coins/activity-code/act00>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0101>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act010101>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act010102>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act010103>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act010104>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act010105>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act010106>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act010107>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act010108>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act010109>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0102>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act010201>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act010202>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act010203>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act010204>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act010205>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act010206>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act010209>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act010210>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act010211>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act010212>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act010213>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0103>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act010301>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act010302>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act010303>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0104>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act010401>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act010402>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act010403>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act010404>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0105>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act010501>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act010502>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act010503>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act010504>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act010505>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act010506>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act010508>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act010509>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act010510>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0106>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0107>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0108>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0109>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0110>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0111>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0112>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0113>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0114>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0115>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0116>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0121>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0122>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0123>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0124>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0125>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0126>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0127>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0201>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act020101>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act020102>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act020103>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0202>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act020201>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act020202>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act020205>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act020207>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0203>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0204>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0205>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0206>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0207>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0208>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0209>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0210>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0211>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0212>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0213>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0214>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0215>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0216>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0217>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0218>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0219>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0222>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0225>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0226>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0227>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0301>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act030101>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0302>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0303>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0304>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0305>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0309>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0310>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0311>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0312>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0313>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0314>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0315>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0316>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0318>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0319>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0320>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0321>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0322>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0323>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0325>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0326>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act04>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0401>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act040101>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0402>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0403>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0404>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0405>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0406>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0407>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0408>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0409>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0410>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0411>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0413>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0422>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0425>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0426>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0501>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0502>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0503>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0504>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0505>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0506>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0507>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0508>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0509>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0510>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0511>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0601>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0602>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0603>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0604>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0605>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0611>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0701>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0702>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0703>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0801>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0802>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0803>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0804>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0805>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0806>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0901>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0902>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0903>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0904>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act0905>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act1001>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act1101>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act1201>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act1202>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act1301>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act1302>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act1401>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act1402>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act1501>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act1601>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act1701>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act1801>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act1901>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act2001>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act2101>,
+          <http://finance.data.gov.uk/def/coins/activity-code/act2201>
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act00>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT00"@en;
+    skos:prefLabel "ACT00"@en;
+    skos:notation "act00";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0101>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0101"@en;
+    skos:prefLabel "ACT0101"@en;
+    skos:notation "act0101";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act010101>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT010101"@en;
+    skos:prefLabel "ACT010101"@en;
+    skos:notation "act010101";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act010102>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT010102"@en;
+    skos:prefLabel "ACT010102"@en;
+    skos:notation "act010102";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act010103>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT010103"@en;
+    skos:prefLabel "ACT010103"@en;
+    skos:notation "act010103";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act010104>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT010104"@en;
+    skos:prefLabel "ACT010104"@en;
+    skos:notation "act010104";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act010105>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT010105"@en;
+    skos:prefLabel "ACT010105"@en;
+    skos:notation "act010105";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act010106>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT010106"@en;
+    skos:prefLabel "ACT010106"@en;
+    skos:notation "act010106";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act010107>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT010107"@en;
+    skos:prefLabel "ACT010107"@en;
+    skos:notation "act010107";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act010108>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT010108"@en;
+    skos:prefLabel "ACT010108"@en;
+    skos:notation "act010108";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act010109>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT010109"@en;
+    skos:prefLabel "ACT010109"@en;
+    skos:notation "act010109";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0102>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0102"@en;
+    skos:prefLabel "ACT0102"@en;
+    skos:notation "act0102";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act010201>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT010201"@en;
+    skos:prefLabel "ACT010201"@en;
+    skos:notation "act010201";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act010202>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT010202"@en;
+    skos:prefLabel "ACT010202"@en;
+    skos:notation "act010202";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act010203>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT010203"@en;
+    skos:prefLabel "ACT010203"@en;
+    skos:notation "act010203";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act010204>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT010204"@en;
+    skos:prefLabel "ACT010204"@en;
+    skos:notation "act010204";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act010205>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT010205"@en;
+    skos:prefLabel "ACT010205"@en;
+    skos:notation "act010205";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act010206>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT010206"@en;
+    skos:prefLabel "ACT010206"@en;
+    skos:notation "act010206";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act010209>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT010209"@en;
+    skos:prefLabel "ACT010209"@en;
+    skos:notation "act010209";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act010210>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT010210"@en;
+    skos:prefLabel "ACT010210"@en;
+    skos:notation "act010210";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act010211>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT010211"@en;
+    skos:prefLabel "ACT010211"@en;
+    skos:notation "act010211";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act010212>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT010212"@en;
+    skos:prefLabel "ACT010212"@en;
+    skos:notation "act010212";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act010213>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT010213"@en;
+    skos:prefLabel "ACT010213"@en;
+    skos:notation "act010213";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0103>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0103"@en;
+    skos:prefLabel "ACT0103"@en;
+    skos:notation "act0103";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act010301>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT010301"@en;
+    skos:prefLabel "ACT010301"@en;
+    skos:notation "act010301";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act010302>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT010302"@en;
+    skos:prefLabel "ACT010302"@en;
+    skos:notation "act010302";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act010303>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT010303"@en;
+    skos:prefLabel "ACT010303"@en;
+    skos:notation "act010303";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0104>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0104"@en;
+    skos:prefLabel "ACT0104"@en;
+    skos:notation "act0104";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act010401>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT010401"@en;
+    skos:prefLabel "ACT010401"@en;
+    skos:notation "act010401";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act010402>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT010402"@en;
+    skos:prefLabel "ACT010402"@en;
+    skos:notation "act010402";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act010403>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT010403"@en;
+    skos:prefLabel "ACT010403"@en;
+    skos:notation "act010403";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act010404>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT010404"@en;
+    skos:prefLabel "ACT010404"@en;
+    skos:notation "act010404";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0105>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0105"@en;
+    skos:prefLabel "ACT0105"@en;
+    skos:notation "act0105";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act010501>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT010501"@en;
+    skos:prefLabel "ACT010501"@en;
+    skos:notation "act010501";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act010502>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT010502"@en;
+    skos:prefLabel "ACT010502"@en;
+    skos:notation "act010502";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act010503>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT010503"@en;
+    skos:prefLabel "ACT010503"@en;
+    skos:notation "act010503";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act010504>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT010504"@en;
+    skos:prefLabel "ACT010504"@en;
+    skos:notation "act010504";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act010505>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT010505"@en;
+    skos:prefLabel "ACT010505"@en;
+    skos:notation "act010505";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act010506>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT010506"@en;
+    skos:prefLabel "ACT010506"@en;
+    skos:notation "act010506";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act010508>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT010508"@en;
+    skos:prefLabel "ACT010508"@en;
+    skos:notation "act010508";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act010509>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT010509"@en;
+    skos:prefLabel "ACT010509"@en;
+    skos:notation "act010509";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act010510>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT010510"@en;
+    skos:prefLabel "ACT010510"@en;
+    skos:notation "act010510";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0106>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0106"@en;
+    skos:prefLabel "ACT0106"@en;
+    skos:notation "act0106";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0107>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0107"@en;
+    skos:prefLabel "ACT0107"@en;
+    skos:notation "act0107";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0108>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0108"@en;
+    skos:prefLabel "ACT0108"@en;
+    skos:notation "act0108";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0109>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0109"@en;
+    skos:prefLabel "ACT0109"@en;
+    skos:notation "act0109";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0110>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0110"@en;
+    skos:prefLabel "ACT0110"@en;
+    skos:notation "act0110";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0111>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0111"@en;
+    skos:prefLabel "ACT0111"@en;
+    skos:notation "act0111";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0112>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0112"@en;
+    skos:prefLabel "ACT0112"@en;
+    skos:notation "act0112";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0113>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0113"@en;
+    skos:prefLabel "ACT0113"@en;
+    skos:notation "act0113";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0114>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0114"@en;
+    skos:prefLabel "ACT0114"@en;
+    skos:notation "act0114";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0115>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0115"@en;
+    skos:prefLabel "ACT0115"@en;
+    skos:notation "act0115";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0116>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0116"@en;
+    skos:prefLabel "ACT0116"@en;
+    skos:notation "act0116";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0121>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0121"@en;
+    skos:prefLabel "ACT0121"@en;
+    skos:notation "act0121";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0122>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0122"@en;
+    skos:prefLabel "ACT0122"@en;
+    skos:notation "act0122";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0123>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0123"@en;
+    skos:prefLabel "ACT0123"@en;
+    skos:notation "act0123";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0124>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0124"@en;
+    skos:prefLabel "ACT0124"@en;
+    skos:notation "act0124";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0125>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0125"@en;
+    skos:prefLabel "ACT0125"@en;
+    skos:notation "act0125";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0126>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0126"@en;
+    skos:prefLabel "ACT0126"@en;
+    skos:notation "act0126";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0127>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0127"@en;
+    skos:prefLabel "ACT0127"@en;
+    skos:notation "act0127";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0201>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0201"@en;
+    skos:prefLabel "ACT0201"@en;
+    skos:notation "act0201";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act020101>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT020101"@en;
+    skos:prefLabel "ACT020101"@en;
+    skos:notation "act020101";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act020102>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT020102"@en;
+    skos:prefLabel "ACT020102"@en;
+    skos:notation "act020102";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act020103>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT020103"@en;
+    skos:prefLabel "ACT020103"@en;
+    skos:notation "act020103";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0202>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0202"@en;
+    skos:prefLabel "ACT0202"@en;
+    skos:notation "act0202";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act020201>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT020201"@en;
+    skos:prefLabel "ACT020201"@en;
+    skos:notation "act020201";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act020202>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT020202"@en;
+    skos:prefLabel "ACT020202"@en;
+    skos:notation "act020202";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act020205>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT020205"@en;
+    skos:prefLabel "ACT020205"@en;
+    skos:notation "act020205";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act020207>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT020207"@en;
+    skos:prefLabel "ACT020207"@en;
+    skos:notation "act020207";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0203>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0203"@en;
+    skos:prefLabel "ACT0203"@en;
+    skos:notation "act0203";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0204>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0204"@en;
+    skos:prefLabel "ACT0204"@en;
+    skos:notation "act0204";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0205>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0205"@en;
+    skos:prefLabel "ACT0205"@en;
+    skos:notation "act0205";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0206>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0206"@en;
+    skos:prefLabel "ACT0206"@en;
+    skos:notation "act0206";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0207>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0207"@en;
+    skos:prefLabel "ACT0207"@en;
+    skos:notation "act0207";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0208>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0208"@en;
+    skos:prefLabel "ACT0208"@en;
+    skos:notation "act0208";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0209>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0209"@en;
+    skos:prefLabel "ACT0209"@en;
+    skos:notation "act0209";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0210>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0210"@en;
+    skos:prefLabel "ACT0210"@en;
+    skos:notation "act0210";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0211>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0211"@en;
+    skos:prefLabel "ACT0211"@en;
+    skos:notation "act0211";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0212>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0212"@en;
+    skos:prefLabel "ACT0212"@en;
+    skos:notation "act0212";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0213>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0213"@en;
+    skos:prefLabel "ACT0213"@en;
+    skos:notation "act0213";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0214>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0214"@en;
+    skos:prefLabel "ACT0214"@en;
+    skos:notation "act0214";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0215>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0215"@en;
+    skos:prefLabel "ACT0215"@en;
+    skos:notation "act0215";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0216>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0216"@en;
+    skos:prefLabel "ACT0216"@en;
+    skos:notation "act0216";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0217>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0217"@en;
+    skos:prefLabel "ACT0217"@en;
+    skos:notation "act0217";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0218>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0218"@en;
+    skos:prefLabel "ACT0218"@en;
+    skos:notation "act0218";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0219>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0219"@en;
+    skos:prefLabel "ACT0219"@en;
+    skos:notation "act0219";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0222>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0222"@en;
+    skos:prefLabel "ACT0222"@en;
+    skos:notation "act0222";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0225>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0225"@en;
+    skos:prefLabel "ACT0225"@en;
+    skos:notation "act0225";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0226>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0226"@en;
+    skos:prefLabel "ACT0226"@en;
+    skos:notation "act0226";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0227>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0227"@en;
+    skos:prefLabel "ACT0227"@en;
+    skos:notation "act0227";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0301>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0301"@en;
+    skos:prefLabel "ACT0301"@en;
+    skos:notation "act0301";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act030101>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT030101"@en;
+    skos:prefLabel "ACT030101"@en;
+    skos:notation "act030101";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0302>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0302"@en;
+    skos:prefLabel "ACT0302"@en;
+    skos:notation "act0302";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0303>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0303"@en;
+    skos:prefLabel "ACT0303"@en;
+    skos:notation "act0303";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0304>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0304"@en;
+    skos:prefLabel "ACT0304"@en;
+    skos:notation "act0304";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0305>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0305"@en;
+    skos:prefLabel "ACT0305"@en;
+    skos:notation "act0305";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0309>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0309"@en;
+    skos:prefLabel "ACT0309"@en;
+    skos:notation "act0309";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0310>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0310"@en;
+    skos:prefLabel "ACT0310"@en;
+    skos:notation "act0310";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0311>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0311"@en;
+    skos:prefLabel "ACT0311"@en;
+    skos:notation "act0311";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0312>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0312"@en;
+    skos:prefLabel "ACT0312"@en;
+    skos:notation "act0312";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0313>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0313"@en;
+    skos:prefLabel "ACT0313"@en;
+    skos:notation "act0313";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0314>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0314"@en;
+    skos:prefLabel "ACT0314"@en;
+    skos:notation "act0314";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0315>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0315"@en;
+    skos:prefLabel "ACT0315"@en;
+    skos:notation "act0315";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0316>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0316"@en;
+    skos:prefLabel "ACT0316"@en;
+    skos:notation "act0316";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0318>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0318"@en;
+    skos:prefLabel "ACT0318"@en;
+    skos:notation "act0318";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0319>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0319"@en;
+    skos:prefLabel "ACT0319"@en;
+    skos:notation "act0319";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0320>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0320"@en;
+    skos:prefLabel "ACT0320"@en;
+    skos:notation "act0320";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0321>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0321"@en;
+    skos:prefLabel "ACT0321"@en;
+    skos:notation "act0321";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0322>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0322"@en;
+    skos:prefLabel "ACT0322"@en;
+    skos:notation "act0322";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0323>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0323"@en;
+    skos:prefLabel "ACT0323"@en;
+    skos:notation "act0323";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0325>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0325"@en;
+    skos:prefLabel "ACT0325"@en;
+    skos:notation "act0325";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0326>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0326"@en;
+    skos:prefLabel "ACT0326"@en;
+    skos:notation "act0326";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act04>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT04"@en;
+    skos:prefLabel "ACT04"@en;
+    skos:notation "act04";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0401>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0401"@en;
+    skos:prefLabel "ACT0401"@en;
+    skos:notation "act0401";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act040101>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT040101"@en;
+    skos:prefLabel "ACT040101"@en;
+    skos:notation "act040101";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0402>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0402"@en;
+    skos:prefLabel "ACT0402"@en;
+    skos:notation "act0402";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0403>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0403"@en;
+    skos:prefLabel "ACT0403"@en;
+    skos:notation "act0403";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0404>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0404"@en;
+    skos:prefLabel "ACT0404"@en;
+    skos:notation "act0404";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0405>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0405"@en;
+    skos:prefLabel "ACT0405"@en;
+    skos:notation "act0405";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0406>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0406"@en;
+    skos:prefLabel "ACT0406"@en;
+    skos:notation "act0406";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0407>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0407"@en;
+    skos:prefLabel "ACT0407"@en;
+    skos:notation "act0407";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0408>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0408"@en;
+    skos:prefLabel "ACT0408"@en;
+    skos:notation "act0408";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0409>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0409"@en;
+    skos:prefLabel "ACT0409"@en;
+    skos:notation "act0409";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0410>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0410"@en;
+    skos:prefLabel "ACT0410"@en;
+    skos:notation "act0410";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0411>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0411"@en;
+    skos:prefLabel "ACT0411"@en;
+    skos:notation "act0411";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0413>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0413"@en;
+    skos:prefLabel "ACT0413"@en;
+    skos:notation "act0413";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0422>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0422"@en;
+    skos:prefLabel "ACT0422"@en;
+    skos:notation "act0422";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0425>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0425"@en;
+    skos:prefLabel "ACT0425"@en;
+    skos:notation "act0425";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0426>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0426"@en;
+    skos:prefLabel "ACT0426"@en;
+    skos:notation "act0426";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0501>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0501"@en;
+    skos:prefLabel "ACT0501"@en;
+    skos:notation "act0501";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0502>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0502"@en;
+    skos:prefLabel "ACT0502"@en;
+    skos:notation "act0502";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0503>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0503"@en;
+    skos:prefLabel "ACT0503"@en;
+    skos:notation "act0503";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0504>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0504"@en;
+    skos:prefLabel "ACT0504"@en;
+    skos:notation "act0504";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0505>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0505"@en;
+    skos:prefLabel "ACT0505"@en;
+    skos:notation "act0505";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0506>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0506"@en;
+    skos:prefLabel "ACT0506"@en;
+    skos:notation "act0506";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0507>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0507"@en;
+    skos:prefLabel "ACT0507"@en;
+    skos:notation "act0507";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0508>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0508"@en;
+    skos:prefLabel "ACT0508"@en;
+    skos:notation "act0508";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0509>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0509"@en;
+    skos:prefLabel "ACT0509"@en;
+    skos:notation "act0509";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0510>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0510"@en;
+    skos:prefLabel "ACT0510"@en;
+    skos:notation "act0510";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0511>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0511"@en;
+    skos:prefLabel "ACT0511"@en;
+    skos:notation "act0511";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0601>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0601"@en;
+    skos:prefLabel "ACT0601"@en;
+    skos:notation "act0601";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0602>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0602"@en;
+    skos:prefLabel "ACT0602"@en;
+    skos:notation "act0602";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0603>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0603"@en;
+    skos:prefLabel "ACT0603"@en;
+    skos:notation "act0603";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0604>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0604"@en;
+    skos:prefLabel "ACT0604"@en;
+    skos:notation "act0604";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0605>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0605"@en;
+    skos:prefLabel "ACT0605"@en;
+    skos:notation "act0605";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0611>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0611"@en;
+    skos:prefLabel "ACT0611"@en;
+    skos:notation "act0611";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0701>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0701"@en;
+    skos:prefLabel "ACT0701"@en;
+    skos:notation "act0701";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0702>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0702"@en;
+    skos:prefLabel "ACT0702"@en;
+    skos:notation "act0702";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0703>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0703"@en;
+    skos:prefLabel "ACT0703"@en;
+    skos:notation "act0703";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0801>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0801"@en;
+    skos:prefLabel "ACT0801"@en;
+    skos:notation "act0801";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0802>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0802"@en;
+    skos:prefLabel "ACT0802"@en;
+    skos:notation "act0802";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0803>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0803"@en;
+    skos:prefLabel "ACT0803"@en;
+    skos:notation "act0803";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0804>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0804"@en;
+    skos:prefLabel "ACT0804"@en;
+    skos:notation "act0804";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0805>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0805"@en;
+    skos:prefLabel "ACT0805"@en;
+    skos:notation "act0805";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0806>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0806"@en;
+    skos:prefLabel "ACT0806"@en;
+    skos:notation "act0806";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0901>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0901"@en;
+    skos:prefLabel "ACT0901"@en;
+    skos:notation "act0901";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0902>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0902"@en;
+    skos:prefLabel "ACT0902"@en;
+    skos:notation "act0902";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0903>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0903"@en;
+    skos:prefLabel "ACT0903"@en;
+    skos:notation "act0903";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0904>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0904"@en;
+    skos:prefLabel "ACT0904"@en;
+    skos:notation "act0904";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act0905>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT0905"@en;
+    skos:prefLabel "ACT0905"@en;
+    skos:notation "act0905";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act1001>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT1001"@en;
+    skos:prefLabel "ACT1001"@en;
+    skos:notation "act1001";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act1101>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT1101"@en;
+    skos:prefLabel "ACT1101"@en;
+    skos:notation "act1101";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act1201>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT1201"@en;
+    skos:prefLabel "ACT1201"@en;
+    skos:notation "act1201";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act1202>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT1202"@en;
+    skos:prefLabel "ACT1202"@en;
+    skos:notation "act1202";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act1301>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT1301"@en;
+    skos:prefLabel "ACT1301"@en;
+    skos:notation "act1301";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act1302>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT1302"@en;
+    skos:prefLabel "ACT1302"@en;
+    skos:notation "act1302";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act1401>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT1401"@en;
+    skos:prefLabel "ACT1401"@en;
+    skos:notation "act1401";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act1402>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT1402"@en;
+    skos:prefLabel "ACT1402"@en;
+    skos:notation "act1402";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act1501>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT1501"@en;
+    skos:prefLabel "ACT1501"@en;
+    skos:notation "act1501";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act1601>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT1601"@en;
+    skos:prefLabel "ACT1601"@en;
+    skos:notation "act1601";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act1701>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT1701"@en;
+    skos:prefLabel "ACT1701"@en;
+    skos:notation "act1701";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act1801>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT1801"@en;
+    skos:prefLabel "ACT1801"@en;
+    skos:notation "act1801";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act1901>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT1901"@en;
+    skos:prefLabel "ACT1901"@en;
+    skos:notation "act1901";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act2001>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT2001"@en;
+    skos:prefLabel "ACT2001"@en;
+    skos:notation "act2001";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act2101>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT2101"@en;
+    skos:prefLabel "ACT2101"@en;
+    skos:notation "act2101";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/activity-code/act2201>
+    a <http://finance.data.gov.uk/def/coins/ActivityCode>, skos:Concept;
+    rdfs:label "ACT2201"@en;
+    skos:prefLabel "ACT2201"@en;
+    skos:notation "act2201";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/activity-code>;
+    
+    .

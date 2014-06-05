@@ -1,0 +1,39 @@
+<http://finance.data.gov.uk/def/coins/estimates-aina> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://finance.data.gov.uk/def/coins/estimates-aina> <http://www.w3.org/2000/01/rdf-schema#label> "estimates aina code list concept scheme"@en .
+<http://finance.data.gov.uk/def/coins/estimates-aina> <http://www.w3.org/2004/02/skos/core#prefLabel> "estimates aina code list concept scheme"@en .
+<http://finance.data.gov.uk/def/coins/estimates-aina> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/estimates-aina/e-nan> .
+<http://finance.data.gov.uk/def/coins/estimates-aina> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/estimates-aina/e-nar> .
+<http://finance.data.gov.uk/def/coins/estimates-aina> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/estimates-aina/e-oaa> .
+<http://finance.data.gov.uk/def/coins/estimates-aina/e-nan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/EstimatesAina> .
+<http://finance.data.gov.uk/def/coins/estimates-aina/e-nan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/estimates-aina/e-nan> <http://www.w3.org/2000/01/rdf-schema#label> "E-NAN"@en .
+<http://finance.data.gov.uk/def/coins/estimates-aina/e-nan> <http://www.w3.org/2004/02/skos/core#prefLabel> "E-NAN"@en .
+<http://finance.data.gov.uk/def/coins/estimates-aina/e-nan> <http://www.w3.org/2004/02/skos/core#notation> "e-nan" .
+<http://finance.data.gov.uk/def/coins/estimates-aina/e-nan> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/estimates-aina/e-nan> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/estimates-aina> .
+<http://finance.data.gov.uk/def/coins/statistical-concept/estimates-aina> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/sdmx#Concept> .
+<http://finance.data.gov.uk/def/coins/statistical-concept/estimates-aina> <http://www.w3.org/2000/01/rdf-schema#label> "estimates aina"@en .
+<http://finance.data.gov.uk/def/coins/statistical-concept/estimates-aina> <http://www.w3.org/2004/02/skos/core#prefLabel> "estimates aina"@en .
+<http://finance.data.gov.uk/def/coins/statistical-concept/estimates-aina> <http://www.w3.org/2000/01/rdf-schema#comment> "Shows whether income should be treated as an Appropriation in Aid of an Estimate, and determines whether it is resource or capital. " .
+<http://finance.data.gov.uk/def/coins/statistical-concept/estimates-aina> <http://purl.org/dc/terms/source> <http://www.hm-treasury.gov.uk/d/coins_guidance.pdf> .
+<http://finance.data.gov.uk/def/coins/statistical-concept/estimates-aina> <http://www.epimorphics.com/vocabs/coins-generate#columnName> "estimates_aina" .
+<http://finance.data.gov.uk/def/coins/estimates-aina/e-oaa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/EstimatesAina> .
+<http://finance.data.gov.uk/def/coins/estimates-aina/e-oaa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/estimates-aina/e-oaa> <http://www.w3.org/2000/01/rdf-schema#label> "E-OAA"@en .
+<http://finance.data.gov.uk/def/coins/estimates-aina/e-oaa> <http://www.w3.org/2004/02/skos/core#prefLabel> "E-OAA"@en .
+<http://finance.data.gov.uk/def/coins/estimates-aina/e-oaa> <http://www.w3.org/2004/02/skos/core#notation> "e-oaa" .
+<http://finance.data.gov.uk/def/coins/estimates-aina/e-oaa> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/estimates-aina/e-oaa> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/estimates-aina> .
+<http://finance.data.gov.uk/def/coins/estimates-aina/e-nar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/EstimatesAina> .
+<http://finance.data.gov.uk/def/coins/estimates-aina/e-nar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/estimates-aina/e-nar> <http://www.w3.org/2000/01/rdf-schema#label> "E-NAR"@en .
+<http://finance.data.gov.uk/def/coins/estimates-aina/e-nar> <http://www.w3.org/2004/02/skos/core#prefLabel> "E-NAR"@en .
+<http://finance.data.gov.uk/def/coins/estimates-aina/e-nar> <http://www.w3.org/2004/02/skos/core#notation> "e-nar" .
+<http://finance.data.gov.uk/def/coins/estimates-aina/e-nar> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/estimates-aina/e-nar> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/estimates-aina> .
+<http://finance.data.gov.uk/def/coins/EstimatesAina> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://finance.data.gov.uk/def/coins/EstimatesAina> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://finance.data.gov.uk/def/coins/EstimatesAina> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/EstimatesAina> <http://www.w3.org/2000/01/rdf-schema#label> "estimates aina values class"@en .
+<http://finance.data.gov.uk/def/coins/EstimatesAina> <http://www.w3.org/2004/02/skos/core#prefLabel> "estimates aina values class"@en .
+<http://finance.data.gov.uk/def/coins/EstimatesAina> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of values in the estimates aina code-list scheme" .

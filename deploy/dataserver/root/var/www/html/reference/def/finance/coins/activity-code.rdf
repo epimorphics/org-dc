@@ -1,0 +1,1804 @@
+<rdf:RDF
+    xmlns:sdmx-subject="http://purl.org/linked-data/sdmx/2009/subject#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:sdmx-dimension="http://purl.org/linked-data/sdmx/2009/dimension#"
+    xmlns:sdmx-measure="http://purl.org/linked-data/sdmx/2009/measure#"
+    xmlns:sdmx-attribute="http://purl.org/linked-data/sdmx/2009/attribute#"
+    xmlns:coins-data="http://source.data.gov.uk/data/coins/"
+    xmlns:coins-dsd="http://finance.data.gov.uk/dsd/coins/"
+    xmlns:coins-dimension="http://finance.data.gov.uk/dsd/coins/dimension/"
+    xmlns:void="http://rdfs.org/ns/void#"
+    xmlns:coins-measure="http://finance.data.gov.uk/dsd/coins/measure/"
+    xmlns:j.0="http://www.epimorphics.com/vocabs/coins-generate#"
+    xmlns:coins-attribute="http://finance.data.gov.uk/dsd/coins/attribute/"
+    xmlns:sdmx-concept="http://purl.org/linked-data/sdmx/2009/concept#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:coins-slicekey="http://finance.data.gov.uk/dsd/coins/slice/"
+    xmlns:sdmx="http://purl.org/linked-data/sdmx#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:sdmx-code="http://purl.org/linked-data/sdmx/2009/code#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:j.1="http://finance.data.gov.uk/def/coins/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:qb="http://purl.org/linked-data/cube#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <rdfs:Class rdf:about="http://finance.data.gov.uk/def/coins/ActivityCode">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:label xml:lang="en">activity code values class</rdfs:label>
+    <skos:prefLabel xml:lang="en">activity code values class</skos:prefLabel>
+    <rdfs:comment>The class of values in the activity code code-list scheme</rdfs:comment>
+  </rdfs:Class>
+  <sdmx:Concept rdf:about="http://finance.data.gov.uk/def/coins/statistical-concept/activity-code">
+    <rdfs:label xml:lang="en">activity code</rdfs:label>
+    <skos:prefLabel xml:lang="en">activity code</skos:prefLabel>
+    <rdfs:comment>Used to allocate expenditure to Departmental Annual Reports and Supplementary Budgetary Information publications.</rdfs:comment>
+    <dcterms:source rdf:resource="http://www.hm-treasury.gov.uk/d/coins_guidance.pdf"/>
+    <j.0:columnName>activity_code</j.0:columnName>
+  </sdmx:Concept>
+  <skos:ConceptScheme rdf:about="http://finance.data.gov.uk/def/coins/activity-code">
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0109">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0109</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0109</skos:prefLabel>
+        <skos:notation>act0109</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act020201">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT020201</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT020201</skos:prefLabel>
+        <skos:notation>act020201</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0209">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0209</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0209</skos:prefLabel>
+        <skos:notation>act0209</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0511">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0511</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0511</skos:prefLabel>
+        <skos:notation>act0511</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0405">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0405</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0405</skos:prefLabel>
+        <skos:notation>act0405</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0227">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0227</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0227</skos:prefLabel>
+        <skos:notation>act0227</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0302">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0302</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0302</skos:prefLabel>
+        <skos:notation>act0302</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act1101">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT1101</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT1101</skos:prefLabel>
+        <skos:notation>act1101</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act2001">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT2001</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT2001</skos:prefLabel>
+        <skos:notation>act2001</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0122">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0122</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0122</skos:prefLabel>
+        <skos:notation>act0122</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act1401">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT1401</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT1401</skos:prefLabel>
+        <skos:notation>act1401</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0309">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0309</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0309</skos:prefLabel>
+        <skos:notation>act0309</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0503">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0503</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0503</skos:prefLabel>
+        <skos:notation>act0503</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0108">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0108</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0108</skos:prefLabel>
+        <skos:notation>act0108</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0114">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0114</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0114</skos:prefLabel>
+        <skos:notation>act0114</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0310">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0310</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0310</skos:prefLabel>
+        <skos:notation>act0310</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0204">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0204</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0204</skos:prefLabel>
+        <skos:notation>act0204</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act010203">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT010203</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT010203</skos:prefLabel>
+        <skos:notation>act010203</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0202">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0202</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0202</skos:prefLabel>
+        <skos:notation>act0202</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act1701">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT1701</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT1701</skos:prefLabel>
+        <skos:notation>act1701</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act1901">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT1901</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT1901</skos:prefLabel>
+        <skos:notation>act1901</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act010201">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT010201</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT010201</skos:prefLabel>
+        <skos:notation>act010201</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0216">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0216</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0216</skos:prefLabel>
+        <skos:notation>act0216</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act1402">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT1402</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT1402</skos:prefLabel>
+        <skos:notation>act1402</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act010101">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT010101</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT010101</skos:prefLabel>
+        <skos:notation>act010101</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act010508">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT010508</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT010508</skos:prefLabel>
+        <skos:notation>act010508</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0404">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0404</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0404</skos:prefLabel>
+        <skos:notation>act0404</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0115">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0115</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0115</skos:prefLabel>
+        <skos:notation>act0115</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0502">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0502</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0502</skos:prefLabel>
+        <skos:notation>act0502</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0113">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0113</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0113</skos:prefLabel>
+        <skos:notation>act0113</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0422">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0422</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0422</skos:prefLabel>
+        <skos:notation>act0422</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0203">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0203</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0203</skos:prefLabel>
+        <skos:notation>act0203</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act010202">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT010202</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT010202</skos:prefLabel>
+        <skos:notation>act010202</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0219">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0219</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0219</skos:prefLabel>
+        <skos:notation>act0219</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0806">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0806</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0806</skos:prefLabel>
+        <skos:notation>act0806</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act010209">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT010209</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT010209</skos:prefLabel>
+        <skos:notation>act010209</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0904">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0904</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0904</skos:prefLabel>
+        <skos:notation>act0904</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:prefLabel xml:lang="en">activity code code list concept scheme</skos:prefLabel>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0315">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0315</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0315</skos:prefLabel>
+        <skos:notation>act0315</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0107">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0107</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0107</skos:prefLabel>
+        <skos:notation>act0107</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0102">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0102</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0102</skos:prefLabel>
+        <skos:notation>act0102</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0411">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0411</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0411</skos:prefLabel>
+        <skos:notation>act0411</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0805">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0805</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0805</skos:prefLabel>
+        <skos:notation>act0805</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0318">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0318</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0318</skos:prefLabel>
+        <skos:notation>act0318</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act00">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT00</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT00</skos:prefLabel>
+        <skos:notation>act00</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0702">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0702</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0702</skos:prefLabel>
+        <skos:notation>act0702</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0106">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0106</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0106</skos:prefLabel>
+        <skos:notation>act0106</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act1201">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT1201</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT1201</skos:prefLabel>
+        <skos:notation>act1201</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0225">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0225</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0225</skos:prefLabel>
+        <skos:notation>act0225</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0410">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0410</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0410</skos:prefLabel>
+        <skos:notation>act0410</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0123">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0123</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0123</skos:prefLabel>
+        <skos:notation>act0123</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0903">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0903</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0903</skos:prefLabel>
+        <skos:notation>act0903</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0508">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0508</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0508</skos:prefLabel>
+        <skos:notation>act0508</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act1601">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT1601</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT1601</skos:prefLabel>
+        <skos:notation>act1601</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0604">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0604</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0604</skos:prefLabel>
+        <skos:notation>act0604</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act010506">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT010506</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT010506</skos:prefLabel>
+        <skos:notation>act010506</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act020101">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT020101</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT020101</skos:prefLabel>
+        <skos:notation>act020101</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0326">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0326</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0326</skos:prefLabel>
+        <skos:notation>act0326</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0905">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0905</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0905</skos:prefLabel>
+        <skos:notation>act0905</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act010401">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT010401</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT010401</skos:prefLabel>
+        <skos:notation>act010401</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0217">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0217</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0217</skos:prefLabel>
+        <skos:notation>act0217</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act010104">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT010104</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT010104</skos:prefLabel>
+        <skos:notation>act010104</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act020205">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT020205</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT020205</skos:prefLabel>
+        <skos:notation>act020205</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0804">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0804</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0804</skos:prefLabel>
+        <skos:notation>act0804</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act010102">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT010102</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT010102</skos:prefLabel>
+        <skos:notation>act010102</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0902">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0902</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0902</skos:prefLabel>
+        <skos:notation>act0902</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0409">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0409</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0409</skos:prefLabel>
+        <skos:notation>act0409</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0212">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0212</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0212</skos:prefLabel>
+        <skos:notation>act0212</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0603">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0603</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0603</skos:prefLabel>
+        <skos:notation>act0603</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act020102">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT020102</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT020102</skos:prefLabel>
+        <skos:notation>act020102</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0701">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0701</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0701</skos:prefLabel>
+        <skos:notation>act0701</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0116">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0116</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0116</skos:prefLabel>
+        <skos:notation>act0116</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act010505">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT010505</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT010505</skos:prefLabel>
+        <skos:notation>act010505</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0402">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0402</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0402</skos:prefLabel>
+        <skos:notation>act0402</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act010210">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT010210</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT010210</skos:prefLabel>
+        <skos:notation>act010210</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0507">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0507</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0507</skos:prefLabel>
+        <skos:notation>act0507</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act010103">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT010103</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT010103</skos:prefLabel>
+        <skos:notation>act010103</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0703">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0703</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0703</skos:prefLabel>
+        <skos:notation>act0703</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0803">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0803</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0803</skos:prefLabel>
+        <skos:notation>act0803</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0208">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0208</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0208</skos:prefLabel>
+        <skos:notation>act0208</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0316">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0316</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0316</skos:prefLabel>
+        <skos:notation>act0316</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act030101">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT030101</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT030101</skos:prefLabel>
+        <skos:notation>act030101</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0226">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0226</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0226</skos:prefLabel>
+        <skos:notation>act0226</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0103">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0103</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0103</skos:prefLabel>
+        <skos:notation>act0103</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0401">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0401</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0401</skos:prefLabel>
+        <skos:notation>act0401</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0509">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0509</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0509</skos:prefLabel>
+        <skos:notation>act0509</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <rdfs:label xml:lang="en">activity code code list concept scheme</rdfs:label>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0121">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0121</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0121</skos:prefLabel>
+        <skos:notation>act0121</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0408">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0408</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0408</skos:prefLabel>
+        <skos:notation>act0408</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act1301">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT1301</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT1301</skos:prefLabel>
+        <skos:notation>act1301</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0506">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0506</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0506</skos:prefLabel>
+        <skos:notation>act0506</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0602">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0602</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0602</skos:prefLabel>
+        <skos:notation>act0602</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0207">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0207</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0207</skos:prefLabel>
+        <skos:notation>act0207</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0322">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0322</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0322</skos:prefLabel>
+        <skos:notation>act0322</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0305">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0305</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0305</skos:prefLabel>
+        <skos:notation>act0305</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act010109">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT010109</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT010109</skos:prefLabel>
+        <skos:notation>act010109</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0104">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0104</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0104</skos:prefLabel>
+        <skos:notation>act0104</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0413">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0413</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0413</skos:prefLabel>
+        <skos:notation>act0413</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act010303">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT010303</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT010303</skos:prefLabel>
+        <skos:notation>act010303</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0213">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0213</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0213</skos:prefLabel>
+        <skos:notation>act0213</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act020103">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT020103</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT020103</skos:prefLabel>
+        <skos:notation>act020103</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act040101">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT040101</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT040101</skos:prefLabel>
+        <skos:notation>act040101</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0407">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0407</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0407</skos:prefLabel>
+        <skos:notation>act0407</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0501">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0501</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0501</skos:prefLabel>
+        <skos:notation>act0501</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0601">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0601</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0601</skos:prefLabel>
+        <skos:notation>act0601</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0112">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0112</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0112</skos:prefLabel>
+        <skos:notation>act0112</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0304">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0304</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0304</skos:prefLabel>
+        <skos:notation>act0304</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0124">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0124</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0124</skos:prefLabel>
+        <skos:notation>act0124</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0214">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0214</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0214</skos:prefLabel>
+        <skos:notation>act0214</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act04">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT04</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT04</skos:prefLabel>
+        <skos:notation>act04</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0312">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0312</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0312</skos:prefLabel>
+        <skos:notation>act0312</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0206">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0206</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0206</skos:prefLabel>
+        <skos:notation>act0206</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0111">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0111</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0111</skos:prefLabel>
+        <skos:notation>act0111</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act010503">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT010503</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT010503</skos:prefLabel>
+        <skos:notation>act010503</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act1302">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT1302</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT1302</skos:prefLabel>
+        <skos:notation>act1302</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act1501">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT1501</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT1501</skos:prefLabel>
+        <skos:notation>act1501</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0426">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0426</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0426</skos:prefLabel>
+        <skos:notation>act0426</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0313">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0313</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0313</skos:prefLabel>
+        <skos:notation>act0313</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0105">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0105</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0105</skos:prefLabel>
+        <skos:notation>act0105</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0311">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0311</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0311</skos:prefLabel>
+        <skos:notation>act0311</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0205">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0205</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0205</skos:prefLabel>
+        <skos:notation>act0205</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act010204">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT010204</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT010204</skos:prefLabel>
+        <skos:notation>act010204</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act2101">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT2101</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT2101</skos:prefLabel>
+        <skos:notation>act2101</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0611">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0611</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0611</skos:prefLabel>
+        <skos:notation>act0611</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0222">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0222</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0222</skos:prefLabel>
+        <skos:notation>act0222</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act1001">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT1001</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT1001</skos:prefLabel>
+        <skos:notation>act1001</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act010206">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT010206</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT010206</skos:prefLabel>
+        <skos:notation>act010206</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act010509">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT010509</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT010509</skos:prefLabel>
+        <skos:notation>act010509</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0325">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0325</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0325</skos:prefLabel>
+        <skos:notation>act0325</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0425">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0425</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0425</skos:prefLabel>
+        <skos:notation>act0425</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0323">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0323</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0323</skos:prefLabel>
+        <skos:notation>act0323</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0110">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0110</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0110</skos:prefLabel>
+        <skos:notation>act0110</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act1801">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT1801</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT1801</skos:prefLabel>
+        <skos:notation>act1801</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act010404">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT010404</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT010404</skos:prefLabel>
+        <skos:notation>act010404</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0320">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0320</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0320</skos:prefLabel>
+        <skos:notation>act0320</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act010502">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT010502</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT010502</skos:prefLabel>
+        <skos:notation>act010502</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0319">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0319</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0319</skos:prefLabel>
+        <skos:notation>act0319</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act010107">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT010107</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT010107</skos:prefLabel>
+        <skos:notation>act010107</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act010301">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT010301</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT010301</skos:prefLabel>
+        <skos:notation>act010301</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0901">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0901</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0901</skos:prefLabel>
+        <skos:notation>act0901</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0211">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0211</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0211</skos:prefLabel>
+        <skos:notation>act0211</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act2201">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT2201</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT2201</skos:prefLabel>
+        <skos:notation>act2201</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act010504">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT010504</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT010504</skos:prefLabel>
+        <skos:notation>act010504</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0127">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0127</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0127</skos:prefLabel>
+        <skos:notation>act0127</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0125">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0125</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0125</skos:prefLabel>
+        <skos:notation>act0125</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0215">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0215</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0215</skos:prefLabel>
+        <skos:notation>act0215</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act010501">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT010501</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT010501</skos:prefLabel>
+        <skos:notation>act010501</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0802">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0802</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0802</skos:prefLabel>
+        <skos:notation>act0802</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act010205">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT010205</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT010205</skos:prefLabel>
+        <skos:notation>act010205</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0210">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0210</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0210</skos:prefLabel>
+        <skos:notation>act0210</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0201">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0201</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0201</skos:prefLabel>
+        <skos:notation>act0201</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act010403">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT010403</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT010403</skos:prefLabel>
+        <skos:notation>act010403</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act010106">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT010106</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT010106</skos:prefLabel>
+        <skos:notation>act010106</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act1202">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT1202</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT1202</skos:prefLabel>
+        <skos:notation>act1202</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0126">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0126</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0126</skos:prefLabel>
+        <skos:notation>act0126</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act020207">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT020207</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT020207</skos:prefLabel>
+        <skos:notation>act020207</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0505">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0505</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0505</skos:prefLabel>
+        <skos:notation>act0505</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0605">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0605</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0605</skos:prefLabel>
+        <skos:notation>act0605</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0801">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0801</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0801</skos:prefLabel>
+        <skos:notation>act0801</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0314">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0314</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0314</skos:prefLabel>
+        <skos:notation>act0314</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act010108">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT010108</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT010108</skos:prefLabel>
+        <skos:notation>act010108</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act010212">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT010212</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT010212</skos:prefLabel>
+        <skos:notation>act010212</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act010510">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT010510</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT010510</skos:prefLabel>
+        <skos:notation>act010510</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0218">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0218</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0218</skos:prefLabel>
+        <skos:notation>act0218</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act010302">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT010302</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT010302</skos:prefLabel>
+        <skos:notation>act010302</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act010402">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT010402</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT010402</skos:prefLabel>
+        <skos:notation>act010402</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0101">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0101</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0101</skos:prefLabel>
+        <skos:notation>act0101</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act010105">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT010105</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT010105</skos:prefLabel>
+        <skos:notation>act010105</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act020202">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT020202</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT020202</skos:prefLabel>
+        <skos:notation>act020202</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0406">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0406</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0406</skos:prefLabel>
+        <skos:notation>act0406</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0504">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0504</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0504</skos:prefLabel>
+        <skos:notation>act0504</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0510">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0510</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0510</skos:prefLabel>
+        <skos:notation>act0510</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0303">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0303</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0303</skos:prefLabel>
+        <skos:notation>act0303</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act010213">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT010213</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT010213</skos:prefLabel>
+        <skos:notation>act010213</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0403">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0403</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0403</skos:prefLabel>
+        <skos:notation>act0403</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0301">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0301</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0301</skos:prefLabel>
+        <skos:notation>act0301</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act0321">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT0321</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT0321</skos:prefLabel>
+        <skos:notation>act0321</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:ActivityCode rdf:about="http://finance.data.gov.uk/def/coins/activity-code/act010211">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ACT010211</rdfs:label>
+        <skos:prefLabel xml:lang="en">ACT010211</skos:prefLabel>
+        <skos:notation>act010211</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/activity-code"/>
+      </j.1:ActivityCode>
+    </skos:hasTopConcept>
+  </skos:ConceptScheme>
+</rdf:RDF>

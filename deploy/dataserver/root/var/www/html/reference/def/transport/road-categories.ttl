@@ -1,0 +1,160 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix t: <http://transport.data.gov.uk/def/transport/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@base <http://transport.data.gov.uk/def/road-category/> .
+
+<http://transport.data.gov.uk/def/road-category> a skos:ConceptScheme, owl:Ontology ;
+  skos:hasTopConcept <major> ;
+  skos:hasTopConcept <minor> ;
+  skos:hasTopConcept <urban> ;
+  skos:hasTopConcept <rural> ;
+  skos:hasTopConcept <principal> ;
+  skos:hasTopConcept <trunk> ;
+  rdfs:label "Road categories"@en ;
+  owl:versionInfo "$Id" .
+
+<classification> a skos:Collection ;
+  skos:prefLabel "Roads by Classification"@en ;
+  skos:member <major> ;
+  skos:member <minor> .
+
+<Major> a owl:Class, rdfs:Class ;
+  rdfs:label "Major Road"@en ;
+  owl:disjointUnionOf (<Motorway> <A>) ;
+  owl:disjointWith <Minor> .
+
+<major> a t:RoadCategory;
+  a skos:Concept ;
+  skos:prefLabel "Major Road"@en ;
+  skos:altLabel "Major"@en ;
+  skos:scopeNote "Include motorways and A roads. These roads usually have high traffic flows and are often the main arteries to major destinations."@en ;
+  skos:narrower <motorway> ;
+  skos:narrower <a> ;
+  skos:topConceptOf <http://transport.data.gov.uk/def/road-category> ;
+  owl:unionOf (<motorway> <a>) .
+
+<Motorway> a owl:Class, rdfs:Class ;
+  rdfs:label "Motorway"@en .
+
+<motorway> a t:RoadCategory, <Motorway> ;
+  a skos:Concept ;
+  skos:prefLabel "Motorway"@en ;
+  skos:broader <major> ;
+  skos:scopeNote "Major roads often used for long distance travel. They are usually three or more lanes in each direction and generally have the maximum speed limit of 70mph."@en ;
+  skos:inScheme <http://transport.data.gov.uk/def/road-category> .
+
+<A> a owl:Class, rdfs:Class ;
+  rdfs:label "A Road"@en .
+
+<a> a t:RoadCategory, <A> ;
+  a skos:Concept ;
+  skos:prefLabel "A Road"@en ;
+  skos:altLabel "A"@en ;
+  skos:broader <major> ;
+  skos:scopeNote "Can be trunk or principal roads. These are often described as ‘main’ roads and tend to have heavy traffic flows though not as high as motorways."@en ;
+  skos:inScheme <http://transport.data.gov.uk/def/road-category> .
+
+<Minor> a owl:Class, rdfs:Class ;
+  rdfs:label "Minor Road"@en ;
+  owl:unionOf (<B> <C> <Unclassified>) .
+
+<minor> a t:RoadCategory ;
+  a skos:Concept ;
+  skos:prefLabel "Minor Road"@en ;
+  skos:altLabel "Minor"@en ;
+  skos:scopeNote "These are B roads, C roads and unclassified roads and are all maintained by the local authorities."@en ;
+  skos:narrower <b> ;
+  skos:narrower <c> ;
+  skos:narrower <unclassified> ;
+  skos:topConceptOf <http://transport.data.gov.uk/def/road-category> ;
+  owl:unionOf (<b> <c> <unclassified>) .
+
+<B> a owl:Class, rdfs:Class ;
+  rdfs:label "B Road"@en .
+
+<b> a t:RoadCategory, <B> ;
+  a skos:Concept ;
+  skos:prefLabel "B Road" ;
+  skos:altLabel "B" ;
+  skos:inScheme <http://transport.data.gov.uk/def/road-category> .
+
+<C> a owl:Class, rdfs:Class ;
+  rdfs:label "C Road"@en .
+
+<c> a t:RoadCategory, <C> ;
+  a skos:Concept ;
+  skos:prefLabel "C Road" ;
+  skos:altLabel "C" ;
+  skos:inScheme <http://transport.data.gov.uk/def/road-category> .
+
+<Unclassified> a owl:Class, rdfs:Class ;
+  rdfs:label "Unclassified Road"@en .
+
+<unclassified> a t:RoadCategory, <Unclassified> ;
+  a skos:Concept ;
+  skos:prefLabel "Unclassified Road" ;
+  skos:altLabel "Unclassified" ;
+  skos:inScheme <http://transport.data.gov.uk/def/road-category> .
+
+<Locale> a owl:Class, rdfs:Class ;
+  rdfs:label "Roads by Locale"@en ;
+  owl:disjointUnionOf (<Urban> <Rural>) .
+
+<locale> a skos:Collection ;
+  skos:prefLabel "Roads by Locale" ;
+  skos:member <urban> ;
+  skos:member <rural> ;
+  owl:unionOf (<urban> <rural>) .
+
+<Urban> a owl:Class, rdfs:Class ;
+  rdfs:label "Urban Road"@en .
+
+<urban> a t:RoadCategory, <Urban> ;
+  a skos:Concept ;
+  skos:prefLabel "Urban Road" ;
+  skos:altLabel "Urban" ;
+  skos:scopeNote "Major and minor roads within an urban area, i.e. an area with a population of 10,000 or more. The urban areas used are based on 2001 Census data. The definition is based on the 2001 'urban settlement' and is available in Urban and rural area definitions: a user guide which can be found on the DCLG web site at: http://www.communities.gov.uk/planningandbuilding/planningbuilding/planningstatistics/urbanrural/"@en ;
+  rdfs:seeAlso <http://www.communities.gov.uk/planningandbuilding/planningbuilding/planningstatistics/urbanrural/> ;
+  skos:topConceptOf <http://transport.data.gov.uk/def/road-category> .
+
+<Rural> a owl:Class, rdfs:Class ;
+  rdfs:label "Rural Road"@en .
+
+<rural> a t:RoadCategory, <Rural> ;
+  a skos:Concept ;
+  skos:prefLabel "Rural Road" ;
+  skos:altLabel "Rural" ;
+  skos:scopeLabel "All other roads, i.e. those outside urban areas (urban areas having a population of 10,000 or more)."@en ;
+  rdfs:seeAlso <http://www.communities.gov.uk/planningandbuilding/planningbuilding/planningstatistics/urbanrural/> ;
+  skos:topConceptOf <http://transport.data.gov.uk/def/road-category> .
+
+<Principal> a owl:Class, rdfs:Class ;
+  rdfs:label "Principal Road"@en ;
+  owl:disjointWith <Trunk> .
+
+<principal> a t:RoadCategory, <Principal> ;
+  a skos:Concept ;
+  skos:prefLabel "Principal Road" ;
+  skos:altLabel "Primary Route" ;
+  skos:altLabel "Principal" ;
+  skos:scopeNote "These are major roads maintained by local authorities. They are mainly A roads (though the local authorities do have responsibility for some motorways) and tend to be in urban areas."@en ;
+  skos:topConceptOf <http://transport.data.gov.uk/def/road-category> ;
+  rdfs:subClassOf <motorway> ;
+  rdfs:subClassOf <a> .
+
+<Trunk> a owl:Class, rdfs:Class ;
+  rdfs:label "Trunk Road"@en .
+
+<trunk> a t:RoadCategory, <Trunk> ;
+  a skos:Concept ;
+  skos:prefLabel "Trunk Road"@en ;
+  skos:altLabel "Trunk"@en ;
+  skos:scopeNote "Most motorways and many of the long distance rural A roads are trunk roads. The responsibility for their maintenance lies with the Secretary of State and they are managed by the Highways Agency in England, the National Assembly of Wales in Wales and the Scottish Executive in Scotland (National Through Routes)."@en ;
+  skos:topConceptOf <http://transport.data.gov.uk/def/road-category> ;
+  rdfs:subClassOf <motorway> ;
+  rdfs:subClassOf <a> .
+

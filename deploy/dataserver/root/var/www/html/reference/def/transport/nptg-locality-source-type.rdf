@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:naptan="http://transport.data.gov.uk/def/naptan/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+   xmlns:spatialrelations="http://data.ordnancesurvey.co.uk/ontology/spatialrelations/"
+   xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+   xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <skos:ConceptScheme rdf:about="http://transport.data.gov.uk/def/nptg-source-locality-type">
+    <skos:hasTopConcept rdf:resource="http://transport.data.gov.uk/def/nptg-source-locality-type/Add"/>
+    <skos:hasTopConcept rdf:resource="http://transport.data.gov.uk/def/nptg-source-locality-type/Co"/>
+    <skos:hasTopConcept rdf:resource="http://transport.data.gov.uk/def/nptg-source-locality-type/DWD"/>
+    <skos:hasTopConcept rdf:resource="http://transport.data.gov.uk/def/nptg-source-locality-type/ISL"/>
+    <skos:hasTopConcept rdf:resource="http://transport.data.gov.uk/def/nptg-source-locality-type/LOC"/>
+    <skos:hasTopConcept rdf:resource="http://transport.data.gov.uk/def/nptg-source-locality-type/Lo"/>
+    <skos:hasTopConcept rdf:resource="http://transport.data.gov.uk/def/nptg-source-locality-type/PAR"/>
+    <skos:hasTopConcept rdf:resource="http://transport.data.gov.uk/def/nptg-source-locality-type/Pa"/>
+    <skos:hasTopConcept rdf:resource="http://transport.data.gov.uk/def/nptg-source-locality-type/RED"/>
+    <skos:hasTopConcept rdf:resource="http://transport.data.gov.uk/def/nptg-source-locality-type/U"/>
+    <skos:hasTopConcept rdf:resource="http://transport.data.gov.uk/def/nptg-source-locality-type/US"/>
+    <skos:note xml:lang="en">Allowed values for source classification of NPTG Localities.</skos:note>
+    <skos:prefName xml:lang="en">NPTG Source Locality Type</skos:prefName>
+  </skos:ConceptScheme>
+  <skos:Concept rdf:about="http://transport.data.gov.uk/def/nptg-source-locality-type/Add">
+    <rdf:type rdf:resource="http://transport.data.gov.uk/def/naptan/NptgSourceLocalityType"/>
+    <skos:prefName xml:lang="en">Added</skos:prefName>
+    <skos:topConceptOf rdf:resource="http://transport.data.gov.uk/def/nptg-source-locality-type"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://transport.data.gov.uk/def/nptg-source-locality-type/Co">
+    <rdf:type rdf:resource="http://transport.data.gov.uk/def/naptan/NptgSourceLocalityType"/>
+    <skos:prefName xml:lang="en">Community Ð Wales only</skos:prefName>
+    <skos:topConceptOf rdf:resource="http://transport.data.gov.uk/def/nptg-source-locality-type"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://transport.data.gov.uk/def/nptg-source-locality-type/DWD">
+    <rdf:type rdf:resource="http://transport.data.gov.uk/def/naptan/NptgSourceLocalityType"/>
+    <skos:prefName xml:lang="en">Scottish District Ward Ð Scotland only</skos:prefName>
+    <skos:topConceptOf rdf:resource="http://transport.data.gov.uk/def/nptg-source-locality-type"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://transport.data.gov.uk/def/nptg-source-locality-type/ISL">
+    <rdf:type rdf:resource="http://transport.data.gov.uk/def/naptan/NptgSourceLocalityType"/>
+    <skos:prefName xml:lang="en">Island</skos:prefName>
+    <skos:topConceptOf rdf:resource="http://transport.data.gov.uk/def/nptg-source-locality-type"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://transport.data.gov.uk/def/nptg-source-locality-type/LOC">
+    <rdf:type rdf:resource="http://transport.data.gov.uk/def/naptan/NptgSourceLocalityType"/>
+    <skos:prefName xml:lang="en">Scottish Locality Ð Scotland only</skos:prefName>
+    <skos:topConceptOf rdf:resource="http://transport.data.gov.uk/def/nptg-source-locality-type"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://transport.data.gov.uk/def/nptg-source-locality-type/Lo">
+    <rdf:type rdf:resource="http://transport.data.gov.uk/def/naptan/NptgSourceLocalityType"/>
+    <skos:prefName xml:lang="en">Other Locality in OS data</skos:prefName>
+    <skos:topConceptOf rdf:resource="http://transport.data.gov.uk/def/nptg-source-locality-type"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://transport.data.gov.uk/def/nptg-source-locality-type/PAR">
+    <rdf:type rdf:resource="http://transport.data.gov.uk/def/naptan/NptgSourceLocalityType"/>
+    <skos:prefName xml:lang="en">Scottish Parish Ð Scotland only</skos:prefName>
+    <skos:topConceptOf rdf:resource="http://transport.data.gov.uk/def/nptg-source-locality-type"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://transport.data.gov.uk/def/nptg-source-locality-type/Pa">
+    <rdf:type rdf:resource="http://transport.data.gov.uk/def/naptan/NptgSourceLocalityType"/>
+    <skos:prefName xml:lang="en">Parish Ð not Wales</skos:prefName>
+    <skos:topConceptOf rdf:resource="http://transport.data.gov.uk/def/nptg-source-locality-type"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://transport.data.gov.uk/def/nptg-source-locality-type/RED">
+    <rdf:type rdf:resource="http://transport.data.gov.uk/def/naptan/NptgSourceLocalityType"/>
+    <skos:prefName xml:lang="en">Scottish Registered Electoral District Ð Scotland only</skos:prefName>
+    <skos:topConceptOf rdf:resource="http://transport.data.gov.uk/def/nptg-source-locality-type"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://transport.data.gov.uk/def/nptg-source-locality-type/U">
+    <rdf:type rdf:resource="http://transport.data.gov.uk/def/naptan/NptgSourceLocalityType"/>
+    <skos:prefName xml:lang="en">Urban Area in OS data</skos:prefName>
+    <skos:topConceptOf rdf:resource="http://transport.data.gov.uk/def/nptg-source-locality-type"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://transport.data.gov.uk/def/nptg-source-locality-type/US">
+    <rdf:type rdf:resource="http://transport.data.gov.uk/def/naptan/NptgSourceLocalityType"/>
+    <skos:prefName xml:lang="en">Urban sub-area in OS data</skos:prefName>
+    <skos:topConceptOf rdf:resource="http://transport.data.gov.uk/def/nptg-source-locality-type"/>
+  </skos:Concept>
+</rdf:RDF>

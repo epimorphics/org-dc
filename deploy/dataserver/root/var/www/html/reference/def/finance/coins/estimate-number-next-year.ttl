@@ -1,0 +1,751 @@
+# Generated 2010-11-09T16:53:43+00:00
+
+@prefix rdf:                <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:               <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:                <http://www.w3.org/2002/07/owl#> .
+@prefix skos:               <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd:                <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:               <http://xmlns.com/foaf/0.1/> .
+@prefix void:               <http://rdfs.org/ns/void#> .
+@prefix dcterms:            <http://purl.org/dc/terms/> .
+@prefix sdmx:               <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept:       <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:     <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:     <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:       <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-code:          <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:       <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix qb:                 <http://purl.org/linked-data/cube#> .
+@prefix coins-data:         <http://source.data.gov.uk/data/coins/> .
+@prefix coins-dsd:          <http://finance.data.gov.uk/dsd/coins/> .
+@prefix coins-dimension:    <http://finance.data.gov.uk/dsd/coins/dimension/> .
+@prefix coins-attribute:    <http://finance.data.gov.uk/dsd/coins/attribute/> .
+@prefix coins-measure:      <http://finance.data.gov.uk/dsd/coins/measure/> .
+@prefix coins-slicekey:     <http://finance.data.gov.uk/dsd/coins/slice/> .
+
+<http://finance.data.gov.uk/def/coins/statistical-concept/estimate-number-next-year>
+    a sdmx:Concept;
+    rdfs:label "estimate number next year"@en;
+    skos:prefLabel "estimate number next year"@en;
+    rdfs:comment """Identifies the department or organisation to whose supply Estimates for the coming year the data are posted.""";
+    <http://purl.org/dc/terms/source> <http://www.hm-treasury.gov.uk/d/coins_guidance.pdf>;
+    <http://www.epimorphics.com/vocabs/coins-generate#columnName> "estimate_number_next_year"
+    .
+
+<http://finance.data.gov.uk/def/coins/EstimateNumberNextYear>
+    a rdfs:Class, owl:Class;
+    rdfs:subClassOf skos:Concept;
+    rdfs:label "estimate number next year values class"@en;
+    skos:prefLabel "estimate number next year values class"@en;
+    rdfs:comment "The class of values in the estimate number next year code-list scheme";
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-number-next-year>
+    a skos:ConceptScheme;
+    rdfs:label "estimate number next year code list concept scheme"@en;
+    skos:prefLabel "estimate number next year code list concept scheme"@en;
+    skos:hasTopConcept <http://finance.data.gov.uk/def/coins/estimate-number-next-year/m01ny>,
+          <http://finance.data.gov.uk/def/coins/estimate-number-next-year/m02ny>,
+          <http://finance.data.gov.uk/def/coins/estimate-number-next-year/m03ny>,
+          <http://finance.data.gov.uk/def/coins/estimate-number-next-year/m04ny>,
+          <http://finance.data.gov.uk/def/coins/estimate-number-next-year/m05ny>,
+          <http://finance.data.gov.uk/def/coins/estimate-number-next-year/m06ny>,
+          <http://finance.data.gov.uk/def/coins/estimate-number-next-year/m07ny>,
+          <http://finance.data.gov.uk/def/coins/estimate-number-next-year/m08ny>,
+          <http://finance.data.gov.uk/def/coins/estimate-number-next-year/m09ny>,
+          <http://finance.data.gov.uk/def/coins/estimate-number-next-year/m10ny>,
+          <http://finance.data.gov.uk/def/coins/estimate-number-next-year/m11ny>,
+          <http://finance.data.gov.uk/def/coins/estimate-number-next-year/m12ny>,
+          <http://finance.data.gov.uk/def/coins/estimate-number-next-year/m13ny>,
+          <http://finance.data.gov.uk/def/coins/estimate-number-next-year/m14ny>,
+          <http://finance.data.gov.uk/def/coins/estimate-number-next-year/m15ny>,
+          <http://finance.data.gov.uk/def/coins/estimate-number-next-year/m16ny>,
+          <http://finance.data.gov.uk/def/coins/estimate-number-next-year/m17ny>,
+          <http://finance.data.gov.uk/def/coins/estimate-number-next-year/m18ny>,
+          <http://finance.data.gov.uk/def/coins/estimate-number-next-year/m19ny>,
+          <http://finance.data.gov.uk/def/coins/estimate-number-next-year/m20ny>,
+          <http://finance.data.gov.uk/def/coins/estimate-number-next-year/m21ny>,
+          <http://finance.data.gov.uk/def/coins/estimate-number-next-year/m22ny>,
+          <http://finance.data.gov.uk/def/coins/estimate-number-next-year/m23ny>,
+          <http://finance.data.gov.uk/def/coins/estimate-number-next-year/m24ny>,
+          <http://finance.data.gov.uk/def/coins/estimate-number-next-year/m25ny>,
+          <http://finance.data.gov.uk/def/coins/estimate-number-next-year/m26ny>,
+          <http://finance.data.gov.uk/def/coins/estimate-number-next-year/m27ny>,
+          <http://finance.data.gov.uk/def/coins/estimate-number-next-year/m28ny>,
+          <http://finance.data.gov.uk/def/coins/estimate-number-next-year/m29ny>,
+          <http://finance.data.gov.uk/def/coins/estimate-number-next-year/m31ny>,
+          <http://finance.data.gov.uk/def/coins/estimate-number-next-year/m32ny>,
+          <http://finance.data.gov.uk/def/coins/estimate-number-next-year/m33ny>,
+          <http://finance.data.gov.uk/def/coins/estimate-number-next-year/m34ny>,
+          <http://finance.data.gov.uk/def/coins/estimate-number-next-year/m35ny>,
+          <http://finance.data.gov.uk/def/coins/estimate-number-next-year/m36ny>,
+          <http://finance.data.gov.uk/def/coins/estimate-number-next-year/m37ny>,
+          <http://finance.data.gov.uk/def/coins/estimate-number-next-year/m40ny>,
+          <http://finance.data.gov.uk/def/coins/estimate-number-next-year/m41ny>,
+          <http://finance.data.gov.uk/def/coins/estimate-number-next-year/m43ny>,
+          <http://finance.data.gov.uk/def/coins/estimate-number-next-year/m44ny>,
+          <http://finance.data.gov.uk/def/coins/estimate-number-next-year/m45ny>,
+          <http://finance.data.gov.uk/def/coins/estimate-number-next-year/m46ny>,
+          <http://finance.data.gov.uk/def/coins/estimate-number-next-year/m47ny>,
+          <http://finance.data.gov.uk/def/coins/estimate-number-next-year/m48ny>,
+          <http://finance.data.gov.uk/def/coins/estimate-number-next-year/m50ny>,
+          <http://finance.data.gov.uk/def/coins/estimate-number-next-year/m51ny>,
+          <http://finance.data.gov.uk/def/coins/estimate-number-next-year/m52ny>,
+          <http://finance.data.gov.uk/def/coins/estimate-number-next-year/m53ny>,
+          <http://finance.data.gov.uk/def/coins/estimate-number-next-year/m54ny>,
+          <http://finance.data.gov.uk/def/coins/estimate-number-next-year/m55ny>,
+          <http://finance.data.gov.uk/def/coins/estimate-number-next-year/m56ny>,
+          <http://finance.data.gov.uk/def/coins/estimate-number-next-year/m57ny>,
+          <http://finance.data.gov.uk/def/coins/estimate-number-next-year/m58ny>,
+          <http://finance.data.gov.uk/def/coins/estimate-number-next-year/m60ny>,
+          <http://finance.data.gov.uk/def/coins/estimate-number-next-year/m61ny>,
+          <http://finance.data.gov.uk/def/coins/estimate-number-next-year/m62ny>,
+          <http://finance.data.gov.uk/def/coins/estimate-number-next-year/m63ny>,
+          <http://finance.data.gov.uk/def/coins/estimate-number-next-year/m64ny>,
+          <http://finance.data.gov.uk/def/coins/estimate-number-next-year/m65ny>,
+          <http://finance.data.gov.uk/def/coins/estimate-number-next-year/m66ny>,
+          <http://finance.data.gov.uk/def/coins/estimate-number-next-year/m69ny>,
+          <http://finance.data.gov.uk/def/coins/estimate-number-next-year/mny>,
+          <http://finance.data.gov.uk/def/coins/estimate-number-next-year/mny0>,
+          <http://finance.data.gov.uk/def/coins/estimate-number-next-year/mny1>
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-number-next-year/m01ny>
+    a <http://finance.data.gov.uk/def/coins/EstimateNumberNextYear>, skos:Concept;
+    rdfs:label "ME01_next-yr"@en;
+    skos:prefLabel "ME01_next-yr"@en;
+    skos:notation "m01ny";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-number-next-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-number-next-year/m02ny>
+    a <http://finance.data.gov.uk/def/coins/EstimateNumberNextYear>, skos:Concept;
+    rdfs:label "ME02_next-yr"@en;
+    skos:prefLabel "ME02_next-yr"@en;
+    skos:notation "m02ny";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-number-next-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-number-next-year/m03ny>
+    a <http://finance.data.gov.uk/def/coins/EstimateNumberNextYear>, skos:Concept;
+    rdfs:label "ME03_next-yr"@en;
+    skos:prefLabel "ME03_next-yr"@en;
+    skos:notation "m03ny";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-number-next-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-number-next-year/m04ny>
+    a <http://finance.data.gov.uk/def/coins/EstimateNumberNextYear>, skos:Concept;
+    rdfs:label "ME04_next-yr"@en;
+    skos:prefLabel "ME04_next-yr"@en;
+    skos:notation "m04ny";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-number-next-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-number-next-year/m05ny>
+    a <http://finance.data.gov.uk/def/coins/EstimateNumberNextYear>, skos:Concept;
+    rdfs:label "ME05_next-yr"@en;
+    skos:prefLabel "ME05_next-yr"@en;
+    skos:notation "m05ny";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-number-next-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-number-next-year/m06ny>
+    a <http://finance.data.gov.uk/def/coins/EstimateNumberNextYear>, skos:Concept;
+    rdfs:label "ME06_next-yr"@en;
+    skos:prefLabel "ME06_next-yr"@en;
+    skos:notation "m06ny";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-number-next-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-number-next-year/m07ny>
+    a <http://finance.data.gov.uk/def/coins/EstimateNumberNextYear>, skos:Concept;
+    rdfs:label "ME07_next-yr"@en;
+    skos:prefLabel "ME07_next-yr"@en;
+    skos:notation "m07ny";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-number-next-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-number-next-year/m08ny>
+    a <http://finance.data.gov.uk/def/coins/EstimateNumberNextYear>, skos:Concept;
+    rdfs:label "ME08_next-yr"@en;
+    skos:prefLabel "ME08_next-yr"@en;
+    skos:notation "m08ny";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-number-next-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-number-next-year/m09ny>
+    a <http://finance.data.gov.uk/def/coins/EstimateNumberNextYear>, skos:Concept;
+    rdfs:label "ME09_next-yr"@en;
+    skos:prefLabel "ME09_next-yr"@en;
+    skos:notation "m09ny";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-number-next-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-number-next-year/m10ny>
+    a <http://finance.data.gov.uk/def/coins/EstimateNumberNextYear>, skos:Concept;
+    rdfs:label "ME10_next-yr"@en;
+    skos:prefLabel "ME10_next-yr"@en;
+    skos:notation "m10ny";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-number-next-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-number-next-year/m11ny>
+    a <http://finance.data.gov.uk/def/coins/EstimateNumberNextYear>, skos:Concept;
+    rdfs:label "ME11_next-yr"@en;
+    skos:prefLabel "ME11_next-yr"@en;
+    skos:notation "m11ny";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-number-next-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-number-next-year/m12ny>
+    a <http://finance.data.gov.uk/def/coins/EstimateNumberNextYear>, skos:Concept;
+    rdfs:label "ME12_next-yr"@en;
+    skos:prefLabel "ME12_next-yr"@en;
+    skos:notation "m12ny";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-number-next-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-number-next-year/m13ny>
+    a <http://finance.data.gov.uk/def/coins/EstimateNumberNextYear>, skos:Concept;
+    rdfs:label "ME13_next-yr"@en;
+    skos:prefLabel "ME13_next-yr"@en;
+    skos:notation "m13ny";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-number-next-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-number-next-year/m14ny>
+    a <http://finance.data.gov.uk/def/coins/EstimateNumberNextYear>, skos:Concept;
+    rdfs:label "ME14_next-yr"@en;
+    skos:prefLabel "ME14_next-yr"@en;
+    skos:notation "m14ny";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-number-next-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-number-next-year/m15ny>
+    a <http://finance.data.gov.uk/def/coins/EstimateNumberNextYear>, skos:Concept;
+    rdfs:label "ME15_next-yr"@en;
+    skos:prefLabel "ME15_next-yr"@en;
+    skos:notation "m15ny";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-number-next-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-number-next-year/m16ny>
+    a <http://finance.data.gov.uk/def/coins/EstimateNumberNextYear>, skos:Concept;
+    rdfs:label "ME16_next-yr"@en;
+    skos:prefLabel "ME16_next-yr"@en;
+    skos:notation "m16ny";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-number-next-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-number-next-year/m17ny>
+    a <http://finance.data.gov.uk/def/coins/EstimateNumberNextYear>, skos:Concept;
+    rdfs:label "ME17_next-yr"@en;
+    skos:prefLabel "ME17_next-yr"@en;
+    skos:notation "m17ny";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-number-next-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-number-next-year/m18ny>
+    a <http://finance.data.gov.uk/def/coins/EstimateNumberNextYear>, skos:Concept;
+    rdfs:label "ME18_next-yr"@en;
+    skos:prefLabel "ME18_next-yr"@en;
+    skos:notation "m18ny";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-number-next-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-number-next-year/m19ny>
+    a <http://finance.data.gov.uk/def/coins/EstimateNumberNextYear>, skos:Concept;
+    rdfs:label "ME19_next-yr"@en;
+    skos:prefLabel "ME19_next-yr"@en;
+    skos:notation "m19ny";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-number-next-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-number-next-year/m20ny>
+    a <http://finance.data.gov.uk/def/coins/EstimateNumberNextYear>, skos:Concept;
+    rdfs:label "ME20_next-yr"@en;
+    skos:prefLabel "ME20_next-yr"@en;
+    skos:notation "m20ny";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-number-next-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-number-next-year/m21ny>
+    a <http://finance.data.gov.uk/def/coins/EstimateNumberNextYear>, skos:Concept;
+    rdfs:label "ME21_next-yr"@en;
+    skos:prefLabel "ME21_next-yr"@en;
+    skos:notation "m21ny";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-number-next-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-number-next-year/m22ny>
+    a <http://finance.data.gov.uk/def/coins/EstimateNumberNextYear>, skos:Concept;
+    rdfs:label "ME22_next-yr"@en;
+    skos:prefLabel "ME22_next-yr"@en;
+    skos:notation "m22ny";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-number-next-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-number-next-year/m23ny>
+    a <http://finance.data.gov.uk/def/coins/EstimateNumberNextYear>, skos:Concept;
+    rdfs:label "ME23_next-yr"@en;
+    skos:prefLabel "ME23_next-yr"@en;
+    skos:notation "m23ny";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-number-next-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-number-next-year/m24ny>
+    a <http://finance.data.gov.uk/def/coins/EstimateNumberNextYear>, skos:Concept;
+    rdfs:label "ME24_next-yr"@en;
+    skos:prefLabel "ME24_next-yr"@en;
+    skos:notation "m24ny";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-number-next-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-number-next-year/m25ny>
+    a <http://finance.data.gov.uk/def/coins/EstimateNumberNextYear>, skos:Concept;
+    rdfs:label "ME25_next-yr"@en;
+    skos:prefLabel "ME25_next-yr"@en;
+    skos:notation "m25ny";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-number-next-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-number-next-year/m26ny>
+    a <http://finance.data.gov.uk/def/coins/EstimateNumberNextYear>, skos:Concept;
+    rdfs:label "ME26_next-yr"@en;
+    skos:prefLabel "ME26_next-yr"@en;
+    skos:notation "m26ny";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-number-next-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-number-next-year/m27ny>
+    a <http://finance.data.gov.uk/def/coins/EstimateNumberNextYear>, skos:Concept;
+    rdfs:label "ME27_next-yr"@en;
+    skos:prefLabel "ME27_next-yr"@en;
+    skos:notation "m27ny";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-number-next-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-number-next-year/m28ny>
+    a <http://finance.data.gov.uk/def/coins/EstimateNumberNextYear>, skos:Concept;
+    rdfs:label "ME28_next-yr"@en;
+    skos:prefLabel "ME28_next-yr"@en;
+    skos:notation "m28ny";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-number-next-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-number-next-year/m29ny>
+    a <http://finance.data.gov.uk/def/coins/EstimateNumberNextYear>, skos:Concept;
+    rdfs:label "ME29_next-yr"@en;
+    skos:prefLabel "ME29_next-yr"@en;
+    skos:notation "m29ny";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-number-next-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-number-next-year/m31ny>
+    a <http://finance.data.gov.uk/def/coins/EstimateNumberNextYear>, skos:Concept;
+    rdfs:label "ME31_next-yr"@en;
+    skos:prefLabel "ME31_next-yr"@en;
+    skos:notation "m31ny";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-number-next-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-number-next-year/m32ny>
+    a <http://finance.data.gov.uk/def/coins/EstimateNumberNextYear>, skos:Concept;
+    rdfs:label "ME32_next-yr"@en;
+    skos:prefLabel "ME32_next-yr"@en;
+    skos:notation "m32ny";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-number-next-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-number-next-year/m33ny>
+    a <http://finance.data.gov.uk/def/coins/EstimateNumberNextYear>, skos:Concept;
+    rdfs:label "ME33_next-yr"@en;
+    skos:prefLabel "ME33_next-yr"@en;
+    skos:notation "m33ny";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-number-next-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-number-next-year/m34ny>
+    a <http://finance.data.gov.uk/def/coins/EstimateNumberNextYear>, skos:Concept;
+    rdfs:label "ME34_next-yr"@en;
+    skos:prefLabel "ME34_next-yr"@en;
+    skos:notation "m34ny";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-number-next-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-number-next-year/m35ny>
+    a <http://finance.data.gov.uk/def/coins/EstimateNumberNextYear>, skos:Concept;
+    rdfs:label "ME35_next-yr"@en;
+    skos:prefLabel "ME35_next-yr"@en;
+    skos:notation "m35ny";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-number-next-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-number-next-year/m36ny>
+    a <http://finance.data.gov.uk/def/coins/EstimateNumberNextYear>, skos:Concept;
+    rdfs:label "ME36_next-yr"@en;
+    skos:prefLabel "ME36_next-yr"@en;
+    skos:notation "m36ny";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-number-next-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-number-next-year/m37ny>
+    a <http://finance.data.gov.uk/def/coins/EstimateNumberNextYear>, skos:Concept;
+    rdfs:label "ME37_next-yr"@en;
+    skos:prefLabel "ME37_next-yr"@en;
+    skos:notation "m37ny";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-number-next-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-number-next-year/m40ny>
+    a <http://finance.data.gov.uk/def/coins/EstimateNumberNextYear>, skos:Concept;
+    rdfs:label "ME40_next-yr"@en;
+    skos:prefLabel "ME40_next-yr"@en;
+    skos:notation "m40ny";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-number-next-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-number-next-year/m41ny>
+    a <http://finance.data.gov.uk/def/coins/EstimateNumberNextYear>, skos:Concept;
+    rdfs:label "ME41_next-yr"@en;
+    skos:prefLabel "ME41_next-yr"@en;
+    skos:notation "m41ny";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-number-next-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-number-next-year/m43ny>
+    a <http://finance.data.gov.uk/def/coins/EstimateNumberNextYear>, skos:Concept;
+    rdfs:label "ME43_next-yr"@en;
+    skos:prefLabel "ME43_next-yr"@en;
+    skos:notation "m43ny";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-number-next-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-number-next-year/m44ny>
+    a <http://finance.data.gov.uk/def/coins/EstimateNumberNextYear>, skos:Concept;
+    rdfs:label "ME44_next-yr"@en;
+    skos:prefLabel "ME44_next-yr"@en;
+    skos:notation "m44ny";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-number-next-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-number-next-year/m45ny>
+    a <http://finance.data.gov.uk/def/coins/EstimateNumberNextYear>, skos:Concept;
+    rdfs:label "ME45_next-yr"@en;
+    skos:prefLabel "ME45_next-yr"@en;
+    skos:notation "m45ny";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-number-next-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-number-next-year/m46ny>
+    a <http://finance.data.gov.uk/def/coins/EstimateNumberNextYear>, skos:Concept;
+    rdfs:label "ME46_next-yr"@en;
+    skos:prefLabel "ME46_next-yr"@en;
+    skos:notation "m46ny";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-number-next-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-number-next-year/m47ny>
+    a <http://finance.data.gov.uk/def/coins/EstimateNumberNextYear>, skos:Concept;
+    rdfs:label "ME47_next-yr"@en;
+    skos:prefLabel "ME47_next-yr"@en;
+    skos:notation "m47ny";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-number-next-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-number-next-year/m48ny>
+    a <http://finance.data.gov.uk/def/coins/EstimateNumberNextYear>, skos:Concept;
+    rdfs:label "ME48_next-yr"@en;
+    skos:prefLabel "ME48_next-yr"@en;
+    skos:notation "m48ny";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-number-next-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-number-next-year/m50ny>
+    a <http://finance.data.gov.uk/def/coins/EstimateNumberNextYear>, skos:Concept;
+    rdfs:label "ME50_next-yr"@en;
+    skos:prefLabel "ME50_next-yr"@en;
+    skos:notation "m50ny";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-number-next-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-number-next-year/m51ny>
+    a <http://finance.data.gov.uk/def/coins/EstimateNumberNextYear>, skos:Concept;
+    rdfs:label "ME51_next-yr"@en;
+    skos:prefLabel "ME51_next-yr"@en;
+    skos:notation "m51ny";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-number-next-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-number-next-year/m52ny>
+    a <http://finance.data.gov.uk/def/coins/EstimateNumberNextYear>, skos:Concept;
+    rdfs:label "ME52_next-yr"@en;
+    skos:prefLabel "ME52_next-yr"@en;
+    skos:notation "m52ny";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-number-next-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-number-next-year/m53ny>
+    a <http://finance.data.gov.uk/def/coins/EstimateNumberNextYear>, skos:Concept;
+    rdfs:label "ME53_next-yr"@en;
+    skos:prefLabel "ME53_next-yr"@en;
+    skos:notation "m53ny";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-number-next-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-number-next-year/m54ny>
+    a <http://finance.data.gov.uk/def/coins/EstimateNumberNextYear>, skos:Concept;
+    rdfs:label "ME54_next-yr"@en;
+    skos:prefLabel "ME54_next-yr"@en;
+    skos:notation "m54ny";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-number-next-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-number-next-year/m55ny>
+    a <http://finance.data.gov.uk/def/coins/EstimateNumberNextYear>, skos:Concept;
+    rdfs:label "ME55_next-yr"@en;
+    skos:prefLabel "ME55_next-yr"@en;
+    skos:notation "m55ny";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-number-next-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-number-next-year/m56ny>
+    a <http://finance.data.gov.uk/def/coins/EstimateNumberNextYear>, skos:Concept;
+    rdfs:label "ME56_next-yr"@en;
+    skos:prefLabel "ME56_next-yr"@en;
+    skos:notation "m56ny";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-number-next-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-number-next-year/m57ny>
+    a <http://finance.data.gov.uk/def/coins/EstimateNumberNextYear>, skos:Concept;
+    rdfs:label "ME57_next-yr"@en;
+    skos:prefLabel "ME57_next-yr"@en;
+    skos:notation "m57ny";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-number-next-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-number-next-year/m58ny>
+    a <http://finance.data.gov.uk/def/coins/EstimateNumberNextYear>, skos:Concept;
+    rdfs:label "ME58_next-yr"@en;
+    skos:prefLabel "ME58_next-yr"@en;
+    skos:notation "m58ny";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-number-next-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-number-next-year/m60ny>
+    a <http://finance.data.gov.uk/def/coins/EstimateNumberNextYear>, skos:Concept;
+    rdfs:label "ME60_next-yr"@en;
+    skos:prefLabel "ME60_next-yr"@en;
+    skos:notation "m60ny";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-number-next-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-number-next-year/m61ny>
+    a <http://finance.data.gov.uk/def/coins/EstimateNumberNextYear>, skos:Concept;
+    rdfs:label "ME61_next-yr"@en;
+    skos:prefLabel "ME61_next-yr"@en;
+    skos:notation "m61ny";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-number-next-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-number-next-year/m62ny>
+    a <http://finance.data.gov.uk/def/coins/EstimateNumberNextYear>, skos:Concept;
+    rdfs:label "ME62_next-yr"@en;
+    skos:prefLabel "ME62_next-yr"@en;
+    skos:notation "m62ny";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-number-next-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-number-next-year/m63ny>
+    a <http://finance.data.gov.uk/def/coins/EstimateNumberNextYear>, skos:Concept;
+    rdfs:label "ME63_next-yr"@en;
+    skos:prefLabel "ME63_next-yr"@en;
+    skos:notation "m63ny";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-number-next-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-number-next-year/m64ny>
+    a <http://finance.data.gov.uk/def/coins/EstimateNumberNextYear>, skos:Concept;
+    rdfs:label "ME64_next-yr"@en;
+    skos:prefLabel "ME64_next-yr"@en;
+    skos:notation "m64ny";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-number-next-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-number-next-year/m65ny>
+    a <http://finance.data.gov.uk/def/coins/EstimateNumberNextYear>, skos:Concept;
+    rdfs:label "ME65_next-yr"@en;
+    skos:prefLabel "ME65_next-yr"@en;
+    skos:notation "m65ny";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-number-next-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-number-next-year/m66ny>
+    a <http://finance.data.gov.uk/def/coins/EstimateNumberNextYear>, skos:Concept;
+    rdfs:label "ME66_next-yr"@en;
+    skos:prefLabel "ME66_next-yr"@en;
+    skos:notation "m66ny";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-number-next-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-number-next-year/m69ny>
+    a <http://finance.data.gov.uk/def/coins/EstimateNumberNextYear>, skos:Concept;
+    rdfs:label "ME69_next-yr"@en;
+    skos:prefLabel "ME69_next-yr"@en;
+    skos:notation "m69ny";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-number-next-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-number-next-year/mny>
+    a <http://finance.data.gov.uk/def/coins/EstimateNumberNextYear>, skos:Concept;
+    rdfs:label "MEIX_next-yr"@en;
+    skos:prefLabel "MEIX_next-yr"@en;
+    skos:notation "mny";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-number-next-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-number-next-year/mny0>
+    a <http://finance.data.gov.uk/def/coins/EstimateNumberNextYear>, skos:Concept;
+    rdfs:label "MESX_next-yr"@en;
+    skos:prefLabel "MESX_next-yr"@en;
+    skos:notation "mny0";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-number-next-year>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/estimate-number-next-year/mny1>
+    a <http://finance.data.gov.uk/def/coins/EstimateNumberNextYear>, skos:Concept;
+    rdfs:label "MEWA_next-yr"@en;
+    skos:prefLabel "MEWA_next-yr"@en;
+    skos:notation "mny1";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/estimate-number-next-year>;
+    
+    .

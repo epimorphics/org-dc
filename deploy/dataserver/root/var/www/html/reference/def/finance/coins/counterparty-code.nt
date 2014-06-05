@@ -1,0 +1,543 @@
+<http://finance.data.gov.uk/def/coins/counterparty-code/bti013.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/CounterpartyCode> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/bti013.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/bti013.cpi> <http://www.w3.org/2000/01/rdf-schema#label> "BTI013.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/bti013.cpi> <http://www.w3.org/2004/02/skos/core#prefLabel> "BTI013.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/bti013.cpi> <http://www.w3.org/2004/02/skos/core#notation> "bti013.cpi" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/bti013.cpi> <http://www.w3.org/2000/01/rdf-schema#comment> "UK Trade & Investment" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/bti013.cpi> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/counterparty-code> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/hgt089.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/CounterpartyCode> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/hgt089.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/hgt089.cpi> <http://www.w3.org/2000/01/rdf-schema#label> "HGT089.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/hgt089.cpi> <http://www.w3.org/2004/02/skos/core#prefLabel> "HGT089.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/hgt089.cpi> <http://www.w3.org/2004/02/skos/core#notation> "hgt089.cpi" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/hgt089.cpi> <http://www.w3.org/2000/01/rdf-schema#comment> "HM Procurator General and Treasury Solicitor" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/hgt089.cpi> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/counterparty-code> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dar201.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/CounterpartyCode> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dar201.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dar201.cpi> <http://www.w3.org/2000/01/rdf-schema#label> "DAR201.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dar201.cpi> <http://www.w3.org/2004/02/skos/core#prefLabel> "DAR201.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dar201.cpi> <http://www.w3.org/2004/02/skos/core#notation> "dar201.cpi" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dar201.cpi> <http://www.w3.org/2000/01/rdf-schema#comment> "Department of Agriculture and Rural Development - Northern Ireland" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dar201.cpi> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/counterparty-code> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/fcm028.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/CounterpartyCode> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/fcm028.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/fcm028.cpi> <http://www.w3.org/2000/01/rdf-schema#label> "FCM028.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/fcm028.cpi> <http://www.w3.org/2004/02/skos/core#prefLabel> "FCM028.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/fcm028.cpi> <http://www.w3.org/2004/02/skos/core#notation> "fcm028.cpi" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/fcm028.cpi> <http://www.w3.org/2000/01/rdf-schema#comment> "Forestry Commission" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/fcm028.cpi> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/counterparty-code> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/pro067.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/CounterpartyCode> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/pro067.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/pro067.cpi> <http://www.w3.org/2000/01/rdf-schema#label> "PRO067.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/pro067.cpi> <http://www.w3.org/2004/02/skos/core#prefLabel> "PRO067.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/pro067.cpi> <http://www.w3.org/2004/02/skos/core#notation> "pro067.cpi" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/pro067.cpi> <http://www.w3.org/2000/01/rdf-schema#comment> "The National Archives" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/pro067.cpi> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/counterparty-code> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/hmc015.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/CounterpartyCode> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/hmc015.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/hmc015.cpi> <http://www.w3.org/2000/01/rdf-schema#label> "HMC015.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/hmc015.cpi> <http://www.w3.org/2004/02/skos/core#prefLabel> "HMC015.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/hmc015.cpi> <http://www.w3.org/2004/02/skos/core#notation> "hmc015.cpi" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/hmc015.cpi> <http://www.w3.org/2000/01/rdf-schema#comment> "HM Customs & Excise" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/hmc015.cpi> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/counterparty-code> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/wof091.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/CounterpartyCode> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/wof091.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/wof091.cpi> <http://www.w3.org/2000/01/rdf-schema#label> "WOF091.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/wof091.cpi> <http://www.w3.org/2004/02/skos/core#prefLabel> "WOF091.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/wof091.cpi> <http://www.w3.org/2004/02/skos/core#notation> "wof091.cpi" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/wof091.cpi> <http://www.w3.org/2000/01/rdf-schema#comment> "Wales Office" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/wof091.cpi> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/counterparty-code> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/ilr041.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/CounterpartyCode> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/ilr041.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/ilr041.cpi> <http://www.w3.org/2000/01/rdf-schema#label> "ILR041.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/ilr041.cpi> <http://www.w3.org/2004/02/skos/core#prefLabel> "ILR041.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/ilr041.cpi> <http://www.w3.org/2004/02/skos/core#notation> "ilr041.cpi" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/ilr041.cpi> <http://www.w3.org/2000/01/rdf-schema#comment> "HM Revenue and Customs" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/ilr041.cpi> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/counterparty-code> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/hoa038.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/CounterpartyCode> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/hoa038.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/hoa038.cpi> <http://www.w3.org/2000/01/rdf-schema#label> "HOA038.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/hoa038.cpi> <http://www.w3.org/2004/02/skos/core#prefLabel> "HOA038.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/hoa038.cpi> <http://www.w3.org/2004/02/skos/core#notation> "hoa038.cpi" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/hoa038.cpi> <http://www.w3.org/2000/01/rdf-schema#comment> "House of Commons Administration" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/hoa038.cpi> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/counterparty-code> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/det204.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/CounterpartyCode> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/det204.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/det204.cpi> <http://www.w3.org/2000/01/rdf-schema#label> "DET204.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/det204.cpi> <http://www.w3.org/2004/02/skos/core#prefLabel> "DET204.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/det204.cpi> <http://www.w3.org/2004/02/skos/core#notation> "det204.cpi" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/det204.cpi> <http://www.w3.org/2000/01/rdf-schema#comment> "Department of Enterprise Trade and Investment - Northern Ireland" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/det204.cpi> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/counterparty-code> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/oft074.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/CounterpartyCode> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/oft074.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/oft074.cpi> <http://www.w3.org/2000/01/rdf-schema#label> "OFT074.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/oft074.cpi> <http://www.w3.org/2004/02/skos/core#prefLabel> "OFT074.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/oft074.cpi> <http://www.w3.org/2004/02/skos/core#notation> "oft074.cpi" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/oft074.cpi> <http://www.w3.org/2000/01/rdf-schema#comment> "Office of Fair Trading" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/oft074.cpi> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/counterparty-code> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/gad031.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/CounterpartyCode> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/gad031.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/gad031.cpi> <http://www.w3.org/2000/01/rdf-schema#label> "GAD031.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/gad031.cpi> <http://www.w3.org/2004/02/skos/core#prefLabel> "GAD031.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/gad031.cpi> <http://www.w3.org/2004/02/skos/core#notation> "gad031.cpi" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/gad031.cpi> <http://www.w3.org/2000/01/rdf-schema#comment> "Government Actuary's Department" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/gad031.cpi> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/counterparty-code> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/fsa026.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/CounterpartyCode> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/fsa026.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/fsa026.cpi> <http://www.w3.org/2000/01/rdf-schema#label> "FSA026.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/fsa026.cpi> <http://www.w3.org/2004/02/skos/core#prefLabel> "FSA026.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/fsa026.cpi> <http://www.w3.org/2004/02/skos/core#notation> "fsa026.cpi" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/fsa026.cpi> <http://www.w3.org/2000/01/rdf-schema#comment> "Food Standards Agency" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/fsa026.cpi> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/counterparty-code> .
+<http://finance.data.gov.uk/def/coins/counterparty-code> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/counterparty-code/awc090.cpi> .
+<http://finance.data.gov.uk/def/coins/counterparty-code> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/counterparty-code/opc060.cpi> .
+<http://finance.data.gov.uk/def/coins/counterparty-code> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/counterparty-code/nic081.cpi> .
+<http://finance.data.gov.uk/def/coins/counterparty-code> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/counterparty-code/oge020.cpi> .
+<http://finance.data.gov.uk/def/coins/counterparty-code> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/counterparty-code/dft004.cpi> .
+<http://finance.data.gov.uk/def/coins/counterparty-code> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/counterparty-code/hoa038.cpi> .
+<http://finance.data.gov.uk/def/coins/counterparty-code> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/counterparty-code/oft074.cpi> .
+<http://finance.data.gov.uk/def/coins/counterparty-code> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/counterparty-code/fcm028.cpi> .
+<http://finance.data.gov.uk/def/coins/counterparty-code> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/counterparty-code/dwp032.cpi> .
+<http://finance.data.gov.uk/def/coins/counterparty-code> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/counterparty-code/ara035.cpi> .
+<http://finance.data.gov.uk/def/coins/counterparty-code> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/counterparty-code/dsd210.cpi> .
+<http://finance.data.gov.uk/def/coins/counterparty-code> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/counterparty-code/des022.cpi> .
+<http://finance.data.gov.uk/def/coins/counterparty-code> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/counterparty-code/dis063.cpi> .
+<http://finance.data.gov.uk/def/coins/counterparty-code> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/counterparty-code/nsg062.cpi> .
+<http://finance.data.gov.uk/def/coins/counterparty-code> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/counterparty-code/wof091.cpi> .
+<http://finance.data.gov.uk/def/coins/counterparty-code> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/counterparty-code/ofm211.cpi> .
+<http://finance.data.gov.uk/def/coins/counterparty-code> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/counterparty-code/siv007.cpi> .
+<http://finance.data.gov.uk/def/coins/counterparty-code> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/counterparty-code/cps016.cpi> .
+<http://finance.data.gov.uk/def/coins/counterparty-code> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/counterparty-code/fsa026.cpi> .
+<http://finance.data.gov.uk/def/coins/counterparty-code> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/counterparty-code/chc009.cpi> .
+<http://finance.data.gov.uk/def/coins/counterparty-code> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/counterparty-code/cex086.cpi> .
+<http://finance.data.gov.uk/def/coins/counterparty-code> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/counterparty-code/cpid.na> .
+<http://finance.data.gov.uk/def/coins/counterparty-code> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/counterparty-code/pco065.cpi> .
+<http://finance.data.gov.uk/def/coins/counterparty-code> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/counterparty-code/hsp208.cpi> .
+<http://finance.data.gov.uk/def/coins/counterparty-code> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/counterparty-code/hol037.cpi> .
+<http://finance.data.gov.uk/def/coins/counterparty-code> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/counterparty-code/hmc015.cpi> .
+<http://finance.data.gov.uk/def/coins/counterparty-code> <http://www.w3.org/2000/01/rdf-schema#label> "counterparty code code list concept scheme"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/counterparty-code/pro067.cpi> .
+<http://finance.data.gov.uk/def/coins/counterparty-code> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/counterparty-code/rcp046.cpi> .
+<http://finance.data.gov.uk/def/coins/counterparty-code> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/counterparty-code/sct075.cpi> .
+<http://finance.data.gov.uk/def/coins/counterparty-code> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/counterparty-code/sfo019.cpi> .
+<http://finance.data.gov.uk/def/coins/counterparty-code> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/counterparty-code/dpm085.cpi> .
+<http://finance.data.gov.uk/def/coins/counterparty-code> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/counterparty-code/efr003.cpi> .
+<http://finance.data.gov.uk/def/coins/counterparty-code> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/counterparty-code/psc006.cpi> .
+<http://finance.data.gov.uk/def/coins/counterparty-code> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/counterparty-code/sco042.cpi> .
+<http://finance.data.gov.uk/def/coins/counterparty-code> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/counterparty-code/fco027.cpi> .
+<http://finance.data.gov.uk/def/coins/counterparty-code> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/counterparty-code/den206.cpi> .
+<http://finance.data.gov.uk/def/coins/counterparty-code> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/counterparty-code/hmt087.cpi> .
+<http://finance.data.gov.uk/def/coins/counterparty-code> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://finance.data.gov.uk/def/coins/counterparty-code> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/counterparty-code/mod017.cpi> .
+<http://finance.data.gov.uk/def/coins/counterparty-code> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/counterparty-code/dar201.cpi> .
+<http://finance.data.gov.uk/def/coins/counterparty-code> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/counterparty-code/hgt089.cpi> .
+<http://finance.data.gov.uk/def/coins/counterparty-code> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/counterparty-code/bti013.cpi> .
+<http://finance.data.gov.uk/def/coins/counterparty-code> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/counterparty-code/nio097.cpi> .
+<http://finance.data.gov.uk/def/coins/counterparty-code> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/counterparty-code/did030.cpi> .
+<http://finance.data.gov.uk/def/coins/counterparty-code> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/counterparty-code/lcd047.cpi> .
+<http://finance.data.gov.uk/def/coins/counterparty-code> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/counterparty-code/drd209.cpi> .
+<http://finance.data.gov.uk/def/coins/counterparty-code> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/counterparty-code/naw090.cpi> .
+<http://finance.data.gov.uk/def/coins/counterparty-code> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/counterparty-code/ilr041.cpi> .
+<http://finance.data.gov.uk/def/coins/counterparty-code> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/counterparty-code/geo064.cpi> .
+<http://finance.data.gov.uk/def/coins/counterparty-code> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/counterparty-code/ils081.cpi> .
+<http://finance.data.gov.uk/def/coins/counterparty-code> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/counterparty-code/dti084.cpi> .
+<http://finance.data.gov.uk/def/coins/counterparty-code> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/counterparty-code/orr088.cpi> .
+<http://finance.data.gov.uk/def/coins/counterparty-code> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/counterparty-code/ois022.cpi> .
+<http://finance.data.gov.uk/def/coins/counterparty-code> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/counterparty-code/hof034.cpi> .
+<http://finance.data.gov.uk/def/coins/counterparty-code> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/counterparty-code/det204.cpi> .
+<http://finance.data.gov.uk/def/coins/counterparty-code> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/counterparty-code/gad031.cpi> .
+<http://finance.data.gov.uk/def/coins/counterparty-code> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/counterparty-code/dcm048.cpi> .
+<http://finance.data.gov.uk/def/coins/counterparty-code> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/counterparty-code/doh033.cpi> .
+<http://finance.data.gov.uk/def/coins/counterparty-code> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/counterparty-code/dfp205.cpi> .
+<http://finance.data.gov.uk/def/coins/counterparty-code> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/counterparty-code/nie099.cpi> .
+<http://finance.data.gov.uk/def/coins/counterparty-code> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/counterparty-code/cab010.cpi> .
+<http://finance.data.gov.uk/def/coins/counterparty-code> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/counterparty-code/dec066.cpi> .
+<http://finance.data.gov.uk/def/coins/counterparty-code> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/counterparty-code/dca202.cpi> .
+<http://finance.data.gov.uk/def/coins/counterparty-code> <http://www.w3.org/2004/02/skos/core#prefLabel> "counterparty code code list concept scheme"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/counterparty-code/ons005.cpi> .
+<http://finance.data.gov.uk/def/coins/counterparty-code> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/counterparty-code/wag090.cpi> .
+<http://finance.data.gov.uk/def/coins/counterparty-code> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/counterparty-code/dof061.cpi> .
+<http://finance.data.gov.uk/def/coins/counterparty-code> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/counterparty-code/tsc068.cpi> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/naw090.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/CounterpartyCode> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/naw090.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/naw090.cpi> <http://www.w3.org/2000/01/rdf-schema#label> "NAW090.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/naw090.cpi> <http://www.w3.org/2004/02/skos/core#prefLabel> "NAW090.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/naw090.cpi> <http://www.w3.org/2004/02/skos/core#notation> "naw090.cpi" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/naw090.cpi> <http://www.w3.org/2000/01/rdf-schema#comment> "National Assembly for Wales" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/naw090.cpi> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/counterparty-code> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/sfo019.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/CounterpartyCode> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/sfo019.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/sfo019.cpi> <http://www.w3.org/2000/01/rdf-schema#label> "SFO019.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/sfo019.cpi> <http://www.w3.org/2004/02/skos/core#prefLabel> "SFO019.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/sfo019.cpi> <http://www.w3.org/2004/02/skos/core#notation> "sfo019.cpi" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/sfo019.cpi> <http://www.w3.org/2000/01/rdf-schema#comment> "Serious Fraud Office" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/sfo019.cpi> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/counterparty-code> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/efr003.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/CounterpartyCode> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/efr003.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/efr003.cpi> <http://www.w3.org/2000/01/rdf-schema#label> "EFR003.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/efr003.cpi> <http://www.w3.org/2004/02/skos/core#prefLabel> "EFR003.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/efr003.cpi> <http://www.w3.org/2004/02/skos/core#notation> "efr003.cpi" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/efr003.cpi> <http://www.w3.org/2000/01/rdf-schema#comment> "Department for Environment, Food and Rural Affairs" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/efr003.cpi> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/counterparty-code> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/awc090.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/CounterpartyCode> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/awc090.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/awc090.cpi> <http://www.w3.org/2000/01/rdf-schema#label> "AWC090.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/awc090.cpi> <http://www.w3.org/2004/02/skos/core#prefLabel> "AWC090.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/awc090.cpi> <http://www.w3.org/2004/02/skos/core#notation> "awc090.cpi" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/awc090.cpi> <http://www.w3.org/2000/01/rdf-schema#comment> "National Assembly for Wales (Assembly Commission) (excluding accounts)" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/awc090.cpi> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/counterparty-code> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dca202.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/CounterpartyCode> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dca202.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dca202.cpi> <http://www.w3.org/2000/01/rdf-schema#label> "DCA202.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dca202.cpi> <http://www.w3.org/2004/02/skos/core#prefLabel> "DCA202.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dca202.cpi> <http://www.w3.org/2004/02/skos/core#notation> "dca202.cpi" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dca202.cpi> <http://www.w3.org/2000/01/rdf-schema#comment> "Department of Culture Arts and Leisure - Northern Ireland" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dca202.cpi> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/counterparty-code> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dwp032.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/CounterpartyCode> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dwp032.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dwp032.cpi> <http://www.w3.org/2000/01/rdf-schema#label> "DWP032.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dwp032.cpi> <http://www.w3.org/2004/02/skos/core#prefLabel> "DWP032.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dwp032.cpi> <http://www.w3.org/2004/02/skos/core#notation> "dwp032.cpi" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dwp032.cpi> <http://www.w3.org/2000/01/rdf-schema#comment> "Department for Work and Pensions" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dwp032.cpi> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/counterparty-code> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/nic081.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/CounterpartyCode> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/nic081.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/nic081.cpi> <http://www.w3.org/2000/01/rdf-schema#label> "NIC081.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/nic081.cpi> <http://www.w3.org/2004/02/skos/core#prefLabel> "NIC081.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/nic081.cpi> <http://www.w3.org/2004/02/skos/core#notation> "nic081.cpi" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/nic081.cpi> <http://www.w3.org/2000/01/rdf-schema#comment> "Northern Ireland Court Service" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/nic081.cpi> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/counterparty-code> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/ara035.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/CounterpartyCode> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/ara035.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/ara035.cpi> <http://www.w3.org/2000/01/rdf-schema#label> "ARA035.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/ara035.cpi> <http://www.w3.org/2004/02/skos/core#prefLabel> "ARA035.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/ara035.cpi> <http://www.w3.org/2004/02/skos/core#notation> "ara035.cpi" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/ara035.cpi> <http://www.w3.org/2000/01/rdf-schema#comment> "Assets Recovery Agency" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/ara035.cpi> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/counterparty-code> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dis063.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/CounterpartyCode> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dis063.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dis063.cpi> <http://www.w3.org/2000/01/rdf-schema#label> "DIS063.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dis063.cpi> <http://www.w3.org/2004/02/skos/core#prefLabel> "DIS063.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dis063.cpi> <http://www.w3.org/2004/02/skos/core#notation> "dis063.cpi" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dis063.cpi> <http://www.w3.org/2000/01/rdf-schema#comment> "Department for Innovation, Universities and Skills" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dis063.cpi> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/counterparty-code> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/opc060.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/CounterpartyCode> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/opc060.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/opc060.cpi> <http://www.w3.org/2000/01/rdf-schema#label> "OPC060.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/opc060.cpi> <http://www.w3.org/2004/02/skos/core#prefLabel> "OPC060.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/opc060.cpi> <http://www.w3.org/2004/02/skos/core#notation> "opc060.cpi" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/opc060.cpi> <http://www.w3.org/2000/01/rdf-schema#comment> "Office of the Parliamentary Commisioner and Health Service Commisioner for" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/opc060.cpi> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/counterparty-code> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/nio097.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/CounterpartyCode> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/nio097.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/nio097.cpi> <http://www.w3.org/2000/01/rdf-schema#label> "NIO097.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/nio097.cpi> <http://www.w3.org/2004/02/skos/core#prefLabel> "NIO097.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/nio097.cpi> <http://www.w3.org/2004/02/skos/core#notation> "nio097.cpi" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/nio097.cpi> <http://www.w3.org/2000/01/rdf-schema#comment> "Northern Ireland Office" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/nio097.cpi> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/counterparty-code> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dpm085.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/CounterpartyCode> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dpm085.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dpm085.cpi> <http://www.w3.org/2000/01/rdf-schema#label> "DPM085.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dpm085.cpi> <http://www.w3.org/2004/02/skos/core#prefLabel> "DPM085.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dpm085.cpi> <http://www.w3.org/2004/02/skos/core#notation> "dpm085.cpi" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dpm085.cpi> <http://www.w3.org/2000/01/rdf-schema#comment> "Department for Communities and Local Government" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dpm085.cpi> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/counterparty-code> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dsd210.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/CounterpartyCode> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dsd210.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dsd210.cpi> <http://www.w3.org/2000/01/rdf-schema#label> "DSD210.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dsd210.cpi> <http://www.w3.org/2004/02/skos/core#prefLabel> "DSD210.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dsd210.cpi> <http://www.w3.org/2004/02/skos/core#notation> "dsd210.cpi" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dsd210.cpi> <http://www.w3.org/2000/01/rdf-schema#comment> "Department for Social Development - Northern Ireland" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dsd210.cpi> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/counterparty-code> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/ois022.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/CounterpartyCode> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/ois022.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/ois022.cpi> <http://www.w3.org/2000/01/rdf-schema#label> "OIS022.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/ois022.cpi> <http://www.w3.org/2004/02/skos/core#prefLabel> "OIS022.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/ois022.cpi> <http://www.w3.org/2004/02/skos/core#notation> "ois022.cpi" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/ois022.cpi> <http://www.w3.org/2000/01/rdf-schema#comment> "Office for Standards in Education, Children's Services and Skills" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/ois022.cpi> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/counterparty-code> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/cex086.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/CounterpartyCode> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/cex086.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/cex086.cpi> <http://www.w3.org/2000/01/rdf-schema#label> "CEX086.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/cex086.cpi> <http://www.w3.org/2004/02/skos/core#prefLabel> "CEX086.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/cex086.cpi> <http://www.w3.org/2004/02/skos/core#notation> "cex086.cpi" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/cex086.cpi> <http://www.w3.org/2000/01/rdf-schema#comment> "HMT Central Exchequer" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/cex086.cpi> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/counterparty-code> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/hof034.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/CounterpartyCode> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/hof034.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/hof034.cpi> <http://www.w3.org/2000/01/rdf-schema#label> "HOF034.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/hof034.cpi> <http://www.w3.org/2004/02/skos/core#prefLabel> "HOF034.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/hof034.cpi> <http://www.w3.org/2004/02/skos/core#notation> "hof034.cpi" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/hof034.cpi> <http://www.w3.org/2000/01/rdf-schema#comment> "Home Office" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/hof034.cpi> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/counterparty-code> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/sco042.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/CounterpartyCode> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/sco042.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/sco042.cpi> <http://www.w3.org/2000/01/rdf-schema#label> "SCO042.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/sco042.cpi> <http://www.w3.org/2004/02/skos/core#prefLabel> "SCO042.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/sco042.cpi> <http://www.w3.org/2004/02/skos/core#notation> "sco042.cpi" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/sco042.cpi> <http://www.w3.org/2000/01/rdf-schema#comment> "Scotland Office" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/sco042.cpi> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/counterparty-code> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/ons005.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/CounterpartyCode> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/ons005.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/ons005.cpi> <http://www.w3.org/2000/01/rdf-schema#label> "ONS005.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/ons005.cpi> <http://www.w3.org/2004/02/skos/core#prefLabel> "ONS005.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/ons005.cpi> <http://www.w3.org/2004/02/skos/core#notation> "ons005.cpi" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/ons005.cpi> <http://www.w3.org/2000/01/rdf-schema#comment> "Office for National Statistics" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/ons005.cpi> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/counterparty-code> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/psc006.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/CounterpartyCode> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/psc006.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/psc006.cpi> <http://www.w3.org/2000/01/rdf-schema#label> "PSC006.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/psc006.cpi> <http://www.w3.org/2004/02/skos/core#prefLabel> "PSC006.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/psc006.cpi> <http://www.w3.org/2004/02/skos/core#notation> "psc006.cpi" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/psc006.cpi> <http://www.w3.org/2000/01/rdf-schema#comment> "Postal Service Commission" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/psc006.cpi> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/counterparty-code> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/did030.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/CounterpartyCode> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/did030.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/did030.cpi> <http://www.w3.org/2000/01/rdf-schema#label> "DID030.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/did030.cpi> <http://www.w3.org/2004/02/skos/core#prefLabel> "DID030.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/did030.cpi> <http://www.w3.org/2004/02/skos/core#notation> "did030.cpi" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/did030.cpi> <http://www.w3.org/2000/01/rdf-schema#comment> "Department for International Development" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/did030.cpi> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/counterparty-code> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/wag090.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/CounterpartyCode> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/wag090.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/wag090.cpi> <http://www.w3.org/2000/01/rdf-schema#label> "WAG090.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/wag090.cpi> <http://www.w3.org/2004/02/skos/core#prefLabel> "WAG090.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/wag090.cpi> <http://www.w3.org/2004/02/skos/core#notation> "wag090.cpi" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/wag090.cpi> <http://www.w3.org/2000/01/rdf-schema#comment> "Welsh Assembly Government" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/wag090.cpi> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/counterparty-code> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/fco027.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/CounterpartyCode> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/fco027.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/fco027.cpi> <http://www.w3.org/2000/01/rdf-schema#label> "FCO027.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/fco027.cpi> <http://www.w3.org/2004/02/skos/core#prefLabel> "FCO027.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/fco027.cpi> <http://www.w3.org/2004/02/skos/core#notation> "fco027.cpi" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/fco027.cpi> <http://www.w3.org/2000/01/rdf-schema#comment> "Foreign and Commonwealth Office" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/fco027.cpi> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/counterparty-code> .
+<http://finance.data.gov.uk/def/coins/CounterpartyCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://finance.data.gov.uk/def/coins/CounterpartyCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://finance.data.gov.uk/def/coins/CounterpartyCode> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/CounterpartyCode> <http://www.w3.org/2000/01/rdf-schema#label> "counterparty code values class"@en .
+<http://finance.data.gov.uk/def/coins/CounterpartyCode> <http://www.w3.org/2004/02/skos/core#prefLabel> "counterparty code values class"@en .
+<http://finance.data.gov.uk/def/coins/CounterpartyCode> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of values in the counterparty code code-list scheme" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/nsg062.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/CounterpartyCode> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/nsg062.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/nsg062.cpi> <http://www.w3.org/2000/01/rdf-schema#label> "NSG062.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/nsg062.cpi> <http://www.w3.org/2004/02/skos/core#prefLabel> "NSG062.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/nsg062.cpi> <http://www.w3.org/2004/02/skos/core#notation> "nsg062.cpi" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/nsg062.cpi> <http://www.w3.org/2000/01/rdf-schema#comment> "National School for Government" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/nsg062.cpi> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/counterparty-code> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/orr088.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/CounterpartyCode> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/orr088.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/orr088.cpi> <http://www.w3.org/2000/01/rdf-schema#label> "ORR088.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/orr088.cpi> <http://www.w3.org/2004/02/skos/core#prefLabel> "ORR088.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/orr088.cpi> <http://www.w3.org/2004/02/skos/core#notation> "orr088.cpi" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/orr088.cpi> <http://www.w3.org/2000/01/rdf-schema#comment> "Office of the Rail Regulator" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/orr088.cpi> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/counterparty-code> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/des022.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/CounterpartyCode> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/des022.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/des022.cpi> <http://www.w3.org/2000/01/rdf-schema#label> "DES022.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/des022.cpi> <http://www.w3.org/2004/02/skos/core#prefLabel> "DES022.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/des022.cpi> <http://www.w3.org/2004/02/skos/core#notation> "des022.cpi" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/des022.cpi> <http://www.w3.org/2000/01/rdf-schema#comment> "Department for Children, Schools and Families" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/des022.cpi> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/counterparty-code> .
+<http://finance.data.gov.uk/def/coins/statistical-concept/counterparty-code> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/sdmx#Concept> .
+<http://finance.data.gov.uk/def/coins/statistical-concept/counterparty-code> <http://www.w3.org/2000/01/rdf-schema#label> "counterparty code"@en .
+<http://finance.data.gov.uk/def/coins/statistical-concept/counterparty-code> <http://www.w3.org/2004/02/skos/core#prefLabel> "counterparty code"@en .
+<http://finance.data.gov.uk/def/coins/statistical-concept/counterparty-code> <http://www.w3.org/2000/01/rdf-schema#comment> "The code is used when there are certain transactions between two public sector bodies\n     (eg transferring responsibilities from one department to another). Each department records the\n     counterparty code of the other party involved. " .
+<http://finance.data.gov.uk/def/coins/statistical-concept/counterparty-code> <http://purl.org/dc/terms/source> <http://www.hm-treasury.gov.uk/d/coins_guidance.pdf> .
+<http://finance.data.gov.uk/def/coins/statistical-concept/counterparty-code> <http://www.epimorphics.com/vocabs/coins-generate#columnName> "counterparty_code" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/chc009.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/CounterpartyCode> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/chc009.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/chc009.cpi> <http://www.w3.org/2000/01/rdf-schema#label> "CHC009.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/chc009.cpi> <http://www.w3.org/2004/02/skos/core#prefLabel> "CHC009.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/chc009.cpi> <http://www.w3.org/2004/02/skos/core#notation> "chc009.cpi" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/chc009.cpi> <http://www.w3.org/2000/01/rdf-schema#comment> "Charity Commission" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/chc009.cpi> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/counterparty-code> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/cps016.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/CounterpartyCode> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/cps016.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/cps016.cpi> <http://www.w3.org/2000/01/rdf-schema#label> "CPS016.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/cps016.cpi> <http://www.w3.org/2004/02/skos/core#prefLabel> "CPS016.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/cps016.cpi> <http://www.w3.org/2004/02/skos/core#notation> "cps016.cpi" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/cps016.cpi> <http://www.w3.org/2000/01/rdf-schema#comment> "The Crown Prosecution Service" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/cps016.cpi> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/counterparty-code> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/tsc068.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/CounterpartyCode> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/tsc068.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/tsc068.cpi> <http://www.w3.org/2000/01/rdf-schema#label> "TSC068.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/tsc068.cpi> <http://www.w3.org/2004/02/skos/core#prefLabel> "TSC068.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/tsc068.cpi> <http://www.w3.org/2004/02/skos/core#notation> "tsc068.cpi" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/tsc068.cpi> <http://www.w3.org/2000/01/rdf-schema#comment> "The Supreme Court" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/tsc068.cpi> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/counterparty-code> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/pco065.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/CounterpartyCode> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/pco065.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/pco065.cpi> <http://www.w3.org/2000/01/rdf-schema#label> "PCO065.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/pco065.cpi> <http://www.w3.org/2004/02/skos/core#prefLabel> "PCO065.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/pco065.cpi> <http://www.w3.org/2004/02/skos/core#notation> "pco065.cpi" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/pco065.cpi> <http://www.w3.org/2000/01/rdf-schema#comment> "Privy Council Office" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/pco065.cpi> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/counterparty-code> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/oge020.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/CounterpartyCode> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/oge020.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/oge020.cpi> <http://www.w3.org/2000/01/rdf-schema#label> "OGE020.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/oge020.cpi> <http://www.w3.org/2004/02/skos/core#prefLabel> "OGE020.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/oge020.cpi> <http://www.w3.org/2004/02/skos/core#notation> "oge020.cpi" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/oge020.cpi> <http://www.w3.org/2000/01/rdf-schema#comment> "OFGEM" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/oge020.cpi> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/counterparty-code> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/drd209.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/CounterpartyCode> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/drd209.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/drd209.cpi> <http://www.w3.org/2000/01/rdf-schema#label> "DRD209.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/drd209.cpi> <http://www.w3.org/2004/02/skos/core#prefLabel> "DRD209.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/drd209.cpi> <http://www.w3.org/2004/02/skos/core#notation> "drd209.cpi" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/drd209.cpi> <http://www.w3.org/2000/01/rdf-schema#comment> "Department for Regional Development - Northern Ireland" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/drd209.cpi> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/counterparty-code> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/ofm211.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/CounterpartyCode> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/ofm211.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/ofm211.cpi> <http://www.w3.org/2000/01/rdf-schema#label> "OFM211.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/ofm211.cpi> <http://www.w3.org/2004/02/skos/core#prefLabel> "OFM211.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/ofm211.cpi> <http://www.w3.org/2004/02/skos/core#notation> "ofm211.cpi" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/ofm211.cpi> <http://www.w3.org/2000/01/rdf-schema#comment> "Office of the First Minister and Deputy First Minister - Northern Ireland" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/ofm211.cpi> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/counterparty-code> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/ils081.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/CounterpartyCode> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/ils081.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/ils081.cpi> <http://www.w3.org/2000/01/rdf-schema#label> "ILS081.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/ils081.cpi> <http://www.w3.org/2004/02/skos/core#prefLabel> "ILS081.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/ils081.cpi> <http://www.w3.org/2004/02/skos/core#notation> "ils081.cpi" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/ils081.cpi> <http://www.w3.org/2000/01/rdf-schema#comment> "Northern Ireland Legal Services Commission" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/ils081.cpi> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/counterparty-code> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/hol037.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/CounterpartyCode> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/hol037.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/hol037.cpi> <http://www.w3.org/2000/01/rdf-schema#label> "HOL037.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/hol037.cpi> <http://www.w3.org/2004/02/skos/core#prefLabel> "HOL037.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/hol037.cpi> <http://www.w3.org/2004/02/skos/core#notation> "hol037.cpi" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/hol037.cpi> <http://www.w3.org/2000/01/rdf-schema#comment> "House of Lords" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/hol037.cpi> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/counterparty-code> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dcm048.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/CounterpartyCode> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dcm048.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dcm048.cpi> <http://www.w3.org/2000/01/rdf-schema#label> "DCM048.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dcm048.cpi> <http://www.w3.org/2004/02/skos/core#prefLabel> "DCM048.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dcm048.cpi> <http://www.w3.org/2004/02/skos/core#notation> "dcm048.cpi" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dcm048.cpi> <http://www.w3.org/2000/01/rdf-schema#comment> "Department for Culture, Media and Sport" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dcm048.cpi> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/counterparty-code> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/den206.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/CounterpartyCode> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/den206.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/den206.cpi> <http://www.w3.org/2000/01/rdf-schema#label> "DEN206.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/den206.cpi> <http://www.w3.org/2004/02/skos/core#prefLabel> "DEN206.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/den206.cpi> <http://www.w3.org/2004/02/skos/core#notation> "den206.cpi" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/den206.cpi> <http://www.w3.org/2000/01/rdf-schema#comment> "Department of the Environment - Northern Ireland" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/den206.cpi> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/counterparty-code> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/siv007.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/CounterpartyCode> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/siv007.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/siv007.cpi> <http://www.w3.org/2000/01/rdf-schema#label> "SIV007.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/siv007.cpi> <http://www.w3.org/2004/02/skos/core#prefLabel> "SIV007.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/siv007.cpi> <http://www.w3.org/2004/02/skos/core#notation> "siv007.cpi" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/siv007.cpi> <http://www.w3.org/2000/01/rdf-schema#comment> "Cabinet Office: SIV" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/siv007.cpi> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/counterparty-code> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dof061.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/CounterpartyCode> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dof061.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dof061.cpi> <http://www.w3.org/2000/01/rdf-schema#label> "DOF061.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dof061.cpi> <http://www.w3.org/2004/02/skos/core#prefLabel> "DOF061.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dof061.cpi> <http://www.w3.org/2004/02/skos/core#notation> "dof061.cpi" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dof061.cpi> <http://www.w3.org/2000/01/rdf-schema#comment> "Deputy Prime Minister's Office" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dof061.cpi> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/counterparty-code> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dti084.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/CounterpartyCode> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dti084.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dti084.cpi> <http://www.w3.org/2000/01/rdf-schema#label> "DTI084.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dti084.cpi> <http://www.w3.org/2004/02/skos/core#prefLabel> "DTI084.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dti084.cpi> <http://www.w3.org/2004/02/skos/core#notation> "dti084.cpi" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dti084.cpi> <http://www.w3.org/2000/01/rdf-schema#comment> "Department for Business Innovation and Skills" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dti084.cpi> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/counterparty-code> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/nie099.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/CounterpartyCode> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/nie099.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/nie099.cpi> <http://www.w3.org/2000/01/rdf-schema#label> "NIE099.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/nie099.cpi> <http://www.w3.org/2004/02/skos/core#prefLabel> "NIE099.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/nie099.cpi> <http://www.w3.org/2004/02/skos/core#notation> "nie099.cpi" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/nie099.cpi> <http://www.w3.org/2000/01/rdf-schema#comment> "Northern Ireland Executive" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/nie099.cpi> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/counterparty-code> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/geo064.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/CounterpartyCode> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/geo064.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/geo064.cpi> <http://www.w3.org/2000/01/rdf-schema#label> "GEO064.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/geo064.cpi> <http://www.w3.org/2004/02/skos/core#prefLabel> "GEO064.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/geo064.cpi> <http://www.w3.org/2004/02/skos/core#notation> "geo064.cpi" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/geo064.cpi> <http://www.w3.org/2000/01/rdf-schema#comment> "Government Equalities Office" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/geo064.cpi> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/counterparty-code> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/sct075.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/CounterpartyCode> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/sct075.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/sct075.cpi> <http://www.w3.org/2000/01/rdf-schema#label> "SCT075.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/sct075.cpi> <http://www.w3.org/2004/02/skos/core#prefLabel> "SCT075.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/sct075.cpi> <http://www.w3.org/2004/02/skos/core#notation> "sct075.cpi" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/sct075.cpi> <http://www.w3.org/2000/01/rdf-schema#comment> "Scottish Government" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/sct075.cpi> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/counterparty-code> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dec066.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/CounterpartyCode> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dec066.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dec066.cpi> <http://www.w3.org/2000/01/rdf-schema#label> "DEC066.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dec066.cpi> <http://www.w3.org/2004/02/skos/core#prefLabel> "DEC066.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dec066.cpi> <http://www.w3.org/2004/02/skos/core#notation> "dec066.cpi" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dec066.cpi> <http://www.w3.org/2000/01/rdf-schema#comment> "Department of Energy and Climate Change" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dec066.cpi> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/counterparty-code> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dfp205.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/CounterpartyCode> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dfp205.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dfp205.cpi> <http://www.w3.org/2000/01/rdf-schema#label> "DFP205.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dfp205.cpi> <http://www.w3.org/2004/02/skos/core#prefLabel> "DFP205.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dfp205.cpi> <http://www.w3.org/2004/02/skos/core#notation> "dfp205.cpi" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dfp205.cpi> <http://www.w3.org/2000/01/rdf-schema#comment> "Department of Finance and Personnel - Northern Ireland" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dfp205.cpi> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/counterparty-code> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/hmt087.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/CounterpartyCode> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/hmt087.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/hmt087.cpi> <http://www.w3.org/2000/01/rdf-schema#label> "HMT087.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/hmt087.cpi> <http://www.w3.org/2004/02/skos/core#prefLabel> "HMT087.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/hmt087.cpi> <http://www.w3.org/2004/02/skos/core#notation> "hmt087.cpi" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/hmt087.cpi> <http://www.w3.org/2000/01/rdf-schema#comment> "HM Treasury" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/hmt087.cpi> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/counterparty-code> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/hsp208.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/CounterpartyCode> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/hsp208.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/hsp208.cpi> <http://www.w3.org/2000/01/rdf-schema#label> "HSP208.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/hsp208.cpi> <http://www.w3.org/2004/02/skos/core#prefLabel> "HSP208.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/hsp208.cpi> <http://www.w3.org/2004/02/skos/core#notation> "hsp208.cpi" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/hsp208.cpi> <http://www.w3.org/2000/01/rdf-schema#comment> "Department of Health Social Services & Public Safety" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/hsp208.cpi> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/counterparty-code> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/lcd047.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/CounterpartyCode> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/lcd047.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/lcd047.cpi> <http://www.w3.org/2000/01/rdf-schema#label> "LCD047.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/lcd047.cpi> <http://www.w3.org/2004/02/skos/core#prefLabel> "LCD047.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/lcd047.cpi> <http://www.w3.org/2004/02/skos/core#notation> "lcd047.cpi" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/lcd047.cpi> <http://www.w3.org/2000/01/rdf-schema#comment> "Ministry of Justice" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/lcd047.cpi> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/counterparty-code> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/rcp046.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/CounterpartyCode> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/rcp046.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/rcp046.cpi> <http://www.w3.org/2000/01/rdf-schema#label> "RCP046.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/rcp046.cpi> <http://www.w3.org/2004/02/skos/core#prefLabel> "RCP046.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/rcp046.cpi> <http://www.w3.org/2004/02/skos/core#notation> "rcp046.cpi" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/rcp046.cpi> <http://www.w3.org/2000/01/rdf-schema#comment> "Revenue and Customs Prosecution Office (RCPO)" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/rcp046.cpi> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/counterparty-code> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/cpid.na> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/CounterpartyCode> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/cpid.na> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/cpid.na> <http://www.w3.org/2000/01/rdf-schema#label> "CPID.NA"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/cpid.na> <http://www.w3.org/2004/02/skos/core#prefLabel> "CPID.NA"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/cpid.na> <http://www.w3.org/2004/02/skos/core#notation> "cpid.na" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/cpid.na> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/cpid.na> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/counterparty-code> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dft004.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/CounterpartyCode> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dft004.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dft004.cpi> <http://www.w3.org/2000/01/rdf-schema#label> "DFT004.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dft004.cpi> <http://www.w3.org/2004/02/skos/core#prefLabel> "DFT004.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dft004.cpi> <http://www.w3.org/2004/02/skos/core#notation> "dft004.cpi" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dft004.cpi> <http://www.w3.org/2000/01/rdf-schema#comment> "Department for Transport" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/dft004.cpi> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/counterparty-code> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/cab010.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/CounterpartyCode> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/cab010.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/cab010.cpi> <http://www.w3.org/2000/01/rdf-schema#label> "CAB010.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/cab010.cpi> <http://www.w3.org/2004/02/skos/core#prefLabel> "CAB010.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/cab010.cpi> <http://www.w3.org/2004/02/skos/core#notation> "cab010.cpi" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/cab010.cpi> <http://www.w3.org/2000/01/rdf-schema#comment> "Cabinet Office" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/cab010.cpi> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/counterparty-code> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/doh033.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/CounterpartyCode> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/doh033.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/doh033.cpi> <http://www.w3.org/2000/01/rdf-schema#label> "DOH033.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/doh033.cpi> <http://www.w3.org/2004/02/skos/core#prefLabel> "DOH033.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/doh033.cpi> <http://www.w3.org/2004/02/skos/core#notation> "doh033.cpi" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/doh033.cpi> <http://www.w3.org/2000/01/rdf-schema#comment> "Department of Health" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/doh033.cpi> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/counterparty-code> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/mod017.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/CounterpartyCode> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/mod017.cpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/counterparty-code/mod017.cpi> <http://www.w3.org/2000/01/rdf-schema#label> "MOD017.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/mod017.cpi> <http://www.w3.org/2004/02/skos/core#prefLabel> "MOD017.CPID"@en .
+<http://finance.data.gov.uk/def/coins/counterparty-code/mod017.cpi> <http://www.w3.org/2004/02/skos/core#notation> "mod017.cpi" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/mod017.cpi> <http://www.w3.org/2000/01/rdf-schema#comment> "Ministry of Defence" .
+<http://finance.data.gov.uk/def/coins/counterparty-code/mod017.cpi> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/counterparty-code> .

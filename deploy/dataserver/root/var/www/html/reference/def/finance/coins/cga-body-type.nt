@@ -1,0 +1,55 @@
+<http://finance.data.gov.uk/def/coins/statistical-concept/cga-body-type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/sdmx#Concept> .
+<http://finance.data.gov.uk/def/coins/statistical-concept/cga-body-type> <http://www.w3.org/2000/01/rdf-schema#label> "CGA body type"@en .
+<http://finance.data.gov.uk/def/coins/statistical-concept/cga-body-type> <http://www.w3.org/2004/02/skos/core#prefLabel> "CGA body type"@en .
+<http://finance.data.gov.uk/def/coins/statistical-concept/cga-body-type> <http://www.w3.org/2000/01/rdf-schema#comment> "ndicates whether central government bodies are departments, NDPBs, health trusts etc" .
+<http://finance.data.gov.uk/def/coins/statistical-concept/cga-body-type> <http://purl.org/dc/terms/source> <http://www.hm-treasury.gov.uk/d/coins_guidance.pdf> .
+<http://finance.data.gov.uk/def/coins/statistical-concept/cga-body-type> <http://www.epimorphics.com/vocabs/coins-generate#columnName> "cga_body_type" .
+<http://finance.data.gov.uk/def/coins/cga-body-type/trust> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/CgaBodyType> .
+<http://finance.data.gov.uk/def/coins/cga-body-type/trust> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/cga-body-type/trust> <http://www.w3.org/2000/01/rdf-schema#label> "Trust"@en .
+<http://finance.data.gov.uk/def/coins/cga-body-type/trust> <http://www.w3.org/2004/02/skos/core#prefLabel> "Trust"@en .
+<http://finance.data.gov.uk/def/coins/cga-body-type/trust> <http://www.w3.org/2004/02/skos/core#notation> "trust" .
+<http://finance.data.gov.uk/def/coins/cga-body-type/trust> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/cga-body-type/trust> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/cga-body-type> .
+<http://finance.data.gov.uk/def/coins/cga-body-type/minor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/CgaBodyType> .
+<http://finance.data.gov.uk/def/coins/cga-body-type/minor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/cga-body-type/minor> <http://www.w3.org/2000/01/rdf-schema#label> "Minor"@en .
+<http://finance.data.gov.uk/def/coins/cga-body-type/minor> <http://www.w3.org/2004/02/skos/core#prefLabel> "Minor"@en .
+<http://finance.data.gov.uk/def/coins/cga-body-type/minor> <http://www.w3.org/2004/02/skos/core#notation> "minor" .
+<http://finance.data.gov.uk/def/coins/cga-body-type/minor> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/cga-body-type/minor> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/cga-body-type> .
+<http://finance.data.gov.uk/def/coins/cga-body-type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://finance.data.gov.uk/def/coins/cga-body-type> <http://www.w3.org/2000/01/rdf-schema#label> "CGA body type code list concept scheme"@en .
+<http://finance.data.gov.uk/def/coins/cga-body-type> <http://www.w3.org/2004/02/skos/core#prefLabel> "CGA body type code list concept scheme"@en .
+<http://finance.data.gov.uk/def/coins/cga-body-type> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/cga-body-type/dept> .
+<http://finance.data.gov.uk/def/coins/cga-body-type> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/cga-body-type/minor> .
+<http://finance.data.gov.uk/def/coins/cga-body-type> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/cga-body-type/ndpb> .
+<http://finance.data.gov.uk/def/coins/cga-body-type> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/cga-body-type/ps> .
+<http://finance.data.gov.uk/def/coins/cga-body-type> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/cga-body-type/trust> .
+<http://finance.data.gov.uk/def/coins/CgaBodyType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://finance.data.gov.uk/def/coins/CgaBodyType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://finance.data.gov.uk/def/coins/CgaBodyType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/CgaBodyType> <http://www.w3.org/2000/01/rdf-schema#label> "CGA body type values class"@en .
+<http://finance.data.gov.uk/def/coins/CgaBodyType> <http://www.w3.org/2004/02/skos/core#prefLabel> "CGA body type values class"@en .
+<http://finance.data.gov.uk/def/coins/CgaBodyType> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of values in the CGA body type code-list scheme" .
+<http://finance.data.gov.uk/def/coins/cga-body-type/ndpb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/CgaBodyType> .
+<http://finance.data.gov.uk/def/coins/cga-body-type/ndpb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/cga-body-type/ndpb> <http://www.w3.org/2000/01/rdf-schema#label> "NDPB"@en .
+<http://finance.data.gov.uk/def/coins/cga-body-type/ndpb> <http://www.w3.org/2004/02/skos/core#prefLabel> "NDPB"@en .
+<http://finance.data.gov.uk/def/coins/cga-body-type/ndpb> <http://www.w3.org/2004/02/skos/core#notation> "ndpb" .
+<http://finance.data.gov.uk/def/coins/cga-body-type/ndpb> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/cga-body-type/ndpb> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/cga-body-type> .
+<http://finance.data.gov.uk/def/coins/cga-body-type/dept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/CgaBodyType> .
+<http://finance.data.gov.uk/def/coins/cga-body-type/dept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/cga-body-type/dept> <http://www.w3.org/2000/01/rdf-schema#label> "Dept"@en .
+<http://finance.data.gov.uk/def/coins/cga-body-type/dept> <http://www.w3.org/2004/02/skos/core#prefLabel> "Dept"@en .
+<http://finance.data.gov.uk/def/coins/cga-body-type/dept> <http://www.w3.org/2004/02/skos/core#notation> "dept" .
+<http://finance.data.gov.uk/def/coins/cga-body-type/dept> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/cga-body-type/dept> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/cga-body-type> .
+<http://finance.data.gov.uk/def/coins/cga-body-type/ps> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/CgaBodyType> .
+<http://finance.data.gov.uk/def/coins/cga-body-type/ps> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/cga-body-type/ps> <http://www.w3.org/2000/01/rdf-schema#label> "Pension Scheme"@en .
+<http://finance.data.gov.uk/def/coins/cga-body-type/ps> <http://www.w3.org/2004/02/skos/core#prefLabel> "Pension Scheme"@en .
+<http://finance.data.gov.uk/def/coins/cga-body-type/ps> <http://www.w3.org/2004/02/skos/core#notation> "ps" .
+<http://finance.data.gov.uk/def/coins/cga-body-type/ps> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/cga-body-type/ps> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/cga-body-type> .

@@ -1,0 +1,1378 @@
+# Generated 2010-11-09T16:53:44+00:00
+
+@prefix rdf:                <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:               <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:                <http://www.w3.org/2002/07/owl#> .
+@prefix skos:               <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd:                <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:               <http://xmlns.com/foaf/0.1/> .
+@prefix void:               <http://rdfs.org/ns/void#> .
+@prefix dcterms:            <http://purl.org/dc/terms/> .
+@prefix sdmx:               <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept:       <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:     <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:     <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:       <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-code:          <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:       <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix qb:                 <http://purl.org/linked-data/cube#> .
+@prefix coins-data:         <http://source.data.gov.uk/data/coins/> .
+@prefix coins-dsd:          <http://finance.data.gov.uk/dsd/coins/> .
+@prefix coins-dimension:    <http://finance.data.gov.uk/dsd/coins/dimension/> .
+@prefix coins-attribute:    <http://finance.data.gov.uk/dsd/coins/attribute/> .
+@prefix coins-measure:      <http://finance.data.gov.uk/dsd/coins/measure/> .
+@prefix coins-slicekey:     <http://finance.data.gov.uk/dsd/coins/slice/> .
+
+<http://finance.data.gov.uk/def/coins/statistical-concept/nac>
+    a sdmx:Concept;
+    rdfs:label "nac"@en;
+    skos:prefLabel "nac"@en;
+    rdfs:comment """The National Account Codes (NAC) groups Account Code transactions by their economic nature (e.g. pay, subsidies, capital grants etc).""";
+    <http://purl.org/dc/terms/source> <http://www.hm-treasury.gov.uk/d/coins_guidance.pdf>;
+    <http://www.epimorphics.com/vocabs/coins-generate#columnName> "nac"
+    .
+
+<http://finance.data.gov.uk/def/coins/Nac>
+    a rdfs:Class, owl:Class;
+    rdfs:subClassOf skos:Concept;
+    rdfs:label "nac values class"@en;
+    skos:prefLabel "nac values class"@en;
+    rdfs:comment "The class of values in the nac code-list scheme";
+    .
+
+<http://finance.data.gov.uk/def/coins/nac>
+    a skos:ConceptScheme;
+    rdfs:label "nac code list concept scheme"@en;
+    skos:prefLabel "nac code list concept scheme"@en;
+    skos:hasTopConcept <http://finance.data.gov.uk/def/coins/nac/a1501>,
+          <http://finance.data.gov.uk/def/coins/nac/a1502>,
+          <http://finance.data.gov.uk/def/coins/nac/a1503>,
+          <http://finance.data.gov.uk/def/coins/nac/b3501>,
+          <http://finance.data.gov.uk/def/coins/nac/b3502>,
+          <http://finance.data.gov.uk/def/coins/nac/b3801>,
+          <http://finance.data.gov.uk/def/coins/nac/b4501>,
+          <http://finance.data.gov.uk/def/coins/nac/b6001>,
+          <http://finance.data.gov.uk/def/coins/nac/b7001>,
+          <http://finance.data.gov.uk/def/coins/nac/b7101>,
+          <http://finance.data.gov.uk/def/coins/nac/b7201>,
+          <http://finance.data.gov.uk/def/coins/nac/b7301>,
+          <http://finance.data.gov.uk/def/coins/nac/b8001>,
+          <http://finance.data.gov.uk/def/coins/nac/b8501>,
+          <http://finance.data.gov.uk/def/coins/nac/b8601>,
+          <http://finance.data.gov.uk/def/coins/nac/b9001>,
+          <http://finance.data.gov.uk/def/coins/nac/b9201>,
+          <http://finance.data.gov.uk/def/coins/nac/b9301>,
+          <http://finance.data.gov.uk/def/coins/nac/b9501>,
+          <http://finance.data.gov.uk/def/coins/nac/b9502>,
+          <http://finance.data.gov.uk/def/coins/nac/b9503>,
+          <http://finance.data.gov.uk/def/coins/nac/b9504>,
+          <http://finance.data.gov.uk/def/coins/nac/b9506>,
+          <http://finance.data.gov.uk/def/coins/nac/b9507>,
+          <http://finance.data.gov.uk/def/coins/nac/b9801>,
+          <http://finance.data.gov.uk/def/coins/nac/b9901>,
+          <http://finance.data.gov.uk/def/coins/nac/c1001>,
+          <http://finance.data.gov.uk/def/coins/nac/c2001>,
+          <http://finance.data.gov.uk/def/coins/nac/c3501>,
+          <http://finance.data.gov.uk/def/coins/nac/d1001>,
+          <http://finance.data.gov.uk/def/coins/nac/d1002>,
+          <http://finance.data.gov.uk/def/coins/nac/d2001>,
+          <http://finance.data.gov.uk/def/coins/nac/d3001>,
+          <http://finance.data.gov.uk/def/coins/nac/d4001>,
+          <http://finance.data.gov.uk/def/coins/nac/d4002>,
+          <http://finance.data.gov.uk/def/coins/nac/d9001>,
+          <http://finance.data.gov.uk/def/coins/nac/e0501>,
+          <http://finance.data.gov.uk/def/coins/nac/e0601>,
+          <http://finance.data.gov.uk/def/coins/nac/e1001>,
+          <http://finance.data.gov.uk/def/coins/nac/e1101>,
+          <http://finance.data.gov.uk/def/coins/nac/e1501>,
+          <http://finance.data.gov.uk/def/coins/nac/e1502>,
+          <http://finance.data.gov.uk/def/coins/nac/e1503>,
+          <http://finance.data.gov.uk/def/coins/nac/e1504>,
+          <http://finance.data.gov.uk/def/coins/nac/e1601>,
+          <http://finance.data.gov.uk/def/coins/nac/e2001>,
+          <http://finance.data.gov.uk/def/coins/nac/e5001>,
+          <http://finance.data.gov.uk/def/coins/nac/e5002>,
+          <http://finance.data.gov.uk/def/coins/nac/e5101>,
+          <http://finance.data.gov.uk/def/coins/nac/e8001>,
+          <http://finance.data.gov.uk/def/coins/nac/f1001>,
+          <http://finance.data.gov.uk/def/coins/nac/f2001>,
+          <http://finance.data.gov.uk/def/coins/nac/f2501>,
+          <http://finance.data.gov.uk/def/coins/nac/f2502>,
+          <http://finance.data.gov.uk/def/coins/nac/f4001>,
+          <http://finance.data.gov.uk/def/coins/nac/f4501>,
+          <http://finance.data.gov.uk/def/coins/nac/f4701>,
+          <http://finance.data.gov.uk/def/coins/nac/f5001>,
+          <http://finance.data.gov.uk/def/coins/nac/f5501>,
+          <http://finance.data.gov.uk/def/coins/nac/f5601>,
+          <http://finance.data.gov.uk/def/coins/nac/f5701>,
+          <http://finance.data.gov.uk/def/coins/nac/g1001>,
+          <http://finance.data.gov.uk/def/coins/nac/g2001>,
+          <http://finance.data.gov.uk/def/coins/nac/g4501>,
+          <http://finance.data.gov.uk/def/coins/nac/g5001>,
+          <http://finance.data.gov.uk/def/coins/nac/h1001>,
+          <http://finance.data.gov.uk/def/coins/nac/h2001>,
+          <http://finance.data.gov.uk/def/coins/nac/h3501>,
+          <http://finance.data.gov.uk/def/coins/nac/h3502>,
+          <http://finance.data.gov.uk/def/coins/nac/h5001>,
+          <http://finance.data.gov.uk/def/coins/nac/k1001>,
+          <http://finance.data.gov.uk/def/coins/nac/k1201>,
+          <http://finance.data.gov.uk/def/coins/nac/k3001>,
+          <http://finance.data.gov.uk/def/coins/nac/k4001>,
+          <http://finance.data.gov.uk/def/coins/nac/k9001>,
+          <http://finance.data.gov.uk/def/coins/nac/l1001>,
+          <http://finance.data.gov.uk/def/coins/nac/l1101>,
+          <http://finance.data.gov.uk/def/coins/nac/l2001>,
+          <http://finance.data.gov.uk/def/coins/nac/l2101>,
+          <http://finance.data.gov.uk/def/coins/nac/l3001>,
+          <http://finance.data.gov.uk/def/coins/nac/l3101>,
+          <http://finance.data.gov.uk/def/coins/nac/l4001>,
+          <http://finance.data.gov.uk/def/coins/nac/l4501>,
+          <http://finance.data.gov.uk/def/coins/nac/l4601>,
+          <http://finance.data.gov.uk/def/coins/nac/m1001>,
+          <http://finance.data.gov.uk/def/coins/nac/m1501>,
+          <http://finance.data.gov.uk/def/coins/nac/m2001>,
+          <http://finance.data.gov.uk/def/coins/nac/m3001>,
+          <http://finance.data.gov.uk/def/coins/nac/m4001>,
+          <http://finance.data.gov.uk/def/coins/nac/n1001>,
+          <http://finance.data.gov.uk/def/coins/nac/n2001>,
+          <http://finance.data.gov.uk/def/coins/nac/n3001>,
+          <http://finance.data.gov.uk/def/coins/nac/n4001>,
+          <http://finance.data.gov.uk/def/coins/nac/p1001>,
+          <http://finance.data.gov.uk/def/coins/nac/r3001>,
+          <http://finance.data.gov.uk/def/coins/nac/s1001>,
+          <http://finance.data.gov.uk/def/coins/nac/s1501>,
+          <http://finance.data.gov.uk/def/coins/nac/s2001>,
+          <http://finance.data.gov.uk/def/coins/nac/s2501>,
+          <http://finance.data.gov.uk/def/coins/nac/s3001>,
+          <http://finance.data.gov.uk/def/coins/nac/s4001>,
+          <http://finance.data.gov.uk/def/coins/nac/s4501>,
+          <http://finance.data.gov.uk/def/coins/nac/s5001>,
+          <http://finance.data.gov.uk/def/coins/nac/s6001>,
+          <http://finance.data.gov.uk/def/coins/nac/s6501>,
+          <http://finance.data.gov.uk/def/coins/nac/s7001>,
+          <http://finance.data.gov.uk/def/coins/nac/t3001>,
+          <http://finance.data.gov.uk/def/coins/nac/w1001>,
+          <http://finance.data.gov.uk/def/coins/nac/w1501>,
+          <http://finance.data.gov.uk/def/coins/nac/w1601>,
+          <http://finance.data.gov.uk/def/coins/nac/w2001>,
+          <http://finance.data.gov.uk/def/coins/nac/w3001>,
+          <http://finance.data.gov.uk/def/coins/nac/w4001>,
+          <http://finance.data.gov.uk/def/coins/nac/w5001>,
+          <http://finance.data.gov.uk/def/coins/nac/w9001>,
+          <http://finance.data.gov.uk/def/coins/nac/x0601>,
+          <http://finance.data.gov.uk/def/coins/nac/x1101>,
+          <http://finance.data.gov.uk/def/coins/nac/x1201>,
+          <http://finance.data.gov.uk/def/coins/nac/x1601>,
+          <http://finance.data.gov.uk/def/coins/nac/x5101>,
+          <http://finance.data.gov.uk/def/coins/nac/z1001>
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/a1501>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "A1501"@en;
+    skos:prefLabel "A1501"@en;
+    skos:notation "a1501";
+    rdfs:comment "A15.01 Pay costs under this code other than to locally engaged staff overseas";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/a1502>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "A1502"@en;
+    skos:prefLabel "A1502"@en;
+    skos:notation "a1502";
+    rdfs:comment "A15.02 Wages & salaries and Employers' social contributions for locally engaged staff overseas";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/a1503>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "A1503"@en;
+    skos:prefLabel "A1503"@en;
+    skos:notation "a1503";
+    rdfs:comment "A15.03 Payments of accruing superannuation liability charges, UK staff";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/b3501>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "B3501"@en;
+    skos:prefLabel "B3501"@en;
+    skos:notation "b3501";
+    rdfs:comment "B35.01 All expenditure and receipts from another part of central of government where the corresponding payment is classified as National Accounts Code B3501";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/b3502>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "B3502"@en;
+    skos:prefLabel "B3502"@en;
+    skos:notation "b3502";
+    rdfs:comment "B35.02 Receipts other than those exclusively from another part of general governmen";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/b3801>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "B3801"@en;
+    skos:prefLabel "B3801"@en;
+    skos:notation "b3801";
+    rdfs:comment "B38.01 Notional audit fees";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/b4501>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "B4501"@en;
+    skos:prefLabel "B4501"@en;
+    skos:notation "b4501";
+    rdfs:comment "B45.01 Licences/levies";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/b6001>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "B6001"@en;
+    skos:prefLabel "B6001"@en;
+    skos:notation "b6001";
+    rdfs:comment "B60.01 Payments and receipts of rent of land (not buildings)";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/b7001>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "B7001"@en;
+    skos:prefLabel "B7001"@en;
+    skos:notation "b7001";
+    rdfs:comment "B70.01 Expenditure on tangible single use military equipment";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/b7101>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "B7101"@en;
+    skos:prefLabel "B7101"@en;
+    skos:notation "b7101";
+    rdfs:comment "B71.01 Receipts and depreciation costs relating to disposals of tangible single use military equipment";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/b7201>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "B7201"@en;
+    skos:prefLabel "B7201"@en;
+    skos:notation "b7201";
+    rdfs:comment "B72.01 Expenditure on intangible single use military equipment";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/b7301>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "B7301"@en;
+    skos:prefLabel "B7301"@en;
+    skos:notation "b7301";
+    rdfs:comment "B73.01 Receipts and depreciation costs relating to disposals of intangible single use military equipment";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/b8001>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "B8001"@en;
+    skos:prefLabel "B8001"@en;
+    skos:notation "b8001";
+    rdfs:comment "B80.01 Receipts of donations intended to finance resource expenditure";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/b8501>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "B8501"@en;
+    skos:prefLabel "B8501"@en;
+    skos:notation "b8501";
+    rdfs:comment "B85.01 Bad debts in connection with pay, procurement and capital";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/b8601>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "B8601"@en;
+    skos:prefLabel "B8601"@en;
+    skos:notation "b8601";
+    rdfs:comment "B86.01 Bad debts in connection with loans, grants and transfers";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/b9001>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "B9001"@en;
+    skos:prefLabel "B9001"@en;
+    skos:notation "b9001";
+    rdfs:comment "B90.01 Depreciation (departments, NDPBs, agencies)";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/b9201>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "B9201"@en;
+    skos:prefLabel "B9201"@en;
+    skos:notation "b9201";
+    rdfs:comment "B92.01 Release from the donated assets reserve";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/b9301>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "B9301"@en;
+    skos:prefLabel "B9301"@en;
+    skos:notation "b9301";
+    rdfs:comment "B93.01 Release from the government grant reserve";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/b9501>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "B9501"@en;
+    skos:prefLabel "B9501"@en;
+    skos:notation "b9501";
+    rdfs:comment "B95.01 Impairment of tangible/intangible fixed assets";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/b9502>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "B9502"@en;
+    skos:prefLabel "B9502"@en;
+    skos:notation "b9502";
+    rdfs:comment "B95.02 Impairment of tangible/intangible fixed assets – catastrophic loss";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/b9503>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "B9503"@en;
+    skos:prefLabel "B9503"@en;
+    skos:notation "b9503";
+    rdfs:comment "B95.03 Impairment of tangible/intangible fixed assets – abandonment of assets in course of construction";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/b9504>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "B9504"@en;
+    skos:prefLabel "B9504"@en;
+    skos:notation "b9504";
+    rdfs:comment "B95.04 Impairment of tangible/intangible fixed assets – unforeseen obsolescence";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/b9506>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "B9506"@en;
+    skos:prefLabel "B9506"@en;
+    skos:notation "b9506";
+    rdfs:comment "B95.06 Impairment of tangible/intangible fixed assets – other impairments";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/b9507>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "B9507"@en;
+    skos:prefLabel "B9507"@en;
+    skos:notation "b9507";
+    rdfs:comment "B95.07 Revaluations of fixed/current tangible/intangible assets";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/b9801>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "B9801"@en;
+    skos:prefLabel "B9801"@en;
+    skos:notation "b9801";
+    rdfs:comment "B98.01 Cost of capital charge relating to loans and public dividend capital";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/b9901>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "B9901"@en;
+    skos:prefLabel "B9901"@en;
+    skos:notation "b9901";
+    rdfs:comment "B99.01 Cost of capital charges other than B98";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/c1001>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "C1001"@en;
+    skos:prefLabel "C1001"@en;
+    skos:notation "c1001";
+    rdfs:comment "C10.01 Subsidies to market producers (profit making firms)";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/c2001>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "C2001"@en;
+    skos:prefLabel "C2001"@en;
+    skos:notation "c2001";
+    rdfs:comment "C20.01 Subsidies to central government and local authorities market kind of activity units, and quasi corporations";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/c3501>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "C3501"@en;
+    skos:prefLabel "C3501"@en;
+    skos:notation "c3501";
+    rdfs:comment "C35.01 Subsidies to public corporations";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/d1001>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "D1001"@en;
+    skos:prefLabel "D1001"@en;
+    skos:notation "d1001";
+    rdfs:comment "D10.01 Current grants to persons";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/d1002>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "D1002"@en;
+    skos:prefLabel "D1002"@en;
+    skos:notation "d1002";
+    rdfs:comment "D10.02 Current grants to non-profit making bodies serving person";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/d2001>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "D2001"@en;
+    skos:prefLabel "D2001"@en;
+    skos:notation "d2001";
+    rdfs:comment "D20.01 Current transfers abroad";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/d3001>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "D3001"@en;
+    skos:prefLabel "D3001"@en;
+    skos:notation "d3001";
+    rdfs:comment "D30.01 Subsidised loans to persons";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/d4001>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "D4001"@en;
+    skos:prefLabel "D4001"@en;
+    skos:notation "d4001";
+    rdfs:comment "D40.01 PS pension schemes: in payment/receipt of pension contributions";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/d4002>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "D4002"@en;
+    skos:prefLabel "D4002"@en;
+    skos:notation "d4002";
+    rdfs:comment "Unknown sub-code of D40 Pensions in payment/pension contributions – main pension schemes";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/d9001>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "D9001"@en;
+    skos:prefLabel "D9001"@en;
+    skos:notation "d9001";
+    rdfs:comment "D90.01 Departmental unallocated provision including current expenditure which cannot be assigned to an economic category";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/e0501>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "E0501"@en;
+    skos:prefLabel "E0501"@en;
+    skos:notation "e0501";
+    rdfs:comment "E05.01 Purchase of land";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/e0601>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "E0601"@en;
+    skos:prefLabel "E0601"@en;
+    skos:notation "e0601";
+    rdfs:comment "E06.01 Sale of land (book value)";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/e1001>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "E1001"@en;
+    skos:prefLabel "E1001"@en;
+    skos:notation "e1001";
+    rdfs:comment "E10.01 Purchase of existing buildings";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/e1101>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "E1101"@en;
+    skos:prefLabel "E1101"@en;
+    skos:notation "e1101";
+    rdfs:comment "E11.01 Sale of existing buildings (book value)";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/e1501>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "E1501"@en;
+    skos:prefLabel "E1501"@en;
+    skos:notation "e1501";
+    rdfs:comment "E15.01 Expenditure on new dwellings and improvements to existing dwellings";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/e1502>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "E1502"@en;
+    skos:prefLabel "E1502"@en;
+    skos:notation "e1502";
+    rdfs:comment "E15.02 Expenditure on other new construction and improvements to existing other constructions and improvements to land";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/e1503>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "E1503"@en;
+    skos:prefLabel "E1503"@en;
+    skos:notation "e1503";
+    rdfs:comment "E15.03 Purchases and sales of vehicles";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/e1504>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "E1504"@en;
+    skos:prefLabel "E1504"@en;
+    skos:notation "e1504";
+    rdfs:comment "E15.04 Purchases and sales of plant, machinery and equipment (includes works of art)";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/e1601>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "E1601"@en;
+    skos:prefLabel "E1601"@en;
+    skos:notation "e1601";
+    rdfs:comment "E16.01 Sales of tangible capital (book value)";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/e2001>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "E2001"@en;
+    skos:prefLabel "E2001"@en;
+    skos:notation "e2001";
+    rdfs:comment "E20.01 Other tangible capital expenditure";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/e5001>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "E5001"@en;
+    skos:prefLabel "E5001"@en;
+    skos:notation "e5001";
+    rdfs:comment "E50.01 Bought in intangible assets";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/e5002>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "E5002"@en;
+    skos:prefLabel "E5002"@en;
+    skos:notation "e5002";
+    rdfs:comment "E50.02 In-house creation of intangible assets";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/e5101>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "E5101"@en;
+    skos:prefLabel "E5101"@en;
+    skos:notation "e5101";
+    rdfs:comment "E51.01 Sales of intangible fixed assets (book value)";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/e8001>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "E8001"@en;
+    skos:prefLabel "E8001"@en;
+    skos:notation "e8001";
+    rdfs:comment "E80.01 Receipts of donations to finance capital expenditure";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/f1001>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "F1001"@en;
+    skos:prefLabel "F1001"@en;
+    skos:notation "f1001";
+    rdfs:comment "F10.01 Receipts and expenditure on current assets including raw materials, work-in-progress and finished goods";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/f2001>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "F2001"@en;
+    skos:prefLabel "F2001"@en;
+    skos:notation "f2001";
+    rdfs:comment "F20.01 Write-off of stock";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/f2501>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "F2501"@en;
+    skos:prefLabel "F2501"@en;
+    skos:notation "f2501";
+    rdfs:comment "F25.01 Other changes in stock which impact on the capital budget";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/f2502>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "F2502"@en;
+    skos:prefLabel "F2502"@en;
+    skos:notation "f2502";
+    rdfs:comment "Unknown sub-code of F25 Other changes in stocks";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/f4001>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "F4001"@en;
+    skos:prefLabel "F4001"@en;
+    skos:notation "f4001";
+    rdfs:comment "F40.01 Changes in level of debtors";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/f4501>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "F4501"@en;
+    skos:prefLabel "F4501"@en;
+    skos:notation "f4501";
+    rdfs:comment "F45.01 Changes in creditors: resource expenditure – voted accruals/cash adjustments";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/f4701>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "F4701"@en;
+    skos:prefLabel "F4701"@en;
+    skos:notation "f4701";
+    rdfs:comment "F47.01 Total accruals to cash adjustments for non-voted resource expenditure scoring in OCS";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/f5001>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "F5001"@en;
+    skos:prefLabel "F5001"@en;
+    skos:notation "f5001";
+    rdfs:comment "F50.01 Excess cash to be surrendered as a CFER – accrual/cash adjustment";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/f5501>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "F5501"@en;
+    skos:prefLabel "F5501"@en;
+    skos:notation "f5501";
+    rdfs:comment "F55.01 Cash Consolidated Fund Extra Receipts";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/f5601>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "F5601"@en;
+    skos:prefLabel "F5601"@en;
+    skos:notation "f5601";
+    rdfs:comment "F56.01 Cash Consolidated Fund Extra Receipts relating to capital";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/f5701>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "F5701"@en;
+    skos:prefLabel "F5701"@en;
+    skos:notation "f5701";
+    rdfs:comment "F57.01 Other (current) cash Consolidated Fund Extra receipts";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/g1001>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "G1001"@en;
+    skos:prefLabel "G1001"@en;
+    skos:notation "g1001";
+    rdfs:comment "G10.01 Capital grants to companies";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/g2001>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "G2001"@en;
+    skos:prefLabel "G2001"@en;
+    skos:notation "g2001";
+    rdfs:comment "G20.01 Capital grants to persons";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/g4501>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "G4501"@en;
+    skos:prefLabel "G4501"@en;
+    skos:notation "g4501";
+    rdfs:comment "G45.01 Capital grants to public corporations (including nationalised industries)";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/g5001>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "G5001"@en;
+    skos:prefLabel "G5001"@en;
+    skos:notation "g5001";
+    rdfs:comment "G50.01 Capital grants to or from abroad";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/h1001>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "H1001"@en;
+    skos:prefLabel "H1001"@en;
+    skos:notation "h1001";
+    rdfs:comment "H10.01 Net lending to private sector - companies";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/h2001>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "H2001"@en;
+    skos:prefLabel "H2001"@en;
+    skos:notation "h2001";
+    rdfs:comment "H20.01 Net lending to private sector – persons and non-profit making bodies";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/h3501>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "H3501"@en;
+    skos:prefLabel "H3501"@en;
+    skos:notation "h3501";
+    rdfs:comment "H35.01 Net lending to public corporations and trading funds and the issue of Public Dividend Capital (excluding temporary lending to nationalised industries covered by J30)";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/h3502>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "H3502"@en;
+    skos:prefLabel "H3502"@en;
+    skos:notation "h3502";
+    rdfs:comment "H35.02 Equity withdrawals";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/h5001>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "H5001"@en;
+    skos:prefLabel "H5001"@en;
+    skos:notation "h5001";
+    rdfs:comment "H50.01 Net lending and investment abroad";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/k1001>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "K1001"@en;
+    skos:prefLabel "K1001"@en;
+    skos:notation "k1001";
+    rdfs:comment "K10.01 Purchase of company securities";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/k1201>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "K1201"@en;
+    skos:prefLabel "K1201"@en;
+    skos:notation "k1201";
+    rdfs:comment "K12.01 Sale of company securities (book value)";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/k3001>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "K3001"@en;
+    skos:prefLabel "K3001"@en;
+    skos:notation "k3001";
+    rdfs:comment "K30.01 Dividends paid to/received from the private sector and the Bank of England";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/k4001>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "K4001"@en;
+    skos:prefLabel "K4001"@en;
+    skos:notation "k4001";
+    rdfs:comment "K40.01 Central government’s receipt of dividends from joint ventures and associates, public corporations and other";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/k9001>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "K9001"@en;
+    skos:prefLabel "K9001"@en;
+    skos:notation "k9001";
+    rdfs:comment "K90.01 Departmental unallocated provision/capital expenditure to which an economic category cannot be assigned";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/l1001>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "L1001"@en;
+    skos:prefLabel "L1001"@en;
+    skos:notation "l1001";
+    rdfs:comment "L10.01 Provisions in line with pay and procurement – take up and revaluation";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/l1101>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "L1101"@en;
+    skos:prefLabel "L1101"@en;
+    skos:notation "l1101";
+    rdfs:comment "L11.01 Provisions in line with pay and procurement – release of provision only";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/l2001>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "L2001"@en;
+    skos:prefLabel "L2001"@en;
+    skos:notation "l2001";
+    rdfs:comment "L20.01 Provisions in connection with grants and associated receipts – take-up and revaluations";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/l2101>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "L2101"@en;
+    skos:prefLabel "L2101"@en;
+    skos:notation "l2101";
+    rdfs:comment "L21.01 Provisions in connection with grants and associated receipts – release";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/l3001>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "L3001"@en;
+    skos:prefLabel "L3001"@en;
+    skos:notation "l3001";
+    rdfs:comment "L30.01 Provisions relating to bad debts on loans – take-up and revaluations";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/l3101>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "L3101"@en;
+    skos:prefLabel "L3101"@en;
+    skos:notation "l3101";
+    rdfs:comment "L31.01 Provisions relating to bad debts on loans – release";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/l4001>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "L4001"@en;
+    skos:prefLabel "L4001"@en;
+    skos:notation "l4001";
+    rdfs:comment "L40.01 Provisions for pension costs excluding interest on liabilities";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/l4501>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "L4501"@en;
+    skos:prefLabel "L4501"@en;
+    skos:notation "l4501";
+    rdfs:comment "L45.01 Provisions for pension costs - interest on scheme liabilities only";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/l4601>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "L4601"@en;
+    skos:prefLabel "L4601"@en;
+    skos:notation "l4601";
+    rdfs:comment "L46.01 Provisions for pensions costs release only";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/m1001>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "M1001"@en;
+    skos:prefLabel "M1001"@en;
+    skos:notation "m1001";
+    rdfs:comment "M10.01 Current grants to local authorities within AEF/AEG";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/m1501>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "M1501"@en;
+    skos:prefLabel "M1501"@en;
+    skos:notation "m1501";
+    rdfs:comment "M15.01 Current grants to local authorities outside AEF/AEG";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/m2001>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "M2001"@en;
+    skos:prefLabel "M2001"@en;
+    skos:notation "m2001";
+    rdfs:comment "M20.01 Uncapitalised grants to local authorities covering loan charges";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/m3001>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "M3001"@en;
+    skos:prefLabel "M3001"@en;
+    skos:notation "m3001";
+    rdfs:comment "M30.01 Current grants made by the European Union to local authorities";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/m4001>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "M4001"@en;
+    skos:prefLabel "M4001"@en;
+    skos:notation "m4001";
+    rdfs:comment "M40.01 Non-domestic rates";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/n1001>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "N1001"@en;
+    skos:prefLabel "N1001"@en;
+    skos:notation "n1001";
+    rdfs:comment "N10.01 Capital grants to local authorities: other";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/n2001>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "N2001"@en;
+    skos:prefLabel "N2001"@en;
+    skos:notation "n2001";
+    rdfs:comment "N20.01 Capitalised grants to local authorities replacing loan charge grants/financing grants";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/n3001>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "N3001"@en;
+    skos:prefLabel "N3001"@en;
+    skos:notation "n3001";
+    rdfs:comment "N30.01 Capital grants made by the European Union to local authorities";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/n4001>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "N4001"@en;
+    skos:prefLabel "N4001"@en;
+    skos:notation "n4001";
+    rdfs:comment "N40.01 Supported capital expenditure";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/p1001>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "P1001"@en;
+    skos:prefLabel "P1001"@en;
+    skos:notation "p1001";
+    rdfs:comment "P10.01 Net lending to local authorities";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/r3001>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "R3001"@en;
+    skos:prefLabel "R3001"@en;
+    skos:notation "r3001";
+    rdfs:comment "R30.01 Capitalised finance leases: capital part of annual lease payments";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/s1001>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "S1001"@en;
+    skos:prefLabel "S1001"@en;
+    skos:notation "s1001";
+    rdfs:comment "S10.01 Interest received from persons";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/s1501>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "S1501"@en;
+    skos:prefLabel "S1501"@en;
+    skos:notation "s1501";
+    rdfs:comment "S15.01 Payments/receipts of interest to/from local authorities";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/s2001>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "S2001"@en;
+    skos:prefLabel "S2001"@en;
+    skos:notation "s2001";
+    rdfs:comment "S20.01 Central government’s payments/receipts of interest to/from public corporations and TFs";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/s2501>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "S2501"@en;
+    skos:prefLabel "S2501"@en;
+    skos:notation "s2501";
+    rdfs:comment "S25.01 Payments/receipts of interest to/from abroad";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/s3001>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "S3001"@en;
+    skos:prefLabel "S3001"@en;
+    skos:notation "s3001";
+    rdfs:comment "S30.01 Capitalised finance leases";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/s4001>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "S4001"@en;
+    skos:prefLabel "S4001"@en;
+    skos:notation "s4001";
+    rdfs:comment "S40.01 Taxes on income (including other licences)";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/s4501>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "S4501"@en;
+    skos:prefLabel "S4501"@en;
+    skos:notation "s4501";
+    rdfs:comment "S45.01 National Health contributions";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/s5001>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "S5001"@en;
+    skos:prefLabel "S5001"@en;
+    skos:notation "s5001";
+    rdfs:comment "S50.01 Taxes on products and production";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/s6001>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "S6001"@en;
+    skos:prefLabel "S6001"@en;
+    skos:notation "s6001";
+    rdfs:comment "S60.01 Rent income from sub-soil assets";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/s6501>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "S6501"@en;
+    skos:prefLabel "S6501"@en;
+    skos:notation "s6501";
+    rdfs:comment "S65.01 Miscellaneous financial transactions";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/s7001>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "S7001"@en;
+    skos:prefLabel "S7001"@en;
+    skos:notation "s7001";
+    rdfs:comment "S70.01 Miscellaneous current transfers";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/t3001>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "T3001"@en;
+    skos:prefLabel "T3001"@en;
+    skos:notation "t3001";
+    rdfs:comment "T30.01 Public corporations’ profit and losses";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/w1001>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "W1001"@en;
+    skos:prefLabel "W1001"@en;
+    skos:notation "w1001";
+    rdfs:comment "W10.01 Grants to the National Insurance Fund";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/w1501>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "W1501"@en;
+    skos:prefLabel "W1501"@en;
+    skos:notation "w1501";
+    rdfs:comment "W15.01 Grant in aid to a NDPB in the central government sector";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/w1601>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "W1601"@en;
+    skos:prefLabel "W1601"@en;
+    skos:notation "w1601";
+    rdfs:comment "W16.01 Payments to by one central government body to another and corresponding receipts";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/w2001>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "W2001"@en;
+    skos:prefLabel "W2001"@en;
+    skos:notation "w2001";
+    rdfs:comment "W20.01 Broadcast licence revenue";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/w3001>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "W3001"@en;
+    skos:prefLabel "W3001"@en;
+    skos:notation "w3001";
+    rdfs:comment "W30.01 Transfers to the NI Exchequer/Scottish Consolidated Fund/Wales";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/w4001>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "W4001"@en;
+    skos:prefLabel "W4001"@en;
+    skos:notation "w4001";
+    rdfs:comment "W40.01 Interest payments and receipts within central government";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/w5001>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "W5001"@en;
+    skos:prefLabel "W5001"@en;
+    skos:notation "w5001";
+    rdfs:comment "W50.01 Loans with central government (non-trading) (net)";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/w9001>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "W9001"@en;
+    skos:prefLabel "W9001"@en;
+    skos:notation "w9001";
+    rdfs:comment "W90.01 Notional transfers from AME to DEL";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/x0601>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "X0601"@en;
+    skos:prefLabel "X0601"@en;
+    skos:notation "x0601";
+    rdfs:comment "X06.01 Profit and loss on disposal of land";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/x1101>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "X1101"@en;
+    skos:prefLabel "X1101"@en;
+    skos:notation "x1101";
+    rdfs:comment "X11.01 Profit and loss on disposal of existing buildings";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/x1201>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "X1201"@en;
+    skos:prefLabel "X1201"@en;
+    skos:notation "x1201";
+    rdfs:comment "X12.01 Profit and loss on disposal of company securities";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/x1601>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "X1601"@en;
+    skos:prefLabel "X1601"@en;
+    skos:notation "x1601";
+    rdfs:comment "X16.01 Profit and loss on disposal of other tangible capital";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/x5101>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "X5101"@en;
+    skos:prefLabel "X5101"@en;
+    skos:notation "x5101";
+    rdfs:comment "X51.01 Profit and loss on disposal of intangible assets";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/nac/z1001>
+    a <http://finance.data.gov.uk/def/coins/Nac>, skos:Concept;
+    rdfs:label "Z1001"@en;
+    skos:prefLabel "Z1001"@en;
+    skos:notation "z1001";
+    rdfs:comment "Z10.01 Other payments within central government";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/nac>;
+    
+    .

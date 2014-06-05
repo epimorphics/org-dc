@@ -1,0 +1,39 @@
+<http://finance.data.gov.uk/def/coins/budget-boundary/nda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/BudgetBoundary> .
+<http://finance.data.gov.uk/def/coins/budget-boundary/nda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/budget-boundary/nda> <http://www.w3.org/2000/01/rdf-schema#label> "Not DEL/AME"@en .
+<http://finance.data.gov.uk/def/coins/budget-boundary/nda> <http://www.w3.org/2004/02/skos/core#prefLabel> "Not DEL/AME"@en .
+<http://finance.data.gov.uk/def/coins/budget-boundary/nda> <http://www.w3.org/2004/02/skos/core#notation> "nda" .
+<http://finance.data.gov.uk/def/coins/budget-boundary/nda> <http://www.w3.org/2000/01/rdf-schema#comment> "Outside budgets (not DEL or AME)" .
+<http://finance.data.gov.uk/def/coins/budget-boundary/nda> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/budget-boundary> .
+<http://finance.data.gov.uk/def/coins/budget-boundary/ame> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/BudgetBoundary> .
+<http://finance.data.gov.uk/def/coins/budget-boundary/ame> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/budget-boundary/ame> <http://www.w3.org/2000/01/rdf-schema#label> "AME"@en .
+<http://finance.data.gov.uk/def/coins/budget-boundary/ame> <http://www.w3.org/2004/02/skos/core#prefLabel> "AME"@en .
+<http://finance.data.gov.uk/def/coins/budget-boundary/ame> <http://www.w3.org/2004/02/skos/core#notation> "ame" .
+<http://finance.data.gov.uk/def/coins/budget-boundary/ame> <http://www.w3.org/2000/01/rdf-schema#comment> "Actual managed expenditure" .
+<http://finance.data.gov.uk/def/coins/budget-boundary/ame> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/budget-boundary> .
+<http://finance.data.gov.uk/def/coins/statistical-concept/budget-boundary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/sdmx#Concept> .
+<http://finance.data.gov.uk/def/coins/statistical-concept/budget-boundary> <http://www.w3.org/2000/01/rdf-schema#label> "budget boundary"@en .
+<http://finance.data.gov.uk/def/coins/statistical-concept/budget-boundary> <http://www.w3.org/2004/02/skos/core#prefLabel> "budget boundary"@en .
+<http://finance.data.gov.uk/def/coins/statistical-concept/budget-boundary> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifies the budgetary treatment of transactions, as DEL, AME and outside budgets (Not DEL/AME)." .
+<http://finance.data.gov.uk/def/coins/statistical-concept/budget-boundary> <http://purl.org/dc/terms/source> <http://www.hm-treasury.gov.uk/d/coins_guidance.pdf> .
+<http://finance.data.gov.uk/def/coins/statistical-concept/budget-boundary> <http://www.epimorphics.com/vocabs/coins-generate#columnName> "budget_boundary" .
+<http://finance.data.gov.uk/def/coins/budget-boundary/del> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/BudgetBoundary> .
+<http://finance.data.gov.uk/def/coins/budget-boundary/del> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/budget-boundary/del> <http://www.w3.org/2000/01/rdf-schema#label> "DEL"@en .
+<http://finance.data.gov.uk/def/coins/budget-boundary/del> <http://www.w3.org/2004/02/skos/core#prefLabel> "DEL"@en .
+<http://finance.data.gov.uk/def/coins/budget-boundary/del> <http://www.w3.org/2004/02/skos/core#notation> "del" .
+<http://finance.data.gov.uk/def/coins/budget-boundary/del> <http://www.w3.org/2000/01/rdf-schema#comment> "Department expenditure limits" .
+<http://finance.data.gov.uk/def/coins/budget-boundary/del> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/budget-boundary> .
+<http://finance.data.gov.uk/def/coins/BudgetBoundary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://finance.data.gov.uk/def/coins/BudgetBoundary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://finance.data.gov.uk/def/coins/BudgetBoundary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/BudgetBoundary> <http://www.w3.org/2000/01/rdf-schema#label> "budget boundary values class"@en .
+<http://finance.data.gov.uk/def/coins/BudgetBoundary> <http://www.w3.org/2004/02/skos/core#prefLabel> "budget boundary values class"@en .
+<http://finance.data.gov.uk/def/coins/BudgetBoundary> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of values in the budget boundary code-list scheme" .
+<http://finance.data.gov.uk/def/coins/budget-boundary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://finance.data.gov.uk/def/coins/budget-boundary> <http://www.w3.org/2000/01/rdf-schema#label> "budget boundary code list concept scheme"@en .
+<http://finance.data.gov.uk/def/coins/budget-boundary> <http://www.w3.org/2004/02/skos/core#prefLabel> "budget boundary code list concept scheme"@en .
+<http://finance.data.gov.uk/def/coins/budget-boundary> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/budget-boundary/ame> .
+<http://finance.data.gov.uk/def/coins/budget-boundary> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/budget-boundary/del> .
+<http://finance.data.gov.uk/def/coins/budget-boundary> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/budget-boundary/nda> .

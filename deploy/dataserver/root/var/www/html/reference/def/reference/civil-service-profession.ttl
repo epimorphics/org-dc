@@ -1,0 +1,150 @@
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix dct:     <http://purl.org/dc/terms/> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix void:    <http://rdfs.org/ns/void#> .
+@prefix time:    <http://www.w3.org/2006/time#> .
+@prefix opmv:    <http://purl.org/net/opmv/ns#> .
+@prefix org:     <http://www.w3.org/ns/org#> .
+@prefix gov:     <http://reference.data.gov.uk/def/central-government/> .
+@prefix :        <http://reference.data.gov.uk/def/civil-service-profession/> .
+
+:Profession a rdfs:Class ;
+  rdfs:label "Profession"@en ;
+  rdfs:subClassOf skos:Concept ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/civil-service-profession> .
+
+:profession a rdf:Property , owl:ObjectProperty ;
+  rdfs:label "Profession"@en ;
+  rdfs:range :Profession ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/civil-service-profession> .
+
+<http://reference.data.gov.uk/def/civil-service-profession> a skos:ConceptScheme , void:Dataset ;
+  rdfs:label "Civil Service Professions"@en ;
+  skos:hasTopConcept :military , :communications , :economics , :finance , :human-resources , :information-technology , :internal-audit , :kim , :law , :medicine , :operational-delivery , :operational-research , :planning , :policy , :procurement , :ppm , :property-asset-management , :psychology , :science-engineering , :social-research , :statisticians , :tax-professionals , :vets .
+
+:military 
+  a :Profession ;
+  skos:prefLabel "Armed Forces"@en ;
+  skos:altLabel "Military"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-profession> .
+
+:communications   
+  a :Profession ;
+  skos:prefLabel "Communications"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-profession> .
+
+:economics   
+  a :Profession ;
+  skos:prefLabel "Economics"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-profession> .
+
+:finance   
+  a :Profession ;
+  skos:prefLabel "Finance"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-profession> .
+
+:human-resources   
+  a :Profession ;
+  skos:prefLabel "Human Resources"@en ;
+  skos:altLabel "HR"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-profession> .
+
+:information-technology   
+  a :Profession ;
+  skos:prefLabel "Information Technology"@en ;
+  skos:altLabel "IT"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-profession> .
+
+:internal-audit   
+  a :Profession ;
+  skos:prefLabel "Internal Audit"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-profession> .
+
+:kim   
+  a :Profession ;
+  skos:prefLabel "Knowledge and Information Management (KIM)"@en ;
+  skos:altLabel "Knowledge and Information Management"@en ;
+  skos:altLabel "KIM"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-profession> .
+
+:law   
+  a :Profession ;
+  skos:prefLabel "Law"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-profession> .
+
+:medicine   
+  a :Profession ;
+  skos:prefLabel "Medicine"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-profession> .
+
+:operational-delivery   
+  a :Profession ;
+  skos:prefLabel "Operational Delivery"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-profession> .
+
+:operational-research   
+  a :Profession ;
+  skos:prefLabel "Operational Research"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-profession> .
+
+:planning   
+  a :Profession ;
+  skos:prefLabel "Planning"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-profession> .
+
+:policy   
+  a :Profession ;
+  skos:prefLabel "Policy"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-profession> .
+
+:procurement   
+  a :Profession ;
+  skos:prefLabel "Procurement"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-profession> .
+
+:ppm   
+  a :Profession ;
+  skos:prefLabel "Programme and Project Management (PPM)"@en ;
+  skos:altLabel "Programme and Project Management"@en ;
+  skos:altLabel "PPM"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-profession> .
+
+:property-asset-management   
+  a :Profession ;
+  skos:prefLabel "Property and asset management"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-profession> .
+
+:psychology   
+  a :Profession ;
+  skos:prefLabel "Psychology"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-profession> .
+
+:science-engineering   
+  a :Profession ;
+  skos:prefLabel "Science and Engineering"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-profession> .
+
+:social-research   
+  a :Profession ;
+  skos:prefLabel "Social Research"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-profession> .
+
+:statisticians   
+  a :Profession ;
+  skos:prefLabel "Statisticians"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-profession> .
+
+:tax-professionals   
+  a :Profession ;
+  skos:prefLabel "Tax Professionals"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-profession> .
+
+:vets   
+  a :Profession ;
+  skos:prefLabel "Vets"@en ;
+  skos:altLabel "Veterinary"@en ;
+  skos:topConceptOf <http://reference.data.gov.uk/def/civil-service-profession> .

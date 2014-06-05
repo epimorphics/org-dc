@@ -1,0 +1,223 @@
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/psg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/PesaCurrentGrants> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/psg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/psg> <http://www.w3.org/2000/01/rdf-schema#label> "PFI special grant"@en .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/psg> <http://www.w3.org/2004/02/skos/core#prefLabel> "PFI special grant"@en .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/psg> <http://www.w3.org/2004/02/skos/core#notation> "psg" .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/psg> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/psg> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/pesa-current-grants> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/lbgis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/PesaCurrentGrants> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/lbgis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/lbgis> <http://www.w3.org/2000/01/rdf-schema#label> "LA business growth incentive scheme"@en .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/lbgis> <http://www.w3.org/2004/02/skos/core#prefLabel> "LA business growth incentive scheme"@en .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/lbgis> <http://www.w3.org/2004/02/skos/core#notation> "lbgis" .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/lbgis> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/lbgis> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/pesa-current-grants> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/ea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/PesaCurrentGrants> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/ea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/ea> <http://www.w3.org/2000/01/rdf-schema#label> "Environment Agency"@en .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/ea> <http://www.w3.org/2004/02/skos/core#prefLabel> "Environment Agency"@en .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/ea> <http://www.w3.org/2004/02/skos/core#notation> "ea" .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/ea> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/ea> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/pesa-current-grants> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/lfsis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/PesaCurrentGrants> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/lfsis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/lfsis> <http://www.w3.org/2000/01/rdf-schema#label> "Locally financed support in Scotland"@en .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/lfsis> <http://www.w3.org/2004/02/skos/core#prefLabel> "Locally financed support in Scotland"@en .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/lfsis> <http://www.w3.org/2004/02/skos/core#notation> "lfsis" .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/lfsis> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/lfsis> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/pesa-current-grants> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/sp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/PesaCurrentGrants> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/sp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/sp> <http://www.w3.org/2000/01/rdf-schema#label> "Supporting people"@en .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/sp> <http://www.w3.org/2004/02/skos/core#prefLabel> "Supporting people"@en .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/sp> <http://www.w3.org/2004/02/skos/core#notation> "sp" .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/sp> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/sp> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/pesa-current-grants> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/ndfc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/PesaCurrentGrants> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/ndfc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/ndfc> <http://www.w3.org/2000/01/rdf-schema#label> "New deal for communities"@en .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/ndfc> <http://www.w3.org/2004/02/skos/core#prefLabel> "New deal for communities"@en .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/ndfc> <http://www.w3.org/2004/02/skos/core#notation> "ndfc" .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/ndfc> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/ndfc> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/pesa-current-grants> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/sc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/PesaCurrentGrants> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/sc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/sc> <http://www.w3.org/2000/01/rdf-schema#label> "Social Care"@en .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/sc> <http://www.w3.org/2004/02/skos/core#prefLabel> "Social Care"@en .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/sc> <http://www.w3.org/2004/02/skos/core#notation> "sc" .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/sc> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/sc> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/pesa-current-grants> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/sure-start> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/PesaCurrentGrants> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/sure-start> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/sure-start> <http://www.w3.org/2000/01/rdf-schema#label> "Sure start"@en .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/sure-start> <http://www.w3.org/2004/02/skos/core#prefLabel> "Sure start"@en .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/sure-start> <http://www.w3.org/2004/02/skos/core#notation> "sure-start" .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/sure-start> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/sure-start> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/pesa-current-grants> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/laa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/PesaCurrentGrants> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/laa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/laa> <http://www.w3.org/2000/01/rdf-schema#label> "Local area agreements"@en .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/laa> <http://www.w3.org/2004/02/skos/core#prefLabel> "Local area agreements"@en .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/laa> <http://www.w3.org/2004/02/skos/core#notation> "laa" .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/laa> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/laa> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/pesa-current-grants> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/lsc-grants> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/PesaCurrentGrants> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/lsc-grants> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/lsc-grants> <http://www.w3.org/2000/01/rdf-schema#label> "LSC grants"@en .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/lsc-grants> <http://www.w3.org/2004/02/skos/core#prefLabel> "LSC grants"@en .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/lsc-grants> <http://www.w3.org/2004/02/skos/core#notation> "lsc-grants" .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/lsc-grants> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/lsc-grants> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/pesa-current-grants> .
+<http://finance.data.gov.uk/def/coins/PesaCurrentGrants> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://finance.data.gov.uk/def/coins/PesaCurrentGrants> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://finance.data.gov.uk/def/coins/PesaCurrentGrants> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/PesaCurrentGrants> <http://www.w3.org/2000/01/rdf-schema#label> "pesa current grants values class"@en .
+<http://finance.data.gov.uk/def/coins/PesaCurrentGrants> <http://www.w3.org/2004/02/skos/core#prefLabel> "pesa current grants values class"@en .
+<http://finance.data.gov.uk/def/coins/PesaCurrentGrants> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of values in the pesa current grants code-list scheme" .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/rdf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/PesaCurrentGrants> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/rdf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/rdf> <http://www.w3.org/2000/01/rdf-schema#label> "RDA development fund"@en .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/rdf> <http://www.w3.org/2004/02/skos/core#prefLabel> "RDA development fund"@en .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/rdf> <http://www.w3.org/2004/02/skos/core#notation> "rdf" .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/rdf> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/rdf> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/pesa-current-grants> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/nrf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/PesaCurrentGrants> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/nrf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/nrf> <http://www.w3.org/2000/01/rdf-schema#label> "Neighbourhood renewal fund"@en .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/nrf> <http://www.w3.org/2004/02/skos/core#prefLabel> "Neighbourhood renewal fund"@en .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/nrf> <http://www.w3.org/2004/02/skos/core#notation> "nrf" .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/nrf> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/nrf> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/pesa-current-grants> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/ssg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/PesaCurrentGrants> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/ssg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/ssg> <http://www.w3.org/2000/01/rdf-schema#label> "Schools standard grant"@en .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/ssg> <http://www.w3.org/2004/02/skos/core#prefLabel> "Schools standard grant"@en .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/ssg> <http://www.w3.org/2004/02/skos/core#notation> "ssg" .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/ssg> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/ssg> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/pesa-current-grants> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/pesa-current-grants/laa> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants> <http://www.w3.org/2000/01/rdf-schema#label> "pesa current grants code list concept scheme"@en .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/pesa-current-grants/sc> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/pesa-current-grants/sure-start> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/pesa-current-grants/rr> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/pesa-current-grants/ra> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/pesa-current-grants/rdf> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/pesa-current-grants/gt> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/pesa-current-grants/lsc-grants> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/pesa-current-grants/rsg> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/pesa-current-grants/health> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants> <http://www.w3.org/2004/02/skos/core#prefLabel> "pesa current grants code list concept scheme"@en .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/pesa-current-grants/lbgis> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/pesa-current-grants/sra> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/pesa-current-grants/ssg> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/pesa-current-grants/lfsis> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/pesa-current-grants/ccrctb> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/pesa-current-grants/police> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/pesa-current-grants/dsg> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/pesa-current-grants/sp> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/pesa-current-grants/ea> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/pesa-current-grants/sf> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/pesa-current-grants/ocg> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/pesa-current-grants/ndrp> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/pesa-current-grants/abg> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/pesa-current-grants/ndfc> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/pesa-current-grants/nrf> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/pesa-current-grants/psg> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/dsg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/PesaCurrentGrants> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/dsg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/dsg> <http://www.w3.org/2000/01/rdf-schema#label> "Dedicated Schools Grant"@en .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/dsg> <http://www.w3.org/2004/02/skos/core#prefLabel> "Dedicated Schools Grant"@en .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/dsg> <http://www.w3.org/2004/02/skos/core#notation> "dsg" .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/dsg> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/dsg> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/pesa-current-grants> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/sra> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/PesaCurrentGrants> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/sra> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/sra> <http://www.w3.org/2000/01/rdf-schema#label> "Strategic Rail Authority"@en .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/sra> <http://www.w3.org/2004/02/skos/core#prefLabel> "Strategic Rail Authority"@en .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/sra> <http://www.w3.org/2004/02/skos/core#notation> "sra" .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/sra> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/sra> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/pesa-current-grants> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/police> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/PesaCurrentGrants> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/police> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/police> <http://www.w3.org/2000/01/rdf-schema#label> "Police"@en .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/police> <http://www.w3.org/2004/02/skos/core#prefLabel> "Police"@en .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/police> <http://www.w3.org/2004/02/skos/core#notation> "police" .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/police> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/police> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/pesa-current-grants> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/gt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/PesaCurrentGrants> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/gt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/gt> <http://www.w3.org/2000/01/rdf-schema#label> "GLA transport"@en .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/gt> <http://www.w3.org/2004/02/skos/core#prefLabel> "GLA transport"@en .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/gt> <http://www.w3.org/2004/02/skos/core#notation> "gt" .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/gt> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/gt> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/pesa-current-grants> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/ra> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/PesaCurrentGrants> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/ra> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/ra> <http://www.w3.org/2000/01/rdf-schema#label> "Rent allowances"@en .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/ra> <http://www.w3.org/2004/02/skos/core#prefLabel> "Rent allowances"@en .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/ra> <http://www.w3.org/2004/02/skos/core#notation> "ra" .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/ra> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/ra> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/pesa-current-grants> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/rsg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/PesaCurrentGrants> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/rsg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/rsg> <http://www.w3.org/2000/01/rdf-schema#label> "Revenue support grant"@en .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/rsg> <http://www.w3.org/2004/02/skos/core#prefLabel> "Revenue support grant"@en .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/rsg> <http://www.w3.org/2004/02/skos/core#notation> "rsg" .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/rsg> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/rsg> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/pesa-current-grants> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/ccrctb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/PesaCurrentGrants> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/ccrctb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/ccrctb> <http://www.w3.org/2000/01/rdf-schema#label> "Community charge rebates / council tax benefits"@en .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/ccrctb> <http://www.w3.org/2004/02/skos/core#prefLabel> "Community charge rebates / council tax benefits"@en .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/ccrctb> <http://www.w3.org/2004/02/skos/core#notation> "ccrctb" .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/ccrctb> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/ccrctb> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/pesa-current-grants> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/ocg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/PesaCurrentGrants> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/ocg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/ocg> <http://www.w3.org/2000/01/rdf-schema#label> "Other Current Grants"@en .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/ocg> <http://www.w3.org/2004/02/skos/core#prefLabel> "Other Current Grants"@en .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/ocg> <http://www.w3.org/2004/02/skos/core#notation> "ocg" .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/ocg> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/ocg> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/pesa-current-grants> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/sf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/PesaCurrentGrants> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/sf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/sf> <http://www.w3.org/2000/01/rdf-schema#label> "Standards fund"@en .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/sf> <http://www.w3.org/2004/02/skos/core#prefLabel> "Standards fund"@en .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/sf> <http://www.w3.org/2004/02/skos/core#notation> "sf" .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/sf> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/sf> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/pesa-current-grants> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/abg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/PesaCurrentGrants> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/abg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/abg> <http://www.w3.org/2000/01/rdf-schema#label> "Area Based Grants"@en .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/abg> <http://www.w3.org/2004/02/skos/core#prefLabel> "Area Based Grants"@en .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/abg> <http://www.w3.org/2004/02/skos/core#notation> "abg" .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/abg> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/abg> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/pesa-current-grants> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/health> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/PesaCurrentGrants> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/health> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/health> <http://www.w3.org/2000/01/rdf-schema#label> "Health"@en .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/health> <http://www.w3.org/2004/02/skos/core#prefLabel> "Health"@en .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/health> <http://www.w3.org/2004/02/skos/core#notation> "health" .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/health> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/health> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/pesa-current-grants> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/ndrp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/PesaCurrentGrants> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/ndrp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/ndrp> <http://www.w3.org/2000/01/rdf-schema#label> "Non-domestic rate payments"@en .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/ndrp> <http://www.w3.org/2004/02/skos/core#prefLabel> "Non-domestic rate payments"@en .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/ndrp> <http://www.w3.org/2004/02/skos/core#notation> "ndrp" .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/ndrp> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/ndrp> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/pesa-current-grants> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/rr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/PesaCurrentGrants> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/rr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/rr> <http://www.w3.org/2000/01/rdf-schema#label> "Rent rebates"@en .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/rr> <http://www.w3.org/2004/02/skos/core#prefLabel> "Rent rebates"@en .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/rr> <http://www.w3.org/2004/02/skos/core#notation> "rr" .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/rr> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/pesa-current-grants/rr> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/pesa-current-grants> .
+<http://finance.data.gov.uk/def/coins/statistical-concept/pesa-current-grants> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/sdmx#Concept> .
+<http://finance.data.gov.uk/def/coins/statistical-concept/pesa-current-grants> <http://www.w3.org/2000/01/rdf-schema#label> "pesa current grants"@en .
+<http://finance.data.gov.uk/def/coins/statistical-concept/pesa-current-grants> <http://www.w3.org/2004/02/skos/core#prefLabel> "pesa current grants"@en .
+<http://finance.data.gov.uk/def/coins/statistical-concept/pesa-current-grants> <http://www.w3.org/2000/01/rdf-schema#comment> "Used to identify the main types of current grants paid to local authorities." .
+<http://finance.data.gov.uk/def/coins/statistical-concept/pesa-current-grants> <http://purl.org/dc/terms/source> <http://www.hm-treasury.gov.uk/d/coins_guidance.pdf> .
+<http://finance.data.gov.uk/def/coins/statistical-concept/pesa-current-grants> <http://www.epimorphics.com/vocabs/coins-generate#columnName> "pesa_current_grants" .

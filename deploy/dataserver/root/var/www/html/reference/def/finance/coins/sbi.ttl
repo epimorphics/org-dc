@@ -1,0 +1,685 @@
+# Generated 2010-11-09T16:53:44+00:00
+
+@prefix rdf:                <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:               <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:                <http://www.w3.org/2002/07/owl#> .
+@prefix skos:               <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd:                <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:               <http://xmlns.com/foaf/0.1/> .
+@prefix void:               <http://rdfs.org/ns/void#> .
+@prefix dcterms:            <http://purl.org/dc/terms/> .
+@prefix sdmx:               <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept:       <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:     <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:     <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:       <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-code:          <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:       <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix qb:                 <http://purl.org/linked-data/cube#> .
+@prefix coins-data:         <http://source.data.gov.uk/data/coins/> .
+@prefix coins-dsd:          <http://finance.data.gov.uk/dsd/coins/> .
+@prefix coins-dimension:    <http://finance.data.gov.uk/dsd/coins/dimension/> .
+@prefix coins-attribute:    <http://finance.data.gov.uk/dsd/coins/attribute/> .
+@prefix coins-measure:      <http://finance.data.gov.uk/dsd/coins/measure/> .
+@prefix coins-slicekey:     <http://finance.data.gov.uk/dsd/coins/slice/> .
+
+<http://finance.data.gov.uk/def/coins/statistical-concept/sbi>
+    a sdmx:Concept;
+    rdfs:label "sbi"@en;
+    skos:prefLabel "sbi"@en;
+    rdfs:comment """Used to link data to specific Supplementary Budgetary Information tables.""";
+    <http://purl.org/dc/terms/source> <http://www.hm-treasury.gov.uk/d/coins_guidance.pdf>;
+    <http://www.epimorphics.com/vocabs/coins-generate#columnName> "sbi"
+    .
+
+<http://finance.data.gov.uk/def/coins/Sbi>
+    a rdfs:Class, owl:Class;
+    rdfs:subClassOf skos:Concept;
+    rdfs:label "sbi values class"@en;
+    skos:prefLabel "sbi values class"@en;
+    rdfs:comment "The class of values in the sbi code-list scheme";
+    .
+
+<http://finance.data.gov.uk/def/coins/sbi>
+    a skos:ConceptScheme;
+    rdfs:label "sbi code list concept scheme"@en;
+    skos:prefLabel "sbi code list concept scheme"@en;
+    skos:hasTopConcept <http://finance.data.gov.uk/def/coins/sbi/sbi00>,
+          <http://finance.data.gov.uk/def/coins/sbi/sbi01>,
+          <http://finance.data.gov.uk/def/coins/sbi/sbi03>,
+          <http://finance.data.gov.uk/def/coins/sbi/sbi04>,
+          <http://finance.data.gov.uk/def/coins/sbi/sbi06>,
+          <http://finance.data.gov.uk/def/coins/sbi/sbi07>,
+          <http://finance.data.gov.uk/def/coins/sbi/sbi08>,
+          <http://finance.data.gov.uk/def/coins/sbi/sbi09>,
+          <http://finance.data.gov.uk/def/coins/sbi/sbi10>,
+          <http://finance.data.gov.uk/def/coins/sbi/sbi11>,
+          <http://finance.data.gov.uk/def/coins/sbi/sbi12>,
+          <http://finance.data.gov.uk/def/coins/sbi/sbi13>,
+          <http://finance.data.gov.uk/def/coins/sbi/sbi15>,
+          <http://finance.data.gov.uk/def/coins/sbi/sbi16>,
+          <http://finance.data.gov.uk/def/coins/sbi/sbi17>,
+          <http://finance.data.gov.uk/def/coins/sbi/sbi18>,
+          <http://finance.data.gov.uk/def/coins/sbi/sbi19>,
+          <http://finance.data.gov.uk/def/coins/sbi/sbi20>,
+          <http://finance.data.gov.uk/def/coins/sbi/sbi22>,
+          <http://finance.data.gov.uk/def/coins/sbi/sbi23>,
+          <http://finance.data.gov.uk/def/coins/sbi/sbi25>,
+          <http://finance.data.gov.uk/def/coins/sbi/sbi26>,
+          <http://finance.data.gov.uk/def/coins/sbi/sbi28>,
+          <http://finance.data.gov.uk/def/coins/sbi/sbi29>,
+          <http://finance.data.gov.uk/def/coins/sbi/sbi31>,
+          <http://finance.data.gov.uk/def/coins/sbi/sbi32>,
+          <http://finance.data.gov.uk/def/coins/sbi/sbi33>,
+          <http://finance.data.gov.uk/def/coins/sbi/sbi34>,
+          <http://finance.data.gov.uk/def/coins/sbi/sbi35>,
+          <http://finance.data.gov.uk/def/coins/sbi/sbi36>,
+          <http://finance.data.gov.uk/def/coins/sbi/sbi37>,
+          <http://finance.data.gov.uk/def/coins/sbi/sbi40>,
+          <http://finance.data.gov.uk/def/coins/sbi/sbi41>,
+          <http://finance.data.gov.uk/def/coins/sbi/sbi43>,
+          <http://finance.data.gov.uk/def/coins/sbi/sbi44>,
+          <http://finance.data.gov.uk/def/coins/sbi/sbi45>,
+          <http://finance.data.gov.uk/def/coins/sbi/sbi46>,
+          <http://finance.data.gov.uk/def/coins/sbi/sbi47>,
+          <http://finance.data.gov.uk/def/coins/sbi/sbi48>,
+          <http://finance.data.gov.uk/def/coins/sbi/sbi51>,
+          <http://finance.data.gov.uk/def/coins/sbi/sbi52>,
+          <http://finance.data.gov.uk/def/coins/sbi/sbi53>,
+          <http://finance.data.gov.uk/def/coins/sbi/sbi54>,
+          <http://finance.data.gov.uk/def/coins/sbi/sbi55>,
+          <http://finance.data.gov.uk/def/coins/sbi/sbi56>,
+          <http://finance.data.gov.uk/def/coins/sbi/sbi57>,
+          <http://finance.data.gov.uk/def/coins/sbi/sbi58>,
+          <http://finance.data.gov.uk/def/coins/sbi/sbi60>,
+          <http://finance.data.gov.uk/def/coins/sbi/sbi61>,
+          <http://finance.data.gov.uk/def/coins/sbi/sbi62>,
+          <http://finance.data.gov.uk/def/coins/sbi/sbi63>,
+          <http://finance.data.gov.uk/def/coins/sbi/sbi64>,
+          <http://finance.data.gov.uk/def/coins/sbi/sbi65>,
+          <http://finance.data.gov.uk/def/coins/sbi/sbi66>,
+          <http://finance.data.gov.uk/def/coins/sbi/sbi69>,
+          <http://finance.data.gov.uk/def/coins/sbi/sbiix>,
+          <http://finance.data.gov.uk/def/coins/sbi/sbisx>,
+          <http://finance.data.gov.uk/def/coins/sbi/sbiwa>
+    .
+
+<http://finance.data.gov.uk/def/coins/sbi/sbi00>
+    a <http://finance.data.gov.uk/def/coins/Sbi>, skos:Concept;
+    rdfs:label "SBI00"@en;
+    skos:prefLabel "SBI00"@en;
+    skos:notation "sbi00";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/sbi>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/sbi/sbi01>
+    a <http://finance.data.gov.uk/def/coins/Sbi>, skos:Concept;
+    rdfs:label "SBI01"@en;
+    skos:prefLabel "SBI01"@en;
+    skos:notation "sbi01";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/sbi>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/sbi/sbi03>
+    a <http://finance.data.gov.uk/def/coins/Sbi>, skos:Concept;
+    rdfs:label "SBI03"@en;
+    skos:prefLabel "SBI03"@en;
+    skos:notation "sbi03";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/sbi>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/sbi/sbi04>
+    a <http://finance.data.gov.uk/def/coins/Sbi>, skos:Concept;
+    rdfs:label "SBI04"@en;
+    skos:prefLabel "SBI04"@en;
+    skos:notation "sbi04";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/sbi>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/sbi/sbi06>
+    a <http://finance.data.gov.uk/def/coins/Sbi>, skos:Concept;
+    rdfs:label "SBI06"@en;
+    skos:prefLabel "SBI06"@en;
+    skos:notation "sbi06";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/sbi>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/sbi/sbi07>
+    a <http://finance.data.gov.uk/def/coins/Sbi>, skos:Concept;
+    rdfs:label "SBI07"@en;
+    skos:prefLabel "SBI07"@en;
+    skos:notation "sbi07";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/sbi>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/sbi/sbi08>
+    a <http://finance.data.gov.uk/def/coins/Sbi>, skos:Concept;
+    rdfs:label "SBI08"@en;
+    skos:prefLabel "SBI08"@en;
+    skos:notation "sbi08";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/sbi>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/sbi/sbi09>
+    a <http://finance.data.gov.uk/def/coins/Sbi>, skos:Concept;
+    rdfs:label "SBI09"@en;
+    skos:prefLabel "SBI09"@en;
+    skos:notation "sbi09";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/sbi>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/sbi/sbi10>
+    a <http://finance.data.gov.uk/def/coins/Sbi>, skos:Concept;
+    rdfs:label "SBI10"@en;
+    skos:prefLabel "SBI10"@en;
+    skos:notation "sbi10";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/sbi>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/sbi/sbi11>
+    a <http://finance.data.gov.uk/def/coins/Sbi>, skos:Concept;
+    rdfs:label "SBI11"@en;
+    skos:prefLabel "SBI11"@en;
+    skos:notation "sbi11";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/sbi>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/sbi/sbi12>
+    a <http://finance.data.gov.uk/def/coins/Sbi>, skos:Concept;
+    rdfs:label "SBI12"@en;
+    skos:prefLabel "SBI12"@en;
+    skos:notation "sbi12";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/sbi>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/sbi/sbi13>
+    a <http://finance.data.gov.uk/def/coins/Sbi>, skos:Concept;
+    rdfs:label "SBI13"@en;
+    skos:prefLabel "SBI13"@en;
+    skos:notation "sbi13";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/sbi>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/sbi/sbi15>
+    a <http://finance.data.gov.uk/def/coins/Sbi>, skos:Concept;
+    rdfs:label "SBI15"@en;
+    skos:prefLabel "SBI15"@en;
+    skos:notation "sbi15";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/sbi>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/sbi/sbi16>
+    a <http://finance.data.gov.uk/def/coins/Sbi>, skos:Concept;
+    rdfs:label "SBI16"@en;
+    skos:prefLabel "SBI16"@en;
+    skos:notation "sbi16";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/sbi>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/sbi/sbi17>
+    a <http://finance.data.gov.uk/def/coins/Sbi>, skos:Concept;
+    rdfs:label "SBI17"@en;
+    skos:prefLabel "SBI17"@en;
+    skos:notation "sbi17";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/sbi>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/sbi/sbi18>
+    a <http://finance.data.gov.uk/def/coins/Sbi>, skos:Concept;
+    rdfs:label "SBI18"@en;
+    skos:prefLabel "SBI18"@en;
+    skos:notation "sbi18";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/sbi>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/sbi/sbi19>
+    a <http://finance.data.gov.uk/def/coins/Sbi>, skos:Concept;
+    rdfs:label "SBI19"@en;
+    skos:prefLabel "SBI19"@en;
+    skos:notation "sbi19";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/sbi>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/sbi/sbi20>
+    a <http://finance.data.gov.uk/def/coins/Sbi>, skos:Concept;
+    rdfs:label "SBI20"@en;
+    skos:prefLabel "SBI20"@en;
+    skos:notation "sbi20";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/sbi>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/sbi/sbi22>
+    a <http://finance.data.gov.uk/def/coins/Sbi>, skos:Concept;
+    rdfs:label "SBI22"@en;
+    skos:prefLabel "SBI22"@en;
+    skos:notation "sbi22";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/sbi>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/sbi/sbi23>
+    a <http://finance.data.gov.uk/def/coins/Sbi>, skos:Concept;
+    rdfs:label "SBI23"@en;
+    skos:prefLabel "SBI23"@en;
+    skos:notation "sbi23";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/sbi>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/sbi/sbi25>
+    a <http://finance.data.gov.uk/def/coins/Sbi>, skos:Concept;
+    rdfs:label "SBI25"@en;
+    skos:prefLabel "SBI25"@en;
+    skos:notation "sbi25";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/sbi>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/sbi/sbi26>
+    a <http://finance.data.gov.uk/def/coins/Sbi>, skos:Concept;
+    rdfs:label "SBI26"@en;
+    skos:prefLabel "SBI26"@en;
+    skos:notation "sbi26";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/sbi>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/sbi/sbi28>
+    a <http://finance.data.gov.uk/def/coins/Sbi>, skos:Concept;
+    rdfs:label "SBI28"@en;
+    skos:prefLabel "SBI28"@en;
+    skos:notation "sbi28";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/sbi>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/sbi/sbi29>
+    a <http://finance.data.gov.uk/def/coins/Sbi>, skos:Concept;
+    rdfs:label "SBI29"@en;
+    skos:prefLabel "SBI29"@en;
+    skos:notation "sbi29";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/sbi>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/sbi/sbi31>
+    a <http://finance.data.gov.uk/def/coins/Sbi>, skos:Concept;
+    rdfs:label "SBI31"@en;
+    skos:prefLabel "SBI31"@en;
+    skos:notation "sbi31";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/sbi>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/sbi/sbi32>
+    a <http://finance.data.gov.uk/def/coins/Sbi>, skos:Concept;
+    rdfs:label "SBI32"@en;
+    skos:prefLabel "SBI32"@en;
+    skos:notation "sbi32";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/sbi>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/sbi/sbi33>
+    a <http://finance.data.gov.uk/def/coins/Sbi>, skos:Concept;
+    rdfs:label "SBI33"@en;
+    skos:prefLabel "SBI33"@en;
+    skos:notation "sbi33";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/sbi>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/sbi/sbi34>
+    a <http://finance.data.gov.uk/def/coins/Sbi>, skos:Concept;
+    rdfs:label "SBI34"@en;
+    skos:prefLabel "SBI34"@en;
+    skos:notation "sbi34";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/sbi>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/sbi/sbi35>
+    a <http://finance.data.gov.uk/def/coins/Sbi>, skos:Concept;
+    rdfs:label "SBI35"@en;
+    skos:prefLabel "SBI35"@en;
+    skos:notation "sbi35";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/sbi>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/sbi/sbi36>
+    a <http://finance.data.gov.uk/def/coins/Sbi>, skos:Concept;
+    rdfs:label "SBI36"@en;
+    skos:prefLabel "SBI36"@en;
+    skos:notation "sbi36";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/sbi>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/sbi/sbi37>
+    a <http://finance.data.gov.uk/def/coins/Sbi>, skos:Concept;
+    rdfs:label "SBI37"@en;
+    skos:prefLabel "SBI37"@en;
+    skos:notation "sbi37";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/sbi>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/sbi/sbi40>
+    a <http://finance.data.gov.uk/def/coins/Sbi>, skos:Concept;
+    rdfs:label "SBI40"@en;
+    skos:prefLabel "SBI40"@en;
+    skos:notation "sbi40";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/sbi>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/sbi/sbi41>
+    a <http://finance.data.gov.uk/def/coins/Sbi>, skos:Concept;
+    rdfs:label "SBI41"@en;
+    skos:prefLabel "SBI41"@en;
+    skos:notation "sbi41";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/sbi>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/sbi/sbi43>
+    a <http://finance.data.gov.uk/def/coins/Sbi>, skos:Concept;
+    rdfs:label "SBI43"@en;
+    skos:prefLabel "SBI43"@en;
+    skos:notation "sbi43";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/sbi>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/sbi/sbi44>
+    a <http://finance.data.gov.uk/def/coins/Sbi>, skos:Concept;
+    rdfs:label "SBI44"@en;
+    skos:prefLabel "SBI44"@en;
+    skos:notation "sbi44";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/sbi>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/sbi/sbi45>
+    a <http://finance.data.gov.uk/def/coins/Sbi>, skos:Concept;
+    rdfs:label "SBI45"@en;
+    skos:prefLabel "SBI45"@en;
+    skos:notation "sbi45";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/sbi>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/sbi/sbi46>
+    a <http://finance.data.gov.uk/def/coins/Sbi>, skos:Concept;
+    rdfs:label "SBI46"@en;
+    skos:prefLabel "SBI46"@en;
+    skos:notation "sbi46";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/sbi>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/sbi/sbi47>
+    a <http://finance.data.gov.uk/def/coins/Sbi>, skos:Concept;
+    rdfs:label "SBI47"@en;
+    skos:prefLabel "SBI47"@en;
+    skos:notation "sbi47";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/sbi>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/sbi/sbi48>
+    a <http://finance.data.gov.uk/def/coins/Sbi>, skos:Concept;
+    rdfs:label "SBI48"@en;
+    skos:prefLabel "SBI48"@en;
+    skos:notation "sbi48";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/sbi>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/sbi/sbi51>
+    a <http://finance.data.gov.uk/def/coins/Sbi>, skos:Concept;
+    rdfs:label "SBI51"@en;
+    skos:prefLabel "SBI51"@en;
+    skos:notation "sbi51";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/sbi>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/sbi/sbi52>
+    a <http://finance.data.gov.uk/def/coins/Sbi>, skos:Concept;
+    rdfs:label "SBI52"@en;
+    skos:prefLabel "SBI52"@en;
+    skos:notation "sbi52";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/sbi>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/sbi/sbi53>
+    a <http://finance.data.gov.uk/def/coins/Sbi>, skos:Concept;
+    rdfs:label "SBI53"@en;
+    skos:prefLabel "SBI53"@en;
+    skos:notation "sbi53";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/sbi>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/sbi/sbi54>
+    a <http://finance.data.gov.uk/def/coins/Sbi>, skos:Concept;
+    rdfs:label "SBI54"@en;
+    skos:prefLabel "SBI54"@en;
+    skos:notation "sbi54";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/sbi>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/sbi/sbi55>
+    a <http://finance.data.gov.uk/def/coins/Sbi>, skos:Concept;
+    rdfs:label "SBI55"@en;
+    skos:prefLabel "SBI55"@en;
+    skos:notation "sbi55";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/sbi>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/sbi/sbi56>
+    a <http://finance.data.gov.uk/def/coins/Sbi>, skos:Concept;
+    rdfs:label "SBI56"@en;
+    skos:prefLabel "SBI56"@en;
+    skos:notation "sbi56";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/sbi>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/sbi/sbi57>
+    a <http://finance.data.gov.uk/def/coins/Sbi>, skos:Concept;
+    rdfs:label "SBI57"@en;
+    skos:prefLabel "SBI57"@en;
+    skos:notation "sbi57";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/sbi>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/sbi/sbi58>
+    a <http://finance.data.gov.uk/def/coins/Sbi>, skos:Concept;
+    rdfs:label "SBI58"@en;
+    skos:prefLabel "SBI58"@en;
+    skos:notation "sbi58";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/sbi>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/sbi/sbi60>
+    a <http://finance.data.gov.uk/def/coins/Sbi>, skos:Concept;
+    rdfs:label "SBI60"@en;
+    skos:prefLabel "SBI60"@en;
+    skos:notation "sbi60";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/sbi>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/sbi/sbi61>
+    a <http://finance.data.gov.uk/def/coins/Sbi>, skos:Concept;
+    rdfs:label "SBI61"@en;
+    skos:prefLabel "SBI61"@en;
+    skos:notation "sbi61";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/sbi>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/sbi/sbi62>
+    a <http://finance.data.gov.uk/def/coins/Sbi>, skos:Concept;
+    rdfs:label "SBI62"@en;
+    skos:prefLabel "SBI62"@en;
+    skos:notation "sbi62";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/sbi>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/sbi/sbi63>
+    a <http://finance.data.gov.uk/def/coins/Sbi>, skos:Concept;
+    rdfs:label "SBI63"@en;
+    skos:prefLabel "SBI63"@en;
+    skos:notation "sbi63";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/sbi>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/sbi/sbi64>
+    a <http://finance.data.gov.uk/def/coins/Sbi>, skos:Concept;
+    rdfs:label "SBI64"@en;
+    skos:prefLabel "SBI64"@en;
+    skos:notation "sbi64";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/sbi>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/sbi/sbi65>
+    a <http://finance.data.gov.uk/def/coins/Sbi>, skos:Concept;
+    rdfs:label "SBI65"@en;
+    skos:prefLabel "SBI65"@en;
+    skos:notation "sbi65";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/sbi>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/sbi/sbi66>
+    a <http://finance.data.gov.uk/def/coins/Sbi>, skos:Concept;
+    rdfs:label "SBI66"@en;
+    skos:prefLabel "SBI66"@en;
+    skos:notation "sbi66";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/sbi>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/sbi/sbi69>
+    a <http://finance.data.gov.uk/def/coins/Sbi>, skos:Concept;
+    rdfs:label "SBI69"@en;
+    skos:prefLabel "SBI69"@en;
+    skos:notation "sbi69";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/sbi>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/sbi/sbiix>
+    a <http://finance.data.gov.uk/def/coins/Sbi>, skos:Concept;
+    rdfs:label "SBIIX"@en;
+    skos:prefLabel "SBIIX"@en;
+    skos:notation "sbiix";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/sbi>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/sbi/sbisx>
+    a <http://finance.data.gov.uk/def/coins/Sbi>, skos:Concept;
+    rdfs:label "SBISX"@en;
+    skos:prefLabel "SBISX"@en;
+    skos:notation "sbisx";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/sbi>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/sbi/sbiwa>
+    a <http://finance.data.gov.uk/def/coins/Sbi>, skos:Concept;
+    rdfs:label "SBIWA"@en;
+    skos:prefLabel "SBIWA"@en;
+    skos:notation "sbiwa";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/sbi>;
+    
+    .

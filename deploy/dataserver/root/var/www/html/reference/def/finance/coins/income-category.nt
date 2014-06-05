@@ -1,0 +1,111 @@
+<http://finance.data.gov.uk/def/coins/income-category/sl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/IncomeCategory> .
+<http://finance.data.gov.uk/def/coins/income-category/sl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/income-category/sl> <http://www.w3.org/2000/01/rdf-schema#label> "Student loans"@en .
+<http://finance.data.gov.uk/def/coins/income-category/sl> <http://www.w3.org/2004/02/skos/core#prefLabel> "Student loans"@en .
+<http://finance.data.gov.uk/def/coins/income-category/sl> <http://www.w3.org/2004/02/skos/core#notation> "sl" .
+<http://finance.data.gov.uk/def/coins/income-category/sl> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/income-category/sl> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/income-category> .
+<http://finance.data.gov.uk/def/coins/income-category/lg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/IncomeCategory> .
+<http://finance.data.gov.uk/def/coins/income-category/lg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/income-category/lg> <http://www.w3.org/2000/01/rdf-schema#label> "Lottery grants"@en .
+<http://finance.data.gov.uk/def/coins/income-category/lg> <http://www.w3.org/2004/02/skos/core#prefLabel> "Lottery grants"@en .
+<http://finance.data.gov.uk/def/coins/income-category/lg> <http://www.w3.org/2004/02/skos/core#notation> "lg" .
+<http://finance.data.gov.uk/def/coins/income-category/lg> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/income-category/lg> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/income-category> .
+<http://finance.data.gov.uk/def/coins/income-category/cfers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/IncomeCategory> .
+<http://finance.data.gov.uk/def/coins/income-category/cfers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/income-category/cfers> <http://www.w3.org/2000/01/rdf-schema#label> "CFERs"@en .
+<http://finance.data.gov.uk/def/coins/income-category/cfers> <http://www.w3.org/2004/02/skos/core#prefLabel> "CFERs"@en .
+<http://finance.data.gov.uk/def/coins/income-category/cfers> <http://www.w3.org/2004/02/skos/core#notation> "cfers" .
+<http://finance.data.gov.uk/def/coins/income-category/cfers> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/income-category/cfers> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/income-category> .
+<http://finance.data.gov.uk/def/coins/statistical-concept/income-category> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/sdmx#Concept> .
+<http://finance.data.gov.uk/def/coins/statistical-concept/income-category> <http://www.w3.org/2000/01/rdf-schema#label> "income category"@en .
+<http://finance.data.gov.uk/def/coins/statistical-concept/income-category> <http://www.w3.org/2004/02/skos/core#prefLabel> "income category"@en .
+<http://finance.data.gov.uk/def/coins/statistical-concept/income-category> <http://www.w3.org/2000/01/rdf-schema#comment> "Determines where data appear in the Analysis of Appropriations in Aid Note of Supply Estimates." .
+<http://finance.data.gov.uk/def/coins/statistical-concept/income-category> <http://purl.org/dc/terms/source> <http://www.hm-treasury.gov.uk/d/coins_guidance.pdf> .
+<http://finance.data.gov.uk/def/coins/statistical-concept/income-category> <http://www.epimorphics.com/vocabs/coins-generate#columnName> "income_category" .
+<http://finance.data.gov.uk/def/coins/IncomeCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://finance.data.gov.uk/def/coins/IncomeCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://finance.data.gov.uk/def/coins/IncomeCategory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/IncomeCategory> <http://www.w3.org/2000/01/rdf-schema#label> "income category values class"@en .
+<http://finance.data.gov.uk/def/coins/IncomeCategory> <http://www.w3.org/2004/02/skos/core#prefLabel> "income category values class"@en .
+<http://finance.data.gov.uk/def/coins/IncomeCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of values in the income category code-list scheme" .
+<http://finance.data.gov.uk/def/coins/income-category/ps> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/IncomeCategory> .
+<http://finance.data.gov.uk/def/coins/income-category/ps> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/income-category/ps> <http://www.w3.org/2000/01/rdf-schema#label> "Pension scheme"@en .
+<http://finance.data.gov.uk/def/coins/income-category/ps> <http://www.w3.org/2004/02/skos/core#prefLabel> "Pension scheme"@en .
+<http://finance.data.gov.uk/def/coins/income-category/ps> <http://www.w3.org/2004/02/skos/core#notation> "ps" .
+<http://finance.data.gov.uk/def/coins/income-category/ps> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/income-category/ps> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/income-category> .
+<http://finance.data.gov.uk/def/coins/income-category> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://finance.data.gov.uk/def/coins/income-category> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/income-category/bl> .
+<http://finance.data.gov.uk/def/coins/income-category> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/income-category/og> .
+<http://finance.data.gov.uk/def/coins/income-category> <http://www.w3.org/2000/01/rdf-schema#label> "income category code list concept scheme"@en .
+<http://finance.data.gov.uk/def/coins/income-category> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/income-category/goods/serv> .
+<http://finance.data.gov.uk/def/coins/income-category> <http://www.w3.org/2004/02/skos/core#prefLabel> "income category code list concept scheme"@en .
+<http://finance.data.gov.uk/def/coins/income-category> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/income-category/eu-grants> .
+<http://finance.data.gov.uk/def/coins/income-category> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/income-category/interest/d> .
+<http://finance.data.gov.uk/def/coins/income-category> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/income-category/sl> .
+<http://finance.data.gov.uk/def/coins/income-category> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/income-category/lg> .
+<http://finance.data.gov.uk/def/coins/income-category> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/income-category/assets> .
+<http://finance.data.gov.uk/def/coins/income-category> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/income-category/cfers> .
+<http://finance.data.gov.uk/def/coins/income-category> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/income-category/ps> .
+<http://finance.data.gov.uk/def/coins/income-category> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/income-category/taxation> .
+<http://finance.data.gov.uk/def/coins/income-category> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/income-category/repayments> .
+<http://finance.data.gov.uk/def/coins/income-category/eu-grants> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/IncomeCategory> .
+<http://finance.data.gov.uk/def/coins/income-category/eu-grants> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/income-category/eu-grants> <http://www.w3.org/2000/01/rdf-schema#label> "EU grants"@en .
+<http://finance.data.gov.uk/def/coins/income-category/eu-grants> <http://www.w3.org/2004/02/skos/core#prefLabel> "EU grants"@en .
+<http://finance.data.gov.uk/def/coins/income-category/eu-grants> <http://www.w3.org/2004/02/skos/core#notation> "eu-grants" .
+<http://finance.data.gov.uk/def/coins/income-category/eu-grants> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/income-category/eu-grants> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/income-category> .
+<http://finance.data.gov.uk/def/coins/income-category/interest/d> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/IncomeCategory> .
+<http://finance.data.gov.uk/def/coins/income-category/interest/d> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/income-category/interest/d> <http://www.w3.org/2000/01/rdf-schema#label> "Interest/dividends"@en .
+<http://finance.data.gov.uk/def/coins/income-category/interest/d> <http://www.w3.org/2004/02/skos/core#prefLabel> "Interest/dividends"@en .
+<http://finance.data.gov.uk/def/coins/income-category/interest/d> <http://www.w3.org/2004/02/skos/core#notation> "interest/d" .
+<http://finance.data.gov.uk/def/coins/income-category/interest/d> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/income-category/interest/d> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/income-category> .
+<http://finance.data.gov.uk/def/coins/income-category/bl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/IncomeCategory> .
+<http://finance.data.gov.uk/def/coins/income-category/bl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/income-category/bl> <http://www.w3.org/2000/01/rdf-schema#label> "Broadcast licence"@en .
+<http://finance.data.gov.uk/def/coins/income-category/bl> <http://www.w3.org/2004/02/skos/core#prefLabel> "Broadcast licence"@en .
+<http://finance.data.gov.uk/def/coins/income-category/bl> <http://www.w3.org/2004/02/skos/core#notation> "bl" .
+<http://finance.data.gov.uk/def/coins/income-category/bl> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/income-category/bl> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/income-category> .
+<http://finance.data.gov.uk/def/coins/income-category/goods/serv> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/IncomeCategory> .
+<http://finance.data.gov.uk/def/coins/income-category/goods/serv> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/income-category/goods/serv> <http://www.w3.org/2000/01/rdf-schema#label> "Goods/services"@en .
+<http://finance.data.gov.uk/def/coins/income-category/goods/serv> <http://www.w3.org/2004/02/skos/core#prefLabel> "Goods/services"@en .
+<http://finance.data.gov.uk/def/coins/income-category/goods/serv> <http://www.w3.org/2004/02/skos/core#notation> "goods/serv" .
+<http://finance.data.gov.uk/def/coins/income-category/goods/serv> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/income-category/goods/serv> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/income-category> .
+<http://finance.data.gov.uk/def/coins/income-category/taxation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/IncomeCategory> .
+<http://finance.data.gov.uk/def/coins/income-category/taxation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/income-category/taxation> <http://www.w3.org/2000/01/rdf-schema#label> "Taxation"@en .
+<http://finance.data.gov.uk/def/coins/income-category/taxation> <http://www.w3.org/2004/02/skos/core#prefLabel> "Taxation"@en .
+<http://finance.data.gov.uk/def/coins/income-category/taxation> <http://www.w3.org/2004/02/skos/core#notation> "taxation" .
+<http://finance.data.gov.uk/def/coins/income-category/taxation> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/income-category/taxation> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/income-category> .
+<http://finance.data.gov.uk/def/coins/income-category/repayments> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/IncomeCategory> .
+<http://finance.data.gov.uk/def/coins/income-category/repayments> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/income-category/repayments> <http://www.w3.org/2000/01/rdf-schema#label> "Repayments"@en .
+<http://finance.data.gov.uk/def/coins/income-category/repayments> <http://www.w3.org/2004/02/skos/core#prefLabel> "Repayments"@en .
+<http://finance.data.gov.uk/def/coins/income-category/repayments> <http://www.w3.org/2004/02/skos/core#notation> "repayments" .
+<http://finance.data.gov.uk/def/coins/income-category/repayments> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/income-category/repayments> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/income-category> .
+<http://finance.data.gov.uk/def/coins/income-category/assets> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/IncomeCategory> .
+<http://finance.data.gov.uk/def/coins/income-category/assets> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/income-category/assets> <http://www.w3.org/2000/01/rdf-schema#label> "Assets"@en .
+<http://finance.data.gov.uk/def/coins/income-category/assets> <http://www.w3.org/2004/02/skos/core#prefLabel> "Assets"@en .
+<http://finance.data.gov.uk/def/coins/income-category/assets> <http://www.w3.org/2004/02/skos/core#notation> "assets" .
+<http://finance.data.gov.uk/def/coins/income-category/assets> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/income-category/assets> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/income-category> .
+<http://finance.data.gov.uk/def/coins/income-category/og> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/IncomeCategory> .
+<http://finance.data.gov.uk/def/coins/income-category/og> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/income-category/og> <http://www.w3.org/2000/01/rdf-schema#label> "Other grants"@en .
+<http://finance.data.gov.uk/def/coins/income-category/og> <http://www.w3.org/2004/02/skos/core#prefLabel> "Other grants"@en .
+<http://finance.data.gov.uk/def/coins/income-category/og> <http://www.w3.org/2004/02/skos/core#notation> "og" .
+<http://finance.data.gov.uk/def/coins/income-category/og> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/income-category/og> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/income-category> .

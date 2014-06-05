@@ -1,0 +1,685 @@
+# Generated 2010-11-09T16:53:43+00:00
+
+@prefix rdf:                <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:               <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:                <http://www.w3.org/2002/07/owl#> .
+@prefix skos:               <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd:                <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:               <http://xmlns.com/foaf/0.1/> .
+@prefix void:               <http://rdfs.org/ns/void#> .
+@prefix dcterms:            <http://purl.org/dc/terms/> .
+@prefix sdmx:               <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept:       <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:     <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:     <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:       <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-code:          <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:       <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix qb:                 <http://purl.org/linked-data/cube#> .
+@prefix coins-data:         <http://source.data.gov.uk/data/coins/> .
+@prefix coins-dsd:          <http://finance.data.gov.uk/dsd/coins/> .
+@prefix coins-dimension:    <http://finance.data.gov.uk/dsd/coins/dimension/> .
+@prefix coins-attribute:    <http://finance.data.gov.uk/dsd/coins/attribute/> .
+@prefix coins-measure:      <http://finance.data.gov.uk/dsd/coins/measure/> .
+@prefix coins-slicekey:     <http://finance.data.gov.uk/dsd/coins/slice/> .
+
+<http://finance.data.gov.uk/def/coins/statistical-concept/department-group>
+    a sdmx:Concept;
+    rdfs:label "department group"@en;
+    skos:prefLabel "department group"@en;
+    rdfs:comment """Used to group organisations, such as NDPBs, which together form a departmental group.""";
+    <http://purl.org/dc/terms/source> <http://www.hm-treasury.gov.uk/d/coins_guidance.pdf>;
+    <http://www.epimorphics.com/vocabs/coins-generate#columnName> "dept_group"
+    .
+
+<http://finance.data.gov.uk/def/coins/DepartmentGroup>
+    a rdfs:Class, owl:Class;
+    rdfs:subClassOf skos:Concept;
+    rdfs:label "department group values class"@en;
+    skos:prefLabel "department group values class"@en;
+    rdfs:comment "The class of values in the department group code-list scheme";
+    .
+
+<http://finance.data.gov.uk/def/coins/department-group>
+    a skos:ConceptScheme;
+    rdfs:label "department group code list concept scheme"@en;
+    skos:prefLabel "department group code list concept scheme"@en;
+    skos:hasTopConcept <http://finance.data.gov.uk/def/coins/department-group/dept003>,
+          <http://finance.data.gov.uk/def/coins/department-group/dept004>,
+          <http://finance.data.gov.uk/def/coins/department-group/dept005>,
+          <http://finance.data.gov.uk/def/coins/department-group/dept006>,
+          <http://finance.data.gov.uk/def/coins/department-group/dept009>,
+          <http://finance.data.gov.uk/def/coins/department-group/dept010>,
+          <http://finance.data.gov.uk/def/coins/department-group/dept011>,
+          <http://finance.data.gov.uk/def/coins/department-group/dept013>,
+          <http://finance.data.gov.uk/def/coins/department-group/dept014>,
+          <http://finance.data.gov.uk/def/coins/department-group/dept015>,
+          <http://finance.data.gov.uk/def/coins/department-group/dept016>,
+          <http://finance.data.gov.uk/def/coins/department-group/dept017>,
+          <http://finance.data.gov.uk/def/coins/department-group/dept019>,
+          <http://finance.data.gov.uk/def/coins/department-group/dept020>,
+          <http://finance.data.gov.uk/def/coins/department-group/dept022>,
+          <http://finance.data.gov.uk/def/coins/department-group/dept025>,
+          <http://finance.data.gov.uk/def/coins/department-group/dept026>,
+          <http://finance.data.gov.uk/def/coins/department-group/dept027>,
+          <http://finance.data.gov.uk/def/coins/department-group/dept028>,
+          <http://finance.data.gov.uk/def/coins/department-group/dept029>,
+          <http://finance.data.gov.uk/def/coins/department-group/dept030>,
+          <http://finance.data.gov.uk/def/coins/department-group/dept031>,
+          <http://finance.data.gov.uk/def/coins/department-group/dept032>,
+          <http://finance.data.gov.uk/def/coins/department-group/dept033>,
+          <http://finance.data.gov.uk/def/coins/department-group/dept034>,
+          <http://finance.data.gov.uk/def/coins/department-group/dept035>,
+          <http://finance.data.gov.uk/def/coins/department-group/dept036>,
+          <http://finance.data.gov.uk/def/coins/department-group/dept037>,
+          <http://finance.data.gov.uk/def/coins/department-group/dept038>,
+          <http://finance.data.gov.uk/def/coins/department-group/dept041>,
+          <http://finance.data.gov.uk/def/coins/department-group/dept045>,
+          <http://finance.data.gov.uk/def/coins/department-group/dept046>,
+          <http://finance.data.gov.uk/def/coins/department-group/dept047>,
+          <http://finance.data.gov.uk/def/coins/department-group/dept048>,
+          <http://finance.data.gov.uk/def/coins/department-group/dept049>,
+          <http://finance.data.gov.uk/def/coins/department-group/dept050>,
+          <http://finance.data.gov.uk/def/coins/department-group/dept057>,
+          <http://finance.data.gov.uk/def/coins/department-group/dept060>,
+          <http://finance.data.gov.uk/def/coins/department-group/dept061>,
+          <http://finance.data.gov.uk/def/coins/department-group/dept062>,
+          <http://finance.data.gov.uk/def/coins/department-group/dept063>,
+          <http://finance.data.gov.uk/def/coins/department-group/dept064>,
+          <http://finance.data.gov.uk/def/coins/department-group/dept065>,
+          <http://finance.data.gov.uk/def/coins/department-group/dept066>,
+          <http://finance.data.gov.uk/def/coins/department-group/dept067>,
+          <http://finance.data.gov.uk/def/coins/department-group/dept068>,
+          <http://finance.data.gov.uk/def/coins/department-group/dept069>,
+          <http://finance.data.gov.uk/def/coins/department-group/dept074>,
+          <http://finance.data.gov.uk/def/coins/department-group/dept075>,
+          <http://finance.data.gov.uk/def/coins/department-group/dept081>,
+          <http://finance.data.gov.uk/def/coins/department-group/dept084>,
+          <http://finance.data.gov.uk/def/coins/department-group/dept085>,
+          <http://finance.data.gov.uk/def/coins/department-group/dept087>,
+          <http://finance.data.gov.uk/def/coins/department-group/dept088>,
+          <http://finance.data.gov.uk/def/coins/department-group/dept089>,
+          <http://finance.data.gov.uk/def/coins/department-group/dept090>,
+          <http://finance.data.gov.uk/def/coins/department-group/dept097>,
+          <http://finance.data.gov.uk/def/coins/department-group/dept099>
+    .
+
+<http://finance.data.gov.uk/def/coins/department-group/dept003>
+    a <http://finance.data.gov.uk/def/coins/DepartmentGroup>, skos:Concept;
+    rdfs:label "Dept003"@en;
+    skos:prefLabel "Dept003"@en;
+    skos:notation "dept003";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-group>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-group/dept004>
+    a <http://finance.data.gov.uk/def/coins/DepartmentGroup>, skos:Concept;
+    rdfs:label "Dept004"@en;
+    skos:prefLabel "Dept004"@en;
+    skos:notation "dept004";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-group>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-group/dept005>
+    a <http://finance.data.gov.uk/def/coins/DepartmentGroup>, skos:Concept;
+    rdfs:label "Dept005"@en;
+    skos:prefLabel "Dept005"@en;
+    skos:notation "dept005";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-group>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-group/dept006>
+    a <http://finance.data.gov.uk/def/coins/DepartmentGroup>, skos:Concept;
+    rdfs:label "Dept006"@en;
+    skos:prefLabel "Dept006"@en;
+    skos:notation "dept006";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-group>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-group/dept009>
+    a <http://finance.data.gov.uk/def/coins/DepartmentGroup>, skos:Concept;
+    rdfs:label "Dept009"@en;
+    skos:prefLabel "Dept009"@en;
+    skos:notation "dept009";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-group>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-group/dept010>
+    a <http://finance.data.gov.uk/def/coins/DepartmentGroup>, skos:Concept;
+    rdfs:label "Dept010"@en;
+    skos:prefLabel "Dept010"@en;
+    skos:notation "dept010";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-group>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-group/dept011>
+    a <http://finance.data.gov.uk/def/coins/DepartmentGroup>, skos:Concept;
+    rdfs:label "Dept011"@en;
+    skos:prefLabel "Dept011"@en;
+    skos:notation "dept011";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-group>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-group/dept013>
+    a <http://finance.data.gov.uk/def/coins/DepartmentGroup>, skos:Concept;
+    rdfs:label "Dept013"@en;
+    skos:prefLabel "Dept013"@en;
+    skos:notation "dept013";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-group>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-group/dept014>
+    a <http://finance.data.gov.uk/def/coins/DepartmentGroup>, skos:Concept;
+    rdfs:label "Dept014"@en;
+    skos:prefLabel "Dept014"@en;
+    skos:notation "dept014";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-group>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-group/dept015>
+    a <http://finance.data.gov.uk/def/coins/DepartmentGroup>, skos:Concept;
+    rdfs:label "Dept015"@en;
+    skos:prefLabel "Dept015"@en;
+    skos:notation "dept015";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-group>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-group/dept016>
+    a <http://finance.data.gov.uk/def/coins/DepartmentGroup>, skos:Concept;
+    rdfs:label "Dept016"@en;
+    skos:prefLabel "Dept016"@en;
+    skos:notation "dept016";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-group>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-group/dept017>
+    a <http://finance.data.gov.uk/def/coins/DepartmentGroup>, skos:Concept;
+    rdfs:label "Dept017"@en;
+    skos:prefLabel "Dept017"@en;
+    skos:notation "dept017";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-group>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-group/dept019>
+    a <http://finance.data.gov.uk/def/coins/DepartmentGroup>, skos:Concept;
+    rdfs:label "Dept019"@en;
+    skos:prefLabel "Dept019"@en;
+    skos:notation "dept019";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-group>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-group/dept020>
+    a <http://finance.data.gov.uk/def/coins/DepartmentGroup>, skos:Concept;
+    rdfs:label "Dept020"@en;
+    skos:prefLabel "Dept020"@en;
+    skos:notation "dept020";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-group>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-group/dept022>
+    a <http://finance.data.gov.uk/def/coins/DepartmentGroup>, skos:Concept;
+    rdfs:label "Dept022"@en;
+    skos:prefLabel "Dept022"@en;
+    skos:notation "dept022";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-group>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-group/dept025>
+    a <http://finance.data.gov.uk/def/coins/DepartmentGroup>, skos:Concept;
+    rdfs:label "Dept025"@en;
+    skos:prefLabel "Dept025"@en;
+    skos:notation "dept025";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-group>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-group/dept026>
+    a <http://finance.data.gov.uk/def/coins/DepartmentGroup>, skos:Concept;
+    rdfs:label "Dept026"@en;
+    skos:prefLabel "Dept026"@en;
+    skos:notation "dept026";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-group>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-group/dept027>
+    a <http://finance.data.gov.uk/def/coins/DepartmentGroup>, skos:Concept;
+    rdfs:label "Dept027"@en;
+    skos:prefLabel "Dept027"@en;
+    skos:notation "dept027";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-group>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-group/dept028>
+    a <http://finance.data.gov.uk/def/coins/DepartmentGroup>, skos:Concept;
+    rdfs:label "Dept028"@en;
+    skos:prefLabel "Dept028"@en;
+    skos:notation "dept028";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-group>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-group/dept029>
+    a <http://finance.data.gov.uk/def/coins/DepartmentGroup>, skos:Concept;
+    rdfs:label "Dept029"@en;
+    skos:prefLabel "Dept029"@en;
+    skos:notation "dept029";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-group>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-group/dept030>
+    a <http://finance.data.gov.uk/def/coins/DepartmentGroup>, skos:Concept;
+    rdfs:label "Dept030"@en;
+    skos:prefLabel "Dept030"@en;
+    skos:notation "dept030";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-group>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-group/dept031>
+    a <http://finance.data.gov.uk/def/coins/DepartmentGroup>, skos:Concept;
+    rdfs:label "Dept031"@en;
+    skos:prefLabel "Dept031"@en;
+    skos:notation "dept031";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-group>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-group/dept032>
+    a <http://finance.data.gov.uk/def/coins/DepartmentGroup>, skos:Concept;
+    rdfs:label "Dept032"@en;
+    skos:prefLabel "Dept032"@en;
+    skos:notation "dept032";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-group>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-group/dept033>
+    a <http://finance.data.gov.uk/def/coins/DepartmentGroup>, skos:Concept;
+    rdfs:label "Dept033"@en;
+    skos:prefLabel "Dept033"@en;
+    skos:notation "dept033";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-group>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-group/dept034>
+    a <http://finance.data.gov.uk/def/coins/DepartmentGroup>, skos:Concept;
+    rdfs:label "Dept034"@en;
+    skos:prefLabel "Dept034"@en;
+    skos:notation "dept034";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-group>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-group/dept035>
+    a <http://finance.data.gov.uk/def/coins/DepartmentGroup>, skos:Concept;
+    rdfs:label "Dept035"@en;
+    skos:prefLabel "Dept035"@en;
+    skos:notation "dept035";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-group>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-group/dept036>
+    a <http://finance.data.gov.uk/def/coins/DepartmentGroup>, skos:Concept;
+    rdfs:label "Dept036"@en;
+    skos:prefLabel "Dept036"@en;
+    skos:notation "dept036";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-group>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-group/dept037>
+    a <http://finance.data.gov.uk/def/coins/DepartmentGroup>, skos:Concept;
+    rdfs:label "Dept037"@en;
+    skos:prefLabel "Dept037"@en;
+    skos:notation "dept037";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-group>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-group/dept038>
+    a <http://finance.data.gov.uk/def/coins/DepartmentGroup>, skos:Concept;
+    rdfs:label "Dept038"@en;
+    skos:prefLabel "Dept038"@en;
+    skos:notation "dept038";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-group>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-group/dept041>
+    a <http://finance.data.gov.uk/def/coins/DepartmentGroup>, skos:Concept;
+    rdfs:label "Dept041"@en;
+    skos:prefLabel "Dept041"@en;
+    skos:notation "dept041";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-group>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-group/dept045>
+    a <http://finance.data.gov.uk/def/coins/DepartmentGroup>, skos:Concept;
+    rdfs:label "Dept045"@en;
+    skos:prefLabel "Dept045"@en;
+    skos:notation "dept045";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-group>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-group/dept046>
+    a <http://finance.data.gov.uk/def/coins/DepartmentGroup>, skos:Concept;
+    rdfs:label "Dept046"@en;
+    skos:prefLabel "Dept046"@en;
+    skos:notation "dept046";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-group>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-group/dept047>
+    a <http://finance.data.gov.uk/def/coins/DepartmentGroup>, skos:Concept;
+    rdfs:label "Dept047"@en;
+    skos:prefLabel "Dept047"@en;
+    skos:notation "dept047";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-group>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-group/dept048>
+    a <http://finance.data.gov.uk/def/coins/DepartmentGroup>, skos:Concept;
+    rdfs:label "Dept048"@en;
+    skos:prefLabel "Dept048"@en;
+    skos:notation "dept048";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-group>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-group/dept049>
+    a <http://finance.data.gov.uk/def/coins/DepartmentGroup>, skos:Concept;
+    rdfs:label "Dept049"@en;
+    skos:prefLabel "Dept049"@en;
+    skos:notation "dept049";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-group>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-group/dept050>
+    a <http://finance.data.gov.uk/def/coins/DepartmentGroup>, skos:Concept;
+    rdfs:label "Dept050"@en;
+    skos:prefLabel "Dept050"@en;
+    skos:notation "dept050";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-group>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-group/dept057>
+    a <http://finance.data.gov.uk/def/coins/DepartmentGroup>, skos:Concept;
+    rdfs:label "Dept057"@en;
+    skos:prefLabel "Dept057"@en;
+    skos:notation "dept057";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-group>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-group/dept060>
+    a <http://finance.data.gov.uk/def/coins/DepartmentGroup>, skos:Concept;
+    rdfs:label "Dept060"@en;
+    skos:prefLabel "Dept060"@en;
+    skos:notation "dept060";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-group>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-group/dept061>
+    a <http://finance.data.gov.uk/def/coins/DepartmentGroup>, skos:Concept;
+    rdfs:label "Dept061"@en;
+    skos:prefLabel "Dept061"@en;
+    skos:notation "dept061";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-group>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-group/dept062>
+    a <http://finance.data.gov.uk/def/coins/DepartmentGroup>, skos:Concept;
+    rdfs:label "Dept062"@en;
+    skos:prefLabel "Dept062"@en;
+    skos:notation "dept062";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-group>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-group/dept063>
+    a <http://finance.data.gov.uk/def/coins/DepartmentGroup>, skos:Concept;
+    rdfs:label "Dept063"@en;
+    skos:prefLabel "Dept063"@en;
+    skos:notation "dept063";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-group>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-group/dept064>
+    a <http://finance.data.gov.uk/def/coins/DepartmentGroup>, skos:Concept;
+    rdfs:label "Dept064"@en;
+    skos:prefLabel "Dept064"@en;
+    skos:notation "dept064";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-group>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-group/dept065>
+    a <http://finance.data.gov.uk/def/coins/DepartmentGroup>, skos:Concept;
+    rdfs:label "Dept065"@en;
+    skos:prefLabel "Dept065"@en;
+    skos:notation "dept065";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-group>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-group/dept066>
+    a <http://finance.data.gov.uk/def/coins/DepartmentGroup>, skos:Concept;
+    rdfs:label "Dept066"@en;
+    skos:prefLabel "Dept066"@en;
+    skos:notation "dept066";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-group>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-group/dept067>
+    a <http://finance.data.gov.uk/def/coins/DepartmentGroup>, skos:Concept;
+    rdfs:label "Dept067"@en;
+    skos:prefLabel "Dept067"@en;
+    skos:notation "dept067";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-group>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-group/dept068>
+    a <http://finance.data.gov.uk/def/coins/DepartmentGroup>, skos:Concept;
+    rdfs:label "Dept068"@en;
+    skos:prefLabel "Dept068"@en;
+    skos:notation "dept068";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-group>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-group/dept069>
+    a <http://finance.data.gov.uk/def/coins/DepartmentGroup>, skos:Concept;
+    rdfs:label "Dept069"@en;
+    skos:prefLabel "Dept069"@en;
+    skos:notation "dept069";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-group>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-group/dept074>
+    a <http://finance.data.gov.uk/def/coins/DepartmentGroup>, skos:Concept;
+    rdfs:label "Dept074"@en;
+    skos:prefLabel "Dept074"@en;
+    skos:notation "dept074";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-group>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-group/dept075>
+    a <http://finance.data.gov.uk/def/coins/DepartmentGroup>, skos:Concept;
+    rdfs:label "Dept075"@en;
+    skos:prefLabel "Dept075"@en;
+    skos:notation "dept075";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-group>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-group/dept081>
+    a <http://finance.data.gov.uk/def/coins/DepartmentGroup>, skos:Concept;
+    rdfs:label "Dept081"@en;
+    skos:prefLabel "Dept081"@en;
+    skos:notation "dept081";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-group>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-group/dept084>
+    a <http://finance.data.gov.uk/def/coins/DepartmentGroup>, skos:Concept;
+    rdfs:label "Dept084"@en;
+    skos:prefLabel "Dept084"@en;
+    skos:notation "dept084";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-group>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-group/dept085>
+    a <http://finance.data.gov.uk/def/coins/DepartmentGroup>, skos:Concept;
+    rdfs:label "Dept085"@en;
+    skos:prefLabel "Dept085"@en;
+    skos:notation "dept085";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-group>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-group/dept087>
+    a <http://finance.data.gov.uk/def/coins/DepartmentGroup>, skos:Concept;
+    rdfs:label "Dept087"@en;
+    skos:prefLabel "Dept087"@en;
+    skos:notation "dept087";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-group>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-group/dept088>
+    a <http://finance.data.gov.uk/def/coins/DepartmentGroup>, skos:Concept;
+    rdfs:label "Dept088"@en;
+    skos:prefLabel "Dept088"@en;
+    skos:notation "dept088";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-group>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-group/dept089>
+    a <http://finance.data.gov.uk/def/coins/DepartmentGroup>, skos:Concept;
+    rdfs:label "Dept089"@en;
+    skos:prefLabel "Dept089"@en;
+    skos:notation "dept089";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-group>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-group/dept090>
+    a <http://finance.data.gov.uk/def/coins/DepartmentGroup>, skos:Concept;
+    rdfs:label "Dept090"@en;
+    skos:prefLabel "Dept090"@en;
+    skos:notation "dept090";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-group>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-group/dept097>
+    a <http://finance.data.gov.uk/def/coins/DepartmentGroup>, skos:Concept;
+    rdfs:label "Dept097"@en;
+    skos:prefLabel "Dept097"@en;
+    skos:notation "dept097";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-group>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/department-group/dept099>
+    a <http://finance.data.gov.uk/def/coins/DepartmentGroup>, skos:Concept;
+    rdfs:label "Dept099"@en;
+    skos:prefLabel "Dept099"@en;
+    skos:notation "dept099";
+    rdfs:comment "";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/department-group>;
+    
+    .

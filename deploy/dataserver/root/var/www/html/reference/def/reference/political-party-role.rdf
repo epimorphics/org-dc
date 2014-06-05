@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:dct="http://purl.org/dc/terms/"
+   xmlns:foaf="http://xmlns.com/foaf/0.1/"
+   xmlns:org="http://www.w3.org/ns/org#"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:parl="http://reference.data.gov.uk/def/parliament/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+   xmlns:void="http://rdfs.org/ns/void#"
+   xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <skos:ConceptScheme rdf:about="http://reference.data.gov.uk/def/political-party-role">
+    <dct:title xml:lang="en">Party Political Roles</dct:title>
+    <void:exampleResource rdf:resource="http://reference.data.gov.uk/def/political-party-role/member"/>
+    <void:vocabulary rdf:resource="http://reference.data.gov.uk/def/parliament/"/>
+    <void:vocabulary rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
+    <void:vocabulary rdf:resource="http://www.w3.org/ns/org#"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#DataSet"/>
+    <rdfs:label xml:lang="en">Party Political Roles</rdfs:label>
+    <skos:prefLabel xml:lang="en">Party Political Roles</skos:prefLabel>
+    <skos:topConcept rdf:resource="http://reference.data.gov.uk/def/political-party-role/member"/>
+  </skos:ConceptScheme>
+  <org:Role rdf:about="http://reference.data.gov.uk/def/political-party-role/member">
+    <skos:prefLabel xml:lang="en">Member</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/political-party-role"/>
+    <org:roleProperty rdf:resource="http://reference.data.gov.uk/def/parliament/partyMemberOf"/>
+  </org:Role>
+</rdf:RDF>

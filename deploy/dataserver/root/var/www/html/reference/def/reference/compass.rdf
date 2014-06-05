@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:compass="http://reference.data.gov.uk/def/compass/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+   xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <skos:ConceptScheme rdf:about="http://reference.data.gov.uk/def/compass">
+    <skos:prefLabel xml:lang="en">Compass Directions</skos:prefLabel>
+  </skos:ConceptScheme>
+  <rdfs:Class rdf:about="http://reference.data.gov.uk/def/compass/Direction">
+    <rdfs:label xml:lang="en">Compass Direction</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdfs:Class>
+  <compass:Direction rdf:about="http://reference.data.gov.uk/def/compass/E">
+    <skos:altLabel xml:lang="en">E</skos:altLabel>
+    <skos:prefLabel xml:lang="en">East</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/compass"/>
+  </compass:Direction>
+  <compass:Direction rdf:about="http://reference.data.gov.uk/def/compass/N">
+    <skos:altLabel xml:lang="en">N</skos:altLabel>
+    <skos:prefLabel xml:lang="en">North</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/compass"/>
+  </compass:Direction>
+  <compass:Direction rdf:about="http://reference.data.gov.uk/def/compass/NE">
+    <skos:altLabel xml:lang="en">NE</skos:altLabel>
+    <skos:prefLabel xml:lang="en">North East</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/compass"/>
+  </compass:Direction>
+  <compass:Direction rdf:about="http://reference.data.gov.uk/def/compass/NW">
+    <skos:altLabel xml:lang="en">NW</skos:altLabel>
+    <skos:prefLabel xml:lang="en">North West</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/compass"/>
+  </compass:Direction>
+  <compass:Direction rdf:about="http://reference.data.gov.uk/def/compass/S">
+    <skos:altLabel xml:lang="en">S</skos:altLabel>
+    <skos:prefLabel xml:lang="en">South</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/compass"/>
+  </compass:Direction>
+  <compass:Direction rdf:about="http://reference.data.gov.uk/def/compass/SE">
+    <skos:altLabel xml:lang="en">SE</skos:altLabel>
+    <skos:prefLabel xml:lang="en">South East</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/compass"/>
+  </compass:Direction>
+  <compass:Direction rdf:about="http://reference.data.gov.uk/def/compass/SW">
+    <skos:altLabel xml:lang="en">SW</skos:altLabel>
+    <skos:prefLabel xml:lang="en">South West</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/compass"/>
+  </compass:Direction>
+  <compass:Direction rdf:about="http://reference.data.gov.uk/def/compass/W">
+    <skos:altLabel xml:lang="en">W</skos:altLabel>
+    <skos:prefLabel xml:lang="en">West</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/compass"/>
+  </compass:Direction>
+</rdf:RDF>

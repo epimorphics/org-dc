@@ -1,0 +1,71 @@
+<http://finance.data.gov.uk/def/coins/request-for-resources-next-year/r04ny> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/RequestForResourcesNextYear> .
+<http://finance.data.gov.uk/def/coins/request-for-resources-next-year/r04ny> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/request-for-resources-next-year/r04ny> <http://www.w3.org/2000/01/rdf-schema#label> "RfR04_next-yr"@en .
+<http://finance.data.gov.uk/def/coins/request-for-resources-next-year/r04ny> <http://www.w3.org/2004/02/skos/core#prefLabel> "RfR04_next-yr"@en .
+<http://finance.data.gov.uk/def/coins/request-for-resources-next-year/r04ny> <http://www.w3.org/2004/02/skos/core#notation> "r04ny" .
+<http://finance.data.gov.uk/def/coins/request-for-resources-next-year/r04ny> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/request-for-resources-next-year/r04ny> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/request-for-resources-next-year> .
+<http://finance.data.gov.uk/def/coins/RequestForResourcesNextYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://finance.data.gov.uk/def/coins/RequestForResourcesNextYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://finance.data.gov.uk/def/coins/RequestForResourcesNextYear> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/RequestForResourcesNextYear> <http://www.w3.org/2000/01/rdf-schema#label> "request for resources next year values class"@en .
+<http://finance.data.gov.uk/def/coins/RequestForResourcesNextYear> <http://www.w3.org/2004/02/skos/core#prefLabel> "request for resources next year values class"@en .
+<http://finance.data.gov.uk/def/coins/RequestForResourcesNextYear> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of values in the request for resources next year code-list scheme" .
+<http://finance.data.gov.uk/def/coins/request-for-resources-next-year/r06ny> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/RequestForResourcesNextYear> .
+<http://finance.data.gov.uk/def/coins/request-for-resources-next-year/r06ny> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/request-for-resources-next-year/r06ny> <http://www.w3.org/2000/01/rdf-schema#label> "RfR06_next-yr"@en .
+<http://finance.data.gov.uk/def/coins/request-for-resources-next-year/r06ny> <http://www.w3.org/2004/02/skos/core#prefLabel> "RfR06_next-yr"@en .
+<http://finance.data.gov.uk/def/coins/request-for-resources-next-year/r06ny> <http://www.w3.org/2004/02/skos/core#notation> "r06ny" .
+<http://finance.data.gov.uk/def/coins/request-for-resources-next-year/r06ny> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/request-for-resources-next-year/r06ny> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/request-for-resources-next-year> .
+<http://finance.data.gov.uk/def/coins/request-for-resources-next-year/r01ny> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/RequestForResourcesNextYear> .
+<http://finance.data.gov.uk/def/coins/request-for-resources-next-year/r01ny> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/request-for-resources-next-year/r01ny> <http://www.w3.org/2000/01/rdf-schema#label> "RfR01_next-yr"@en .
+<http://finance.data.gov.uk/def/coins/request-for-resources-next-year/r01ny> <http://www.w3.org/2004/02/skos/core#prefLabel> "RfR01_next-yr"@en .
+<http://finance.data.gov.uk/def/coins/request-for-resources-next-year/r01ny> <http://www.w3.org/2004/02/skos/core#notation> "r01ny" .
+<http://finance.data.gov.uk/def/coins/request-for-resources-next-year/r01ny> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/request-for-resources-next-year/r01ny> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/request-for-resources-next-year> .
+<http://finance.data.gov.uk/def/coins/request-for-resources-next-year> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://finance.data.gov.uk/def/coins/request-for-resources-next-year> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/request-for-resources-next-year/r01ny> .
+<http://finance.data.gov.uk/def/coins/request-for-resources-next-year> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/request-for-resources-next-year/r05ny> .
+<http://finance.data.gov.uk/def/coins/request-for-resources-next-year> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/request-for-resources-next-year/r02ny> .
+<http://finance.data.gov.uk/def/coins/request-for-resources-next-year> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/request-for-resources-next-year/r03ny> .
+<http://finance.data.gov.uk/def/coins/request-for-resources-next-year> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/request-for-resources-next-year/r06ny> .
+<http://finance.data.gov.uk/def/coins/request-for-resources-next-year> <http://www.w3.org/2000/01/rdf-schema#label> "request for resources next year code list concept scheme"@en .
+<http://finance.data.gov.uk/def/coins/request-for-resources-next-year> <http://www.w3.org/2004/02/skos/core#prefLabel> "request for resources next year code list concept scheme"@en .
+<http://finance.data.gov.uk/def/coins/request-for-resources-next-year> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/request-for-resources-next-year/r04ny> .
+<http://finance.data.gov.uk/def/coins/request-for-resources-next-year> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/request-for-resources-next-year/r00ny> .
+<http://finance.data.gov.uk/def/coins/request-for-resources-next-year/r03ny> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/RequestForResourcesNextYear> .
+<http://finance.data.gov.uk/def/coins/request-for-resources-next-year/r03ny> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/request-for-resources-next-year/r03ny> <http://www.w3.org/2000/01/rdf-schema#label> "RfR03_next-yr"@en .
+<http://finance.data.gov.uk/def/coins/request-for-resources-next-year/r03ny> <http://www.w3.org/2004/02/skos/core#prefLabel> "RfR03_next-yr"@en .
+<http://finance.data.gov.uk/def/coins/request-for-resources-next-year/r03ny> <http://www.w3.org/2004/02/skos/core#notation> "r03ny" .
+<http://finance.data.gov.uk/def/coins/request-for-resources-next-year/r03ny> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/request-for-resources-next-year/r03ny> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/request-for-resources-next-year> .
+<http://finance.data.gov.uk/def/coins/statistical-concept/request-for-resources-next-year> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/sdmx#Concept> .
+<http://finance.data.gov.uk/def/coins/statistical-concept/request-for-resources-next-year> <http://www.w3.org/2000/01/rdf-schema#label> "request for resources next year"@en .
+<http://finance.data.gov.uk/def/coins/statistical-concept/request-for-resources-next-year> <http://www.w3.org/2004/02/skos/core#prefLabel> "request for resources next year"@en .
+<http://finance.data.gov.uk/def/coins/statistical-concept/request-for-resources-next-year> <http://www.w3.org/2000/01/rdf-schema#comment> "Used for Supply Estimates in the following year." .
+<http://finance.data.gov.uk/def/coins/statistical-concept/request-for-resources-next-year> <http://purl.org/dc/terms/source> <http://www.hm-treasury.gov.uk/d/coins_guidance.pdf> .
+<http://finance.data.gov.uk/def/coins/statistical-concept/request-for-resources-next-year> <http://www.epimorphics.com/vocabs/coins-generate#columnName> "request_for_resources_next_year" .
+<http://finance.data.gov.uk/def/coins/request-for-resources-next-year/r05ny> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/RequestForResourcesNextYear> .
+<http://finance.data.gov.uk/def/coins/request-for-resources-next-year/r05ny> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/request-for-resources-next-year/r05ny> <http://www.w3.org/2000/01/rdf-schema#label> "RfR05_next-yr"@en .
+<http://finance.data.gov.uk/def/coins/request-for-resources-next-year/r05ny> <http://www.w3.org/2004/02/skos/core#prefLabel> "RfR05_next-yr"@en .
+<http://finance.data.gov.uk/def/coins/request-for-resources-next-year/r05ny> <http://www.w3.org/2004/02/skos/core#notation> "r05ny" .
+<http://finance.data.gov.uk/def/coins/request-for-resources-next-year/r05ny> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/request-for-resources-next-year/r05ny> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/request-for-resources-next-year> .
+<http://finance.data.gov.uk/def/coins/request-for-resources-next-year/r00ny> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/RequestForResourcesNextYear> .
+<http://finance.data.gov.uk/def/coins/request-for-resources-next-year/r00ny> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/request-for-resources-next-year/r00ny> <http://www.w3.org/2000/01/rdf-schema#label> "RfR00_next-yr"@en .
+<http://finance.data.gov.uk/def/coins/request-for-resources-next-year/r00ny> <http://www.w3.org/2004/02/skos/core#prefLabel> "RfR00_next-yr"@en .
+<http://finance.data.gov.uk/def/coins/request-for-resources-next-year/r00ny> <http://www.w3.org/2004/02/skos/core#notation> "r00ny" .
+<http://finance.data.gov.uk/def/coins/request-for-resources-next-year/r00ny> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/request-for-resources-next-year/r00ny> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/request-for-resources-next-year> .
+<http://finance.data.gov.uk/def/coins/request-for-resources-next-year/r02ny> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/RequestForResourcesNextYear> .
+<http://finance.data.gov.uk/def/coins/request-for-resources-next-year/r02ny> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/request-for-resources-next-year/r02ny> <http://www.w3.org/2000/01/rdf-schema#label> "RfR02_next-yr"@en .
+<http://finance.data.gov.uk/def/coins/request-for-resources-next-year/r02ny> <http://www.w3.org/2004/02/skos/core#prefLabel> "RfR02_next-yr"@en .
+<http://finance.data.gov.uk/def/coins/request-for-resources-next-year/r02ny> <http://www.w3.org/2004/02/skos/core#notation> "r02ny" .
+<http://finance.data.gov.uk/def/coins/request-for-resources-next-year/r02ny> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/request-for-resources-next-year/r02ny> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/request-for-resources-next-year> .

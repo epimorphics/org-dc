@@ -1,0 +1,774 @@
+<rdf:RDF
+    xmlns:sdmx-subject="http://purl.org/linked-data/sdmx/2009/subject#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:sdmx-dimension="http://purl.org/linked-data/sdmx/2009/dimension#"
+    xmlns:sdmx-measure="http://purl.org/linked-data/sdmx/2009/measure#"
+    xmlns:sdmx-attribute="http://purl.org/linked-data/sdmx/2009/attribute#"
+    xmlns:coins-data="http://source.data.gov.uk/data/coins/"
+    xmlns:coins-dsd="http://finance.data.gov.uk/dsd/coins/"
+    xmlns:coins-dimension="http://finance.data.gov.uk/dsd/coins/dimension/"
+    xmlns:void="http://rdfs.org/ns/void#"
+    xmlns:coins-measure="http://finance.data.gov.uk/dsd/coins/measure/"
+    xmlns:j.0="http://www.epimorphics.com/vocabs/coins-generate#"
+    xmlns:coins-attribute="http://finance.data.gov.uk/dsd/coins/attribute/"
+    xmlns:sdmx-concept="http://purl.org/linked-data/sdmx/2009/concept#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:coins-slicekey="http://finance.data.gov.uk/dsd/coins/slice/"
+    xmlns:sdmx="http://purl.org/linked-data/sdmx#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:sdmx-code="http://purl.org/linked-data/sdmx/2009/code#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:j.1="http://finance.data.gov.uk/def/coins/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:qb="http://purl.org/linked-data/cube#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <rdfs:Class rdf:about="http://finance.data.gov.uk/def/coins/Esa">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:label xml:lang="en">ESA values class</rdfs:label>
+    <skos:prefLabel xml:lang="en">ESA values class</skos:prefLabel>
+    <rdfs:comment>The class of values in the ESA code-list scheme</rdfs:comment>
+  </rdfs:Class>
+  <sdmx:Concept rdf:about="http://finance.data.gov.uk/def/coins/statistical-concept/esa">
+    <rdfs:label xml:lang="en">ESA</rdfs:label>
+    <skos:prefLabel xml:lang="en">ESA</skos:prefLabel>
+    <rdfs:comment>Similar to NACs (see below). Used to group SCoAs by their economic nature. Codes are See link for more details: consistent with the European System of Accounts (1995) (ESA 1995). Used by the Office for National Statistics </rdfs:comment>
+    <dcterms:source rdf:resource="http://www.hm-treasury.gov.uk/d/coins_guidance.pdf"/>
+    <j.0:columnName>esa</j.0:columnName>
+  </sdmx:Concept>
+  <skos:ConceptScheme rdf:about="http://finance.data.gov.uk/def/coins/esa">
+    <skos:hasTopConcept>
+      <j.1:Esa rdf:about="http://finance.data.gov.uk/def/coins/esa/esa-d3b">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ESA-D3B</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESA-D3B</skos:prefLabel>
+        <skos:notation>esa-d3b</skos:notation>
+        <rdfs:comment>Subsidies to the private sector</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/esa"/>
+      </j.1:Esa>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Esa rdf:about="http://finance.data.gov.uk/def/coins/esa/esa-f3">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ESA-F3</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESA-F3</skos:prefLabel>
+        <skos:notation>esa-f3</skos:notation>
+        <rdfs:comment>Securities other than shares</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/esa"/>
+      </j.1:Esa>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Esa rdf:about="http://finance.data.gov.uk/def/coins/esa/esa-d3c">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ESA-D3C</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESA-D3C</skos:prefLabel>
+        <skos:notation>esa-d3c</skos:notation>
+        <rdfs:comment>Subsidies to public corporations</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/esa"/>
+      </j.1:Esa>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Esa rdf:about="http://finance.data.gov.uk/def/coins/esa/esa-d45">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ESA-D45</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESA-D45</skos:prefLabel>
+        <skos:notation>esa-d45</skos:notation>
+        <rdfs:comment>Rents</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/esa"/>
+      </j.1:Esa>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Esa rdf:about="http://finance.data.gov.uk/def/coins/esa/esa-d99e">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ESA-D99E</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESA-D99E</skos:prefLabel>
+        <skos:notation>esa-d99e</skos:notation>
+        <rdfs:comment>Other capital transfers to public corporations</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/esa"/>
+      </j.1:Esa>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Esa rdf:about="http://finance.data.gov.uk/def/coins/esa/esa-p511ba">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ESA-P511BA</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESA-P511BA</skos:prefLabel>
+        <skos:notation>esa-p511ba</skos:notation>
+        <rdfs:comment>Acquisitions of tangible fixed assets: dwellings</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/esa"/>
+      </j.1:Esa>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Esa rdf:about="http://finance.data.gov.uk/def/coins/esa/esa-p511db">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ESA-P511DB</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESA-P511DB</skos:prefLabel>
+        <skos:notation>esa-p511db</skos:notation>
+        <rdfs:comment>Disposals of tangible fixed assets: infrastructure assets</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/esa"/>
+      </j.1:Esa>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Esa rdf:about="http://finance.data.gov.uk/def/coins/esa/esa-d92e">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ESA-D92E</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESA-D92E</skos:prefLabel>
+        <skos:notation>esa-d92e</skos:notation>
+        <rdfs:comment>Investment grants to and from public corporations</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/esa"/>
+      </j.1:Esa>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Esa rdf:about="http://finance.data.gov.uk/def/coins/esa/esa-p512ca">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ESA-P512CA</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESA-P512CA</skos:prefLabel>
+        <skos:notation>esa-p512ca</skos:notation>
+        <rdfs:comment>Acquisitions of intangible fixed assets: MoD development expenditure.</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/esa"/>
+      </j.1:Esa>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Esa rdf:about="http://finance.data.gov.uk/def/coins/esa/esa-d214">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ESA-D214</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESA-D214</skos:prefLabel>
+        <skos:notation>esa-d214</skos:notation>
+        <rdfs:comment>Taxes on products, except VAT and import taxes</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/esa"/>
+      </j.1:Esa>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Esa rdf:about="http://finance.data.gov.uk/def/coins/esa/esa-p511eb">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ESA-P511EB</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESA-P511EB</skos:prefLabel>
+        <skos:notation>esa-p511eb</skos:notation>
+        <rdfs:comment>Disposals of tangible fixed assets: plant and machinery</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/esa"/>
+      </j.1:Esa>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Esa rdf:about="http://finance.data.gov.uk/def/coins/esa/esa-k212">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ESA-K212</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESA-K212</skos:prefLabel>
+        <skos:notation>esa-k212</skos:notation>
+        <rdfs:comment>Disposals of land and other tangible non-produced assets</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/esa"/>
+      </j.1:Esa>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Esa rdf:about="http://finance.data.gov.uk/def/coins/esa/esa-d92b">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ESA-D92B</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESA-D92B</skos:prefLabel>
+        <skos:notation>esa-d92b</skos:notation>
+        <rdfs:comment>Investment grants to and from local government</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/esa"/>
+      </j.1:Esa>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Esa rdf:about="http://finance.data.gov.uk/def/coins/esa/esa-d73b">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ESA-D73B</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESA-D73B</skos:prefLabel>
+        <skos:notation>esa-d73b</skos:notation>
+        <rdfs:comment>Current grants within general government: other than redistributed NNDR</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/esa"/>
+      </j.1:Esa>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Esa rdf:about="http://finance.data.gov.uk/def/coins/esa/esa-p512bb">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ESA-P512BB</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESA-P512BB</skos:prefLabel>
+        <skos:notation>esa-p512bb</skos:notation>
+        <rdfs:comment>Disposals of intangible fixed assets: internally developed software.</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/esa"/>
+      </j.1:Esa>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Esa rdf:about="http://finance.data.gov.uk/def/coins/esa/esa-d92f">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ESA-D92F</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESA-D92F</skos:prefLabel>
+        <skos:notation>esa-d92f</skos:notation>
+        <rdfs:comment>Investment grants to and from rest of the world</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/esa"/>
+      </j.1:Esa>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Esa rdf:about="http://finance.data.gov.uk/def/coins/esa/esa-d6112">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ESA-D6112</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESA-D6112</skos:prefLabel>
+        <skos:notation>esa-d6112</skos:notation>
+        <rdfs:comment>Employees’ social contributions</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/esa"/>
+      </j.1:Esa>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Esa rdf:about="http://finance.data.gov.uk/def/coins/esa/esa-k221">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ESA-K221</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESA-K221</skos:prefLabel>
+        <skos:notation>esa-k221</skos:notation>
+        <rdfs:comment>Acquisitions of intangible non-produced assets</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/esa"/>
+      </j.1:Esa>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Esa rdf:about="http://finance.data.gov.uk/def/coins/esa/esa-p511ab">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ESA-P511AB</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESA-P511AB</skos:prefLabel>
+        <skos:notation>esa-p511ab</skos:notation>
+        <rdfs:comment>Disposals of tangible fixed assets: agricultural assets</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/esa"/>
+      </j.1:Esa>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Esa rdf:about="http://finance.data.gov.uk/def/coins/esa/esa-d421">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ESA-D421</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESA-D421</skos:prefLabel>
+        <skos:notation>esa-d421</skos:notation>
+        <rdfs:comment>Dividends</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/esa"/>
+      </j.1:Esa>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Esa rdf:about="http://finance.data.gov.uk/def/coins/esa/esa-d51">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ESA-D51</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESA-D51</skos:prefLabel>
+        <skos:notation>esa-d51</skos:notation>
+        <rdfs:comment>Taxes on income</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/esa"/>
+      </j.1:Esa>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Esa rdf:about="http://finance.data.gov.uk/def/coins/esa/esa-d622">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ESA-D622</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESA-D622</skos:prefLabel>
+        <skos:notation>esa-d622</skos:notation>
+        <rdfs:comment>Private funded social benefits</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/esa"/>
+      </j.1:Esa>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Esa rdf:about="http://finance.data.gov.uk/def/coins/esa/esa-d99f">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ESA-D99F</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESA-D99F</skos:prefLabel>
+        <skos:notation>esa-d99f</skos:notation>
+        <rdfs:comment>Other capital transfers to rest of the world</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/esa"/>
+      </j.1:Esa>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Esa rdf:about="http://finance.data.gov.uk/def/coins/esa/esa-d121">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ESA-D121</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESA-D121</skos:prefLabel>
+        <skos:notation>esa-d121</skos:notation>
+        <rdfs:comment>Employers’ actual social contributions</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/esa"/>
+      </j.1:Esa>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Esa rdf:about="http://finance.data.gov.uk/def/coins/esa/esa-p11">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ESA-P11</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESA-P11</skos:prefLabel>
+        <skos:notation>esa-p11</skos:notation>
+        <rdfs:comment>Market output</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/esa"/>
+      </j.1:Esa>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Esa rdf:about="http://finance.data.gov.uk/def/coins/esa/esa-k1">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ESA-K1</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESA-K1</skos:prefLabel>
+        <skos:notation>esa-k1</skos:notation>
+        <rdfs:comment>Consumption of fixed capital</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/esa"/>
+      </j.1:Esa>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Esa rdf:about="http://finance.data.gov.uk/def/coins/esa/esa-f4">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ESA-F4</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESA-F4</skos:prefLabel>
+        <skos:notation>esa-f4</skos:notation>
+        <rdfs:comment>Loans</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/esa"/>
+      </j.1:Esa>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Esa rdf:about="http://finance.data.gov.uk/def/coins/esa/esa-d11">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ESA-D11</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESA-D11</skos:prefLabel>
+        <skos:notation>esa-d11</skos:notation>
+        <rdfs:comment>Wages and salaries</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/esa"/>
+      </j.1:Esa>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Esa rdf:about="http://finance.data.gov.uk/def/coins/esa/esa-f2">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ESA-F2</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESA-F2</skos:prefLabel>
+        <skos:notation>esa-f2</skos:notation>
+        <rdfs:comment>Currency and deposits</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/esa"/>
+      </j.1:Esa>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Esa rdf:about="http://finance.data.gov.uk/def/coins/esa/esa-d99da">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ESA-D99DA</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESA-D99DA</skos:prefLabel>
+        <skos:notation>esa-d99da</skos:notation>
+        <rdfs:comment>Other capital transfers from private sector companies</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/esa"/>
+      </j.1:Esa>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Esa rdf:about="http://finance.data.gov.uk/def/coins/esa/esa-d41b">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ESA-D41B</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESA-D41B</skos:prefLabel>
+        <skos:notation>esa-d41b</skos:notation>
+        <rdfs:comment>Interest payments to and from the public sector</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/esa"/>
+      </j.1:Esa>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Esa rdf:about="http://finance.data.gov.uk/def/coins/esa/esa-d29c">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ESA-D29C</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESA-D29C</skos:prefLabel>
+        <skos:notation>esa-d29c</skos:notation>
+        <rdfs:comment>Taxes on production: regulatory fees</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/esa"/>
+      </j.1:Esa>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Esa rdf:about="http://finance.data.gov.uk/def/coins/esa/esa-p53a">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ESA-P53A</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESA-P53A</skos:prefLabel>
+        <skos:notation>esa-p53a</skos:notation>
+        <rdfs:comment>Acquisitions of valuables</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/esa"/>
+      </j.1:Esa>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Esa rdf:about="http://finance.data.gov.uk/def/coins/esa/esa-d99a">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ESA-D99A</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESA-D99A</skos:prefLabel>
+        <skos:notation>esa-d99a</skos:notation>
+        <rdfs:comment>Other capital transfers to households and non-profit institution serving households</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/esa"/>
+      </j.1:Esa>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Esa rdf:about="http://finance.data.gov.uk/def/coins/esa/esa-p512aa">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ESA-P512AA</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESA-P512AA</skos:prefLabel>
+        <skos:notation>esa-p512aa</skos:notation>
+        <rdfs:comment>Acquisitions of intangible fixed assets: artistic originals.</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/esa"/>
+      </j.1:Esa>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Esa rdf:about="http://finance.data.gov.uk/def/coins/esa/esa-d92c">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ESA-D92C</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESA-D92C</skos:prefLabel>
+        <skos:notation>esa-d92c</skos:notation>
+        <rdfs:comment>Investment grants to and from households</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/esa"/>
+      </j.1:Esa>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Esa rdf:about="http://finance.data.gov.uk/def/coins/esa/esa-p511ca">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ESA-P511CA</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESA-P511CA</skos:prefLabel>
+        <skos:notation>esa-p511ca</skos:notation>
+        <rdfs:comment>Acquisitions of tangible fixed assets: other land and buildings</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/esa"/>
+      </j.1:Esa>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Esa rdf:about="http://finance.data.gov.uk/def/coins/esa/esa-d92a">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ESA-D92A</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESA-D92A</skos:prefLabel>
+        <skos:notation>esa-d92a</skos:notation>
+        <rdfs:comment>Investment grants to and from non-profit institution serving households</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/esa"/>
+      </j.1:Esa>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Esa rdf:about="http://finance.data.gov.uk/def/coins/esa/esa-d623">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ESA-D623</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESA-D623</skos:prefLabel>
+        <skos:notation>esa-d623</skos:notation>
+        <rdfs:comment>Unfunded employee social benefits</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/esa"/>
+      </j.1:Esa>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Esa rdf:about="http://finance.data.gov.uk/def/coins/esa/esa-p512da">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ESA-P512DA</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESA-P512DA</skos:prefLabel>
+        <skos:notation>esa-p512da</skos:notation>
+        <rdfs:comment>Acquisitions of intangible fixed assets: software licences.</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/esa"/>
+      </j.1:Esa>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Esa rdf:about="http://finance.data.gov.uk/def/coins/esa/esa-p2">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ESA-P2</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESA-P2</skos:prefLabel>
+        <skos:notation>esa-p2</skos:notation>
+        <rdfs:comment>Intermediate consumption</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/esa"/>
+      </j.1:Esa>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Esa rdf:about="http://finance.data.gov.uk/def/coins/esa/esa-p511fb">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ESA-P511FB</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESA-P511FB</skos:prefLabel>
+        <skos:notation>esa-p511fb</skos:notation>
+        <rdfs:comment>Disposals of tangible fixed assets: vehicles</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/esa"/>
+      </j.1:Esa>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Esa rdf:about="http://finance.data.gov.uk/def/coins/esa/esa-d74b">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ESA-D74B</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESA-D74B</skos:prefLabel>
+        <skos:notation>esa-d74b</skos:notation>
+        <rdfs:comment>Current international cooperation: UK receipts</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/esa"/>
+      </j.1:Esa>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Esa rdf:about="http://finance.data.gov.uk/def/coins/esa/esa-p52">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ESA-P52</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESA-P52</skos:prefLabel>
+        <skos:notation>esa-p52</skos:notation>
+        <rdfs:comment>Changes in inventories </rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/esa"/>
+      </j.1:Esa>
+    </skos:hasTopConcept>
+    <skos:prefLabel xml:lang="en">ESA code list concept scheme</skos:prefLabel>
+    <skos:hasTopConcept>
+      <j.1:Esa rdf:about="http://finance.data.gov.uk/def/coins/esa/esa-f7">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ESA-F7</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESA-F7</skos:prefLabel>
+        <skos:notation>esa-f7</skos:notation>
+        <rdfs:comment>Other accounts receivable/payable</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/esa"/>
+      </j.1:Esa>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Esa rdf:about="http://finance.data.gov.uk/def/coins/esa/esa-f5">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ESA-F5</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESA-F5</skos:prefLabel>
+        <skos:notation>esa-f5</skos:notation>
+        <rdfs:comment>Shares and other equity</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/esa"/>
+      </j.1:Esa>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Esa rdf:about="http://finance.data.gov.uk/def/coins/esa/esa-d29d">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ESA-D29D</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESA-D29D</skos:prefLabel>
+        <skos:notation>esa-d29d</skos:notation>
+        <rdfs:comment>Taxes on production: NNDR payments</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/esa"/>
+      </j.1:Esa>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Esa rdf:about="http://finance.data.gov.uk/def/coins/esa/esa-d99db">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ESA-D99DB</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESA-D99DB</skos:prefLabel>
+        <skos:notation>esa-d99db</skos:notation>
+        <rdfs:comment>Other capital transfers to private sector companies</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/esa"/>
+      </j.1:Esa>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Esa rdf:about="http://finance.data.gov.uk/def/coins/esa/esa-d3a">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ESA-D3A</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESA-D3A</skos:prefLabel>
+        <skos:notation>esa-d3a</skos:notation>
+        <rdfs:comment>Subsidies to general government market units</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/esa"/>
+      </j.1:Esa>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Esa rdf:about="http://finance.data.gov.uk/def/coins/esa/esa-d41a">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ESA-D41A</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESA-D41A</skos:prefLabel>
+        <skos:notation>esa-d41a</skos:notation>
+        <rdfs:comment>Interest payments to and from the private sector</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/esa"/>
+      </j.1:Esa>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Esa rdf:about="http://finance.data.gov.uk/def/coins/esa/esa-d59">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ESA-D59</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESA-D59</skos:prefLabel>
+        <skos:notation>esa-d59</skos:notation>
+        <rdfs:comment>Other current taxes</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/esa"/>
+      </j.1:Esa>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Esa rdf:about="http://finance.data.gov.uk/def/coins/esa/esa-p511da">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ESA-P511DA</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESA-P511DA</skos:prefLabel>
+        <skos:notation>esa-p511da</skos:notation>
+        <rdfs:comment>Acquisitions of tangible fixed assets: infrastructure assets</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/esa"/>
+      </j.1:Esa>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Esa rdf:about="http://finance.data.gov.uk/def/coins/esa/esa-p512ab">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ESA-P512AB</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESA-P512AB</skos:prefLabel>
+        <skos:notation>esa-p512ab</skos:notation>
+        <rdfs:comment>Disposals of intangible fixed assets: artistic originals.</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/esa"/>
+      </j.1:Esa>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Esa rdf:about="http://finance.data.gov.uk/def/coins/esa/esa-p512cb">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ESA-P512CB</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESA-P512CB</skos:prefLabel>
+        <skos:notation>esa-p512cb</skos:notation>
+        <rdfs:comment>Disposals of intangible fixed assets: MoD development expenditure.</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/esa"/>
+      </j.1:Esa>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Esa rdf:about="http://finance.data.gov.uk/def/coins/esa/esa-d92d">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ESA-D92D</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESA-D92D</skos:prefLabel>
+        <skos:notation>esa-d92d</skos:notation>
+        <rdfs:comment>Investment grants to and from private sector companies</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/esa"/>
+      </j.1:Esa>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Esa rdf:about="http://finance.data.gov.uk/def/coins/esa/esa-p511ea">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ESA-P511EA</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESA-P511EA</skos:prefLabel>
+        <skos:notation>esa-p511ea</skos:notation>
+        <rdfs:comment>Acquisitions of tangible fixed assets: plant and machinery</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/esa"/>
+      </j.1:Esa>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Esa rdf:about="http://finance.data.gov.uk/def/coins/esa/esa-k211">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ESA-K211</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESA-K211</skos:prefLabel>
+        <skos:notation>esa-k211</skos:notation>
+        <rdfs:comment>Acquisitions of land and other tangible non-produced assets</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/esa"/>
+      </j.1:Esa>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Esa rdf:about="http://finance.data.gov.uk/def/coins/esa/esa-p512db">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ESA-P512DB</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESA-P512DB</skos:prefLabel>
+        <skos:notation>esa-p512db</skos:notation>
+        <rdfs:comment>Disposals of intangible fixed assets: software licences.</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/esa"/>
+      </j.1:Esa>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Esa rdf:about="http://finance.data.gov.uk/def/coins/esa/esa-p511bb">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ESA-P511BB</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESA-P511BB</skos:prefLabel>
+        <skos:notation>esa-p511bb</skos:notation>
+        <rdfs:comment>Disposals of tangible fixed assets: dwellings</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/esa"/>
+      </j.1:Esa>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Esa rdf:about="http://finance.data.gov.uk/def/coins/esa/esa-p53b">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ESA-P53B</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESA-P53B</skos:prefLabel>
+        <skos:notation>esa-p53b</skos:notation>
+        <rdfs:comment>Disposals of valuables</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/esa"/>
+      </j.1:Esa>
+    </skos:hasTopConcept>
+    <rdfs:label xml:lang="en">ESA code list concept scheme</rdfs:label>
+    <skos:hasTopConcept>
+      <j.1:Esa rdf:about="http://finance.data.gov.uk/def/coins/esa/esa-p511fa">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ESA-P511FA</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESA-P511FA</skos:prefLabel>
+        <skos:notation>esa-p511fa</skos:notation>
+        <rdfs:comment>Acquisitions of tangible fixed assets: vehicles</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/esa"/>
+      </j.1:Esa>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Esa rdf:about="http://finance.data.gov.uk/def/coins/esa/esa-p511cb">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ESA-P511CB</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESA-P511CB</skos:prefLabel>
+        <skos:notation>esa-p511cb</skos:notation>
+        <rdfs:comment>Disposals of tangible fixed assets: other land and buildings</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/esa"/>
+      </j.1:Esa>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Esa rdf:about="http://finance.data.gov.uk/def/coins/esa/esa-p511aa">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ESA-P511AA</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESA-P511AA</skos:prefLabel>
+        <skos:notation>esa-p511aa</skos:notation>
+        <rdfs:comment>Acquisitions of tangible fixed assets: agricultural assets</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/esa"/>
+      </j.1:Esa>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Esa rdf:about="http://finance.data.gov.uk/def/coins/esa/esa-d75">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ESA-D75</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESA-D75</skos:prefLabel>
+        <skos:notation>esa-d75</skos:notation>
+        <rdfs:comment>Miscellaneous current transfers</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/esa"/>
+      </j.1:Esa>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Esa rdf:about="http://finance.data.gov.uk/def/coins/esa/esa-d29e">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ESA-D29E</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESA-D29E</skos:prefLabel>
+        <skos:notation>esa-d29e</skos:notation>
+        <rdfs:comment>Taxes on production: Vehicle excise duties</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/esa"/>
+      </j.1:Esa>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Esa rdf:about="http://finance.data.gov.uk/def/coins/esa/esa-d624">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ESA-D624</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESA-D624</skos:prefLabel>
+        <skos:notation>esa-d624</skos:notation>
+        <rdfs:comment>Social assistance benefits in cash</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/esa"/>
+      </j.1:Esa>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Esa rdf:about="http://finance.data.gov.uk/def/coins/esa/esa-d73a">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ESA-D73A</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESA-D73A</skos:prefLabel>
+        <skos:notation>esa-d73a</skos:notation>
+        <rdfs:comment>Current grants within general government: redistributed NNDR</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/esa"/>
+      </j.1:Esa>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Esa rdf:about="http://finance.data.gov.uk/def/coins/esa/esa-p512ba">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ESA-P512BA</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESA-P512BA</skos:prefLabel>
+        <skos:notation>esa-p512ba</skos:notation>
+        <rdfs:comment>Acquisitions of intangible fixed assets: internally developed software.</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/esa"/>
+      </j.1:Esa>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Esa rdf:about="http://finance.data.gov.uk/def/coins/esa/esa-d99bb">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ESA-D99BB</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESA-D99BB</skos:prefLabel>
+        <skos:notation>esa-d99bb</skos:notation>
+        <rdfs:comment>Other capital transfers to and from local government</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/esa"/>
+      </j.1:Esa>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Esa rdf:about="http://finance.data.gov.uk/def/coins/esa/esa-d621">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ESA-D621</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESA-D621</skos:prefLabel>
+        <skos:notation>esa-d621</skos:notation>
+        <rdfs:comment>Social security benefits in cash</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/esa"/>
+      </j.1:Esa>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Esa rdf:about="http://finance.data.gov.uk/def/coins/esa/esa-d6111">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ESA-D6111</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESA-D6111</skos:prefLabel>
+        <skos:notation>esa-d6111</skos:notation>
+        <rdfs:comment>Employers’ actual social contributions</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/esa"/>
+      </j.1:Esa>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Esa rdf:about="http://finance.data.gov.uk/def/coins/esa/esa-d74a">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ESA-D74A</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESA-D74A</skos:prefLabel>
+        <skos:notation>esa-d74a</skos:notation>
+        <rdfs:comment>Current international cooperation: UK payments</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/esa"/>
+      </j.1:Esa>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:Esa rdf:about="http://finance.data.gov.uk/def/coins/esa/esa-d29u">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ESA-D29U</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESA-D29U</skos:prefLabel>
+        <skos:notation>esa-d29u</skos:notation>
+        <rdfs:comment>Taxes on production: CG departments payments of NNDR</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/esa"/>
+      </j.1:Esa>
+    </skos:hasTopConcept>
+  </skos:ConceptScheme>
+</rdf:RDF>

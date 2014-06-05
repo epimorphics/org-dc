@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:dcmitype="http://purl.org/dc/dcmitype/"
+   xmlns:dct="http://purl.org/dc/terms/"
+   xmlns:foaf="http://xmlns.com/foaf/0.1/"
+   xmlns:frbr="http://purl.org/vocab/frbr/core#"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+   xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+   xmlns="http://reference.data.gov.uk/def/public-body/">
+  <owl:Ontology rdf:about="http://reference.data.gov.uk/def/public-body/">
+    <owl:imports rdf:resource="http://purl.org/dc/terms"/>
+    <owl:imports rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+    <owl:imports rdf:resource="http://xmlns.com/foaf/0.1"/>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Initial Draft Version</owl:versionInfo>
+  </owl:Ontology>
+  <owl:Class rdf:about="http://reference.data.gov.uk/def/public-body/AdvisoryNDPB">
+    <rdfs:comment xml:lang="en">Advisory NDPBs – provide independent, expert advice to Ministers on a wide range of issues.  Examples include the Low Pay Commission and the Committee on Standards in Public Life;</rdfs:comment>
+    <rdfs:label xml:lang="en">Advisory NDPB</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://reference.data.gov.uk/def/public-body/NonDepartmentalPublicBody"/>
+    <owl:disjointWith rdf:resource="http://reference.data.gov.uk/def/public-body/ExecutiveNDPB"/>
+    <owl:disjointWith rdf:resource="http://reference.data.gov.uk/def/public-body/MonitoringNDPB"/>
+    <owl:disjointWith rdf:resource="http://reference.data.gov.uk/def/public-body/TribunalNDPB"/>
+    <skos:prefLabel xml:lang="en">Advisory NDPB</skos:prefLabel>
+    <foaf:isPrimaryTopicOf rdf:resource="http://en.wikipedia.org/wiki/Non-departmental_public_body#Advisory_NDPBs"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://reference.data.gov.uk/def/public-body/ExecutiveAgency">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">"An executive agency, also known as a next-step agency, is a part of a government department that is treated as managerially and budgetarily separate in order to carry out some part of the executive functions of the United Kingdom government, Scottish Government, Welsh Assembly or Northern Ireland Executive"</rdfs:comment>
+    <rdfs:label xml:lang="en">Executive agency</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://reference.data.gov.uk/def/public-body/PublicBody"/>
+    <owl:disjointWith rdf:resource="http://reference.data.gov.uk/def/public-body/MinisterialDepartment"/>
+    <owl:disjointWith rdf:resource="http://reference.data.gov.uk/def/public-body/NonDepartmentalPublicBody"/>
+    <owl:disjointWith rdf:resource="http://reference.data.gov.uk/def/public-body/NonMinisterialDepartment"/>
+    <skos:prefLabel xml:lang="en">Executive agency</skos:prefLabel>
+    <foaf:isPrimaryTopicOf rdf:resource="http://en.wikipedia.org/wiki/Executive_agency"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://reference.data.gov.uk/def/public-body/ExecutiveNDPB">
+    <rdfs:comment xml:lang="en">Executive NDPBs - typically established in statute and carrying out executive, administrative, regulatory and/or commercial functions.  Examples include the Environment Agency, Regional Development Agencies and national museums and galleries</rdfs:comment>
+    <rdfs:label xml:lang="en">Executive NDPB</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://reference.data.gov.uk/def/public-body/NonDepartmentalPublicBody"/>
+    <owl:disjointWith rdf:resource="http://reference.data.gov.uk/def/public-body/AdvisoryNDPB"/>
+    <owl:disjointWith rdf:resource="http://reference.data.gov.uk/def/public-body/MonitoringNDPB"/>
+    <owl:disjointWith rdf:resource="http://reference.data.gov.uk/def/public-body/TribunalNDPB"/>
+    <skos:prefLabel xml:lang="en">Executive NDPB</skos:prefLabel>
+    <ns1:page xmlns:ns1="http://xmlns.co/foaf/1.0/" rdf:resource="http://en.wikipedia.org/wiki/Departments_of_the_United_Kingdom_Government"/>
+    <foaf:isPrimaryTopicOf rdf:resource="http://en.wikipedia.org/wiki/Non-departmental_public_body#Executive_NDPBs"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://reference.data.gov.uk/def/public-body/MinisterialDepartment">
+    <rdfs:comment xml:lang="en">Ministerial Departments are led politically by a Government Minister, normally a member of the Cabinet and cover matters that require direct political oversight.</rdfs:comment>
+    <rdfs:label xml:lang="en">Ministerial department</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://reference.data.gov.uk/def/public-body/PublicBody"/>
+    <owl:disjointWith rdf:resource="http://reference.data.gov.uk/def/public-body/ExecutiveAgency"/>
+    <owl:disjointWith rdf:resource="http://reference.data.gov.uk/def/public-body/NonDepartmentalPublicBody"/>
+    <owl:disjointWith rdf:resource="http://reference.data.gov.uk/def/public-body/NonMinisterialDepartment"/>
+    <skos:prefLabel xml:lang="en">Ministerial department</skos:prefLabel>
+    <foaf:isPrimaryTopicOf rdf:resource="http://en.wikipedia.org/wiki/Departments_of_the_United_Kingdom_Government"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://reference.data.gov.uk/def/public-body/MonitoringNDPB">
+    <rdfs:comment xml:lang="en">Independent Monitoring Boards of Prisons, Immigration Removal Centres and Immigration Holding Rooms - formerly known as Boards of Visitors, these are independent 'watchdogs' of the prison system.</rdfs:comment>
+    <rdfs:label xml:lang="en">Monitoring NDPBs</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://reference.data.gov.uk/def/public-body/NonDepartmentalPublicBody"/>
+    <owl:disjointWith rdf:resource="http://reference.data.gov.uk/def/public-body/AdvisoryNDPB"/>
+    <owl:disjointWith rdf:resource="http://reference.data.gov.uk/def/public-body/ExecutiveNDPB"/>
+    <owl:disjointWith rdf:resource="http://reference.data.gov.uk/def/public-body/TribunalNDPB"/>
+    <skos:prefLabel xml:lang="en">Monitoring NDPBs</skos:prefLabel>
+    <foaf:isPrimaryTopicOf rdf:resource="http://en.wikipedia.org/wiki/Non-departmental_public_body#Independent_monitoring_boards"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://reference.data.gov.uk/def/public-body/NonDepartmentalPublicBody">
+    <rdfs:comment xml:lang="en">A NDPB is defined as a “body which has a role in the processes of national Government, but is not a Government Department or part of one, and which accordingly operates to a greater or lesser extent at arm’s length from Ministers”</rdfs:comment>
+    <rdfs:label xml:lang="en">Non-departmental public body</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://reference.data.gov.uk/def/public-body/PublicBody"/>
+    <owl:disjointWith rdf:resource="http://reference.data.gov.uk/def/public-body/ExecutiveAgency"/>
+    <owl:disjointWith rdf:resource="http://reference.data.gov.uk/def/public-body/MinisterialDepartment"/>
+    <owl:disjointWith rdf:resource="http://reference.data.gov.uk/def/public-body/NonMinisterialDepartment"/>
+    <skos:prefLabel xml:lang="en">Non-departmental public body</skos:prefLabel>
+    <foaf:isPrimaryTopicOf rdf:resource="http://en.wikipedia.org/wiki/Non-departmental_public_body"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://reference.data.gov.uk/def/public-body/NonMinisterialDepartment">
+    <rdfs:comment xml:lang="en">"A non-ministerial government department is a department or ministry of a government that is not headed by a Government Minister or Government Secretary, and answers directly to a legislature"</rdfs:comment>
+    <rdfs:label xml:lang="en">Non ministerial department</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://reference.data.gov.uk/def/public-body/PublicBody"/>
+    <owl:disjointWith rdf:resource="http://reference.data.gov.uk/def/public-body/ExecutiveAgency"/>
+    <owl:disjointWith rdf:resource="http://reference.data.gov.uk/def/public-body/MinisterialDepartment"/>
+    <owl:disjointWith rdf:resource="http://reference.data.gov.uk/def/public-body/NonDepartmentalPublicBody"/>
+    <skos:prefLabel xml:lang="en">Non ministerial department</skos:prefLabel>
+    <foaf:isPrimaryTopicOf rdf:resource="http://en.wikipedia.org/wiki/Non-ministerial_government_department"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://reference.data.gov.uk/def/public-body/PublicBody">
+    <rdfs:comment xml:lang="en">A class whose for UK Government related public bodies comprised of Executive Agenices, Ministerial and Non-Ministerial Departments and Non-departmental public bodies.</rdfs:comment>
+    <rdfs:label xml:lang="en">UK Public body</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    <skos:prefLabel xml:lang="en">UK Public body</skos:prefLabel>
+  </owl:Class>
+  <owl:Class rdf:about="http://reference.data.gov.uk/def/public-body/TribunalNDPB">
+    <rdfs:comment xml:lang="en">Tribunal NDPBs - have jurisdiction in a specialised field of law.  Examples include Valuation Tribunals.</rdfs:comment>
+    <rdfs:label xml:lang="en">Tribunal NDPB</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://reference.data.gov.uk/def/public-body/NonDepartmentalPublicBody"/>
+    <owl:disjointWith rdf:resource="http://reference.data.gov.uk/def/public-body/AdvisoryNDPB"/>
+    <owl:disjointWith rdf:resource="http://reference.data.gov.uk/def/public-body/ExecutiveNDPB"/>
+    <owl:disjointWith rdf:resource="http://reference.data.gov.uk/def/public-body/MonitoringNDPB"/>
+    <skos:prefLabel xml:lang="en">Tribunal NDPB</skos:prefLabel>
+    <foaf:isPrimaryTopicOf rdf:resource="http://en.wikipedia.org/wiki/Non-departmental_public_body#Tribunal_NDPBs"/>
+  </owl:Class>
+  <owl:FunctionalProperty rdf:about="http://reference.data.gov.uk/def/public-body/parentDepartment">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">A relation between an NDPB or an Executive Agency and their parent Government Department.</rdfs:comment>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf>
+          <rdf:Description>
+            <rdf:first rdf:resource="http://reference.data.gov.uk/def/public-body/ExecutiveAgency"/>
+            <rdf:rest>
+              <rdf:Description>
+                <rdf:first rdf:resource="http://reference.data.gov.uk/def/public-body/NonDepartmentalPublicBody"/>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+              </rdf:Description>
+            </rdf:rest>
+          </rdf:Description>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:label xml:lang="en">parent department</rdfs:label>
+    <rdfs:range rdf:resource="http://reference.data.gov.uk/def/public-body/MinisterialDepartment"/>
+    <owl:inverseOf rdf:resource="http://reference.data.gov.uk/def/public-body/relatedBody"/>
+    <skos:prefLabel xml:lang="en">parent department</skos:prefLabel>
+  </owl:FunctionalProperty>
+  <owl:ObjectProperty rdf:about="http://reference.data.gov.uk/def/public-body/relatedBody">
+    <rdfs:comment xml:lang="en">A relation between Minsiterial Departments and their associated Executive Agencies and NDPBs</rdfs:comment>
+    <rdfs:domain rdf:resource="http://reference.data.gov.uk/def/public-body/MinisterialDepartment"/>
+    <rdfs:label xml:lang="en">related body</rdfs:label>
+    <rdfs:range>
+      <owl:Class>
+        <owl:unionOf>
+          <rdf:Description>
+            <rdf:first rdf:resource="http://reference.data.gov.uk/def/public-body/ExecutiveAgency"/>
+            <rdf:rest>
+              <rdf:Description>
+                <rdf:first rdf:resource="http://reference.data.gov.uk/def/public-body/NonDepartmentalPublicBody"/>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+              </rdf:Description>
+            </rdf:rest>
+          </rdf:Description>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:range>
+    <owl:inverseOf rdf:resource="http://reference.data.gov.uk/def/public-body/parentDepartment"/>
+    <skos:prefLabel xml:lang="en">related body</skos:prefLabel>
+  </owl:ObjectProperty>
+</rdf:RDF>

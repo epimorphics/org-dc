@@ -1,0 +1,84 @@
+<rdf:RDF
+    xmlns:sdmx-subject="http://purl.org/linked-data/sdmx/2009/subject#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:sdmx-dimension="http://purl.org/linked-data/sdmx/2009/dimension#"
+    xmlns:sdmx-measure="http://purl.org/linked-data/sdmx/2009/measure#"
+    xmlns:sdmx-attribute="http://purl.org/linked-data/sdmx/2009/attribute#"
+    xmlns:coins-data="http://source.data.gov.uk/data/coins/"
+    xmlns:coins-dsd="http://finance.data.gov.uk/dsd/coins/"
+    xmlns:coins-dimension="http://finance.data.gov.uk/dsd/coins/dimension/"
+    xmlns:void="http://rdfs.org/ns/void#"
+    xmlns:coins-measure="http://finance.data.gov.uk/dsd/coins/measure/"
+    xmlns:j.0="http://www.epimorphics.com/vocabs/coins-generate#"
+    xmlns:coins-attribute="http://finance.data.gov.uk/dsd/coins/attribute/"
+    xmlns:sdmx-concept="http://purl.org/linked-data/sdmx/2009/concept#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:coins-slicekey="http://finance.data.gov.uk/dsd/coins/slice/"
+    xmlns:sdmx="http://purl.org/linked-data/sdmx#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:sdmx-code="http://purl.org/linked-data/sdmx/2009/code#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:j.1="http://finance.data.gov.uk/def/coins/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:qb="http://purl.org/linked-data/cube#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <rdfs:Class rdf:about="http://finance.data.gov.uk/def/coins/BudgetCapitalCurrent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:label xml:lang="en">budget capital current values class</rdfs:label>
+    <skos:prefLabel xml:lang="en">budget capital current values class</skos:prefLabel>
+    <rdfs:comment>The class of values in the budget capital current code-list scheme</rdfs:comment>
+  </rdfs:Class>
+  <sdmx:Concept rdf:about="http://finance.data.gov.uk/def/coins/statistical-concept/budget-capital-current">
+    <rdfs:label xml:lang="en">budget capital current</rdfs:label>
+    <skos:prefLabel xml:lang="en">budget capital current</skos:prefLabel>
+    <rdfs:comment>Gives the classification of transactions for budget purposes under the 2009-10 budgetary framework: See the Consolidated Budgeting Guidance 2010 11 for background information.</rdfs:comment>
+    <dcterms:source rdf:resource="http://www.hm-treasury.gov.uk/d/coins_guidance.pdf"/>
+    <j.0:columnName>budget_capital_current</j.0:columnName>
+  </sdmx:Concept>
+  <skos:ConceptScheme rdf:about="http://finance.data.gov.uk/def/coins/budget-capital-current">
+    <rdfs:label xml:lang="en">budget capital current code list concept scheme</rdfs:label>
+    <skos:prefLabel xml:lang="en">budget capital current code list concept scheme</skos:prefLabel>
+    <skos:hasTopConcept>
+      <j.1:BudgetCapitalCurrent rdf:about="http://finance.data.gov.uk/def/coins/budget-capital-current/b-cap">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">B-CAP</rdfs:label>
+        <skos:prefLabel xml:lang="en">B-CAP</skos:prefLabel>
+        <skos:notation>b-cap</skos:notation>
+        <rdfs:comment>Capital budget</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/budget-capital-current"/>
+      </j.1:BudgetCapitalCurrent>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:BudgetCapitalCurrent rdf:about="http://finance.data.gov.uk/def/coins/budget-capital-current/b-con">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">B-CON</rdfs:label>
+        <skos:prefLabel xml:lang="en">B-CON</skos:prefLabel>
+        <skos:notation>b-con</skos:notation>
+        <rdfs:comment>Consumption (scores to Near-cash with Resource Budget)</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/budget-capital-current"/>
+      </j.1:BudgetCapitalCurrent>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:BudgetCapitalCurrent rdf:about="http://finance.data.gov.uk/def/coins/budget-capital-current/b-nch">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">B-NCH</rdfs:label>
+        <skos:prefLabel xml:lang="en">B-NCH</skos:prefLabel>
+        <skos:notation>b-nch</skos:notation>
+        <rdfs:comment>Non cash (scores to Non-cash with Resource Budget)</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/budget-capital-current"/>
+      </j.1:BudgetCapitalCurrent>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:BudgetCapitalCurrent rdf:about="http://finance.data.gov.uk/def/coins/budget-capital-current/b-nul">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">B-NUL</rdfs:label>
+        <skos:prefLabel xml:lang="en">B-NUL</skos:prefLabel>
+        <skos:notation>b-nul</skos:notation>
+        <rdfs:comment>Outside budgets</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/budget-capital-current"/>
+      </j.1:BudgetCapitalCurrent>
+    </skos:hasTopConcept>
+  </skos:ConceptScheme>
+</rdf:RDF>

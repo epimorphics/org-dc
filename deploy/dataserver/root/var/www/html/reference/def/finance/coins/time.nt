@@ -1,0 +1,559 @@
+<http://finance.data.gov.uk/def/coins/time/a2007m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Time> .
+<http://finance.data.gov.uk/def/coins/time/a2007m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/time/a2007m> <http://www.w3.org/2000/01/rdf-schema#label> "April 2007 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/a2007m> <http://www.w3.org/2004/02/skos/core#prefLabel> "April 2007 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/a2007m> <http://www.w3.org/2004/02/skos/core#notation> "a2007m" .
+<http://finance.data.gov.uk/def/coins/time/a2007m> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/time/a2007m> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/time> .
+<http://finance.data.gov.uk/def/coins/time/n2009m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Time> .
+<http://finance.data.gov.uk/def/coins/time/n2009m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/time/n2009m> <http://www.w3.org/2000/01/rdf-schema#label> "November 2009 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/n2009m> <http://www.w3.org/2004/02/skos/core#prefLabel> "November 2009 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/n2009m> <http://www.w3.org/2004/02/skos/core#notation> "n2009m" .
+<http://finance.data.gov.uk/def/coins/time/n2009m> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/time/n2009m> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/time> .
+<http://finance.data.gov.uk/def/coins/time/d2005m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Time> .
+<http://finance.data.gov.uk/def/coins/time/d2005m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/time/d2005m> <http://www.w3.org/2000/01/rdf-schema#label> "December 2005 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/d2005m> <http://www.w3.org/2004/02/skos/core#prefLabel> "December 2005 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/d2005m> <http://www.w3.org/2004/02/skos/core#notation> "d2005m" .
+<http://finance.data.gov.uk/def/coins/time/d2005m> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/time/d2005m> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/time> .
+<http://finance.data.gov.uk/def/coins/time/q2-2005-06> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Time> .
+<http://finance.data.gov.uk/def/coins/time/q2-2005-06> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/time/q2-2005-06> <http://www.w3.org/2000/01/rdf-schema#label> "Q2 2005-06"@en .
+<http://finance.data.gov.uk/def/coins/time/q2-2005-06> <http://www.w3.org/2004/02/skos/core#prefLabel> "Q2 2005-06"@en .
+<http://finance.data.gov.uk/def/coins/time/q2-2005-06> <http://www.w3.org/2004/02/skos/core#notation> "q2-2005-06" .
+<http://finance.data.gov.uk/def/coins/time/q2-2005-06> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/time/q2-2005-06> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/time> .
+<http://finance.data.gov.uk/def/coins/time/j2006m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Time> .
+<http://finance.data.gov.uk/def/coins/time/j2006m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/time/j2006m> <http://www.w3.org/2000/01/rdf-schema#label> "January 2006 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/j2006m> <http://www.w3.org/2004/02/skos/core#prefLabel> "January 2006 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/j2006m> <http://www.w3.org/2004/02/skos/core#notation> "j2006m" .
+<http://finance.data.gov.uk/def/coins/time/j2006m> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/time/j2006m> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/time> .
+<http://finance.data.gov.uk/def/coins/time/s2005m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Time> .
+<http://finance.data.gov.uk/def/coins/time/s2005m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/time/s2005m> <http://www.w3.org/2000/01/rdf-schema#label> "September 2005 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/s2005m> <http://www.w3.org/2004/02/skos/core#prefLabel> "September 2005 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/s2005m> <http://www.w3.org/2004/02/skos/core#notation> "s2005m" .
+<http://finance.data.gov.uk/def/coins/time/s2005m> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/time/s2005m> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/time> .
+<http://finance.data.gov.uk/def/coins/time/a2009m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Time> .
+<http://finance.data.gov.uk/def/coins/time/a2009m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/time/a2009m> <http://www.w3.org/2000/01/rdf-schema#label> "April 2009 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/a2009m> <http://www.w3.org/2004/02/skos/core#prefLabel> "April 2009 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/a2009m> <http://www.w3.org/2004/02/skos/core#notation> "a2009m" .
+<http://finance.data.gov.uk/def/coins/time/a2009m> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/time/a2009m> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/time> .
+<http://finance.data.gov.uk/def/coins/time/d2007m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Time> .
+<http://finance.data.gov.uk/def/coins/time/d2007m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/time/d2007m> <http://www.w3.org/2000/01/rdf-schema#label> "December 2007 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/d2007m> <http://www.w3.org/2004/02/skos/core#prefLabel> "December 2007 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/d2007m> <http://www.w3.org/2004/02/skos/core#notation> "d2007m" .
+<http://finance.data.gov.uk/def/coins/time/d2007m> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/time/d2007m> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/time> .
+<http://finance.data.gov.uk/def/coins/time/j2008m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Time> .
+<http://finance.data.gov.uk/def/coins/time/j2008m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/time/j2008m> <http://www.w3.org/2000/01/rdf-schema#label> "January 2008 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/j2008m> <http://www.w3.org/2004/02/skos/core#prefLabel> "January 2008 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/j2008m> <http://www.w3.org/2004/02/skos/core#notation> "j2008m" .
+<http://finance.data.gov.uk/def/coins/time/j2008m> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/time/j2008m> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/time> .
+<http://finance.data.gov.uk/def/coins/time/m2006m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Time> .
+<http://finance.data.gov.uk/def/coins/time/m2006m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/time/m2006m> <http://www.w3.org/2000/01/rdf-schema#label> "March 2006 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/m2006m> <http://www.w3.org/2004/02/skos/core#prefLabel> "March 2006 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/m2006m> <http://www.w3.org/2004/02/skos/core#notation> "m2006m" .
+<http://finance.data.gov.uk/def/coins/time/m2006m> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/time/m2006m> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/time> .
+<http://finance.data.gov.uk/def/coins/time/2008-09> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Time> .
+<http://finance.data.gov.uk/def/coins/time/2008-09> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/time/2008-09> <http://www.w3.org/2000/01/rdf-schema#label> "2008-09"@en .
+<http://finance.data.gov.uk/def/coins/time/2008-09> <http://www.w3.org/2004/02/skos/core#prefLabel> "2008-09"@en .
+<http://finance.data.gov.uk/def/coins/time/2008-09> <http://www.w3.org/2004/02/skos/core#notation> "2008-09" .
+<http://finance.data.gov.uk/def/coins/time/2008-09> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/time/2008-09> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/time> .
+<http://finance.data.gov.uk/def/coins/time/s2007m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Time> .
+<http://finance.data.gov.uk/def/coins/time/s2007m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/time/s2007m> <http://www.w3.org/2000/01/rdf-schema#label> "September 2007 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/s2007m> <http://www.w3.org/2004/02/skos/core#prefLabel> "September 2007 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/s2007m> <http://www.w3.org/2004/02/skos/core#notation> "s2007m" .
+<http://finance.data.gov.uk/def/coins/time/s2007m> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/time/s2007m> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/time> .
+<http://finance.data.gov.uk/def/coins/time/2009-10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Time> .
+<http://finance.data.gov.uk/def/coins/time/2009-10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/time/2009-10> <http://www.w3.org/2000/01/rdf-schema#label> "2009-10"@en .
+<http://finance.data.gov.uk/def/coins/time/2009-10> <http://www.w3.org/2004/02/skos/core#prefLabel> "2009-10"@en .
+<http://finance.data.gov.uk/def/coins/time/2009-10> <http://www.w3.org/2004/02/skos/core#notation> "2009-10" .
+<http://finance.data.gov.uk/def/coins/time/2009-10> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/time/2009-10> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/time> .
+<http://finance.data.gov.uk/def/coins/time/d2009m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Time> .
+<http://finance.data.gov.uk/def/coins/time/d2009m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/time/d2009m> <http://www.w3.org/2000/01/rdf-schema#label> "December 2009 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/d2009m> <http://www.w3.org/2004/02/skos/core#prefLabel> "December 2009 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/d2009m> <http://www.w3.org/2004/02/skos/core#notation> "d2009m" .
+<http://finance.data.gov.uk/def/coins/time/d2009m> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/time/d2009m> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/time> .
+<http://finance.data.gov.uk/def/coins/time/q1-2005-06> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Time> .
+<http://finance.data.gov.uk/def/coins/time/q1-2005-06> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/time/q1-2005-06> <http://www.w3.org/2000/01/rdf-schema#label> "Q1 2005-06"@en .
+<http://finance.data.gov.uk/def/coins/time/q1-2005-06> <http://www.w3.org/2004/02/skos/core#prefLabel> "Q1 2005-06"@en .
+<http://finance.data.gov.uk/def/coins/time/q1-2005-06> <http://www.w3.org/2004/02/skos/core#notation> "q1-2005-06" .
+<http://finance.data.gov.uk/def/coins/time/q1-2005-06> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/time/q1-2005-06> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/time> .
+<http://finance.data.gov.uk/def/coins/time/m2008m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Time> .
+<http://finance.data.gov.uk/def/coins/time/m2008m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/time/m2008m> <http://www.w3.org/2000/01/rdf-schema#label> "March 2008 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/m2008m> <http://www.w3.org/2004/02/skos/core#prefLabel> "March 2008 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/m2008m> <http://www.w3.org/2004/02/skos/core#notation> "m2008m" .
+<http://finance.data.gov.uk/def/coins/time/m2008m> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/time/m2008m> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/time> .
+<http://finance.data.gov.uk/def/coins/time/f2007m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Time> .
+<http://finance.data.gov.uk/def/coins/time/f2007m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/time/f2007m> <http://www.w3.org/2000/01/rdf-schema#label> "February 2007 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/f2007m> <http://www.w3.org/2004/02/skos/core#prefLabel> "February 2007 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/f2007m> <http://www.w3.org/2004/02/skos/core#notation> "f2007m" .
+<http://finance.data.gov.uk/def/coins/time/f2007m> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/time/f2007m> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/time> .
+<http://finance.data.gov.uk/def/coins/time/s2009m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Time> .
+<http://finance.data.gov.uk/def/coins/time/s2009m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/time/s2009m> <http://www.w3.org/2000/01/rdf-schema#label> "September 2009 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/s2009m> <http://www.w3.org/2004/02/skos/core#prefLabel> "September 2009 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/s2009m> <http://www.w3.org/2004/02/skos/core#notation> "s2009m" .
+<http://finance.data.gov.uk/def/coins/time/s2009m> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/time/s2009m> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/time> .
+<http://finance.data.gov.uk/def/coins/time/o2006m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Time> .
+<http://finance.data.gov.uk/def/coins/time/o2006m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/time/o2006m> <http://www.w3.org/2000/01/rdf-schema#label> "October 2006 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/o2006m> <http://www.w3.org/2004/02/skos/core#prefLabel> "October 2006 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/o2006m> <http://www.w3.org/2004/02/skos/core#notation> "o2006m" .
+<http://finance.data.gov.uk/def/coins/time/o2006m> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/time/o2006m> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/time> .
+<http://finance.data.gov.uk/def/coins/statistical-concept/time> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/sdmx#Concept> .
+<http://finance.data.gov.uk/def/coins/statistical-concept/time> <http://www.w3.org/2000/01/rdf-schema#label> "time"@en .
+<http://finance.data.gov.uk/def/coins/statistical-concept/time> <http://www.w3.org/2004/02/skos/core#prefLabel> "time"@en .
+<http://finance.data.gov.uk/def/coins/statistical-concept/time> <http://www.w3.org/2000/01/rdf-schema#comment> "Gives the year or month when the transaction took place (or was expected to take place)." .
+<http://finance.data.gov.uk/def/coins/statistical-concept/time> <http://purl.org/dc/terms/source> <http://www.hm-treasury.gov.uk/d/coins_guidance.pdf> .
+<http://finance.data.gov.uk/def/coins/statistical-concept/time> <http://www.epimorphics.com/vocabs/coins-generate#columnName> "t_time" .
+<http://finance.data.gov.uk/def/coins/time/n2006m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Time> .
+<http://finance.data.gov.uk/def/coins/time/n2006m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/time/n2006m> <http://www.w3.org/2000/01/rdf-schema#label> "November 2006 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/n2006m> <http://www.w3.org/2004/02/skos/core#prefLabel> "November 2006 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/n2006m> <http://www.w3.org/2004/02/skos/core#notation> "n2006m" .
+<http://finance.data.gov.uk/def/coins/time/n2006m> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/time/n2006m> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/time> .
+<http://finance.data.gov.uk/def/coins/time/f2009m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Time> .
+<http://finance.data.gov.uk/def/coins/time/f2009m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/time/f2009m> <http://www.w3.org/2000/01/rdf-schema#label> "February 2009 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/f2009m> <http://www.w3.org/2004/02/skos/core#prefLabel> "February 2009 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/f2009m> <http://www.w3.org/2004/02/skos/core#notation> "f2009m" .
+<http://finance.data.gov.uk/def/coins/time/f2009m> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/time/f2009m> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/time> .
+<http://finance.data.gov.uk/def/coins/time/f2010m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Time> .
+<http://finance.data.gov.uk/def/coins/time/f2010m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/time/f2010m> <http://www.w3.org/2000/01/rdf-schema#label> "February 2010 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/f2010m> <http://www.w3.org/2004/02/skos/core#prefLabel> "February 2010 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/f2010m> <http://www.w3.org/2004/02/skos/core#notation> "f2010m" .
+<http://finance.data.gov.uk/def/coins/time/f2010m> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/time/f2010m> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/time> .
+<http://finance.data.gov.uk/def/coins/time/o2008m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Time> .
+<http://finance.data.gov.uk/def/coins/time/o2008m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/time/o2008m> <http://www.w3.org/2000/01/rdf-schema#label> "October 2008 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/o2008m> <http://www.w3.org/2004/02/skos/core#prefLabel> "October 2008 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/o2008m> <http://www.w3.org/2004/02/skos/core#notation> "o2008m" .
+<http://finance.data.gov.uk/def/coins/time/o2008m> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/time/o2008m> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/time> .
+<http://finance.data.gov.uk/def/coins/time/2007-08> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Time> .
+<http://finance.data.gov.uk/def/coins/time/2007-08> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/time/2007-08> <http://www.w3.org/2000/01/rdf-schema#label> "2007-08"@en .
+<http://finance.data.gov.uk/def/coins/time/2007-08> <http://www.w3.org/2004/02/skos/core#prefLabel> "2007-08"@en .
+<http://finance.data.gov.uk/def/coins/time/2007-08> <http://www.w3.org/2004/02/skos/core#notation> "2007-08" .
+<http://finance.data.gov.uk/def/coins/time/2007-08> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/time/2007-08> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/time> .
+<http://finance.data.gov.uk/def/coins/time/a2006m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Time> .
+<http://finance.data.gov.uk/def/coins/time/a2006m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/time/a2006m> <http://www.w3.org/2000/01/rdf-schema#label> "April 2006 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/a2006m> <http://www.w3.org/2004/02/skos/core#prefLabel> "April 2006 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/a2006m> <http://www.w3.org/2004/02/skos/core#notation> "a2006m" .
+<http://finance.data.gov.uk/def/coins/time/a2006m> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/time/a2006m> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/time> .
+<http://finance.data.gov.uk/def/coins/time/n2008m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Time> .
+<http://finance.data.gov.uk/def/coins/time/n2008m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/time/n2008m> <http://www.w3.org/2000/01/rdf-schema#label> "November 2008 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/n2008m> <http://www.w3.org/2004/02/skos/core#prefLabel> "November 2008 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/n2008m> <http://www.w3.org/2004/02/skos/core#notation> "n2008m" .
+<http://finance.data.gov.uk/def/coins/time/n2008m> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/time/n2008m> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/time> .
+<http://finance.data.gov.uk/def/coins/time/2006-07> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Time> .
+<http://finance.data.gov.uk/def/coins/time/2006-07> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/time/2006-07> <http://www.w3.org/2000/01/rdf-schema#label> "2006-07"@en .
+<http://finance.data.gov.uk/def/coins/time/2006-07> <http://www.w3.org/2004/02/skos/core#prefLabel> "2006-07"@en .
+<http://finance.data.gov.uk/def/coins/time/2006-07> <http://www.w3.org/2004/02/skos/core#notation> "2006-07" .
+<http://finance.data.gov.uk/def/coins/time/2006-07> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/time/2006-07> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/time> .
+<http://finance.data.gov.uk/def/coins/time/a2009m0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Time> .
+<http://finance.data.gov.uk/def/coins/time/a2009m0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/time/a2009m0> <http://www.w3.org/2000/01/rdf-schema#label> "August 2009 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/a2009m0> <http://www.w3.org/2004/02/skos/core#prefLabel> "August 2009 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/a2009m0> <http://www.w3.org/2004/02/skos/core#notation> "a2009m0" .
+<http://finance.data.gov.uk/def/coins/time/a2009m0> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/time/a2009m0> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/time> .
+<http://finance.data.gov.uk/def/coins/time/j2005m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Time> .
+<http://finance.data.gov.uk/def/coins/time/j2005m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/time/j2005m> <http://www.w3.org/2000/01/rdf-schema#label> "July 2005 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/j2005m> <http://www.w3.org/2004/02/skos/core#prefLabel> "July 2005 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/j2005m> <http://www.w3.org/2004/02/skos/core#notation> "j2005m" .
+<http://finance.data.gov.uk/def/coins/time/j2005m> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/time/j2005m> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/time> .
+<http://finance.data.gov.uk/def/coins/time/a2008m0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Time> .
+<http://finance.data.gov.uk/def/coins/time/a2008m0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/time/a2008m0> <http://www.w3.org/2000/01/rdf-schema#label> "August 2008 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/a2008m0> <http://www.w3.org/2004/02/skos/core#prefLabel> "August 2008 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/a2008m0> <http://www.w3.org/2004/02/skos/core#notation> "a2008m0" .
+<http://finance.data.gov.uk/def/coins/time/a2008m0> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/time/a2008m0> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/time> .
+<http://finance.data.gov.uk/def/coins/time/a2008m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Time> .
+<http://finance.data.gov.uk/def/coins/time/a2008m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/time/a2008m> <http://www.w3.org/2000/01/rdf-schema#label> "April 2008 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/a2008m> <http://www.w3.org/2004/02/skos/core#prefLabel> "April 2008 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/a2008m> <http://www.w3.org/2004/02/skos/core#notation> "a2008m" .
+<http://finance.data.gov.uk/def/coins/time/a2008m> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/time/a2008m> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/time> .
+<http://finance.data.gov.uk/def/coins/time/q3-2005-06> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Time> .
+<http://finance.data.gov.uk/def/coins/time/q3-2005-06> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/time/q3-2005-06> <http://www.w3.org/2000/01/rdf-schema#label> "Q3 2005-06"@en .
+<http://finance.data.gov.uk/def/coins/time/q3-2005-06> <http://www.w3.org/2004/02/skos/core#prefLabel> "Q3 2005-06"@en .
+<http://finance.data.gov.uk/def/coins/time/q3-2005-06> <http://www.w3.org/2004/02/skos/core#notation> "q3-2005-06" .
+<http://finance.data.gov.uk/def/coins/time/q3-2005-06> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/time/q3-2005-06> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/time> .
+<http://finance.data.gov.uk/def/coins/time/a2007m0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Time> .
+<http://finance.data.gov.uk/def/coins/time/a2007m0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/time/a2007m0> <http://www.w3.org/2000/01/rdf-schema#label> "August 2007 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/a2007m0> <http://www.w3.org/2004/02/skos/core#prefLabel> "August 2007 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/a2007m0> <http://www.w3.org/2004/02/skos/core#notation> "a2007m0" .
+<http://finance.data.gov.uk/def/coins/time/a2007m0> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/time/a2007m0> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/time> .
+<http://finance.data.gov.uk/def/coins/time/d2006m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Time> .
+<http://finance.data.gov.uk/def/coins/time/d2006m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/time/d2006m> <http://www.w3.org/2000/01/rdf-schema#label> "December 2006 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/d2006m> <http://www.w3.org/2004/02/skos/core#prefLabel> "December 2006 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/d2006m> <http://www.w3.org/2004/02/skos/core#notation> "d2006m" .
+<http://finance.data.gov.uk/def/coins/time/d2006m> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/time/d2006m> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/time> .
+<http://finance.data.gov.uk/def/coins/time/j2007m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Time> .
+<http://finance.data.gov.uk/def/coins/time/j2007m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/time/j2007m> <http://www.w3.org/2000/01/rdf-schema#label> "January 2007 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/j2007m> <http://www.w3.org/2004/02/skos/core#prefLabel> "January 2007 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/j2007m> <http://www.w3.org/2004/02/skos/core#notation> "j2007m" .
+<http://finance.data.gov.uk/def/coins/time/j2007m> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/time/j2007m> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/time> .
+<http://finance.data.gov.uk/def/coins/time/a2006m0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Time> .
+<http://finance.data.gov.uk/def/coins/time/a2006m0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/time/a2006m0> <http://www.w3.org/2000/01/rdf-schema#label> "August 2006 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/a2006m0> <http://www.w3.org/2004/02/skos/core#prefLabel> "August 2006 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/a2006m0> <http://www.w3.org/2004/02/skos/core#notation> "a2006m0" .
+<http://finance.data.gov.uk/def/coins/time/a2006m0> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/time/a2006m0> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/time> .
+<http://finance.data.gov.uk/def/coins/time/m2005m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Time> .
+<http://finance.data.gov.uk/def/coins/time/m2005m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/time/m2005m> <http://www.w3.org/2000/01/rdf-schema#label> "May 2005 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/m2005m> <http://www.w3.org/2004/02/skos/core#prefLabel> "May 2005 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/m2005m> <http://www.w3.org/2004/02/skos/core#notation> "m2005m" .
+<http://finance.data.gov.uk/def/coins/time/m2005m> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/time/m2005m> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/time> .
+<http://finance.data.gov.uk/def/coins/time/a2005m0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Time> .
+<http://finance.data.gov.uk/def/coins/time/a2005m0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/time/a2005m0> <http://www.w3.org/2000/01/rdf-schema#label> "August 2005 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/a2005m0> <http://www.w3.org/2004/02/skos/core#prefLabel> "August 2005 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/a2005m0> <http://www.w3.org/2004/02/skos/core#notation> "a2005m0" .
+<http://finance.data.gov.uk/def/coins/time/a2005m0> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/time/a2005m0> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/time> .
+<http://finance.data.gov.uk/def/coins/time/s2006m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Time> .
+<http://finance.data.gov.uk/def/coins/time/s2006m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/time/s2006m> <http://www.w3.org/2000/01/rdf-schema#label> "September 2006 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/s2006m> <http://www.w3.org/2004/02/skos/core#prefLabel> "September 2006 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/s2006m> <http://www.w3.org/2004/02/skos/core#notation> "s2006m" .
+<http://finance.data.gov.uk/def/coins/time/s2006m> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/time/s2006m> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/time> .
+<http://finance.data.gov.uk/def/coins/time/d2008m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Time> .
+<http://finance.data.gov.uk/def/coins/time/d2008m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/time/d2008m> <http://www.w3.org/2000/01/rdf-schema#label> "December 2008 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/d2008m> <http://www.w3.org/2004/02/skos/core#prefLabel> "December 2008 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/d2008m> <http://www.w3.org/2004/02/skos/core#notation> "d2008m" .
+<http://finance.data.gov.uk/def/coins/time/d2008m> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/time/d2008m> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/time> .
+<http://finance.data.gov.uk/def/coins/time/j2009m1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Time> .
+<http://finance.data.gov.uk/def/coins/time/j2009m1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/time/j2009m1> <http://www.w3.org/2000/01/rdf-schema#label> "June 2009 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/j2009m1> <http://www.w3.org/2004/02/skos/core#prefLabel> "June 2009 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/j2009m1> <http://www.w3.org/2004/02/skos/core#notation> "j2009m1" .
+<http://finance.data.gov.uk/def/coins/time/j2009m1> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/time/j2009m1> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/time> .
+<http://finance.data.gov.uk/def/coins/time/j2009m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Time> .
+<http://finance.data.gov.uk/def/coins/time/j2009m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/time/j2009m> <http://www.w3.org/2000/01/rdf-schema#label> "January 2009 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/j2009m> <http://www.w3.org/2004/02/skos/core#prefLabel> "January 2009 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/j2009m> <http://www.w3.org/2004/02/skos/core#notation> "j2009m" .
+<http://finance.data.gov.uk/def/coins/time/j2009m> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/time/j2009m> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/time> .
+<http://finance.data.gov.uk/def/coins/time/m2007m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Time> .
+<http://finance.data.gov.uk/def/coins/time/m2007m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/time/m2007m> <http://www.w3.org/2000/01/rdf-schema#label> "March 2007 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/m2007m> <http://www.w3.org/2004/02/skos/core#prefLabel> "March 2007 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/m2007m> <http://www.w3.org/2004/02/skos/core#notation> "m2007m" .
+<http://finance.data.gov.uk/def/coins/time/m2007m> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/time/m2007m> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/time> .
+<http://finance.data.gov.uk/def/coins/time/j2008m1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Time> .
+<http://finance.data.gov.uk/def/coins/time/j2008m1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/time/j2008m1> <http://www.w3.org/2000/01/rdf-schema#label> "June 2008 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/j2008m1> <http://www.w3.org/2004/02/skos/core#prefLabel> "June 2008 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/j2008m1> <http://www.w3.org/2004/02/skos/core#notation> "j2008m1" .
+<http://finance.data.gov.uk/def/coins/time/j2008m1> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/time/j2008m1> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/time> .
+<http://finance.data.gov.uk/def/coins/time/f2006m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Time> .
+<http://finance.data.gov.uk/def/coins/time/f2006m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/time/f2006m> <http://www.w3.org/2000/01/rdf-schema#label> "February 2006 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/f2006m> <http://www.w3.org/2004/02/skos/core#prefLabel> "February 2006 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/f2006m> <http://www.w3.org/2004/02/skos/core#notation> "f2006m" .
+<http://finance.data.gov.uk/def/coins/time/f2006m> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/time/f2006m> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/time> .
+<http://finance.data.gov.uk/def/coins/time/j2010m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Time> .
+<http://finance.data.gov.uk/def/coins/time/j2010m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/time/j2010m> <http://www.w3.org/2000/01/rdf-schema#label> "January 2010 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/j2010m> <http://www.w3.org/2004/02/skos/core#prefLabel> "January 2010 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/j2010m> <http://www.w3.org/2004/02/skos/core#notation> "j2010m" .
+<http://finance.data.gov.uk/def/coins/time/j2010m> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/time/j2010m> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/time> .
+<http://finance.data.gov.uk/def/coins/time/s2008m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Time> .
+<http://finance.data.gov.uk/def/coins/time/s2008m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/time/s2008m> <http://www.w3.org/2000/01/rdf-schema#label> "September 2008 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/s2008m> <http://www.w3.org/2004/02/skos/core#prefLabel> "September 2008 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/s2008m> <http://www.w3.org/2004/02/skos/core#notation> "s2008m" .
+<http://finance.data.gov.uk/def/coins/time/s2008m> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/time/s2008m> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/time> .
+<http://finance.data.gov.uk/def/coins/time/j2007m1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Time> .
+<http://finance.data.gov.uk/def/coins/time/j2007m1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/time/j2007m1> <http://www.w3.org/2000/01/rdf-schema#label> "June 2007 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/j2007m1> <http://www.w3.org/2004/02/skos/core#prefLabel> "June 2007 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/j2007m1> <http://www.w3.org/2004/02/skos/core#notation> "j2007m1" .
+<http://finance.data.gov.uk/def/coins/time/j2007m1> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/time/j2007m1> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/time> .
+<http://finance.data.gov.uk/def/coins/time> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/time/a2005m0> .
+<http://finance.data.gov.uk/def/coins/time> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/time/s2007m> .
+<http://finance.data.gov.uk/def/coins/time> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/time/j2007m> .
+<http://finance.data.gov.uk/def/coins/time> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/time/j2006m> .
+<http://finance.data.gov.uk/def/coins/time> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/time/f2010m> .
+<http://finance.data.gov.uk/def/coins/time> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/time/j2007m1> .
+<http://finance.data.gov.uk/def/coins/time> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/time/a2009m> .
+<http://finance.data.gov.uk/def/coins/time> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/time/2006-07> .
+<http://finance.data.gov.uk/def/coins/time> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/time/n2009m> .
+<http://finance.data.gov.uk/def/coins/time> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/time/d2006m> .
+<http://finance.data.gov.uk/def/coins/time> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/time/a2006m> .
+<http://finance.data.gov.uk/def/coins/time> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/time/j2008m> .
+<http://finance.data.gov.uk/def/coins/time> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/time/q3-2005-06> .
+<http://finance.data.gov.uk/def/coins/time> <http://www.w3.org/2000/01/rdf-schema#label> "time code list concept scheme"@en .
+<http://finance.data.gov.uk/def/coins/time> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/time/2008-09> .
+<http://finance.data.gov.uk/def/coins/time> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/time/m2010m> .
+<http://finance.data.gov.uk/def/coins/time> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/time/m2005m> .
+<http://finance.data.gov.uk/def/coins/time> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/time/s2005m> .
+<http://finance.data.gov.uk/def/coins/time> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/time/a2008m> .
+<http://finance.data.gov.uk/def/coins/time> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/time/a2007m> .
+<http://finance.data.gov.uk/def/coins/time> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/time/m2008m0> .
+<http://finance.data.gov.uk/def/coins/time> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/time/o2006m> .
+<http://finance.data.gov.uk/def/coins/time> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/time/o2005m> .
+<http://finance.data.gov.uk/def/coins/time> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/time/m2008m> .
+<http://finance.data.gov.uk/def/coins/time> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/time/m2007m> .
+<http://finance.data.gov.uk/def/coins/time> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/time/j2007m0> .
+<http://finance.data.gov.uk/def/coins/time> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/time/s2008m> .
+<http://finance.data.gov.uk/def/coins/time> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/time/j2006m0> .
+<http://finance.data.gov.uk/def/coins/time> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/time/m2007m0> .
+<http://finance.data.gov.uk/def/coins/time> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/time/f2007m> .
+<http://finance.data.gov.uk/def/coins/time> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/time/j2008m1> .
+<http://finance.data.gov.uk/def/coins/time> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/time/d2007m> .
+<http://finance.data.gov.uk/def/coins/time> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/time/2007-08> .
+<http://finance.data.gov.uk/def/coins/time> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/time/f2009m> .
+<http://finance.data.gov.uk/def/coins/time> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://finance.data.gov.uk/def/coins/time> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/time/o2007m> .
+<http://finance.data.gov.uk/def/coins/time> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/time/m2009m> .
+<http://finance.data.gov.uk/def/coins/time> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/time/s2009m> .
+<http://finance.data.gov.uk/def/coins/time> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/time/j2009m> .
+<http://finance.data.gov.uk/def/coins/time> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/time/2009-10> .
+<http://finance.data.gov.uk/def/coins/time> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/time/f2008m> .
+<http://finance.data.gov.uk/def/coins/time> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/time/j2009m0> .
+<http://finance.data.gov.uk/def/coins/time> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/time/j2010m> .
+<http://finance.data.gov.uk/def/coins/time> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/time/o2009m> .
+<http://finance.data.gov.uk/def/coins/time> <http://www.w3.org/2004/02/skos/core#prefLabel> "time code list concept scheme"@en .
+<http://finance.data.gov.uk/def/coins/time> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/time/d2009m> .
+<http://finance.data.gov.uk/def/coins/time> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/time/d2008m> .
+<http://finance.data.gov.uk/def/coins/time> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/time/n2008m> .
+<http://finance.data.gov.uk/def/coins/time> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/time/m2009m0> .
+<http://finance.data.gov.uk/def/coins/time> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/time/m2006m> .
+<http://finance.data.gov.uk/def/coins/time> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/time/j2008m0> .
+<http://finance.data.gov.uk/def/coins/time> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/time/j2005m0> .
+<http://finance.data.gov.uk/def/coins/time> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/time/a2005m> .
+<http://finance.data.gov.uk/def/coins/time> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/time/m2006m0> .
+<http://finance.data.gov.uk/def/coins/time> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/time/n2005m> .
+<http://finance.data.gov.uk/def/coins/time> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/time/a2009m0> .
+<http://finance.data.gov.uk/def/coins/time> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/time/a2006m0> .
+<http://finance.data.gov.uk/def/coins/time> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/time/s2006m> .
+<http://finance.data.gov.uk/def/coins/time> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/time/j2005m> .
+<http://finance.data.gov.uk/def/coins/time> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/time/a2007m0> .
+<http://finance.data.gov.uk/def/coins/time> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/time/q2-2005-06> .
+<http://finance.data.gov.uk/def/coins/time> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/time/a2008m0> .
+<http://finance.data.gov.uk/def/coins/time> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/time/d2005m> .
+<http://finance.data.gov.uk/def/coins/time> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/time/j2009m1> .
+<http://finance.data.gov.uk/def/coins/time> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/time/f2006m> .
+<http://finance.data.gov.uk/def/coins/time> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/time/o2008m> .
+<http://finance.data.gov.uk/def/coins/time> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/time/q1-2005-06> .
+<http://finance.data.gov.uk/def/coins/time> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/time/j2006m1> .
+<http://finance.data.gov.uk/def/coins/time> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/time/2005-06> .
+<http://finance.data.gov.uk/def/coins/time> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/time/n2007m> .
+<http://finance.data.gov.uk/def/coins/time> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/time/n2006m> .
+<http://finance.data.gov.uk/def/coins/time/2005-06> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Time> .
+<http://finance.data.gov.uk/def/coins/time/2005-06> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/time/2005-06> <http://www.w3.org/2000/01/rdf-schema#label> "2005-06"@en .
+<http://finance.data.gov.uk/def/coins/time/2005-06> <http://www.w3.org/2004/02/skos/core#prefLabel> "2005-06"@en .
+<http://finance.data.gov.uk/def/coins/time/2005-06> <http://www.w3.org/2004/02/skos/core#notation> "2005-06" .
+<http://finance.data.gov.uk/def/coins/time/2005-06> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/time/2005-06> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/time> .
+<http://finance.data.gov.uk/def/coins/time/o2005m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Time> .
+<http://finance.data.gov.uk/def/coins/time/o2005m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/time/o2005m> <http://www.w3.org/2000/01/rdf-schema#label> "October 2005 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/o2005m> <http://www.w3.org/2004/02/skos/core#prefLabel> "October 2005 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/o2005m> <http://www.w3.org/2004/02/skos/core#notation> "o2005m" .
+<http://finance.data.gov.uk/def/coins/time/o2005m> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/time/o2005m> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/time> .
+<http://finance.data.gov.uk/def/coins/Time> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://finance.data.gov.uk/def/coins/Time> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://finance.data.gov.uk/def/coins/Time> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/Time> <http://www.w3.org/2000/01/rdf-schema#label> "time values class"@en .
+<http://finance.data.gov.uk/def/coins/Time> <http://www.w3.org/2004/02/skos/core#prefLabel> "time values class"@en .
+<http://finance.data.gov.uk/def/coins/Time> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of values in the time code-list scheme" .
+<http://finance.data.gov.uk/def/coins/time/j2006m1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Time> .
+<http://finance.data.gov.uk/def/coins/time/j2006m1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/time/j2006m1> <http://www.w3.org/2000/01/rdf-schema#label> "June 2006 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/j2006m1> <http://www.w3.org/2004/02/skos/core#prefLabel> "June 2006 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/j2006m1> <http://www.w3.org/2004/02/skos/core#notation> "j2006m1" .
+<http://finance.data.gov.uk/def/coins/time/j2006m1> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/time/j2006m1> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/time> .
+<http://finance.data.gov.uk/def/coins/time/m2009m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Time> .
+<http://finance.data.gov.uk/def/coins/time/m2009m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/time/m2009m> <http://www.w3.org/2000/01/rdf-schema#label> "March 2009 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/m2009m> <http://www.w3.org/2004/02/skos/core#prefLabel> "March 2009 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/m2009m> <http://www.w3.org/2004/02/skos/core#notation> "m2009m" .
+<http://finance.data.gov.uk/def/coins/time/m2009m> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/time/m2009m> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/time> .
+<http://finance.data.gov.uk/def/coins/time/n2005m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Time> .
+<http://finance.data.gov.uk/def/coins/time/n2005m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/time/n2005m> <http://www.w3.org/2000/01/rdf-schema#label> "November 2005 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/n2005m> <http://www.w3.org/2004/02/skos/core#prefLabel> "November 2005 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/n2005m> <http://www.w3.org/2004/02/skos/core#notation> "n2005m" .
+<http://finance.data.gov.uk/def/coins/time/n2005m> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/time/n2005m> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/time> .
+<http://finance.data.gov.uk/def/coins/time/f2008m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Time> .
+<http://finance.data.gov.uk/def/coins/time/f2008m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/time/f2008m> <http://www.w3.org/2000/01/rdf-schema#label> "February 2008 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/f2008m> <http://www.w3.org/2004/02/skos/core#prefLabel> "February 2008 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/f2008m> <http://www.w3.org/2004/02/skos/core#notation> "f2008m" .
+<http://finance.data.gov.uk/def/coins/time/f2008m> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/time/f2008m> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/time> .
+<http://finance.data.gov.uk/def/coins/time/m2010m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Time> .
+<http://finance.data.gov.uk/def/coins/time/m2010m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/time/m2010m> <http://www.w3.org/2000/01/rdf-schema#label> "March 2010 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/m2010m> <http://www.w3.org/2004/02/skos/core#prefLabel> "March 2010 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/m2010m> <http://www.w3.org/2004/02/skos/core#notation> "m2010m" .
+<http://finance.data.gov.uk/def/coins/time/m2010m> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/time/m2010m> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/time> .
+<http://finance.data.gov.uk/def/coins/time/j2009m0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Time> .
+<http://finance.data.gov.uk/def/coins/time/j2009m0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/time/j2009m0> <http://www.w3.org/2000/01/rdf-schema#label> "July 2009 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/j2009m0> <http://www.w3.org/2004/02/skos/core#prefLabel> "July 2009 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/j2009m0> <http://www.w3.org/2004/02/skos/core#notation> "j2009m0" .
+<http://finance.data.gov.uk/def/coins/time/j2009m0> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/time/j2009m0> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/time> .
+<http://finance.data.gov.uk/def/coins/time/o2007m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Time> .
+<http://finance.data.gov.uk/def/coins/time/o2007m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/time/o2007m> <http://www.w3.org/2000/01/rdf-schema#label> "October 2007 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/o2007m> <http://www.w3.org/2004/02/skos/core#prefLabel> "October 2007 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/o2007m> <http://www.w3.org/2004/02/skos/core#notation> "o2007m" .
+<http://finance.data.gov.uk/def/coins/time/o2007m> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/time/o2007m> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/time> .
+<http://finance.data.gov.uk/def/coins/time/j2008m0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Time> .
+<http://finance.data.gov.uk/def/coins/time/j2008m0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/time/j2008m0> <http://www.w3.org/2000/01/rdf-schema#label> "July 2008 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/j2008m0> <http://www.w3.org/2004/02/skos/core#prefLabel> "July 2008 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/j2008m0> <http://www.w3.org/2004/02/skos/core#notation> "j2008m0" .
+<http://finance.data.gov.uk/def/coins/time/j2008m0> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/time/j2008m0> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/time> .
+<http://finance.data.gov.uk/def/coins/time/m2009m0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Time> .
+<http://finance.data.gov.uk/def/coins/time/m2009m0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/time/m2009m0> <http://www.w3.org/2000/01/rdf-schema#label> "May 2009 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/m2009m0> <http://www.w3.org/2004/02/skos/core#prefLabel> "May 2009 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/m2009m0> <http://www.w3.org/2004/02/skos/core#notation> "m2009m0" .
+<http://finance.data.gov.uk/def/coins/time/m2009m0> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/time/m2009m0> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/time> .
+<http://finance.data.gov.uk/def/coins/time/a2005m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Time> .
+<http://finance.data.gov.uk/def/coins/time/a2005m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/time/a2005m> <http://www.w3.org/2000/01/rdf-schema#label> "April 2005 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/a2005m> <http://www.w3.org/2004/02/skos/core#prefLabel> "April 2005 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/a2005m> <http://www.w3.org/2004/02/skos/core#notation> "a2005m" .
+<http://finance.data.gov.uk/def/coins/time/a2005m> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/time/a2005m> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/time> .
+<http://finance.data.gov.uk/def/coins/time/n2007m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Time> .
+<http://finance.data.gov.uk/def/coins/time/n2007m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/time/n2007m> <http://www.w3.org/2000/01/rdf-schema#label> "November 2007 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/n2007m> <http://www.w3.org/2004/02/skos/core#prefLabel> "November 2007 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/n2007m> <http://www.w3.org/2004/02/skos/core#notation> "n2007m" .
+<http://finance.data.gov.uk/def/coins/time/n2007m> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/time/n2007m> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/time> .
+<http://finance.data.gov.uk/def/coins/time/j2007m0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Time> .
+<http://finance.data.gov.uk/def/coins/time/j2007m0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/time/j2007m0> <http://www.w3.org/2000/01/rdf-schema#label> "July 2007 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/j2007m0> <http://www.w3.org/2004/02/skos/core#prefLabel> "July 2007 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/j2007m0> <http://www.w3.org/2004/02/skos/core#notation> "j2007m0" .
+<http://finance.data.gov.uk/def/coins/time/j2007m0> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/time/j2007m0> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/time> .
+<http://finance.data.gov.uk/def/coins/time/m2008m0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Time> .
+<http://finance.data.gov.uk/def/coins/time/m2008m0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/time/m2008m0> <http://www.w3.org/2000/01/rdf-schema#label> "May 2008 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/m2008m0> <http://www.w3.org/2004/02/skos/core#prefLabel> "May 2008 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/m2008m0> <http://www.w3.org/2004/02/skos/core#notation> "m2008m0" .
+<http://finance.data.gov.uk/def/coins/time/m2008m0> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/time/m2008m0> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/time> .
+<http://finance.data.gov.uk/def/coins/time/j2006m0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Time> .
+<http://finance.data.gov.uk/def/coins/time/j2006m0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/time/j2006m0> <http://www.w3.org/2000/01/rdf-schema#label> "July 2006 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/j2006m0> <http://www.w3.org/2004/02/skos/core#prefLabel> "July 2006 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/j2006m0> <http://www.w3.org/2004/02/skos/core#notation> "j2006m0" .
+<http://finance.data.gov.uk/def/coins/time/j2006m0> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/time/j2006m0> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/time> .
+<http://finance.data.gov.uk/def/coins/time/o2009m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Time> .
+<http://finance.data.gov.uk/def/coins/time/o2009m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/time/o2009m> <http://www.w3.org/2000/01/rdf-schema#label> "October 2009 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/o2009m> <http://www.w3.org/2004/02/skos/core#prefLabel> "October 2009 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/o2009m> <http://www.w3.org/2004/02/skos/core#notation> "o2009m" .
+<http://finance.data.gov.uk/def/coins/time/o2009m> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/time/o2009m> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/time> .
+<http://finance.data.gov.uk/def/coins/time/m2007m0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Time> .
+<http://finance.data.gov.uk/def/coins/time/m2007m0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/time/m2007m0> <http://www.w3.org/2000/01/rdf-schema#label> "May 2007 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/m2007m0> <http://www.w3.org/2004/02/skos/core#prefLabel> "May 2007 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/m2007m0> <http://www.w3.org/2004/02/skos/core#notation> "m2007m0" .
+<http://finance.data.gov.uk/def/coins/time/m2007m0> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/time/m2007m0> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/time> .
+<http://finance.data.gov.uk/def/coins/time/j2005m0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Time> .
+<http://finance.data.gov.uk/def/coins/time/j2005m0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/time/j2005m0> <http://www.w3.org/2000/01/rdf-schema#label> "June 2005 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/j2005m0> <http://www.w3.org/2004/02/skos/core#prefLabel> "June 2005 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/j2005m0> <http://www.w3.org/2004/02/skos/core#notation> "j2005m0" .
+<http://finance.data.gov.uk/def/coins/time/j2005m0> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/time/j2005m0> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/time> .
+<http://finance.data.gov.uk/def/coins/time/m2006m0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Time> .
+<http://finance.data.gov.uk/def/coins/time/m2006m0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/time/m2006m0> <http://www.w3.org/2000/01/rdf-schema#label> "May 2006 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/m2006m0> <http://www.w3.org/2004/02/skos/core#prefLabel> "May 2006 MTH"@en .
+<http://finance.data.gov.uk/def/coins/time/m2006m0> <http://www.w3.org/2004/02/skos/core#notation> "m2006m0" .
+<http://finance.data.gov.uk/def/coins/time/m2006m0> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/time/m2006m0> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/time> .

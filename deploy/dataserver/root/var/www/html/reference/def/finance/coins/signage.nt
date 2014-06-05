@@ -1,0 +1,31 @@
+<http://finance.data.gov.uk/def/coins/statistical-concept/signage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/sdmx#Concept> .
+<http://finance.data.gov.uk/def/coins/statistical-concept/signage> <http://www.w3.org/2000/01/rdf-schema#label> "signage"@en .
+<http://finance.data.gov.uk/def/coins/statistical-concept/signage> <http://www.w3.org/2004/02/skos/core#prefLabel> "signage"@en .
+<http://finance.data.gov.uk/def/coins/statistical-concept/signage> <http://www.w3.org/2000/01/rdf-schema#comment> "Shows signage where it can only be negative or positive, rather than either." .
+<http://finance.data.gov.uk/def/coins/statistical-concept/signage> <http://purl.org/dc/terms/source> <http://www.hm-treasury.gov.uk/d/coins_guidance.pdf> .
+<http://finance.data.gov.uk/def/coins/statistical-concept/signage> <http://www.epimorphics.com/vocabs/coins-generate#columnName> "signage" .
+<http://finance.data.gov.uk/def/coins/signage/positive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Signage> .
+<http://finance.data.gov.uk/def/coins/signage/positive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/signage/positive> <http://www.w3.org/2000/01/rdf-schema#label> "Positive"@en .
+<http://finance.data.gov.uk/def/coins/signage/positive> <http://www.w3.org/2004/02/skos/core#prefLabel> "Positive"@en .
+<http://finance.data.gov.uk/def/coins/signage/positive> <http://www.w3.org/2004/02/skos/core#notation> "positive" .
+<http://finance.data.gov.uk/def/coins/signage/positive> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/signage/positive> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/signage> .
+<http://finance.data.gov.uk/def/coins/signage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://finance.data.gov.uk/def/coins/signage> <http://www.w3.org/2000/01/rdf-schema#label> "signage code list concept scheme"@en .
+<http://finance.data.gov.uk/def/coins/signage> <http://www.w3.org/2004/02/skos/core#prefLabel> "signage code list concept scheme"@en .
+<http://finance.data.gov.uk/def/coins/signage> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/signage/negative> .
+<http://finance.data.gov.uk/def/coins/signage> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/signage/positive> .
+<http://finance.data.gov.uk/def/coins/Signage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://finance.data.gov.uk/def/coins/Signage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://finance.data.gov.uk/def/coins/Signage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/Signage> <http://www.w3.org/2000/01/rdf-schema#label> "signage values class"@en .
+<http://finance.data.gov.uk/def/coins/Signage> <http://www.w3.org/2004/02/skos/core#prefLabel> "signage values class"@en .
+<http://finance.data.gov.uk/def/coins/Signage> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of values in the signage code-list scheme" .
+<http://finance.data.gov.uk/def/coins/signage/negative> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/Signage> .
+<http://finance.data.gov.uk/def/coins/signage/negative> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/signage/negative> <http://www.w3.org/2000/01/rdf-schema#label> "Negative"@en .
+<http://finance.data.gov.uk/def/coins/signage/negative> <http://www.w3.org/2004/02/skos/core#prefLabel> "Negative"@en .
+<http://finance.data.gov.uk/def/coins/signage/negative> <http://www.w3.org/2004/02/skos/core#notation> "negative" .
+<http://finance.data.gov.uk/def/coins/signage/negative> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/signage/negative> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/signage> .

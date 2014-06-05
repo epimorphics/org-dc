@@ -1,0 +1,245 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix scovo: <http://purl.org/NET/scovo#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix vehicle: <http://transport.data.gov.uk/def/vehicle/> .
+@prefix area: <http://statistics.data.gov.uk/def/administrative-geography/> .
+@base <http://transport.data.gov.uk/def/traffic/> .
+
+<http://transport.data.gov.uk/def/traffic> a owl:Ontology ;
+  rdfs:label "Traffic Flow"@en ;
+  owl:imports <http://www.w3.org/2006/time> ;
+  owl:imports <http://transport.data.gov.uk/def/vehicle> ;
+  owl:imports <http://statistics.data.gov.uk/def/administrative-geography> .
+
+# Classes #
+
+[] a owl:AllDisjointClasses ;
+  owl:members ( <Road> <CountPoint> <Count> <RoadCategory> <CountHour> ) .
+
+<Road>
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:label "Road"@en ;
+  rdfs:subClassOf [
+    owl:onProperty <roadNumber> ;
+    owl:allValuesFrom <RoadNumber>
+  ] .
+
+<CountPoint>
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:label "Traffic Count Point"@en ;
+  rdfs:subClassOf [
+    owl:onProperty <countPointNumber> ;
+    owl:allValuesFrom <CountPointNumber>
+# Issues with rdfs:Datatype
+#  ], [
+#    owl:onProperty <countPointNumber> ;
+#    owl:cardinality 1
+  ], [
+    owl:onProperty <road> ;
+    owl:allValuesFrom <Road>
+  ], [
+    owl:onProperty <road> ;
+    owl:cardinality 1
+  ], [
+    owl:onProperty <roadCategory> ;
+    owl:allValuesFrom <RoadCategory>
+  ], [
+    owl:onProperty <roadCategory> ;
+    owl:minCardinality 1
+  ] .
+
+<Count>
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:label "Traffic Count"@en ;
+  rdfs:subClassOf [
+    owl:onProperty <countPoint> ;
+    owl:allValuesFrom <CountPoint>
+  ], [
+    owl:onProperty <countPoint> ;
+    owl:cardinality 1
+  ], [
+    owl:onProperty <countHour> ;
+    owl:allValuesFrom <CountHour>
+  ], [
+    owl:onProperty <countHour> ;
+    owl:cardinality 1
+  ] .
+
+<RoadCategory>
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:subClassOf skos:Concept ;
+  rdfs:label "Road Category"@en .    
+
+<CountHour>
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:subClassOf time:Interval ;
+  rdfs:label "Count Hour"@en .
+
+scovo:Item a owl:Class ;
+  rdfs:subClassOf [
+    owl:onProperty <count> ;
+    owl:allValuesFrom <Count>
+  ], [
+    owl:onProperty <count> ;
+    owl:cardinality 1
+  ] .
+
+# Properties #
+
+<road>
+  a rdf:Property ;
+  a owl:ObjectProperty ;
+  rdfs:label "road"@en ;
+  owl:inverseOf <roadCountPoint> .
+
+<roadName> a rdf:Property, owl:DatatypeProperty ;
+  rdfs:label "road name"@en .
+
+<roadCountPoint>
+  a rdf:Property, owl:ObjectProperty ;
+  rdfs:label "count point"@en .
+
+<countPoint>
+  a rdf:Property ;
+  a owl:ObjectProperty ;
+  rdfs:label "traffic count point"@en ;
+  owl:inverseOf <countPointCount> .
+
+<countPointCount>
+  a rdf:Property, owl:ObjectProperty ;
+  rdfs:label "count"@en .
+
+<count>
+  a rdf:Property ;
+  a owl:ObjectProperty ;
+  rdfs:subPropertyOf scovo:dimension ;
+  rdfs:label "count"@en .
+
+<observation>
+  a rdf:Property, owl:ObjectProperty ;
+  owl:inverseOf <count> .
+
+<roadCategory>
+  a rdf:Property ;
+  a owl:ObjectProperty ;
+  rdfs:label "road category"@en .
+
+<direction>
+  a rdf:Property ;
+  a owl:ObjectProperty ;
+  rdfs:label "traffic direction"@en .
+
+<countHour>
+  a rdf:Property ;
+  a owl:ObjectProperty ;
+  rdfs:label "hour of count"@en ;
+  rdfs:domain <Count> ;
+  rdfs:range <CountHour> .
+
+<vehicleType>
+  a rdf:Property ;
+  a owl:ObjectProperty ;
+  rdfs:subPropertyOf scovo:dimension ;
+  rdfs:label "vehicle type"@en ;
+  rdfs:range <http://transport.data.gov.uk/def/vehicle/VehicleType> .
+
+# Datatypes #
+
+<LAcode>
+  a rdfs:Datatype ;
+  rdfs:label "Local Authority Code"@en .
+
+<lacode>
+  a rdf:Property ;
+  a owl:DatatypeProperty ;
+  rdfs:subPropertyOf skos:notation ;
+  rdfs:range <LAcode> .
+
+<RoadNumber>
+  a rdfs:Datatype ;
+  rdfs:label "Road Number"@en .
+
+<roadNumber>
+  a rdf:Property ;
+  a owl:DatatypeProperty ;
+  rdfs:subPropertyOf skos:notation ;
+  rdfs:range <RoadNumber> .
+
+<CountPointNumber>
+  a rdfs:Datatype ;
+  rdfs:label "Traffic Count Point Number"@en .
+
+<countPointNumber>
+  a rdf:Property ;
+  a owl:DatatypeProperty ;
+  rdfs:subPropertyOf skos:notation .
+
+# Shortcuts
+
+<observationCountPoint> a owl:ObjectProperty, rdf:Property ;
+  rdfs:label "count point"@en ;
+  owl:propertyChainAxiom ( <count> <countPoint> ) .
+
+<observationRoad> a owl:ObjectProperty, rdf:Property ;
+  rdfs:label "road"@en ;
+  owl:propertyChainAxiom ( <observationCountPoint> <road> ) .
+
+<observationCountHour> a owl:ObjectProperty, rdf:Property ;
+  rdfs:label "count hour"@en ;
+  owl:propertyChainAxiom ( <count> <countHour> ) .
+
+<observationDirection> a owl:ObjectProperty, rdf:Property ;
+  rdfs:label "direction"@en ;
+  owl:propertyChainAxiom ( <count> <direction> ) .
+
+<roadCount> a owl:ObjectProperty, rdf:Property ;
+  rdfs:label "count"@en ;
+  owl:propertyChainAxiom ( <roadCountPoint> <countPointCount> ) .
+
+<countRoad> a owl:ObjectProperty, rdf:Property ;
+  rdfs:label "road"@en ;
+  owl:propertyChainAxiom ( <countPoint> <road> ) .
+
+<countPointCountry> a owl:ObjectProperty, rdf:Property ;
+  rdfs:label "country"@en ;
+  owl:propertyChainAxiom ( <roadCountPoint> area:district area:country ) ;
+  owl:propertyChainAxiom ( <roadCountPoint> area:county area:country ) .
+
+<countPointRegion> a owl:ObjectProperty, rdf:Property ;
+  rdfs:label "region"@en ;
+  owl:propertyChainAxiom ( <roadCountPoint> area:district area:region ) ;
+  owl:propertyChainAxiom ( <roadCountPoint> area:county area:region ) .
+
+<countPointDistrict> a owl:ObjectProperty, rdf:Property ;
+  rdfs:label "district"@en ;
+  owl:propertyChainAxiom ( <roadCountPoint> area:district ) .
+
+<countPointCounty> a owl:ObjectProperty, rdf:Property ;
+  rdfs:label "district"@en ;
+  owl:propertyChainAxiom ( <roadCountPoint> area:county ) .
+
+<countPointRoadCategory> a owl:ObjectProperty, rdf:Property ;
+  rdfs:label "road category"@en ;
+  owl:propertyChainAxiom ( <roadCountPoint> <roadCategory> ) .
+
+# <countPointRoadName> a owl:DatatypeProperty, rdf:Property ;
+#   rdfs:label "region"@en ;
+#   owl:propertyChainAxiom ( <roadCountPoint> <roadName> ) .
+
+<districtOrCountyRegion> a owl:ObjectProperty, rdf:Property ;
+  rdfs:label "region"@en ;
+  owl:propertyChainAxiom ( area:district area:region ) ;
+  owl:propertyChainAxiom ( area:county area:region ) .
+
+<districtOrCountyCountry> a owl:ObjectProperty, rdf:Property ;
+  rdfs:label "country"@en ;
+  owl:propertyChainAxiom ( area:district area:country ) ;
+  owl:propertyChainAxiom ( area:county area:country ) .

@@ -1,0 +1,80 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix naptan: <http://transport.data.gov.uk/def/naptan/> .
+@prefix spatialrelations: <http://data.ordnancesurvey.co.uk/ontology/spatialrelations/> .
+
+<http://transport.data.gov.uk/def/nptg-source-locality-type>
+  a skos:ConceptScheme ;
+  skos:prefName "NPTG Source Locality Type"@en ;
+  skos:note "Allowed values for source classification of NPTG Localities."@en ;
+  skos:hasTopConcept
+		<http://transport.data.gov.uk/def/nptg-source-locality-type/U> ,
+		<http://transport.data.gov.uk/def/nptg-source-locality-type/US> ,
+		<http://transport.data.gov.uk/def/nptg-source-locality-type/Pa> ,
+		<http://transport.data.gov.uk/def/nptg-source-locality-type/Co> ,
+		<http://transport.data.gov.uk/def/nptg-source-locality-type/Lo> ,
+		<http://transport.data.gov.uk/def/nptg-source-locality-type/DWD> ,
+		<http://transport.data.gov.uk/def/nptg-source-locality-type/LOC> ,
+		<http://transport.data.gov.uk/def/nptg-source-locality-type/PAR> ,
+		<http://transport.data.gov.uk/def/nptg-source-locality-type/RED> ,
+		<http://transport.data.gov.uk/def/nptg-source-locality-type/ISL> ,
+		<http://transport.data.gov.uk/def/nptg-source-locality-type/Add> .
+
+<http://transport.data.gov.uk/def/nptg-source-locality-type/U>
+  a skos:Concept , naptan:NptgSourceLocalityType ;
+  skos:prefName "Urban Area in OS data"@en ;
+  skos:topConceptOf <http://transport.data.gov.uk/def/nptg-source-locality-type> .
+
+<http://transport.data.gov.uk/def/nptg-source-locality-type/US>
+  a skos:Concept , naptan:NptgSourceLocalityType ;
+  skos:prefName "Urban sub-area in OS data"@en ;
+  skos:topConceptOf <http://transport.data.gov.uk/def/nptg-source-locality-type> .
+
+<http://transport.data.gov.uk/def/nptg-source-locality-type/Pa>
+  a skos:Concept , naptan:NptgSourceLocalityType ;
+  skos:prefName "Parish Ð not Wales"@en ;
+  skos:topConceptOf <http://transport.data.gov.uk/def/nptg-source-locality-type> .
+
+<http://transport.data.gov.uk/def/nptg-source-locality-type/Co>
+  a skos:Concept , naptan:NptgSourceLocalityType ;
+  skos:prefName "Community Ð Wales only"@en ;
+  skos:topConceptOf <http://transport.data.gov.uk/def/nptg-source-locality-type> .
+
+<http://transport.data.gov.uk/def/nptg-source-locality-type/Lo>
+  a skos:Concept , naptan:NptgSourceLocalityType ;
+  skos:prefName "Other Locality in OS data"@en ;
+  skos:topConceptOf <http://transport.data.gov.uk/def/nptg-source-locality-type> .
+
+<http://transport.data.gov.uk/def/nptg-source-locality-type/DWD>
+  a skos:Concept , naptan:NptgSourceLocalityType ;
+  skos:prefName "Scottish District Ward Ð Scotland only"@en ;
+  skos:topConceptOf <http://transport.data.gov.uk/def/nptg-source-locality-type> .
+
+<http://transport.data.gov.uk/def/nptg-source-locality-type/LOC>
+  a skos:Concept , naptan:NptgSourceLocalityType ;
+  skos:prefName "Scottish Locality Ð Scotland only"@en ;
+  skos:topConceptOf <http://transport.data.gov.uk/def/nptg-source-locality-type> .
+
+<http://transport.data.gov.uk/def/nptg-source-locality-type/PAR>
+  a skos:Concept , naptan:NptgSourceLocalityType ;
+  skos:prefName "Scottish Parish Ð Scotland only"@en ;
+  skos:topConceptOf <http://transport.data.gov.uk/def/nptg-source-locality-type> .
+
+<http://transport.data.gov.uk/def/nptg-source-locality-type/RED>
+  a skos:Concept , naptan:NptgSourceLocalityType ;
+  skos:prefName "Scottish Registered Electoral District Ð Scotland only"@en ;
+  skos:topConceptOf <http://transport.data.gov.uk/def/nptg-source-locality-type> .
+
+<http://transport.data.gov.uk/def/nptg-source-locality-type/ISL>
+  a skos:Concept , naptan:NptgSourceLocalityType ;
+  skos:prefName "Island"@en ;
+  skos:topConceptOf <http://transport.data.gov.uk/def/nptg-source-locality-type> .
+
+<http://transport.data.gov.uk/def/nptg-source-locality-type/Add>
+  a skos:Concept , naptan:NptgSourceLocalityType ;
+  skos:prefName "Added"@en ;
+  skos:topConceptOf <http://transport.data.gov.uk/def/nptg-source-locality-type> .

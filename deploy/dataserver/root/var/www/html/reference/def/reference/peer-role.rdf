@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:dct="http://purl.org/dc/terms/"
+   xmlns:foaf="http://xmlns.com/foaf/0.1/"
+   xmlns:org="http://www.w3.org/ns/org#"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:parl="http://reference.data.gov.uk/def/parliament/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+   xmlns:void="http://rdfs.org/ns/void#"
+   xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <skos:ConceptScheme rdf:about="http://reference.data.gov.uk/def/peer-role">
+    <dct:title xml:lang="en">Peer Roles</dct:title>
+    <void:exampleResource rdf:resource="http://reference.data.gov.uk/def/peer-role/lord-spiritual"/>
+    <void:exampleResource rdf:resource="http://reference.data.gov.uk/def/peer-role/lord-temporal"/>
+    <void:vocabulary rdf:resource="http://reference.data.gov.uk/def/parliament/"/>
+    <void:vocabulary rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
+    <void:vocabulary rdf:resource="http://www.w3.org/ns/org#"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#DataSet"/>
+    <rdfs:label xml:lang="en">Peer Roles</rdfs:label>
+    <skos:prefLabel xml:lang="en">Peer Roles</skos:prefLabel>
+    <skos:topConcept rdf:resource="http://reference.data.gov.uk/def/peer-role/lord-spiritual"/>
+    <skos:topConcept rdf:resource="http://reference.data.gov.uk/def/peer-role/lord-temporal"/>
+  </skos:ConceptScheme>
+  <org:Role rdf:about="http://reference.data.gov.uk/def/peer-role/lord-spiritual">
+    <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Lords_Spiritual"/>
+    <skos:note rdf:resource="http://en.wikipedia.org/wiki/Lords_Spiritual"/>
+    <skos:note xml:lang="en">Describes Bishops of the Church of England who sit in The House of Lords, but do not normally vote on matters of law or state.</skos:note>
+    <skos:prefLabel xml:lang="en">Lord Spiritual</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/peer-role"/>
+    <org:roleProperty rdf:resource="http://reference.data.gov.uk/def/parliament/memberOf"/>
+  </org:Role>
+  <org:Role rdf:about="http://reference.data.gov.uk/def/peer-role/lord-temporal">
+    <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Lords_Temporal"/>
+    <skos:note rdf:resource="http://en.wikipedia.org/wiki/Lords_Temporal"/>
+    <skos:note xml:lang="en">Describes life peers or hereditary peers who sit in The House of Lords.</skos:note>
+    <skos:prefLabel xml:lang="en">Lord Temporal</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://reference.data.gov.uk/def/peer-role"/>
+    <org:roleProperty rdf:resource="http://reference.data.gov.uk/def/parliament/memberOf"/>
+  </org:Role>
+</rdf:RDF>

@@ -1,0 +1,125 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dcmitype: <http://purl.org/dc/dcmitype/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix : <http://reference.data.gov.uk/def/public-body/> .
+@prefix ns1: <http://xmlns.co/foaf/1.0/> .
+
+<http://reference.data.gov.uk/def/public-body/>
+    a owl:Ontology ;
+    owl:imports <http://purl.org/dc/terms>, <http://purl.org/vocab/frbr/core>, <http://www.w3.org/2004/02/skos/core>, <http://xmlns.com/foaf/0.1> ;
+    owl:versionInfo "Initial Draft Version"^^xsd:string .
+
+:AdvisoryNDPB
+    a owl:Class ;
+    rdfs:comment "Advisory NDPBs – provide independent, expert advice to Ministers on a wide range of issues.  Examples include the Low Pay Commission and the Committee on Standards in Public Life;"@en ;
+    rdfs:label "Advisory NDPB"@en ;
+    rdfs:subClassOf :NonDepartmentalPublicBody ;
+    owl:disjointWith :ExecutiveNDPB, :MonitoringNDPB, :TribunalNDPB ;
+    skos:prefLabel "Advisory NDPB"@en ;
+    foaf:isPrimaryTopicOf <http://en.wikipedia.org/wiki/Non-departmental_public_body#Advisory_NDPBs> .
+
+:ExecutiveAgency
+    a owl:Class ;
+    rdfs:comment "\"An executive agency, also known as a next-step agency, is a part of a government department that is treated as managerially and budgetarily separate in order to carry out some part of the executive functions of the United Kingdom government, Scottish Government, Welsh Assembly or Northern Ireland Executive\""^^xsd:string ;
+    rdfs:label "Executive agency"@en ;
+    rdfs:subClassOf :PublicBody ;
+    owl:disjointWith :MinisterialDepartment, :NonDepartmentalPublicBody, :NonMinisterialDepartment ;
+    skos:prefLabel "Executive agency"@en ;
+    foaf:isPrimaryTopicOf <http://en.wikipedia.org/wiki/Executive_agency> .
+
+:ExecutiveNDPB
+    a owl:Class ;
+    rdfs:comment "Executive NDPBs - typically established in statute and carrying out executive, administrative, regulatory and/or commercial functions.  Examples include the Environment Agency, Regional Development Agencies and national museums and galleries"@en ;
+    rdfs:label "Executive NDPB"@en ;
+    rdfs:subClassOf :NonDepartmentalPublicBody ;
+    owl:disjointWith :AdvisoryNDPB, :MonitoringNDPB, :TribunalNDPB ;
+    skos:prefLabel "Executive NDPB"@en ;
+    ns1:page <http://en.wikipedia.org/wiki/Departments_of_the_United_Kingdom_Government> ;
+    foaf:isPrimaryTopicOf <http://en.wikipedia.org/wiki/Non-departmental_public_body#Executive_NDPBs> .
+
+:MinisterialDepartment
+    a owl:Class ;
+    rdfs:comment "Ministerial Departments are led politically by a Government Minister, normally a member of the Cabinet and cover matters that require direct political oversight."@en ;
+    rdfs:label "Ministerial department"@en ;
+    rdfs:subClassOf :PublicBody ;
+    owl:disjointWith :ExecutiveAgency, :NonDepartmentalPublicBody, :NonMinisterialDepartment ;
+    skos:prefLabel "Ministerial department"@en ;
+    foaf:isPrimaryTopicOf <http://en.wikipedia.org/wiki/Departments_of_the_United_Kingdom_Government> .
+
+:MonitoringNDPB
+    a owl:Class ;
+    rdfs:comment "Independent Monitoring Boards of Prisons, Immigration Removal Centres and Immigration Holding Rooms - formerly known as Boards of Visitors, these are independent 'watchdogs' of the prison system."@en ;
+    rdfs:label "Monitoring NDPBs"@en ;
+    rdfs:subClassOf :NonDepartmentalPublicBody ;
+    owl:disjointWith :AdvisoryNDPB, :ExecutiveNDPB, :TribunalNDPB ;
+    skos:prefLabel "Monitoring NDPBs"@en ;
+    foaf:isPrimaryTopicOf <http://en.wikipedia.org/wiki/Non-departmental_public_body#Independent_monitoring_boards> .
+
+:NonDepartmentalPublicBody
+    a owl:Class ;
+    rdfs:comment "A NDPB is defined as a “body which has a role in the processes of national Government, but is not a Government Department or part of one, and which accordingly operates to a greater or lesser extent at arm’s length from Ministers”"@en ;
+    rdfs:label "Non-departmental public body"@en ;
+    rdfs:subClassOf :PublicBody ;
+    owl:disjointWith :ExecutiveAgency, :MinisterialDepartment, :NonMinisterialDepartment ;
+    skos:prefLabel "Non-departmental public body"@en ;
+    foaf:isPrimaryTopicOf <http://en.wikipedia.org/wiki/Non-departmental_public_body> .
+
+:NonMinisterialDepartment
+    a owl:Class ;
+    rdfs:comment "\"A non-ministerial government department is a department or ministry of a government that is not headed by a Government Minister or Government Secretary, and answers directly to a legislature\""@en ;
+    rdfs:label "Non ministerial department"@en ;
+    rdfs:subClassOf :PublicBody ;
+    owl:disjointWith :ExecutiveAgency, :MinisterialDepartment, :NonDepartmentalPublicBody ;
+    skos:prefLabel "Non ministerial department"@en ;
+    foaf:isPrimaryTopicOf <http://en.wikipedia.org/wiki/Non-ministerial_government_department> .
+
+:PublicBody
+    a owl:Class ;
+    rdfs:comment "A class whose for UK Government related public bodies comprised of Executive Agenices, Ministerial and Non-Ministerial Departments and Non-departmental public bodies."@en ;
+    rdfs:label "UK Public body"@en ;
+    rdfs:subClassOf foaf:Organization ;
+    skos:prefLabel "UK Public body"@en .
+
+:TribunalNDPB
+    a owl:Class ;
+    rdfs:comment "Tribunal NDPBs - have jurisdiction in a specialised field of law.  Examples include Valuation Tribunals."@en ;
+    rdfs:label "Tribunal NDPB"@en ;
+    rdfs:subClassOf :NonDepartmentalPublicBody ;
+    owl:disjointWith :AdvisoryNDPB, :ExecutiveNDPB, :MonitoringNDPB ;
+    skos:prefLabel "Tribunal NDPB"@en ;
+    foaf:isPrimaryTopicOf <http://en.wikipedia.org/wiki/Non-departmental_public_body#Tribunal_NDPBs> .
+
+:parentDepartment
+    a owl:FunctionalProperty, owl:ObjectProperty ;
+    rdfs:comment "A relation between an NDPB or an Executive Agency and their parent Government Department."@en ;
+    rdfs:domain [
+        a owl:Class ;
+        owl:unionOf (:ExecutiveAgency
+            :NonDepartmentalPublicBody
+        )
+    ] ;
+    rdfs:label "parent department"@en ;
+    rdfs:range :MinisterialDepartment ;
+    owl:inverseOf :relatedBody ;
+    skos:prefLabel "parent department"@en .
+
+:relatedBody
+    a owl:ObjectProperty ;
+    rdfs:comment "A relation between Minsiterial Departments and their associated Executive Agencies and NDPBs"@en ;
+    rdfs:domain :MinisterialDepartment ;
+    rdfs:label "related body"@en ;
+    rdfs:range [
+        a owl:Class ;
+        owl:unionOf (:ExecutiveAgency
+            :NonDepartmentalPublicBody
+        )
+    ] ;
+    owl:inverseOf :parentDepartment ;
+    skos:prefLabel "related body"@en .
+

@@ -1,0 +1,47 @@
+<http://finance.data.gov.uk/def/coins/accounts-capital-current> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://finance.data.gov.uk/def/coins/accounts-capital-current> <http://www.w3.org/2000/01/rdf-schema#label> "accounts capital current code list concept scheme"@en .
+<http://finance.data.gov.uk/def/coins/accounts-capital-current> <http://www.w3.org/2004/02/skos/core#prefLabel> "accounts capital current code list concept scheme"@en .
+<http://finance.data.gov.uk/def/coins/accounts-capital-current> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/accounts-capital-current/a-cap> .
+<http://finance.data.gov.uk/def/coins/accounts-capital-current> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/accounts-capital-current/a-cur> .
+<http://finance.data.gov.uk/def/coins/accounts-capital-current> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/accounts-capital-current/a-dum> .
+<http://finance.data.gov.uk/def/coins/accounts-capital-current> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/accounts-capital-current/a-fin> .
+<http://finance.data.gov.uk/def/coins/accounts-capital-current/a-fin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/AccountsCapitalCurrent> .
+<http://finance.data.gov.uk/def/coins/accounts-capital-current/a-fin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/accounts-capital-current/a-fin> <http://www.w3.org/2000/01/rdf-schema#label> "A-FIN"@en .
+<http://finance.data.gov.uk/def/coins/accounts-capital-current/a-fin> <http://www.w3.org/2004/02/skos/core#prefLabel> "A-FIN"@en .
+<http://finance.data.gov.uk/def/coins/accounts-capital-current/a-fin> <http://www.w3.org/2004/02/skos/core#notation> "a-fin" .
+<http://finance.data.gov.uk/def/coins/accounts-capital-current/a-fin> <http://www.w3.org/2000/01/rdf-schema#comment> "Financial transactions in National Accounts (e.g. lending)" .
+<http://finance.data.gov.uk/def/coins/accounts-capital-current/a-fin> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/accounts-capital-current> .
+<http://finance.data.gov.uk/def/coins/AccountsCapitalCurrent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://finance.data.gov.uk/def/coins/AccountsCapitalCurrent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://finance.data.gov.uk/def/coins/AccountsCapitalCurrent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/AccountsCapitalCurrent> <http://www.w3.org/2000/01/rdf-schema#label> "accounts capital current values class"@en .
+<http://finance.data.gov.uk/def/coins/AccountsCapitalCurrent> <http://www.w3.org/2004/02/skos/core#prefLabel> "accounts capital current values class"@en .
+<http://finance.data.gov.uk/def/coins/AccountsCapitalCurrent> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of values in the accounts capital current code-list scheme" .
+<http://finance.data.gov.uk/def/coins/statistical-concept/accounts-capital-current> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/sdmx#Concept> .
+<http://finance.data.gov.uk/def/coins/statistical-concept/accounts-capital-current> <http://www.w3.org/2000/01/rdf-schema#label> "accounts capital current"@en .
+<http://finance.data.gov.uk/def/coins/statistical-concept/accounts-capital-current> <http://www.w3.org/2004/02/skos/core#prefLabel> "accounts capital current"@en .
+<http://finance.data.gov.uk/def/coins/statistical-concept/accounts-capital-current> <http://www.w3.org/2000/01/rdf-schema#comment> "This gives the classification of transactions based on broad National Accounts definitions." .
+<http://finance.data.gov.uk/def/coins/statistical-concept/accounts-capital-current> <http://purl.org/dc/terms/source> <http://www.hm-treasury.gov.uk/d/coins_guidance.pdf> .
+<http://finance.data.gov.uk/def/coins/statistical-concept/accounts-capital-current> <http://www.epimorphics.com/vocabs/coins-generate#columnName> "accounts_capital_current" .
+<http://finance.data.gov.uk/def/coins/accounts-capital-current/a-dum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/AccountsCapitalCurrent> .
+<http://finance.data.gov.uk/def/coins/accounts-capital-current/a-dum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/accounts-capital-current/a-dum> <http://www.w3.org/2000/01/rdf-schema#label> "A-DUM"@en .
+<http://finance.data.gov.uk/def/coins/accounts-capital-current/a-dum> <http://www.w3.org/2004/02/skos/core#prefLabel> "A-DUM"@en .
+<http://finance.data.gov.uk/def/coins/accounts-capital-current/a-dum> <http://www.w3.org/2004/02/skos/core#notation> "a-dum" .
+<http://finance.data.gov.uk/def/coins/accounts-capital-current/a-dum> <http://www.w3.org/2000/01/rdf-schema#comment> "Spending transactions recorded on COINS that do not directly feed into the National Accounts in year" .
+<http://finance.data.gov.uk/def/coins/accounts-capital-current/a-dum> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/accounts-capital-current> .
+<http://finance.data.gov.uk/def/coins/accounts-capital-current/a-cap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/AccountsCapitalCurrent> .
+<http://finance.data.gov.uk/def/coins/accounts-capital-current/a-cap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/accounts-capital-current/a-cap> <http://www.w3.org/2000/01/rdf-schema#label> "A-CAP"@en .
+<http://finance.data.gov.uk/def/coins/accounts-capital-current/a-cap> <http://www.w3.org/2004/02/skos/core#prefLabel> "A-CAP"@en .
+<http://finance.data.gov.uk/def/coins/accounts-capital-current/a-cap> <http://www.w3.org/2004/02/skos/core#notation> "a-cap" .
+<http://finance.data.gov.uk/def/coins/accounts-capital-current/a-cap> <http://www.w3.org/2000/01/rdf-schema#comment> "Capital spending in National Accounts" .
+<http://finance.data.gov.uk/def/coins/accounts-capital-current/a-cap> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/accounts-capital-current> .
+<http://finance.data.gov.uk/def/coins/accounts-capital-current/a-cur> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/AccountsCapitalCurrent> .
+<http://finance.data.gov.uk/def/coins/accounts-capital-current/a-cur> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/accounts-capital-current/a-cur> <http://www.w3.org/2000/01/rdf-schema#label> "A-CUR"@en .
+<http://finance.data.gov.uk/def/coins/accounts-capital-current/a-cur> <http://www.w3.org/2004/02/skos/core#prefLabel> "A-CUR"@en .
+<http://finance.data.gov.uk/def/coins/accounts-capital-current/a-cur> <http://www.w3.org/2004/02/skos/core#notation> "a-cur" .
+<http://finance.data.gov.uk/def/coins/accounts-capital-current/a-cur> <http://www.w3.org/2000/01/rdf-schema#comment> "Current spending in National Accounts" .
+<http://finance.data.gov.uk/def/coins/accounts-capital-current/a-cur> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/accounts-capital-current> .

@@ -1,0 +1,32 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix status: <http://transport.data.gov.uk/def/naptan-status/> .
+
+<http://transport.data.gov.uk/def/naptan-status> a skos:ConceptScheme ;
+  skos:prefLabel "Status"@en ;
+  skos:hasTopConcept
+  	status:active ,
+  	status:inactive ,
+  	status:pending .
+
+status:Status a rdfs:Class ;
+	rdfs:label "Status"@en ;
+	rdfs:subClassOf skos:Concept .
+
+status:active a status:Status ;
+	skos:prefLabel "Active"@en ;
+	skos:note "Entity is active."@en ;
+	skos:topConceptOf <http://transport.data.gov.uk/def/naptan-status> .
+
+status:inactive a status:Status ;
+	skos:prefLabel "Inactive"@en ;
+	skos:note "Entity is inactive."@en ;
+	skos:topConceptOf <http://transport.data.gov.uk/def/naptan-status> .
+
+status:pending a status:Status ;
+	skos:prefLabel "Pending"@en ;
+	skos:note "Entity is still active but is in the process of being made inactive."@en ;
+	skos:topConceptOf <http://transport.data.gov.uk/def/naptan-status> .

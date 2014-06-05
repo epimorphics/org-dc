@@ -1,0 +1,58 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix test: <http://transport.data.gov.uk/def/driving-test/> .
+
+# Concept Scheme
+
+<http://transport.data.gov.uk/def/driving-test> a skos:ConceptScheme ;
+  skos:prefLabel "Driving Tests"@en ;
+  skos:hasTopConcept
+  	test:theory ,
+  	test:car ,
+  	test:taxi ,
+  	test:vocational ,
+  	test:motorcycle-module-1 ,
+  	test:motorcycle-module-2 .
+
+# Class
+
+test:DrivingTest a rdfs:Class ;
+  rdfs:label "Driving Test"@en ;
+  rdfs:subClassOf skos:Concept ;
+  rdfs:isDefinedBy <http://transport.data.gov.uk/def/driving-test> .
+
+# Property
+
+test:drivingTest a rdf:Property , owl:ObjectProperty ;
+  rdfs:label "Driving Test"@en ;
+  rdfs:range test:DrivingTest ;
+  rdfs:isDefinedBy <http://transport.data.gov.uk/def/driving-test> .
+
+# Concepts
+
+test:theory a test:DrivingTest ;
+	skos:prefLabel "Theory Test"@en ;
+	skos:topConceptOf <http://transport.data.gov.uk/def/driving-test> .
+
+test:car a test:DrivingTest ;
+	skos:prefLabel "Car Driving Test"@en ;
+	skos:topConceptOf <http://transport.data.gov.uk/def/driving-test> .
+
+test:taxi a test:DrivingTest ;
+	skos:prefLabel "Taxi Driving Test"@en ;
+	skos:topConceptOf <http://transport.data.gov.uk/def/driving-test> .
+
+test:vocational a test:DrivingTest ;
+	skos:prefLabel "Vocational Driving Test"@en ;
+	skos:topConceptOf <http://transport.data.gov.uk/def/driving-test> .
+
+test:motorcycle-module-1 a test:DrivingTest ;
+	skos:prefLabel "Motorcycle Driving Test Module 1"@en ;
+	skos:topConceptOf <http://transport.data.gov.uk/def/driving-test> .
+
+test:motorcycle-module-2 a test:DrivingTest ;
+  skos:prefLabel "Motorcycle Driving Test Module 2"@en ;
+  skos:topConceptOf <http://transport.data.gov.uk/def/driving-test> .

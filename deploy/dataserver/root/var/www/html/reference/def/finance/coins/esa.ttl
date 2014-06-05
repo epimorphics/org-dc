@@ -1,0 +1,850 @@
+# Generated 2010-11-14T11:30:01+00:00
+
+@prefix rdf:                <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:               <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:                <http://www.w3.org/2002/07/owl#> .
+@prefix skos:               <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd:                <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:               <http://xmlns.com/foaf/0.1/> .
+@prefix void:               <http://rdfs.org/ns/void#> .
+@prefix dcterms:            <http://purl.org/dc/terms/> .
+@prefix sdmx:               <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept:       <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:     <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:     <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:       <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-code:          <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:       <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix qb:                 <http://purl.org/linked-data/cube#> .
+@prefix coins-data:         <http://source.data.gov.uk/data/coins/> .
+@prefix coins-dsd:          <http://finance.data.gov.uk/dsd/coins/> .
+@prefix coins-dimension:    <http://finance.data.gov.uk/dsd/coins/dimension/> .
+@prefix coins-attribute:    <http://finance.data.gov.uk/dsd/coins/attribute/> .
+@prefix coins-measure:      <http://finance.data.gov.uk/dsd/coins/measure/> .
+@prefix coins-slicekey:     <http://finance.data.gov.uk/dsd/coins/slice/> .
+
+<http://finance.data.gov.uk/def/coins/statistical-concept/esa>
+    a sdmx:Concept;
+    rdfs:label "ESA"@en;
+    skos:prefLabel "ESA"@en;
+    rdfs:comment """Similar to NACs (see below). Used to group SCoAs by their economic nature. Codes are See link for more details: consistent with the European System of Accounts (1995) (ESA 1995). Used by the Office for National Statistics """;
+    <http://purl.org/dc/terms/source> <http://www.hm-treasury.gov.uk/d/coins_guidance.pdf>;
+    <http://www.epimorphics.com/vocabs/coins-generate#columnName> "esa"
+    .
+
+<http://finance.data.gov.uk/def/coins/Esa>
+    a rdfs:Class, owl:Class;
+    rdfs:subClassOf skos:Concept;
+    rdfs:label "ESA values class"@en;
+    skos:prefLabel "ESA values class"@en;
+    rdfs:comment "The class of values in the ESA code-list scheme";
+    .
+
+<http://finance.data.gov.uk/def/coins/esa>
+    a skos:ConceptScheme;
+    rdfs:label "ESA code list concept scheme"@en;
+    skos:prefLabel "ESA code list concept scheme"@en;
+    skos:hasTopConcept <http://finance.data.gov.uk/def/coins/esa/esa-d11>,
+          <http://finance.data.gov.uk/def/coins/esa/esa-d121>,
+          <http://finance.data.gov.uk/def/coins/esa/esa-d214>,
+          <http://finance.data.gov.uk/def/coins/esa/esa-d29c>,
+          <http://finance.data.gov.uk/def/coins/esa/esa-d29d>,
+          <http://finance.data.gov.uk/def/coins/esa/esa-d29e>,
+          <http://finance.data.gov.uk/def/coins/esa/esa-d29u>,
+          <http://finance.data.gov.uk/def/coins/esa/esa-d3a>,
+          <http://finance.data.gov.uk/def/coins/esa/esa-d3b>,
+          <http://finance.data.gov.uk/def/coins/esa/esa-d3c>,
+          <http://finance.data.gov.uk/def/coins/esa/esa-d41a>,
+          <http://finance.data.gov.uk/def/coins/esa/esa-d41b>,
+          <http://finance.data.gov.uk/def/coins/esa/esa-d421>,
+          <http://finance.data.gov.uk/def/coins/esa/esa-d45>,
+          <http://finance.data.gov.uk/def/coins/esa/esa-d51>,
+          <http://finance.data.gov.uk/def/coins/esa/esa-d59>,
+          <http://finance.data.gov.uk/def/coins/esa/esa-d6111>,
+          <http://finance.data.gov.uk/def/coins/esa/esa-d6112>,
+          <http://finance.data.gov.uk/def/coins/esa/esa-d621>,
+          <http://finance.data.gov.uk/def/coins/esa/esa-d622>,
+          <http://finance.data.gov.uk/def/coins/esa/esa-d623>,
+          <http://finance.data.gov.uk/def/coins/esa/esa-d624>,
+          <http://finance.data.gov.uk/def/coins/esa/esa-d73a>,
+          <http://finance.data.gov.uk/def/coins/esa/esa-d73b>,
+          <http://finance.data.gov.uk/def/coins/esa/esa-d74a>,
+          <http://finance.data.gov.uk/def/coins/esa/esa-d74b>,
+          <http://finance.data.gov.uk/def/coins/esa/esa-d75>,
+          <http://finance.data.gov.uk/def/coins/esa/esa-d92a>,
+          <http://finance.data.gov.uk/def/coins/esa/esa-d92b>,
+          <http://finance.data.gov.uk/def/coins/esa/esa-d92c>,
+          <http://finance.data.gov.uk/def/coins/esa/esa-d92d>,
+          <http://finance.data.gov.uk/def/coins/esa/esa-d92e>,
+          <http://finance.data.gov.uk/def/coins/esa/esa-d92f>,
+          <http://finance.data.gov.uk/def/coins/esa/esa-d99a>,
+          <http://finance.data.gov.uk/def/coins/esa/esa-d99bb>,
+          <http://finance.data.gov.uk/def/coins/esa/esa-d99da>,
+          <http://finance.data.gov.uk/def/coins/esa/esa-d99db>,
+          <http://finance.data.gov.uk/def/coins/esa/esa-d99e>,
+          <http://finance.data.gov.uk/def/coins/esa/esa-d99f>,
+          <http://finance.data.gov.uk/def/coins/esa/esa-f2>,
+          <http://finance.data.gov.uk/def/coins/esa/esa-f3>,
+          <http://finance.data.gov.uk/def/coins/esa/esa-f4>,
+          <http://finance.data.gov.uk/def/coins/esa/esa-f5>,
+          <http://finance.data.gov.uk/def/coins/esa/esa-f7>,
+          <http://finance.data.gov.uk/def/coins/esa/esa-k1>,
+          <http://finance.data.gov.uk/def/coins/esa/esa-k211>,
+          <http://finance.data.gov.uk/def/coins/esa/esa-k212>,
+          <http://finance.data.gov.uk/def/coins/esa/esa-k221>,
+          <http://finance.data.gov.uk/def/coins/esa/esa-p11>,
+          <http://finance.data.gov.uk/def/coins/esa/esa-p2>,
+          <http://finance.data.gov.uk/def/coins/esa/esa-p511aa>,
+          <http://finance.data.gov.uk/def/coins/esa/esa-p511ab>,
+          <http://finance.data.gov.uk/def/coins/esa/esa-p511ba>,
+          <http://finance.data.gov.uk/def/coins/esa/esa-p511bb>,
+          <http://finance.data.gov.uk/def/coins/esa/esa-p511ca>,
+          <http://finance.data.gov.uk/def/coins/esa/esa-p511cb>,
+          <http://finance.data.gov.uk/def/coins/esa/esa-p511da>,
+          <http://finance.data.gov.uk/def/coins/esa/esa-p511db>,
+          <http://finance.data.gov.uk/def/coins/esa/esa-p511ea>,
+          <http://finance.data.gov.uk/def/coins/esa/esa-p511eb>,
+          <http://finance.data.gov.uk/def/coins/esa/esa-p511fa>,
+          <http://finance.data.gov.uk/def/coins/esa/esa-p511fb>,
+          <http://finance.data.gov.uk/def/coins/esa/esa-p512aa>,
+          <http://finance.data.gov.uk/def/coins/esa/esa-p512ab>,
+          <http://finance.data.gov.uk/def/coins/esa/esa-p512ba>,
+          <http://finance.data.gov.uk/def/coins/esa/esa-p512bb>,
+          <http://finance.data.gov.uk/def/coins/esa/esa-p512ca>,
+          <http://finance.data.gov.uk/def/coins/esa/esa-p512cb>,
+          <http://finance.data.gov.uk/def/coins/esa/esa-p512da>,
+          <http://finance.data.gov.uk/def/coins/esa/esa-p512db>,
+          <http://finance.data.gov.uk/def/coins/esa/esa-p52>,
+          <http://finance.data.gov.uk/def/coins/esa/esa-p53a>,
+          <http://finance.data.gov.uk/def/coins/esa/esa-p53b>
+    .
+
+<http://finance.data.gov.uk/def/coins/esa/esa-d11>
+    a <http://finance.data.gov.uk/def/coins/Esa>, skos:Concept;
+    rdfs:label "ESA-D11"@en;
+    skos:prefLabel "ESA-D11"@en;
+    skos:notation "esa-d11";
+    rdfs:comment "Wages and salaries";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/esa>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/esa/esa-d121>
+    a <http://finance.data.gov.uk/def/coins/Esa>, skos:Concept;
+    rdfs:label "ESA-D121"@en;
+    skos:prefLabel "ESA-D121"@en;
+    skos:notation "esa-d121";
+    rdfs:comment "Employers’ actual social contributions";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/esa>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/esa/esa-d214>
+    a <http://finance.data.gov.uk/def/coins/Esa>, skos:Concept;
+    rdfs:label "ESA-D214"@en;
+    skos:prefLabel "ESA-D214"@en;
+    skos:notation "esa-d214";
+    rdfs:comment "Taxes on products, except VAT and import taxes";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/esa>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/esa/esa-d29c>
+    a <http://finance.data.gov.uk/def/coins/Esa>, skos:Concept;
+    rdfs:label "ESA-D29C"@en;
+    skos:prefLabel "ESA-D29C"@en;
+    skos:notation "esa-d29c";
+    rdfs:comment "Taxes on production: regulatory fees";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/esa>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/esa/esa-d29d>
+    a <http://finance.data.gov.uk/def/coins/Esa>, skos:Concept;
+    rdfs:label "ESA-D29D"@en;
+    skos:prefLabel "ESA-D29D"@en;
+    skos:notation "esa-d29d";
+    rdfs:comment "Taxes on production: NNDR payments";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/esa>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/esa/esa-d29e>
+    a <http://finance.data.gov.uk/def/coins/Esa>, skos:Concept;
+    rdfs:label "ESA-D29E"@en;
+    skos:prefLabel "ESA-D29E"@en;
+    skos:notation "esa-d29e";
+    rdfs:comment "Taxes on production: Vehicle excise duties";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/esa>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/esa/esa-d29u>
+    a <http://finance.data.gov.uk/def/coins/Esa>, skos:Concept;
+    rdfs:label "ESA-D29U"@en;
+    skos:prefLabel "ESA-D29U"@en;
+    skos:notation "esa-d29u";
+    rdfs:comment "Taxes on production: CG departments payments of NNDR";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/esa>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/esa/esa-d3a>
+    a <http://finance.data.gov.uk/def/coins/Esa>, skos:Concept;
+    rdfs:label "ESA-D3A"@en;
+    skos:prefLabel "ESA-D3A"@en;
+    skos:notation "esa-d3a";
+    rdfs:comment "Subsidies to general government market units";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/esa>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/esa/esa-d3b>
+    a <http://finance.data.gov.uk/def/coins/Esa>, skos:Concept;
+    rdfs:label "ESA-D3B"@en;
+    skos:prefLabel "ESA-D3B"@en;
+    skos:notation "esa-d3b";
+    rdfs:comment "Subsidies to the private sector";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/esa>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/esa/esa-d3c>
+    a <http://finance.data.gov.uk/def/coins/Esa>, skos:Concept;
+    rdfs:label "ESA-D3C"@en;
+    skos:prefLabel "ESA-D3C"@en;
+    skos:notation "esa-d3c";
+    rdfs:comment "Subsidies to public corporations";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/esa>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/esa/esa-d41a>
+    a <http://finance.data.gov.uk/def/coins/Esa>, skos:Concept;
+    rdfs:label "ESA-D41A"@en;
+    skos:prefLabel "ESA-D41A"@en;
+    skos:notation "esa-d41a";
+    rdfs:comment "Interest payments to and from the private sector";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/esa>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/esa/esa-d41b>
+    a <http://finance.data.gov.uk/def/coins/Esa>, skos:Concept;
+    rdfs:label "ESA-D41B"@en;
+    skos:prefLabel "ESA-D41B"@en;
+    skos:notation "esa-d41b";
+    rdfs:comment "Interest payments to and from the public sector";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/esa>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/esa/esa-d421>
+    a <http://finance.data.gov.uk/def/coins/Esa>, skos:Concept;
+    rdfs:label "ESA-D421"@en;
+    skos:prefLabel "ESA-D421"@en;
+    skos:notation "esa-d421";
+    rdfs:comment "Dividends";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/esa>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/esa/esa-d45>
+    a <http://finance.data.gov.uk/def/coins/Esa>, skos:Concept;
+    rdfs:label "ESA-D45"@en;
+    skos:prefLabel "ESA-D45"@en;
+    skos:notation "esa-d45";
+    rdfs:comment "Rents";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/esa>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/esa/esa-d51>
+    a <http://finance.data.gov.uk/def/coins/Esa>, skos:Concept;
+    rdfs:label "ESA-D51"@en;
+    skos:prefLabel "ESA-D51"@en;
+    skos:notation "esa-d51";
+    rdfs:comment "Taxes on income";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/esa>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/esa/esa-d59>
+    a <http://finance.data.gov.uk/def/coins/Esa>, skos:Concept;
+    rdfs:label "ESA-D59"@en;
+    skos:prefLabel "ESA-D59"@en;
+    skos:notation "esa-d59";
+    rdfs:comment "Other current taxes";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/esa>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/esa/esa-d6111>
+    a <http://finance.data.gov.uk/def/coins/Esa>, skos:Concept;
+    rdfs:label "ESA-D6111"@en;
+    skos:prefLabel "ESA-D6111"@en;
+    skos:notation "esa-d6111";
+    rdfs:comment "Employers’ actual social contributions";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/esa>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/esa/esa-d6112>
+    a <http://finance.data.gov.uk/def/coins/Esa>, skos:Concept;
+    rdfs:label "ESA-D6112"@en;
+    skos:prefLabel "ESA-D6112"@en;
+    skos:notation "esa-d6112";
+    rdfs:comment "Employees’ social contributions";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/esa>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/esa/esa-d621>
+    a <http://finance.data.gov.uk/def/coins/Esa>, skos:Concept;
+    rdfs:label "ESA-D621"@en;
+    skos:prefLabel "ESA-D621"@en;
+    skos:notation "esa-d621";
+    rdfs:comment "Social security benefits in cash";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/esa>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/esa/esa-d622>
+    a <http://finance.data.gov.uk/def/coins/Esa>, skos:Concept;
+    rdfs:label "ESA-D622"@en;
+    skos:prefLabel "ESA-D622"@en;
+    skos:notation "esa-d622";
+    rdfs:comment "Private funded social benefits";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/esa>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/esa/esa-d623>
+    a <http://finance.data.gov.uk/def/coins/Esa>, skos:Concept;
+    rdfs:label "ESA-D623"@en;
+    skos:prefLabel "ESA-D623"@en;
+    skos:notation "esa-d623";
+    rdfs:comment "Unfunded employee social benefits";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/esa>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/esa/esa-d624>
+    a <http://finance.data.gov.uk/def/coins/Esa>, skos:Concept;
+    rdfs:label "ESA-D624"@en;
+    skos:prefLabel "ESA-D624"@en;
+    skos:notation "esa-d624";
+    rdfs:comment "Social assistance benefits in cash";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/esa>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/esa/esa-d73a>
+    a <http://finance.data.gov.uk/def/coins/Esa>, skos:Concept;
+    rdfs:label "ESA-D73A"@en;
+    skos:prefLabel "ESA-D73A"@en;
+    skos:notation "esa-d73a";
+    rdfs:comment "Current grants within general government: redistributed NNDR";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/esa>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/esa/esa-d73b>
+    a <http://finance.data.gov.uk/def/coins/Esa>, skos:Concept;
+    rdfs:label "ESA-D73B"@en;
+    skos:prefLabel "ESA-D73B"@en;
+    skos:notation "esa-d73b";
+    rdfs:comment "Current grants within general government: other than redistributed NNDR";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/esa>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/esa/esa-d74a>
+    a <http://finance.data.gov.uk/def/coins/Esa>, skos:Concept;
+    rdfs:label "ESA-D74A"@en;
+    skos:prefLabel "ESA-D74A"@en;
+    skos:notation "esa-d74a";
+    rdfs:comment "Current international cooperation: UK payments";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/esa>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/esa/esa-d74b>
+    a <http://finance.data.gov.uk/def/coins/Esa>, skos:Concept;
+    rdfs:label "ESA-D74B"@en;
+    skos:prefLabel "ESA-D74B"@en;
+    skos:notation "esa-d74b";
+    rdfs:comment "Current international cooperation: UK receipts";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/esa>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/esa/esa-d75>
+    a <http://finance.data.gov.uk/def/coins/Esa>, skos:Concept;
+    rdfs:label "ESA-D75"@en;
+    skos:prefLabel "ESA-D75"@en;
+    skos:notation "esa-d75";
+    rdfs:comment "Miscellaneous current transfers";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/esa>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/esa/esa-d92a>
+    a <http://finance.data.gov.uk/def/coins/Esa>, skos:Concept;
+    rdfs:label "ESA-D92A"@en;
+    skos:prefLabel "ESA-D92A"@en;
+    skos:notation "esa-d92a";
+    rdfs:comment "Investment grants to and from non-profit institution serving households";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/esa>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/esa/esa-d92b>
+    a <http://finance.data.gov.uk/def/coins/Esa>, skos:Concept;
+    rdfs:label "ESA-D92B"@en;
+    skos:prefLabel "ESA-D92B"@en;
+    skos:notation "esa-d92b";
+    rdfs:comment "Investment grants to and from local government";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/esa>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/esa/esa-d92c>
+    a <http://finance.data.gov.uk/def/coins/Esa>, skos:Concept;
+    rdfs:label "ESA-D92C"@en;
+    skos:prefLabel "ESA-D92C"@en;
+    skos:notation "esa-d92c";
+    rdfs:comment "Investment grants to and from households";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/esa>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/esa/esa-d92d>
+    a <http://finance.data.gov.uk/def/coins/Esa>, skos:Concept;
+    rdfs:label "ESA-D92D"@en;
+    skos:prefLabel "ESA-D92D"@en;
+    skos:notation "esa-d92d";
+    rdfs:comment "Investment grants to and from private sector companies";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/esa>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/esa/esa-d92e>
+    a <http://finance.data.gov.uk/def/coins/Esa>, skos:Concept;
+    rdfs:label "ESA-D92E"@en;
+    skos:prefLabel "ESA-D92E"@en;
+    skos:notation "esa-d92e";
+    rdfs:comment "Investment grants to and from public corporations";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/esa>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/esa/esa-d92f>
+    a <http://finance.data.gov.uk/def/coins/Esa>, skos:Concept;
+    rdfs:label "ESA-D92F"@en;
+    skos:prefLabel "ESA-D92F"@en;
+    skos:notation "esa-d92f";
+    rdfs:comment "Investment grants to and from rest of the world";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/esa>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/esa/esa-d99a>
+    a <http://finance.data.gov.uk/def/coins/Esa>, skos:Concept;
+    rdfs:label "ESA-D99A"@en;
+    skos:prefLabel "ESA-D99A"@en;
+    skos:notation "esa-d99a";
+    rdfs:comment "Other capital transfers to households and non-profit institution serving households";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/esa>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/esa/esa-d99bb>
+    a <http://finance.data.gov.uk/def/coins/Esa>, skos:Concept;
+    rdfs:label "ESA-D99BB"@en;
+    skos:prefLabel "ESA-D99BB"@en;
+    skos:notation "esa-d99bb";
+    rdfs:comment "Other capital transfers to and from local government";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/esa>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/esa/esa-d99da>
+    a <http://finance.data.gov.uk/def/coins/Esa>, skos:Concept;
+    rdfs:label "ESA-D99DA"@en;
+    skos:prefLabel "ESA-D99DA"@en;
+    skos:notation "esa-d99da";
+    rdfs:comment "Other capital transfers from private sector companies";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/esa>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/esa/esa-d99db>
+    a <http://finance.data.gov.uk/def/coins/Esa>, skos:Concept;
+    rdfs:label "ESA-D99DB"@en;
+    skos:prefLabel "ESA-D99DB"@en;
+    skos:notation "esa-d99db";
+    rdfs:comment "Other capital transfers to private sector companies";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/esa>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/esa/esa-d99e>
+    a <http://finance.data.gov.uk/def/coins/Esa>, skos:Concept;
+    rdfs:label "ESA-D99E"@en;
+    skos:prefLabel "ESA-D99E"@en;
+    skos:notation "esa-d99e";
+    rdfs:comment "Other capital transfers to public corporations";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/esa>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/esa/esa-d99f>
+    a <http://finance.data.gov.uk/def/coins/Esa>, skos:Concept;
+    rdfs:label "ESA-D99F"@en;
+    skos:prefLabel "ESA-D99F"@en;
+    skos:notation "esa-d99f";
+    rdfs:comment "Other capital transfers to rest of the world";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/esa>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/esa/esa-f2>
+    a <http://finance.data.gov.uk/def/coins/Esa>, skos:Concept;
+    rdfs:label "ESA-F2"@en;
+    skos:prefLabel "ESA-F2"@en;
+    skos:notation "esa-f2";
+    rdfs:comment "Currency and deposits";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/esa>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/esa/esa-f3>
+    a <http://finance.data.gov.uk/def/coins/Esa>, skos:Concept;
+    rdfs:label "ESA-F3"@en;
+    skos:prefLabel "ESA-F3"@en;
+    skos:notation "esa-f3";
+    rdfs:comment "Securities other than shares";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/esa>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/esa/esa-f4>
+    a <http://finance.data.gov.uk/def/coins/Esa>, skos:Concept;
+    rdfs:label "ESA-F4"@en;
+    skos:prefLabel "ESA-F4"@en;
+    skos:notation "esa-f4";
+    rdfs:comment "Loans";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/esa>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/esa/esa-f5>
+    a <http://finance.data.gov.uk/def/coins/Esa>, skos:Concept;
+    rdfs:label "ESA-F5"@en;
+    skos:prefLabel "ESA-F5"@en;
+    skos:notation "esa-f5";
+    rdfs:comment "Shares and other equity";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/esa>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/esa/esa-f7>
+    a <http://finance.data.gov.uk/def/coins/Esa>, skos:Concept;
+    rdfs:label "ESA-F7"@en;
+    skos:prefLabel "ESA-F7"@en;
+    skos:notation "esa-f7";
+    rdfs:comment "Other accounts receivable/payable";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/esa>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/esa/esa-k1>
+    a <http://finance.data.gov.uk/def/coins/Esa>, skos:Concept;
+    rdfs:label "ESA-K1"@en;
+    skos:prefLabel "ESA-K1"@en;
+    skos:notation "esa-k1";
+    rdfs:comment "Consumption of fixed capital";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/esa>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/esa/esa-k211>
+    a <http://finance.data.gov.uk/def/coins/Esa>, skos:Concept;
+    rdfs:label "ESA-K211"@en;
+    skos:prefLabel "ESA-K211"@en;
+    skos:notation "esa-k211";
+    rdfs:comment "Acquisitions of land and other tangible non-produced assets";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/esa>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/esa/esa-k212>
+    a <http://finance.data.gov.uk/def/coins/Esa>, skos:Concept;
+    rdfs:label "ESA-K212"@en;
+    skos:prefLabel "ESA-K212"@en;
+    skos:notation "esa-k212";
+    rdfs:comment "Disposals of land and other tangible non-produced assets";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/esa>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/esa/esa-k221>
+    a <http://finance.data.gov.uk/def/coins/Esa>, skos:Concept;
+    rdfs:label "ESA-K221"@en;
+    skos:prefLabel "ESA-K221"@en;
+    skos:notation "esa-k221";
+    rdfs:comment "Acquisitions of intangible non-produced assets";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/esa>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/esa/esa-p11>
+    a <http://finance.data.gov.uk/def/coins/Esa>, skos:Concept;
+    rdfs:label "ESA-P11"@en;
+    skos:prefLabel "ESA-P11"@en;
+    skos:notation "esa-p11";
+    rdfs:comment "Market output";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/esa>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/esa/esa-p2>
+    a <http://finance.data.gov.uk/def/coins/Esa>, skos:Concept;
+    rdfs:label "ESA-P2"@en;
+    skos:prefLabel "ESA-P2"@en;
+    skos:notation "esa-p2";
+    rdfs:comment "Intermediate consumption";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/esa>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/esa/esa-p511aa>
+    a <http://finance.data.gov.uk/def/coins/Esa>, skos:Concept;
+    rdfs:label "ESA-P511AA"@en;
+    skos:prefLabel "ESA-P511AA"@en;
+    skos:notation "esa-p511aa";
+    rdfs:comment "Acquisitions of tangible fixed assets: agricultural assets";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/esa>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/esa/esa-p511ab>
+    a <http://finance.data.gov.uk/def/coins/Esa>, skos:Concept;
+    rdfs:label "ESA-P511AB"@en;
+    skos:prefLabel "ESA-P511AB"@en;
+    skos:notation "esa-p511ab";
+    rdfs:comment "Disposals of tangible fixed assets: agricultural assets";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/esa>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/esa/esa-p511ba>
+    a <http://finance.data.gov.uk/def/coins/Esa>, skos:Concept;
+    rdfs:label "ESA-P511BA"@en;
+    skos:prefLabel "ESA-P511BA"@en;
+    skos:notation "esa-p511ba";
+    rdfs:comment "Acquisitions of tangible fixed assets: dwellings";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/esa>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/esa/esa-p511bb>
+    a <http://finance.data.gov.uk/def/coins/Esa>, skos:Concept;
+    rdfs:label "ESA-P511BB"@en;
+    skos:prefLabel "ESA-P511BB"@en;
+    skos:notation "esa-p511bb";
+    rdfs:comment "Disposals of tangible fixed assets: dwellings";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/esa>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/esa/esa-p511ca>
+    a <http://finance.data.gov.uk/def/coins/Esa>, skos:Concept;
+    rdfs:label "ESA-P511CA"@en;
+    skos:prefLabel "ESA-P511CA"@en;
+    skos:notation "esa-p511ca";
+    rdfs:comment "Acquisitions of tangible fixed assets: other land and buildings";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/esa>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/esa/esa-p511cb>
+    a <http://finance.data.gov.uk/def/coins/Esa>, skos:Concept;
+    rdfs:label "ESA-P511CB"@en;
+    skos:prefLabel "ESA-P511CB"@en;
+    skos:notation "esa-p511cb";
+    rdfs:comment "Disposals of tangible fixed assets: other land and buildings";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/esa>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/esa/esa-p511da>
+    a <http://finance.data.gov.uk/def/coins/Esa>, skos:Concept;
+    rdfs:label "ESA-P511DA"@en;
+    skos:prefLabel "ESA-P511DA"@en;
+    skos:notation "esa-p511da";
+    rdfs:comment "Acquisitions of tangible fixed assets: infrastructure assets";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/esa>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/esa/esa-p511db>
+    a <http://finance.data.gov.uk/def/coins/Esa>, skos:Concept;
+    rdfs:label "ESA-P511DB"@en;
+    skos:prefLabel "ESA-P511DB"@en;
+    skos:notation "esa-p511db";
+    rdfs:comment "Disposals of tangible fixed assets: infrastructure assets";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/esa>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/esa/esa-p511ea>
+    a <http://finance.data.gov.uk/def/coins/Esa>, skos:Concept;
+    rdfs:label "ESA-P511EA"@en;
+    skos:prefLabel "ESA-P511EA"@en;
+    skos:notation "esa-p511ea";
+    rdfs:comment "Acquisitions of tangible fixed assets: plant and machinery";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/esa>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/esa/esa-p511eb>
+    a <http://finance.data.gov.uk/def/coins/Esa>, skos:Concept;
+    rdfs:label "ESA-P511EB"@en;
+    skos:prefLabel "ESA-P511EB"@en;
+    skos:notation "esa-p511eb";
+    rdfs:comment "Disposals of tangible fixed assets: plant and machinery";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/esa>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/esa/esa-p511fa>
+    a <http://finance.data.gov.uk/def/coins/Esa>, skos:Concept;
+    rdfs:label "ESA-P511FA"@en;
+    skos:prefLabel "ESA-P511FA"@en;
+    skos:notation "esa-p511fa";
+    rdfs:comment "Acquisitions of tangible fixed assets: vehicles";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/esa>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/esa/esa-p511fb>
+    a <http://finance.data.gov.uk/def/coins/Esa>, skos:Concept;
+    rdfs:label "ESA-P511FB"@en;
+    skos:prefLabel "ESA-P511FB"@en;
+    skos:notation "esa-p511fb";
+    rdfs:comment "Disposals of tangible fixed assets: vehicles";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/esa>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/esa/esa-p512aa>
+    a <http://finance.data.gov.uk/def/coins/Esa>, skos:Concept;
+    rdfs:label "ESA-P512AA"@en;
+    skos:prefLabel "ESA-P512AA"@en;
+    skos:notation "esa-p512aa";
+    rdfs:comment "Acquisitions of intangible fixed assets: artistic originals.";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/esa>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/esa/esa-p512ab>
+    a <http://finance.data.gov.uk/def/coins/Esa>, skos:Concept;
+    rdfs:label "ESA-P512AB"@en;
+    skos:prefLabel "ESA-P512AB"@en;
+    skos:notation "esa-p512ab";
+    rdfs:comment "Disposals of intangible fixed assets: artistic originals.";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/esa>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/esa/esa-p512ba>
+    a <http://finance.data.gov.uk/def/coins/Esa>, skos:Concept;
+    rdfs:label "ESA-P512BA"@en;
+    skos:prefLabel "ESA-P512BA"@en;
+    skos:notation "esa-p512ba";
+    rdfs:comment "Acquisitions of intangible fixed assets: internally developed software.";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/esa>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/esa/esa-p512bb>
+    a <http://finance.data.gov.uk/def/coins/Esa>, skos:Concept;
+    rdfs:label "ESA-P512BB"@en;
+    skos:prefLabel "ESA-P512BB"@en;
+    skos:notation "esa-p512bb";
+    rdfs:comment "Disposals of intangible fixed assets: internally developed software.";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/esa>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/esa/esa-p512ca>
+    a <http://finance.data.gov.uk/def/coins/Esa>, skos:Concept;
+    rdfs:label "ESA-P512CA"@en;
+    skos:prefLabel "ESA-P512CA"@en;
+    skos:notation "esa-p512ca";
+    rdfs:comment "Acquisitions of intangible fixed assets: MoD development expenditure.";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/esa>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/esa/esa-p512cb>
+    a <http://finance.data.gov.uk/def/coins/Esa>, skos:Concept;
+    rdfs:label "ESA-P512CB"@en;
+    skos:prefLabel "ESA-P512CB"@en;
+    skos:notation "esa-p512cb";
+    rdfs:comment "Disposals of intangible fixed assets: MoD development expenditure.";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/esa>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/esa/esa-p512da>
+    a <http://finance.data.gov.uk/def/coins/Esa>, skos:Concept;
+    rdfs:label "ESA-P512DA"@en;
+    skos:prefLabel "ESA-P512DA"@en;
+    skos:notation "esa-p512da";
+    rdfs:comment "Acquisitions of intangible fixed assets: software licences.";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/esa>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/esa/esa-p512db>
+    a <http://finance.data.gov.uk/def/coins/Esa>, skos:Concept;
+    rdfs:label "ESA-P512DB"@en;
+    skos:prefLabel "ESA-P512DB"@en;
+    skos:notation "esa-p512db";
+    rdfs:comment "Disposals of intangible fixed assets: software licences.";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/esa>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/esa/esa-p52>
+    a <http://finance.data.gov.uk/def/coins/Esa>, skos:Concept;
+    rdfs:label "ESA-P52"@en;
+    skos:prefLabel "ESA-P52"@en;
+    skos:notation "esa-p52";
+    rdfs:comment "Changes in inventories ";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/esa>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/esa/esa-p53a>
+    a <http://finance.data.gov.uk/def/coins/Esa>, skos:Concept;
+    rdfs:label "ESA-P53A"@en;
+    skos:prefLabel "ESA-P53A"@en;
+    skos:notation "esa-p53a";
+    rdfs:comment "Acquisitions of valuables";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/esa>;
+    
+    .
+
+<http://finance.data.gov.uk/def/coins/esa/esa-p53b>
+    a <http://finance.data.gov.uk/def/coins/Esa>, skos:Concept;
+    rdfs:label "ESA-P53B"@en;
+    skos:prefLabel "ESA-P53B"@en;
+    skos:notation "esa-p53b";
+    rdfs:comment "Disposals of valuables";
+    skos:topConceptOf <http://finance.data.gov.uk/def/coins/esa>;
+    
+    .

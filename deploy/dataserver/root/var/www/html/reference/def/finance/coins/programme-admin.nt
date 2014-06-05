@@ -1,0 +1,47 @@
+<http://finance.data.gov.uk/def/coins/programme-admin/gca> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/ProgrammeAdmin> .
+<http://finance.data.gov.uk/def/coins/programme-admin/gca> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/programme-admin/gca> <http://www.w3.org/2000/01/rdf-schema#label> "GCA"@en .
+<http://finance.data.gov.uk/def/coins/programme-admin/gca> <http://www.w3.org/2004/02/skos/core#prefLabel> "GCA"@en .
+<http://finance.data.gov.uk/def/coins/programme-admin/gca> <http://www.w3.org/2004/02/skos/core#notation> "gca" .
+<http://finance.data.gov.uk/def/coins/programme-admin/gca> <http://www.w3.org/2000/01/rdf-schema#comment> "Gross Control Admin Costs" .
+<http://finance.data.gov.uk/def/coins/programme-admin/gca> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/programme-admin> .
+<http://finance.data.gov.uk/def/coins/ProgrammeAdmin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://finance.data.gov.uk/def/coins/ProgrammeAdmin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://finance.data.gov.uk/def/coins/ProgrammeAdmin> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/ProgrammeAdmin> <http://www.w3.org/2000/01/rdf-schema#label> "programme admin values class"@en .
+<http://finance.data.gov.uk/def/coins/ProgrammeAdmin> <http://www.w3.org/2004/02/skos/core#prefLabel> "programme admin values class"@en .
+<http://finance.data.gov.uk/def/coins/ProgrammeAdmin> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of values in the programme admin code-list scheme" .
+<http://finance.data.gov.uk/def/coins/programme-admin/nca> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/ProgrammeAdmin> .
+<http://finance.data.gov.uk/def/coins/programme-admin/nca> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/programme-admin/nca> <http://www.w3.org/2000/01/rdf-schema#label> "NCA"@en .
+<http://finance.data.gov.uk/def/coins/programme-admin/nca> <http://www.w3.org/2004/02/skos/core#prefLabel> "NCA"@en .
+<http://finance.data.gov.uk/def/coins/programme-admin/nca> <http://www.w3.org/2004/02/skos/core#notation> "nca" .
+<http://finance.data.gov.uk/def/coins/programme-admin/nca> <http://www.w3.org/2000/01/rdf-schema#comment> "Net Control Admin Costs (this codes is no longer used)" .
+<http://finance.data.gov.uk/def/coins/programme-admin/nca> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/programme-admin> .
+<http://finance.data.gov.uk/def/coins/programme-admin/prog> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/ProgrammeAdmin> .
+<http://finance.data.gov.uk/def/coins/programme-admin/prog> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/programme-admin/prog> <http://www.w3.org/2000/01/rdf-schema#label> "Prog"@en .
+<http://finance.data.gov.uk/def/coins/programme-admin/prog> <http://www.w3.org/2004/02/skos/core#prefLabel> "Prog"@en .
+<http://finance.data.gov.uk/def/coins/programme-admin/prog> <http://www.w3.org/2004/02/skos/core#notation> "prog" .
+<http://finance.data.gov.uk/def/coins/programme-admin/prog> <http://www.w3.org/2000/01/rdf-schema#comment> "Programme costs" .
+<http://finance.data.gov.uk/def/coins/programme-admin/prog> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/programme-admin> .
+<http://finance.data.gov.uk/def/coins/statistical-concept/programme-admin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/sdmx#Concept> .
+<http://finance.data.gov.uk/def/coins/statistical-concept/programme-admin> <http://www.w3.org/2000/01/rdf-schema#label> "programme admin"@en .
+<http://finance.data.gov.uk/def/coins/statistical-concept/programme-admin> <http://www.w3.org/2004/02/skos/core#prefLabel> "programme admin"@en .
+<http://finance.data.gov.uk/def/coins/statistical-concept/programme-admin> <http://www.w3.org/2000/01/rdf-schema#comment> "Departments\u2019 resource budgets are split between programme and administration budgets: GCA = [Gross Control] Admin Costs, NCA = [Net Control] Admin Costs (this codes is no longer used), Prog = programme, Other" .
+<http://finance.data.gov.uk/def/coins/statistical-concept/programme-admin> <http://purl.org/dc/terms/source> <http://www.hm-treasury.gov.uk/d/coins_guidance.pdf> .
+<http://finance.data.gov.uk/def/coins/statistical-concept/programme-admin> <http://www.epimorphics.com/vocabs/coins-generate#columnName> "programme_admin" .
+<http://finance.data.gov.uk/def/coins/programme-admin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://finance.data.gov.uk/def/coins/programme-admin> <http://www.w3.org/2000/01/rdf-schema#label> "programme admin code list concept scheme"@en .
+<http://finance.data.gov.uk/def/coins/programme-admin> <http://www.w3.org/2004/02/skos/core#prefLabel> "programme admin code list concept scheme"@en .
+<http://finance.data.gov.uk/def/coins/programme-admin> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/programme-admin/gca> .
+<http://finance.data.gov.uk/def/coins/programme-admin> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/programme-admin/nca> .
+<http://finance.data.gov.uk/def/coins/programme-admin> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/programme-admin/other> .
+<http://finance.data.gov.uk/def/coins/programme-admin> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://finance.data.gov.uk/def/coins/programme-admin/prog> .
+<http://finance.data.gov.uk/def/coins/programme-admin/other> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://finance.data.gov.uk/def/coins/ProgrammeAdmin> .
+<http://finance.data.gov.uk/def/coins/programme-admin/other> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://finance.data.gov.uk/def/coins/programme-admin/other> <http://www.w3.org/2000/01/rdf-schema#label> "Other"@en .
+<http://finance.data.gov.uk/def/coins/programme-admin/other> <http://www.w3.org/2004/02/skos/core#prefLabel> "Other"@en .
+<http://finance.data.gov.uk/def/coins/programme-admin/other> <http://www.w3.org/2004/02/skos/core#notation> "other" .
+<http://finance.data.gov.uk/def/coins/programme-admin/other> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://finance.data.gov.uk/def/coins/programme-admin/other> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://finance.data.gov.uk/def/coins/programme-admin> .

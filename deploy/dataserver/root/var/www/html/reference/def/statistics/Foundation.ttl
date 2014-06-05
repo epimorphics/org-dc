@@ -1,0 +1,696 @@
+#
+# Relocating Foundation
+#
+#@prefix :        <http://structure.data.gov.uk/ontology/Foundation#> .
+@prefix :        <http://statistics.data.gov.uk/def/Foundation/> .
+@prefix dc:      <http://purl.org/dc/elements/1.1/> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix frbr:    <http://purl.org/vocab/frbr/core#> .
+@prefix geonames:  <http://www.geonames.org/ontology#> .
+@prefix vcard:   <http://www.w3.org/2006/vcard/ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix goodRelations:  <http://purl.org/goodrelations/v1#> .
+@prefix protonTop:  <http://proton.semanticweb.org/2005/04/protont#> .
+@prefix protonUpper:  <http://proton.semanticweb.org/2005/04/protonu#> .
+@prefix swbpTime:  <http://www.w3.org/2006/time#> .
+@prefix dolce:   <http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#> .
+@prefix sumo:    <http://www.ontologyportal.org/translations/SUMO.owl.txt#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos-xl:  <http://www.w3.org/2008/05/skos-xl#> .
+@prefix skos:    <http://www.w3.org/2008/05/skos#> .
+
+#<http://structure.data.gov.uk/ontology/Foundation>
+:
+      a       owl:Ontology ;
+      rdfs:comment "An example foundation ontology developed to accompany the experimental EDUBase dataset. Based on Dolce-lite. Utilizes SKOS, SKOS-XL and Dublin Core Elements. Cross links to FRBR ontology, FOAF, DOLCE-lite and Proton." ;
+      owl:imports dc: , <http://www.w3.org/2008/05/skos> , <http://www.w3.org/2008/05/skos-xl> .
+
+:linkedConcept
+      a       owl:AnnotationProperty ;
+      rdfs:comment "Used to link related concepts across ontologies. In many cases if an application can commit to both source and target ontologies then the linkedConcept relation can be treated as owl:equivalentClass or owl:equivalentProperty. However, in some cases we may not be able to commit to all of the axioms in the linked ontology, for example it might assert two concepts as disjoin where we allow a single entity to be simultaneously regarded from the perspective of both concepts. SHOULD only be used when the concepts are near equivalents, not as a shorthand for \"vaguely related somehow\"." ;
+      rdfs:label "linked concept"^^xsd:string .
+
+:recommendedProperty
+      a       owl:AnnotationProperty ;
+      rdfs:comment "Used to link a class to a set of properties that might often be used on instances of the class. Used especially when the properties have an open domain and/or reside in an external namespace to show expected usage patterns that are not obvious from the pure axiom structured on the ontology." ;
+      rdfs:label "recommended Property"^^xsd:string .
+      
+#####
+# Upper level
+#####
+
+:Entity
+      a       owl:Class ;
+      rdfs:comment "Root of the foundational ontology. Includes objects, processes and abstractions." ;
+      rdfs:label "Entity" ;
+      :linkedConcept dolce:particular .
+      
+:partOf
+      a       owl:ObjectProperty ;
+      rdfs:comment "General mereology relation of one thing being part of another." ;
+      rdfs:domain :Entity ;
+      rdfs:label "part of"^^xsd:string ;
+      rdfs:range :Entity .
+      
+:Abstract
+      a       owl:Class ;
+      rdfs:comment """Something, which neither happens nor exists. 
+The main characteristic of abstract entities is that  they do not have spatial 
+nor temporal qualities, and they are not qualities themselves.""" ;
+      rdfs:label "Abstract"^^xsd:string ;
+      rdfs:subClassOf :Entity ;
+      :linkedConcept dolce:abstract .
+
+skos:ConceptScheme
+      rdfs:subClassOf :Abstract .
+                  
+skos:Concept
+      rdfs:subClassOf :Abstract .
+
+skos:Collection
+      rdfs:subClassOf :Abstract .
+
+:acronym
+      a       owl:DatatypeProperty ;
+      rdfs:comment "A special case of an alternate label where the label is an acronym for the preffered (or maybe an alt) label." ;
+      rdfs:label "acronym"^^xsd:string ;
+      rdfs:subPropertyOf skos:altLabel .
+      
+:Endurant
+      a       owl:Class ;
+      rdfs:comment "Endurants exists in time, values of some properties might different over time but the Endurant has a constant identity. Endurants can participate in processes. Philosophically speaking they are independent essential wholes." ;
+      rdfs:label "Endurant" ;
+      rdfs:subClassOf :Entity ;
+      :linkedConcept dolce:endurant ;
+      owl:disjointWith :Perdurant .
+
+:ObjectFeature
+      a       owl:Class ;
+      rdfs:comment "Something which can't exist on its own but is a feature of some physical object, e.g. a bump, hole, region, spot." ;
+      rdfs:label "Object feature"@en ;
+      rdfs:subClassOf :Endurant ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:allValuesFrom :Object ;
+                owl:onProperty :partOf
+              ] ;
+      :linkedConcept dolce:feature ;
+      owl:disjointWith :AmountOfMatter , :Object .
+
+:Object
+      a       owl:Class ;
+      rdfs:comment "Physical objects. Endurants with unity and some independent existence." ;
+      rdfs:label "Object" ;
+      rdfs:subClassOf :Endurant ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:allValuesFrom :Object ;
+                owl:onProperty :partOf
+              ] ;
+      :linkedConcept dolce:physical-object ;
+      owl:disjointWith :AmountOfMatter , :ObjectFeature .
+
+:AmountOfMatter
+      a       owl:Class ;
+      rdfs:comment "Things like \"water\", \"clay\" which have no unity (the combination of two amounts of clay is just a single amount of clay), aka \"stuff\"." ;
+      rdfs:label "Amount of matter" ;
+      rdfs:subClassOf :Endurant ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:allValuesFrom :AmountOfMatter ;
+                owl:onProperty :partOf
+              ] ;
+      :linkedConcept dolce:amount-of-matter ;
+      owl:disjointWith :Object , :ObjectFeature .
+      
+:Perdurant
+      a       owl:Class ;
+      rdfs:comment "Perdurants (AKA occurrences) comprise what are variously called events, processes, phenomena, activities and states. They can have temporal parts or spatial parts. For instance, the first movement of (an execution of) a symphony is a temporal part of the symphony. On the other hand, the play performed by the left side of the orchestra is a spatial part. In both cases, these parts are occurrences themselves. We assume that objects cannot be parts of occurrences, but rather they participate in them. Philosophers say that endurants are entities that are in time, while lacking temporal parts (so to speak, all their parts flow with them in time). Perdurants, on the contrary, are entities that happen in time, and can have temporal parts (all their parts are fixed in time)." ;
+      rdfs:label "Perdurant"^^xsd:string ;
+      rdfs:subClassOf :Entity ;
+      :linkedConcept dolce:perdurant .
+
+:Process
+      a       owl:Class ;
+      rdfs:comment "We split perdurants into just events and processes according to atomicity. A process has some substructure to it, it extends over time and might have discrete or continuous phases, whereas as an event has no interesting substructure. This division is relative to a given viewpoint. For example a meeting could be modelled as a process if one is recording different stages of a meeting with time ordering or might be a simple event. The two viewpoints are not regarded as disjoint." ;
+      rdfs:label "Process"@en ;
+      rdfs:subClassOf :Perdurant ;
+      :linkedConcept dolce:process .
+      
+:Project
+      a       owl:Class ;
+      rdfs:comment "A project or collective endeavour of some kind. Typically a project has a definite inception, set of goals and conclusion." ;
+      rdfs:label "Project"^^xsd:string ;
+      rdfs:subClassOf :Process ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:allValuesFrom :Agent ;
+                owl:onProperty :participant
+              ] ;
+      :linkedConcept foaf:Project , <http://www.owl-ontologies.com/file1.owl#Project> .
+      
+:Event
+      a       owl:Class ;
+      rdfs:comment "We split perdurants into just events and processes according to atomicity. A process has some substructure to it, it extends over time and might have discrete or continuous phases, whereas as an event has no interesting substructure. This division is relative to a given viewpoint. For example a meeting could be modelled as a process if one is recording different stages of a meeting with time ordering or might be a simple event. The two viewpoints are not regarded as disjoint." ;
+      rdfs:label "Event"@en ;
+      rdfs:subClassOf :Perdurant ;
+      :linkedConcept frbr:Event , dolce:event .
+
+:BusinessActivity
+      a       owl:Class ;
+      rdfs:comment "Some shared business endeavour. Use for ongoing activities as opposed to projects that have clear cut start/end time courses." ;
+      rdfs:label "Business activity"^^xsd:string ;
+      rdfs:subClassOf :Process .
+      
+:Meeting
+      a       owl:Class ;
+      rdfs:comment "Any sort of formal or semi-formal meeting such as a business meeting." ;
+      rdfs:label "Meeting"^^xsd:string ;
+      rdfs:subClassOf :Event ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:allValuesFrom :Agent ;
+                owl:onProperty :participant
+              ] ;
+      :linkedConcept <http://www.owl-ontologies.com/file1.owl#Meeting> .
+
+:participant
+      a       owl:ObjectProperty ;
+      rdfs:comment "Indicates some person or object that partipates in a process or event." ;
+      rdfs:label "participant"^^xsd:string .
+
+:participatesIn
+      a       owl:ObjectProperty ;
+      rdfs:comment "General relationship between things (Endurants) and the processes (Perdurants) in which they might particpate. For example, links a person to their life history or an actor to a business process." ;
+      rdfs:domain :Endurant ;
+      rdfs:label "participates in"^^xsd:string ;
+      rdfs:range :Perdurant ;
+      :linkedConcept dolce:participant-in ;
+      owl:inverseOf :participant .
+
+:responsibleParticipant
+      a       owl:ObjectProperty ;
+      rdfs:comment "A person (or other agent) responsible for a particular event or process like a meeting or project." ;
+      rdfs:label "responsible participant"^^xsd:string ;
+      rdfs:range :Agent ;
+      rdfs:subPropertyOf :participant .
+
+#####
+# Group/organization
+#####
+
+      
+:Agent
+      a       owl:Class ;
+      rdfs:comment "Something or someone that can act on its own and produce changes in the world." ;
+      rdfs:label "Agent" ;
+      rdfs:subClassOf :Object ;
+      :linkedConcept foaf:Agent , sumo:Agent , protonTop:Agent ;
+      owl:disjointWith :GeoLocation , :InformationResource , :ProductInstance .
+      
+:Person
+      a       owl:Class ;
+      rdfs:comment "An individual, a human being" ;
+      rdfs:label "Person"^^xsd:string ;
+      rdfs:subClassOf :Agent ;
+      :linkedConcept foaf:Person , sumo:Human , frbr:Person , protonTop:Person ;
+      owl:disjointWith :Group .
+
+:Man  a       owl:Class ;
+      rdfs:comment "Class of male persons." ;
+      rdfs:label "Man"^^xsd:string ;
+      rdfs:subClassOf :Person ;
+      :linkedConcept <http://www.owl-ontologies.com/file1.owl#Man> , sumo:Man .
+
+:Woman
+      a       owl:Class ;
+      rdfs:comment "Class of female persons." ;
+      rdfs:label "Woman"^^xsd:string ;
+      rdfs:subClassOf :Person ;
+      :linkedConcept sumo:Woman , <http://www.owl-ontologies.com/file1.owl#Woman> .
+      
+:Group
+      a       owl:Class ;
+      rdfs:comment "A Collection of Agents, e.g. a flock of sheep, a herd of goats, or the local Boy Scout troop." ;
+      rdfs:label "Group"^^xsd:string ;
+      rdfs:subClassOf :Agent ;
+      :linkedConcept sumo:Group , protonTop:Group ;
+      owl:disjointWith :Person .
+
+:memberOf
+      a       owl:ObjectProperty ;
+      rdfs:comment "Indicates that an agent is a member of some group, for example a person being a member of an organization like a Corporation." ;
+      rdfs:domain :Agent ;
+      rdfs:label "member of"^^xsd:string ;
+      rdfs:range :Group .
+      
+:Organization
+      a       owl:Class ;
+      rdfs:comment "An Organization is a corporate or similar institution. The members of an Organization typically have a common purpose or function. Note that this class also covers divisions, departments, etc. of organizations.  For example, both the Shell Corporation and the accounting department at Shell would both be instances of Organization. " ;
+      rdfs:label "Organization"^^xsd:string ;
+      rdfs:subClassOf :Group ;
+      :linkedConcept foaf:Organization , protonTop:Organization , sumo:Organization .
+     
+:childOrganizationOf
+      a       owl:ObjectProperty ;
+      rdfs:comment "Indicates that some organization (such as a division) is part of some parent organization." ;
+      rdfs:domain :Organization ;
+      rdfs:label "child organization of"^^xsd:string ;
+      rdfs:range :Organization ;
+      rdfs:subPropertyOf :partOf ;
+      :linkedConcept protonTop:childOrganizationOf .
+
+:Division
+      a       owl:Class ;
+      rdfs:comment "Branch, division, department, laboratory, etc. within an organisation. Usually, not an independent legal entity. " ;
+      rdfs:label "Division"^^xsd:string ;
+      rdfs:subClassOf :Organization ;
+      :linkedConcept <http://www.owl-ontologies.com/file1.owl#Division> .
+
+:EducationalOrganization
+      a       owl:Class ;
+      rdfs:comment """A EducationalOrganization is 
+an institution of learning. Some examples are public and private K-12 
+schools, and colleges and universities.""" ;
+      rdfs:label "Educational organization"^^xsd:string ;
+      rdfs:subClassOf :Organization ;
+      :linkedConcept sumo:EducationalOrganization .
+            
+:Corporation
+      a       owl:Class ;
+      rdfs:comment """An Organization that has a special legal status 
+that allows a group of persons to act as a CommercialAgent and that insulates 
+the owners (shareholders) from many liabilities that might result from the 
+corporation's operation.""" ;
+      rdfs:label "Corporation"^^xsd:string ;
+      rdfs:subClassOf :Organization ;
+      :linkedConcept goodRelations:BusinessEntity , frbr:CorporateBody , sumo:Corporation .
+      
+:ReligousOrganization
+      a       owl:Class ;
+      rdfs:comment "An Organization whose members share a set of religious beliefs." ;
+      rdfs:label "Religous group"^^xsd:string ;
+      rdfs:subClassOf :Organization ;
+      :linkedConcept sumo:ReligiousOrganization .
+
+:GovernmentOrganization
+      a       owl:Class ;
+      rdfs:comment """GovernmentOrganization is the 
+class of official Organizations that are concerned with the government 
+of a GeopoliticalArea at some level.  They may be a subOrganization 
+of a government.""" ;
+      rdfs:label "Government organization"^^xsd:string ;
+      rdfs:subClassOf :Organization ;
+      :linkedConcept sumo:GovernmentOrganization .
+      
+:contactDetails
+      a       owl:ObjectProperty ;
+      rdfs:domain :Agent ;
+      rdfs:label "contact details"^^xsd:string ;
+      rdfs:range vcard:VCard .
+
+:contactPerson
+      a       owl:ObjectProperty ;
+      rdfs:comment "Person (or other agent) who can act as a contact point for some activity or product." ;
+      rdfs:label "contact person"^^xsd:string ;
+      rdfs:range :Agent .
+      
+#####
+# Information resources
+#####
+
+:InformationResource
+      a       owl:Class ;
+      rdfs:comment "InformationResource denotes an information resource with identity, as defined in Dublin Core (DC2003ISO). A document (physical or electronic), message or other information object. We recommend use of Dublic Core elements for basic descriptive metadata and guide usage by restricting the range of some dc elements." ;
+      rdfs:label "Information resource"^^xsd:string ;
+      rdfs:subClassOf :Object ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:allValuesFrom skos:Concept ;
+                owl:onProperty dc:subject
+              ] ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:allValuesFrom xsd:dateTime ;
+                owl:onProperty dc:date
+              ] ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:allValuesFrom :Agent ;
+                owl:onProperty dc:contributor
+              ] ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:allValuesFrom :InformationResource ;
+                owl:onProperty dc:source
+              ] ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:allValuesFrom :Agent ;
+                owl:onProperty dc:creator
+              ] ;
+      :linkedConcept protonTop:InformationResource ;
+      :recommendedProperty
+              dc:creator , dc:date , dc:subject , dc:format , dc:contributor , dc:source , dc:rights , dc:type , dc:title ;
+      owl:disjointWith :GeoLocation , :Agent , :ProductInstance .
+
+:definitiveSource
+      a       owl:ObjectProperty ;
+      rdfs:comment "Indicates the definitive source from which this resource was, or could be, obtained." ;
+      rdfs:label "definitive source"^^xsd:string ;
+      rdfs:subPropertyOf :hasSource .
+      
+:versionOf
+      a       owl:ObjectProperty ;
+      rdfs:comment "Indicates that one InformationResource is a a version of some other resource. Note this is more restricted relation that dc:source, dc:source could indicate some set of primary references works used in the generation of a wholly new InformationResource whereas versionOf would only be used betweens successive refinements or copies of the essentially the same resource." ;
+      rdfs:domain :InformationResource ;
+      rdfs:label "version of"^^xsd:string ;
+      rdfs:range :InformationResource .     
+      
+
+:Document
+      a       owl:Class ;
+      rdfs:comment "A document, does not distinguish electronic and physical copies. Not limited to text documents." ;
+      rdfs:label "Document"^^xsd:string ;
+      rdfs:subClassOf :InformationResource ;
+      :linkedConcept foaf:Document , protonTop:Document .
+
+:InformationSource
+      a       owl:Class ;
+      rdfs:comment "A storage system, content management system, or other source from which information resources like Documents can be obtained. The aggregate can itself be regarded as an InformationResource though metadata on the InformationSource should be used to describe the name and authorship of the source rather of the union of the contained resources." ;
+      rdfs:label "Information source"^^xsd:string ;
+      rdfs:subClassOf :InformationResource .
+
+:hasSource
+      a       owl:ObjectProperty ;
+      rdfs:comment "Indicates an information source from which the subject resource could be obtained." ;
+      rdfs:domain :InformationResource ;
+      rdfs:label "has source"^^xsd:string ;
+      rdfs:range :InformationSource .
+
+#####
+# Abstract relations
+#####
+
+:Relation
+      a       owl:Class ;
+      rdfs:comment "Class of relations. Mostly used for when we are reifiying complex relations as objects and so does not itself break the DL constraints, could be used as a category of general relations as done in SUMO in which case we would be forced into OWL/full." ;
+      rdfs:label "Relation"^^xsd:string ;
+      rdfs:subClassOf :Abstract ;
+      :linkedConcept sumo:Relation .
+
+:NaryRelation
+      a       owl:Class ;
+      rdfs:comment "Superclass of all types of reified n-ary relations. Instances link to the participating objects via hasArgument properties." ;
+      rdfs:label "N-ary relation"^^xsd:string ;
+      rdfs:subClassOf :Relation .
+      
+:literalValue
+      a       owl:DatatypeProperty ;
+      rdfs:comment "Gives an data valued argument for an n-ary relationship, such as a weighted relation." ;
+      rdfs:domain :NaryRelation ;
+      rdfs:label "literal value"^^xsd:string ;
+      rdfs:subPropertyOf :hasArgument .
+      
+:hasArgument
+      a       rdf:Property ;
+      rdfs:comment "Links a reified n-ary relationship to one of its arguments. Subproperties of this can be used to indicate specific roles in the n-ary realtionship." ;
+      rdfs:domain :NaryRelation ;
+      rdfs:label "has argument"^^xsd:string .
+
+:inContext
+      a       rdf:Property ;
+      rdfs:comment "Gives the context of a qualified relationship, e.g. the TimeInterval during which a binary property value is valid." ;
+      rdfs:domain :QualifiedBinaryRelation ;
+      rdfs:label "in context"^^xsd:string .
+            
+:QualifiedBinaryRelation
+      a       owl:Class ;
+      rdfs:comment "A relation which would normally be regard as binary (e.g. memberOf, hasColour) but where the value is dependent upon some context like time. We model this as an n-ary relation where the qualifying context is given by the value of the 'inContext' property and the qualified value is given by the unique 'hasArgument' value." ;
+      rdfs:label "Qualified binary relation"^^xsd:string ;
+      rdfs:subClassOf :NaryRelation .
+      
+:WeightedRelation
+      a       owl:Class ;
+      rdfs:comment "A relation containing a weight (e.g. an associated probablilty) and an object or literal value." ;
+      rdfs:label "Weighted relation"^^xsd:string ;
+      rdfs:subClassOf :NaryRelation ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:cardinality "1"^^xsd:int ;
+                owl:onProperty :weight
+              ] .
+
+:weight
+      a       rdf:Property ;
+      rdfs:comment "Gives the probability or other weighted associated with a weighted attribute or relation." ;
+      rdfs:domain :WeightedRelation ;
+      rdfs:label "weight"^^xsd:string ;
+      rdfs:range xsd:float ;
+      rdfs:subPropertyOf :hasArgument .
+
+:objectValue
+      a       owl:ObjectProperty ;
+      rdfs:comment "Gives an object (aka Individual) valued argument for an n-ary relationship, such as a weighted relation." ;
+      rdfs:domain :NaryRelation ;
+      rdfs:label "object value"^^xsd:string ;
+      rdfs:subPropertyOf :hasArgument .
+            
+#####
+# Time, intervals and time functions
+####
+
+:FnOfTime a owl:Class;
+    rdfs:label "Function of time";
+    rdfs:comment "Represents an integer-valued function of time" .
+
+:FnOfTime_int a owl:Class;
+    rdfs:label "Function of time (integer)";
+    rdfs:comment "Represents an integer-valued function of time" ;
+    rdfs:subClassOf :FnOfTime ;
+    rdfs:subClassOf [a owl:Restriction; owl:onProperty :datum; owl:allValuesFrom :Datum_int].
+
+:Datum a owl:Class;
+    rdfs:label "Datum" ;
+    rdfs:comment "A single value in a function (typically of time)" .
+    
+:Datum_int a owl:Class;
+    rdfs:label "Datum (integer)" ;
+    rdfs:comment "A single (integer) value in a function (typically of time)" ;
+    rdfs:subClassOf :Datum ;
+    rdfs:subClassOf [a owl:Restriction; owl:onProperty :val; owl:allValuesFrom xsd:integer].
+    
+:datum a owl:ObjectProperty;
+    rdfs:label "datum";
+    rdfs:comment "links a function of time to a particular timestamped value" ;
+    rdfs:domain :FnOfTime;
+    rdfs:range :Datum .
+
+:val a owl:DatatypeProperty;
+    rdfs:label "value";
+    rdfs:comment "gives the value of a datum" ;
+    rdfs:domain :Datum .
+    
+:time a owl:DatatypeProperty;
+    rdfs:label "at time";
+    rdfs:comment "gives the time point of a datum in a time-valued function";
+    rdfs:domain :Datum;
+    rdfs:range xsd:dateTime .
+                     
+:date a owl:DatatypeProperty;
+    rdfs:label "at date";
+    rdfs:comment "gives the time point of a datum in a time-valued function, to a resolution of 1 day";
+    rdfs:domain :Datum;
+    rdfs:range xsd:date .
+                     
+:TimeDependentRelation
+      a       owl:Class ;
+      rdfs:comment "Reification of a time-dependent relation. A special case of a QualifiedBinaryRelation where the context should be a time interval." ;
+      rdfs:label "Time dependent relation"^^xsd:string ;
+      rdfs:subClassOf :QualifiedBinaryRelation ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:allValuesFrom :TimeInterval ;
+                owl:onProperty :inContext
+              ] .
+              
+:occursAtTime
+      a       owl:ObjectProperty ;
+      rdfs:comment "The time or time interval at which an event or process takes place." ;
+      rdfs:domain :Perdurant ;
+      rdfs:label "occurs at time"^^xsd:string ;
+      rdfs:range :TemporalRegion .
+
+:Instant
+      a       owl:Class ;
+      rdfs:comment "A point in time. Can have either a hasBeginning or hasEnding value, if it has both they should be the same." ;
+      rdfs:label "Instant"^^xsd:string ;
+      rdfs:subClassOf :TemporalRegion ;
+      :linkedConcept swbpTime:Instant .
+
+:TemporalRegion
+      a       owl:Class ;
+      rdfs:comment "A region of time such as a specific instant or time interval. Can also be used for things like Geological ages." ;
+      rdfs:label "Temporal region"^^xsd:string ;
+      rdfs:subClassOf :Region ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:allValuesFrom :TemporalRegion ;
+                owl:onProperty :partOf
+              ] ;
+      :linkedConcept swbpTime:TemporalEntity , dolce:temporal-region .
+      
+:TimeInterval
+      a       owl:Class ;
+      rdfs:comment "An interval of time.  Note that a TimeInterval has both an extent and a location on a timeline.  Note too that a TimeInterval has no gaps, i.e. this class contains only convex time intervals." ;
+      rdfs:label "Time interval"^^xsd:string ;
+      rdfs:subClassOf :TemporalRegion ;
+      :linkedConcept sumo:TimeInterval , dolce:time-interval , swbpTime:Interval .
+
+:intervalDuring
+      a       owl:ObjectProperty ;
+      rdfs:comment "Indicates that one time interval (the subject) occurs during the other (object) time interval, i.e. it begins after the object time interval has begun and ends before the object interval ends." ;
+      rdfs:domain :TimeInterval ;
+      rdfs:label "intervalDuring"^^xsd:string ;
+      rdfs:range :TimeInterval ;
+      :linkedConcept swbpTime:intervalDuring .
+                          
+:intervalEquals
+      a       owl:ObjectProperty ;
+      rdfs:comment "Indicates that the two time intervals are the same (same beginning and ending)." ;
+      rdfs:domain :TimeInterval ;
+      rdfs:label "intervalEquals"^^xsd:string ;
+      rdfs:range :TimeInterval ;
+      :linkedConcept swbpTime:intervalEquals .
+      
+:hasBeginning
+      a       owl:FunctionalProperty , owl:DatatypeProperty ;
+      rdfs:comment "The beginning of a time interval or the time value of a time instant. Optional (since the interval may be unbounded) but unique." ;
+      rdfs:domain :TemporalRegion ;
+      rdfs:label "has beginning"^^xsd:string ;
+      rdfs:range xsd:dateTime .     
+
+:after
+      a       owl:ObjectProperty ;
+      rdfs:comment "Indicates that one interval (the subject) starts after another (the object) ends." ;
+      rdfs:domain :TemporalRegion ;
+      rdfs:label "after"^^xsd:string ;
+      rdfs:range :TemporalRegion .
+
+:intervalOverlaps
+      a       owl:ObjectProperty ;
+      rdfs:comment "Indicates that one time interval (the subject) overlaps the other (object) time interval, i.e. it begins before the object time interval has begun and ends during the object interval ends." ;
+      rdfs:domain :TimeInterval ;
+      rdfs:label "intevalOverlaps"^^xsd:string ;
+      rdfs:range :TimeInterval ;
+      :linkedConcept swbpTime:intervalOverlaps .
+
+:occursAt
+      a       owl:ObjectProperty ;
+      rdfs:comment "The location at which an event or process takes place." ;
+      rdfs:domain :Perdurant ;
+      rdfs:label "occurs at"^^xsd:string ;
+      rdfs:range :GeoLocation .
+
+:hasEnding
+      a       owl:FunctionalProperty , owl:DatatypeProperty ;
+      rdfs:comment "The end of a time interval or the time value of a time instant. Optional (since the interval may be unbounded) but unique." ;
+      rdfs:domain :TemporalRegion ;
+      rdfs:label "has ending"^^xsd:string ;
+      rdfs:range xsd:dateTime .
+
+:intervalStarts
+      a       owl:ObjectProperty ;
+      rdfs:comment "Indicates that one time interval (the subject) starts the other (object) time interval, i.e. they start at the same time but it ends before the object interval ends." ;
+      rdfs:domain :TimeInterval ;
+      rdfs:label "intervalStarts"^^xsd:string ;
+      rdfs:range :TimeInterval ;
+      :linkedConcept swbpTime:intervalStarts .
+
+:before
+      a       owl:ObjectProperty ;
+      rdfs:comment "Indicates that one interval (the subject) ends before another (the object) begins." ;
+      rdfs:domain :TemporalRegion ;
+      rdfs:label "before"^^xsd:string ;
+      rdfs:range :TemporalRegion .
+
+:intervalFinishes
+      a       owl:ObjectProperty ;
+      rdfs:comment "Indicates that one time interval (the subject) finishes the other (object) time interval, i.e. end start at the same time but it starts after the object interval starts." ;
+      rdfs:domain :TimeInterval ;
+      rdfs:label "intervalFinishes"^^xsd:string ;
+      rdfs:range :TimeInterval ;
+      :linkedConcept swbpTime:intervalFinishes .
+
+:intervalMeets
+      a       owl:ObjectProperty ;
+      rdfs:comment "Indicates that one time interval (the subject) meets the other (object) time interval, i.e. it ends as the object interval begins." ;
+      rdfs:domain :TimeInterval ;
+      rdfs:label "intervalMeets"^^xsd:string ;
+      rdfs:range :TimeInterval ;
+      :linkedConcept swbpTime:intervalMeets .
+      
+#####
+# Spatial - replace by OS ontology
+#####
+
+:GeoFeature
+      a       owl:Class ;
+      rdfs:comment "A geographical feature such as a river, mountain, including man made features such as cities and bridges. Ususally designated by a Geonames URI with associated descriptive information." ;
+      rdfs:label "Geo Feature"^^xsd:string ;
+      rdfs:subClassOf :GeoLocation ;
+      :linkedConcept geonames:Feature .
+
+:Region
+      a       owl:Class ;
+      rdfs:comment "A region of some measurement space such as a time interval, spatial region or colour space." ;
+      rdfs:label "Region"^^xsd:string ;
+      rdfs:subClassOf :Abstract ;
+      :linkedConcept dolce:region .
+
+:locatedAt
+      a       owl:ObjectProperty ;
+      rdfs:comment "The location at which a thing exists or is currently situated." ;
+      rdfs:domain :Object ;
+      rdfs:label "located at"^^xsd:string ;
+      rdfs:range :GeoLocation ;
+      :linkedConcept protonTop:locatedIn .
+
+:inCountry
+      a       owl:ObjectProperty ;
+      rdfs:comment "The country in which a geographical feature is located." ;
+      rdfs:domain :GeoFeature ;
+      rdfs:label "in country"^^xsd:string ;
+      rdfs:range :Country ;
+      rdfs:subPropertyOf :locatedAt ;
+      :linkedConcept geonames:inCountry .            
+
+:SpatialRegion
+      a       owl:Class ;
+      rdfs:comment "A region of space in some measurement system including a polygonal boundary of a geographic space or a region of 3D space." ;
+      rdfs:label "Spatial region"^^xsd:string ;
+      rdfs:subClassOf :Region ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:allValuesFrom :SpatialRegion ;
+                owl:onProperty :partOf
+              ] ;
+      :linkedConcept dolce:spatial-region .
+
+:GeoLocation
+      a       owl:Class ;
+      rdfs:comment "A geospatial location, encompasses locations with extent (e.g. countries) as well as features which can be treated as point-like for some purposes (e.g. a bridge or road junction). Normally designated by a Geonames URI." ;
+      rdfs:label "Geographic Location"^^xsd:string ;
+      rdfs:subClassOf :Object ;
+      :linkedConcept sumo:GeographicArea , protonTop:Location , frbr:place ;
+      owl:disjointWith :InformationResource , :Agent , :ProductInstance .
+
+:Country
+      a       owl:Class ;
+      rdfs:comment "A country, normally designated by a GeoNames URI." ;
+      rdfs:label "Country"^^xsd:string ;
+      rdfs:subClassOf :GeoLocation ;
+      :linkedConcept geonames:Country .
+      

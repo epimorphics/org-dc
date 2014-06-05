@@ -1,0 +1,58 @@
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix dct:     <http://purl.org/dc/terms/> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix opmv:    <http://purl.org/net/opmv/ns#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix gov: <http://reference.data.gov.uk/def/central-government/> .
+@prefix : <http://reference.data.gov.uk/def/civil-service-grade/> .
+
+:Grade a rdfs:Class ;
+  rdfs:label "Grade"@en ;
+  rdfs:subClassOf skos:Concept ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/civil-service-grade> .
+
+:grade a rdf:Property , owl:ObjectProperty ;
+  rdfs:label "Grade"@en ;
+  rdfs:range :Grade ;
+  rdfs:isDefinedBy <http://reference.data.gov.uk/def/civil-service-grade> .
+
+<http://reference.data.gov.uk/def/civil-service-grade> a skos:ConceptScheme , void:Dataset ;
+  rdfs:label "Senior Civil Service Grades"@en ;
+  skos:hasTopConcept :SCS1 , :SCS1A , :SCS2 , :SCS3 , :SCS4 ;
+  .
+
+:SCS1
+  a :Grade ;
+  skos:prefLabel "SCS1"@en ;
+  skos:isTopConceptOf <http://reference.data.gov.uk/def/civil-service-grade> ;
+  .
+
+:SCS1A
+  a :Grade ;
+  skos:prefLabel "SCS1A"@en ;
+  skos:isTopConceptOf <http://reference.data.gov.uk/def/civil-service-grade> ;
+  .
+
+:SCS2
+  a :Grade ;
+  skos:prefLabel "SCS2"@en ;
+  skos:isTopConceptOf <http://reference.data.gov.uk/def/civil-service-grade> ;
+  .
+
+:SCS3
+  a :Grade ;
+  skos:prefLabel "SCS3"@en ;
+  skos:isTopConceptOf <http://reference.data.gov.uk/def/civil-service-grade> ;
+  .
+
+:SCS4
+  a :Grade ;
+  skos:prefLabel "SCS4"@en ;
+  skos:isTopConceptOf <http://reference.data.gov.uk/def/civil-service-grade> ;
+  .

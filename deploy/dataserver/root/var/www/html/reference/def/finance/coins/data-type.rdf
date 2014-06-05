@@ -1,0 +1,685 @@
+<rdf:RDF
+    xmlns:sdmx-subject="http://purl.org/linked-data/sdmx/2009/subject#"
+    xmlns:sdmx-dimension="http://purl.org/linked-data/sdmx/2009/dimension#"
+    xmlns:sdmx-measure="http://purl.org/linked-data/sdmx/2009/measure#"
+    xmlns:coins-dsd="http://finance.data.gov.uk/dsd/coins/"
+    xmlns:j.0="http://www.epimorphics.com/vocabs/coins-generate#"
+    xmlns:coins-attribute="http://finance.data.gov.uk/dsd/coins/attribute/"
+    xmlns:sdmx-concept="http://purl.org/linked-data/sdmx/2009/concept#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:sdmx-attribute="http://purl.org/linked-data/sdmx/2009/attribute#"
+    xmlns:coins-dimension="http://finance.data.gov.uk/dsd/coins/dimension/"
+    xmlns:coins-data="http://source.data.gov.uk/data/coins/"
+    xmlns:void="http://rdfs.org/ns/void#"
+    xmlns:coins-measure="http://finance.data.gov.uk/dsd/coins/measure/"
+    xmlns:coins-slicekey="http://finance.data.gov.uk/dsd/coins/slice/"
+    xmlns:sdmx="http://purl.org/linked-data/sdmx#"
+    xmlns:sdmx-code="http://purl.org/linked-data/sdmx/2009/code#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:j.1="http://finance.data.gov.uk/def/coins/"
+    xmlns:j.2="http://epimorphics.com/vocabs/coins-generator#"
+    xmlns:qb="http://purl.org/linked-data/cube#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <rdfs:Class rdf:about="http://finance.data.gov.uk/def/coins/DataType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:label xml:lang="en">data type values class</rdfs:label>
+    <skos:prefLabel xml:lang="en">data type values class</skos:prefLabel>
+    <rdfs:comment>The class of values in the data type code-list scheme</rdfs:comment>
+  </rdfs:Class>
+  <sdmx:Concept rdf:about="http://finance.data.gov.uk/def/coins/statistical-concept/data-type">
+    <rdfs:label xml:lang="en">data type</rdfs:label>
+    <skos:prefLabel xml:lang="en">data type</skos:prefLabel>
+    <rdfs:comment>Identifies whether the data are Plans &amp; Outturn or Forecast Outturn. Some data are identified as being part of a numbered snapshot, which represent data taken at a fixed point in time.</rdfs:comment>
+    <j.2:source rdf:resource="http://www.hm-treasury.gov.uk/d/coins_guidance.pdf"/>
+    <j.0:columnName>data_type</j.0:columnName>
+  </sdmx:Concept>
+  <skos:ConceptScheme rdf:about="http://finance.data.gov.uk/def/coins/data-type">
+    <skos:hasTopConcept>
+      <j.1:DataType rdf:about="http://finance.data.gov.uk/def/coins/data-type/snapshot27">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Snapshot27</rdfs:label>
+        <skos:prefLabel xml:lang="en">Snapshot27</skos:prefLabel>
+        <skos:notation>snapshot27</skos:notation>
+        <rdfs:comment>Plans Jan 08</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-type"/>
+      </j.1:DataType>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DataType rdf:about="http://finance.data.gov.uk/def/coins/data-type/snapshot12">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Snapshot12</rdfs:label>
+        <skos:prefLabel xml:lang="en">Snapshot12</skos:prefLabel>
+        <skos:notation>snapshot12</skos:notation>
+        <rdfs:comment>CYP CRA</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-type"/>
+      </j.1:DataType>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DataType rdf:about="http://finance.data.gov.uk/def/coins/data-type/snapshot26">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Snapshot26</rdfs:label>
+        <skos:prefLabel xml:lang="en">Snapshot26</skos:prefLabel>
+        <skos:notation>snapshot26</skos:notation>
+        <rdfs:comment>PBR 2009 Nov 2 Outturn</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-type"/>
+      </j.1:DataType>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DataType rdf:about="http://finance.data.gov.uk/def/coins/data-type/snapshot31">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Snapshot31</rdfs:label>
+        <skos:prefLabel xml:lang="en">Snapshot31</skos:prefLabel>
+        <skos:notation>snapshot31</skos:notation>
+        <rdfs:comment>OUTTURN FEB08</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-type"/>
+      </j.1:DataType>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DataType rdf:about="http://finance.data.gov.uk/def/coins/data-type/snapshot7">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Snapshot7</rdfs:label>
+        <skos:prefLabel xml:lang="en">Snapshot7</skos:prefLabel>
+        <skos:notation>snapshot7</skos:notation>
+        <rdfs:comment>PBR 2007 Outturn</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-type"/>
+      </j.1:DataType>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DataType rdf:about="http://finance.data.gov.uk/def/coins/data-type/foq3i">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Forecast Outturn Q3 Input</rdfs:label>
+        <skos:prefLabel xml:lang="en">Forecast Outturn Q3 Input</skos:prefLabel>
+        <skos:notation>foq3i</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-type"/>
+      </j.1:DataType>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DataType rdf:about="http://finance.data.gov.uk/def/coins/data-type/foj">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Forecast Outturn January</rdfs:label>
+        <skos:prefLabel xml:lang="en">Forecast Outturn January</skos:prefLabel>
+        <skos:notation>foj</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-type"/>
+      </j.1:DataType>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DataType rdf:about="http://finance.data.gov.uk/def/coins/data-type/snapshot17">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Snapshot17</rdfs:label>
+        <skos:prefLabel xml:lang="en">Snapshot17</skos:prefLabel>
+        <skos:notation>snapshot17</skos:notation>
+        <rdfs:comment>CYO BUD</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-type"/>
+      </j.1:DataType>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DataType rdf:about="http://finance.data.gov.uk/def/coins/data-type/foq2i">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Forecast Outturn Q2 Input</rdfs:label>
+        <skos:prefLabel xml:lang="en">Forecast Outturn Q2 Input</skos:prefLabel>
+        <skos:notation>foq2i</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-type"/>
+      </j.1:DataType>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DataType rdf:about="http://finance.data.gov.uk/def/coins/data-type/snapshot50">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Snapshot50</rdfs:label>
+        <skos:prefLabel xml:lang="en">Snapshot50</skos:prefLabel>
+        <skos:notation>snapshot50</skos:notation>
+        <rdfs:comment>Plans Budget 09 March</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-type"/>
+      </j.1:DataType>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DataType rdf:about="http://finance.data.gov.uk/def/coins/data-type/snapshot47">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Snapshot47</rdfs:label>
+        <skos:prefLabel xml:lang="en">Snapshot47</skos:prefLabel>
+        <skos:notation>snapshot47</skos:notation>
+        <rdfs:comment>CRA Outturn December 2008</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-type"/>
+      </j.1:DataType>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DataType rdf:about="http://finance.data.gov.uk/def/coins/data-type/snapshot32">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Snapshot32</rdfs:label>
+        <skos:prefLabel xml:lang="en">Snapshot32</skos:prefLabel>
+        <skos:notation>snapshot32</skos:notation>
+        <rdfs:comment>OUTTURN 2 FEB08</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-type"/>
+      </j.1:DataType>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DataType rdf:about="http://finance.data.gov.uk/def/coins/data-type/snapshot46">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Snapshot46</rdfs:label>
+        <skos:prefLabel xml:lang="en">Snapshot46</skos:prefLabel>
+        <skos:notation>snapshot46</skos:notation>
+        <rdfs:comment>CRA Plans December 2008</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-type"/>
+      </j.1:DataType>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DataType rdf:about="http://finance.data.gov.uk/def/coins/data-type/foj0">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Forecast Outturn July</rdfs:label>
+        <skos:prefLabel xml:lang="en">Forecast Outturn July</skos:prefLabel>
+        <skos:notation>foj0</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-type"/>
+      </j.1:DataType>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DataType rdf:about="http://finance.data.gov.uk/def/coins/data-type/foo">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Forecast Outturn October</rdfs:label>
+        <skos:prefLabel xml:lang="en">Forecast Outturn October</skos:prefLabel>
+        <skos:notation>foo</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-type"/>
+      </j.1:DataType>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DataType rdf:about="http://finance.data.gov.uk/def/coins/data-type/snapshot18">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Snapshot18</rdfs:label>
+        <skos:prefLabel xml:lang="en">Snapshot18</skos:prefLabel>
+        <skos:notation>snapshot18</skos:notation>
+        <rdfs:comment>CYP BUD</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-type"/>
+      </j.1:DataType>
+    </skos:hasTopConcept>
+    <rdfs:label xml:lang="en">data type code list concept scheme</rdfs:label>
+    <skos:hasTopConcept>
+      <j.1:DataType rdf:about="http://finance.data.gov.uk/def/coins/data-type/foq1i">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Forecast Outturn Q1 Input</rdfs:label>
+        <skos:prefLabel xml:lang="en">Forecast Outturn Q1 Input</skos:prefLabel>
+        <skos:notation>foq1i</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-type"/>
+      </j.1:DataType>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DataType rdf:about="http://finance.data.gov.uk/def/coins/data-type/snapshot23">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Snapshot23</rdfs:label>
+        <skos:prefLabel xml:lang="en">Snapshot23</skos:prefLabel>
+        <skos:notation>snapshot23</skos:notation>
+        <rdfs:comment>Jan 09 Plans Supplementary Estimates</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-type"/>
+      </j.1:DataType>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DataType rdf:about="http://finance.data.gov.uk/def/coins/data-type/snapshot37">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Snapshot37</rdfs:label>
+        <skos:prefLabel xml:lang="en">Snapshot37</skos:prefLabel>
+        <skos:notation>snapshot37</skos:notation>
+        <rdfs:comment>Plans Summer Supp August 2008</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-type"/>
+      </j.1:DataType>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DataType rdf:about="http://finance.data.gov.uk/def/coins/data-type/snapshot22">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Snapshot22</rdfs:label>
+        <skos:prefLabel xml:lang="en">Snapshot22</skos:prefLabel>
+        <skos:notation>snapshot22</skos:notation>
+        <rdfs:comment>Plans Winter Supp October 2007</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-type"/>
+      </j.1:DataType>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DataType rdf:about="http://finance.data.gov.uk/def/coins/data-type/fom0">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Forecast Outturn May</rdfs:label>
+        <skos:prefLabel xml:lang="en">Forecast Outturn May</skos:prefLabel>
+        <skos:notation>fom0</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-type"/>
+      </j.1:DataType>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DataType rdf:about="http://finance.data.gov.uk/def/coins/data-type/snapshot3">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Snapshot3</rdfs:label>
+        <skos:prefLabel xml:lang="en">Snapshot3</skos:prefLabel>
+        <skos:notation>snapshot3</skos:notation>
+        <rdfs:comment>Outturn ME and PESA May 2009</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-type"/>
+      </j.1:DataType>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DataType rdf:about="http://finance.data.gov.uk/def/coins/data-type/fof">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Forecast Outturn February</rdfs:label>
+        <skos:prefLabel xml:lang="en">Forecast Outturn February</skos:prefLabel>
+        <skos:notation>fof</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-type"/>
+      </j.1:DataType>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DataType rdf:about="http://finance.data.gov.uk/def/coins/data-type/snapshot38">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Snapshot38</rdfs:label>
+        <skos:prefLabel xml:lang="en">Snapshot38</skos:prefLabel>
+        <skos:notation>snapshot38</skos:notation>
+        <rdfs:comment>Outturn Summer Supp August 2008</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-type"/>
+      </j.1:DataType>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DataType rdf:about="http://finance.data.gov.uk/def/coins/data-type/snapshot13">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Snapshot13</rdfs:label>
+        <skos:prefLabel xml:lang="en">Snapshot13</skos:prefLabel>
+        <skos:notation>snapshot13</skos:notation>
+        <rdfs:comment>PEOWP 2007 Outturn</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-type"/>
+      </j.1:DataType>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DataType rdf:about="http://finance.data.gov.uk/def/coins/data-type/snapshot43">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Snapshot43</rdfs:label>
+        <skos:prefLabel xml:lang="en">Snapshot43</skos:prefLabel>
+        <skos:notation>snapshot43</skos:notation>
+        <rdfs:comment>Plans PBR OCT 2008</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-type"/>
+      </j.1:DataType>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DataType rdf:about="http://finance.data.gov.uk/def/coins/data-type/snapshot42">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Snapshot42</rdfs:label>
+        <skos:prefLabel xml:lang="en">Snapshot42</skos:prefLabel>
+        <skos:notation>snapshot42</skos:notation>
+        <rdfs:comment>Outturn PBR OCT 2008</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-type"/>
+      </j.1:DataType>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DataType rdf:about="http://finance.data.gov.uk/def/coins/data-type/snapshot8">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Snapshot8</rdfs:label>
+        <skos:prefLabel xml:lang="en">Snapshot8</skos:prefLabel>
+        <skos:notation>snapshot8</skos:notation>
+        <rdfs:comment>2007 PBR Plans</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-type"/>
+      </j.1:DataType>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DataType rdf:about="http://finance.data.gov.uk/def/coins/data-type/snapshot14">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Snapshot14</rdfs:label>
+        <skos:prefLabel xml:lang="en">Snapshot14</skos:prefLabel>
+        <skos:notation>snapshot14</skos:notation>
+        <rdfs:comment>PEOWP 2007 Plans</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-type"/>
+      </j.1:DataType>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DataType rdf:about="http://finance.data.gov.uk/def/coins/data-type/snapshot29">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Snapshot29</rdfs:label>
+        <skos:prefLabel xml:lang="en">Snapshot29</skos:prefLabel>
+        <skos:notation>snapshot29</skos:notation>
+        <rdfs:comment>Plans Spring Supp Feb 08</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-type"/>
+      </j.1:DataType>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DataType rdf:about="http://finance.data.gov.uk/def/coins/data-type/snapshot28">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Snapshot28</rdfs:label>
+        <skos:prefLabel xml:lang="en">Snapshot28</skos:prefLabel>
+        <skos:notation>snapshot28</skos:notation>
+        <rdfs:comment>Outturn Jan 08</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-type"/>
+      </j.1:DataType>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DataType rdf:about="http://finance.data.gov.uk/def/coins/data-type/foa">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Forecast Outturn April</rdfs:label>
+        <skos:prefLabel xml:lang="en">Forecast Outturn April</skos:prefLabel>
+        <skos:notation>foa</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-type"/>
+      </j.1:DataType>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DataType rdf:about="http://finance.data.gov.uk/def/coins/data-type/snapshot33">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Snapshot33</rdfs:label>
+        <skos:prefLabel xml:lang="en">Snapshot33</skos:prefLabel>
+        <skos:notation>snapshot33</skos:notation>
+        <rdfs:comment>PLANS 2 MAR08</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-type"/>
+      </j.1:DataType>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DataType rdf:about="http://finance.data.gov.uk/def/coins/data-type/snapshot9">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Snapshot9</rdfs:label>
+        <skos:prefLabel xml:lang="en">Snapshot9</skos:prefLabel>
+        <skos:notation>snapshot9</skos:notation>
+        <rdfs:comment>Outturn PBR 2006</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-type"/>
+      </j.1:DataType>
+    </skos:hasTopConcept>
+    <skos:prefLabel xml:lang="en">data type code list concept scheme</skos:prefLabel>
+    <skos:hasTopConcept>
+      <j.1:DataType rdf:about="http://finance.data.gov.uk/def/coins/data-type/snapshot19">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Snapshot19</rdfs:label>
+        <skos:prefLabel xml:lang="en">Snapshot19</skos:prefLabel>
+        <skos:notation>snapshot19</skos:notation>
+        <rdfs:comment>Outturn ME Snapshot April 2007</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-type"/>
+      </j.1:DataType>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DataType rdf:about="http://finance.data.gov.uk/def/coins/data-type/snapshot49">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Snapshot49</rdfs:label>
+        <skos:prefLabel xml:lang="en">Snapshot49</skos:prefLabel>
+        <skos:notation>snapshot49</skos:notation>
+        <rdfs:comment>Plans Budget January 2009</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-type"/>
+      </j.1:DataType>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DataType rdf:about="http://finance.data.gov.uk/def/coins/data-type/snapshot34">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Snapshot34</rdfs:label>
+        <skos:prefLabel xml:lang="en">Snapshot34</skos:prefLabel>
+        <skos:notation>snapshot34</skos:notation>
+        <rdfs:comment>Outturn ME Snapshot March 2008</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-type"/>
+      </j.1:DataType>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DataType rdf:about="http://finance.data.gov.uk/def/coins/data-type/snapshot48">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Snapshot48</rdfs:label>
+        <skos:prefLabel xml:lang="en">Snapshot48</skos:prefLabel>
+        <skos:notation>snapshot48</skos:notation>
+        <rdfs:comment>Outturn Budget January 2009</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-type"/>
+      </j.1:DataType>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DataType rdf:about="http://finance.data.gov.uk/def/coins/data-type/foj1">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Forecast Outturn June</rdfs:label>
+        <skos:prefLabel xml:lang="en">Forecast Outturn June</skos:prefLabel>
+        <skos:notation>foj1</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-type"/>
+      </j.1:DataType>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DataType rdf:about="http://finance.data.gov.uk/def/coins/data-type/snapshot4">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Snapshot4</rdfs:label>
+        <skos:prefLabel xml:lang="en">Snapshot4</skos:prefLabel>
+        <skos:notation>snapshot4</skos:notation>
+        <rdfs:comment>Plans ME and PESA May 2009</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-type"/>
+      </j.1:DataType>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DataType rdf:about="http://finance.data.gov.uk/def/coins/data-type/snapshot10">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Snapshot10</rdfs:label>
+        <skos:prefLabel xml:lang="en">Snapshot10</skos:prefLabel>
+        <skos:notation>snapshot10</skos:notation>
+        <rdfs:comment>Plans PBR 2006</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-type"/>
+      </j.1:DataType>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DataType rdf:about="http://finance.data.gov.uk/def/coins/data-type/snapshot25">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Snapshot25</rdfs:label>
+        <skos:prefLabel xml:lang="en">Snapshot25</skos:prefLabel>
+        <skos:notation>snapshot25</skos:notation>
+        <rdfs:comment>PBR 2009 Nov 19 Plans</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-type"/>
+      </j.1:DataType>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DataType rdf:about="http://finance.data.gov.uk/def/coins/data-type/snapshot39">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Snapshot39</rdfs:label>
+        <skos:prefLabel xml:lang="en">Snapshot39</skos:prefLabel>
+        <skos:notation>snapshot39</skos:notation>
+        <rdfs:comment>2008 PBR Outturn</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-type"/>
+      </j.1:DataType>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DataType rdf:about="http://finance.data.gov.uk/def/coins/data-type/snapshot24">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Snapshot24</rdfs:label>
+        <skos:prefLabel xml:lang="en">Snapshot24</skos:prefLabel>
+        <skos:notation>snapshot24</skos:notation>
+        <rdfs:comment>CYP SP SUP</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-type"/>
+      </j.1:DataType>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DataType rdf:about="http://finance.data.gov.uk/def/coins/data-type/snapshot5">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Snapshot5</rdfs:label>
+        <skos:prefLabel xml:lang="en">Snapshot5</skos:prefLabel>
+        <skos:notation>snapshot5</skos:notation>
+        <rdfs:comment>Outturn Budget 09 March</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-type"/>
+      </j.1:DataType>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DataType rdf:about="http://finance.data.gov.uk/def/coins/data-type/outturn">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Outturn</rdfs:label>
+        <skos:prefLabel xml:lang="en">Outturn</skos:prefLabel>
+        <skos:notation>outturn</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-type"/>
+      </j.1:DataType>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DataType rdf:about="http://finance.data.gov.uk/def/coins/data-type/snapshot45">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Snapshot45</rdfs:label>
+        <skos:prefLabel xml:lang="en">Snapshot45</skos:prefLabel>
+        <skos:notation>snapshot45</skos:notation>
+        <rdfs:comment>Plans Winter Supp November 2008</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-type"/>
+      </j.1:DataType>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DataType rdf:about="http://finance.data.gov.uk/def/coins/data-type/snapshot30">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Snapshot30</rdfs:label>
+        <skos:prefLabel xml:lang="en">Snapshot30</skos:prefLabel>
+        <skos:notation>snapshot30</skos:notation>
+        <rdfs:comment>PLANS FEB08</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-type"/>
+      </j.1:DataType>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DataType rdf:about="http://finance.data.gov.uk/def/coins/data-type/snapshot44">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Snapshot44</rdfs:label>
+        <skos:prefLabel xml:lang="en">Snapshot44</skos:prefLabel>
+        <skos:notation>snapshot44</skos:notation>
+        <rdfs:comment>Outturn Winter Supp November 2008</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-type"/>
+      </j.1:DataType>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DataType rdf:about="http://finance.data.gov.uk/def/coins/data-type/fon">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Forecast Outturn November</rdfs:label>
+        <skos:prefLabel xml:lang="en">Forecast Outturn November</skos:prefLabel>
+        <skos:notation>fon</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-type"/>
+      </j.1:DataType>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DataType rdf:about="http://finance.data.gov.uk/def/coins/data-type/fom">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Forecast Outturn March</rdfs:label>
+        <skos:prefLabel xml:lang="en">Forecast Outturn March</skos:prefLabel>
+        <skos:notation>fom</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-type"/>
+      </j.1:DataType>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DataType rdf:about="http://finance.data.gov.uk/def/coins/data-type/snapshot0">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Snapshot0</rdfs:label>
+        <skos:prefLabel xml:lang="en">Snapshot0</skos:prefLabel>
+        <skos:notation>snapshot0</skos:notation>
+        <rdfs:comment>Forecast Outturn Fixed Plan (M-Pack)</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-type"/>
+      </j.1:DataType>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DataType rdf:about="http://finance.data.gov.uk/def/coins/data-type/foa0">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Forecast Outturn August</rdfs:label>
+        <skos:prefLabel xml:lang="en">Forecast Outturn August</skos:prefLabel>
+        <skos:notation>foa0</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-type"/>
+      </j.1:DataType>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DataType rdf:about="http://finance.data.gov.uk/def/coins/data-type/plans">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Plans</rdfs:label>
+        <skos:prefLabel xml:lang="en">Plans</skos:prefLabel>
+        <skos:notation>plans</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-type"/>
+      </j.1:DataType>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DataType rdf:about="http://finance.data.gov.uk/def/coins/data-type/snapshot21">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Snapshot21</rdfs:label>
+        <skos:prefLabel xml:lang="en">Snapshot21</skos:prefLabel>
+        <skos:notation>snapshot21</skos:notation>
+        <rdfs:comment>Outturn Winter Supp October 2007</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-type"/>
+      </j.1:DataType>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DataType rdf:about="http://finance.data.gov.uk/def/coins/data-type/snapshot35">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Snapshot35</rdfs:label>
+        <skos:prefLabel xml:lang="en">Snapshot35</skos:prefLabel>
+        <skos:notation>snapshot35</skos:notation>
+        <rdfs:comment>Plans ME Snapshot March 2008</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-type"/>
+      </j.1:DataType>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DataType rdf:about="http://finance.data.gov.uk/def/coins/data-type/snapshot20">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Snapshot20</rdfs:label>
+        <skos:prefLabel xml:lang="en">Snapshot20</skos:prefLabel>
+        <skos:notation>snapshot20</skos:notation>
+        <rdfs:comment>Plans ME Snapshot April 2007</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-type"/>
+      </j.1:DataType>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DataType rdf:about="http://finance.data.gov.uk/def/coins/data-type/snapshot1">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Snapshot1</rdfs:label>
+        <skos:prefLabel xml:lang="en">Snapshot1</skos:prefLabel>
+        <skos:notation>snapshot1</skos:notation>
+        <rdfs:comment>PEOWP 2009 Outturn</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-type"/>
+      </j.1:DataType>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DataType rdf:about="http://finance.data.gov.uk/def/coins/data-type/fod">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Forecast Outturn December</rdfs:label>
+        <skos:prefLabel xml:lang="en">Forecast Outturn December</skos:prefLabel>
+        <skos:notation>fod</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-type"/>
+      </j.1:DataType>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DataType rdf:about="http://finance.data.gov.uk/def/coins/data-type/snapshot11">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Snapshot11</rdfs:label>
+        <skos:prefLabel xml:lang="en">Snapshot11</skos:prefLabel>
+        <skos:notation>snapshot11</skos:notation>
+        <rdfs:comment>CYO CRA</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-type"/>
+      </j.1:DataType>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DataType rdf:about="http://finance.data.gov.uk/def/coins/data-type/snapshot36">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Snapshot36</rdfs:label>
+        <skos:prefLabel xml:lang="en">Snapshot36</skos:prefLabel>
+        <skos:notation>snapshot36</skos:notation>
+        <rdfs:comment>PEOWP 2008 Outturn</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-type"/>
+      </j.1:DataType>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DataType rdf:about="http://finance.data.gov.uk/def/coins/data-type/snapshot41">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Snapshot41</rdfs:label>
+        <skos:prefLabel xml:lang="en">Snapshot41</skos:prefLabel>
+        <skos:notation>snapshot41</skos:notation>
+        <rdfs:comment>Plans Out of Turn Supplementary Estimate</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-type"/>
+      </j.1:DataType>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DataType rdf:about="http://finance.data.gov.uk/def/coins/data-type/snapshot40">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Snapshot40</rdfs:label>
+        <skos:prefLabel xml:lang="en">Snapshot40</skos:prefLabel>
+        <skos:notation>snapshot40</skos:notation>
+        <rdfs:comment>2008 PBR Plans</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-type"/>
+      </j.1:DataType>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:DataType rdf:about="http://finance.data.gov.uk/def/coins/data-type/fos">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Forecast Outturn September</rdfs:label>
+        <skos:prefLabel xml:lang="en">Forecast Outturn September</skos:prefLabel>
+        <skos:notation>fos</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/data-type"/>
+      </j.1:DataType>
+    </skos:hasTopConcept>
+  </skos:ConceptScheme>
+</rdf:RDF>

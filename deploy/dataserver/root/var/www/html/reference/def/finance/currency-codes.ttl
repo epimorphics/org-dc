@@ -1,0 +1,1762 @@
+@prefix rdf:               <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:              <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:               <http://www.w3.org/2002/07/owl#> .
+@prefix skos:              <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd:               <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:              <http://xmlns.com/foaf/0.1/> .
+@prefix void:              <http://rdfs.org/ns/void#> .
+@prefix dcterms:           <http://purl.org/dc/terms/> .
+@prefix sdmx:               <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept:       <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:     <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:     <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:       <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-code:          <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:       <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix qb:                 <http://purl.org/linked-data/cube#> .
+@prefix currency:          <http://reference.data.gov.uk/def/currency/>.
+
+<http://reference.data.gov.uk/def/currency-codes>
+    a owl:Ontology;
+    rdfs:comment "Controlled vocabulary of ISO 4217 country currency codes";
+    dcterms:source <http://www.iso.org/iso/support/currency_codes_list-1.htm>;
+    dcterms:created "2010-04-09"^^xsd:date ;
+    dcterms:license <http://data.gov.uk/terms-conditions>;
+    dcterms:publisher [
+        a <http://purl.org/vocab/frbr/core#CorporateBody>;
+        a <http://purl.org/net/provenance/ns#DataPublisher>;
+        foaf:name "data.gov.uk"
+      ];
+    .
+
+<http://reference.data.gov.uk/def/statistical-concept/currency>
+    a sdmx:Concept;
+    rdfs:label "currency"@en;
+    skos:prefLabel "currency"@en;
+    rdfs:comment "The statistical concept of currency";
+    .
+
+<http://reference.data.gov.uk/def/currency>
+    a skos:ConceptScheme;
+    rdfs:label "currency scheme"@en;
+    skos:prefLabel "currency scheme"@en;
+    rdfs:comment "The supported code values for currency";
+    skos:hasTopConcept  <http://reference.data.gov.uk/def/currency/AED>,
+                        <http://reference.data.gov.uk/def/currency/AFN>,
+                        <http://reference.data.gov.uk/def/currency/ALL>,
+                        <http://reference.data.gov.uk/def/currency/AMD>,
+                        <http://reference.data.gov.uk/def/currency/ANG>,
+                        <http://reference.data.gov.uk/def/currency/AOA>,
+                        <http://reference.data.gov.uk/def/currency/ARS>,
+                        <http://reference.data.gov.uk/def/currency/AUD>,
+                        <http://reference.data.gov.uk/def/currency/AWG>,
+                        <http://reference.data.gov.uk/def/currency/AZN>,
+                        <http://reference.data.gov.uk/def/currency/BAM>,
+                        <http://reference.data.gov.uk/def/currency/BBD>,
+                        <http://reference.data.gov.uk/def/currency/BDT>,
+                        <http://reference.data.gov.uk/def/currency/BGN>,
+                        <http://reference.data.gov.uk/def/currency/BHD>,
+                        <http://reference.data.gov.uk/def/currency/BIF>,
+                        <http://reference.data.gov.uk/def/currency/BMD>,
+                        <http://reference.data.gov.uk/def/currency/BND>,
+                        <http://reference.data.gov.uk/def/currency/BOB>,
+                        <http://reference.data.gov.uk/def/currency/BRL>,
+                        <http://reference.data.gov.uk/def/currency/BSD>,
+                        <http://reference.data.gov.uk/def/currency/BTN>,
+                        <http://reference.data.gov.uk/def/currency/BWP>,
+                        <http://reference.data.gov.uk/def/currency/BYR>,
+                        <http://reference.data.gov.uk/def/currency/BZD>,
+                        <http://reference.data.gov.uk/def/currency/CAD>,
+                        <http://reference.data.gov.uk/def/currency/CDF>,
+                        <http://reference.data.gov.uk/def/currency/CHF>,
+                        <http://reference.data.gov.uk/def/currency/CLP>,
+                        <http://reference.data.gov.uk/def/currency/CNY>,
+                        <http://reference.data.gov.uk/def/currency/COP>,
+                        <http://reference.data.gov.uk/def/currency/CRC>,
+                        <http://reference.data.gov.uk/def/currency/CUP>,
+                        <http://reference.data.gov.uk/def/currency/CVE>,
+                        <http://reference.data.gov.uk/def/currency/CYP>,
+                        <http://reference.data.gov.uk/def/currency/CZK>,
+                        <http://reference.data.gov.uk/def/currency/DJF>,
+                        <http://reference.data.gov.uk/def/currency/DKK>,
+                        <http://reference.data.gov.uk/def/currency/DOP>,
+                        <http://reference.data.gov.uk/def/currency/DZD>,
+                        <http://reference.data.gov.uk/def/currency/EEK>,
+                        <http://reference.data.gov.uk/def/currency/EGP>,
+                        <http://reference.data.gov.uk/def/currency/ERN>,
+                        <http://reference.data.gov.uk/def/currency/ETB>,
+                        <http://reference.data.gov.uk/def/currency/EUR>,
+                        <http://reference.data.gov.uk/def/currency/FJD>,
+                        <http://reference.data.gov.uk/def/currency/FKP>,
+                        <http://reference.data.gov.uk/def/currency/GBP>,
+                        <http://reference.data.gov.uk/def/currency/GEL>,
+                        <http://reference.data.gov.uk/def/currency/GGP>,
+                        <http://reference.data.gov.uk/def/currency/GHS>,
+                        <http://reference.data.gov.uk/def/currency/GIP>,
+                        <http://reference.data.gov.uk/def/currency/GMD>,
+                        <http://reference.data.gov.uk/def/currency/GNF>,
+                        <http://reference.data.gov.uk/def/currency/GTQ>,
+                        <http://reference.data.gov.uk/def/currency/GYD>,
+                        <http://reference.data.gov.uk/def/currency/HKD>,
+                        <http://reference.data.gov.uk/def/currency/HNL>,
+                        <http://reference.data.gov.uk/def/currency/HRK>,
+                        <http://reference.data.gov.uk/def/currency/HTG>,
+                        <http://reference.data.gov.uk/def/currency/HUF>,
+                        <http://reference.data.gov.uk/def/currency/IDR>,
+                        <http://reference.data.gov.uk/def/currency/ILS>,
+                        <http://reference.data.gov.uk/def/currency/IMP>,
+                        <http://reference.data.gov.uk/def/currency/INR>,
+                        <http://reference.data.gov.uk/def/currency/IQD>,
+                        <http://reference.data.gov.uk/def/currency/IRR>,
+                        <http://reference.data.gov.uk/def/currency/ISK>,
+                        <http://reference.data.gov.uk/def/currency/JEP>,
+                        <http://reference.data.gov.uk/def/currency/JMD>,
+                        <http://reference.data.gov.uk/def/currency/JOD>,
+                        <http://reference.data.gov.uk/def/currency/JPY>,
+                        <http://reference.data.gov.uk/def/currency/KES>,
+                        <http://reference.data.gov.uk/def/currency/KGS>,
+                        <http://reference.data.gov.uk/def/currency/KHR>,
+                        <http://reference.data.gov.uk/def/currency/KMF>,
+                        <http://reference.data.gov.uk/def/currency/KPW>,
+                        <http://reference.data.gov.uk/def/currency/KRW>,
+                        <http://reference.data.gov.uk/def/currency/KWD>,
+                        <http://reference.data.gov.uk/def/currency/KYD>,
+                        <http://reference.data.gov.uk/def/currency/KZT>,
+                        <http://reference.data.gov.uk/def/currency/LAK>,
+                        <http://reference.data.gov.uk/def/currency/LBP>,
+                        <http://reference.data.gov.uk/def/currency/LKR>,
+                        <http://reference.data.gov.uk/def/currency/LRD>,
+                        <http://reference.data.gov.uk/def/currency/LSL>,
+                        <http://reference.data.gov.uk/def/currency/LTL>,
+                        <http://reference.data.gov.uk/def/currency/LVL>,
+                        <http://reference.data.gov.uk/def/currency/LYD>,
+                        <http://reference.data.gov.uk/def/currency/MAD>,
+                        <http://reference.data.gov.uk/def/currency/MDL>,
+                        <http://reference.data.gov.uk/def/currency/MGA>,
+                        <http://reference.data.gov.uk/def/currency/MKD>,
+                        <http://reference.data.gov.uk/def/currency/MMK>,
+                        <http://reference.data.gov.uk/def/currency/MNT>,
+                        <http://reference.data.gov.uk/def/currency/MOP>,
+                        <http://reference.data.gov.uk/def/currency/MRO>,
+                        <http://reference.data.gov.uk/def/currency/MTL>,
+                        <http://reference.data.gov.uk/def/currency/MUR>,
+                        <http://reference.data.gov.uk/def/currency/MVR>,
+                        <http://reference.data.gov.uk/def/currency/MWK>,
+                        <http://reference.data.gov.uk/def/currency/MXN>,
+                        <http://reference.data.gov.uk/def/currency/MYR>,
+                        <http://reference.data.gov.uk/def/currency/MZN>,
+                        <http://reference.data.gov.uk/def/currency/NAD>,
+                        <http://reference.data.gov.uk/def/currency/NGN>,
+                        <http://reference.data.gov.uk/def/currency/NIO>,
+                        <http://reference.data.gov.uk/def/currency/NOK>,
+                        <http://reference.data.gov.uk/def/currency/NPR>,
+                        <http://reference.data.gov.uk/def/currency/NZD>,
+                        <http://reference.data.gov.uk/def/currency/OMR>,
+                        <http://reference.data.gov.uk/def/currency/PAB>,
+                        <http://reference.data.gov.uk/def/currency/PEN>,
+                        <http://reference.data.gov.uk/def/currency/PGK>,
+                        <http://reference.data.gov.uk/def/currency/PHP>,
+                        <http://reference.data.gov.uk/def/currency/PKR>,
+                        <http://reference.data.gov.uk/def/currency/PLN>,
+                        <http://reference.data.gov.uk/def/currency/PYG>,
+                        <http://reference.data.gov.uk/def/currency/QAR>,
+                        <http://reference.data.gov.uk/def/currency/RON>,
+                        <http://reference.data.gov.uk/def/currency/RSD>,
+                        <http://reference.data.gov.uk/def/currency/RUB>,
+                        <http://reference.data.gov.uk/def/currency/RWF>,
+                        <http://reference.data.gov.uk/def/currency/SAR>,
+                        <http://reference.data.gov.uk/def/currency/SBD>,
+                        <http://reference.data.gov.uk/def/currency/SCR>,
+                        <http://reference.data.gov.uk/def/currency/SDG>,
+                        <http://reference.data.gov.uk/def/currency/SEK>,
+                        <http://reference.data.gov.uk/def/currency/SGD>,
+                        <http://reference.data.gov.uk/def/currency/SHP>,
+                        <http://reference.data.gov.uk/def/currency/SLL>,
+                        <http://reference.data.gov.uk/def/currency/SOS>,
+                        <http://reference.data.gov.uk/def/currency/SPL>,
+                        <http://reference.data.gov.uk/def/currency/SRD>,
+                        <http://reference.data.gov.uk/def/currency/STD>,
+                        <http://reference.data.gov.uk/def/currency/SVC>,
+                        <http://reference.data.gov.uk/def/currency/SYP>,
+                        <http://reference.data.gov.uk/def/currency/SZL>,
+                        <http://reference.data.gov.uk/def/currency/THB>,
+                        <http://reference.data.gov.uk/def/currency/TJS>,
+                        <http://reference.data.gov.uk/def/currency/TMM>,
+                        <http://reference.data.gov.uk/def/currency/TND>,
+                        <http://reference.data.gov.uk/def/currency/TOP>,
+                        <http://reference.data.gov.uk/def/currency/TRY>,
+                        <http://reference.data.gov.uk/def/currency/TTD>,
+                        <http://reference.data.gov.uk/def/currency/TVD>,
+                        <http://reference.data.gov.uk/def/currency/TWD>,
+                        <http://reference.data.gov.uk/def/currency/TZS>,
+                        <http://reference.data.gov.uk/def/currency/UAH>,
+                        <http://reference.data.gov.uk/def/currency/UGX>,
+                        <http://reference.data.gov.uk/def/currency/USD>,
+                        <http://reference.data.gov.uk/def/currency/UYU>,
+                        <http://reference.data.gov.uk/def/currency/UZS>,
+                        <http://reference.data.gov.uk/def/currency/VEB>,
+                        <http://reference.data.gov.uk/def/currency/VEF>,
+                        <http://reference.data.gov.uk/def/currency/VND>,
+                        <http://reference.data.gov.uk/def/currency/VUV>,
+                        <http://reference.data.gov.uk/def/currency/WST>,
+                        <http://reference.data.gov.uk/def/currency/XAF>,
+                        <http://reference.data.gov.uk/def/currency/XAG>,
+                        <http://reference.data.gov.uk/def/currency/XAU>,
+                        <http://reference.data.gov.uk/def/currency/XCD>,
+                        <http://reference.data.gov.uk/def/currency/XDR>,
+                        <http://reference.data.gov.uk/def/currency/XOF>,
+                        <http://reference.data.gov.uk/def/currency/XPD>,
+                        <http://reference.data.gov.uk/def/currency/XPF>,
+                        <http://reference.data.gov.uk/def/currency/XPT>,
+                        <http://reference.data.gov.uk/def/currency/YER>,
+                        <http://reference.data.gov.uk/def/currency/ZAR>,
+                        <http://reference.data.gov.uk/def/currency/ZMK>,
+                        <http://reference.data.gov.uk/def/currency/ZWD>
+    .
+
+<http://reference.data.gov.uk/def/currency/Currency>
+    a rdfs:Class, owl:Class;
+    rdfs:subClassOf skos:Concept;
+    rdfs:label "Currency codes"@en;
+    skos:prefLabel "Class of ISO 4217 currency codes"@en;
+    rdfs:comment "Class defining the set of ISO 4217 currency codes";
+    rdfs:isDefinedBy <http://reference.data.gov.uk/def/currency-codes>;
+    .
+
+
+#####################################
+## Concept definitions             ##
+#####################################
+
+<http://reference.data.gov.uk/def/currency/AED>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "United Arab Emirates, Dirham";
+    skos:prefLabel "United Arab Emirates, Dirham";
+    skos:notation "AED";
+    skos:altLabel "Dirham";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Dirham>;
+    .
+<http://reference.data.gov.uk/def/currency/AFN>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Afghanistan, Afghani";
+    skos:prefLabel "Afghanistan, Afghani";
+    skos:notation "afn";
+    skos:altLabel "Afghani";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Afghani>;
+    .
+<http://reference.data.gov.uk/def/currency/ALL>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Albania, Leke";
+    skos:prefLabel "Albania, Leke";
+    skos:notation "ALL";
+    skos:altLabel "Leke";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Leke>;
+    .
+<http://reference.data.gov.uk/def/currency/AMD>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Armenia, Dram";
+    skos:prefLabel "Armenia, Dram";
+    skos:notation "amd";
+    skos:altLabel "Dram";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Dram>;
+    .
+<http://reference.data.gov.uk/def/currency/ANG>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Netherlands Antilles, Guilders (also called Florins)";
+    skos:prefLabel "Netherlands Antilles, Guilders (also called Florins)";
+    skos:notation "ANG";
+    skos:altLabel "Guilders (also called Florins)";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Guilder>;
+    .
+<http://reference.data.gov.uk/def/currency/AOA>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Angola, Kwanza";
+    skos:prefLabel "Angola, Kwanza";
+    skos:notation "AOA";
+    skos:altLabel "Kwanza";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Kwanza>;
+    .
+<http://reference.data.gov.uk/def/currency/ARS>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Argentina, Peso";
+    skos:prefLabel "Argentina, Peso";
+    skos:notation "ARS";
+    skos:altLabel "Peso";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Peso>;
+    .
+<http://reference.data.gov.uk/def/currency/AUD>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Australia, Dollar";
+    skos:prefLabel "Australia, Dollar";
+    skos:notation "AUD";
+    skos:altLabel "Dollar";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Dollar>;
+    .
+<http://reference.data.gov.uk/def/currency/AWG>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Aruba, Guilders (also called Florins)";
+    skos:prefLabel "Aruba, Guilders (also called Florins)";
+    skos:notation "AWG";
+    skos:altLabel "Guilders (also called Florins)";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Guilder>;
+    .
+<http://reference.data.gov.uk/def/currency/AZN>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Azerbaijan, New Manat";
+    skos:prefLabel "Azerbaijan, New Manat";
+    skos:notation "AZN";
+    skos:altLabel "New Manat";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Manat_%28Azerbaijan%29>;
+    .
+<http://reference.data.gov.uk/def/currency/BAM>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Bosnia and Herzegovina, Convertible Marka";
+    skos:prefLabel "Bosnia and Herzegovina, Convertible Marka";
+    skos:notation "BAM";
+    skos:altLabel "Convertible Marka";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Bosnia_and_Herzegovina_convertible_mark>;
+    .
+<http://reference.data.gov.uk/def/currency/BBD>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Barbados, Dollar";
+    skos:prefLabel "Barbados, Dollar";
+    skos:notation "BBD";
+    skos:altLabel "Dollar";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Dollar>;
+    .
+<http://reference.data.gov.uk/def/currency/BDT>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Bangladesh, Taka";
+    skos:prefLabel "Bangladesh, Taka";
+    skos:notation "BDT";
+    skos:altLabel "Taka";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Taka>;
+    .
+<http://reference.data.gov.uk/def/currency/BGN>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Bulgaria, Leva";
+    skos:prefLabel "Bulgaria, Leva";
+    skos:notation "BGN";
+    skos:altLabel "Leva";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Leva>;
+    .
+<http://reference.data.gov.uk/def/currency/BHD>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Bahrain, Dinar";
+    skos:prefLabel "Bahrain, Dinar";
+    skos:notation "BHD";
+    skos:altLabel "Dinar";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Dinar>;
+    .
+<http://reference.data.gov.uk/def/currency/BIF>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Burundi, Franc";
+    skos:prefLabel "Burundi, Franc";
+    skos:notation "BIF";
+    skos:altLabel "Franc";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Franc>;
+    .
+<http://reference.data.gov.uk/def/currency/BMD>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Bermuda, Dollar";
+    skos:prefLabel "Bermuda, Dollar";
+    skos:notation "BMD";
+    skos:altLabel "Dollar";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Dollar>;
+    .
+<http://reference.data.gov.uk/def/currency/BND>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Brunei Darussalam, Dollar";
+    skos:prefLabel "Brunei Darussalam, Dollar";
+    skos:notation "BND";
+    skos:altLabel "Dollar";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Dollar>;
+    .
+<http://reference.data.gov.uk/def/currency/BOB>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Bolivia, Boliviano";
+    skos:prefLabel "Bolivia, Boliviano";
+    skos:notation "BOB";
+    skos:altLabel "Boliviano";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Bolivian_boliviano>;
+    .
+<http://reference.data.gov.uk/def/currency/BRL>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Brazil, Brazil Real";
+    skos:prefLabel "Brazil, Brazil Real";
+    skos:notation "BRL";
+    skos:altLabel "Brazil Real";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Brazilian_Real>;
+    .
+<http://reference.data.gov.uk/def/currency/BSD>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Bahamas, Dollar";
+    skos:prefLabel "Bahamas, Dollar";
+    skos:notation "BSD";
+    skos:altLabel "Dollar";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Dollar>;
+    .
+<http://reference.data.gov.uk/def/currency/BTN>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Bhutan, Ngultrum";
+    skos:prefLabel "Bhutan, Ngultrum";
+    skos:notation "BTN";
+    skos:altLabel "Ngultrum";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Ngultrum>;
+    .
+<http://reference.data.gov.uk/def/currency/BWP>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Botswana, Pula";
+    skos:prefLabel "Botswana, Pula";
+    skos:notation "BWP";
+    skos:altLabel "Pula";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Pula>;
+    .
+<http://reference.data.gov.uk/def/currency/BYR>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Belarus, Ruble";
+    skos:prefLabel "Belarus, Ruble";
+    skos:notation "BYR";
+    skos:altLabel "Ruble";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Ruble>;
+    .
+<http://reference.data.gov.uk/def/currency/BZD>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Belize, Dollar";
+    skos:prefLabel "Belize, Dollar";
+    skos:notation "BZD";
+    skos:altLabel "Dollar";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Dollar>;
+    .
+<http://reference.data.gov.uk/def/currency/CAD>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Canada, Dollar";
+    skos:prefLabel "Canada, Dollar";
+    skos:notation "CAD";
+    skos:altLabel "Dollar";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Dollar>;
+    .
+<http://reference.data.gov.uk/def/currency/CDF>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Congo/Kinshasa, Congolese Franc";
+    skos:prefLabel "Congo/Kinshasa, Congolese Franc";
+    skos:notation "CDF";
+    skos:altLabel "Congolese Franc";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Congolese_Franc>;
+    .
+<http://reference.data.gov.uk/def/currency/CHF>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Switzerland, Franc";
+    skos:prefLabel "Switzerland, Franc";
+    skos:notation "CHF";
+    skos:altLabel "Franc";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Franc>;
+    .
+<http://reference.data.gov.uk/def/currency/CLP>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Chile, Peso";
+    skos:prefLabel "Chile, Peso";
+    skos:notation "CLP";
+    skos:altLabel "Peso";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Peso>;
+    .
+<http://reference.data.gov.uk/def/currency/CNY>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "China, Yuan Renminbi";
+    skos:prefLabel "China, Yuan Renminbi";
+    skos:notation "CNY";
+    skos:altLabel "Yuan Renminbi";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Yuan>;
+    .
+<http://reference.data.gov.uk/def/currency/COP>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Colombia, Peso";
+    skos:prefLabel "Colombia, Peso";
+    skos:notation "COP";
+    skos:altLabel "Peso";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Peso>;
+    .
+<http://reference.data.gov.uk/def/currency/CRC>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Costa Rica, Colone";
+    skos:prefLabel "Costa Rica, Colone";
+    skos:notation "CRC";
+    skos:altLabel "Colone";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Costa_Rican_col%C3%B3n>;
+    .
+<http://reference.data.gov.uk/def/currency/CUP>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Cuba, Peso";
+    skos:prefLabel "Cuba, Peso";
+    skos:notation "CUP";
+    skos:altLabel "Peso";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Peso>;
+    .
+<http://reference.data.gov.uk/def/currency/CVE>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Cape Verde, Escudo";
+    skos:prefLabel "Cape Verde, Escudo";
+    skos:notation "CVE";
+    skos:altLabel "Escudo";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Escudo>;
+    .
+<http://reference.data.gov.uk/def/currency/CYP>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Cyprus, Pounds (expires 2008-Jan-31)";
+    skos:prefLabel "Cyprus, Pounds (expires 2008-Jan-31)";
+    skos:notation "CYP";
+    skos:altLabel "Pounds (expires 2008-Jan-31)";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Cypriot_Pound>;
+    .
+<http://reference.data.gov.uk/def/currency/CZK>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Czech Republic, Koruny";
+    skos:prefLabel "Czech Republic, Koruny";
+    skos:notation "CZK";
+    skos:altLabel "Koruny";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Koruny>;
+    .
+<http://reference.data.gov.uk/def/currency/DJF>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Djibouti, Franc";
+    skos:prefLabel "Djibouti, Franc";
+    skos:notation "DJF";
+    skos:altLabel "Franc";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Franc>;
+    .
+<http://reference.data.gov.uk/def/currency/DKK>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Denmark, Kroner";
+    skos:prefLabel "Denmark, Kroner";
+    skos:notation "DKK";
+    skos:altLabel "Kroner";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Kroner>;
+    .
+<http://reference.data.gov.uk/def/currency/DOP>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Dominican Republic, Peso";
+    skos:prefLabel "Dominican Republic, Peso";
+    skos:notation "DOP";
+    skos:altLabel "Peso";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Peso>;
+    .
+<http://reference.data.gov.uk/def/currency/DZD>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Algeria, Algeria Dinar";
+    skos:prefLabel "Algeria, Algeria Dinar";
+    skos:notation "DZD";
+    skos:altLabel "Algeria Dinar";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Algerian_dinar>;
+    .
+<http://reference.data.gov.uk/def/currency/EEK>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Estonia, Krooni";
+    skos:prefLabel "Estonia, Krooni";
+    skos:notation "EEK";
+    skos:altLabel "Krooni";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Krooni>;
+    .
+<http://reference.data.gov.uk/def/currency/EGP>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Egypt, Pound";
+    skos:prefLabel "Egypt, Pound";
+    skos:notation "EGP";
+    skos:altLabel "Pound";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Pound>;
+    .
+<http://reference.data.gov.uk/def/currency/ERN>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Eritrea, Nakfa";
+    skos:prefLabel "Eritrea, Nakfa";
+    skos:notation "ERN";
+    skos:altLabel "Nakfa";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Nakfa>;
+    .
+<http://reference.data.gov.uk/def/currency/ETB>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Ethiopia, Birr";
+    skos:prefLabel "Ethiopia, Birr";
+    skos:notation "ETB";
+    skos:altLabel "Birr";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Birr>;
+    .
+<http://reference.data.gov.uk/def/currency/EUR>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Euro Member Countries, Euro";
+    skos:prefLabel "Euro Member Countries, Euro";
+    skos:notation "EUR";
+    skos:altLabel "Euro";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Euro>;
+    .
+<http://reference.data.gov.uk/def/currency/FJD>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Fiji, Dollar";
+    skos:prefLabel "Fiji, Dollar";
+    skos:notation "FJD";
+    skos:altLabel "Dollar";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Dollar>;
+    .
+<http://reference.data.gov.uk/def/currency/FKP>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Falkland Islands (Malvinas), Pound";
+    skos:prefLabel "Falkland Islands (Malvinas), Pound";
+    skos:notation "FKP";
+    skos:altLabel "Pound";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Pound>;
+    .
+<http://reference.data.gov.uk/def/currency/GBP>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "United Kingdom, Pound";
+    skos:prefLabel "United Kingdom, Pound";
+    skos:notation "GBP";
+    skos:altLabel "Pound";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Pound>;
+    .
+<http://reference.data.gov.uk/def/currency/GEL>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Georgia, Lari";
+    skos:prefLabel "Georgia, Lari";
+    skos:notation "GEL";
+    skos:altLabel "Lari";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Lari>;
+    .
+<http://reference.data.gov.uk/def/currency/GGP>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Guernsey, Pound";
+    skos:prefLabel "Guernsey, Pound";
+    skos:notation "GGP";
+    skos:altLabel "Pound";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Pound>;
+    .
+<http://reference.data.gov.uk/def/currency/GHS>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Ghana, Cedi";
+    skos:prefLabel "Ghana, Cedi";
+    skos:notation "GHS";
+    skos:altLabel "Cedi";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Cedi>;
+    .
+<http://reference.data.gov.uk/def/currency/GIP>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Gibraltar, Pound";
+    skos:prefLabel "Gibraltar, Pound";
+    skos:notation "GIP";
+    skos:altLabel "Pound";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Pound>;
+    .
+<http://reference.data.gov.uk/def/currency/GMD>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Gambia, Dalasi";
+    skos:prefLabel "Gambia, Dalasi";
+    skos:notation "GMD";
+    skos:altLabel "Dalasi";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Dalasi>;
+    .
+<http://reference.data.gov.uk/def/currency/GNF>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Guinea, Franc";
+    skos:prefLabel "Guinea, Franc";
+    skos:notation "GNF";
+    skos:altLabel "Franc";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Franc>;
+    .
+<http://reference.data.gov.uk/def/currency/GTQ>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Guatemala, Quetzale";
+    skos:prefLabel "Guatemala, Quetzale";
+    skos:notation "GTQ";
+    skos:altLabel "Quetzale";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Guatemalan_quetzal>;
+    .
+<http://reference.data.gov.uk/def/currency/GYD>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Guyana, Dollar";
+    skos:prefLabel "Guyana, Dollar";
+    skos:notation "GYD";
+    skos:altLabel "Dollar";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Dollar>;
+    .
+<http://reference.data.gov.uk/def/currency/HKD>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Hong Kong, Dollar";
+    skos:prefLabel "Hong Kong, Dollar";
+    skos:notation "HKD";
+    skos:altLabel "Dollar";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Dollar>;
+    .
+<http://reference.data.gov.uk/def/currency/HNL>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Honduras, Lempira";
+    skos:prefLabel "Honduras, Lempira";
+    skos:notation "HNL";
+    skos:altLabel "Lempira";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Lempira>;
+    .
+<http://reference.data.gov.uk/def/currency/HRK>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Croatia, Kuna";
+    skos:prefLabel "Croatia, Kuna";
+    skos:notation "HRK";
+    skos:altLabel "Kuna";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Kuna>;
+    .
+<http://reference.data.gov.uk/def/currency/HTG>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Haiti, Gourde";
+    skos:prefLabel "Haiti, Gourde";
+    skos:notation "HTG";
+    skos:altLabel "Gourde";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Gourde>;
+    .
+<http://reference.data.gov.uk/def/currency/HUF>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Hungary, Forint";
+    skos:prefLabel "Hungary, Forint";
+    skos:notation "HUF";
+    skos:altLabel "Forint";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Forint>;
+    .
+<http://reference.data.gov.uk/def/currency/IDR>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Indonesia, Rupiah";
+    skos:prefLabel "Indonesia, Rupiah";
+    skos:notation "IDR";
+    skos:altLabel "Rupiah";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Rupiah>;
+    .
+<http://reference.data.gov.uk/def/currency/ILS>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Israel, New Shekel";
+    skos:prefLabel "Israel, New Shekel";
+    skos:notation "ILS";
+    skos:altLabel "New Shekel";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/page/Israeli_new_shekel>;
+    .
+<http://reference.data.gov.uk/def/currency/IMP>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Isle of Man, Pound";
+    skos:prefLabel "Isle of Man, Pound";
+    skos:notation "IMP";
+    skos:altLabel "Pound";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Pound>;
+    .
+<http://reference.data.gov.uk/def/currency/INR>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "India, Rupee";
+    skos:prefLabel "India, Rupee";
+    skos:notation "INR";
+    skos:altLabel "Rupee";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Rupee>;
+    .
+<http://reference.data.gov.uk/def/currency/IQD>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Iraq, Dinar";
+    skos:prefLabel "Iraq, Dinar";
+    skos:notation "IQD";
+    skos:altLabel "Dinar";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Dinar>;
+    .
+<http://reference.data.gov.uk/def/currency/IRR>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Iran, Rial";
+    skos:prefLabel "Iran, Rial";
+    skos:notation "IRR";
+    skos:altLabel "Rial";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Rial>;
+    .
+<http://reference.data.gov.uk/def/currency/ISK>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Iceland, Kronur";
+    skos:prefLabel "Iceland, Kronur";
+    skos:notation "ISK";
+    skos:altLabel "Kronur";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Kronur>;
+    .
+<http://reference.data.gov.uk/def/currency/JEP>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Jersey, Pound";
+    skos:prefLabel "Jersey, Pound";
+    skos:notation "JEP";
+    skos:altLabel "Pound";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Pound>;
+    .
+<http://reference.data.gov.uk/def/currency/JMD>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Jamaica, Dollar";
+    skos:prefLabel "Jamaica, Dollar";
+    skos:notation "JMD";
+    skos:altLabel "Dollar";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Dollar>;
+    .
+<http://reference.data.gov.uk/def/currency/JOD>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Jordan, Dinar";
+    skos:prefLabel "Jordan, Dinar";
+    skos:notation "JOD";
+    skos:altLabel "Dinar";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Dinar>;
+    .
+<http://reference.data.gov.uk/def/currency/JPY>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Japan, Yen";
+    skos:prefLabel "Japan, Yen";
+    skos:notation "JPY";
+    skos:notation "Yen";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Yen>;
+    .
+<http://reference.data.gov.uk/def/currency/KES>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Kenya, Shilling";
+    skos:prefLabel "Kenya, Shilling";
+    skos:notation "KES";
+    skos:altLabel "Shilling";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Shilling>;
+    .
+<http://reference.data.gov.uk/def/currency/KGS>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Kyrgyzstan, Som";
+    skos:prefLabel "Kyrgyzstan, Som";
+    skos:notation "KGS";
+    skos:altLabel "Som";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Som>;
+    .
+<http://reference.data.gov.uk/def/currency/KHR>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Cambodia, Riel";
+    skos:prefLabel "Cambodia, Riel";
+    skos:notation "KHR";
+    skos:altLabel "Riel";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Riel>;
+    .
+<http://reference.data.gov.uk/def/currency/KMF>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Comoros, Franc";
+    skos:prefLabel "Comoros, Franc";
+    skos:notation "KMF";
+    skos:altLabel "Franc";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Franc>;
+    .
+<http://reference.data.gov.uk/def/currency/KPW>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Korea (North), Won";
+    skos:prefLabel "Korea (North), Won";
+    skos:notation "KPW";
+    skos:notation "Won";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Won>;
+    .
+<http://reference.data.gov.uk/def/currency/KRW>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Korea (South), Won";
+    skos:prefLabel "Korea (South), Won";
+    skos:notation "KRW";
+    skos:notation "Won";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Won>;
+    .
+<http://reference.data.gov.uk/def/currency/KWD>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Kuwait, Dinar";
+    skos:prefLabel "Kuwait, Dinar";
+    skos:notation "KWD";
+    skos:altLabel "Dinar";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Dinar>;
+    .
+<http://reference.data.gov.uk/def/currency/KYD>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Cayman Islands, Dollar";
+    skos:prefLabel "Cayman Islands, Dollar";
+    skos:notation "KYD";
+    skos:altLabel "Dollar";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Dollar>;
+    .
+<http://reference.data.gov.uk/def/currency/KZT>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Kazakhstan, Tenge";
+    skos:prefLabel "Kazakhstan, Tenge";
+    skos:notation "KZT";
+    skos:altLabel "Tenge";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Tenge>;
+    .
+<http://reference.data.gov.uk/def/currency/LAK>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Laos, Kip";
+    skos:prefLabel "Laos, Kip";
+    skos:notation "LAK";
+    skos:altLabel "Kip";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Kip>;
+    .
+<http://reference.data.gov.uk/def/currency/LBP>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Lebanon, Pound";
+    skos:prefLabel "Lebanon, Pound";
+    skos:notation "LBP";
+    skos:altLabel "Pound";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Pound>;
+    .
+<http://reference.data.gov.uk/def/currency/LKR>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Sri Lanka, Rupee";
+    skos:prefLabel "Sri Lanka, Rupee";
+    skos:notation "LKR";
+    skos:altLabel "Rupee";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Rupee>;
+    .
+<http://reference.data.gov.uk/def/currency/LRD>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Liberia, Dollar";
+    skos:prefLabel "Liberia, Dollar";
+    skos:notation "LRD";
+    skos:altLabel "Dollar";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Dollar>;
+    .
+<http://reference.data.gov.uk/def/currency/LSL>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Lesotho, Maloti";
+    skos:prefLabel "Lesotho, Maloti";
+    skos:notation "LSL";
+    skos:altLabel "Maloti";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Maloti>;
+    .
+<http://reference.data.gov.uk/def/currency/LTL>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Lithuania, Litai";
+    skos:prefLabel "Lithuania, Litai";
+    skos:notation "LTL";
+    skos:altLabel "Litai";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Litai>;
+    .
+<http://reference.data.gov.uk/def/currency/LVL>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Latvia, Lati";
+    skos:prefLabel "Latvia, Lati";
+    skos:notation "LVL";
+    skos:altLabel "Lati";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Latvian_lats>;
+    .
+<http://reference.data.gov.uk/def/currency/LYD>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Libya, Dinar";
+    skos:prefLabel "Libya, Dinar";
+    skos:notation "LYD";
+    skos:altLabel "Dinar";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Dinar>;
+    .
+<http://reference.data.gov.uk/def/currency/MAD>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Morocco, Dirham";
+    skos:prefLabel "Morocco, Dirham";
+    skos:notation "MAD";
+    skos:altLabel "Dirham";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Dirham>;
+    .
+<http://reference.data.gov.uk/def/currency/MDL>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Moldova, Lei";
+    skos:prefLabel "Moldova, Lei";
+    skos:notation "MDL";
+    skos:notation "Lei";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Lei>;
+    .
+<http://reference.data.gov.uk/def/currency/MGA>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Madagascar, Ariary";
+    skos:prefLabel "Madagascar, Ariary";
+    skos:notation "MGA";
+    skos:altLabel "Ariary";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Ariary>;
+    .
+<http://reference.data.gov.uk/def/currency/MKD>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Macedonia, Denar";
+    skos:prefLabel "Macedonia, Denar";
+    skos:notation "MKD";
+    skos:altLabel "Denar";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Denar>;
+    .
+<http://reference.data.gov.uk/def/currency/MMK>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Myanmar (Burma), Kyat";
+    skos:prefLabel "Myanmar (Burma), Kyat";
+    skos:notation "MMK";
+    skos:altLabel "Kyat";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Kyat>;
+    .
+<http://reference.data.gov.uk/def/currency/MNT>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Mongolia, Tugrik";
+    skos:prefLabel "Mongolia, Tugrik";
+    skos:notation "MNT";
+    skos:altLabel "Tugrik";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Tugrik>;
+    .
+<http://reference.data.gov.uk/def/currency/MOP>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Macau, Pataca";
+    skos:prefLabel "Macau, Pataca";
+    skos:notation "MOP";
+    skos:altLabel "Pataca";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Pataca>;
+    .
+<http://reference.data.gov.uk/def/currency/MRO>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Mauritania, Ouguiya";
+    skos:prefLabel "Mauritania, Ouguiya";
+    skos:notation "MRO";
+    skos:altLabel "Ouguiya";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Ouguiya>;
+    .
+<http://reference.data.gov.uk/def/currency/MTL>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Malta, Liri (expires 2008-Jan-31)";
+    skos:prefLabel "Malta, Liri (expires 2008-Jan-31)";
+    skos:notation "MTL";
+    skos:altLabel "Liri (expires 2008-Jan-31)";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    .
+<http://reference.data.gov.uk/def/currency/MUR>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Mauritius, Rupee";
+    skos:prefLabel "Mauritius, Rupee";
+    skos:notation "MUR";
+    skos:altLabel "Rupee";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Rupee>;
+    .
+<http://reference.data.gov.uk/def/currency/MVR>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Maldives (Maldive Islands), Rufiyaa";
+    skos:prefLabel "Maldives (Maldive Islands), Rufiyaa";
+    skos:notation "MVR";
+    skos:altLabel "Rufiyaa";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Rufiyaa>;
+    .
+<http://reference.data.gov.uk/def/currency/MWK>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Malawi, Kwacha";
+    skos:prefLabel "Malawi, Kwacha";
+    skos:notation "MWK";
+    skos:altLabel "Kwacha";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Kwacha>;
+    .
+<http://reference.data.gov.uk/def/currency/MXN>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Mexico, Peso";
+    skos:prefLabel "Mexico, Peso";
+    skos:notation "MXN";
+    skos:altLabel "Peso";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Peso>;
+    .
+<http://reference.data.gov.uk/def/currency/MYR>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Malaysia, Ringgit";
+    skos:prefLabel "Malaysia, Ringgit";
+    skos:notation "MYR";
+    skos:altLabel "Ringgit";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Ringgit>;
+    .
+<http://reference.data.gov.uk/def/currency/MZN>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Mozambique, Meticai";
+    skos:prefLabel "Mozambique, Meticai";
+    skos:notation "MZN";
+    skos:altLabel "Meticai";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Mozambican_metical>;
+    .
+<http://reference.data.gov.uk/def/currency/NAD>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Namibia, Dollar";
+    skos:prefLabel "Namibia, Dollar";
+    skos:notation "NAD";
+    skos:altLabel "Dollar";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Dollar>;
+    .
+<http://reference.data.gov.uk/def/currency/NGN>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Nigeria, Naira";
+    skos:prefLabel "Nigeria, Naira";
+    skos:notation "NGN";
+    skos:altLabel "Naira";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Naira>;
+    .
+<http://reference.data.gov.uk/def/currency/NIO>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Nicaragua, Cordoba";
+    skos:prefLabel "Nicaragua, Cordoba";
+    skos:notation "NIO";
+    skos:altLabel "Cordoba";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Cordoba>;
+    .
+<http://reference.data.gov.uk/def/currency/NOK>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Norway, Krone";
+    skos:prefLabel "Norway, Krone";
+    skos:notation "NOK";
+    skos:altLabel "Krone";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Krone>;
+    .
+<http://reference.data.gov.uk/def/currency/NPR>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Nepal, Nepal Rupee";
+    skos:prefLabel "Nepal, Nepal Rupee";
+    skos:notation "NPR";
+    skos:altLabel "Nepal Rupee";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Nepalese_Rupee>;
+    .
+<http://reference.data.gov.uk/def/currency/NZD>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "New Zealand, Dollar";
+    skos:prefLabel "New Zealand, Dollar";
+    skos:notation "NZD";
+    skos:altLabel "Dollar";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Dollar>;
+    .
+<http://reference.data.gov.uk/def/currency/OMR>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Oman, Rial";
+    skos:prefLabel "Oman, Rial";
+    skos:notation "OMR";
+    skos:altLabel "Rial";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Rial>;
+    .
+<http://reference.data.gov.uk/def/currency/PAB>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Panama, Balboa";
+    skos:prefLabel "Panama, Balboa";
+    skos:notation "PAB";
+    skos:altLabel "Balboa";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Balboa>;
+    .
+<http://reference.data.gov.uk/def/currency/PEN>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Peru, Nuevos Sole";
+    skos:prefLabel "Peru, Nuevos Sole";
+    skos:notation "PEN";
+    skos:altLabel "Nuevos Sole";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Peruvian_nuevo_sol>;
+    .
+<http://reference.data.gov.uk/def/currency/PGK>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Papua New Guinea, Kina";
+    skos:prefLabel "Papua New Guinea, Kina";
+    skos:notation "PGK";
+    skos:altLabel "Kina";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Kina>;
+    .
+<http://reference.data.gov.uk/def/currency/PHP>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Philippines, Peso";
+    skos:prefLabel "Philippines, Peso";
+    skos:notation "PHP";
+    skos:altLabel "Peso";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Peso>;
+    .
+<http://reference.data.gov.uk/def/currency/PKR>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Pakistan, Rupee";
+    skos:prefLabel "Pakistan, Rupee";
+    skos:notation "PKR";
+    skos:altLabel "Rupee";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Rupee>;
+    .
+<http://reference.data.gov.uk/def/currency/PLN>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Poland, Zlotych";
+    skos:prefLabel "Poland, Zlotych";
+    skos:notation "PLN";
+    skos:altLabel "Zlotych";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Zlotych>;
+    .
+<http://reference.data.gov.uk/def/currency/PYG>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Paraguay, Guarani";
+    skos:prefLabel "Paraguay, Guarani";
+    skos:notation "PYG";
+    skos:altLabel "Guarani";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Guarani>;
+    .
+<http://reference.data.gov.uk/def/currency/QAR>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Qatar, Rial";
+    skos:prefLabel "Qatar, Rial";
+    skos:notation "QAR";
+    skos:altLabel "Rial";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Rial>;
+    .
+<http://reference.data.gov.uk/def/currency/RON>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Romania, New Lei";
+    skos:prefLabel "Romania, New Lei";
+    skos:notation "RON";
+    skos:altLabel "New Lei";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Romanian_leu>;
+    .
+<http://reference.data.gov.uk/def/currency/RSD>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Serbia, Dinar";
+    skos:prefLabel "Serbia, Dinar";
+    skos:notation "RSD";
+    skos:altLabel "Dinar";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Dinar>;
+    .
+<http://reference.data.gov.uk/def/currency/RUB>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Russia, Ruble";
+    skos:prefLabel "Russia, Ruble";
+    skos:notation "RUB";
+    skos:altLabel "Ruble";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Ruble>;
+    .
+<http://reference.data.gov.uk/def/currency/RWF>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Rwanda, Rwanda Franc";
+    skos:prefLabel "Rwanda, Rwanda Franc";
+    skos:notation "RWF";
+    skos:altLabel "Rwanda Franc";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Rwandan_franc>;
+    .
+<http://reference.data.gov.uk/def/currency/SAR>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Saudi Arabia, Riyal";
+    skos:prefLabel "Saudi Arabia, Riyal";
+    skos:notation "SAR";
+    skos:altLabel "Riyal";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Riyal>;
+    .
+<http://reference.data.gov.uk/def/currency/SBD>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Solomon Islands, Dollar";
+    skos:prefLabel "Solomon Islands, Dollar";
+    skos:notation "SBD";
+    skos:altLabel "Dollar";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Dollar>;
+    .
+<http://reference.data.gov.uk/def/currency/SCR>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Seychelles, Rupee";
+    skos:prefLabel "Seychelles, Rupee";
+    skos:notation "SCR";
+    skos:altLabel "Rupee";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Rupee>;
+    .
+<http://reference.data.gov.uk/def/currency/SDG>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Sudan, Pound";
+    skos:prefLabel "Sudan, Pound";
+    skos:notation "SDG";
+    skos:altLabel "Pound";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Pound>;
+    .
+
+
+<http://reference.data.gov.uk/def/currency/SEK>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Sweden, Kronor";
+    skos:prefLabel "Sweden, Kronor";
+    skos:notation "SEK";
+    skos:altLabel "Kronor";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Kronor>;
+    .
+<http://reference.data.gov.uk/def/currency/SGD>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Singapore, Dollar";
+    skos:prefLabel "Singapore, Dollar";
+    skos:notation "SGD";
+    skos:altLabel "Dollar";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Dollar>;
+    .
+<http://reference.data.gov.uk/def/currency/SHP>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Saint Helena, Pound";
+    skos:prefLabel "Saint Helena, Pound";
+    skos:notation "SHP";
+    skos:altLabel "Pound";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Pound>;
+    .
+<http://reference.data.gov.uk/def/currency/SLL>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Sierra Leone, Leone";
+    skos:prefLabel "Sierra Leone, Leone";
+    skos:notation "SLL";
+    skos:altLabel "Leone";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Leone>;
+    .
+<http://reference.data.gov.uk/def/currency/SOS>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Somalia, Shilling";
+    skos:prefLabel "Somalia, Shilling";
+    skos:notation "SOS";
+    skos:altLabel "Shilling";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Shilling>;
+    .
+<http://reference.data.gov.uk/def/currency/SPL>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Seborga, Luigini";
+    skos:prefLabel "Seborga, Luigini";
+    skos:notation "SPL";
+    skos:altLabel "Luigini";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    .
+<http://reference.data.gov.uk/def/currency/SRD>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Suriname, Dollar";
+    skos:prefLabel "Suriname, Dollar";
+    skos:notation "SRD";
+    skos:altLabel "Dollar";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Dollar>;
+    .
+<http://reference.data.gov.uk/def/currency/STD>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "São Tome and Principe, Dobra";
+    skos:prefLabel "São Tome and Principe, Dobra";
+    skos:notation "STD";
+    skos:altLabel "Dobra";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Dobra>;
+    .
+<http://reference.data.gov.uk/def/currency/SVC>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "El Salvador, Colone";
+    skos:prefLabel "El Salvador, Colone";
+    skos:notation "SVC";
+    skos:altLabel "Colone";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Salvadoran_col%C3%B3n>;
+    .
+<http://reference.data.gov.uk/def/currency/SYP>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Syria, Pound";
+    skos:prefLabel "Syria, Pound";
+    skos:notation "SYP";
+    skos:altLabel "Pound";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Syrian_pound>;
+    .
+<http://reference.data.gov.uk/def/currency/SZL>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Swaziland, Emalangeni";
+    skos:prefLabel "Swaziland, Emalangeni";
+    skos:notation "SZL";
+    skos:altLabel "Emalangeni";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Emalangeni>;
+    .
+<http://reference.data.gov.uk/def/currency/THB>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Thailand, Baht";
+    skos:prefLabel "Thailand, Baht";
+    skos:notation "THB";
+    skos:altLabel "Baht";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Baht>;
+    .
+<http://reference.data.gov.uk/def/currency/TJS>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Tajikistan, Somoni";
+    skos:prefLabel "Tajikistan, Somoni";
+    skos:notation "TJS";
+    skos:altLabel "Somoni";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Somoni>;
+    .
+<http://reference.data.gov.uk/def/currency/TMM>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Turkmenistan, Manat";
+    skos:prefLabel "Turkmenistan, Manat";
+    skos:notation "TMM";
+    skos:altLabel "Manat";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Manat_%28Turkmenistan%29>;
+    .
+<http://reference.data.gov.uk/def/currency/TND>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Tunisia, Dinar";
+    skos:prefLabel "Tunisia, Dinar";
+    skos:notation "TND";
+    skos:altLabel "Dinar";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Dinar>;
+    .
+<http://reference.data.gov.uk/def/currency/TOP>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Tonga, Pa'anga";
+    skos:prefLabel "Tonga, Pa'anga";
+    skos:notation "TOP";
+    skos:altLabel "Pa'anga";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Pa'anga>;
+    .
+<http://reference.data.gov.uk/def/currency/TRY>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Turkey, New Lira";
+    skos:prefLabel "Turkey, New Lira";
+    skos:notation "TRY";
+    skos:altLabel "New Lira";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Turkish_lira>;
+    .
+<http://reference.data.gov.uk/def/currency/TTD>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Trinidad and Tobago, Dollar";
+    skos:prefLabel "Trinidad and Tobago, Dollar";
+    skos:notation "TTD";
+    skos:altLabel "Dollar";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Dollar>;
+    .
+<http://reference.data.gov.uk/def/currency/TVD>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Tuvalu, Tuvalu Dollar";
+    skos:prefLabel "Tuvalu, Tuvalu Dollar";
+    skos:notation "TVD";
+    skos:altLabel "Tuvalu Dollar";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Tuvaluan_dollar>;
+    .
+<http://reference.data.gov.uk/def/currency/TWD>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Taiwan, New Dollar";
+    skos:prefLabel "Taiwan, New Dollar";
+    skos:notation "TWD";
+    skos:altLabel "New Dollar";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/New_Taiwan_dollar>;
+    .
+<http://reference.data.gov.uk/def/currency/TZS>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Tanzania, Shilling";
+    skos:prefLabel "Tanzania, Shilling";
+    skos:notation "TZS";
+    skos:altLabel "Shilling";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Shilling>;
+    .
+<http://reference.data.gov.uk/def/currency/UAH>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Ukraine, Hryvnia";
+    skos:prefLabel "Ukraine, Hryvnia";
+    skos:notation "UAH";
+    skos:altLabel "Hryvnia";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Hryvnia>;
+    .
+<http://reference.data.gov.uk/def/currency/UGX>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Uganda, Shilling";
+    skos:prefLabel "Uganda, Shilling";
+    skos:notation "UGX";
+    skos:altLabel "Shilling";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Shilling>;
+    .
+<http://reference.data.gov.uk/def/currency/USD>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "United States of America, Dollar";
+    skos:prefLabel "United States of America, Dollar";
+    skos:notation "USD";
+    skos:altLabel "Dollar";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Dollar>;
+    .
+<http://reference.data.gov.uk/def/currency/UYU>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Uruguay, Peso";
+    skos:prefLabel "Uruguay, Peso";
+    skos:notation "UYU";
+    skos:altLabel "Peso";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Peso>;
+    .
+<http://reference.data.gov.uk/def/currency/UZS>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Uzbekistan, Sum";
+    skos:prefLabel "Uzbekistan, Sum";
+    skos:notation "UZS";
+    skos:altLabel "Sum";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Sum>;
+    .
+<http://reference.data.gov.uk/def/currency/VEB>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Venezuela, Bolivares (expires 2008-Jun-30)";
+    skos:prefLabel "Venezuela, Bolivares (expires 2008-Jun-30)";
+    skos:notation "VEB";
+    skos:altLabel "Bolivares (expires 2008-Jun-30)";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Venezuelan_bol%C3%ADvar>;
+    .
+<http://reference.data.gov.uk/def/currency/VEF>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Venezuela, Bolivares Fuerte";
+    skos:prefLabel "Venezuela, Bolivares Fuerte";
+    skos:notation "VEF";
+    skos:altLabel "Bolivares Fuerte";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Venezuelan_bol%C3%ADvar>;
+    .
+<http://reference.data.gov.uk/def/currency/VND>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Viet Nam, Dong";
+    skos:prefLabel "Viet Nam, Dong";
+    skos:notation "VND";
+    skos:altLabel "Dong";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Dong>;
+    .
+<http://reference.data.gov.uk/def/currency/VUV>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Vanuatu, Vatu";
+    skos:prefLabel "Vanuatu, Vatu";
+    skos:notation "VUV";
+    skos:altLabel "Vatu";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Vatu>;
+    .
+<http://reference.data.gov.uk/def/currency/WST>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Samoa, Tala";
+    skos:prefLabel "Samoa, Tala";
+    skos:notation "WST";
+    skos:altLabel "Tala";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Tala>;
+    .
+<http://reference.data.gov.uk/def/currency/XAF>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Communauté Financière Africaine BEAC, Franc";
+    skos:prefLabel "Communauté Financière Africaine BEAC, Franc";
+    skos:notation "XAF";
+    skos:altLabel "Franc";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Franc>;
+    .
+<http://reference.data.gov.uk/def/currency/XAG>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Silver, Ounce";
+    skos:prefLabel "Silver, Ounce";
+    skos:notation "XAG";
+    skos:altLabel "Ounce";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Ounce>;
+    .
+<http://reference.data.gov.uk/def/currency/XAU>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Gold, Ounce";
+    skos:prefLabel "Gold, Ounce";
+    skos:notation "XAU";
+    skos:altLabel "Ounce";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Ounce>;
+    .
+<http://reference.data.gov.uk/def/currency/XCD>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "East Caribbean,  East Caribbean Dollar";
+    skos:prefLabel "East Caribbean,  East Caribbean Dollar";
+    skos:notation "XCD";
+    skos:altLabel " East Caribbean Dollar";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/East_Caribbean_dollar>;
+    .
+<http://reference.data.gov.uk/def/currency/XDR>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "IMF,  International Monetary Fund (IMF) Special Drawing Rights";
+    skos:prefLabel "International Monetary Fund (IMF) Special Drawing Rights";
+    skos:notation "XDR";
+    skos:altLabel " International Monetary Fund (IMF) Special Drawing Rights";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    .
+<http://reference.data.gov.uk/def/currency/XOF>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Communauté Financière Africaine BCEAO, Franc";
+    skos:prefLabel "Communauté Financière Africaine BCEAO, Franc";
+    skos:notation "XOF";
+    skos:altLabel "Franc";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    .
+<http://reference.data.gov.uk/def/currency/XPD>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Palladium Ounce";
+    skos:prefLabel "Palladium Ounce";
+    skos:notation "XPD";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    .
+<http://reference.data.gov.uk/def/currency/XPF>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Comptoirs Français du Pacifique, Franc";
+    skos:prefLabel "Comptoirs Français du Pacifique, Franc";
+    skos:notation "XPF";
+    skos:altLabel "Comptoirs Français du Pacifique, Franc";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    .
+<http://reference.data.gov.uk/def/currency/XPT>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Platinum, Ounce";
+    skos:prefLabel "Platinum, Ounce";
+    skos:notation "XPT";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    .
+<http://reference.data.gov.uk/def/currency/YER>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Yemen, Rial";
+    skos:prefLabel "Yemen, Rial";
+    skos:notation "YER";
+    skos:altLabel "Rial";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Rial>;
+    .
+<http://reference.data.gov.uk/def/currency/ZAR>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "South Africa, Rand";
+    skos:prefLabel "South Africa, Rand";
+    skos:notation "ZAR";
+    skos:altLabel "Rand";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Rand>;
+    .
+<http://reference.data.gov.uk/def/currency/ZMK>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Zambia, Kwacha";
+    skos:prefLabel "Zambia, Kwacha";
+    skos:notation "ZMK";
+    skos:altLabel "Kwacha";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Kwacha>;
+    .
+<http://reference.data.gov.uk/def/currency/ZWD>
+    a <http://reference.data.gov.uk/def/currency/Currency>, skos:Concept;
+    rdfs:label "Zimbabwe, Zimbabwe Dollar";
+    skos:prefLabel "Zimbabwe, Zimbabwe Dollar";
+    skos:notation "ZWD";
+    skos:altLabel "Zimbabwe Dollar";
+    skos:topConceptOf <http://reference.data.gov.uk/def/currency>;
+    skos:exactMatch <http://dbpedia.org/resource/Zimbabwean_dollar>;
+    .

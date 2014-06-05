@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+   xmlns:test="http://transport.data.gov.uk/def/driving-test/"
+   xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <skos:ConceptScheme rdf:about="http://transport.data.gov.uk/def/driving-test">
+    <skos:hasTopConcept rdf:resource="http://transport.data.gov.uk/def/driving-test/car"/>
+    <skos:hasTopConcept rdf:resource="http://transport.data.gov.uk/def/driving-test/motorcycle-module-1"/>
+    <skos:hasTopConcept rdf:resource="http://transport.data.gov.uk/def/driving-test/motorcycle-module-2"/>
+    <skos:hasTopConcept rdf:resource="http://transport.data.gov.uk/def/driving-test/taxi"/>
+    <skos:hasTopConcept rdf:resource="http://transport.data.gov.uk/def/driving-test/theory"/>
+    <skos:hasTopConcept rdf:resource="http://transport.data.gov.uk/def/driving-test/vocational"/>
+    <skos:prefLabel xml:lang="en">Driving Tests</skos:prefLabel>
+  </skos:ConceptScheme>
+  <rdfs:Class rdf:about="http://transport.data.gov.uk/def/driving-test/DrivingTest">
+    <rdfs:isDefinedBy rdf:resource="http://transport.data.gov.uk/def/driving-test"/>
+    <rdfs:label xml:lang="en">Driving Test</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdfs:Class>
+  <test:DrivingTest rdf:about="http://transport.data.gov.uk/def/driving-test/car">
+    <skos:prefLabel xml:lang="en">Car Driving Test</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://transport.data.gov.uk/def/driving-test"/>
+  </test:DrivingTest>
+  <rdf:Property rdf:about="http://transport.data.gov.uk/def/driving-test/drivingTest">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://transport.data.gov.uk/def/driving-test"/>
+    <rdfs:label xml:lang="en">Driving Test</rdfs:label>
+    <rdfs:range rdf:resource="http://transport.data.gov.uk/def/driving-test/DrivingTest"/>
+  </rdf:Property>
+  <test:DrivingTest rdf:about="http://transport.data.gov.uk/def/driving-test/motorcycle-module-1">
+    <skos:prefLabel xml:lang="en">Motorcycle Driving Test Module 1</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://transport.data.gov.uk/def/driving-test"/>
+  </test:DrivingTest>
+  <test:DrivingTest rdf:about="http://transport.data.gov.uk/def/driving-test/motorcycle-module-2">
+    <skos:prefLabel xml:lang="en">Motorcycle Driving Test Module 2</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://transport.data.gov.uk/def/driving-test"/>
+  </test:DrivingTest>
+  <test:DrivingTest rdf:about="http://transport.data.gov.uk/def/driving-test/taxi">
+    <skos:prefLabel xml:lang="en">Taxi Driving Test</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://transport.data.gov.uk/def/driving-test"/>
+  </test:DrivingTest>
+  <test:DrivingTest rdf:about="http://transport.data.gov.uk/def/driving-test/theory">
+    <skos:prefLabel xml:lang="en">Theory Test</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://transport.data.gov.uk/def/driving-test"/>
+  </test:DrivingTest>
+  <test:DrivingTest rdf:about="http://transport.data.gov.uk/def/driving-test/vocational">
+    <skos:prefLabel xml:lang="en">Vocational Driving Test</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://transport.data.gov.uk/def/driving-test"/>
+  </test:DrivingTest>
+</rdf:RDF>

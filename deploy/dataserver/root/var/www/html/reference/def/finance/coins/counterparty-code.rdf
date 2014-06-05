@@ -1,0 +1,706 @@
+<rdf:RDF
+    xmlns:sdmx-subject="http://purl.org/linked-data/sdmx/2009/subject#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:sdmx-dimension="http://purl.org/linked-data/sdmx/2009/dimension#"
+    xmlns:sdmx-measure="http://purl.org/linked-data/sdmx/2009/measure#"
+    xmlns:sdmx-attribute="http://purl.org/linked-data/sdmx/2009/attribute#"
+    xmlns:coins-data="http://source.data.gov.uk/data/coins/"
+    xmlns:coins-dsd="http://finance.data.gov.uk/dsd/coins/"
+    xmlns:coins-dimension="http://finance.data.gov.uk/dsd/coins/dimension/"
+    xmlns:void="http://rdfs.org/ns/void#"
+    xmlns:coins-measure="http://finance.data.gov.uk/dsd/coins/measure/"
+    xmlns:j.0="http://www.epimorphics.com/vocabs/coins-generate#"
+    xmlns:coins-attribute="http://finance.data.gov.uk/dsd/coins/attribute/"
+    xmlns:sdmx-concept="http://purl.org/linked-data/sdmx/2009/concept#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:coins-slicekey="http://finance.data.gov.uk/dsd/coins/slice/"
+    xmlns:sdmx="http://purl.org/linked-data/sdmx#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:sdmx-code="http://purl.org/linked-data/sdmx/2009/code#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:j.1="http://finance.data.gov.uk/def/coins/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:qb="http://purl.org/linked-data/cube#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <rdfs:Class rdf:about="http://finance.data.gov.uk/def/coins/CounterpartyCode">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:label xml:lang="en">counterparty code values class</rdfs:label>
+    <skos:prefLabel xml:lang="en">counterparty code values class</skos:prefLabel>
+    <rdfs:comment>The class of values in the counterparty code code-list scheme</rdfs:comment>
+  </rdfs:Class>
+  <sdmx:Concept rdf:about="http://finance.data.gov.uk/def/coins/statistical-concept/counterparty-code">
+    <rdfs:label xml:lang="en">counterparty code</rdfs:label>
+    <skos:prefLabel xml:lang="en">counterparty code</skos:prefLabel>
+    <rdfs:comment>The code is used when there are certain transactions between two public sector bodies
+     (eg transferring responsibilities from one department to another). Each department records the
+     counterparty code of the other party involved. </rdfs:comment>
+    <dcterms:source rdf:resource="http://www.hm-treasury.gov.uk/d/coins_guidance.pdf"/>
+    <j.0:columnName>counterparty_code</j.0:columnName>
+  </sdmx:Concept>
+  <skos:ConceptScheme rdf:about="http://finance.data.gov.uk/def/coins/counterparty-code">
+    <skos:hasTopConcept>
+      <j.1:CounterpartyCode rdf:about="http://finance.data.gov.uk/def/coins/counterparty-code/awc090.cpi">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">AWC090.CPID</rdfs:label>
+        <skos:prefLabel xml:lang="en">AWC090.CPID</skos:prefLabel>
+        <skos:notation>awc090.cpi</skos:notation>
+        <rdfs:comment>National Assembly for Wales (Assembly Commission) (excluding accounts)</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/counterparty-code"/>
+      </j.1:CounterpartyCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:CounterpartyCode rdf:about="http://finance.data.gov.uk/def/coins/counterparty-code/opc060.cpi">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">OPC060.CPID</rdfs:label>
+        <skos:prefLabel xml:lang="en">OPC060.CPID</skos:prefLabel>
+        <skos:notation>opc060.cpi</skos:notation>
+        <rdfs:comment>Office of the Parliamentary Commisioner and Health Service Commisioner for</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/counterparty-code"/>
+      </j.1:CounterpartyCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:CounterpartyCode rdf:about="http://finance.data.gov.uk/def/coins/counterparty-code/nic081.cpi">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">NIC081.CPID</rdfs:label>
+        <skos:prefLabel xml:lang="en">NIC081.CPID</skos:prefLabel>
+        <skos:notation>nic081.cpi</skos:notation>
+        <rdfs:comment>Northern Ireland Court Service</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/counterparty-code"/>
+      </j.1:CounterpartyCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:CounterpartyCode rdf:about="http://finance.data.gov.uk/def/coins/counterparty-code/oge020.cpi">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">OGE020.CPID</rdfs:label>
+        <skos:prefLabel xml:lang="en">OGE020.CPID</skos:prefLabel>
+        <skos:notation>oge020.cpi</skos:notation>
+        <rdfs:comment>OFGEM</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/counterparty-code"/>
+      </j.1:CounterpartyCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:CounterpartyCode rdf:about="http://finance.data.gov.uk/def/coins/counterparty-code/dft004.cpi">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">DFT004.CPID</rdfs:label>
+        <skos:prefLabel xml:lang="en">DFT004.CPID</skos:prefLabel>
+        <skos:notation>dft004.cpi</skos:notation>
+        <rdfs:comment>Department for Transport</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/counterparty-code"/>
+      </j.1:CounterpartyCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:CounterpartyCode rdf:about="http://finance.data.gov.uk/def/coins/counterparty-code/hoa038.cpi">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">HOA038.CPID</rdfs:label>
+        <skos:prefLabel xml:lang="en">HOA038.CPID</skos:prefLabel>
+        <skos:notation>hoa038.cpi</skos:notation>
+        <rdfs:comment>House of Commons Administration</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/counterparty-code"/>
+      </j.1:CounterpartyCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:CounterpartyCode rdf:about="http://finance.data.gov.uk/def/coins/counterparty-code/oft074.cpi">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">OFT074.CPID</rdfs:label>
+        <skos:prefLabel xml:lang="en">OFT074.CPID</skos:prefLabel>
+        <skos:notation>oft074.cpi</skos:notation>
+        <rdfs:comment>Office of Fair Trading</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/counterparty-code"/>
+      </j.1:CounterpartyCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:CounterpartyCode rdf:about="http://finance.data.gov.uk/def/coins/counterparty-code/fcm028.cpi">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">FCM028.CPID</rdfs:label>
+        <skos:prefLabel xml:lang="en">FCM028.CPID</skos:prefLabel>
+        <skos:notation>fcm028.cpi</skos:notation>
+        <rdfs:comment>Forestry Commission</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/counterparty-code"/>
+      </j.1:CounterpartyCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:CounterpartyCode rdf:about="http://finance.data.gov.uk/def/coins/counterparty-code/dwp032.cpi">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">DWP032.CPID</rdfs:label>
+        <skos:prefLabel xml:lang="en">DWP032.CPID</skos:prefLabel>
+        <skos:notation>dwp032.cpi</skos:notation>
+        <rdfs:comment>Department for Work and Pensions</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/counterparty-code"/>
+      </j.1:CounterpartyCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:CounterpartyCode rdf:about="http://finance.data.gov.uk/def/coins/counterparty-code/ara035.cpi">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ARA035.CPID</rdfs:label>
+        <skos:prefLabel xml:lang="en">ARA035.CPID</skos:prefLabel>
+        <skos:notation>ara035.cpi</skos:notation>
+        <rdfs:comment>Assets Recovery Agency</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/counterparty-code"/>
+      </j.1:CounterpartyCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:CounterpartyCode rdf:about="http://finance.data.gov.uk/def/coins/counterparty-code/dsd210.cpi">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">DSD210.CPID</rdfs:label>
+        <skos:prefLabel xml:lang="en">DSD210.CPID</skos:prefLabel>
+        <skos:notation>dsd210.cpi</skos:notation>
+        <rdfs:comment>Department for Social Development - Northern Ireland</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/counterparty-code"/>
+      </j.1:CounterpartyCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:CounterpartyCode rdf:about="http://finance.data.gov.uk/def/coins/counterparty-code/des022.cpi">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">DES022.CPID</rdfs:label>
+        <skos:prefLabel xml:lang="en">DES022.CPID</skos:prefLabel>
+        <skos:notation>des022.cpi</skos:notation>
+        <rdfs:comment>Department for Children, Schools and Families</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/counterparty-code"/>
+      </j.1:CounterpartyCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:CounterpartyCode rdf:about="http://finance.data.gov.uk/def/coins/counterparty-code/dis063.cpi">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">DIS063.CPID</rdfs:label>
+        <skos:prefLabel xml:lang="en">DIS063.CPID</skos:prefLabel>
+        <skos:notation>dis063.cpi</skos:notation>
+        <rdfs:comment>Department for Innovation, Universities and Skills</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/counterparty-code"/>
+      </j.1:CounterpartyCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:CounterpartyCode rdf:about="http://finance.data.gov.uk/def/coins/counterparty-code/nsg062.cpi">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">NSG062.CPID</rdfs:label>
+        <skos:prefLabel xml:lang="en">NSG062.CPID</skos:prefLabel>
+        <skos:notation>nsg062.cpi</skos:notation>
+        <rdfs:comment>National School for Government</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/counterparty-code"/>
+      </j.1:CounterpartyCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:CounterpartyCode rdf:about="http://finance.data.gov.uk/def/coins/counterparty-code/wof091.cpi">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">WOF091.CPID</rdfs:label>
+        <skos:prefLabel xml:lang="en">WOF091.CPID</skos:prefLabel>
+        <skos:notation>wof091.cpi</skos:notation>
+        <rdfs:comment>Wales Office</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/counterparty-code"/>
+      </j.1:CounterpartyCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:CounterpartyCode rdf:about="http://finance.data.gov.uk/def/coins/counterparty-code/ofm211.cpi">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">OFM211.CPID</rdfs:label>
+        <skos:prefLabel xml:lang="en">OFM211.CPID</skos:prefLabel>
+        <skos:notation>ofm211.cpi</skos:notation>
+        <rdfs:comment>Office of the First Minister and Deputy First Minister - Northern Ireland</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/counterparty-code"/>
+      </j.1:CounterpartyCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:CounterpartyCode rdf:about="http://finance.data.gov.uk/def/coins/counterparty-code/siv007.cpi">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">SIV007.CPID</rdfs:label>
+        <skos:prefLabel xml:lang="en">SIV007.CPID</skos:prefLabel>
+        <skos:notation>siv007.cpi</skos:notation>
+        <rdfs:comment>Cabinet Office: SIV</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/counterparty-code"/>
+      </j.1:CounterpartyCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:CounterpartyCode rdf:about="http://finance.data.gov.uk/def/coins/counterparty-code/cps016.cpi">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">CPS016.CPID</rdfs:label>
+        <skos:prefLabel xml:lang="en">CPS016.CPID</skos:prefLabel>
+        <skos:notation>cps016.cpi</skos:notation>
+        <rdfs:comment>The Crown Prosecution Service</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/counterparty-code"/>
+      </j.1:CounterpartyCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:CounterpartyCode rdf:about="http://finance.data.gov.uk/def/coins/counterparty-code/fsa026.cpi">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">FSA026.CPID</rdfs:label>
+        <skos:prefLabel xml:lang="en">FSA026.CPID</skos:prefLabel>
+        <skos:notation>fsa026.cpi</skos:notation>
+        <rdfs:comment>Food Standards Agency</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/counterparty-code"/>
+      </j.1:CounterpartyCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:CounterpartyCode rdf:about="http://finance.data.gov.uk/def/coins/counterparty-code/chc009.cpi">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">CHC009.CPID</rdfs:label>
+        <skos:prefLabel xml:lang="en">CHC009.CPID</skos:prefLabel>
+        <skos:notation>chc009.cpi</skos:notation>
+        <rdfs:comment>Charity Commission</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/counterparty-code"/>
+      </j.1:CounterpartyCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:CounterpartyCode rdf:about="http://finance.data.gov.uk/def/coins/counterparty-code/cex086.cpi">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">CEX086.CPID</rdfs:label>
+        <skos:prefLabel xml:lang="en">CEX086.CPID</skos:prefLabel>
+        <skos:notation>cex086.cpi</skos:notation>
+        <rdfs:comment>HMT Central Exchequer</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/counterparty-code"/>
+      </j.1:CounterpartyCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:CounterpartyCode rdf:about="http://finance.data.gov.uk/def/coins/counterparty-code/cpid.na">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">CPID.NA</rdfs:label>
+        <skos:prefLabel xml:lang="en">CPID.NA</skos:prefLabel>
+        <skos:notation>cpid.na</skos:notation>
+        <rdfs:comment></rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/counterparty-code"/>
+      </j.1:CounterpartyCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:CounterpartyCode rdf:about="http://finance.data.gov.uk/def/coins/counterparty-code/pco065.cpi">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">PCO065.CPID</rdfs:label>
+        <skos:prefLabel xml:lang="en">PCO065.CPID</skos:prefLabel>
+        <skos:notation>pco065.cpi</skos:notation>
+        <rdfs:comment>Privy Council Office</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/counterparty-code"/>
+      </j.1:CounterpartyCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:CounterpartyCode rdf:about="http://finance.data.gov.uk/def/coins/counterparty-code/hsp208.cpi">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">HSP208.CPID</rdfs:label>
+        <skos:prefLabel xml:lang="en">HSP208.CPID</skos:prefLabel>
+        <skos:notation>hsp208.cpi</skos:notation>
+        <rdfs:comment>Department of Health Social Services &amp; Public Safety</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/counterparty-code"/>
+      </j.1:CounterpartyCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:CounterpartyCode rdf:about="http://finance.data.gov.uk/def/coins/counterparty-code/hol037.cpi">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">HOL037.CPID</rdfs:label>
+        <skos:prefLabel xml:lang="en">HOL037.CPID</skos:prefLabel>
+        <skos:notation>hol037.cpi</skos:notation>
+        <rdfs:comment>House of Lords</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/counterparty-code"/>
+      </j.1:CounterpartyCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:CounterpartyCode rdf:about="http://finance.data.gov.uk/def/coins/counterparty-code/hmc015.cpi">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">HMC015.CPID</rdfs:label>
+        <skos:prefLabel xml:lang="en">HMC015.CPID</skos:prefLabel>
+        <skos:notation>hmc015.cpi</skos:notation>
+        <rdfs:comment>HM Customs &amp; Excise</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/counterparty-code"/>
+      </j.1:CounterpartyCode>
+    </skos:hasTopConcept>
+    <rdfs:label xml:lang="en">counterparty code code list concept scheme</rdfs:label>
+    <skos:hasTopConcept>
+      <j.1:CounterpartyCode rdf:about="http://finance.data.gov.uk/def/coins/counterparty-code/pro067.cpi">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">PRO067.CPID</rdfs:label>
+        <skos:prefLabel xml:lang="en">PRO067.CPID</skos:prefLabel>
+        <skos:notation>pro067.cpi</skos:notation>
+        <rdfs:comment>The National Archives</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/counterparty-code"/>
+      </j.1:CounterpartyCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:CounterpartyCode rdf:about="http://finance.data.gov.uk/def/coins/counterparty-code/rcp046.cpi">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">RCP046.CPID</rdfs:label>
+        <skos:prefLabel xml:lang="en">RCP046.CPID</skos:prefLabel>
+        <skos:notation>rcp046.cpi</skos:notation>
+        <rdfs:comment>Revenue and Customs Prosecution Office (RCPO)</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/counterparty-code"/>
+      </j.1:CounterpartyCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:CounterpartyCode rdf:about="http://finance.data.gov.uk/def/coins/counterparty-code/sct075.cpi">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">SCT075.CPID</rdfs:label>
+        <skos:prefLabel xml:lang="en">SCT075.CPID</skos:prefLabel>
+        <skos:notation>sct075.cpi</skos:notation>
+        <rdfs:comment>Scottish Government</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/counterparty-code"/>
+      </j.1:CounterpartyCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:CounterpartyCode rdf:about="http://finance.data.gov.uk/def/coins/counterparty-code/sfo019.cpi">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">SFO019.CPID</rdfs:label>
+        <skos:prefLabel xml:lang="en">SFO019.CPID</skos:prefLabel>
+        <skos:notation>sfo019.cpi</skos:notation>
+        <rdfs:comment>Serious Fraud Office</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/counterparty-code"/>
+      </j.1:CounterpartyCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:CounterpartyCode rdf:about="http://finance.data.gov.uk/def/coins/counterparty-code/dpm085.cpi">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">DPM085.CPID</rdfs:label>
+        <skos:prefLabel xml:lang="en">DPM085.CPID</skos:prefLabel>
+        <skos:notation>dpm085.cpi</skos:notation>
+        <rdfs:comment>Department for Communities and Local Government</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/counterparty-code"/>
+      </j.1:CounterpartyCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:CounterpartyCode rdf:about="http://finance.data.gov.uk/def/coins/counterparty-code/efr003.cpi">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">EFR003.CPID</rdfs:label>
+        <skos:prefLabel xml:lang="en">EFR003.CPID</skos:prefLabel>
+        <skos:notation>efr003.cpi</skos:notation>
+        <rdfs:comment>Department for Environment, Food and Rural Affairs</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/counterparty-code"/>
+      </j.1:CounterpartyCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:CounterpartyCode rdf:about="http://finance.data.gov.uk/def/coins/counterparty-code/psc006.cpi">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">PSC006.CPID</rdfs:label>
+        <skos:prefLabel xml:lang="en">PSC006.CPID</skos:prefLabel>
+        <skos:notation>psc006.cpi</skos:notation>
+        <rdfs:comment>Postal Service Commission</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/counterparty-code"/>
+      </j.1:CounterpartyCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:CounterpartyCode rdf:about="http://finance.data.gov.uk/def/coins/counterparty-code/sco042.cpi">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">SCO042.CPID</rdfs:label>
+        <skos:prefLabel xml:lang="en">SCO042.CPID</skos:prefLabel>
+        <skos:notation>sco042.cpi</skos:notation>
+        <rdfs:comment>Scotland Office</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/counterparty-code"/>
+      </j.1:CounterpartyCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:CounterpartyCode rdf:about="http://finance.data.gov.uk/def/coins/counterparty-code/fco027.cpi">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">FCO027.CPID</rdfs:label>
+        <skos:prefLabel xml:lang="en">FCO027.CPID</skos:prefLabel>
+        <skos:notation>fco027.cpi</skos:notation>
+        <rdfs:comment>Foreign and Commonwealth Office</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/counterparty-code"/>
+      </j.1:CounterpartyCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:CounterpartyCode rdf:about="http://finance.data.gov.uk/def/coins/counterparty-code/den206.cpi">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">DEN206.CPID</rdfs:label>
+        <skos:prefLabel xml:lang="en">DEN206.CPID</skos:prefLabel>
+        <skos:notation>den206.cpi</skos:notation>
+        <rdfs:comment>Department of the Environment - Northern Ireland</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/counterparty-code"/>
+      </j.1:CounterpartyCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:CounterpartyCode rdf:about="http://finance.data.gov.uk/def/coins/counterparty-code/hmt087.cpi">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">HMT087.CPID</rdfs:label>
+        <skos:prefLabel xml:lang="en">HMT087.CPID</skos:prefLabel>
+        <skos:notation>hmt087.cpi</skos:notation>
+        <rdfs:comment>HM Treasury</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/counterparty-code"/>
+      </j.1:CounterpartyCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:CounterpartyCode rdf:about="http://finance.data.gov.uk/def/coins/counterparty-code/mod017.cpi">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">MOD017.CPID</rdfs:label>
+        <skos:prefLabel xml:lang="en">MOD017.CPID</skos:prefLabel>
+        <skos:notation>mod017.cpi</skos:notation>
+        <rdfs:comment>Ministry of Defence</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/counterparty-code"/>
+      </j.1:CounterpartyCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:CounterpartyCode rdf:about="http://finance.data.gov.uk/def/coins/counterparty-code/dar201.cpi">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">DAR201.CPID</rdfs:label>
+        <skos:prefLabel xml:lang="en">DAR201.CPID</skos:prefLabel>
+        <skos:notation>dar201.cpi</skos:notation>
+        <rdfs:comment>Department of Agriculture and Rural Development - Northern Ireland</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/counterparty-code"/>
+      </j.1:CounterpartyCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:CounterpartyCode rdf:about="http://finance.data.gov.uk/def/coins/counterparty-code/hgt089.cpi">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">HGT089.CPID</rdfs:label>
+        <skos:prefLabel xml:lang="en">HGT089.CPID</skos:prefLabel>
+        <skos:notation>hgt089.cpi</skos:notation>
+        <rdfs:comment>HM Procurator General and Treasury Solicitor</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/counterparty-code"/>
+      </j.1:CounterpartyCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:CounterpartyCode rdf:about="http://finance.data.gov.uk/def/coins/counterparty-code/bti013.cpi">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">BTI013.CPID</rdfs:label>
+        <skos:prefLabel xml:lang="en">BTI013.CPID</skos:prefLabel>
+        <skos:notation>bti013.cpi</skos:notation>
+        <rdfs:comment>UK Trade &amp; Investment</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/counterparty-code"/>
+      </j.1:CounterpartyCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:CounterpartyCode rdf:about="http://finance.data.gov.uk/def/coins/counterparty-code/nio097.cpi">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">NIO097.CPID</rdfs:label>
+        <skos:prefLabel xml:lang="en">NIO097.CPID</skos:prefLabel>
+        <skos:notation>nio097.cpi</skos:notation>
+        <rdfs:comment>Northern Ireland Office</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/counterparty-code"/>
+      </j.1:CounterpartyCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:CounterpartyCode rdf:about="http://finance.data.gov.uk/def/coins/counterparty-code/did030.cpi">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">DID030.CPID</rdfs:label>
+        <skos:prefLabel xml:lang="en">DID030.CPID</skos:prefLabel>
+        <skos:notation>did030.cpi</skos:notation>
+        <rdfs:comment>Department for International Development</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/counterparty-code"/>
+      </j.1:CounterpartyCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:CounterpartyCode rdf:about="http://finance.data.gov.uk/def/coins/counterparty-code/lcd047.cpi">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">LCD047.CPID</rdfs:label>
+        <skos:prefLabel xml:lang="en">LCD047.CPID</skos:prefLabel>
+        <skos:notation>lcd047.cpi</skos:notation>
+        <rdfs:comment>Ministry of Justice</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/counterparty-code"/>
+      </j.1:CounterpartyCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:CounterpartyCode rdf:about="http://finance.data.gov.uk/def/coins/counterparty-code/drd209.cpi">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">DRD209.CPID</rdfs:label>
+        <skos:prefLabel xml:lang="en">DRD209.CPID</skos:prefLabel>
+        <skos:notation>drd209.cpi</skos:notation>
+        <rdfs:comment>Department for Regional Development - Northern Ireland</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/counterparty-code"/>
+      </j.1:CounterpartyCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:CounterpartyCode rdf:about="http://finance.data.gov.uk/def/coins/counterparty-code/naw090.cpi">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">NAW090.CPID</rdfs:label>
+        <skos:prefLabel xml:lang="en">NAW090.CPID</skos:prefLabel>
+        <skos:notation>naw090.cpi</skos:notation>
+        <rdfs:comment>National Assembly for Wales</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/counterparty-code"/>
+      </j.1:CounterpartyCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:CounterpartyCode rdf:about="http://finance.data.gov.uk/def/coins/counterparty-code/ilr041.cpi">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ILR041.CPID</rdfs:label>
+        <skos:prefLabel xml:lang="en">ILR041.CPID</skos:prefLabel>
+        <skos:notation>ilr041.cpi</skos:notation>
+        <rdfs:comment>HM Revenue and Customs</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/counterparty-code"/>
+      </j.1:CounterpartyCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:CounterpartyCode rdf:about="http://finance.data.gov.uk/def/coins/counterparty-code/geo064.cpi">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">GEO064.CPID</rdfs:label>
+        <skos:prefLabel xml:lang="en">GEO064.CPID</skos:prefLabel>
+        <skos:notation>geo064.cpi</skos:notation>
+        <rdfs:comment>Government Equalities Office</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/counterparty-code"/>
+      </j.1:CounterpartyCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:CounterpartyCode rdf:about="http://finance.data.gov.uk/def/coins/counterparty-code/ils081.cpi">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ILS081.CPID</rdfs:label>
+        <skos:prefLabel xml:lang="en">ILS081.CPID</skos:prefLabel>
+        <skos:notation>ils081.cpi</skos:notation>
+        <rdfs:comment>Northern Ireland Legal Services Commission</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/counterparty-code"/>
+      </j.1:CounterpartyCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:CounterpartyCode rdf:about="http://finance.data.gov.uk/def/coins/counterparty-code/dti084.cpi">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">DTI084.CPID</rdfs:label>
+        <skos:prefLabel xml:lang="en">DTI084.CPID</skos:prefLabel>
+        <skos:notation>dti084.cpi</skos:notation>
+        <rdfs:comment>Department for Business Innovation and Skills</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/counterparty-code"/>
+      </j.1:CounterpartyCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:CounterpartyCode rdf:about="http://finance.data.gov.uk/def/coins/counterparty-code/orr088.cpi">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ORR088.CPID</rdfs:label>
+        <skos:prefLabel xml:lang="en">ORR088.CPID</skos:prefLabel>
+        <skos:notation>orr088.cpi</skos:notation>
+        <rdfs:comment>Office of the Rail Regulator</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/counterparty-code"/>
+      </j.1:CounterpartyCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:CounterpartyCode rdf:about="http://finance.data.gov.uk/def/coins/counterparty-code/ois022.cpi">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">OIS022.CPID</rdfs:label>
+        <skos:prefLabel xml:lang="en">OIS022.CPID</skos:prefLabel>
+        <skos:notation>ois022.cpi</skos:notation>
+        <rdfs:comment>Office for Standards in Education, Children's Services and Skills</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/counterparty-code"/>
+      </j.1:CounterpartyCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:CounterpartyCode rdf:about="http://finance.data.gov.uk/def/coins/counterparty-code/hof034.cpi">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">HOF034.CPID</rdfs:label>
+        <skos:prefLabel xml:lang="en">HOF034.CPID</skos:prefLabel>
+        <skos:notation>hof034.cpi</skos:notation>
+        <rdfs:comment>Home Office</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/counterparty-code"/>
+      </j.1:CounterpartyCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:CounterpartyCode rdf:about="http://finance.data.gov.uk/def/coins/counterparty-code/det204.cpi">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">DET204.CPID</rdfs:label>
+        <skos:prefLabel xml:lang="en">DET204.CPID</skos:prefLabel>
+        <skos:notation>det204.cpi</skos:notation>
+        <rdfs:comment>Department of Enterprise Trade and Investment - Northern Ireland</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/counterparty-code"/>
+      </j.1:CounterpartyCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:CounterpartyCode rdf:about="http://finance.data.gov.uk/def/coins/counterparty-code/gad031.cpi">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">GAD031.CPID</rdfs:label>
+        <skos:prefLabel xml:lang="en">GAD031.CPID</skos:prefLabel>
+        <skos:notation>gad031.cpi</skos:notation>
+        <rdfs:comment>Government Actuary's Department</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/counterparty-code"/>
+      </j.1:CounterpartyCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:CounterpartyCode rdf:about="http://finance.data.gov.uk/def/coins/counterparty-code/dcm048.cpi">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">DCM048.CPID</rdfs:label>
+        <skos:prefLabel xml:lang="en">DCM048.CPID</skos:prefLabel>
+        <skos:notation>dcm048.cpi</skos:notation>
+        <rdfs:comment>Department for Culture, Media and Sport</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/counterparty-code"/>
+      </j.1:CounterpartyCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:CounterpartyCode rdf:about="http://finance.data.gov.uk/def/coins/counterparty-code/doh033.cpi">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">DOH033.CPID</rdfs:label>
+        <skos:prefLabel xml:lang="en">DOH033.CPID</skos:prefLabel>
+        <skos:notation>doh033.cpi</skos:notation>
+        <rdfs:comment>Department of Health</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/counterparty-code"/>
+      </j.1:CounterpartyCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:CounterpartyCode rdf:about="http://finance.data.gov.uk/def/coins/counterparty-code/dfp205.cpi">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">DFP205.CPID</rdfs:label>
+        <skos:prefLabel xml:lang="en">DFP205.CPID</skos:prefLabel>
+        <skos:notation>dfp205.cpi</skos:notation>
+        <rdfs:comment>Department of Finance and Personnel - Northern Ireland</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/counterparty-code"/>
+      </j.1:CounterpartyCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:CounterpartyCode rdf:about="http://finance.data.gov.uk/def/coins/counterparty-code/nie099.cpi">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">NIE099.CPID</rdfs:label>
+        <skos:prefLabel xml:lang="en">NIE099.CPID</skos:prefLabel>
+        <skos:notation>nie099.cpi</skos:notation>
+        <rdfs:comment>Northern Ireland Executive</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/counterparty-code"/>
+      </j.1:CounterpartyCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:CounterpartyCode rdf:about="http://finance.data.gov.uk/def/coins/counterparty-code/cab010.cpi">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">CAB010.CPID</rdfs:label>
+        <skos:prefLabel xml:lang="en">CAB010.CPID</skos:prefLabel>
+        <skos:notation>cab010.cpi</skos:notation>
+        <rdfs:comment>Cabinet Office</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/counterparty-code"/>
+      </j.1:CounterpartyCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:CounterpartyCode rdf:about="http://finance.data.gov.uk/def/coins/counterparty-code/dec066.cpi">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">DEC066.CPID</rdfs:label>
+        <skos:prefLabel xml:lang="en">DEC066.CPID</skos:prefLabel>
+        <skos:notation>dec066.cpi</skos:notation>
+        <rdfs:comment>Department of Energy and Climate Change</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/counterparty-code"/>
+      </j.1:CounterpartyCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:CounterpartyCode rdf:about="http://finance.data.gov.uk/def/coins/counterparty-code/dca202.cpi">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">DCA202.CPID</rdfs:label>
+        <skos:prefLabel xml:lang="en">DCA202.CPID</skos:prefLabel>
+        <skos:notation>dca202.cpi</skos:notation>
+        <rdfs:comment>Department of Culture Arts and Leisure - Northern Ireland</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/counterparty-code"/>
+      </j.1:CounterpartyCode>
+    </skos:hasTopConcept>
+    <skos:prefLabel xml:lang="en">counterparty code code list concept scheme</skos:prefLabel>
+    <skos:hasTopConcept>
+      <j.1:CounterpartyCode rdf:about="http://finance.data.gov.uk/def/coins/counterparty-code/ons005.cpi">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">ONS005.CPID</rdfs:label>
+        <skos:prefLabel xml:lang="en">ONS005.CPID</skos:prefLabel>
+        <skos:notation>ons005.cpi</skos:notation>
+        <rdfs:comment>Office for National Statistics</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/counterparty-code"/>
+      </j.1:CounterpartyCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:CounterpartyCode rdf:about="http://finance.data.gov.uk/def/coins/counterparty-code/wag090.cpi">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">WAG090.CPID</rdfs:label>
+        <skos:prefLabel xml:lang="en">WAG090.CPID</skos:prefLabel>
+        <skos:notation>wag090.cpi</skos:notation>
+        <rdfs:comment>Welsh Assembly Government</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/counterparty-code"/>
+      </j.1:CounterpartyCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:CounterpartyCode rdf:about="http://finance.data.gov.uk/def/coins/counterparty-code/dof061.cpi">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">DOF061.CPID</rdfs:label>
+        <skos:prefLabel xml:lang="en">DOF061.CPID</skos:prefLabel>
+        <skos:notation>dof061.cpi</skos:notation>
+        <rdfs:comment>Deputy Prime Minister's Office</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/counterparty-code"/>
+      </j.1:CounterpartyCode>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <j.1:CounterpartyCode rdf:about="http://finance.data.gov.uk/def/coins/counterparty-code/tsc068.cpi">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">TSC068.CPID</rdfs:label>
+        <skos:prefLabel xml:lang="en">TSC068.CPID</skos:prefLabel>
+        <skos:notation>tsc068.cpi</skos:notation>
+        <rdfs:comment>The Supreme Court</rdfs:comment>
+        <skos:topConceptOf rdf:resource="http://finance.data.gov.uk/def/coins/counterparty-code"/>
+      </j.1:CounterpartyCode>
+    </skos:hasTopConcept>
+  </skos:ConceptScheme>
+</rdf:RDF>
