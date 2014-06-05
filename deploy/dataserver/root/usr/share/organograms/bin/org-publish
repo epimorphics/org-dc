@@ -1,0 +1,17 @@
+#!/bin/bash
+
+readonly USEAGE="Usage: org-publish period file
+for example: org-publish 2013-09-30 department.ttl"
+
+readonly FUSEKI_HOME=/usr/share/fuseki
+readonly GRAPH_ROOT=http://reference.data.gov.uk/organogram/graph
+
+if [[ "$#" -ne 2 ]] ; then
+    echo "$USEAGE"
+    exit 1
+fi
+
+period="$1"
+file="$2"
+
+$FUSEKI_HOME/s-put http://localhost:3030/ds/data "$GRAPH_ROOT/$period/$file" "$file"

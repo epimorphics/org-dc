@@ -43,6 +43,18 @@ Config file
 
 ## Management scripts
 
-   /usr/lib/organograms/bin
+   /usr/share/organograms/bin
+
+## merge action
+
+   - lock
+   - drop period graph
+   - construct merge of individual period graphs to file in
+      /var/lib/organogram/merges
+   - put to period graph
+   - put to default graph
+   - unlock
+   
+
 
       

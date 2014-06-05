@@ -1,0 +1,12 @@
+#!/bin/bash
+
+readonly dataset_name=ds
+readonly backups=/var/lib/fuseki/backups
+
+if [ ! -e $backups ]
+then
+    echo "No backups/ directory" 1>&2
+    exit 2
+    fi
+
+curl -X POST "http://localhost:3131/mgt?cmd=backup&dataset=/$dataset_name"

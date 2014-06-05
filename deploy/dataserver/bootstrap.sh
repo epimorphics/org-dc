@@ -3,7 +3,7 @@ set -e
 
 readonly RELEASE=RELEASE-0.1
 
-readonly DEBUG=true
+readonly DEBUG=
 
 ########################################################
 # Bring local VM upto compatibility with dev server
@@ -45,9 +45,11 @@ fi
 
 cp -a /vagrant/root/* /
 
+if [[ -z $DEBUG ]]; then
 a2dissite default
 a2ensite reference
 service apache2 restart
+fi
 
 ########################################################
 # Install Apache Jena fuseki - frozen 1.0.1-SNAPSHOT
@@ -57,23 +59,26 @@ service apache2 restart
 
 if [[ -z $DEBUG ]]; then
 echo "** Installing Apache jena fuseki to /usr/share"
-useradd fuseki || true
+groupadd fuseki || true
+useradd -G fuseki fuseki || true
 
 curl -4s https://s3-eu-west-1.amazonaws.com/organograms/$RELEASE/jena-fuseki-distribution.tar.gz > /tmp/jena-fuseki-distribution.tar.gz
 cd /usr/share
 rm -rf fuseki
 tar xzf /tmp/jena-fuseki-distribution.tar.gz
 mv jena-fuseki-* fuseki
+chown -R fuseki:fuseki /usr/share/fuseki
 ln -s /usr/share/fuseki/fuseki /etc/init.d/fuseki
 
 # Set up logs
 mkdir -p /var/log/fuseki
-chown fuseki /var/log/fuseki
+chown fuseki:fuseki /var/log/fuseki
 
 # Set up bootstrap database and link it to fuseki
 # N.B. Loses any existing database!
 mkdir -p /var/lib/fuseki/backups
 mkdir -p /var/lib/fuseki/databases
+ln -s /var/lib/fuseki/backups/ /usr/share/fuseki/backups
 fi
 
 if [[ -z $DEBUG ]]; then
@@ -82,7 +87,7 @@ curl -4s https://s3-eu-west-1.amazonaws.com/organograms/$RELEASE/ORG-DB.tgz > /v
 cd /var/lib/fuseki/databases
 tar zxf ../backups/ORG-DB.tgz 
 
-chown -R fuseki /var/lib/fuseki
+chown -R fuseki:fuseki /var/lib/fuseki
 
 service fuseki start
 fi
