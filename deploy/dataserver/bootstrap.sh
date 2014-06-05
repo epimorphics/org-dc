@@ -37,6 +37,11 @@ a2enmod rewrite expires proxy proxy_http cache disk_cache
 #   - elda conf
 #   - tomcat conf  (java opts and server.xml)
 #   - static web assets to support elda
+#
+# Ideally /etc/default/fuseki and /etc/default/tomcat7
+# should be templated to allow memory allocations to be
+# parameterized, in grounding out our Chef templates to 
+# actual files that's been lost.
 ########################################################
 
 cp -a /vagrant/root/* /
@@ -62,17 +67,17 @@ chown -R fuseki:fuseki /usr/share/fuseki
 ln -s /usr/share/fuseki/fuseki /etc/init.d/fuseki
 
 # Set up logs
-#mkdir -p /var/log/fuseki
-#chown fuseki:fuseki /var/log/fuseki
+mkdir -p /var/log/fuseki
+chown fuseki:fuseki /var/log/fuseki
 ln -s /var/log/fuseki /usr/share/fuseki/logs
 
 # Set up bootstrap database and link it to fuseki
-# N.B. Loses any existing database!
 mkdir -p /var/lib/fuseki/backups
 mkdir -p /var/lib/fuseki/databases
 ln -s /var/lib/fuseki/backups /usr/share/fuseki/backups
 
 echo "** Installing bootstrap database"
+# N.B. Loses any existing database!
 curl -4s https://s3-eu-west-1.amazonaws.com/organograms/$RELEASE/ORG-DB.tgz > /var/lib/fuseki/backups/ORG-DB.tgz
 cd /var/lib/fuseki/databases
 tar zxf ../backups/ORG-DB.tgz 
@@ -95,7 +100,6 @@ echo "** Installing reference time server"
 rm -rf /var/lib/tomcat7/webapps/IntervalServer*
 curl -4s https://s3-eu-west-1.amazonaws.com/organograms/$RELEASE/IntervalServer.war > /var/lib/tomcat7/webapps/IntervalServer.war
 
-service tomcat7 stop || true
 service tomcat7 start
 
 ########################################################
