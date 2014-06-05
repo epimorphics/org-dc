@@ -42,11 +42,11 @@ For ease of transfer we have removed all dependencies from our own deployment an
 
 These are documented in the form of a simple Vagrant config with a shell provisioner (`bootstrap.sh`). The shell provisioning is not intended for production use, but it's a machine checkable way to write down the steps involved.
 
-For simplicity we've taken the brutal approach of packaging up all the configuration files and static document assets as a single merged directory tree under root. These could be repackaged for each subsystem - fuseki, elda, Apache config, Apache document assets
+For simplicity we've taken the brutal approach of packaging up all the configuration files and static document assets as a single merged directory tree under `root`. These could be repackaged for each subsystem - Fuseki, Elda, Apache config, Apache document assets
 
 The installation also requires a set of binary assets for the web applications, the initial database and the triple store server.
 
-For convenience we have assembled appropriately customized versions of these in folder in an S3 bucket: https://organograms.s3-eu-west-1.amazonaws.com/RELEASE-0.1/
+For convenience we have assembled appropriately customized versions of these in a folder in an S3 bucket: https://organograms.s3-eu-west-1.amazonaws.com/RELEASE-0.1/
 
 The assets used are:
 
@@ -62,3 +62,18 @@ The assets used are:
 `./IntervalServer.war`
    Reference time interval service
 
+## Scripting
+
+The installation includes a set of sample shell scripts to support the publication process, these are in `/usr/share/lib/organograms/bin`.
+
+`org-backup` 
+
+Schedules a backup of the data which will generate a new backup file in `/var/lib/fuseki/backups`
+
+`org-publish {period} {file}`
+
+Publishes an RDF orgranogram file for a single organization to the correct graph in the triple store.  Underneath this is simply a `PUT` with the correct target URI (which is not exposed beyond firewall) and mime type so it would be possible to perform the same action directly.
+
+`org-merge {period}`
+
+Is still under development but with rebuild a merged RDF graph for the given period and then publish the merge to the triple store as both the period graph and the current default graph.
