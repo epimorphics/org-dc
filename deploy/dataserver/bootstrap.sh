@@ -9,7 +9,6 @@ readonly DEBUG=
 # Bring local VM upto compatibility with dev server
 ########################################################
 
-if [[ -z $DEBUG ]]; then
 apt-get update -y
 apt-get install -y curl
 
@@ -22,16 +21,13 @@ apt-get install -y openjdk-7-jdk
 update-alternatives --set java /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java
 unlink /usr/lib/jvm/default-java
 ln -s /usr/lib/jvm/java-1.7.0-openjdk-amd64 /usr/lib/jvm/default-java
-fi
 
 ########################################################
 #  Apache httpd - whatever the standard recipe is
 ########################################################
 
-if [[ -z $DEBUG ]]; then
 apt-get install -y apache2
 a2enmod rewrite expires proxy proxy_http cache disk_cache
-fi
 
 ########################################################
 # Install pre-preprepared configuration files - brute force
@@ -45,19 +41,14 @@ fi
 
 cp -a /vagrant/root/* /
 
-if [[ -z $DEBUG ]]; then
 a2dissite default
 a2ensite reference
 service apache2 restart
-fi
 
 ########################################################
 # Install Apache Jena fuseki - frozen 1.0.1-SNAPSHOT
 ########################################################
 
-# TODO - separate fuseki user?
-
-if [[ -z $DEBUG ]]; then
 echo "** Installing Apache jena fuseki to /usr/share"
 groupadd fuseki || true
 useradd -g fuseki fuseki || true
@@ -71,17 +62,16 @@ chown -R fuseki:fuseki /usr/share/fuseki
 ln -s /usr/share/fuseki/fuseki /etc/init.d/fuseki
 
 # Set up logs
-mkdir -p /var/log/fuseki
-chown fuseki:fuseki /var/log/fuseki
+#mkdir -p /var/log/fuseki
+#chown fuseki:fuseki /var/log/fuseki
+ln -s /var/log/fuseki /usr/share/fuseki/logs
 
 # Set up bootstrap database and link it to fuseki
 # N.B. Loses any existing database!
 mkdir -p /var/lib/fuseki/backups
 mkdir -p /var/lib/fuseki/databases
-ln -s /var/lib/fuseki/backups/ /usr/share/fuseki/backups
-fi
+ln -s /var/lib/fuseki/backups /usr/share/fuseki/backups
 
-if [[ -z $DEBUG ]]; then
 echo "** Installing bootstrap database"
 curl -4s https://s3-eu-west-1.amazonaws.com/organograms/$RELEASE/ORG-DB.tgz > /var/lib/fuseki/backups/ORG-DB.tgz
 cd /var/lib/fuseki/databases
@@ -90,13 +80,11 @@ tar zxf ../backups/ORG-DB.tgz
 chown -R fuseki:fuseki /var/lib/fuseki
 
 service fuseki start
-fi
 
 ########################################################
 # Install Elda API front end
 ########################################################
 
-if [[ -z $DEBUG ]]; then
 service tomcat7 stop || true
 
 echo "** Installing Elda"
@@ -109,7 +97,6 @@ curl -4s https://s3-eu-west-1.amazonaws.com/organograms/$RELEASE/IntervalServer.
 
 service tomcat7 stop || true
 service tomcat7 start
-fi
 
 ########################################################
 # 
