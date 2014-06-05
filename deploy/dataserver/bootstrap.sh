@@ -60,7 +60,7 @@ fi
 if [[ -z $DEBUG ]]; then
 echo "** Installing Apache jena fuseki to /usr/share"
 groupadd fuseki || true
-useradd -G fuseki fuseki || true
+useradd -g fuseki fuseki || true
 
 curl -4s https://s3-eu-west-1.amazonaws.com/organograms/$RELEASE/jena-fuseki-distribution.tar.gz > /tmp/jena-fuseki-distribution.tar.gz
 cd /usr/share
