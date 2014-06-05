@@ -52,12 +52,12 @@ spec:api  a                   api:API ;
         api:formatter         spec:CsvFormatter, spec:HtmlFormatter ;
         api:defaultFormatter  spec:HtmlFormatter ;
         api:defaultPageSize   "20" ;
-        api:defaultViewer     api:labelledDescribeViewer ;
+        api:defaultViewer     spec:labelledDescribeViewer ;
         api:maxPageSize       "300" ;
         elda:cacheExpiryTime  "60m" ;
         api:sparqlEndpoint    <http://localhost:3030/ds/sparql> ;
         api:variable        [ api:name "base" ; api:value "http://reference.data.gov.uk" ] ;
-        api:viewer            api:describeViewer , api:labelledDescribeViewer, spec:minimalViewer ;
+        api:viewer            spec:describeViewer , spec:labelledDescribeViewer, spec:minimalViewer ;
         .
 
 spec:minimalViewer  a   api:Viewer ;
@@ -85,6 +85,22 @@ spec:noneViewer
         a           api:Viewer  ;
         api:name    "none";
         .   
+#
+# Local replacements for builtin api:describeViewer and api:labelledDescribeViewer
+# to overcome the problem of which graph described queries operate on
+#
+spec:describeViewer
+        a               api:Viewer ;
+        api:name        "description" ;
+        api:properties  "*";
+        .
+
+spec:labelledDescribeViewer
+        a               api:Viewer ;
+        api:name        "all" ;
+        api:properties  "*,*.label,*.prefLabel,*.altLabel" ;
+        .
+
 ###############################################################################
 #         
 ## FORMATTERS
@@ -121,7 +137,7 @@ spec:scheme
   api:exampleRequestPath  "/def/central-government/";
   api:variable [ api:name "schemeRegx"; api:value "^{base}/def/{scheme}/" ];
   api:selector spec:scheme-selector;
-  api:viewer spec:definitionViewer, api:describeViewer, api:basicViewer;
+  api:viewer spec:definitionViewer, spec:describeViewer, api:basicViewer;
   api:defaultViewer spec:definitionViewer;
   .
 spec:scheme-selector
@@ -157,7 +173,7 @@ spec:scheme-ns
   api:uriTemplate "/def/{scheme}" ;
   api:exampleRequestPath  "/def/central-government";
   api:itemTemplate "{base}/def/{scheme}" ;
-  api:viewer spec:schemeViewer, api:describeViewer, api:basicViewer;
+  api:viewer spec:schemeViewer, spec:describeViewer, api:basicViewer;
   api:defaultViewer spec:schemeViewer;
   .
 
@@ -166,7 +182,7 @@ spec:scheme-def
   a api:ListEndpoint;
   rdfs:comment "Returns a list of vocabularies organised under http://reference.data.gov.uk/def/"@en;
   api:exampleRequestPath  "/def/";
-  api:viewer    api:describeViewer, spec:schemeViewer, api:basicViewer;
+  api:viewer    spec:describeViewer, spec:schemeViewer, api:basicViewer;
   api:variable  [api:name "regex" ; api:value "^{base}/def" ] ;
   api:uriTemplate   "/def/";
   api:itemTemplate  "http://reference.data.gov.uk/def";
@@ -198,8 +214,8 @@ spec:definition
   api:exampleRequestPath  "/def/central-government/PublicBody";
   api:uriTemplate "/def/{scheme}/{term}" ;
   api:itemTemplate "{base}/def/{scheme}/{term}" ;
-  api:viewer spec:definitionViewer, api:describeViewer, api:basicViewer;
-  api:defaultViewer api:describeViewer ;
+  api:viewer spec:definitionViewer, spec:describeViewer, api:basicViewer;
+  api:defaultViewer spec:describeViewer ;
   .
 
 spec:definitionViewer
@@ -224,7 +240,7 @@ spec:subclasses
     api:type rdfs:Resource ;
   ] ;
   api:selector spec:subclass-selector ;
-  api:viewer spec:definitionViewer, api:describeViewer, api:basicViewer;
+  api:viewer spec:definitionViewer, spec:describeViewer, api:basicViewer;
   api:viewer      spec:noneViewer ;
   api:defaultViewer spec:definitionViewer ;
   .
@@ -244,9 +260,9 @@ spec:instances
     api:type rdfs:Resource ;
   ] ;
   api:selector spec:instances-selector;
-  api:viewer spec:definitionViewer, api:describeViewer, api:basicViewer;
+  api:viewer spec:definitionViewer, spec:describeViewer, api:basicViewer;
   api:viewer      spec:noneViewer ;
-  api:defaultViewer api:describeViewer ;
+  api:defaultViewer spec:describeViewer ;
   .
 
 spec:properties-selector
@@ -265,9 +281,9 @@ spec:properties
     api:type rdfs:Resource ;
   ] ;
   api:selector spec:properties-selector;
-  api:viewer spec:definitionViewer, api:describeViewer, api:basicViewer;
+  api:viewer spec:definitionViewer, spec:describeViewer, api:basicViewer;
   api:viewer      spec:noneViewer ;
-  api:defaultViewer api:describeViewer ;
+  api:defaultViewer spec:describeViewer ;
   .
   
 ###############################################################################
@@ -281,8 +297,8 @@ spec:about
         api:uriTemplate     "/about?resource={uri}";
         rdfs:comment        "A generic item endpoint API for asking about a specific thing by 'uri'.";
         api:itemTemplate    "{uri}";
-        api:viewer          api:basicViewer, api:describeViewer, api:labelledDescribeViewer;
-        api:defaultViewer   api:describeViewer;
+        api:viewer          api:basicViewer, spec:describeViewer, spec:labelledDescribeViewer;
+        api:defaultViewer   spec:describeViewer;
         .
 
 ###############################################################################
@@ -301,11 +317,11 @@ spec:anything
     api:selector [
         api:where   "FILTER (!isBlank(?item)) ?item a [] ."
     ] ;
-    api:viewer          api:describeViewer, 
+    api:viewer          spec:describeViewer, 
                         api:basicViewer,
-                        api:labelledDescribeViewer;
+                        spec:labelledDescribeViewer;
     api:viewer      spec:noneViewer ;
-    api:defaultViewer   api:describeViewer;
+    api:defaultViewer   spec:describeViewer;
     .
 
 ###############################################################################
@@ -1106,7 +1122,7 @@ spec:organogramSnapshots
             api:filter  "type=Dataset" ;
             api:where   "FILTER(regex(str(?item), ?regexp))\n"
         ] ;
-        api:defaultViewer   api:describeViewer;
+        api:defaultViewer   spec:describeViewer;
         .
 
 spec:api    api:endpoint spec:organogramSnapshotDatasets .
@@ -1118,7 +1134,7 @@ spec:organogramSnapshotDatasets
             api:filter  "type=Dataset" ;
             api:where   "FILTER(regex(str(?item), ?regexp))\n"
         ] ;
-        api:defaultViewer   api:describeViewer;
+        api:defaultViewer   spec:describeViewer;
         .
 
 spec:api    api:endpoint spec:organogramDataset .
@@ -1126,7 +1142,7 @@ spec:organogramDataset
         a           api:ItemEndpoint ;
         api:uriTemplate "/organogram/{snapshotDate}/{dataset}" ;
         api:itemTemplate "http://reference.data.gov.uk/organogram/{snapshotDate}/{dataset}";
-        api:defaultViewer   api:describeViewer;
+        api:defaultViewer   spec:describeViewer;
         .
 
 spec:api    api:endpoint spec:organogramSubset .
@@ -1134,7 +1150,7 @@ spec:organogramSubset
         a           api:ItemEndpoint ;
         api:uriTemplate "/organogram/{snapshotDate}/{dataset}/{subset}" ;
         api:itemTemplate "http://reference.data.gov.uk/organogram/{snapshotDate}/{dataset}/{subset}";
-        api:defaultViewer   api:describeViewer;
+        api:defaultViewer   spec:describeViewer;
         .     
 
 spec:api    api:endpoint spec:organogramSubsetItem .
@@ -1142,7 +1158,7 @@ spec:organogramSubsetItem
         a           api:ItemEndpoint ;
         api:uriTemplate "/organogram/{snapshotDate}/{dataset}/{subset}/{item}" ;
         api:itemTemplate "http://reference.data.gov.uk/organogram/{snapshotDate}/{dataset}/{subset}/{item}";
-        api:defaultViewer   api:describeViewer;
+        api:defaultViewer   spec:describeViewer;
         .     
 
 spec:api    api:endpoint spec:organogramSubsetItems .
@@ -1153,7 +1169,7 @@ spec:organogramSubsetItems
         api:selector [
             api:where   "?item qb:dataSet ?dsss ."
         ];
-        api:defaultViewer   api:describeViewer;
+        api:defaultViewer   spec:describeViewer;
         .     
 
 spec:api    api:endpoint spec:organogramPerson .
@@ -1165,7 +1181,7 @@ spec:organogramPerson
             api:filter  "type=Person",
                         "page={ds}"
         ];
-        api:defaultViewer   api:describeViewer;
+        api:defaultViewer   spec:describeViewer;
         .     
 
 spec:api    api:endpoint spec:organogramTenure .
@@ -1177,7 +1193,7 @@ spec:organogramTenure
             api:filter  "type=Tenure",
                         "page={ds}"
         ];
-        api:defaultViewer   api:describeViewer;
+        api:defaultViewer   spec:describeViewer;
         .     
 ################################################################################
 # Bootstrapped Short Names
