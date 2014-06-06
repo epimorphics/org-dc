@@ -16,7 +16,7 @@ In the current dev deployment two periods are present `2011-09-30` and `2013-09-
 
 ### Sparql endpoint
 
-The triple store exposes a SPARQL query endpoint at http://reference.data.gov.uk/sparql/organogram
+The triple store exposes a SPARQL query endpoint at http://reference.data.gov.uk/sparql/organogram/query
 
 ### Linked data API
 

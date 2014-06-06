@@ -105,5 +105,9 @@ curl -4s https://s3-eu-west-1.amazonaws.com/organograms/$RELEASE/IntervalServer.
 service tomcat7 start
 
 ########################################################
-# 
+# Create area for holding merged published graphs
 ########################################################
+
+mkdir -p /var/lib/organogram/merges
+# Could restrict to a known user who will perform merges
+chmod a+rw /var/lib/organogram/merges
