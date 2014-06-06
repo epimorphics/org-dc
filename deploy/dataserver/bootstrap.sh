@@ -16,6 +16,7 @@ apt-get install -y curl
 echo "** Installing java and tomcat"
 apt-get install -y tomcat7 language-pack-en
 service tomcat7 stop || true
+update-rc.d tomcat7 defaults
 
 apt-get install -y openjdk-7-jdk 
 update-alternatives --set java /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java
@@ -85,6 +86,7 @@ tar zxf ../backups/ORG-DB.tgz
 chown -R fuseki:fuseki /var/lib/fuseki
 
 service fuseki start
+update-rc.d fuseki defaults
 
 ########################################################
 # Install Elda API front end

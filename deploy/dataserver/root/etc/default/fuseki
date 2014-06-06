@@ -4,6 +4,5 @@ FUSEKI_HOME=/usr/share/fuseki
 FUSEKI_USER=fuseki
 FUSEKI_LOGS=/var/log/fuseki
 FUSEKI_ARGS="--pages=/usr/share/fuseki/pages --config=/etc/fuseki/config.ttl --localhost --mgtPort=3131"
-#JAVA_OPTIONS="-Xmx1500M -Dlog4j.configuration=/etc/fuseki/log4j.properties"
-JAVA_OPTIONS="-Xmx1500M"
+JAVA_OPTIONS="-Xmx1500M -Dlog4j.configuration=file:/etc/fuseki/log4j.properties"
 FUSEKI_CLASSPATH=/usr/share/fuseki/fuseki-server.jar
