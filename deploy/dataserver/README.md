@@ -20,7 +20,7 @@ The triple store exposes a SPARQL query endpoint at http://reference.data.gov.uk
 
 ### Linked data API
 
-A linked data API front end (based on Elda with and Apache httpd front end) provides a large number of item and list API endpoints to enable access to the underlying data via a browser and in a variety of formats (RDF formats, json, xml).
+A linked data API front end (based on Elda with an Apache httpd front end) provides a large number of item and list API endpoints to enable access to the underlying data via a browser and in a variety of formats (RDF formats, json, xml).
 
 For example:  http://reference.data.gov.uk/id/public-body which lists all public bodies in the dataset via the document response http://reference.data.gov.uk/doc/public-body
 
@@ -76,4 +76,4 @@ Publishes an RDF orgranogram file for a single organization to the correct graph
 
 `org-merge {period}`
 
-Is still under development but with rebuild a merged RDF graph for the given period and then publish the merge to the triple store as both the period graph and the current default graph.
+Is still under development but will rebuild a merged RDF graph for the given period and then publish the merge to the triple store as both the period graph and the current default graph.

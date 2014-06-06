@@ -1,6 +1,6 @@
 #!/bin/bash
 
-readonly USEAGE="Usage: org-publish period file
+readonly USEAGE="Usage: org-publish {period} {file}
 for example: org-publish 2013-09-30 department.ttl"
 
 readonly FUSEKI_HOME=/usr/share/fuseki

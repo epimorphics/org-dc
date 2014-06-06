@@ -1,0 +1,7 @@
+<http://localhost/test> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "org1 2014-06-06" <http://reference.data.gov.uk/organogram/graph/2014-06-06/org1> .
+<http://localhost/test> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "org2 2014-06-06" <http://reference.data.gov.uk/organogram/graph/2014-06-06/org2> .
+<http://localhost/test> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "org1 2014-05-05" <http://reference.data.gov.uk/organogram/graph/2014-05-05/org1> .
+<http://localhost/test> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "perm 1" <http://reference.data.gov.uk/organogram/graph/perm/1> .
+<http://localhost/test> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "perm 2" <http://reference.data.gov.uk/organogram/graph/perm/2> .
+<http://localhost/test> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "org1 old merge 06" <http://reference.data.gov.uk/organogram/graph/2014-06-06> .
+<http://localhost/test> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "org2 old merge 06" <http://reference.data.gov.uk/organogram/graph/2014-06-06> .

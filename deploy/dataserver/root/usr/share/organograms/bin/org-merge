@@ -1,0 +1,51 @@
+#!/bin/bash
+set -e
+
+readonly USEAGE="Usage: org-merge {period}
+Construct a new merged graph for the given period and make it the current default"
+
+readonly MERGE_BASE=/var/lib/organogram/merges
+readonly FUSEKI_BASE=/usr/share/fuseki
+readonly GRAPH_BASE=http://reference.data.gov.uk/organogram/graph
+readonly PERM_GRAPH=$GRAPH_BASE/perm
+readonly SERVICE=http://localhost:3030/ds
+
+if [[ "$#" -ne 1 || "$1" == "--help" ]] ; then
+    echo "$USEAGE"
+    exit 1
+fi
+
+PERIOD=$1
+MERGE=$MERGE_BASE/merge-$PERIOD.nt
+PERIOD_GRAPH=$GRAPH_BASE/$PERIOD
+
+# lock
+(flock -s 200
+
+# Extract merge
+curl -s -H "Accept: application/n-triples" --data-urlencode "query@-"  $SERVICE/query > $MERGE <<!!
+CONSTRUCT {
+    ?s ?p ?o .
+} WHERE {
+    GRAPH ?g {
+        ?s ?p ?o .
+    }
+    FILTER ( strStarts(str(?g), "$PERM_GRAPH/") 
+          || strStarts(str(?g), "$PERIOD_GRAPH/") )
+}
+!!
+
+if [[ -s $MERGE ]]; then
+    # Put to period graph
+    $FUSEKI_BASE/s-put $SERVICE/data $PERIOD_GRAPH $MERGE
+
+    # Put to default graph
+    $FUSEKI_BASE/s-put $SERVICE/data default $MERGE
+
+    # Retain merged file
+    gzip -f $MERGE
+else
+    echo "Merged graph is emtpy, not installing" >&2
+fi
+
+) 200>/var/lock/merge-lock-$PERIOD
