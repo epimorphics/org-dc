@@ -64,6 +64,9 @@ $FUSEKI_BASE/s-put $SERVICE/data $PERIOD_GRAPH $MERGE
 # Put to default graph
 $FUSEKI_BASE/s-put $SERVICE/data default $MERGE
 
+# Clear Elda cache
+curl -X POST http://localhost:8080/control/clear-cache
+
 # Retain merged file
 gzip -f $MERGE
 
