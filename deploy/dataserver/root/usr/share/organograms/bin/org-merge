@@ -9,6 +9,7 @@ readonly FUSEKI_BASE=/usr/share/fuseki
 readonly GRAPH_BASE=http://reference.data.gov.uk/organogram/graph
 readonly PERM_GRAPH=$GRAPH_BASE/perm
 readonly SERVICE=http://localhost:3030/ds
+readonly PERM_SIZE=3500
 
 if [[ "$#" -ne 1 || "$1" == "--help" ]] ; then
     echo "$USEAGE"
@@ -27,25 +28,37 @@ curl -s -H "Accept: application/n-triples" --data-urlencode "query@-"  $SERVICE/
 CONSTRUCT {
     ?s ?p ?o .
 } WHERE {
+    {
+        SELECT ?g WHERE {
+            GRAPH ?g {}
+            FILTER ( strStarts(str(?g), '$PERM_GRAPH/') 
+                  || strStarts(str(?g), '$PERIOD_GRAPH/') )
+        }
+    }
     GRAPH ?g {
         ?s ?p ?o .
     }
-    FILTER ( strStarts(str(?g), "$PERM_GRAPH/") 
-          || strStarts(str(?g), "$PERIOD_GRAPH/") )
 }
 !!
 
-if [[ -s $MERGE ]]; then
-    # Put to period graph
-    $FUSEKI_BASE/s-put $SERVICE/data $PERIOD_GRAPH $MERGE
-
-    # Put to default graph
-    $FUSEKI_BASE/s-put $SERVICE/data default $MERGE
-
-    # Retain merged file
-    gzip -f $MERGE
-else
+if [[ ! -s $MERGE ]]; then
     echo "Merged graph is emtpy, not installing" >&2
+    exit 1
 fi
+
+mergesize=$(cat $MERGE | wc -l)
+if [[ $mergesize < $PERM_SIZE ]]; then
+    echo "Merged graph seems to only permanent entries, not installing" >&2
+    exit 1
+fi
+
+# Put to period graph
+$FUSEKI_BASE/s-put $SERVICE/data $PERIOD_GRAPH $MERGE
+
+# Put to default graph
+$FUSEKI_BASE/s-put $SERVICE/data default $MERGE
+
+# Retain merged file
+gzip -f $MERGE
 
 ) 200>/var/lock/merge-lock-$PERIOD
