@@ -76,4 +76,12 @@ Publishes an RDF orgranogram file for a single organization to the correct graph
 
 `org-merge {period}`
 
-Is still under development but will rebuild a merged RDF graph for the given period and then publish the merge to the triple store as both the period graph and the current default graph.
+Constructs and publishes a merged RDF graph for the given period.
+
+This will extract from the triple store all per-department graphs for that period, plus all permanent graphs that should appear for all period. The merged data is kept as a compressed file in `/var/lib/organogram/merges`.
+
+This merged file is then published twice - to the merge graph for that period and to the global default graph.
+
+The script check that the merged graph is non-trivial. An empty more or a merge that is too short (just the size of the permanent graphs) will cause it to abort. The threshold for this check needs to be kept in sync with the size of permanent graphs.
+
+The publication process for a fully populated period should take between 1 and 2 mins on a quiet server.

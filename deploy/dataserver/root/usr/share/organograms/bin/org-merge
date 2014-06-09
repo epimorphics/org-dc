@@ -20,6 +20,12 @@ PERIOD=$1
 MERGE=$MERGE_BASE/merge-$PERIOD.nt
 PERIOD_GRAPH=$GRAPH_BASE/$PERIOD
 
+if [[  ! "$PERIOD" =~ [0-9]{4}-[0-9]{2}-[0-9]{2} ]] 
+then 
+    echo "Period must take form yyyy-mm-dd" 
+    exit 1
+fi
+
 # lock
 (flock -s 200
 
