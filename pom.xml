@@ -53,7 +53,7 @@
     <dependency>
       <groupId>com.epimorphics</groupId>
       <artifactId>dclib</artifactId>
-      <version>0.1.1</version>
+      <version>0.1.2-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>javax.servlet</groupId>
