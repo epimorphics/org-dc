@@ -88,10 +88,17 @@ public class Endpoints {
         
         long start = System.currentTimeMillis();
         SimpleProgressMonitor monitor = new SimpleProgressMonitor();
-        Model smodel = process(seniorPosts, release, basename, monitor, debug);
-        
-        InputStream juniorPosts = readFile(multiPart, JUNIOR_PARAM);
-        Model jmodel = process(juniorPosts, release, basename, monitor, debug);
+        Model smodel = null;
+        Model jmodel = null;
+        try {
+            smodel = process(seniorPosts, release, basename, monitor, debug);
+            
+            InputStream juniorPosts = readFile(multiPart, JUNIOR_PARAM);
+            jmodel = process(juniorPosts, release, basename, monitor, debug);
+        } catch (Exception e) {
+            monitor.reportError("Failed: " + e.getMessage());
+            log.error("Conversion failed", e);
+        }
         long duration = System.currentTimeMillis() - start;
 
         Long size = null;
