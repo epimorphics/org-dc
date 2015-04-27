@@ -51,7 +51,7 @@
             "<{$def_org}/grade>" : "<{$grade_base}/{$grade}>",
             "<{$def_org}/job>" : "<{$def_job}/{generic_job_title.toCleanSegment()}>",
             "<rdfs:label>" : "{grade} {generic_job_title} ({professional_occupational_group}) in {unit} reporting to post {reporting_senior_post} FTE at {$versionDate}@en",
-            "<{$def_org}/profession>": "<{professional_occupational_group.map(['profession', 'profession-alt'], $def_profession + '/' + professional_occupational_group.toCleanSegment().value)}>",
+            "<{$def_org}/profession>": "<{professional_occupational_group.map(['profession', 'profession-alt'], $def_profession.value + '/' + professional_occupational_group.toCleanSegment().value)}>",
             "<{$def_org}/reportingTo>" : "<{$organisation}/post/{reporting_senior_post}>",
             "<{$def_org}/unit>" : "<{$unit}>"
         },

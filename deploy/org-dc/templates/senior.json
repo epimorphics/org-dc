@@ -5,7 +5,7 @@
     "bind":[
               {
                 "$post":"{$organisation}/post/{post_unique_reference}",
-                "$reportsToPost":"{reports_to_senior_post.toLowerCase() == 'xx' ? nullValue() : $organisation.value + '/post/' + reports_to_senior_post.value}",
+                "$reportsToPost":"{reports_to_senior_post == 'xx' || reports_to_senior_post == 'XX' ? nullValue() : $organisation.value + '/post/' + reports_to_senior_post.value}",
                 "$mailto" : "{empty(contact_e_mail) ? nullValue() : contact_e_mail.replaceAll(' ','-').replaceAll('\u00a0','')}"
               }, {
                 "$holder":"{$dataset}/person{$row.number}",
@@ -79,7 +79,7 @@
             "<foaf:mbox>":"<mailto:{$mailto}>",
             "<foaf:name>":"{name}",
             "<foaf:phone>":"{contact_phone}",
-            "<{$def_profession}/profession>": "<{professional_occupational_group.map(['profession', 'profession-alt'], $def_profession + '/' + professional_occupational_group.toCleanSegment().value)}>",
+            "<{$def_profession}/profession>": "<{professional_occupational_group.map(['profession', 'profession-alt'], $def_profession.value + '/' + professional_occupational_group.toCleanSegment().value)}>",
             "<foaf:page>" : "<{$dataset}>",
             "<{$def_gov}/tenure>" : "<{$tenure}>"
         },
